@@ -110,6 +110,7 @@ public class Configuration {
     }
 
     public static String beyondPodPublicAPIRoot() {
+        // Legacy BeyondPod backend — dead since ~2020. FeedSearchService now uses iTunes API directly.
         return "http://www.beyondpod.mobi/api";
     }
 

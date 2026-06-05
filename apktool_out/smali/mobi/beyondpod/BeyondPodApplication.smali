@@ -1205,19 +1205,9 @@
 
     if-eqz v0, :cond_1
 
-    .line 237
+    # Crashlytics removed — service is defunct
     :try_start_1
-    new-array v0, v2, [Lio/fabric/sdk/android/Kit;
-
-    const/4 v1, 0x0
-
-    new-instance v2, Lcom/crashlytics/android/Crashlytics;
-
-    invoke-direct {v2}, Lcom/crashlytics/android/Crashlytics;-><init>()V
-
-    aput-object v2, v0, v1
-
-    invoke-static {p0, v0}, Lio/fabric/sdk/android/Fabric;->with(Landroid/content/Context;[Lio/fabric/sdk/android/Kit;)Lio/fabric/sdk/android/Fabric;
+    nop
     :try_end_1
     .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_0
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1

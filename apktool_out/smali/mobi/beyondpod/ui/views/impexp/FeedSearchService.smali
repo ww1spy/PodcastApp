@@ -7,7 +7,8 @@
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lmobi/beyondpod/ui/views/impexp/FeedSearchService$RequestFilter;,
-        Lmobi/beyondpod/ui/views/impexp/FeedSearchService$ServiceException;
+        Lmobi/beyondpod/ui/views/impexp/FeedSearchService$ServiceException;,
+        Lmobi/beyondpod/ui/views/impexp/FeedSearchService$1;
     }
 .end annotation
 
@@ -15,9 +16,8 @@
 # static fields
 .field private static final CLIENT_VERSION:I = 0x1
 
-.field static _PatchTag:Ljava/lang/String; = "http://az412796.vo.msecnd.net/regs/"
-
-.field static _PatchTagPubs:Ljava/lang/String; = "http://az412796.vo.msecnd.net/pubs/"
+# iTunes Search API base URL (replaces dead BeyondPod Azure backend)
+.field private static final ITUNES_SEARCH_URL:Ljava/lang/String; = "https://itunes.apple.com/search"
 
 
 # instance fields
@@ -188,75 +188,66 @@
     return-object v0
 .end method
 
-.method private patchImageUrl(Ljava/lang/String;)Ljava/lang/String;
-    .locals 2
+# performItunesGet: GETs an iTunes Search API URL.
+# The iTunes response is a JSONObject with a "results" JSONArray.
+# FeedSearchService$1 unwraps the results array and forwards it to the listener.
+.method private performItunesGet(Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Lcom/android/volley/Response$Listener<",
+            "Lorg/json/JSONArray;",
+            ">;",
+            "Lcom/android/volley/Response$ErrorListener;",
+            ")V"
+        }
+    .end annotation
 
-    .line 298
-    sget-object v0, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->_PatchTag:Ljava/lang/String;
+    # v0 = FeedSearchService$1 inner listener (unwraps "results" array)
+    # v1 = JsonObjectRequest
+    # v2 = null (for JSONObject body param)
+    # v3 = DefaultRetryPolicy
+    # v4 = float 2.0f (backoff)
 
-    invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    # Create the inner listener (FeedSearchService$1) that unwraps "results"
+    new-instance v0, Lmobi/beyondpod/ui/views/impexp/FeedSearchService$1;
 
-    move-result v0
+    invoke-direct {v0, p0, p2}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService$1;-><init>(Lmobi/beyondpod/ui/views/impexp/FeedSearchService;Lcom/android/volley/Response$Listener;)V
 
-    if-eqz v0, :cond_0
+    # Create JsonObjectRequest(url, null, listener, errorListener)
+    new-instance v1, Lcom/android/volley/toolbox/JsonObjectRequest;
 
-    .line 300
-    sget-object v0, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->_PatchTag:Ljava/lang/String;
+    const/4 v2, 0x0
 
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
+    invoke-direct {v1, p1, v2, v0, p3}, Lcom/android/volley/toolbox/JsonObjectRequest;-><init>(Ljava/lang/String;Lorg/json/JSONObject;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
 
-    move-result v0
+    # Set retry policy: 10000ms timeout, 2 retries, 2.0f backoff multiplier
+    new-instance v3, Lcom/android/volley/DefaultRetryPolicy;
 
-    invoke-virtual {p1, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    const/16 v2, 0x2710
 
-    move-result-object v0
+    const/4 v0, 0x2
 
-    const-string v1, "flag_"
+    const/high16 v4, 0x40000000    # 2.0f
 
-    .line 301
-    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    invoke-direct {v3, v2, v0, v4}, Lcom/android/volley/DefaultRetryPolicy;-><init>(IIF)V
 
-    move-result v0
+    invoke-virtual {v1, v3}, Lcom/android/volley/toolbox/JsonObjectRequest;->setRetryPolicy(Lcom/android/volley/RetryPolicy;)Lcom/android/volley/Request;
 
-    if-nez v0, :cond_0
+    # Add request to the queue
+    iget-object v0, p0, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->mRequestQueue:Lcom/android/volley/RequestQueue;
 
-    .line 302
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Lcom/android/volley/RequestQueue;->add(Lcom/android/volley/Request;)Lcom/android/volley/Request;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    sget-object v1, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->_PatchTag:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, "flag_"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-object v1, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->_PatchTag:Ljava/lang/String;
-
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    invoke-virtual {p1, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    return-object p1
-
-    :cond_0
-    return-object p1
+    return-void
 .end method
 
+# Legacy performGet kept for internal stub calls.
+# NOTE: BeyondPod backend (rootUrl) is dead; this delegates to performItunesGet.
 .method private performGet(Ljava/lang/String;Ljava/util/Map;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -279,174 +270,34 @@
         }
     .end annotation
 
-    .line 184
-    new-instance v0, Ljava/lang/StringBuilder;
-
+    # Check if URL is already absolute (https://); if not, prepend rootUrl
     if-eqz p1, :cond_0
 
-    const-string v1, "https://"
+    const-string v0, "https://"
 
-    invoke-virtual {p1, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_0
-
-    goto :goto_0
+    if-nez v0, :goto_0
 
     :cond_0
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v2, p0, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->rootUrl:Ljava/lang/String;
+    iget-object v1, p0, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->rootUrl:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     :goto_0
-    invoke-direct {v0, p1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    if-eqz p2, :cond_2
-
-    .line 185
-    invoke-interface {p2}, Ljava/util/Map;->size()I
-
-    move-result p1
-
-    if-lez p1, :cond_2
-
-    const-string p1, "?"
-
-    .line 187
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 190
-    :try_start_0
-    invoke-interface {p2}, Ljava/util/Map;->entrySet()Ljava/util/Set;
-
-    move-result-object p1
-
-    invoke-interface {p1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object p1
-
-    :goto_1
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result p2
-
-    if-eqz p2, :cond_1
-
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object p2
-
-    check-cast p2, Ljava/util/Map$Entry;
-
-    .line 192
-    invoke-interface {p2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/String;
-
-    const-string v2, "UTF8"
-
-    invoke-static {v1, v2}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, "="
-
-    .line 193
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 194
-    invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object p2
-
-    check-cast p2, Ljava/lang/String;
-
-    const-string v1, "UTF8"
-
-    invoke-static {p2, v1}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p2, "&"
-
-    .line 195
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-    :try_end_0
-    .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_1
-
-    .line 202
-    :cond_1
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
-
-    move-result p1
-
-    add-int/lit8 p1, p1, -0x1
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->setLength(I)V
-
-    goto :goto_2
-
-    :catch_0
-    move-exception p1
-
-    .line 200
-    new-instance p2, Lmobi/beyondpod/ui/views/impexp/FeedSearchService$ServiceException;
-
-    const/16 p3, 0x64
-
-    const-string p4, "error encoding parameters"
-
-    invoke-direct {p2, p3, p4, p1}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService$ServiceException;-><init>(ILjava/lang/String;Ljava/lang/Throwable;)V
-
-    throw p2
-
-    .line 205
-    :cond_2
-    :goto_2
-    new-instance p1, Lmobi/beyondpod/ui/views/impexp/FeedSearchService$1;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-direct {p1, p0, p2, p3, p4}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService$1;-><init>(Lmobi/beyondpod/ui/views/impexp/FeedSearchService;Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-
-    .line 222
-    new-instance p2, Lcom/android/volley/DefaultRetryPolicy;
-
-    const/16 p3, 0x1388
-
-    const/4 p4, 0x2
-
-    const/high16 v0, 0x40000000    # 2.0f
-
-    invoke-direct {p2, p3, p4, v0}, Lcom/android/volley/DefaultRetryPolicy;-><init>(IIF)V
-
-    invoke-virtual {p1, p2}, Lcom/android/volley/toolbox/JsonArrayRequest;->setRetryPolicy(Lcom/android/volley/RetryPolicy;)Lcom/android/volley/Request;
-
-    .line 223
-    iget-object p2, p0, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->mRequestQueue:Lcom/android/volley/RequestQueue;
-
-    invoke-virtual {p2, p1}, Lcom/android/volley/RequestQueue;->add(Lcom/android/volley/Request;)Lcom/android/volley/Request;
+    invoke-direct {p0, p1, p3, p4}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->performItunesGet(Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
 
     return-void
 .end method
@@ -548,7 +399,7 @@
 
 # virtual methods
 .method public findByAudioBookCategory(Ljava/lang/String;Ljava/lang/String;IILcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-    .locals 4
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -569,86 +420,12 @@
         }
     .end annotation
 
-    const-string v0, "audiobookcategories"
-
-    const/16 v1, 0x8
-
-    .line 110
-    new-array v1, v1, [Ljava/lang/String;
-
-    const-string v2, "genre"
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    if-nez p1, :cond_0
-
-    const-string p1, "*"
-
-    :cond_0
-    const/4 v2, 0x1
-
-    aput-object p1, v1, v2
-
-    const/4 p1, 0x2
-
-    const-string v2, "language"
-
-    aput-object v2, v1, p1
-
-    const/4 p1, 0x3
-
-    if-nez p2, :cond_1
-
-    const-string p2, "*"
-
-    :cond_1
-    aput-object p2, v1, p1
-
-    const/4 p1, 0x4
-
-    const-string p2, "start"
-
-    aput-object p2, v1, p1
-
-    const/4 p1, 0x5
-
-    mul-int/2addr p3, p4
-
-    .line 111
-    invoke-static {p3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object p2
-
-    aput-object p2, v1, p1
-
-    const/4 p1, 0x6
-
-    const-string p2, "take"
-
-    aput-object p2, v1, p1
-
-    const/4 p1, 0x7
-
-    invoke-static {p4}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object p2
-
-    aput-object p2, v1, p1
-
-    .line 110
-    invoke-direct {p0, v1}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->buildParams([Ljava/lang/String;)Ljava/util/Map;
-
-    move-result-object p1
-
-    invoke-direct {p0, v0, p1, p5, p6}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->queryGetFeeds(Ljava/lang/String;Ljava/util/Map;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-
+    # BeyondPod backend is dead; no-op stub
     return-void
 .end method
 
 .method public findByAudioBookQuery(Ljava/lang/String;IILcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-    .locals 4
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -668,66 +445,12 @@
         }
     .end annotation
 
-    const-string v0, "audiobooksearch"
-
-    const/4 v1, 0x6
-
-    .line 103
-    new-array v1, v1, [Ljava/lang/String;
-
-    const-string v2, "query"
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    const/4 v2, 0x1
-
-    aput-object p1, v1, v2
-
-    const-string p1, "start"
-
-    const/4 v2, 0x2
-
-    aput-object p1, v1, v2
-
-    mul-int/2addr p2, p3
-
-    invoke-static {p2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    const/4 p2, 0x3
-
-    aput-object p1, v1, p2
-
-    const-string p1, "take"
-
-    const/4 p2, 0x4
-
-    aput-object p1, v1, p2
-
-    .line 104
-    invoke-static {p3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    const/4 p2, 0x5
-
-    aput-object p1, v1, p2
-
-    .line 103
-    invoke-direct {p0, v1}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->buildParams([Ljava/lang/String;)Ljava/util/Map;
-
-    move-result-object p1
-
-    invoke-direct {p0, v0, p1, p4, p5}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->queryGetFeeds(Ljava/lang/String;Ljava/util/Map;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-
+    # BeyondPod backend is dead; no-op stub
     return-void
 .end method
 
 .method public findByPopularCategory(Ljava/lang/String;Ljava/lang/String;IILcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-    .locals 4
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -748,81 +471,14 @@
         }
     .end annotation
 
-    const-string v0, "feedcategories"
-
-    const/16 v1, 0x8
-
-    .line 84
-    new-array v1, v1, [Ljava/lang/String;
-
-    const-string v2, "category"
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    if-nez p1, :cond_0
-
-    const-string p1, "*"
-
-    :cond_0
-    const/4 v2, 0x1
-
-    aput-object p1, v1, v2
-
-    const/4 p1, 0x2
-
-    const-string v2, "type"
-
-    aput-object v2, v1, p1
-
-    const/4 p1, 0x3
-
-    aput-object p2, v1, p1
-
-    const/4 p1, 0x4
-
-    const-string p2, "start"
-
-    aput-object p2, v1, p1
-
-    const/4 p1, 0x5
-
-    mul-int/2addr p3, p4
-
-    .line 85
-    invoke-static {p3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object p2
-
-    aput-object p2, v1, p1
-
-    const/4 p1, 0x6
-
-    const-string p2, "take"
-
-    aput-object p2, v1, p1
-
-    const/4 p1, 0x7
-
-    invoke-static {p4}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object p2
-
-    aput-object p2, v1, p1
-
-    .line 84
-    invoke-direct {p0, v1}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->buildParams([Ljava/lang/String;)Ljava/util/Map;
-
-    move-result-object p1
-
-    invoke-direct {p0, v0, p1, p5, p6}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->queryGetFeeds(Ljava/lang/String;Ljava/util/Map;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-
+    # BeyondPod backend is dead; no-op stub
     return-void
 .end method
 
+# findByQuery: Build iTunes Search API URL and call performItunesGet.
+# p1=query, p2=type(ignored), p3=page, p4=pageSize, p5=listener, p6=errorListener
 .method public findByQuery(Ljava/lang/String;Ljava/lang/String;IILcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-    .locals 4
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -843,76 +499,77 @@
         }
     .end annotation
 
-    const-string v0, "feedsearch"
+    # Build: https://itunes.apple.com/search?term=ENCODED&media=podcast&entity=podcast&limit=N&offset=START
+    :try_start_0
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    const/16 v1, 0x8
+    const-string v1, "https://itunes.apple.com/search"
 
-    .line 96
-    new-array v1, v1, [Ljava/lang/String;
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const-string v2, "query"
+    const-string v1, "?term="
 
-    const/4 v3, 0x0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    aput-object v2, v1, v3
+    # URLEncoder.encode(query != null ? query : "", "UTF-8")
+    if-nez p1, :cond_0
 
-    const/4 v2, 0x1
+    const-string p1, ""
 
-    aput-object p1, v1, v2
+    :cond_0
+    const-string v1, "UTF-8"
 
-    const-string p1, "type"
+    invoke-static {p1, v1}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    const/4 v2, 0x2
+    move-result-object v1
 
-    aput-object p1, v1, v2
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/4 p1, 0x3
+    const-string v1, "&media=podcast&entity=podcast"
 
-    aput-object p2, v1, p1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string p1, "start"
+    const-string v1, "&limit="
 
-    const/4 p2, 0x4
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    aput-object p1, v1, p2
+    invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    mul-int/2addr p3, p4
+    const-string v1, "&offset="
 
-    invoke-static {p3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p1
+    # offset = page * pageSize
+    mul-int v1, p3, p4
 
-    const/4 p2, 0x5
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    aput-object p1, v1, p2
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    const-string p1, "take"
+    move-result-object v0
 
-    const/4 p2, 0x6
-
-    aput-object p1, v1, p2
-
-    .line 97
-    invoke-static {p4}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    const/4 p2, 0x7
-
-    aput-object p1, v1, p2
-
-    .line 96
-    invoke-direct {p0, v1}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->buildParams([Ljava/lang/String;)Ljava/util/Map;
-
-    move-result-object p1
-
-    invoke-direct {p0, v0, p1, p5, p6}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->queryGetFeeds(Ljava/lang/String;Ljava/util/Map;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
+    invoke-direct {p0, v0, p5, p6}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->performItunesGet(Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
+    :try_end_0
+    .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0
 
     return-void
+
+    :catch_0
+    move-exception v0
+
+    new-instance v1, Lmobi/beyondpod/ui/views/impexp/FeedSearchService$ServiceException;
+
+    const/16 v2, 0x64
+
+    const-string v3, "error encoding parameters"
+
+    invoke-direct {v1, v2, v3, v0}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService$ServiceException;-><init>(ILjava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v1
 .end method
 
 .method public getAudioBookGenres(Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-    .locals 3
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -930,28 +587,12 @@
         }
     .end annotation
 
-    const-string v0, "audiobookmeta"
-
-    const-string v1, "type"
-
-    const-string v2, "genres"
-
-    .line 150
-    filled-new-array {v1, v2}, [Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {p0, v1}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->buildParams([Ljava/lang/String;)Ljava/util/Map;
-
-    move-result-object v1
-
-    invoke-direct {p0, v0, v1, p1, p2}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->queryGetStrings(Ljava/lang/String;Ljava/util/Map;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-
+    # BeyondPod backend is dead; no-op stub
     return-void
 .end method
 
 .method public getAudioBookLanguages(Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-    .locals 3
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -969,28 +610,12 @@
         }
     .end annotation
 
-    const-string v0, "audiobookmeta"
-
-    const-string v1, "type"
-
-    const-string v2, "languages"
-
-    .line 155
-    filled-new-array {v1, v2}, [Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {p0, v1}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->buildParams([Ljava/lang/String;)Ljava/util/Map;
-
-    move-result-object v1
-
-    invoke-direct {p0, v0, v1, p1, p2}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->queryGetStrings(Ljava/lang/String;Ljava/util/Map;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-
+    # BeyondPod backend is dead; no-op stub
     return-void
 .end method
 
 .method public getPopularCategories(Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-    .locals 3
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1008,28 +633,12 @@
         }
     .end annotation
 
-    const-string v0, "feedcategoriesmeta"
-
-    const-string v1, "type"
-
-    const-string v2, "feed"
-
-    .line 90
-    filled-new-array {v1, v2}, [Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {p0, v1}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->buildParams([Ljava/lang/String;)Ljava/util/Map;
-
-    move-result-object v1
-
-    invoke-direct {p0, v0, v1, p1, p2}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->queryGetStrings(Ljava/lang/String;Ljava/util/Map;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-
+    # BeyondPod backend is dead; no-op stub
     return-void
 .end method
 
 .method public getPublisherFeeds(Ljava/lang/String;Ljava/lang/String;IILcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-    .locals 4
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1050,76 +659,12 @@
         }
     .end annotation
 
-    const-string v0, "publisherFeeds"
-
-    const/16 v1, 0x8
-
-    .line 144
-    new-array v1, v1, [Ljava/lang/String;
-
-    const-string v2, "pid"
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    const/4 v2, 0x1
-
-    aput-object p1, v1, v2
-
-    const-string p1, "type"
-
-    const/4 v2, 0x2
-
-    aput-object p1, v1, v2
-
-    const/4 p1, 0x3
-
-    aput-object p2, v1, p1
-
-    const-string p1, "start"
-
-    const/4 p2, 0x4
-
-    aput-object p1, v1, p2
-
-    mul-int/2addr p3, p4
-
-    invoke-static {p3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    const/4 p2, 0x5
-
-    aput-object p1, v1, p2
-
-    const-string p1, "take"
-
-    const/4 p2, 0x6
-
-    aput-object p1, v1, p2
-
-    .line 145
-    invoke-static {p4}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    const/4 p2, 0x7
-
-    aput-object p1, v1, p2
-
-    .line 144
-    invoke-direct {p0, v1}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->buildParams([Ljava/lang/String;)Ljava/util/Map;
-
-    move-result-object p1
-
-    invoke-direct {p0, v0, p1, p5, p6}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->queryGetFeeds(Ljava/lang/String;Ljava/util/Map;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-
+    # BeyondPod backend is dead; no-op stub
     return-void
 .end method
 
 .method public getPublishers(IIILcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-    .locals 4
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(III",
@@ -1137,70 +682,12 @@
         }
     .end annotation
 
-    const-string v0, "feedPublishers"
-
-    const/4 v1, 0x6
-
-    .line 137
-    new-array v1, v1, [Ljava/lang/String;
-
-    const-string v2, "type"
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    const/4 v2, 0x1
-
-    aput-object p1, v1, v2
-
-    const-string p1, "start"
-
-    const/4 v2, 0x2
-
-    aput-object p1, v1, v2
-
-    mul-int/2addr p2, p3
-
-    invoke-static {p2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    const/4 p2, 0x3
-
-    aput-object p1, v1, p2
-
-    const-string p1, "take"
-
-    const/4 p2, 0x4
-
-    aput-object p1, v1, p2
-
-    .line 138
-    invoke-static {p3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    const/4 p2, 0x5
-
-    aput-object p1, v1, p2
-
-    .line 137
-    invoke-direct {p0, v1}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->buildParams([Ljava/lang/String;)Ljava/util/Map;
-
-    move-result-object p1
-
-    invoke-direct {p0, v0, p1, p4, p5}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->queryGetFeeds(Ljava/lang/String;Ljava/util/Map;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-
+    # BeyondPod backend is dead; no-op stub
     return-void
 .end method
 
 .method public getRecommendedFeeds(Ljava/lang/String;Ljava/lang/String;IILcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-    .locals 4
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1221,76 +708,12 @@
         }
     .end annotation
 
-    const-string v0, "recommendedFeeds"
-
-    const/16 v1, 0x8
-
-    .line 124
-    new-array v1, v1, [Ljava/lang/String;
-
-    const-string v2, "userfeeds"
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    const/4 v2, 0x1
-
-    aput-object p1, v1, v2
-
-    const-string p1, "type"
-
-    const/4 v2, 0x2
-
-    aput-object p1, v1, v2
-
-    const/4 p1, 0x3
-
-    aput-object p2, v1, p1
-
-    const-string p1, "start"
-
-    const/4 p2, 0x4
-
-    aput-object p1, v1, p2
-
-    mul-int/2addr p3, p4
-
-    invoke-static {p3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    const/4 p2, 0x5
-
-    aput-object p1, v1, p2
-
-    const-string p1, "take"
-
-    const/4 p2, 0x6
-
-    aput-object p1, v1, p2
-
-    .line 125
-    invoke-static {p4}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    const/4 p2, 0x7
-
-    aput-object p1, v1, p2
-
-    .line 124
-    invoke-direct {p0, v1}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->buildParams([Ljava/lang/String;)Ljava/util/Map;
-
-    move-result-object p1
-
-    invoke-direct {p0, v0, p1, p5, p6}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->queryGetFeeds(Ljava/lang/String;Ljava/util/Map;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-
+    # BeyondPod backend is dead; no-op stub
     return-void
 .end method
 
 .method public getSampleContent(Ljava/lang/String;ILcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-    .locals 4
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1310,50 +733,12 @@
         }
     .end annotation
 
-    const-string v0, "sampleContent"
-
-    const/4 v1, 0x4
-
-    .line 131
-    new-array v1, v1, [Ljava/lang/String;
-
-    const-string v2, "cids"
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    const/4 v2, 0x1
-
-    aput-object p1, v1, v2
-
-    const-string p1, "take"
-
-    const/4 v2, 0x2
-
-    aput-object p1, v1, v2
-
-    .line 132
-    invoke-static {p2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    const/4 p2, 0x3
-
-    aput-object p1, v1, p2
-
-    invoke-direct {p0, v1}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->buildParams([Ljava/lang/String;)Ljava/util/Map;
-
-    move-result-object p1
-
-    .line 131
-    invoke-direct {p0, v0, p1, p3, p4}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->queryGetFeeds(Ljava/lang/String;Ljava/util/Map;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-
+    # BeyondPod backend is dead; no-op stub
     return-void
 .end method
 
 .method public getTrendingEpisodes(Ljava/lang/String;Ljava/lang/String;IILcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-    .locals 4
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1374,76 +759,20 @@
         }
     .end annotation
 
-    const-string v0, "trendingEpisodes"
-
-    const/16 v1, 0x8
-
-    .line 117
-    new-array v1, v1, [Ljava/lang/String;
-
-    const-string v2, "userfeeds"
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    const/4 v2, 0x1
-
-    aput-object p1, v1, v2
-
-    const-string p1, "type"
-
-    const/4 v2, 0x2
-
-    aput-object p1, v1, v2
-
-    const/4 p1, 0x3
-
-    aput-object p2, v1, p1
-
-    const-string p1, "start"
-
-    const/4 p2, 0x4
-
-    aput-object p1, v1, p2
-
-    mul-int/2addr p3, p4
-
-    invoke-static {p3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    const/4 p2, 0x5
-
-    aput-object p1, v1, p2
-
-    const-string p1, "take"
-
-    const/4 p2, 0x6
-
-    aput-object p1, v1, p2
-
-    .line 118
-    invoke-static {p4}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    const/4 p2, 0x7
-
-    aput-object p1, v1, p2
-
-    .line 117
-    invoke-direct {p0, v1}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->buildParams([Ljava/lang/String;)Ljava/util/Map;
-
-    move-result-object p1
-
-    invoke-direct {p0, v0, p1, p5, p6}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->queryGetFeeds(Ljava/lang/String;Ljava/util/Map;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-
+    # BeyondPod backend is dead; no-op stub
     return-void
 .end method
 
+# parseJSONResults: maps iTunes Search API fields to FeedSearchResult.
+# iTunes field mapping:
+#   trackName     -> Title (arg 0)
+#   description   -> Description (arg 1)
+#   feedUrl       -> Link / RSS URL (arg 2)
+#   artworkUrl600 -> ImageUrl (fallback artworkUrl100) (arg 3)
+#   kind          -> type (arg 4)
+#   OriginatingFeed, EpisodeUrl, Language, TotalTime, pubDate -> null
 .method public parseJSONResults(Lorg/json/JSONArray;)Ljava/util/List;
-    .locals 20
+    .locals 14
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1461,334 +790,205 @@
         }
     .end annotation
 
-    move-object/from16 v1, p1
+    # Register layout (.locals 14):
+    #   v0=ArrayList  v1=length  v2=counter  v3=JSONObject→FeedSearchResult
+    #   v4=title  v5=desc  v6=link  v7=imageUrl  v8=type
+    #   v9=temp(key/bool)  v10-v13=null trailing constructor args
+    #   p0=v14(this)  p1=v15(JSONArray) — all within v0-v15 for non-range invokes
+    #   Constructor: invoke-direct/range {v3..v13} = instance + 10 String args
 
     .line 257
     :try_start_0
-    new-instance v2, Ljava/util/ArrayList;
+    new-instance v0, Ljava/util/ArrayList;
 
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 258
-    invoke-virtual/range {p1 .. p1}, Lorg/json/JSONArray;->length()I
+    if-eqz p1, :cond_end
 
-    move-result v3
+    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
 
-    if-nez v3, :cond_0
+    move-result v1
 
-    return-object v2
+    if-eqz v1, :cond_end
 
-    :cond_0
-    if-eqz v1, :cond_b
+    const/4 v2, 0x0
 
-    .line 265
-    invoke-virtual/range {p1 .. p1}, Lorg/json/JSONArray;->length()I
-
-    move-result v3
-
-    const/4 v4, 0x0
-
-    :goto_0
-    if-ge v4, v3, :cond_b
+    :loop_start
+    if-ge v2, v1, :cond_end
 
     .line 268
-    invoke-virtual {v1, v4}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+    invoke-virtual {p1, v2}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
+
+    move-result-object v3
+
+    # --- Title: trackName ---
+    const-string v9, "trackName"
+
+    invoke-virtual {v3, v9}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
+
+    move-result v9
+
+    if-nez v9, :title_null
+
+    const-string v9, "trackName"
+
+    invoke-virtual {v3, v9}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    goto :got_title
+
+    :title_null
+    const/4 v4, 0x0
+
+    :got_title
+
+    # --- Description ---
+    const-string v9, "description"
+
+    invoke-virtual {v3, v9}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
+
+    move-result v9
+
+    if-nez v9, :desc_null
+
+    const-string v9, "description"
+
+    invoke-virtual {v3, v9}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 270
-    new-instance v15, Lmobi/beyondpod/ui/views/impexp/FeedSearchResult;
+    goto :got_desc
 
-    const-string v6, "Title"
+    :desc_null
+    const/4 v5, 0x0
 
-    invoke-virtual {v5, v6}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
+    :got_desc
 
-    move-result v6
+    # --- Link: feedUrl ---
+    const-string v9, "feedUrl"
 
+    invoke-virtual {v3, v9}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
+
+    move-result v9
+
+    if-nez v9, :link_null
+
+    const-string v9, "feedUrl"
+
+    invoke-virtual {v3, v9}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
+
+    goto :got_link
+
+    :link_null
+    const/4 v6, 0x0
+
+    :got_link
+
+    # --- ImageUrl: artworkUrl600, fallback artworkUrl100 ---
+    const-string v9, "artworkUrl600"
+
+    invoke-virtual {v3, v9}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
+
+    move-result v9
+
+    if-nez v9, :try_artwork100
+
+    const-string v9, "artworkUrl600"
+
+    invoke-virtual {v3, v9}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    goto :got_image
+
+    :try_artwork100
+    const-string v9, "artworkUrl100"
+
+    invoke-virtual {v3, v9}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
+
+    move-result v9
+
+    if-nez v9, :no_image
+
+    const-string v9, "artworkUrl100"
+
+    invoke-virtual {v3, v9}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    goto :got_image
+
+    :no_image
     const/4 v7, 0x0
 
-    if-eqz v6, :cond_1
+    :got_image
 
-    move-object v8, v7
+    # --- type: kind ---
+    const-string v9, "kind"
 
-    goto :goto_1
+    invoke-virtual {v3, v9}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
 
-    :cond_1
-    const-string v6, "Title"
+    move-result v9
 
-    invoke-virtual {v5, v6}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+    if-nez v9, :type_null
 
-    move-result-object v6
+    const-string v9, "kind"
 
-    move-object v8, v6
+    invoke-virtual {v3, v9}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
-    :goto_1
-    const-string v6, "Description"
+    move-result-object v8
 
-    .line 271
-    invoke-virtual {v5, v6}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
+    goto :got_type
 
-    move-result v6
+    :type_null
+    const/4 v8, 0x0
 
-    if-eqz v6, :cond_2
+    :got_type
 
-    move-object v9, v7
+    # Build FeedSearchResult(title, desc, link, imageUrl, type, null×5)
+    # v4=title v5=desc v6=link v7=imageUrl v8=type
+    # Overwrite v3 (JSONObject no longer needed) with new instance
+    # Set v9-v13 to null for the 5 trailing constructor args
 
-    goto :goto_2
+    const/4 v9, 0x0
 
-    :cond_2
-    const-string v6, "Description"
+    const/4 v10, 0x0
 
-    invoke-virtual {v5, v6}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+    const/4 v11, 0x0
 
-    move-result-object v6
+    const/4 v12, 0x0
 
-    move-object v9, v6
+    const/4 v13, 0x0
 
-    :goto_2
-    const-string v6, "Link"
+    new-instance v3, Lmobi/beyondpod/ui/views/impexp/FeedSearchResult;
 
-    .line 272
-    invoke-virtual {v5, v6}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
+    invoke-direct/range {v3 .. v13}, Lmobi/beyondpod/ui/views/impexp/FeedSearchResult;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    move-result v6
+    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    if-eqz v6, :cond_3
+    add-int/lit8 v2, v2, 0x1
 
-    move-object v10, v7
+    goto :loop_start
 
-    goto :goto_3
-
-    :cond_3
-    const-string v6, "Link"
-
-    invoke-virtual {v5, v6}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
-    move-object v10, v6
-
-    :goto_3
-    const-string v6, "ImageUrl"
-
-    .line 273
-    invoke-virtual {v5, v6}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_4
-
-    move-object/from16 v14, p0
-
-    move-object v11, v7
-
-    goto :goto_4
-
-    :cond_4
-    const-string v6, "ImageUrl"
-
-    invoke-virtual {v5, v6}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
-    move-object/from16 v14, p0
-
-    invoke-direct {v14, v6}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->patchImageUrl(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
-    move-object v11, v6
-
-    :goto_4
-    const-string v6, "type"
-
-    .line 274
-    invoke-virtual {v5, v6}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_5
-
-    move-object v12, v7
-
-    goto :goto_5
-
-    :cond_5
-    const-string v6, "type"
-
-    invoke-virtual {v5, v6}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
-    move-object v12, v6
-
-    :goto_5
-    const-string v6, "OriginatingFeed"
-
-    .line 275
-    invoke-virtual {v5, v6}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_6
-
-    move-object v13, v7
-
-    goto :goto_6
-
-    :cond_6
-    const-string v6, "OriginatingFeed"
-
-    invoke-virtual {v5, v6}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
-    move-object v13, v6
-
-    :goto_6
-    const-string v6, "EpisodeUrl"
-
-    .line 276
-    invoke-virtual {v5, v6}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_7
-
-    move-object/from16 v16, v7
-
-    goto :goto_7
-
-    :cond_7
-    const-string v6, "EpisodeUrl"
-
-    invoke-virtual {v5, v6}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
-    move-object/from16 v16, v6
-
-    :goto_7
-    const-string v6, "Language"
-
-    .line 277
-    invoke-virtual {v5, v6}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_8
-
-    move-object/from16 v17, v7
-
-    goto :goto_8
-
-    :cond_8
-    const-string v6, "Language"
-
-    invoke-virtual {v5, v6}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
-    move-object/from16 v17, v6
-
-    :goto_8
-    const-string v6, "TotalTime"
-
-    .line 278
-    invoke-virtual {v5, v6}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_9
-
-    move-object/from16 v18, v7
-
-    goto :goto_9
-
-    :cond_9
-    const-string v6, "TotalTime"
-
-    invoke-virtual {v5, v6}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
-    move-object/from16 v18, v6
-
-    :goto_9
-    const-string v6, "pubDate"
-
-    .line 279
-    invoke-virtual {v5, v6}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_a
-
-    move-object v5, v7
-
-    goto :goto_a
-
-    :cond_a
-    const-string v6, "pubDate"
-
-    invoke-virtual {v5, v6}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v5
-
-    :goto_a
-    move-object v6, v15
-
-    move-object v7, v8
-
-    move-object v8, v9
-
-    move-object v9, v10
-
-    move-object v10, v11
-
-    move-object v11, v12
-
-    move-object v12, v13
-
-    move-object/from16 v13, v16
-
-    move-object/from16 v14, v17
-
-    move-object v1, v15
-
-    move-object/from16 v15, v18
-
-    move-object/from16 v16, v5
-
-    invoke-direct/range {v6 .. v16}, Lmobi/beyondpod/ui/views/impexp/FeedSearchResult;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 270
-    invoke-interface {v2, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    :cond_end
+    return-object v0
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    add-int/lit8 v4, v4, 0x1
-
-    move-object/from16 v1, p1
-
-    goto/16 :goto_0
-
-    :cond_b
-    return-object v2
 
     :catch_0
     move-exception v0
 
-    move-object v1, v0
-
     .line 287
-    new-instance v2, Lmobi/beyondpod/ui/views/impexp/FeedSearchService$ServiceException;
+    new-instance v1, Lmobi/beyondpod/ui/views/impexp/FeedSearchService$ServiceException;
 
-    const/16 v3, -0x64
+    const/16 v2, -0x64
 
-    const-string v4, "Service Error"
+    const-string v3, "Service Error"
 
-    invoke-direct {v2, v3, v4, v1}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService$ServiceException;-><init>(ILjava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {v1, v2, v3, v0}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService$ServiceException;-><init>(ILjava/lang/String;Ljava/lang/Throwable;)V
 
-    throw v2
+    throw v1
 .end method

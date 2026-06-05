@@ -1,11 +1,13 @@
 .class Lmobi/beyondpod/ui/views/impexp/FeedSearchService$1;
-.super Lcom/android/volley/toolbox/JsonArrayRequest;
+.super Ljava/lang/Object;
 .source "FeedSearchService.java"
 
+# implements Response.Listener<JSONObject> - unwraps iTunes "results" array
+# and delivers it to the original JSONArray listener
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->performGet(Ljava/lang/String;Ljava/util/Map;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
+    value = Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->performItunesGet(Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -13,96 +15,68 @@
     name = null
 .end annotation
 
+# interfaces
+.implements Lcom/android/volley/Response$Listener;
+
 
 # instance fields
+
+# reference to the outer FeedSearchService instance (unused but kept for symmetry)
 .field final synthetic this$0:Lmobi/beyondpod/ui/views/impexp/FeedSearchService;
+
+# the original JSONArray listener to forward results to
+.field final synthetic val$listener:Lcom/android/volley/Response$Listener;
 
 
 # direct methods
-.method constructor <init>(Lmobi/beyondpod/ui/views/impexp/FeedSearchService;Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
+.method constructor <init>(Lmobi/beyondpod/ui/views/impexp/FeedSearchService;Lcom/android/volley/Response$Listener;)V
     .locals 0
 
-    .line 206
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     iput-object p1, p0, Lmobi/beyondpod/ui/views/impexp/FeedSearchService$1;->this$0:Lmobi/beyondpod/ui/views/impexp/FeedSearchService;
 
-    invoke-direct {p0, p2, p3, p4}, Lcom/android/volley/toolbox/JsonArrayRequest;-><init>(Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
+    iput-object p2, p0, Lmobi/beyondpod/ui/views/impexp/FeedSearchService$1;->val$listener:Lcom/android/volley/Response$Listener;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public getHeaders()Ljava/util/Map;
+.method public onResponse(Ljava/lang/Object;)V
     .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/android/volley/AuthFailureError;
-        }
-    .end annotation
+    # Cast the Object parameter to JSONObject
+    check-cast p1, Lorg/json/JSONObject;
 
-    .line 209
-    invoke-super {p0}, Lcom/android/volley/toolbox/JsonArrayRequest;->getHeaders()Ljava/util/Map;
+    :try_start_0
+    # Extract the "results" JSONArray from the iTunes response object
+    const-string v0, "results"
 
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    .line 210
-    invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v1
 
-    invoke-interface {v0, v1}, Ljava/util/Map;->equals(Ljava/lang/Object;)Z
+    # Forward the JSONArray to the original listener
+    iget-object v2, p0, Lmobi/beyondpod/ui/views/impexp/FeedSearchService$1;->val$listener:Lcom/android/volley/Response$Listener;
 
-    move-result v1
+    invoke-interface {v2, v1}, Lcom/android/volley/Response$Listener;->onResponse(Ljava/lang/Object;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    if-eqz v1, :cond_1
+    return-void
 
-    .line 211
-    :cond_0
-    new-instance v0, Ljava/util/HashMap;
+    :catch_0
+    # On any parse failure deliver an empty JSONArray rather than crashing
+    move-exception v0
 
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+    new-instance v1, Lorg/json/JSONArray;
 
-    :cond_1
-    const-string v1, "beyondpod-client-version"
+    invoke-direct {v1}, Lorg/json/JSONArray;-><init>()V
 
-    const/4 v2, 0x1
+    iget-object v2, p0, Lmobi/beyondpod/ui/views/impexp/FeedSearchService$1;->val$listener:Lcom/android/volley/Response$Listener;
 
-    .line 214
-    invoke-static {v2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+    invoke-interface {v2, v1}, Lcom/android/volley/Response$Listener;->onResponse(Ljava/lang/Object;)V
 
-    move-result-object v2
-
-    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const-string v1, "beyondpod-software-version"
-
-    .line 215
-    iget-object v2, p0, Lmobi/beyondpod/ui/views/impexp/FeedSearchService$1;->this$0:Lmobi/beyondpod/ui/views/impexp/FeedSearchService;
-
-    invoke-static {v2}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->access$000(Lmobi/beyondpod/ui/views/impexp/FeedSearchService;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const-string v1, "Accept"
-
-    const-string v2, "application/json"
-
-    .line 216
-    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    return-object v0
+    return-void
 .end method

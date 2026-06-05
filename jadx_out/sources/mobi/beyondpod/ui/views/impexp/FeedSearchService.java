@@ -1,20 +1,14 @@
 package mobi.beyondpod.ui.views.impexp;
 
-import com.android.volley.AuthFailureError;
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
-import com.android.volley.toolbox.JsonArrayRequest;
-import com.google.android.gms.actions.SearchIntents;
-import io.fabric.sdk.android.services.network.UrlUtils;
+import com.android.volley.toolbox.JsonObjectRequest;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import mobi.beyondpod.BeyondPodApplication;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -22,8 +16,8 @@ import org.json.JSONObject;
 /* loaded from: classes.dex */
 public class FeedSearchService {
     private static final int CLIENT_VERSION = 1;
-    static String _PatchTag = "http://az412796.vo.msecnd.net/regs/";
-    static String _PatchTagPubs = "http://az412796.vo.msecnd.net/pubs/";
+    // iTunes Search API base URL
+    private static final String ITUNES_SEARCH_URL = "https://itunes.apple.com/search";
     private RequestFilter _requestFilter = new RequestFilter();
     private RequestQueue mRequestQueue;
     private String rootUrl;
@@ -65,79 +59,79 @@ public class FeedSearchService {
         this.mRequestQueue = requestQueue;
     }
 
-    public void findByPopularCategory(String str, String str2, int i, int i2, Response.Listener<JSONArray> listener, Response.ErrorListener errorListener) throws ServiceException {
-        String[] strArr = new String[8];
-        strArr[0] = "category";
-        if (str == null) {
-            str = "*";
-        }
-        strArr[1] = str;
-        strArr[2] = "type";
-        strArr[3] = str2;
-        strArr[4] = "start";
-        strArr[5] = String.valueOf(i * i2);
-        strArr[6] = "take";
-        strArr[7] = String.valueOf(i2);
-        queryGetFeeds("feedcategories", buildParams(strArr), listener, errorListener);
-    }
-
-    public void getPopularCategories(Response.Listener<JSONArray> listener, Response.ErrorListener errorListener) throws ServiceException {
-        queryGetStrings("feedcategoriesmeta", buildParams("type", "feed"), listener, errorListener);
-    }
-
+    /**
+     * Search for podcasts using the iTunes Search API.
+     * Parameters str2 (type) is ignored because iTunes uses media=podcast.
+     */
     public void findByQuery(String str, String str2, int i, int i2, Response.Listener<JSONArray> listener, Response.ErrorListener errorListener) throws ServiceException {
-        queryGetFeeds("feedsearch", buildParams(SearchIntents.EXTRA_QUERY, str, "type", str2, "start", String.valueOf(i * i2), "take", String.valueOf(i2)), listener, errorListener);
+        try {
+            StringBuilder sb = new StringBuilder(ITUNES_SEARCH_URL);
+            sb.append("?term=");
+            sb.append(URLEncoder.encode(str != null ? str : "", "UTF-8"));
+            sb.append("&media=podcast&entity=podcast");
+            sb.append("&limit=").append(i2);
+            sb.append("&offset=").append(i * i2);
+            performItunesGet(sb.toString(), listener, errorListener);
+        } catch (UnsupportedEncodingException e) {
+            throw new ServiceException(100, "error encoding parameters", e);
+        }
     }
 
+    // --- Legacy BeyondPod methods (dead backend) kept as no-ops / stubs ---
+
+    /** @deprecated BeyondPod backend is dead; does nothing. */
+    public void findByPopularCategory(String str, String str2, int i, int i2, Response.Listener<JSONArray> listener, Response.ErrorListener errorListener) throws ServiceException {
+        // BeyondPod backend is offline; no-op
+    }
+
+    /** @deprecated BeyondPod backend is dead; does nothing. */
+    public void getPopularCategories(Response.Listener<JSONArray> listener, Response.ErrorListener errorListener) throws ServiceException {
+        // BeyondPod backend is offline; no-op
+    }
+
+    /** @deprecated BeyondPod backend is dead; does nothing. */
     public void findByAudioBookQuery(String str, int i, int i2, Response.Listener<JSONArray> listener, Response.ErrorListener errorListener) throws ServiceException {
-        queryGetFeeds("audiobooksearch", buildParams(SearchIntents.EXTRA_QUERY, str, "start", String.valueOf(i * i2), "take", String.valueOf(i2)), listener, errorListener);
+        // BeyondPod backend is offline; no-op
     }
 
+    /** @deprecated BeyondPod backend is dead; does nothing. */
     public void findByAudioBookCategory(String str, String str2, int i, int i2, Response.Listener<JSONArray> listener, Response.ErrorListener errorListener) throws ServiceException {
-        String[] strArr = new String[8];
-        strArr[0] = "genre";
-        if (str == null) {
-            str = "*";
-        }
-        strArr[1] = str;
-        strArr[2] = "language";
-        if (str2 == null) {
-            str2 = "*";
-        }
-        strArr[3] = str2;
-        strArr[4] = "start";
-        strArr[5] = String.valueOf(i * i2);
-        strArr[6] = "take";
-        strArr[7] = String.valueOf(i2);
-        queryGetFeeds("audiobookcategories", buildParams(strArr), listener, errorListener);
+        // BeyondPod backend is offline; no-op
     }
 
+    /** @deprecated BeyondPod backend is dead; does nothing. */
     public void getTrendingEpisodes(String str, String str2, int i, int i2, Response.Listener<JSONArray> listener, Response.ErrorListener errorListener) throws ServiceException {
-        queryGetFeeds("trendingEpisodes", buildParams("userfeeds", str, "type", str2, "start", String.valueOf(i * i2), "take", String.valueOf(i2)), listener, errorListener);
+        // BeyondPod backend is offline; no-op
     }
 
+    /** @deprecated BeyondPod backend is dead; does nothing. */
     public void getRecommendedFeeds(String str, String str2, int i, int i2, Response.Listener<JSONArray> listener, Response.ErrorListener errorListener) throws ServiceException {
-        queryGetFeeds("recommendedFeeds", buildParams("userfeeds", str, "type", str2, "start", String.valueOf(i * i2), "take", String.valueOf(i2)), listener, errorListener);
+        // BeyondPod backend is offline; no-op
     }
 
+    /** @deprecated BeyondPod backend is dead; does nothing. */
     public void getSampleContent(String str, int i, Response.Listener<JSONArray> listener, Response.ErrorListener errorListener) throws ServiceException {
-        queryGetFeeds("sampleContent", buildParams("cids", str, "take", String.valueOf(i)), listener, errorListener);
+        // BeyondPod backend is offline; no-op
     }
 
+    /** @deprecated BeyondPod backend is dead; does nothing. */
     public void getPublishers(int i, int i2, int i3, Response.Listener<JSONArray> listener, Response.ErrorListener errorListener) throws ServiceException {
-        queryGetFeeds("feedPublishers", buildParams("type", String.valueOf(i), "start", String.valueOf(i2 * i3), "take", String.valueOf(i3)), listener, errorListener);
+        // BeyondPod backend is offline; no-op
     }
 
+    /** @deprecated BeyondPod backend is dead; does nothing. */
     public void getPublisherFeeds(String str, String str2, int i, int i2, Response.Listener<JSONArray> listener, Response.ErrorListener errorListener) throws ServiceException {
-        queryGetFeeds("publisherFeeds", buildParams("pid", str, "type", str2, "start", String.valueOf(i * i2), "take", String.valueOf(i2)), listener, errorListener);
+        // BeyondPod backend is offline; no-op
     }
 
+    /** @deprecated BeyondPod backend is dead; does nothing. */
     public void getAudioBookGenres(Response.Listener<JSONArray> listener, Response.ErrorListener errorListener) throws ServiceException {
-        queryGetStrings("audiobookmeta", buildParams("type", "genres"), listener, errorListener);
+        // BeyondPod backend is offline; no-op
     }
 
+    /** @deprecated BeyondPod backend is dead; does nothing. */
     public void getAudioBookLanguages(Response.Listener<JSONArray> listener, Response.ErrorListener errorListener) throws ServiceException {
-        queryGetStrings("audiobookmeta", buildParams("type", "languages"), listener, errorListener);
+        // BeyondPod backend is offline; no-op
     }
 
     /* loaded from: classes.dex */
@@ -151,93 +145,98 @@ public class FeedSearchService {
         }
     }
 
-    private Map<String, String> buildParams(String... strArr) {
-        HashMap hashMap = new HashMap();
-        if (strArr != null) {
-            int length = strArr.length;
-            for (int i = 0; i < length; i += 2) {
-                hashMap.put(strArr[i], strArr[i + 1]);
-            }
-        }
-        return hashMap;
+    /**
+     * Performs a GET to the iTunes Search API endpoint.
+     * The iTunes response is a JSONObject with a "results" JSONArray inside.
+     * This method unwraps the "results" array and delivers it to the listener.
+     */
+    private void performItunesGet(String url, final Response.Listener<JSONArray> listener, Response.ErrorListener errorListener) {
+        JsonObjectRequest request = new JsonObjectRequest(url, null,
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        try {
+                            JSONArray results = response.getJSONArray("results");
+                            listener.onResponse(results);
+                        } catch (Exception e) {
+                            // Return empty array on parse failure rather than crashing
+                            listener.onResponse(new JSONArray());
+                        }
+                    }
+                },
+                errorListener);
+        request.setRetryPolicy(new DefaultRetryPolicy(10000, 2, 2.0f));
+        this.mRequestQueue.add(request);
     }
 
-    private void performGet(String str, Map<String, String> map, Response.Listener<JSONArray> listener, Response.ErrorListener errorListener) throws ServiceException {
+    /**
+     * Legacy performGet kept for any remaining internal calls.
+     * NOTE: The BeyondPod backend (rootUrl) is dead; this only functions for
+     * fully-qualified https:// URLs.
+     *
+     * @deprecated Use performItunesGet for iTunes API calls.
+     */
+    private void performGet(String str, Response.Listener<JSONArray> listener, Response.ErrorListener errorListener) throws ServiceException {
         if (str == null || !str.startsWith("https://")) {
             str = this.rootUrl + str;
         }
-        StringBuilder sb = new StringBuilder(str);
-        if (map != null && map.size() > 0) {
-            sb.append("?");
-            try {
-                for (Map.Entry<String, String> entry : map.entrySet()) {
-                    sb.append(URLEncoder.encode(entry.getKey(), UrlUtils.UTF8));
-                    sb.append("=");
-                    sb.append(URLEncoder.encode(entry.getValue(), UrlUtils.UTF8));
-                    sb.append("&");
-                }
-                sb.setLength(sb.length() - 1);
-            } catch (UnsupportedEncodingException e) {
-                throw new ServiceException(100, "error encoding parameters", e);
-            }
-        }
-        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(sb.toString(), listener, errorListener) { // from class: mobi.beyondpod.ui.views.impexp.FeedSearchService.1
-            @Override // com.android.volley.Request
-            public Map<String, String> getHeaders() throws AuthFailureError {
-                Map<String, String> headers = super.getHeaders();
-                if (headers == null || headers.equals(Collections.emptyMap())) {
-                    headers = new HashMap<>();
-                }
-                headers.put("beyondpod-client-version", String.valueOf(1));
-                headers.put("beyondpod-software-version", FeedSearchService.this.getSoftwareVersion());
-                headers.put("Accept", "application/json");
-                return headers;
-            }
-        };
-        jsonArrayRequest.setRetryPolicy(new DefaultRetryPolicy(5000, 2, 2.0f));
-        this.mRequestQueue.add(jsonArrayRequest);
+        performItunesGet(str, listener, errorListener);
     }
 
-    private void queryGetStrings(String str, Map<String, String> map, Response.Listener<JSONArray> listener, Response.ErrorListener errorListener) throws ServiceException {
-        try {
-            performGet(str, map, listener, errorListener);
-        } catch (Exception e) {
-            throw new ServiceException(-100, "Service Error", e);
-        }
-    }
-
-    private void queryGetFeeds(String str, Map<String, String> map, Response.Listener<JSONArray> listener, Response.ErrorListener errorListener) throws ServiceException {
-        try {
-            performGet(str, map, listener, errorListener);
-        } catch (Exception e) {
-            throw new ServiceException(-100, "Service Error", e);
-        }
-    }
-
+    /**
+     * Parses iTunes Search API results into FeedSearchResult objects.
+     *
+     * iTunes field mapping:
+     *   trackName        -> Title
+     *   description      -> Description (often absent; falls back to null)
+     *   feedUrl          -> Link (RSS URL)
+     *   artworkUrl600    -> ImageUrl (fallback: artworkUrl100)
+     *   kind             -> type
+     *   OriginatingFeed, EpisodeUrl, Language, TotalTime, pubDate -> null
+     */
     public List<FeedSearchResult> parseJSONResults(JSONArray jSONArray) throws ServiceException {
-        JSONArray jSONArray2 = jSONArray;
         try {
-            ArrayList arrayList = new ArrayList();
-            if (jSONArray.length() != 0 && jSONArray2 != null) {
-                int length = jSONArray.length();
-                int i = 0;
-                while (i < length) {
-                    JSONObject jSONObject = jSONArray2.getJSONObject(i);
-                    arrayList.add(new FeedSearchResult(jSONObject.isNull("Title") ? null : jSONObject.getString("Title"), jSONObject.isNull("Description") ? null : jSONObject.getString("Description"), jSONObject.isNull("Link") ? null : jSONObject.getString("Link"), jSONObject.isNull("ImageUrl") ? null : patchImageUrl(jSONObject.getString("ImageUrl")), jSONObject.isNull("type") ? null : jSONObject.getString("type"), jSONObject.isNull("OriginatingFeed") ? null : jSONObject.getString("OriginatingFeed"), jSONObject.isNull("EpisodeUrl") ? null : jSONObject.getString("EpisodeUrl"), jSONObject.isNull("Language") ? null : jSONObject.getString("Language"), jSONObject.isNull("TotalTime") ? null : jSONObject.getString("TotalTime"), jSONObject.isNull("pubDate") ? null : jSONObject.getString("pubDate")));
-                    i++;
-                    jSONArray2 = jSONArray;
+            ArrayList<FeedSearchResult> arrayList = new ArrayList<>();
+            if (jSONArray == null || jSONArray.length() == 0) {
+                return arrayList;
+            }
+            int length = jSONArray.length();
+            for (int i = 0; i < length; i++) {
+                JSONObject obj = jSONArray.getJSONObject(i);
+
+                // Title
+                String title = obj.isNull("trackName") ? null : obj.getString("trackName");
+
+                // Description (iTunes often omits this field)
+                String description = obj.isNull("description") ? null : obj.getString("description");
+
+                // Link = RSS feed URL
+                String link = obj.isNull("feedUrl") ? null : obj.getString("feedUrl");
+
+                // ImageUrl: prefer artworkUrl600, fall back to artworkUrl100
+                String imageUrl = null;
+                if (!obj.isNull("artworkUrl600")) {
+                    imageUrl = obj.getString("artworkUrl600");
+                } else if (!obj.isNull("artworkUrl100")) {
+                    imageUrl = obj.getString("artworkUrl100");
                 }
+
+                // type
+                String type = obj.isNull("kind") ? null : obj.getString("kind");
+
+                // Fields iTunes does not provide
+                String originatingFeed = null;
+                String episodeUrl = null;
+                String language = null;
+                String totalTime = null;
+                String pubDate = null;
+
+                arrayList.add(new FeedSearchResult(title, description, link, imageUrl, type,
+                        originatingFeed, episodeUrl, language, totalTime, pubDate));
             }
             return arrayList;
         } catch (Exception e) {
             throw new ServiceException(-100, "Service Error", e);
         }
-    }
-
-    private String patchImageUrl(String str) {
-        if (!str.startsWith(_PatchTag) || str.substring(_PatchTag.length()).startsWith("flag_")) {
-            return str;
-        }
-        return _PatchTag + "flag_" + str.substring(_PatchTag.length());
     }
 }

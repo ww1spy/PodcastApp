@@ -573,7 +573,26 @@
     .line 342
     :cond_9
     :goto_6
-    invoke-static {}, Lmobi/beyondpod/downloadengine/DownloadEngineNotificationManager;->access$2400()Ljava/lang/String;
+    # Build informative error message: "N feed(s) failed to update. Tap for details."
+    invoke-static {}, Lmobi/beyondpod/downloadengine/RssFeedUpdateManager;->feedsFailedCount()I
+
+    move-result v5
+
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    const-string v5, " feed(s) failed to update. Tap for details."
+
+    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 

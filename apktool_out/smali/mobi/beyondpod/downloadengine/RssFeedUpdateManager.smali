@@ -258,7 +258,7 @@
 .end method
 
 .method private static doNextFeed(Z)V
-    .locals 1
+    .locals 3
 
     .line 433
     sget-object v0, Lmobi/beyondpod/downloadengine/RssFeedUpdateManager;->m_UpdateQueue:Lmobi/beyondpod/rsscore/helpers/GenericQueue;
@@ -285,14 +285,52 @@
     .line 440
     sget-object p0, Lmobi/beyondpod/downloadengine/RssFeedUpdateManager;->TAG:Ljava/lang/String;
 
-    const-string v0, "@@@@@ Sleeping before feed update retry..."
+    const-string v0, "@@@@@ Sleeping before feed update retry (exponential backoff)..."
 
     invoke-static {p0, v0}, Lmobi/beyondpod/rsscore/helpers/CoreHelper;->writeLogEntryInProduction(Ljava/lang/String;Ljava/lang/String;)V
 
-    const/16 p0, 0xa
+    # Exponential backoff: delay = 15 << (3 - retryCount) seconds
+    # retryCount 3 -> 15s, 2 -> 30s, 1 -> 60s
+    invoke-static {}, Lmobi/beyondpod/downloadengine/RssFeedUpdateManager;->currentFeed()Lmobi/beyondpod/rsscore/Feed;
+
+    move-result-object v0
+
+    if-eqz v0, :retry_default_delay
+
+    invoke-virtual {v0}, Lmobi/beyondpod/rsscore/Feed;->getFeedUrl()Ljava/lang/String;
+
+    move-result-object v0
+
+    sget-object v1, Lmobi/beyondpod/downloadengine/RssFeedUpdateManager;->m_RetryList:Ljava/util/HashMap;
+
+    invoke-virtual {v1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-eqz v0, :retry_default_delay
+
+    check-cast v0, Lmobi/beyondpod/downloadengine/RssFeedUpdateManager$RetryInfo;
+
+    iget v1, v0, Lmobi/beyondpod/downloadengine/RssFeedUpdateManager$RetryInfo;->retryCount:I
+
+    # v1 = retryCount; shift = 3 - retryCount; delay = 15 << shift
+    const/4 v2, 0x3
+
+    sub-int v2, v2, v1
+
+    const/16 v0, 0xf
+
+    shl-int/2addr v0, v2
+
+    invoke-static {v0}, Lmobi/beyondpod/rsscore/helpers/CoreHelper;->nap(I)V
+
+    goto :goto_0
+
+    :retry_default_delay
+    const/16 v0, 0xf
 
     .line 441
-    invoke-static {p0}, Lmobi/beyondpod/rsscore/helpers/CoreHelper;->nap(I)V
+    invoke-static {v0}, Lmobi/beyondpod/rsscore/helpers/CoreHelper;->nap(I)V
 
     :goto_0
     const/4 p0, 0x0
@@ -798,7 +836,7 @@
 
     const/4 v1, 0x0
 
-    const/4 v2, 0x1
+    const/4 v2, 0x3
 
     if-eqz v0, :cond_0
 

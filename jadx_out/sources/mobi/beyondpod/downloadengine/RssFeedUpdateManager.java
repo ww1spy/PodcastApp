@@ -298,7 +298,8 @@ public class RssFeedUpdateManager {
             if (m_RetryList.containsKey(feedUrl)) {
                 m_RetryList.get(feedUrl).doRetry();
             } else {
-                m_RetryList.put(feedUrl, new RetryInfo(exc, 1));
+                // 3 retries with exponential backoff (15s / 30s / 60s)
+                m_RetryList.put(feedUrl, new RetryInfo(exc, 3));
             }
         } else {
             m_RetryList.put(feedUrl, new RetryInfo(exc, 0));
@@ -340,8 +341,18 @@ public class RssFeedUpdateManager {
                 m_UpdateQueue.dequeue();
             } else {
                 CoreHelper.keepDeviceAwake();
-                CoreHelper.writeLogEntryInProduction(TAG, "@@@@@ Sleeping before feed update retry...");
-                CoreHelper.nap(10);
+                CoreHelper.writeLogEntryInProduction(TAG, "@@@@@ Sleeping before feed update retry (exponential backoff)...");
+                // Exponential backoff: delay = 15 << (3 - retryCount) seconds
+                // retryCount 3 → 15s, 2 → 30s, 1 → 60s
+                int delaySecs = 15;
+                Feed current = currentFeed();
+                if (current != null) {
+                    RetryInfo info = m_RetryList.get(current.getFeedUrl());
+                    if (info != null) {
+                        delaySecs = 15 << (3 - info.retryCount);
+                    }
+                }
+                CoreHelper.nap(delaySecs);
             }
             m_AtQueueStart = false;
         }

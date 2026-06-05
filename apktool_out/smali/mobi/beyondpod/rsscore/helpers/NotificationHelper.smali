@@ -315,11 +315,12 @@
 
     const-string v2, "BeyondPod General"
 
-    const/4 v3, 0x1
+    # IMPORTANCE_DEFAULT (3) so error notifications can make sound
+    const/4 v3, 0x3
 
     invoke-direct {v0, v1, v2, v3}, Landroid/app/NotificationChannel;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;I)V
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
     .line 136
     invoke-virtual {v0, v1}, Landroid/app/NotificationChannel;->enableVibration(Z)V

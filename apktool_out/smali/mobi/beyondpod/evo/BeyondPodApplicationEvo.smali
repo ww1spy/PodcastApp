@@ -642,20 +642,7 @@
     .line 425
     invoke-super {p0}, Lmobi/beyondpod/BeyondPodApplication;->onCreate()V
 
-    const/4 v0, 0x1
-
-    .line 426
-    new-array v0, v0, [Lio/fabric/sdk/android/Kit;
-
-    new-instance v1, Lcom/crashlytics/android/Crashlytics;
-
-    invoke-direct {v1}, Lcom/crashlytics/android/Crashlytics;-><init>()V
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    invoke-static {p0, v0}, Lio/fabric/sdk/android/Fabric;->with(Landroid/content/Context;[Lio/fabric/sdk/android/Kit;)Lio/fabric/sdk/android/Fabric;
+    # Crashlytics removed — service is defunct
 
     .line 427
     new-instance v0, Luk/co/chrisjenx/calligraphy/CalligraphyConfig$Builder;
@@ -888,6 +875,9 @@
 
     .line 140
     iput-object v8, p0, Lmobi/beyondpod/evo/BeyondPodApplicationEvo;->_UpdateNotificationBuilder:Landroid/support/v4/app/NotificationCompat$Builder;
+
+    # Error notification: elevate priority so it appears as a heads-up
+    const/4 v1, 0x1
 
     goto :goto_1
 
