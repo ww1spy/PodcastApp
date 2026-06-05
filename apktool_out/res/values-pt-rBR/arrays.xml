@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_feed_section_names">
+        <item>Tendências</item>
+        <item>Recomendado</item>
+        <item>Editores</item>
+        <item>Categorias</item>
+        <item>Internacional</item>
+        <item>Interesses</item>
+    </string-array>
+    <string-array name="allow_episode_streaming_text">
+        <item>Sempre</item>
+        <item>Apenas com Wi-Fi</item>
+        <item>Nunca</item>
+    </string-array>
+    <string-array name="allow_episode_streaming_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="audiobook_genres">
+        <item>All Genres</item>
+        <item>Adventure</item>
+        <item>Advice</item>
+        <item>Ancient Texts</item>
+        <item>Animals</item>
+        <item>Art</item>
+        <item>Biography</item>
+        <item>Children</item>
+        <item>Classics (antiquity)</item>
+        <item>Comedy</item>
+        <item>Cookery</item>
+        <item>Economics/Political Economy</item>
+        <item>Epistolary fiction</item>
+        <item>Erotica</item>
+        <item>Essay/Short nonfiction</item>
+        <item>Fairy tales</item>
+        <item>Fantasy</item>
+        <item>Fiction</item>
+        <item>Historical Fiction</item>
+        <item>History</item>
+        <item>Holiday</item>
+        <item>Horror/Ghost stories</item>
+        <item>Humor</item>
+        <item>Instruction</item>
+        <item>Languages</item>
+        <item>Literature</item>
+        <item>Memoirs</item>
+        <item>Music</item>
+        <item>Mystery</item>
+        <item>Myths/Legends</item>
+        <item>Nature</item>
+        <item>Philosophy</item>
+        <item>Play</item>
+        <item>Poetry</item>
+        <item>Politics</item>
+        <item>Psychology</item>
+        <item>Romance</item>
+        <item>Religion</item>
+        <item>Satire</item>
+        <item>Science</item>
+        <item>Science fiction</item>
+        <item>Sea stories</item>
+        <item>Short stories</item>
+        <item>Spy stories</item>
+        <item>Teen/Young adult</item>
+        <item>Tragedy</item>
+        <item>Travel</item>
+        <item>War stories</item>
+        <item>Westerns</item>
+    </string-array>
+    <string-array name="audiobook_languages">
+        <item>All Languages</item>
+        <item>Ancient Greek</item>
+        <item>Arabic</item>
+        <item>Bisaya</item>
+        <item>Bulgarian</item>
+        <item>Chinese</item>
+        <item>Church Slavonic</item>
+        <item>Danish</item>
+        <item>Dholuo</item>
+        <item>Dutch</item>
+        <item>English</item>
+        <item>Esperanto</item>
+        <item>Finnish</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Hebrew</item>
+        <item>Hungarian</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Javanese</item>
+        <item>Latin</item>
+        <item>Latvian</item>
+        <item>Middle English</item>
+        <item>Multilingual</item>
+        <item>Old English</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Russian</item>
+        <item>Spanish</item>
+        <item>Swedish</item>
+        <item>Tagalog</item>
+        <item>Tamil</item>
+        <item>Ukrainian</item>
+        <item>Urdu</item>
+    </string-array>
+    <string-array name="cds_accept_feeds_type_text">
+        <item>Nunca</item>
+        <item>Apenas quando enviados manualmente</item>
+        <item>Sempre</item>
+    </string-array>
+    <string-array name="cds_accept_feeds_type_values">
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="feed_fingerprint_type_values">
+        <item>-1</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="feed_fingerprint_type_values_text">
+        <item>Automático</item>
+        <item>Usar Post GUID</item>
+        <item>Usar Título do Post, Link e Data de Publicação</item>
+    </string-array>
+    <string-array name="myepisodesFilter_text">
+        <item>Meus Episódios</item>
+        <item>Todos Publicados</item>
+    </string-array>
+    <string-array name="playlist_end_action_text">
+        <item>Não fazer nada</item>
+        <item>Limpar Lista</item>
+        <item>Reiniciar a Lista Inteligente</item>
+    </string-array>
+    <string-array name="playlist_end_action_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="resume_replay_duration_text">
+        <item>Não Repetir</item>
+        <item>Últimos 5 seg.</item>
+        <item>Últimos 15 seg.</item>
+        <item>Últimos 30 seg.</item>
+    </string-array>
+    <string-array name="resume_replay_duration_values">
+        <item>0</item>
+        <item>5</item>
+        <item>15</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="sample_content_category_names">
+        <item>News</item>
+        <item>Popular Science</item>
+        <item>Indie Music</item>
+        <item>TV &amp; Film</item>
+        <item>Great Stories</item>
+        <item>Android</item>
+        <item>Cars</item>
+        <item>Money</item>
+        <item>Sci-Fi</item>
+        <item>Business</item>
+        <item>Comedy</item>
+        <item>Food</item>
+        <item>Parenting</item>
+        <item>Wine &amp; Beer</item>
+        <item>Travel</item>
+    </string-array>
+    <string-array name="schedule_update_period">
+        <item>Horas</item>
+        <item>Dias</item>
+        <item>Semanas</item>
+    </string-array>
+    <string-array name="settings_configure_bt_buttons_text">
+        <item>Próximo Episódio</item>
+        <item>Episódio Anterior</item>
+        <item>Avançar</item>
+        <item>Retroceder</item>
+        <item>Pular Para o Final</item>
+    </string-array>
+    <string-array name="settings_configure_bt_buttons_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="settings_contentFontSize_text">
+        <item>O Maior</item>
+        <item>Maior</item>
+        <item>Médio</item>
+        <item>Menor</item>
+        <item>O Menor</item>
+    </string-array>
+    <string-array name="settings_feedSelectedAction_text">
+        <item>Meus Episódios</item>
+        <item>Todos Publicados</item>
+    </string-array>
+    <string-array name="settings_feedSelectedAction_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="settings_itemSortOrder_text">
+        <item>Feed Padrão</item>
+        <item>Recentes Primeiro</item>
+        <item>Antigos Primeiro</item>
+    </string-array>
+    <string-array name="settings_long_podcastName_handling_text">
+        <item>Mostrar Início</item>
+        <item>Mostrar Final</item>
+    </string-array>
+    <string-array name="settings_markAsReadOnOpen_text">
+        <item>Todos os Posts</item>
+        <item>Posts sem Podcasts</item>
+        <item>Nenhum</item>
+    </string-array>
+    <string-array name="settings_markAsReadOnOpen_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="settings_maxTrackAge_text">
+        <item>5 dias</item>
+        <item>7 dias</item>
+        <item>30 dias</item>
+        <item>180 dias</item>
+        <item>360 dias</item>
+        <item>99999 dias</item>
+    </string-array>
+    <string-array name="settings_maxTrackAge_values">
+        <item>5</item>
+        <item>7</item>
+        <item>30</item>
+        <item>180</item>
+        <item>360</item>
+        <item>99999</item>
+    </string-array>
+    <string-array name="settings_mediaEndAction_text">
+        <item>Reproduzir próximo</item>
+        <item>Apagar e reproduzir o próximo</item>
+        <item>Não fazer nada</item>
+        <item>Apagar e não fazer nada</item>
+    </string-array>
+    <string-array name="settings_mediaEndAction_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_myepisodesFilter_text">
+        <item>Todos os Episódios</item>
+        <item>Apenas Áudios</item>
+        <item>Apenas Vídeos</item>
+        <item>Baixados</item>
+        <item>Inacabados</item>
+        <item>Não Reproduzidos</item>
+        <item>Favoritos</item>
+    </string-array>
+    <string-array name="settings_myepisodesFilter_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="settings_myepisodesSortOrder_text">
+        <item>Por Feed</item>
+        <item>Recentes</item>
+        <item>Antigos</item>
+        <item>Nome</item>
+        <item>Nome (Z-A)</item>
+        <item>Duração</item>
+        <item>Duração (Desc)</item>
+        <item>Reproduzidos Parcialmente</item>
+        <item>Nome do Arquivo</item>
+    </string-array>
+    <string-array name="settings_myepisodesSortOrder_values">
+        <item>-1</item>
+        <item>3</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="settings_numPodcastsToDownload_text">
+        <item>1 episódio</item>
+        <item>3 episódios</item>
+        <item>5 episódios</item>
+        <item>10 episódios</item>
+        <item>20 episódios</item>
+        <item>50 episódios</item>
+        <item>Não há episódios</item>
+    </string-array>
+    <string-array name="settings_numPodcastsToDownload_values">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="settings_numPodcastsToKeep_text">
+        <item>Último episódio</item>
+        <item>Últimos 3 episódios</item>
+        <item>Últimos 5 episódios</item>
+        <item>Últimos 10 episódios</item>
+        <item>Última 20 episódios</item>
+        <item>Última 50 episódios</item>
+        <item>Manter Todos</item>
+    </string-array>
+    <string-array name="settings_numPodcastsToKeep_values">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>99999</item>
+    </string-array>
+    <string-array name="settings_orientation_lock_text">
+        <item>Automático</item>
+        <item>Retrato</item>
+        <item>Paisagem</item>
+    </string-array>
+    <string-array name="settings_orientation_lock_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_player_integration_text">
+        <item>Usar Interno</item>
+        <item>Usar Vídeo Externo</item>
+        <item>Usar Áudio Externo</item>
+        <item>Usar Externo</item>
+    </string-array>
+    <string-array name="settings_player_integration_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_player_screen_power_state_text">
+        <item>Usar o Dispositivo Padrão</item>
+        <item>Sem luz de fundo (se carregando)</item>
+        <item>Com luz de fundo (se carregando)</item>
+        <item>Sempre sem Luz de Fundo</item>
+        <item>Sempre com Luz de Fundo</item>
+    </string-array>
+    <string-array name="settings_player_screen_power_state_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="settings_podcastDownloadAction_text">
+        <item>Baixar Episódios Manualmente</item>
+        <item>Baixar Episódios Recentes</item>
+        <item>Streaming dos Episódios Recentes</item>
+        <item>Baixar Episódios Ordenadamente</item>
+        <item>Streaming dos Episódios Ordenadamente</item>
+        <item>Ignorar Todos os Episódios</item>
+    </string-array>
+    <string-array name="settings_podcastDownloadAction_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_preferred_enclosure_text">
+        <item>Usar o Padrão</item>
+        <item>Usar Alternativa 1</item>
+        <item>Usar Alternativa 2</item>
+        <item>Usar Alternativa 3</item>
+        <item>Usar Alternativa 4</item>
+        <item>Usar Alternativa 5</item>
+        <item>Usar Alternativa 6</item>
+        <item>Usar Alternativa 7</item>
+        <item>Usar Alternativa 8</item>
+        <item>Usar Alternativa 9</item>
+    </string-array>
+    <string-array name="settings_screen_item_content_view_theme_text">
+        <item>Branco</item>
+        <item>Sépia</item>
+        <item>Preto</item>
+    </string-array>
+    <string-array name="settings_screen_power_state_during_wifi_updates_text">
+        <item>Automático</item>
+        <item>Sempre Ligado</item>
+        <item>Sempre Desligado</item>
+    </string-array>
+    <string-array name="settings_screen_power_state_during_wifi_updates_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_skipInterval_text">
+        <item>5 seg</item>
+        <item>10 seg</item>
+        <item>20 seg</item>
+        <item>30 seg</item>
+        <item>1 min</item>
+        <item>5 min</item>
+        <item>Não Pular</item>
+    </string-array>
+    <string-array name="settings_skipInterval_values">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+        <item>300</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="settings_skip_to_end_click_type_text">
+        <item>Clicar Rapidamente</item>
+        <item>Clique e Segure</item>
+        <item>Ocultar Botão</item>
+    </string-array>
+    <string-array name="settings_skip_to_end_click_type_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_sortOrder_text">
+        <item>Nome (A-Z)</item>
+        <item>Nome (Z-A)</item>
+        <item>Data (Antigos Primeiro)</item>
+        <item>Data (Recentes Primeiro)</item>
+    </string-array>
+    <string-array name="settings_sortOrder_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_startupView_text">
+        <item>Padrão</item>
+        <item>Lista de Feed</item>
+        <item>Player</item>
+    </string-array>
+    <string-array name="settings_startupView_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_theme_text">
+        <item>Claro (padrão)</item>
+        <item>Escuro</item>
+    </string-array>
+    <string-array name="settings_theme_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_trackSortOrder_text">
+        <item>Recentes</item>
+        <item>Antigos</item>
+        <item>Nome</item>
+        <item>Nome (Z-A)</item>
+        <item>Duração</item>
+        <item>Duração (Desc)</item>
+        <item>Reproduzidos Parcialmente</item>
+        <item>Nome do Arquivo</item>
+    </string-array>
+    <string-array name="settings_trackSortOrder_values">
+        <item>3</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="settings_volumeNavigation_text">
+        <item>Só se não estiver Reproduzindo</item>
+        <item>Nunca</item>
+        <item>Sempre</item>
+    </string-array>
+    <string-array name="settings_volumeNavigation_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="smart_playlist_numPodcasts_text">
+        <item>1 episódio</item>
+        <item>2 episódios</item>
+        <item>3 episódios</item>
+        <item>4 episódios</item>
+        <item>5 episódios</item>
+        <item>6 episódios</item>
+        <item>7 episódios</item>
+        <item>8 episódios</item>
+        <item>9 episódios</item>
+        <item>10 episódios</item>
+        <item>20 episódios</item>
+        <item>30 episódios</item>
+        <item>50 episódios</item>
+    </string-array>
+    <string-array name="smart_playlist_numPodcasts_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+    </string-array>
+    <string-array name="smart_playlist_sortOrder_text">
+        <item>Mais Novo</item>
+        <item>Mais Antigo</item>
+        <item>Aleatório</item>
+    </string-array>
+    <string-array name="widget_background_text">
+        <item>Escuro</item>
+        <item>Transparente</item>
+        <item>Nenhum</item>
+    </string-array>
+</resources>

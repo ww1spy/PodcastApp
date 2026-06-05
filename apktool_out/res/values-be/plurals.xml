@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="media_browser_episodes">
+        <item quantity="other">%d эпізодаў</item>
+        <item quantity="one">%d эпізод</item>
+    </plurals>
+    <plurals name="plr_episodes">
+        <item quantity="other">%d эпізод.</item>
+        <item quantity="one">%d эпізод</item>
+    </plurals>
+</resources>

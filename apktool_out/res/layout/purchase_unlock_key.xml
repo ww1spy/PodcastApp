@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center_horizontal" android:linksClickable="true" android:id="@id/puk_expiration_date_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@style/TextAppearance.AppCompat.Subhead" />
+        <TextView android:gravity="center_horizontal" android:id="@id/puk_expiration_date" android:layout_marginTop="8.0dip" style="@style/ConfigSettingTitle" />
+        <TextView android:textStyle="italic" android:gravity="center_horizontal" android:linksClickable="true" android:id="@id/app_store_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@style/TextAppearance.AppCompat.Subhead" />
+    </LinearLayout>
+</ScrollView>

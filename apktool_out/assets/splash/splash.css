@@ -1,0 +1,104 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+@font-face{
+  font-family: 'RobotoLight';
+  font-weight: normal;
+  font-style: normal;
+  src:url('file:///android_asset/fonts/Roboto-Light.ttf') format('truetype');
+}
+
+body {
+  font-family: 'RobotoLight';
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+body > div {
+  display: table-row;
+}
+
+.vertically-centered {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+h1 {
+  /* line-height set in js */
+  color: black;
+  font-size: 1.6em;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+
+h2 {
+  color: black;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+
+#welcome_splash_logo {
+  height: 120px;
+  width: 120px;
+}
+
+#welcome_splash_heading {
+  font-size:3em;
+  font-weight: 300;
+  font-family: sans-serif-light;
+  color: white;
+  margin-top: 20px;
+}
+
+#welcome_splash_subtitle {
+  font-size:1.4em;
+  font-weight: 300;
+  font-family: sans-serif-light;
+  color: white;
+  margin: 4px auto 0 auto;
+  width: 90%
+}
+
+.welcome_splash_elua {
+  font-size:0.95em;
+  font-weight: 300;
+  font-family: sans-serif-light;
+  color: #E0E0E0;
+  margin: 60px auto 0 auto;
+  width: 90%;
+  line-height: 150%;
+}
+
+a:link {
+    color: #E0E0E0;
+}
+
+a:visited {
+    color: #E0E0E0;
+}
+
+.orange
+{
+    background-color: #FF6F4F;
+}
+

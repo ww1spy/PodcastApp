@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/widget_bg_image_light" android:background="@drawable/appwidget_lt_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/widget_bg_light" />
+    <ImageView android:id="@id/widget_bg_image_dark" android:background="@drawable/appwidget_dark_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/widget_bg_dark" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageButton android:id="@id/control_skip_back" android:background="?android:selectableItemBackground" android:layout_width="@dimen/widget_transport_controls_button_width" android:layout_height="fill_parent" android:src="@drawable/appwidget_skip_back" android:scaleType="center" android:contentDescription="@string/control_skip_back" />
+        <ImageButton android:id="@id/control_skip_fwd" android:background="?android:selectableItemBackground" android:layout_width="45.0dip" android:layout_height="fill_parent" android:src="@drawable/appwidget_skip_fwd" android:scaleType="center" android:contentDescription="@string/control_skip_fwd" android:layout_alignParentEnd="true" />
+        <FrameLayout android:id="@id/play_pause" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="center" android:id="@id/play_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/appwidget_play_progress_0" android:scaleType="center" android:contentDescription="@string/play_progress" />
+            <ImageView android:layout_gravity="center" android:id="@id/control_play" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/appwidget_play" android:scaleType="center" android:contentDescription="@string/control_play" />
+        </FrameLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/playlist_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_alignStart="@id/control_skip_fwd" android:layout_alignEnd="@id/control_skip_fwd" />
+        <ImageView android:id="@id/podcastStreamable" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@drawable/appwidget_streaming" android:layout_alignParentBottom="true" android:contentDescription="@string/podcast_streamable" android:layout_marginStart="4.0dip" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</FrameLayout>

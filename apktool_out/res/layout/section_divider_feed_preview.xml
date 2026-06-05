@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.beyondpod.ui.views.publishedepisodes.PublishedEpisodesPreviewHeader android:background="#ff999999" android:paddingLeft="@dimen/main_screen_h_margin" android:paddingTop="16.0dip" android:paddingRight="@dimen/main_screen_h_margin" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/feedName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/card_view_item_h_margin" android:layout_marginEnd="8.0dip" android:layout_toStartOf="@id/updatedGroup" style="@style/CardFeedPreviewHeaderTitleTextStyle" />
+    <FrameLayout android:id="@id/updatedGroup" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_alignTop="@id/feedName" android:layout_alignBottom="@id/feedName" android:layout_marginEnd="@dimen/card_view_item_h_margin" android:layout_alignParentEnd="true">
+        <ImageView android:layout_gravity="center" android:id="@id/toggleExtras" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_caret_up_lt_sm" android:scaleType="center" android:contentDescription="@string/toggle_extras" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/feedLoadProgress" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/extrasGroup" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/card_view_item_h_margin" android:layout_marginTop="6.0dip" android:layout_marginRight="@dimen/card_view_item_h_margin" android:layout_below="@id/feedName">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/horizontal_divider_dash" android:contentDescription="@string/horizontal_divider_dash" android:layerType="software" />
+        <TextView android:id="@id/actionSubscribe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/add_feed_subscribe" android:textAllCaps="true" style="@style/InfoCardActionLinkTextStyle" />
+        <TextView android:id="@id/feedSummary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" style="@style/CardFeedPreviewHeaderSummaryTextStyle" />
+    </LinearLayout>
+</mobi.beyondpod.ui.views.publishedepisodes.PublishedEpisodesPreviewHeader>

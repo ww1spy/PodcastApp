@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <mobi.beyondpod.ui.views.base.BPRecyclerView android:scrollbarStyle="outsideOverlay" android:id="@id/feedSearchResultsListView" android:paddingLeft="@dimen/add_feed_screen_h_margin" android:paddingTop="@dimen/add_feed_screen_list_v_spacing" android:paddingRight="@dimen/add_feed_screen_h_margin" android:paddingBottom="@dimen/add_feed_screen_list_v_spacing" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/feed_search_result_empty_view" />
+</FrameLayout>

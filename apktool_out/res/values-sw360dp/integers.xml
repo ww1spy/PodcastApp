@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="episode_card_playlist_description_maxLines">4</integer>
+</resources>

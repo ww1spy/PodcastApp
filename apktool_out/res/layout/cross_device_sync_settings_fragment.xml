@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbarStyle="outsideInset" android:paddingLeft="@dimen/generic_screen_h_margin" android:paddingRight="@dimen/generic_screen_h_margin" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/cds_help" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/cds_info_title1" />
+        <Switch android:textAppearance="@style/PropertyTitleText" android:id="@id/cds_enable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="32.0dip" android:textOn="@string/alert_dialog_yes" android:textOff="@string/alert_dialog_no" android:text="@string/cds_enable_sync" />
+        <LinearLayout android:orientation="vertical" android:id="@id/askForCredentials" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+            <TextView android:textSize="26.0sp" android:ellipsize="middle" android:gravity="center_horizontal" android:id="@id/currentUser" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:singleLine="true" style="@style/PropertyDialogSettingCheckBoxTitle" />
+            <TextView android:textSize="12.0sp" android:gravity="center_horizontal" android:id="@id/deviceName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" />
+            <include layout="@layout/cross_device_sync_settings_buttons" />
+            <LinearLayout android:orientation="vertical" android:id="@id/syncSettingsArea" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="@string/cds_sync_settings" style="?android:listSeparatorTextViewStyle" />
+                <CheckBox android:id="@id/cds_allowRemoteDeletions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/cds_option_allow_remote_episode_deletions" />
+                <TextView android:layout_marginTop="8.0dip" android:layout_marginBottom="4.0dip" android:text="@string/cds_option_allow_remote_feed_additions" android:layout_marginStart="6.0dip" style="@style/PropertyTitleText" />
+                <Spinner android:id="@id/acceptFeeds" android:drawSelectorOnTop="true" style="@style/PropertyDialogSettingContent" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

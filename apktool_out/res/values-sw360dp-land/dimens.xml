@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="drawer_playlist_width">440.0dip</dimen>
+    <dimen name="player_transport_controls_car_mode_height">110.0dip</dimen>
+    <dimen name="player_transport_controls_car_mode_play_pause_size">94.0dip</dimen>
+    <dimen name="playlist_card_episode_image_height">90.0dip</dimen>
+    <dimen name="playlist_card_episode_image_width">90.0dip</dimen>
+    <dimen name="playlist_card_episode_title_font_size">21.0sp</dimen>
+    <dimen name="playlist_pager_bottom_padding">105.0dip</dimen>
+    <dimen name="playlist_pager_card_margin">8.0dip</dimen>
+    <dimen name="playlist_pager_left_padding">16.0dip</dimen>
+    <dimen name="playlist_pager_right_padding">120.0dip</dimen>
+    <dimen name="playlist_pager_top_padding">75.0dip</dimen>
+</resources>

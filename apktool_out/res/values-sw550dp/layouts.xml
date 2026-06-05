@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="layout" name="assign_feed_categories">@layout/assign_feed_categories_beside</item>
+    <item type="layout" name="cross_device_sync_settings_buttons">@layout/cross_device_sync_settings_buttons_beside</item>
+    <item type="layout" name="player_transport_controls">@layout/player_transport_controls_all</item>
+</resources>

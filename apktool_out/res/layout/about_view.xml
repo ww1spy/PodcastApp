@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="22.0sp" android:gravity="center_horizontal" android:id="@id/ad_versionInfo" android:background="@android:color/transparent" android:layout_marginTop="16.0dip" android:layout_marginBottom="8.0dip" style="@style/ConfigSettingTitle" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/ad_contextMenu" android:background="#ff884444" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <Button android:layout_gravity="center" android:id="@id/ad_AdvancedConfig" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="@string/feed_properties_advanced_section" />
+            <Button android:layout_gravity="center" android:id="@id/ad_RefreshTags" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="@string/tag_refresh" />
+            <Button android:layout_gravity="center" android:id="@id/ad_Exit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="@string/MENU_exit_app" />
+        </LinearLayout>
+        <TextView android:gravity="center_horizontal" android:linksClickable="true" android:id="@id/ad_licenseInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" style="@style/PropertyDialogSettingMsg" />
+        <TextView android:gravity="center_horizontal" android:linksClickable="true" android:id="@id/ad_copyright" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/dlg_about_Msg" style="@style/PropertyDialogSettingMsg" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.beyondpod.ui.views.player.PlayerFullScreen android:id="@id/full_player" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <mobi.beyondpod.ui.views.player.visualizers.BlurredAlbumArt android:id="@id/playerAlbumArt" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <mobi.beyondpod.ui.views.player.PlaylistPager android:id="@id/playerPlaylist" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/playlist_pager_top_padding" android:layout_marginBottom="@dimen/playlist_pager_bottom_padding" />
+    <LinearLayout android:id="@id/actionBar" android:background="@drawable/bg_protection_dark_top" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@id/ab_collapse" android:layout_width="68.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_action_caret_down" android:scaleType="center" android:contentDescription="@string/ab_collapse" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <mobi.beyondpod.ui.core.mediarouter.MediaRouteButton android:id="@id/media_route_button" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:mediaRouteTypes="user" />
+        <include android:id="@id/ab_toggle_playlist" android:layout_width="wrap_content" android:layout_height="fill_parent" layout="@layout/action_bar_playlist_menu_item" />
+        <ImageButton android:id="@id/ab_overflow" android:background="?android:selectableItemBackground" android:layout_width="64.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_action_overflow" android:scaleType="center" android:contentDescription="@string/ab_overflow" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/controlsArea" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:animateLayoutChanges="true">
+        <RelativeLayout android:id="@id/episodeNameGroup" android:background="@color/player_shaded_area_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/seekGroup">
+            <TextView android:ellipsize="end" android:id="@id/episodeName" android:background="?android:selectableItemBackground" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:layout_toEndOf="@id/miniAlbumArt" style="@style/PlayerTrackName" />
+            <mobi.beyondpod.ui.core.volley.FadingNetworkImageViewTrack android:id="@id/miniAlbumArt" android:layout_width="@dimen/player_small_albumArt_width" android:layout_height="@dimen/player_small_albumArt_height" android:scaleType="center" android:layout_marginEnd="8.0dip" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/seekGroup" android:background="@color/player_shaded_area_bg" android:paddingLeft="16.0dip" android:paddingTop="@dimen/player_scrubber_vert_padding" android:paddingRight="16.0dip" android:paddingBottom="@dimen/player_scrubber_vert_padding" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="true" android:layout_above="@id/transportControlsHolder">
+            <TextView android:gravity="end" android:id="@id/currenttime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="4.0dip" style="@style/PlayerTrackTime" />
+            <SeekBar android:id="@id/seek" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:progress="35" android:secondaryProgress="100" android:layout_weight="1.0" style="@style/PlayerProgressBar" />
+            <TextView android:gravity="center" android:id="@id/totaltime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="4.0dip" style="@style/PlayerTrackTime" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/transportControlsHolder" android:background="@color/player_shaded_area_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/charmsGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/episodeNameGroup" android:layout_marginEnd="8.0dip" android:layout_alignParentEnd="true">
+            <ImageButton android:id="@id/charmCarMode" android:src="@drawable/ic_charm_car" style="@style/PlayerCharmStyle" />
+            <TextView android:textSize="19.0sp" android:id="@id/charmSleep" android:drawableStart="@drawable/ic_charm_timer" style="@style/PlayerCharmStyle" />
+            <TextView android:textSize="19.0sp" android:id="@id/charmSpeed" style="@style/PlayerCharmStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/largePlaypause" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true" style="@style/BPMediaButton.Video" />
+</mobi.beyondpod.ui.views.player.PlayerFullScreen>

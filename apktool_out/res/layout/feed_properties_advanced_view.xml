@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="@string/feed_properties_feed_name_title" style="@style/PropertyDialogSettingTitle" />
+    <EditText android:id="@id/fp_feedName" android:layout_width="fill_parent" android:selectAllOnFocus="true" android:inputType="textCapWords" style="@style/PropertyDialogSettingContent" />
+    <TextView android:text="@string/feed_properties_feed_name_msg" style="@style/PropertyDialogSettingMsg" />
+    <FrameLayout android:id="@id/fp_useGoogleProxy_cbarea" style="@style/PropertyDialogSettingCheckBoxFrame">
+        <CheckBox android:id="@id/fp_useGoogleProxy" android:text="@string/feed_properties_use_google_proxy" style="@style/PropertyDialogSettingCheckBoxTitle" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/fp_google_proxy_num_items_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="41.0dip">
+        <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feed_settings_get" />
+        <EditText android:id="@id/fp_num_greader_items_to_get" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:selectAllOnFocus="true" android:maxLength="3" android:inputType="number" />
+        <TextView android:textSize="18.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/feed_settings_items" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:id="@id/fp_useGoogleProxy_msg" android:text="@string/feed_properties_use_google_proxy_msg" style="@style/PropertyDialogSettingMsg" />
+    <TextView android:text="@string/feed_properties_login_info_header" style="@style/PropertyDialogSettingTitle" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="@string/feed_properties_login_info_un" android:layout_marginStart="23.0dip" />
+    <EditText android:id="@id/fp_login_uname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:inputType="textEmailAddress" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="@string/feed_properties_login_info_pw" android:layout_marginStart="23.0dip" />
+    <EditText android:id="@id/fp_login_pw" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:inputType="textPassword" />
+    <TextView android:text="@string/feed_properties_feed_login_msg" style="@style/PropertyDialogSettingMsg" />
+    <TextView android:text="@string/feed_properties_force_item_sort" style="@style/PropertyDialogSettingTitle" />
+    <Spinner android:id="@id/fp_forceItemSort" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:drawSelectorOnTop="true" style="@style/PropertyDialogSettingContent" />
+    <TextView android:text="@string/feed_properties_force_item_sort_msg" style="@style/PropertyDialogSettingMsg" />
+    <TextView android:text="@string/feed_properties_feed_download_podcast_sort_order_title" style="@style/PropertyDialogSettingTitle" />
+    <Spinner android:id="@id/fp_podcastSortOrder" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:drawSelectorOnTop="true" style="@style/PropertyDialogSettingContent" />
+    <TextView android:text="@string/feed_properties_feed_download_podcast_sort_order_msg" style="@style/PropertyDialogSettingMsg" />
+    <TextView android:id="@id/fp_feedDownloadFolderTitle" android:text="@string/feed_properties_feed_download_folder_title" style="@style/PropertyDialogSettingTitle" />
+    <EditText android:id="@id/fp_feedDownloadFolder" android:selectAllOnFocus="true" android:inputType="textUri" style="@style/PropertyDialogSettingContent" />
+    <TextView android:id="@id/fp_feedDownloadFolderMsg" style="@style/PropertyDialogSettingMsg" />
+    <FrameLayout style="@style/PropertyDialogSettingCheckBoxFrame">
+        <CheckBox android:id="@id/fp_playbackSpeedCheckBox" android:text="@string/feed_properties_playback_speed_prefs_title" style="@style/PropertyDialogSettingCheckBoxTitle" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/fp_playbackSpeedControls" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/sp_buttonMinus" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_minus_dark" android:contentDescription="@string/button_remove" />
+        <TextSwitcher android:id="@id/sp_speedInfo" android:layout_width="80.0dip" android:layout_height="fill_parent" android:layout_margin="8.0dip" />
+        <ImageButton android:id="@id/sp_buttonPlus" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_add_dark" android:contentDescription="@string/button_remove" />
+    </LinearLayout>
+    <TextView android:id="@id/fp_playbackSpeed_msg" android:text="@string/feed_properties_playback_speed_prefs_msg" style="@style/PropertyDialogSettingMsg" />
+    <FrameLayout style="@style/PropertyDialogSettingCheckBoxFrame">
+        <CheckBox android:id="@id/fp_playbackVolumeBoostCheckBox" android:text="@string/feed_properties_volume_boost_prefs_title" style="@style/PropertyDialogSettingCheckBoxTitle" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/fp_volumeBoostControls" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/sp_buttonVBMinus" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_minus_dark" android:contentDescription="@string/button_remove" />
+        <TextSwitcher android:id="@id/sp_VBInfo" android:layout_width="80.0dip" android:layout_height="fill_parent" android:layout_margin="8.0dip" />
+        <ImageButton android:id="@id/sp_buttonVBPlus" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_add_dark" android:contentDescription="@string/button_add" />
+    </LinearLayout>
+    <TextView android:id="@id/fp_volumeBoost_msg" android:text="@string/feed_properties_volume_boost_prefs_msg" style="@style/PropertyDialogSettingMsg" />
+    <TextView android:text="@string/feed_properties_feed_download_podcast_long_name_handler_title" style="@style/PropertyDialogSettingTitle" />
+    <Spinner android:id="@id/fp_podcastLongNameHandling" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:drawSelectorOnTop="true" style="@style/PropertyDialogSettingContent" />
+    <TextView android:text="@string/feed_properties_feed_download_podcast_long_name_handler_msg" style="@style/PropertyDialogSettingMsg" />
+    <TextView android:text="@string/feed_properties_feed_fingerprint_type_title" style="@style/PropertyDialogSettingTitle" />
+    <Spinner android:id="@id/fp_fingerprintType" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:drawSelectorOnTop="true" style="@style/PropertyDialogSettingContent" />
+    <TextView android:text="@string/feed_properties_feed_fingerprint_type_msg" style="@style/PropertyDialogSettingMsg" />
+    <FrameLayout style="@style/PropertyDialogSettingCheckBoxFrame">
+        <CheckBox android:id="@id/fp_forceUniqueNames" android:text="@string/feed_properties_force_unique_names" style="@style/PropertyDialogSettingCheckBoxTitle" />
+    </FrameLayout>
+    <TextView android:id="@id/fp_forceUniqueNames_msg" android:text="@string/feed_properties_force_unique_names_msg" style="@style/PropertyDialogSettingMsg" />
+    <FrameLayout style="@style/PropertyDialogSettingCheckBoxFrame">
+        <CheckBox android:id="@id/fp_allowDeletions" android:text="@string/feed_properties_allow_deletions_title" style="@style/PropertyDialogSettingCheckBoxTitle" />
+    </FrameLayout>
+    <TextView android:text="@string/feed_properties_allow_deletions_msg" style="@style/PropertyDialogSettingMsg" />
+    <FrameLayout style="@style/PropertyDialogSettingCheckBoxFrame">
+        <CheckBox android:id="@id/fp_savePlayedPosition" android:text="@string/feed_properties_save_played_position_title" style="@style/PropertyDialogSettingCheckBoxTitle" />
+    </FrameLayout>
+    <TextView android:text="@string/feed_properties_save_played_position_msg" style="@style/PropertyDialogSettingMsg" />
+    <TextView android:text="@string/feed_properties_preferred_enclosure" style="@style/PropertyDialogSettingTitle" />
+    <Spinner android:id="@id/fp_preferred_enclosure" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:drawSelectorOnTop="true" style="@style/PropertyDialogSettingContent" />
+    <TextView android:text="@string/feed_properties_preferred_enclosure_msg" style="@style/PropertyDialogSettingMsg" />
+    <TextView android:text="@string/feed_properties_download_history_title" style="@style/PropertyDialogSettingTitle" />
+    <Button android:layout_gravity="center" android:id="@id/fp_mark_downloadedButton" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="@string/feed_properties_download_history_mark_downloaded" />
+    <Button android:layout_gravity="center" android:id="@id/fp_clear_historyButton" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="@string/feed_properties_download_history_clear_history" />
+    <TextView android:text="@string/feed_properties_download_history_msg" style="@style/PropertyDialogSettingMsg" />
+    <TextView android:id="@id/fp_feedImage_title" android:text="@string/feed_properties_custom_image_title" style="@style/PropertyDialogSettingTitle" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/fp_feedImage_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip">
+        <ImageView android:id="@id/fp_feedImage" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_centerVertical="true" android:contentDescription="@string/feed_image" android:layout_marginStart="5.0dip" />
+        <Button android:id="@id/fp_customImageButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/feed_properties_custom_image" android:layout_toEndOf="@id/fp_feedImage" />
+        <Button android:id="@id/fp_clearImageButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/feed_properties_clear_custom_image_title" android:layout_toEndOf="@id/fp_customImageButton" />
+    </RelativeLayout>
+    <TextView android:id="@id/fp_feedImage_msg" android:text="@string/feed_properties_custom_image_msg" style="@style/PropertyDialogSettingMsg" />
+</LinearLayout>

@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="MENU_Settings_Selector">Налады</string>
+    <string name="MENU_about">Пра BeyondPod</string>
+    <string name="MENU_add_to_playlist">Дадаць у плэйліст</string>
+    <string name="MENU_addtohome_smartplay">Дадаць на хатні экран</string>
+    <string name="MENU_browser_copy_link">Капіраваць спасылку</string>
+    <string name="MENU_browser_load_images">Паказваць малюнкі</string>
+    <string name="MENU_browser_open_in_external">Адкрыць у браўзеры</string>
+    <string name="MENU_browser_refresh">Перазагрузіць</string>
+    <string name="MENU_browser_share_feed">Падзяліцца патокам</string>
+    <string name="MENU_browser_share_link">Падзяліцца спасылкай</string>
+    <string name="MENU_browser_share_podcast">Падзяліцца эпізодам</string>
+    <string name="MENU_card_size_small">Кампактныя карткі</string>
+    <string name="MENU_clear_cache">Ачысціць кэш</string>
+    <string name="MENU_delete_all_played_podcasts">Выдаліць прайграныя</string>
+    <string name="MENU_delete_category">Выдаліць катэгорыю</string>
+    <string name="MENU_delete_episode">Выдаліць</string>
+    <string name="MENU_delete_feed">Выдаліць паток</string>
+    <string name="MENU_delete_podcast_episodes">Выдаліць эпізод</string>
+    <string name="MENU_delete_smartplay">Выдаліць</string>
+    <string name="MENU_display_settings">Налады адлюстравання</string>
+    <string name="MENU_download_all_playlist">Спампаваць усё ў плэйлісце</string>
+    <string name="MENU_dump_environment">Інфармацыя аб прыладзе</string>
+    <string name="MENU_edit_category">Рэдагаваць катэгорыю</string>
+    <string name="MENU_edit_feed">Рэдагаваць паток</string>
+    <string name="MENU_edit_smartplay">Рэдагаваць</string>
+    <string name="MENU_episode">Эпізод</string>
+    <string name="MENU_exit_app">Выйсці з BeyondPod</string>
+    <string name="MENU_feed">Паток</string>
+    <string name="MENU_filter_episodes">Фільтраваць</string>
+    <string name="MENU_hide_played">Схаваць прайграныя</string>
+    <string name="MENU_hide_read">Схаваць прачытаныя</string>
+    <string name="MENU_import_selected">Імпартаваць выбраныя</string>
+    <string name="MENU_lock_episode">Задаць як выбранае</string>
+    <string name="MENU_mark_all_as_played">Пазначыць усе прайгранымі</string>
+    <string name="MENU_mark_all_as_read">Пазначыць усе прачытанымі</string>
+    <string name="MENU_mark_played">Адзначыць прайграным</string>
+    <string name="MENU_mark_read">Адзначыць прачытаным</string>
+    <string name="MENU_mark_unplayed">Ачысціць прайграныя</string>
+    <string name="MENU_mark_unread">Адзначыць непрачытаным</string>
+    <string name="MENU_media_route">Прайграць на…</string>
+    <string name="MENU_move_to_bottom">Перамясціць уніз</string>
+    <string name="MENU_move_to_top">Перамясціць уверх</string>
+    <string name="MENU_open_episode_feed">Адкрыць паток…</string>
+    <string name="MENU_open_search">Пошук</string>
+    <string name="MENU_opml_search">Пошук</string>
+    <string name="MENU_play_episodes">Прайграць эпізоды</string>
+    <string name="MENU_play_in_external_player">Прайграць у знешнім плэеры</string>
+    <string name="MENU_podcast_info">Праглядзець нататкі эпізоду</string>
+    <string name="MENU_remove_from_playlist">Выдаліць з плэйлісту</string>
+    <string name="MENU_reorder_categories">Змяніць парадак катэгорый</string>
+    <string name="MENU_reset_tips">Скінуць парады і папярэджанні</string>
+    <string name="MENU_set_update_schedule">Настроіць расклад абнаўленняў</string>
+    <string name="MENU_setdefault_smartplay">Устал. па змаўчанні</string>
+    <string name="MENU_show_played">Паказаць прайграныя</string>
+    <string name="MENU_show_read">Паказаць прачытаныя</string>
+    <string name="MENU_sort_podcasts">Сартаваць</string>
+    <string name="MENU_start_download">Спампаваць</string>
+    <string name="MENU_stop_browser_load">Спыніць</string>
+    <string name="MENU_stop_update">Спыніць</string>
+    <string name="MENU_suggest_feature">Даведка і зваротная сувязь</string>
+    <string name="MENU_unlock_app">Перайсці да PRO-версіі!</string>
+    <string name="MENU_unlock_episode">Ачысціць выбранае</string>
+    <string name="MENU_update_my_episodes">Абнавіць %s</string>
+    <string name="MENU_update_smartplay">Абнавіць патокі</string>
+    <string name="MENU_video_as_audio">Прайграваць відэа як аудыё</string>
+    <string name="MENU_view_help">Даведка</string>
+    <string name="MENU_view_log_file">Праглядзець журнал BeyondPod</string>
+    <string name="MENU_view_logcat_file">Праглядзець журнал Android</string>
+    <string name="MENU_view_logs">Праглядзець журналы…</string>
+    <string name="MENU_view_update_log">Праглядзець журнал абнаўлення</string>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">ВЫКЛ.</string>
+    <string name="abc_capital_on">УКЛ.</string>
+    <string name="abc_search_hint">Пошук...</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Згарнуць</string>
+    <string name="about_dialog_about_beyondpod">Аб BeyondPod</string>
+    <string name="about_dialog_close">Закрыць</string>
+    <string name="about_dialog_e_mail_support">Падтрымка праз эл.пошту</string>
+    <string name="about_dialog_environment_info">Інфармацыя аб прыладзе</string>
+    <string name="about_dialog_expires">Тэрмін дзеяння сканчаецца</string>
+    <string name="about_dialog_licensed_to">Тып ліцэнзіі</string>
+    <string name="add_feed_dialog_title">Дадаць паток</string>
+    <string name="add_feed_dlg_enter_feed_url">Увядзіце адрас патока</string>
+    <string name="add_feed_dlg_import_from_google_reader">Імпартаваць з Feedly</string>
+    <string name="add_feed_dlg_import_from_opml_file">Імпартаваць файл OPML</string>
+    <string name="add_feed_dlg_import_from_sd_card_folder">Дадаць папку як віртуальны паток</string>
+    <string name="add_feed_import_feeds_title">Імпартаваць патокі</string>
+    <string name="add_feed_subscribe">Падпісацца</string>
+    <string name="adv_settings_allow_pultorefresh_summary">Абнаўляць патокі і спампоўваць эпізоды з дапамогай «Пацягнуць, каб абнавіць\"</string>
+    <string name="adv_settings_allow_pultorefresh_title">Уключыць «Пацягнуць, каб абнавіць»</string>
+    <string name="adv_settings_attach_file_when_sharing_summary">Далучае файлы эпізода, калі вы дзеліцеся эпізодам. Уключыць, калі вы дзеліцеся праз DropBox, Google Drive і інш.</string>
+    <string name="adv_settings_attach_file_when_sharing_title">Далучаць файлы эпізода падчас дзялення</string>
+    <string name="adv_settings_cds_sync_furthest_pos_summary">Сінхранізаваць пазіцыю прайгравання эпізоду толькі калі пазіцыя на аддаленай прыладзе далей, чым бягучая пазіцыя</string>
+    <string name="adv_settings_cds_sync_furthest_pos_title">Сінхранізаваць па самай дальняй пазіцыі</string>
+    <string name="adv_settings_custom_cds_settings_summary">Не змяняйце! (акрамя выпадкаў, калі вы разумееце, што робіце)</string>
+    <string name="adv_settings_custom_cds_settings_title">Налады адладкі</string>
+    <string name="adv_settings_custom_sdcard_location_summary">Увядзіце ўласны шлях, куды BeyondPod будзе захоўваць спампаваныя эпізоды падкастаў</string>
+    <string name="adv_settings_custom_sdcard_location_title">Шлях спампавання эпізоду</string>
+    <string name="adv_settings_enable_cds_settings_dlg_msg">"EpisodeSync сінхранізуе патокі і пазіцыі прайгравання эпізодаў паміж некалькімі прыладамі.
+
+EpisodeSync зараз даступна ў абмежаванай БЭТА-версіі, таму час ад часу могуць узнікаць памылкі.
+
+Калі вы жадаеце паспрабаваць гэтую БЭТА-версію, дадатковая інфармацыя даступна на форуме падтрымкі: www.beyondpod.com/forum"</string>
+    <string name="adv_settings_enable_cds_settings_dlg_title">Увага - БЭТА-версія функцыі!</string>
+    <string name="adv_settings_enable_logging_summary">Уключае дэталёвае журналяванне прыкладання</string>
+    <string name="adv_settings_enable_logging_title">Уключыць журналяванне</string>
+    <string name="adv_settings_http_timeout_summary">Таймаўт у секундах па змаўчанні для злучэння http пры абнаўленні патокаў ці спампаванні падкастаў</string>
+    <string name="adv_settings_http_timout_title">Таймаўт злучэння</string>
+    <string name="adv_settings_http_user_agent_summary">Увядзіце поўны радок User Agent, MO (для Mozilla) ці IE (для Internet Explorer)</string>
+    <string name="adv_settings_http_user_agent_title">User Agent</string>
+    <string name="adv_settings_keep_screen_on_if_wifi_summary">Пакідае экран уключаным пры абнаўленні праз WiFi. (Праверце, як часта абнаўленне праз WiFi не выконваецца)</string>
+    <string name="adv_settings_keep_screen_on_if_wifi_title">Уключыць экран падчас абнаўлення праз WiFi</string>
+    <string name="alert_dialog_allow">Дазволіць</string>
+    <string name="alert_dialog_cancel">Адмена</string>
+    <string name="alert_dialog_close">Закрыць</string>
+    <string name="alert_dialog_continue">Працягнуць</string>
+    <string name="alert_dialog_exit">Выйсці з BeyondPod</string>
+    <string name="alert_dialog_external_player_help">Даведка па плэеры</string>
+    <string name="alert_dialog_feed_help">Даведка</string>
+    <string name="alert_dialog_ignore">Ігнарыраваць</string>
+    <string name="alert_dialog_no">Не</string>
+    <string name="alert_dialog_ok">ОК</string>
+    <string name="alert_dialog_reset">Пераключыць</string>
+    <string name="alert_dialog_save">Захаваць</string>
+    <string name="alert_dialog_try_external_player">Паспрабаваць знешні плэер</string>
+    <string name="alert_dialog_yes">Так</string>
+    <string name="android_auto_categories_folder">Катэгорыі</string>
+    <string name="android_auto_feeds_folder">Патокі</string>
+    <string name="android_auto_trial_expired">Пробны перыяд BeyondPod скончаны!</string>
+    <string name="app_shareLink">Падпісацца ў BeyondPod</string>
+    <string name="application_error_access_denied">Добра... але BeyondPod не зможа даступацца да карткі сховішча (абнаўляць патокі ці спампоўваць/выдаляць/перамяшчаць эпізоды)</string>
+    <string name="application_error_access_granted">Дзякуй! Зараз BeyondPod можа даступацца да карткі сховішча.</string>
+    <string name="application_error_access_granted_but_still_cant_write">"Ай... Нешта пайшло не так!
+
+Прыкладанне BeyondPod атрымала дазвол на доступ да карткі сховішча, але ўсё роўна не можа запісваць на яе.
+
+Паспрабуйце перазапусціць прыладу."</string>
+    <string name="application_error_access_granted_retry">"Дазвол атрыманы!
+Паспрабуйце выканаць дзеянне яшчэ раз."</string>
+    <string name="application_error_access_request">Дазволіць доступ</string>
+    <string name="application_error_invalid_reader_login">"Магчыма, вы не ўвайшлі ў Feedly, ці апошні сеанс скончыўся!
+
+З дапамогай кнопкі «Ўваход» ніжэй увайдзіце яшчэ раз і паспрабуйце абнавіць паток ізноў"</string>
+    <string name="application_error_invalid_reader_login_button_text">Увайсці ў Feedly</string>
+    <string name="application_error_message_dialog_title">Памылка BeyondPod</string>
+    <string name="application_error_permission_request">Запыт на доступ</string>
+    <string name="application_error_storage_card_corrupted">"У BeyondPod не атрымалася запісаць на картку сховішча!
+
+У некаторых выпадках праблему можна вырашыць перазапускам прылады ці, калі перазапуск не дапамагае, перафарматаваннем SD-карткі."</string>
+    <string name="application_error_storage_card_read_needs_access_permission">BeyondPod неабходны дазвол для доступа да карткі сховішча (SD).</string>
+    <string name="application_error_storage_card_read_needs_write_permission">BeyondPod неабходны дазвол для захавання эпізодаў на картку сховішча (SD).</string>
+    <string name="application_error_storage_card_read_only_kitkat">"З-за абмежаванняў для знешніх картак сховішча, якія з'явіліся ў Android KitKat, BeyondPod не можа запісваць у бягучую папку спампавання.
+
+Перайдзіце ў Налады > Агульныя налады > Папка спампавання падкастаў, каб выбраць іншую папку для спампавання."</string>
+    <string name="application_licensed_to">.</string>
+    <string name="audiobook_search_hint">Увядзіце аўтара ці назву кнігі</string>
+    <string name="auto_now_playing">Зараз прайграваецца</string>
+    <string name="auto_playlist">Плэйліст</string>
+    <string name="br_backup_command_summary">Выконвае рэзервовае капіраванне налад і патокаў BeyondPod. Спампаваныя эпізоды НЕ капіруюцца</string>
+    <string name="br_backup_command_title">Рэзервовае капіраванне</string>
+    <string name="br_backup_failed">"Збой рэзервовага капіравання!
+
+%s"</string>
+    <string name="br_backup_lost_on_uninstall_warning_msg">"Выбранае зараз месцазнаходжанне рэзервовых копій будзе выдалена, калі вы выдаліце BeyondPod.
+
+Калі вы хочаце захаваць рэзервовыя копіі, мы прапануем выкарыстоўваць функцыю «Падзяліцца рэзервовай копіяй» і экспартаваць іх на DropBox, Google Drive, адправіць па электроннай пошце і інш., каб захоўваць не на прыладзе!"</string>
+    <string name="br_backup_protected_feeds_warning_msg">"%s з вашых патокаў абаронены паролямі!
+
+Паролі патокаў будуць уключаны ў рэзервовую копію, а гэта значыць, што злачынец можа атрымаць да іх доступ.
+
+Упэўніцеся, што файл рэзервовай копіі захоўваецца ў БЯСПЕЧНЫМ месцы!"</string>
+    <string name="br_backup_was_saved_to">"Рэзервовая копія захавана ў:
+
+%s"</string>
+    <string name="br_last_backup">Апошняя рэзервовая копія: %s</string>
+    <string name="br_no_backups_available">У %s няма файлаў рэзервовых копій</string>
+    <string name="br_restore_command_summary">Аднавіць налады і патокі BeyondPod</string>
+    <string name="br_restore_command_title">Аднавіць</string>
+    <string name="br_restore_complete">"Аднаўленне выканана!
+
+Зараз BeyondPod перазагрузіцца, каб прымяніць новыя налады."</string>
+    <string name="br_restore_failed">"Збой аднаўлення!
+
+%s"</string>
+    <string name="br_restore_warning_msg" formatted="false">"Вы збіраецеся аднавіць рэзервовую копію BeyondPod вер. %s,
+ зробленую на %s %s!
+
+Гэта перазапіша вашы налады, патокі і гісторыю спампавання.
+
+ Працягнуць аднаўленне?"</string>
+    <string name="br_restore_warning_title">Аднаўленне BeyondPod</string>
+    <string name="br_select_backup_to_restore">Выберыце рэзервовую копію для аднаўлення</string>
+    <string name="br_select_backup_to_share">Выберыце рэзервовую копію, каб падзяліцца</string>
+    <string name="br_settings_command_summary">%s</string>
+    <string name="br_settings_command_title">Месцазнаходжанне рэзервовых копій</string>
+    <string name="br_share_backup_using">Падзяліцца рэзервовай копіяй праз…</string>
+    <string name="br_share_command_summary">Адправіць рэзервовую копію на іншую прыладу (праз эл. пошту ці сэрвіс для перадачы файлаў накшталт Dropbox, Google Drive, Box.com і інш.)</string>
+    <string name="br_share_command_title">Падзяліцца рэзервовай копіяй</string>
+    <string name="cancel_button">Cancel Button</string>
+    <string name="card_section_favorite_episodes">Выбраныя эпізоды</string>
+    <string name="card_section_publisher_label">Абноўлена</string>
+    <string name="card_section_recently_played">Нядаўна прайграныя</string>
+    <string name="card_section_what_is_new">Апошнія эпізоды</string>
+    <string name="cast_notification_connected_message">Падключэнне да %1$s выканана</string>
+    <string name="cast_notification_connecting_message">Падключэнне да %1$s</string>
+    <string name="cast_notification_default_channel_name">Cast</string>
+    <string name="cast_notification_disconnect">Адключыць</string>
+    <string name="categories_num_feeds">%s паток.</string>
+    <string name="category_all_episodes">Усе эпізоды</string>
+    <string name="category_all_feeds">Усе патокі</string>
+    <string name="category_editor_dialog_add_category">Дадаць катэгорыю</string>
+    <string name="category_home_page">Что прайграць</string>
+    <string name="category_properties_category_color">Колер катэгорыі</string>
+    <string name="category_properties_feed_name">Зразумелае імя катэгорыі (напрыклад, Навіны, Музыка, Спорт і г.д.)</string>
+    <string name="category_properties_title">Рэдагаваць катэгорыю</string>
+    <string name="category_properties_update_schedule_msg">"• Запланаваныя абнаўленні пачнуцца ў названы «час пачатку» і будуць выконвацца да паўночы гэтага дня.
+• Адначасова можа выконвацца толькі"<b> адно</b> запланаванае абнаўленне!</string>
+    <string name="category_properties_update_schedule_msg_top">У BeyondPod абнаўленні патокаў плануюцца на ўзроўні катэгорый. Расклад, прадстаўлены ніжэй, дзейнічае для абнаўлення і спампавання новых эпізодаў для ўсіх патокаў у гэтай катэгорыі.</string>
+    <string name="category_properties_vld_NameEmpty">Увядзіце назву катэгорыі</string>
+    <string name="category_properties_vld_categoryExists">Катэгорыя з такой назвай ужо існуе!</string>
+    <string name="category_props_new_category">Новая катэгорыя</string>
+    <string name="category_props_unable_to_modify_category">Немагчыма змяніць катэгорыю!</string>
+    <string name="category_schedule_active">Абнаўленне па раскладу</string>
+    <string name="category_schedule_please_make_sure_that_start_times_are_at_least_15_minutes_apart">Упэўніцеся, што часы пачатку адрозніваюцца не менш чым на 15 хвілін!</string>
+    <string name="category_schedule_repeat_title">Паўтараць кожныя</string>
+    <string name="category_schedule_the_start_time_of_this_update_overlaps_with_category">Час пачатку гэтага абнаўлення перасякаецца з катэгорыяй</string>
+    <string name="category_schedule_time_title">Пачаць у</string>
+    <string name="category_uncategorized">Без катэгорыі</string>
+    <string name="cc_cast_to">Вяшчаць на прыладу</string>
+    <string name="cc_casting_to">Вяшчанне на %s</string>
+    <string name="cds_account_exists">Уліковы запіс ужо існуе!</string>
+    <string name="cds_account_quota_reached">Наша група бэта-тэстараў EpisodeSync зараз поўная. Мы спадзяемся дадаць новых карыстальнікаў неўзабаве, сачыце за форумам для атрымання апошняй інфармацыі.</string>
+    <string name="cds_awaiting_verification_msg">"Мы адправілі вам праверачны ліст на эл. пошту %s
+
+Адкрыйце спасылку ў лісце, каб актывіраваць уліковы запіс!"</string>
+    <string name="cds_awaiting_verification_title">Ваш уліковы запіс яшчэ не актыўны!</string>
+    <string name="cds_create_account_text">Стварыць уліковы запіс</string>
+    <string name="cds_create_text">Стварыць</string>
+    <string name="cds_device_id">ІДЭНТЫФІКАТАР ПРЫЛАДЫ: %s</string>
+    <string name="cds_enable_sync">Уключыць EpisodeSync для гэтай прылады</string>
+    <string name="cds_help">Як працуе EpisodeSync</string>
+    <string name="cds_info_forgot_password">Забылі пароль?</string>
+    <string name="cds_info_label_create">Пасля стварэння ўліковага запісу EpisodeSync выкарыстоўвайце адзін і той самы ўліковы запіс для ўсіх прылад, якія вы жадаеце сінхранізаваць</string>
+    <string name="cds_info_title1">EpisodeSync сінхранізуе патокі і пазіцыі прайгравання ў эпізодах паміж некалькімі прыладамі. Дадатковую інфармацыю гл. у %s.</string>
+    <string name="cds_invalid_email">Няправільная электронная пошта</string>
+    <string name="cds_invalid_password">Пароль надта кароткі! Увядзіце 5 і больш сімвалаў</string>
+    <string name="cds_last_sync">Апошняя сінхранізацыя: %s</string>
+    <string name="cds_logaout_text">Выйсці</string>
+    <string name="cds_login_failed">Няправільнае імя карыстальніка ці пароль!</string>
+    <string name="cds_login_text">Увайсці</string>
+    <string name="cds_menu_send_feed_to_devices">Адправіць паток на мае іншыя прылады</string>
+    <string name="cds_menu_sync">EpisodeSync</string>
+    <string name="cds_menu_sync_show_log">Праглядзець журнал сінхранізацыі</string>
+    <string name="cds_menu_sync_start">Запусціць EpisodeSync</string>
+    <string name="cds_network_error">"Немагчыма падлучыцца да сэрвераў BeyondPod!
+Паспрабуйце пазней"</string>
+    <string name="cds_not_available_in_lite_version">Пробны перыяд BeyondPod скончаны! Функцыя EpisodeSync даступна толькі ў версіі «Pro» BeyondPod.</string>
+    <string name="cds_notification_applying_remote_changes">Прымяненне дыстанцыйных змен</string>
+    <string name="cds_notification_checking_for_remote_changes">Праверка дыстанцыйных змен</string>
+    <string name="cds_notification_publishing_local_changes">Публікацыя дыстанцыйных змен</string>
+    <string name="cds_notification_syncing_local_changes">Сінхранізацыя лакальных змен</string>
+    <string name="cds_option_allow_remote_episode_deletions">Калі эпізоды выдаляюцца на іншых прыладах, выдаляць іх таксама з гэтай прылады.</string>
+    <string name="cds_option_allow_remote_feed_additions">Прымаць патокі з маіх іншых прылад</string>
+    <string name="cds_password">Пароль</string>
+    <string name="cds_password_dont_match">Паролі не супадаюць</string>
+    <string name="cds_retype_password">Паўтарыце пароль</string>
+    <string name="cds_sync_settings">Налады сінхранізацыі</string>
+    <string name="cds_user_name">Электронная пошта</string>
+    <string name="checking_for_alternatives">Пошук…</string>
+    <string name="clear_cache_dio_cache_cleared">Кэш ачышчаны!</string>
+    <string name="color_picker_pick_a_category_color">Выберыце колер для катэгорыі</string>
+    <string name="command_manager_beyondpod_feed_search">Пошук патокаў BeyondPod</string>
+    <string name="command_manager_there_is_nothing_to_play">Няма нічога для прайгравання!</string>
+    <string name="command_manager_unable_to_open_url">Немагчыма адкрыць URL!</string>
+    <string name="command_manager_unable_to_start_external_player">Не атрымалася запусціць знешняе прыкладанне!</string>
+    <string name="command_manager_unable_to_start_video_player">Не атрымалася запусціць відэаплэер!</string>
+    <string name="command_manager_update_and_download_log">Журнал абнаўлення і спампавання</string>
+    <string name="common_google_play_services_enable_button">Уключыць</string>
+    <string name="common_google_play_services_enable_text">%1$s не будзе працаваць, пакуль вы не ўключыце службы Google Play.</string>
+    <string name="common_google_play_services_enable_title">Уключыць службы Google Play</string>
+    <string name="common_google_play_services_install_button">Усталяваць</string>
+    <string name="common_google_play_services_install_text">%1$s не будзе працаваць без службаў Google Play, якія адсутнічаюць на вашай прыладзе.</string>
+    <string name="common_google_play_services_install_title">Атрымаць службы Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Даступнасць сэрвісаў Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Памылка службаў Google Play</string>
+    <string name="common_google_play_services_unknown_issue">У праграмы %1$s узніклі праблемы са службамі Google Play. Паўтарыце спробу.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s не будзе працаваць без службаў Google Play, якія не падтрымліваюцца вашай прыладай.</string>
+    <string name="common_google_play_services_update_button">Абнавіць</string>
+    <string name="common_google_play_services_update_text">%1$s не будзе працаваць, пакуль вы не абновіце службы Google Play.</string>
+    <string name="common_google_play_services_update_title">Абнаўленне службаў Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s не будзе працаваць без службаў Google Play, якія ў цяперашні час абнаўляюцца.</string>
+    <string name="common_google_play_services_wear_update_text">Патрабуецца новая версія служб Google Play. Яна абновіцца аўтаматычна ў бліжэйшы час.</string>
+    <string name="common_open_on_phone">Адкрыць на тэлефоне</string>
+    <string name="common_signin_button_text">Увайсцi</string>
+    <string name="common_signin_button_text_long">Увайсці праз Google</string>
+    <string name="contextmenu_add_contact">Дадаць кантакт</string>
+    <string name="contextmenu_copy">Капіраваць</string>
+    <string name="contextmenu_copylink">Капіраваць адрас спасылкі</string>
+    <string name="contextmenu_dial_dot">Набраць…</string>
+    <string name="contextmenu_map">Карта</string>
+    <string name="contextmenu_open_in_browser">Адкрыць у браўзеры</string>
+    <string name="contextmenu_send_mail">Адправіць эл.пошту</string>
+    <string name="contextmenu_sharelink">Падзяліцца спасылкай</string>
+    <string name="contextmenu_view_image">Праглядзець малюнак</string>
+    <string name="date_time_also_this_month">Раней у гэтым месяцы</string>
+    <string name="date_time_also_this_week">Раней на гэтым тыдні</string>
+    <string name="date_time_also_this_year">Раней у гэтым годзе</string>
+    <string name="date_time_last_month">У мінулым месяцы</string>
+    <string name="date_time_last_week">На мінулым тыдні</string>
+    <string name="date_time_older">Старэйшыя эпізоды</string>
+    <string name="date_time_this_month">У гэтым месяцы</string>
+    <string name="date_time_this_week">На гэтым тыдні</string>
+    <string name="date_time_this_year">У гэтым годзе</string>
+    <string name="date_time_today">Сёння</string>
+    <string name="delete_category_dialog_data">дадзеныя</string>
+    <string name="delete_feed_diolog_feed">паток</string>
+    <string name="delete_feed_diolog_sure_you_want_to_delete">Сапраўды выдаліць</string>
+    <string name="delete_podcast_dlg_episodes">эпіз.</string>
+    <string name="delete_podcast_dlg_favorite">Выбраныя</string>
+    <string name="delete_podcast_dlg_locked">Заблакіраваныя</string>
+    <string name="dlg_DeleteCategoryMsg">"Сапраўды выдаліць катэгорыю:
+
+ %s?"</string>
+    <string name="dlg_DeleteFeedAndPodcastsMsg">"Сапраўды выдаліць:
+
+%s?
+
+(Гэта таксама выдаліць усе спампаваныя эпізоды падкастаў гэтага патоку.)"</string>
+    <string name="dlg_DeleteFeedMsg">"Сапраўды выдаліць:
+
+%s?"</string>
+    <string name="dlg_DeletePodcastMsg">"Сапраўды выдаліць:
+
+%s"</string>
+    <string name="dlg_about_Msg">"Пытанні ці каментары пакідайце на
+
+www.beyondpod.com
+
+
+Copyright BeyondPod Team 2008–2014
+Усе правы абаронены.
+
+Ліцэнзіі адкрытага зыходнага коду
+www.beyondpod.mobi/osl"</string>
+    <string name="dlg_clear_feed_cache">Ачысціць кэш патока</string>
+    <string name="dlg_clear_feed_cache_msg">Кэш патока знаходзіцца на картцы памяці і ўтрымлівае лакальныя версіі вашых патокаў.</string>
+    <string name="dlg_clear_podcast_imgage_cache">Ачысціць кэш малюнкаў патокаў</string>
+    <string name="dlg_clear_podcast_imgage_cache_msg">Прымушае BeyondPod перазагрузіць малюнкі эпізодаў з базы дадзеных медыя на прыладзе.</string>
+    <string name="dlg_delete_locked_podcasts_msg">Таксама выдаліць заблакаваныя эпізоды</string>
+    <string name="dlg_dont_show_again_msg">Не паказваць гэта паведамленне зноў</string>
+    <string name="dlg_enable_speedup_btn_buy">Уключыць падтрымку хуткасці прайгравання</string>
+    <string name="dlg_enable_speedup_plugin_msg">"BeyondPod дазваляе прайграваць эпізоды з большай (ці меншай) хуткасцю.
+
+"<i>Выбар хуткасці прайгравання зараз знаходзіцца ў стане БЭТА і можа працаваць не на ўсіх прыладах ці не з усімі фарматамі падкастаў.</i></string>
+    <string name="dlg_invalid_cant_connect_tofeed_URL_message">"Не атрымалася далучыцца да сайта патока.
+
+Магчыма, адрас патока няправільны, ці ў сайта часовыя праблемы са злучэннем."</string>
+    <string name="dlg_invalid_feed_URL_generic_message">"Хутчэй за ўсё, гэта спасылка на вэб-старонку з патокам, а не на сам паток RSS. Паспрабуйце адкрыць гэтую старонку ў вэб-браўзеры і пашукайце прамую спасылку на паток RSS.
+
+Краніце кнопку «Даведка» ніжэй, каб атрымаць дадатковую інфармацыю аб знаходжанні спасылак на патокі RSS на вэб-старонках."</string>
+    <string name="dlg_invalid_feed_URL_itunes_message">"Хутчэй за ўсё, гэта спасылка на iTunes-версію патоку.
+
+Краніце кнопку «Даведка» ніжэй, каб атрымаць дадатковую інфармацыю аб знаходжанні спасылак на патокі RSS у iTunes."</string>
+    <string name="dlg_invalid_feed_URL_message">"Паток па спасылцы не з'яўляецца правільным патокам RSS ці Atom.
+
+%s"</string>
+    <string name="dlg_invalid_feed_URL_mp3_message">"Хутчэй за ўсё, гэта спасылка на MP3-файл аднаго эпізода. Паспрабуйце адкрыць вэб-старонку падкаста ў вэб-браўзеры і пашукайце прамую спасылку на паток RSS.
+
+Краніце кнопку «Даведка» ніжэй, каб атрымаць дадатковую інфармацыю аб знаходжанні спасылак на патокі RSS."</string>
+    <string name="dlg_invalid_feed_URL_title">Праблема з адрасам патока</string>
+    <string name="dlg_playback_speed_not_available_in_lite_version">"Пробны перыяд BeyondPod скончаны!
+
+Змяненне хуткасці прайгравання даступна толькі ў «Pro»-версіі BeyondPod."</string>
+    <string name="dlg_purchase_btn_Msg">Купіць ключ</string>
+    <string name="dlg_purchase_info_Msg">Калі пробны перыяд скончыцца, BeyondPod вернецца да версіі<b> Lite</b>, дзе некаторыя функцыі версіі<b> Pro</b>" адключаны.
+"</string>
+    <string name="dlg_purchase_info_header_did">Поўнафункцыянальная пробная версія BeyondPod скончылася</string>
+    <string name="dlg_purchase_info_header_will">Поўнафункцыянальная пробная версія BeyondPod скончыцца</string>
+    <string name="dlg_purchase_speedup_plugin_doNotshow">Адключыць і схаваць кнопку хуткасці прайгравання</string>
+    <string name="dlg_purchase_speedup_plugin_doNotshowInfo">Каб уключыць кантроль хуткасці пазней, выберыце Налады > Налады плэеру > Хуткасць прайгравання.</string>
+    <string name="dlg_purchase_speedup_plugin_doShowInfo">Калі выбар хуткасці прайгравання не працуе адпаведным чынам на вашай прыладзе, яго можна адключыць у меню: Налады > Налады плэеру > Хуткасць прайгравання.</string>
+    <string name="dlg_purchase_speedup_plugin_title">Магчымасць выбару хуткасці прайгравання</string>
+    <string name="dlg_purchase_title">Разблакіраваць BeyondPod</string>
+    <string name="dlg_purchase_why_pro_Msg">Чаму трэба купіць версію PRO?</string>
+    <string name="dlg_speedup_not_supported">Гэты эпізод можна прайграць толькі з нармальнай хуткасцю</string>
+    <string name="dlg_speedup_not_supported_for_streaming">"Патокавае прайграванне эпізодаў магчыма толькі на нармальнай хуткасці.
+
+Спампуйце эпізод перад прайграваннем."</string>
+    <string name="dlg_user_warning_installed_on_sd_card_msg">"BeyondPod усталявана на SD-картку. Такое выкарыстанне BeyondPod мае 2 абмежаванні, пра якія трэба памятаць:
+
+ • Віджэты BeyondPod будуць недаступныя.
+ • Мантаванне SD-карткі як USB-сховішча адменіць усе запланаваныя абнаўленні да перазапуску BeyondPod.
+
+"<i>Калі ў вашай прыладзе дастаткова памяці, мы рэкамендуем перамясціць BeyondPod у памяць прылады.</i></string>
+    <string name="dlg_user_warning_mark_all_played_msg">Сапраўды пазначыць УСЕ эпізоды гэтага патоку як ПРАЙГРАНЫЯ?</string>
+    <string name="dlg_user_warning_mark_all_read_msg">Сапраўды пазначыць УСЕ запісы гэтага патоку як ПРАЧЫТАНЫЯ?</string>
+    <string name="dlg_user_warning_open_ext_player_msg">"Вы можаце паспрабаваць адкрыць некаторыя элементы з дапамогай знешняга прыкладання.
+
+Краніце 'Працягнуць' і BeyondPod знойдзе ўсе ўсталяваныя прыкладанні, якія могуць адлюстроўваць кантэнт гэтага тыпу. Вы таксама можаце змяніць аудыё- ці відэаплэер па змаўчанні на 'Знешні' у наладах BeyondPod"</string>
+    <string name="dlg_user_warning_open_ext_player_title">Неабходны знешні плэер</string>
+    <string name="dlg_user_warning_start_episode_download_msg">"Спампаванне эпізодаў можа выкарыстоўваць вялікія аб'ёмы дадзеных.
+
+Мы рэкамендуем WiFi-злучэнне ці неабмежаваны мабільны тарыф."</string>
+    <string name="dlg_user_warning_start_update_download_msg">"Гэта абновіць усе патокі бягучай катэгорыі і, калі гэта настроена ў патоку, спампуе апошнія эпізоды падкастаў.
+
+Спампаванне эпізодаў можа выкарыстоўваць вялікія аб'ёмы дадзеных. Мы рэкамендуем WiFi-злучэнне ці неабмежаваны мабільны тарыф."</string>
+    <string name="dlg_user_warning_stream_failed_msg">Здаецца, што інтэрнэт-злучэнне разарвана. Паспрабуйце пазней.</string>
+    <string name="dlg_user_warning_stream_failed_title">Праблема з відэапатокам</string>
+    <string name="dlg_user_warning_stream_format_problem_msg">"Фармат відэа не падтрымліваецца плэерам па змаўчанні.
+
+(Некаторыя відэа можна прайграць толькі з дапамогай знешняга відэаплэера. Каб атрымаць дадатковую інфармацыю, краніце «Даведка па плэеры»)"</string>
+    <string name="dlg_user_warning_stream_format_problem_title">Праблема з фарматам відэа</string>
+    <string name="dlg_user_warning_title">Папярэджанне</string>
+    <string name="download_agent_both_mobile_and_wifi_data_connections_are_allowed">"
+
+Дазволены мабільнае злучэнне і WiFi!"</string>
+    <string name="download_agent_insufficient_disk_space_to_complete_the_download_required">Недастаткова месца для сканчэння спампавання! Патрэбна:</string>
+    <string name="download_agent_mobile_connections_not_allowed">"
+
+Мабільныя злучэнні ЗАБАРОНЕНЫ.
+Вы можаце дазволіць выкарыстанне мабільных злучэнняў (такіх як 3G/4G) у раздзеле «Абнаўленне патока» ў наладах BeyondPod"</string>
+    <string name="download_agent_unable_to_establish_internet_connection">Немагчыма ўсталяваць інтэрнэт-злучэнне!</string>
+    <string name="download_agent_wifi_allowed">"
+
+Спампаванне эпізодаў зараз дазволена толькі праз WiFi-злучэнне.
+Вы можаце дазволіць спампаванне эпізодаў праз любое злучэнне ў раздзеле «Абнаўленне патока» ў наладах BeyondPod"</string>
+    <string name="download_engine_notification_connecting">Злучэнне…</string>
+    <string name="download_engine_notification_downloaded">Спампаваныя</string>
+    <string name="download_engine_notification_downloading">Спампаванне…</string>
+    <string name="download_engine_notification_feed">паток</string>
+    <string name="download_engine_notification_feeds">патокаў</string>
+    <string name="download_engine_notification_found">Знойдзена</string>
+    <string name="download_engine_notification_left_to_download">засталося спампаваць</string>
+    <string name="download_engine_notification_left_to_update">Засталося абнавіць</string>
+    <string name="download_engine_notification_looking_for_new_podcasts_across">Пошук новых эпізодаў у</string>
+    <string name="download_engine_notification_more">яшчэ</string>
+    <string name="download_engine_notification_new">новых</string>
+    <string name="download_engine_notification_new_podcasts">новых эпізодаў…</string>
+    <string name="download_engine_notification_of">з</string>
+    <string name="download_engine_notification_podcast">эпізод</string>
+    <string name="download_engine_notification_podcasts">эпізодаў</string>
+    <string name="download_engine_notification_retrying">Паўторная спроба…</string>
+    <string name="download_engine_notification_updating">Абнаўленне</string>
+    <string name="download_holder_preparing_for_download">Падрыхтоўка да спампавання…</string>
+    <string name="drawer_close">Зачыніць панэль навігацыі</string>
+    <string name="drawer_open">Адчыніць панэль навігацыі</string>
+    <string name="error_CantCreateRootFolder">"У BeyondPod не атрымалася даступіцца да карты памяці!
+На карце могуць быць памылкі, ці яна абаронена ад запісу!"</string>
+    <string name="error_CantCreateRootFolderWorkaround">"
+
+(На некаторых прыладах стварэнне гэтай папкі ўручную можа вырашыць праблему. Ці паспрабуйце іншую карту памяці)"</string>
+    <string name="error_SDCardBusy">"У BeyondPod не атрымалася даступіцца да вашай карты памяці!
+
+Карта памяці адмантавана ці выкарыстоўваецца вашым ПК."</string>
+    <string name="error_SDCardError">У час спробы доступу да карты памяці ўзнікла памылка. Праверце карту памяці на наяўнасць памылак.</string>
+    <string name="error_SDCardMissing">У BeyondPod не атрымалася знайсці карту памяці ў вашай прыладзе!</string>
+    <string name="error_root_needs_permission">"У папцы 
+'%s' знойдзена папярэдне ўсталяваная версія BeyondPod.
+Каб выкарыстоўваць яе, BeyondPod спатрэбіцца дазвол на доступ да сховішча (SD-картка).
+
+Калі вы жадаеце «чыстую ўсталёўку», проста выйдзіце з BeyondPod, выдаліце папку і паспрабуйце яшчэ раз."</string>
+    <string name="export_to_opml_export_complete">Экспарт завершаны!</string>
+    <string name="export_to_opml_export_failed">Экспарт не выкананы!</string>
+    <string name="failed_to_connect_to_google_reader">"Не атрымалася злучыцца з Feedly, ці тэрмін дзеяння вашага логіна скончыўся.
+
+Паспрабуйце ўвайсці пазней."</string>
+    <string name="failed_to_connect_to_google_reader_account_mgr">"Не атрымалася злучыцца з Feedly!
+
+Паспрабуйце пазней"</string>
+    <string name="feedList_num_unread">Новыя</string>
+    <string name="feed_content_beyondpod_help">Даведка BeyondPod</string>
+    <string name="feed_content_insufficient_space_to_download_podcast" formatted="false">"Недастаткова свабоднага месца для запампавання гэтага эпізода.
+
+Для запампавання гэтага эпізода неабходна %s, у вас ёсць толькі %s на '%s'"</string>
+    <string name="feed_content_list_view__max_s">(max %s)</string>
+    <string name="feed_content_list_view_beyondpod_faq">Пытанні і адказы па BeyondPod</string>
+    <string name="feed_content_list_view_configure">Канфігураваць</string>
+    <string name="feed_content_list_view_disabled">Адключана</string>
+    <string name="feed_content_list_view_episode_details">Дэталі эпізодаў</string>
+    <string name="feed_content_list_view_episode_formats">Фарматы эпізодаў</string>
+    <string name="feed_content_list_view_failed_to_add_reader_subscription_for_feed">Не атрымалася дадаць падпіску Feedly для патока</string>
+    <string name="feed_content_list_view_feed_content">Змест патока</string>
+    <string name="feed_content_list_view_invalid_or_expired_google_reader_login">Няправільны ці пратэрмінаваны логін Feedly! (Змяніць логін Feedly можна ў раздзеле: Дадаць паток > Імпартаваць патокі > Імпарт з Feedly)</string>
+    <string name="feed_content_list_view_my_episodes">Мае Эпізоды</string>
+    <string name="feed_content_list_view_next_update">Наступнае абнаўленне</string>
+    <string name="feed_content_list_view_operation_failed">Аперацыя не выканана!</string>
+    <string name="feed_content_list_view_this_feed_is_s_days_old">%s дз. таму!</string>
+    <string name="feed_content_list_view_update_canceled">Абнаўленне адменена!</string>
+    <string name="feed_content_list_view_update_failed">Збой абнаўлення!</string>
+    <string name="feed_item_list_empty_loading_content">Загрузка патока…</string>
+    <string name="feed_item_list_empty_no_items">У гэтым патоку няма зместа!</string>
+    <string name="feed_item_list_empty_no_selected_feed">"Не выбраны ні адзін паток.
+Выберыце паток са спісу патокаў (левая панэль)"</string>
+    <string name="feed_item_list_empty_stop_update">Спыніць абнаўленне</string>
+    <string name="feed_item_list_empty_update">Абнавіць</string>
+    <string name="feed_item_list_empty_updating">Абнаўленне патока…</string>
+    <string name="feed_item_list_footer_has_hidden_items_l1">Некаторыя элементы схаваныя.</string>
+    <string name="feed_item_list_footer_has_hidden_items_l2">Паказаць усе</string>
+    <string name="feed_item_list_footer_reader_more_items_l1">Гэты паток настроены на спампаванне першых %s запісаў з Feedly.</string>
+    <string name="feed_item_list_footer_reader_more_items_l2"><u>Змяніць</u></string>
+    <string name="feed_item_list_header_reader_not_subscribed_l1">Калі ўсе запісы адлюстроўваюцца як «Прачытаныя», магчыма, вы не падпісаны на гэты паток у Feedly.</string>
+    <string name="feed_item_list_header_reader_not_subscribed_l2"><u>Дадаць гэты паток у Feedly</u></string>
+    <string name="feed_item_list_invalid_feed_auth_dlg_msg">"Для патока, які вы спрабуеце адкрыць, магчыма, патрэбен спецыяльны логін.
+
+Часта патокі з платных сайтаў патрабуюць паўторна ўвайсці ва ўліковы запіс, калі ваш інтэрнэт-адрас змяняецца (напрыклад, падчас падлучэння да WiFi ці мабільнай сеткі).
+
+Націсніце кнопку «Даведка» ніжэй, каб атрымаць дадатковую інфармацыю."</string>
+    <string name="feed_item_list_invalid_feed_dlg_msg">"У час апошняга абнаўлення патока ўзнікла памылка!
+
+"<i>"Часта гэта звязана з часовымі праблемамі з інтэрнэт-злучэннем ці з сайтам выдаўцы.
+
+Паспрабуйце абнавіць паток пазней. Калі праблемы захаваюцца, націсніце кнопку «ДАВЕДКА» ніжэй, каб атрымаць парады па ліквідацыі праблем."</i></string>
+    <string name="feed_item_list_invalid_feed_dlg_title">Праблема патока</string>
+    <string name="feed_item_list_invalid_feed_go_to_web_site_text">Вэб-сайт патока</string>
+    <string name="feed_item_list_invalid_feed_help_text">Даведка</string>
+    <string name="feed_list_empty_all_read">"Усе патокі прачытаны!
+
+"<u>Паказаць усе патокі</u></string>
+    <string name="feed_list_hide_read">Схаваць прачытаныя патокі</string>
+    <string name="feed_list_no_feeds_in_this_category">У гэтай катэгорыі няма патокаў</string>
+    <string name="feed_list_show_read">Паказаць усе патокі</string>
+    <string name="feed_patched_msg">"Узнікла праблема з адрасам патока, які вы выкарыстоўвалі, але мы знайшлі іншы адрас:
+
+%s
+
+, які, хутчэй за ўсё вам патрэбен.
+
+Выкарыстоўваць яго?"</string>
+    <string name="feed_properties_advanced_section">Пашыраныя налады</string>
+    <string name="feed_properties_allow_deletions_msg">Кантралюе аўтаматычнае выдаленне лакальных эпізодаў патоку (каб вызваліць месца для новых эпізодаў падчас абнаўлення ці па заканчэнні прайгравання). Для выкарыстання функцыі аўтаматычнай ачысткі эпізодаў неабходна адзначыць «Дазволіць выдаленне эпізодаў».</string>
+    <string name="feed_properties_allow_deletions_title">Дазволіць выдаленне эпізодаў</string>
+    <string name="feed_properties_allow_deletions_vir_feed_msg">Кантралюе аўтаматычнае выдаленне эпізодаў гэтага патоку (і ўсіх падпатокаў), каб вызваліць месца для новых (напрыклад, па заканчэнні прайгравання).</string>
+    <string name="feed_properties_clear_custom_image_title">Ачысціць малюнак</string>
+    <string name="feed_properties_configure_defaults">Канфігураваць налады па змаўчанні, якія выкарыстоўваюцца пры даданні новых эпізодаў, можна<u> тут</u>.</string>
+    <string name="feed_properties_custom_image">Выбраць малюнак</string>
+    <string name="feed_properties_custom_image_msg">Для прызначэння асобага малюнка патоку захавайце малюнак у фармаце PNG ці JPG недзе на SD-картцы і ўпэўніцеся, што малюнак бачны ў Галерэі малюнкаў прылады. Націсніце кнопку «Выбраць малюнак» вышэй, каб знайсці і выбраць малюнак у Галерэі. (Пасля прызначэння малюнка, яго можна выдаліць з Галерэі).</string>
+    <string name="feed_properties_custom_image_title">Выбраць малюнак патока</string>
+    <string name="feed_properties_download_history_clear_history">Ачысціць гісторыю спампавання патока</string>
+    <string name="feed_properties_download_history_mark_downloaded">Пазначыць усе як спампаваныя</string>
+    <string name="feed_properties_download_history_msg">Для кожнага патока BeyondPod адсочвае спампаваныя раней эпізоды. Націск на кнопку «Ачысціць гісторыю спампавання патока» выдаліць гісторыю спампаванняў для гэтага патока, а ўсе эпізоды будуць адлюстроўвацца як ніколі не спампаваныя. Кнопка «Пазначыць усе як спампаваныя» працуе адваротным чынам: усе новыя эпізоды патока будуць адзначаны як ужо спампаваныя (без фактычнага спампавання).</string>
+    <string name="feed_properties_download_history_title">Гісторыя спампавання падкаста</string>
+    <string name="feed_properties_feed_categories_msg">Вы можаце назначыць да 2 катэгорый для гэтага патоку. Назначэнне катэгорыі патоку таксама аўтаматычна ўключае паток у расклад абнаўленняў для гэтай катэгорыі (калі існуе).</string>
+    <string name="feed_properties_feed_categories_title">Катэгорыі патокаў</string>
+    <string name="feed_properties_feed_download_folder_msg">Гэта папка, у якую BeyondPod будзе спампоўваць эпізоды гэтага патока. Пакіньце поле пустым, каб выкарыстоўваць папку па змаўчанні (зараз %s), ці калі ў патоку няма эпізодаў.</string>
+    <string name="feed_properties_feed_download_folder_title">Папка спампавання эпізодаў</string>
+    <string name="feed_properties_feed_download_folder_vir_feed_msg">Пры запуску BeyondPod сканіруе гэту папку (і ўсе падпапкі) і адлюстроўвае ўсе знойдзеныя файлы, як «віртуальныя падкасты», якія можна прайграць ва ўнутраным плэеры.</string>
+    <string name="feed_properties_feed_download_folder_vir_feed_title">Папка віртуальнага патока</string>
+    <string name="feed_properties_feed_download_podcast_long_name_handler_msg">Выберыце, якая частка назвы эпізода будзе абразацца, калі назва эпізода надта доўгая для адлюстравання.</string>
+    <string name="feed_properties_feed_download_podcast_long_name_handler_title">Доўгія назвы эпізодаў</string>
+    <string name="feed_properties_feed_download_podcast_sort_order_msg">Задайце парадак сарціроўкі для спампаваных ці струменевых эпізодаў гэтага патока.</string>
+    <string name="feed_properties_feed_download_podcast_sort_order_title">Сарціроўка лакальных эпізодаў</string>
+    <string name="feed_properties_feed_fingerprint_type_msg">Выберыце, як BeyondPod вызначае дублікаты эпізодаў. (УВАГА! Змяняйце толькі калі ў патоку часта паўторна спампоўваюцца старыя эпізоды. Змяненне гэтай налады скіне гісторыю спампавання і прачытаных/непрачытаных эпізодаў патока).</string>
+    <string name="feed_properties_feed_fingerprint_type_title">Распазнаванне дублікатаў эпізодаў</string>
+    <string name="feed_properties_feed_login_msg">Калі для доступа да патока патрэбны імя карыстальніка і пароль, іх можна ўвесці ў палі вышэй.</string>
+    <string name="feed_properties_feed_name_msg">Простае і зразумелае імя патока. (Калі пакінуць пустым, імя будзе запоўнена дадзенымі патока)</string>
+    <string name="feed_properties_feed_name_title">Імя патока</string>
+    <string name="feed_properties_feed_url_msg">Вэб-адрас патока RSS (звычайна пачынаецца з http:// ці https://)</string>
+    <string name="feed_properties_feed_url_title">Адрас патока (URL)</string>
+    <string name="feed_properties_force_item_sort">Парадак сарціроўкі пастоў</string>
+    <string name="feed_properties_force_item_sort_msg">Выберыце парадак сарціроўкі элементаў (пастоў) гэтага патока на экране змесціва патока.</string>
+    <string name="feed_properties_force_unique_names">Прымусова ўнікальныя імёны</string>
+    <string name="feed_properties_force_unique_names_msg">Калі пазначана, BeyondPod прымусова дае ўнікальныя імёны ўсім спампаваным падкастам, а не спрабуе згадаць імя па спасылцы. Пазначце, калі вы бачыце, што падкасты заўсёды называюцца аднолькава і таму перазапісваюць адзін аднаго.</string>
+    <string name="feed_properties_login_info_header">Аўтэнтыфікацыя патока</string>
+    <string name="feed_properties_login_info_pw">Пароль для патока</string>
+    <string name="feed_properties_login_info_un">Імя карыстальніка для патока</string>
+    <string name="feed_properties_num_days_to_delete_short_msg">"
+• Выдаляць эпізоды, старэйшыя за, дні: %s."</string>
+    <string name="feed_properties_num_podcasts_to_download_download_in_order_msg">"Спампаваць выбраную колькасць эпізодаў, пачынаючы з самых старых даступных. Новыя эпізоды будуць спампоўвацца, толькі калі вы выдаліце некаторыя з ужо спампаваных эпізодаў гэтага патоку. Спампаваныя эпізоды з'явяцца на экране 'Эпізоды'."</string>
+    <string name="feed_properties_num_podcasts_to_download_download_in_order_short_msg">• Спампаваць %s па парадку, пачынаючы з самых старых.</string>
+    <string name="feed_properties_num_podcasts_to_download_download_msg">"Спампоўваць выбраную колькасць апошніх эпізодаў у якасці абнаўлення патоку. Новыя эпізоды аўтаматычна заменяць самыя старыя. Спампаваныя эпізоды з'явяцца на экране 'Эпізоды'."</string>
+    <string name="feed_properties_num_podcasts_to_download_download_short_msg" formatted="false">• Спампоўваць апошнія %s і захоўваць не больш за %s.%s</string>
+    <string name="feed_properties_num_podcasts_to_download_ignore_msg">"Любыя эпізоды гэтага патоку будуць праігнараваны і не з'явяцца на экране кантэнту патоку."</string>
+    <string name="feed_properties_num_podcasts_to_download_ignore_short_msg">• Усе эпізоды будуць ігнаравацца.</string>
+    <string name="feed_properties_num_podcasts_to_download_no_download_msg">Эпізоды падкасту гэтага патоку НЕ будуць спампоўвацца аўтаматычна. (Любы эпізод можна спампаваць уручную)</string>
+    <string name="feed_properties_num_podcasts_to_download_no_download_short_msg">• Спампоўваць эпізоды ўручную.</string>
+    <string name="feed_properties_num_podcasts_to_download_stream_in_order_msg">"Стварыць для выбранай колькасці эпізодаў версіі, \"прыдатныя да струменевай перадачы\", пачынаючы з самых старых даступных. Новыя эпізоды будуць спампоўвацца, толькі калі вы выдаліце некаторыя з ужо спампаваных эпізодаў гэтага патоку. Струменеваныя эпізоды з'явяцца на экране 'Эпізоды'."</string>
+    <string name="feed_properties_num_podcasts_to_download_stream_in_order_short_msg">"• Атрымаць %s па парадку, пачынаючы з самых старых.
+• Эпізоды будуць 'струменевацца' (для прайгравання прылада павінна быць онлайн)."</string>
+    <string name="feed_properties_num_podcasts_to_download_stream_msg">"Стварыць для выбранай колькасці апошніх эпізодаў версіі, \"прыдатныя да струменевай перадачы\", у якасці абнаўлення патоку. Новыя эпізоды аўтаматычна заменяць самыя старыя. Струменеваныя эпізоды з'явяцца на экране 'Эпізоды'."</string>
+    <string name="feed_properties_num_podcasts_to_download_stream_short_msg" formatted="false">"• Атрымаць апошнія %s і захоўваць не больш за %s.%s
+• Эпізоды будуць 'струменевацца' (для прайгравання прылада павінна быць онлайн)."</string>
+    <string name="feed_properties_playback_speed_prefs_msg">Задайце пажаданую хуткасць прайгравання для падкастаў у гэтым патоку. (Не адзначайце, каб выкарыстоўваць бягучую хуткасць прайгравання, заданую ў плэеры).</string>
+    <string name="feed_properties_playback_speed_prefs_title">Пажаданая хуткасць прайгравання</string>
+    <string name="feed_properties_podcast_title">Спампаванні эпізодаў</string>
+    <string name="feed_properties_preferred_enclosure">Пажаданы фармат эпізода</string>
+    <string name="feed_properties_preferred_enclosure_msg">У некаторых выпадках паток можа ўтрымліваць некалькі фарматаў аднаго эпізода (напрыклад, mp4 і wmv). Выберыце пажаданы фармат.</string>
+    <string name="feed_properties_save_played_position_msg">Пры прайграванні запамінае прайграную частку эпізодаў патока</string>
+    <string name="feed_properties_save_played_position_title">Захоўваць пазіцыю прайгравання</string>
+    <string name="feed_properties_spacesavers_keep_at_most">Захоўваць не больш за:</string>
+    <string name="feed_properties_spacesavers_keep_at_most_unit">лакальных эпізодаў</string>
+    <string name="feed_properties_spacesavers_max_duration">Выдаляць эпізоды, старэйшыя за:</string>
+    <string name="feed_properties_spacesavers_max_duration_unit">дзён</string>
+    <string name="feed_properties_spacesavers_msg">Ачыстка эпізодаў аўтаматычна выдаляе старыя эпізоды падкастаў, калі іх колькасць ці ўзрост перавышаюць выбраныя вышэй значэнні. (Правілы ачысткі дзейнічаюць толькі пры спампаванні новых эпізодаў патока)</string>
+    <string name="feed_properties_spacesavers_title">Ачыстка эпізодаў</string>
+    <string name="feed_properties_toggle_adv_pref_hide">Схаваць пашыраныя налады</string>
+    <string name="feed_properties_use_google_proxy">Сінхранізаваць з Feedly</string>
+    <string name="feed_properties_use_google_proxy_msg">Загрузіць змест гэтага патоку з Feedly. Неабходны ўліковы запіс на Feedly.com.</string>
+    <string name="feed_properties_view_images_from_picasa_albums_cannot_be_used_as_a_feed_image">Немагчыма выкарыстоўваць малюнкі з альбомаў Picasa (ці іншых онлайн-галерэй) у якасці малюнка патока.</string>
+    <string name="feed_properties_vld_feedNameEmpty">Калі ласка, увядзіце правільнае імя патока!</string>
+    <string name="feed_properties_vld_feedUrlOrNameEmpty">Калі ласка, ўвядзіце адрас ці імя патока!</string>
+    <string name="feed_properties_vld_podcast_folder_vir_feed_invalid">Выбраная віртуальная папка патока пустая ці не існуе на прыладзе!</string>
+    <string name="feed_properties_vld_podcast_num_download_is_less_than_keep_at_most">Колькасць эпізодаў падкастаў для спампавання не можа перавышаць колькасць эпізодаў падкастаў для захавання!</string>
+    <string name="feed_properties_vld_spacesavers_will_delete_podcasts">Выбраная налада «Ачыстка эпізодаў» патрабуе выдалення некаторай колькасці захаваных эпізодаў: %s.</string>
+    <string name="feed_properties_volume_boost_prefs_msg">Пры прайграванні эпізодаў гэтага патоку можна дадаткова павялічваць гучнасць. (Гэта эксперыментальная функцыя! Павелічэнне гучнасці даступна толькі для спампаваных аўдыёэпізодаў і толькі з уключанай хуткасцю прайгравання).</string>
+    <string name="feed_properties_volume_boost_prefs_title">Павелічэнне гучнасці</string>
+    <string name="feed_s_was_added_in_category" formatted="false">"Паток '%s'
+ даданы ў катэгорыю '%s'"</string>
+    <string name="feed_search_db_episodes">Эпізоды</string>
+    <string name="feed_search_hint">Шукаць падкасты</string>
+    <string name="feed_settings_add_feed">Дадаць паток</string>
+    <string name="feed_settings_add_virtual_feed">Дадаць віртуальны паток</string>
+    <string name="feed_settings_checking_feed_information">Праверка інфармацыі патока…</string>
+    <string name="feed_settings_connecting">Падключэнне…</string>
+    <string name="feed_settings_download">Спампаваць</string>
+    <string name="feed_settings_edit_feed">Рэдагаваць паток</string>
+    <string name="feed_settings_edit_virtual_feed">Рэдагаваць віртуальны паток</string>
+    <string name="feed_settings_episodes">эпіз.</string>
+    <string name="feed_settings_feed_already_exists_in_category">"Гэты паток ужо ёсць у катэгорыі '%s'."</string>
+    <string name="feed_settings_get">Атрымаць</string>
+    <string name="feed_settings_items">элем.</string>
+    <string name="feed_settings_locating_rss_feeds">Знаходжанне RSS-патокаў</string>
+    <string name="feed_settings_retrieving_feed">Атрыманне патоку</string>
+    <string name="feed_settings_updating_download_history">Абнаўленне гісторыі спампавання…</string>
+    <string name="feeds_status_back_to_s">Назад да %s</string>
+    <string name="feeds_status_downloading">Спампаванне</string>
+    <string name="feeds_status_feeds">Патокі</string>
+    <string name="feeds_status_of">з</string>
+    <string name="feeds_status_s_pending">%s чакаецца…</string>
+    <string name="feeds_status_updating">Абнаўленне</string>
+    <string name="first_run_ad_disabled">Не, я хачу спампоўваць эпізоды ўручную.</string>
+    <string name="first_run_ad_enabled">Дазволіць BeyondPod спампоўваць апошнія эпізоды, пакуль вы спіце.</string>
+    <string name="first_run_ad_subtitle">BeyondPod можа правяраць наяўнасць новых эпізодаў і аўтаматычна спампоўваць іх. (Пазней гэта можна змяніць у наладах).</string>
+    <string name="first_run_ad_title">Аўтаматычныя спампаванні</string>
+    <string name="first_run_ad_wifi">Спампоўваць эпізоды толькі пры падключэнні па WiFi.</string>
+    <string name="first_run_continue">Працягнуць</string>
+    <string name="first_run_end_tour">Скончыць агляд</string>
+    <string name="first_run_find_more">Даведацца яшчэ</string>
+    <string name="first_run_finish">Гатова</string>
+    <string name="first_run_select_content_title">Выберыце тэмы, што вам падабаюцца, і мы прапануем некалькі добрых падкастаў для пачатку.</string>
+    <string name="first_run_skipsamples">Прапусціць</string>
+    <string name="first_run_start">Пачнем</string>
+    <string name="first_run_upgrade_guide">Інструкцыя па абнаўленні</string>
+    <string name="folder_browser_back_to">Назад да</string>
+    <string name="folder_browser_files">файл.</string>
+    <string name="folder_browser_in">У</string>
+    <string name="gcm_fallback_notification_channel_label">Рознае</string>
+    <string name="generic_download_error_text">"Не атрымалася спампаваць некаторыя эпизоды!
+Паспрабуйце яшчэ раз"</string>
+    <string name="glg_restore_defaults_msg">"На жаль, ваш рэпазіторый патока, здаецца, пашкоджаны, і ўсе спробы аднаўлення скончыліся нічым!
+
+Пры наступным запуску BeyondPod падпіскі на патокі будуць скінуты да налад па змаўчанні.
+
+Зараз BeyondPod будзе закрыты!"</string>
+    <string name="glg_restore_defaults_title">Пашкоджаны рэпазіторый патокаў</string>
+    <string name="google_reader_feeds">Патокі Feedly</string>
+    <string name="grant_permission_access_denied">Добра… Вы можаце выканаць «чыстую» ўсталёўку пасля выдалення папярэдне ўсталяванай версіі BeyondPod.</string>
+    <string name="grant_permission_access_granted">Дзякуй!</string>
+    <string name="import_reader_failed_to_load_reader_subscriptions">Не атрымалася загрузіць падпіскі Feedly!</string>
+    <string name="import_reader_loading_feed_subscriptions">Загрузка падпісак патока…</string>
+    <string name="import_reader_log_out_menu">Выхад</string>
+    <string name="import_reader_log_out_msg">Вы выйшлі з Feedly</string>
+    <string name="import_reader_login_failed">Уваход не выкананы!</string>
+    <string name="import_reader_operation_canceled">Аперацыя адменена!</string>
+    <string name="import_reader_retrieving_account_details">Атрыманне дэталяў уліковага запісу…</string>
+    <string name="import_reader_success">Паспяхова!</string>
+    <string name="import_search_hint">Шукаць імпартаваныя патокі</string>
+    <string name="info_card_got_it">Зразумела</string>
+    <string name="info_card_guided_tour_action">Хуткі агляд</string>
+    <string name="info_card_guided_tour_skip">Не, дзякуй</string>
+    <string name="info_card_guided_tour_title">Вітаем у BeyondPod!</string>
+    <string name="info_card_whats_new_action">Паглядзець, што новага</string>
+    <string name="info_card_whats_new_title">BeyondPod абноўлены да версіі %s!</string>
+    <string name="info_selct_folder_instructions">"Націсніце на імені папкі, каб адкрыць яе.
+Каб імпартаваць папку, націсніце значок + каля яе."</string>
+    <string name="limited_mode_message">"Ваш пробны перыяд скончыўся!
+
+Вы можаце абнаўляць ці спампоўваць толькі 1 паток ці эпізод за раз.
+
+Выкарыстоўваце 'Перайсці да PRO-версіі!' (у левай навігацыйнай панэлі), каб бачыць, што яшчэ абмежавана."</string>
+    <string name="lock_podcast_unlock_parent_info">"Каб адблакаваць гэты эпізод, спачатку ўключыце 'Дазволіць выдаленне эпізодаў' у пашыраных наладах патоку эпізоду."</string>
+    <string name="master_view_beyondpod_failed_to_start">Не атрымалася запусціць BeyondPod!</string>
+    <string name="master_view_beyondpod_will_now_exit">BeyondPod закрываецца</string>
+    <string name="master_view_loaded_s_feeds">Загрузка эпізодаў…</string>
+    <string name="master_view_loading_feeds">Загрузка патокаў…</string>
+    <string name="master_view_welcome_to_beyondpod">Вітаем у BeyondPod</string>
+    <string name="master_view_what_is_new">Што новага</string>
+    <string name="menu_multiselect_select_all">Выбраць усе</string>
+    <string name="menu_multiselect_select_played">Выбраць прайграныя</string>
+    <string name="mf_calculating_files">Падрыхтоўка да перамяшчэння…</string>
+    <string name="mf_cancel_are_you_sure">Сапраўды адмяніць?</string>
+    <string name="mf_canceled_move">Перамяшчэнне адменена!</string>
+    <string name="mf_canceling_move">Адмена…</string>
+    <string name="mf_complete">"Перамяшчэнне выканана!%s
+
+BeyondPod зараз перазапусціцца, каб прымяніць новыя налады."</string>
+    <string name="mf_confirm_are_you_sure" formatted="false">"Сапраўды перамясціць %s спампаваных эпіз. з: '%s' у '%s'?"</string>
+    <string name="mf_confirm_move">Пацвердзіць перамяшчэнне</string>
+    <string name="mf_coping_files" formatted="false">Перамешчана %s з %s…</string>
+    <string name="mf_deleting_files">Ачыстка…</string>
+    <string name="mf_dest_folder_exist">Папка прызначэння %s ужо існуе! Перапісаць яе?</string>
+    <string name="mf_do_move">Перамясціць</string>
+    <string name="mf_error_external">Папка прызначэння недаступная ці мае атрыбут «толькі чытанне»!</string>
+    <string name="mf_external_SD_warninng">"У Android KitKat з'явіліся некаторыя абмежаванні на выкарыстанне знешняй SD-карткі.
+
+Вы можаце перанесці папку спампавання эпізодаў на знешнюю SD-картку, але усе налады BeyondPod і спампаваныя эпізоды БУДУЦЬ ВЫДАЛЕНЫ пры выдаленні BeyondPod."</string>
+    <string name="mf_insufficient_space" formatted="false">Вам неабходна яшчэ хаця б %s свабоднага месца ў папцы прызначэння. Зараз даступна толькі %s!</string>
+    <string name="mf_moving_title">Перамясціць папку спампавання эпізодаў</string>
+    <string name="mf_unable_to_cleanup">Немагчыма ачысціць некаторыя файлы ў %s. Паспрабуйце ачысціць іх уручную!</string>
+    <string name="mf_unable_to_cleanup_kitkat">"Старая папка спампавання эпізодаў %s мае атрыбут «толькі чытанне», і BeyondPod не можа ачысціць яе.
+
+Падлучыце прыладу да камп'ютара і выдаліце папку з дапамогай мэнэджэра файлаў."</string>
+    <string name="mf_update_download_progress">"Зараз выконваецца абнаўленне ці спампаванне!
+
+Спыніце яго і паспрабуйце яшчэ раз."</string>
+    <string name="mf_use_external_SD">Выкарыстоўваць знешнюю SD-картку.</string>
+    <string name="mf_use_intenral_SD">Выкарыстоўваць унутраную SD-картку (рэкамендуецца)</string>
+    <string name="minute_remaining">засталося &lt;%s</string>
+    <string name="minutes_remaining">засталося %s</string>
+    <string name="move_storage_folder_available">%s (даступна)</string>
+    <string name="move_storage_folder_current" formatted="false">"%s
+(%s таксама даступна як альтэрнатыўнае месцазнаходжанне)"</string>
+    <string name="move_storage_folder_does_not_exist">"%s
+
+ не існуе ці даступна толькі для чытання!"</string>
+    <string name="move_storage_folder_in_use">%s (выкарыстоўваецца)</string>
+    <string name="move_storage_folder_instructions_alt_title">Выкарыстоўваць іншае месцазнаходжанне</string>
+    <string name="move_storage_folder_instructions_msg">"Выкарыстоўвайце кнопку «Перамясціць» ніжэй, каб перамясціць існуючыя эпізоды ў альтэрнатыўнае месцазнаходжанне.
+
+Пасля завяршэння перамяшчэння BeyondPod перазапусціцца і пачне выкарыстоўваць новае месцазнаходжанне.
+
+Працэс перанясення можа заняць некалькі хвілін."</string>
+    <string name="move_storage_folder_instructions_new_title">Выкарыстоўваць новае месцазнаходжанне</string>
+    <string name="movie_view_preparing_stream">Падрыхтоўка патока для прайгравання…</string>
+    <string name="movieviewlabel">Фільмы</string>
+    <string name="mr_button_content_description">Кнопка трансляцыі</string>
+    <string name="mr_cast_button_connected">Кнопка трансляцыі. Падключана</string>
+    <string name="mr_cast_button_connecting">Кнопка трансляцыі. Ідзе падключэнне</string>
+    <string name="mr_cast_button_disconnected">Кнопка трансляцыі. Адключана</string>
+    <string name="mr_chooser_searching">Пошук прылад</string>
+    <string name="mr_chooser_title">Трансліраваць на</string>
+    <string name="mr_controller_album_art">Вокладка альбома</string>
+    <string name="mr_controller_casting_screen">Экран трансляцыі</string>
+    <string name="mr_controller_close_description">Закрыць</string>
+    <string name="mr_controller_collapse_group">Згарнуць</string>
+    <string name="mr_controller_disconnect">Адлучыць</string>
+    <string name="mr_controller_expand_group">Разгарнуць</string>
+    <string name="mr_controller_no_info_available">Інфармацыя адсутнічае</string>
+    <string name="mr_controller_no_media_selected">Медыяфайл не выбраны</string>
+    <string name="mr_controller_pause">Прыпыніць</string>
+    <string name="mr_controller_play">Прайграць</string>
+    <string name="mr_controller_stop">Спыніць</string>
+    <string name="mr_controller_stop_casting">Спыніць трансляцыю</string>
+    <string name="mr_controller_volume_slider">Паўзунок гучнасці</string>
+    <string name="mr_system_route_name">Сістэма</string>
+    <string name="mr_user_route_category_name">Прылады</string>
+    <string name="multiselect_episodes_selected">эпіз. выбрана</string>
+    <string name="navigator_add_category">Дадаць катэгорыю</string>
+    <string name="navigator_add_feed">Дадаць паток</string>
+    <string name="navigator_drawer_title">Мае патокі</string>
+    <string name="navigator_edit_content">Кіраваць патокамі</string>
+    <string name="navigator_feed_filter_all">Усе патокі</string>
+    <string name="navigator_feed_filter_new_only">Новыя патокі</string>
+    <string name="navigator_updated">Абноўлена %s</string>
+    <string name="navigator_updated_now">толькі што</string>
+    <string name="ok_button">OK Button</string>
+    <string name="opml_export_btn_label">Эскпартаваць патокі</string>
+    <string name="opml_export_msg">"Усе вашы патокі будуць экспартаваны ў файл OPML пад назвай «BeyondPodFeeds.opml», які размяшчаецца ў:
+
+'%s'
+
+Пакеты будуць згрупіраваны па іх першай катэгорыі."</string>
+    <string name="opml_export_title">Экспартаваць у OPML</string>
+    <string name="opml_import_dlg_add_cat_label">Новая катэгорыя</string>
+    <string name="opml_import_dlg_title">Дадаць у катэгорыю</string>
+    <string name="opml_import_opml_btn_label">Загрузіць файл OPML</string>
+    <string name="opml_import_opml_msg1">"Упэўніцеся, што ў файла OPML сапраўды пашырэнне .OPML, а файл знаходзіцца ў:
+'%s'"</string>
+    <string name="opml_import_reader_title">Уліковы запіс Feedly</string>
+    <string name="opml_list_view_beyondpod_is_loading_s">"BeyondPod загружаецца
+%s…"</string>
+    <string name="opml_list_view_connecting">Падключэнне…</string>
+    <string name="opml_list_view_downloaded">Спампавана</string>
+    <string name="opml_list_view_error">Памылка</string>
+    <string name="opml_list_view_loading">Загрузка…</string>
+    <string name="opml_list_view_selected_directory_is_currently_unavailable">"Выбраная дырэкторыя зараз недаступная!
+
+Паспрабуйце пазней."</string>
+    <string name="opml_list_view_update_canceled">Абнаўленне адменена!</string>
+    <string name="opml_list_view_update_failed">Збой абнаўлення!</string>
+    <string name="opml_view_adapter_back_to_s">Назад да %s</string>
+    <string name="opml_view_adapter_go_back">Назад</string>
+    <string name="opml_view_adapter_in_s">У %s</string>
+    <string name="opml_view_adapter_items">элем.</string>
+    <string name="opml_view_adapter_subscribed">Падпіска аформлена</string>
+    <string name="percent_complete">% завершана</string>
+    <string name="player_charm_pbspeed_preset_description">Выберыце хуткасць паўзунком, потым краніце кнопку перадналады, каб захаваць яе</string>
+    <string name="player_charm_pbspeed_title">Хуткасць прайгравання</string>
+    <string name="player_charm_sleep_description">Спыняць прайграванне пасля</string>
+    <string name="player_charm_sleep_episodeEnd">Сканчэння гэтага эпізода</string>
+    <string name="player_charm_sleep_off">Выкл.</string>
+    <string name="player_charm_sleep_title">Таймер сну</string>
+    <string name="player_streaming_disabled">"Струменевае прайграванне зараз адключана.
+
+Спампуйце эпізод перад прайграваннем."</string>
+    <string name="player_streaming_wifi_only">Струменевае прайграванне зараз дазволена толькі праз WiFi-злучэнне!</string>
+    <string name="player_transport_next">Наступны эпізод</string>
+    <string name="player_transport_pause">Паўза</string>
+    <string name="player_transport_play">Прайграць</string>
+    <string name="player_transport_playback_speed">Хуткасць прайгравання</string>
+    <string name="player_transport_prev">Папярэдні эпізод</string>
+    <string name="player_transport_skip_back">Прапусціць назад</string>
+    <string name="player_transport_skip_fwd">Прапусціць уперад</string>
+    <string name="player_transport_skip_to_end">Прапусціць да канца</string>
+    <string name="player_trying_to_play_deleted_episode">Гэты эпізод выдалены!</string>
+    <string name="player_view_connecting_to_s">Злучэнне з %s …</string>
+    <string name="player_view_playback_cast_connected">"Падлучана да '%s'
+
+Выберыце эпізод для аддаленага прайгравання."</string>
+    <string name="player_view_playback_error">Памылка прайгравання!</string>
+    <string name="player_view_playback_error_cant_cast">Немагчыма прайграць гэты эпізод аддалена!</string>
+    <string name="player_view_playback_error_streaming_disabled">Струменевае прайграванне забаронена!</string>
+    <string name="player_view_preparing_stream_s">Падрыхтаванне струменевага прайгравання… ( %s %%)</string>
+    <string name="playlist_divider_smartplay_text">SmartPlay</string>
+    <string name="playlist_divider_text">Плэйліст</string>
+    <string name="playlist_editor_dialog_clear_playlist">Ачысціць плэйліст</string>
+    <string name="podcast_list_empty_all_feeds_working">"Абнаўленне патокаў…
+Навейшыя эпізоды з'явяцца неўзабаве."</string>
+    <string name="podcast_list_empty_category">"У катэгорыі '%s' няма спампаваных эпізодаў."</string>
+    <string name="podcast_list_empty_feed">"У '%s' няма спампаваных эпізодаў."</string>
+    <string name="podcast_list_empty_filter">"Няма эпізодаў, якія адпавядаюць бягучаму фільтру
+'%s'."</string>
+    <string name="podcast_list_empty_playlist">Плэйліст пусты</string>
+    <string name="podcast_list_has_filtered_items">"Адлюстраванне '%s'"</string>
+    <string name="podcast_list_open_all_published">Праглядзець усе апублікаваныя эпізоды</string>
+    <string name="podcast_list_show_all_episodes">Праглядзець усе эпізоды</string>
+    <string name="podcast_list_view_about">інфармацыя</string>
+    <string name="podcast_list_view_all_published">Не можаце знайсці эпізоды?</string>
+    <string name="podcast_list_view_beyondpod_faq">Пытанні і адказы па BeyondPod</string>
+    <string name="podcast_list_view_playlist">Плэйліст</string>
+    <string name="podcasts_view_adapter_this">Гэты</string>
+    <string name="podcasts_view_free">Свабодныя</string>
+    <string name="preview_player_title">Прагляд эпізода</string>
+    <string name="published_list_add_again_to_my_episodes">Прайграць эпізод яшчэ раз</string>
+    <string name="published_list_add_to_my_episodes">Дадаць да Маіх эпізодаў</string>
+    <string name="published_list_download_episode">Спампаваць</string>
+    <string name="published_list_preview_episode">Праглядзець эпізод</string>
+    <string name="published_list_redownload_episode">Спампаваць яшчэ раз</string>
+    <string name="reader_folder_all_new_items_in">Усе новыя элементы ў</string>
+    <string name="reader_folder_my_google_items">Мае элементы Feedly</string>
+    <string name="reader_folder_my_read_items">Мае прачытаныя элементы</string>
+    <string name="reader_folder_my_reading_list">Мой спіс чытання</string>
+    <string name="reader_folder_my_starred_items">Мае пазначаныя элементы</string>
+    <string name="remote_playback_not_available_in_lite_version">"Пробны перыяд BeyondPod скончаны!
+
+Прайграванне на аддаленых дысплеях даступна толькі ў «Pro»-версіі BeyondPod"</string>
+    <string name="repo_search_hint">Пошук каналаў</string>
+    <string name="repo_search_label">.</string>
+    <string name="reset_storage_folder_current" formatted="false">"Сканфігураванае месца спампавання эпізода (%s) больш не даступна!
+
+Калі вы карыстаецеся знешняй SD-картай, упэўніцеся, што яна не выдалена, не адмантавана і не сканфігуравана Толькі для чытання.
+Ваша ўнутраная SD-карта (%s) яшчэ даступна.
+
+Выбраць унутраную SD-карту для выкарыстання?"</string>
+    <string name="reset_storage_folder_multiple">"Сканфігураванае месца спампавання эпізода (%s) больш не даступна!
+
+Выберыце новае размяшчэнне:"</string>
+    <string name="reset_tips_complete">Усе парады і папярэджанні зноў уключаны!</string>
+    <string name="s1">Захаваць відарыс</string>
+    <string name="s2">Дазволіць рэкламе захоўваць відарыс у Галерэі відарысаў?</string>
+    <string name="s3">Прыняць</string>
+    <string name="s4">Адхіліць</string>
+    <string name="s5">Стварыць падзею календара</string>
+    <string name="s6">Дазволіць рэкламе стварыць падзею календара?</string>
+    <string name="s7">Тэставая рэклама</string>
+    <string name="scheduling_method_msg">"BeyondPod дазваляе абнаўляць усе патокі ў адзіным раскладзе ці задаць розныя расклады абнаўлення для катэгорый.
+
+Які метад выкарыстоўваць?
+
+(Пазней вы можаце змяніць налады ў раздзеле «Кіраваць катэгорыямі» у левай панэлі навігацыі)"</string>
+    <string name="scheduling_method_per_category">Па катэгорыі</string>
+    <string name="scheduling_method_single_schedule">Аднаразовы расклад</string>
+    <string name="scheduling_method_title">Выберыце расклад абнаўлення</string>
+    <string name="search_error">Падчас пошуку ўзнікла памылка. Паспрабуйце пазней.</string>
+    <string name="search_error_device_is_offline">Прылада афлайн!</string>
+    <string name="search_error_must_be_online_to_add_feeds">Вы павінны быць анлайн, каб дадаваць патокі.</string>
+    <string name="search_filter_all">Усе</string>
+    <string name="search_filter_audio">Аўдыё</string>
+    <string name="search_filter_video">Відэа</string>
+    <string name="search_menu_title">Пошук</string>
+    <string name="search_no_result_found">"Няма рэзультатаў для '%s'"</string>
+    <string name="search_result_item_subscribe">Падпісацца</string>
+    <string name="search_running">Пошук патокаў…</string>
+    <string name="settings_AutoPlaySmartplays_summary">Калі выбрана опцыя SmartPlay, аўтаматычна прайграваецца першы эпізод</string>
+    <string name="settings_AutoPlaySmartplays_title">Аўтапрайграванне SmartPlay</string>
+    <string name="settings_AutoRebuildKeepCurrent_summary">Калі перабудоўваецца SmartPlay, захоўваць бягучы эпізод уверсе плэйліста</string>
+    <string name="settings_AutoRebuildKeepCurrent_title">Захаваць бягучы эпізод</string>
+    <string name="settings_AutoRebuildSmartPlay_summary">"Аўтаматычна перабудоўвае SmartPlay 'па змаўчанні', калі спампоўваюцца новыя эпізоды"</string>
+    <string name="settings_AutoRebuildSmartPlay_title">Аўтаматычна перабудоўваць SmartPlay</string>
+    <string name="settings_Autoplaylist_summary">Аўтаматычна стварае новы плэйліст, пачынаючы з выбранага эпізоду</string>
+    <string name="settings_Autoplaylist_title">Аўтаматычны плэйліст</string>
+    <string name="settings_ClearPlaylistKeepCurrent_summary">Пры ачыстцы плэйліста захоўваць бягучы эпізод уверсе плэйліста</string>
+    <string name="settings_HeadsetButtons_DC_summary">Падвойны націск на кнопку правадной гарнітуры</string>
+    <string name="settings_HeadsetButtons_DC_title">Падвойны націск</string>
+    <string name="settings_HeadsetButtons_LP_summary">Доўгі націск на кнопку правадной гарнітуры</string>
+    <string name="settings_HeadsetButtons_LP_title">Доўгі націск</string>
+    <string name="settings_HeadsetButtons_Next_summary">Кнопка Наступны на правадной ці bluetooth-гарнітуры</string>
+    <string name="settings_HeadsetButtons_Next_title">Кнопка Наступны</string>
+    <string name="settings_HeadsetButtons_Prev_summary">Кнопка Папярэдні на правадной ці bluetooth-гарнітуры</string>
+    <string name="settings_HeadsetButtons_Prev_title">Кнопка Папярэдні</string>
+    <string name="settings_HeadsetButtons_summary">Настройка дзеянняў кнопак правадной ці bluetooth-гарнітуры</string>
+    <string name="settings_HeadsetButtons_title">Дзеянні кнопкі гарнітуры</string>
+    <string name="settings_PauseResume_summary">Паўза пры адключэнні гарнітуры, адключэнні зарадкі, пры апавяшчэнні, канфігурацыя таймаўта экрана…</string>
+    <string name="settings_PauseResume_title">Аўтаматычная паўза ці аднаўленне</string>
+    <string name="settings_RemovePlayedFromPlaylist_summary">Аўтаматычна выдаляе прайграныя эпізоды з плэйліста</string>
+    <string name="settings_RemovePlayedFromPlaylist_title">Выдаліць прайграныя з плэйліста</string>
+    <string name="settings_active_theme_summary">Тэма галоўнага вакна BeyondPod (светлая ці цёмная)</string>
+    <string name="settings_active_theme_title">Тэма</string>
+    <string name="settings_allow_analytics_summary">Дазвольце нам ананімна збіраць дадзеныя аб выкарыстанні і памылках, каб палепшыць BeyondPod.</string>
+    <string name="settings_allow_analytics_title">Адсочваць статыстыку выкарыстання</string>
+    <string name="settings_allow_cleanup_for_manual_downloads_summary">Уключыць правіла ачысткі патоку дял падкастаў, спампаваных уручную</string>
+    <string name="settings_allow_cleanup_for_manual_downloads_title">Дазволіць ачыстку для спампаваных уручную</string>
+    <string name="settings_allow_hiding_read_summary">"Дазваляе хаваць 'Прачытаныя' ці 'Прайграныя' эпізоды на экране 'Усё апублікаванае' і адлюстроўвае даты патоку/эпізодаў у спісе патокаў і плэйлісце."</string>
+    <string name="settings_allow_hiding_read_title">Дазволіць хаваць Прачытанае ці Прайгранае</string>
+    <string name="settings_allow_streaming_summary">Органы кіравання, калі дазволена струменевае прайграванне эпізоду (прайграванне эпізодаў без спампавання)</string>
+    <string name="settings_allow_streaming_title">Перавагі струменевага прайгравання</string>
+    <string name="settings_allow_streaming_values_title">Дазволіць струменевае прайграванне</string>
+    <string name="settings_allowcellular_summary">Пазначце, каб дазволіць абнаўляць паток праз мабільнае (EDGE/3G/4G) злучэнне.</string>
+    <string name="settings_allowcellular_title">Выкарыстоўваць мабільныя дадзеныя</string>
+    <string name="settings_autoLoadPlugins_summary">Дазваляе праглядаць некаторыя відэа, убудаваныя ў кантэнт посту.</string>
+    <string name="settings_autoLoadPlugins_title">Уключыць плагіны ў браўзеры</string>
+    <string name="settings_auto_clean_unused_episodes_summary">"З наступным абнаўленнем аўтаматычна выдаляць усе прайграныя эпізоды. (Эпізоды, пазначаныя 'Выбранае' не выдаляюцца)"</string>
+    <string name="settings_auto_clean_unused_episodes_title">Аўтаматычна выдаляць прайграныя эпізоды</string>
+    <string name="settings_auto_resume_partial_downloads_summary">З наступным абнаўленнем аўтаматычна спрабаваць дапампаваць любыя часткова спампаваныя эпізоды</string>
+    <string name="settings_auto_resume_partial_downloads_title">Аўтаматычна працягваць частковыя спампоўкі</string>
+    <string name="settings_automaticUpdates_title">Аўтаматычныя абнаўленні</string>
+    <string name="settings_backup_restore_title">Рэзервовае капіраванне і аднаўленне</string>
+    <string name="settings_backwardSkipInterval_summary">Колькасць секунд пропуску назад пры прайграванні (пропуск рэкламы)</string>
+    <string name="settings_backwardSkipInterval_title">Інтэрвал пропуску назад</string>
+    <string name="settings_beta_notification_summary">"Апавяшчаць мяне, калі з'яўляецца новая публічная бэта-версія BeyondPod"</string>
+    <string name="settings_beta_notification_title">Апавяшчэнні пра бэта-версію</string>
+    <string name="settings_category_sd_card_location_preferences">Месца захоўвання падкастаў</string>
+    <string name="settings_cds_summary">EpisodeSync адключаны</string>
+    <string name="settings_cds_title">Канфігураванне EpisodeSync</string>
+    <string name="settings_clearstatusnotification_summary">Адзначце, калі жадаеце хаваць значок апавяшчэння пасля заканчэння абнаўлення</string>
+    <string name="settings_clearstatusnotification_title">Схаваць значок апавяшчэння</string>
+    <string name="settings_configure_smartplay">Сканфігураваць SmartPlay</string>
+    <string name="settings_defSendToEmail_dlg_title">Атрымальнікі эл. пошты па змаўчанні</string>
+    <string name="settings_defSendToEmail_summary">Набор адрасоў эл. пошты па змаўчанні для адпраўкі спасылак на артыкулы з BeyondPod</string>
+    <string name="settings_defSendToEmail_title">Атрымальнікі эл. пошты па змаўчанні</string>
+    <string name="settings_description">Падкасты BeyondPod</string>
+    <string name="settings_disable_sharing_warning">"Калі вы адключаеце опцыю \"падзяліцца\", з-за памылкі ў некаторых версіях Android, некаторыя з вашых ВІДЭА-падкастаў могуць быць выдалены пасля першага перазапуску прылады (ці перасканіравання SD-карткі).
+
+Не забудзьце зрабіць рэзервовую копію спампаваных відэа-падкастаў, каб не згубіць іх.
+
+Спампаваныя падкасты знаходзяцца ў тэчцы 'BeyondPod/Podcasts' на SD-картцы."</string>
+    <string name="settings_disconnect_from_reader">Адлучыць ад Feedly</string>
+    <string name="settings_disconnect_from_reader_cant_convert_msg">"Некаторыя з вашых патокаў спецыфічныя для Feedly і іх немагчыма адлучыць:
+
+%s
+Вам трэба выдаліць іх уручную."</string>
+    <string name="settings_disconnect_from_reader_msg">"Наступныя патокі будуць адлучаны ад Feedly і перанакіраваны непасрэдна на арыгінальных выдаўцоў:
+
+%s
+Спампаваныя ці прыдатныя да струменевай перадачы эпізоды будуць захаваныя, але Прачытаныя і Гісторыя спампаваняў для гэтых патокаў будзе згублена."</string>
+    <string name="settings_downloadoncharging_summary">Спампоўваць эпізоды падкастаў толькі, калі прылада заражаецца.</string>
+    <string name="settings_downloadoncharging_title">Спампоўваць толькі ў час зарадкі</string>
+    <string name="settings_downloadonwifi_summary">Спампоўваць эпізоды толькі пры падключэнні да сеткі WiFi.</string>
+    <string name="settings_downloadonwifi_title">Спампоўваць толькі праз WiFi</string>
+    <string name="settings_enableFadein_summary">Паступова павялічвае гучнасць ад нуля да нармальнага ўзроўню з пачаткам прайгравання</string>
+    <string name="settings_enableFadein_title">Укл. плынны пераход</string>
+    <string name="settings_enableHeadsetButton_summary">Выкарыстоўвайце кнопку правадной ці bluetooth-гарнітуры для кантролю прайгравання</string>
+    <string name="settings_enableHeadsetButton_title">Уключыць кнопку гарнітуры</string>
+    <string name="settings_enable_presto_summary">Выкарыстоўваць аўдыёплагін Presto, калі ўсталяваны (перазапусціце пры неабходнасці)</string>
+    <string name="settings_enable_presto_title">Уключыць Presto</string>
+    <string name="settings_enable_sonic_player_summary">Уключае ўбудаваную падтрымку рэгулюемай хуткасці прайгравання (Jelly Bean і больш познія версіі)</string>
+    <string name="settings_enable_sonic_player_title">Уключыць плэер Sonic</string>
+    <string name="settings_feedContent_title">Налады кантэнту патоку</string>
+    <string name="settings_feedSelectedAction_summary">"Выгляд па змаўчанні пры выбары патоку ('Мае эпізоды' ці 'Усе апублікаваныя')"</string>
+    <string name="settings_feedSelectedAction_title">Пажаданы выгляд патоку</string>
+    <string name="settings_feedSortOrder_summary">Выберыце парадак сартыроўкі спісу патокаў (левая панэль)</string>
+    <string name="settings_feedSortOrder_title">Парадак сартыроўкі спісу патокаў</string>
+    <string name="settings_feed_defaults_summary">Глабальныя налады патоку пры падпісцы на новыя патокі (колькасць эпізодаў да спампавання, правілы ачысткі)…</string>
+    <string name="settings_feed_defaults_title">Параметры патока па змаўчанні</string>
+    <string name="settings_force_feed_album_art_summary">Выкарыстоўваць малюнак альбому патоку для аўдыёэпізодаў</string>
+    <string name="settings_force_feed_album_art_title">Выкарыстоўваць малюнак альбому патоку</string>
+    <string name="settings_force_mpd123_player_summary">Прымушае выкарыстоўваць плэер, заснаваны на mpg123, для хуткага прайгравання</string>
+    <string name="settings_force_mpd123_player_title">Прымусова плэер Mpg123</string>
+    <string name="settings_forwardSkipInterval_summary">Колькасць секунд пропуску наперад пры прайграванні (пропуск рэкламы)</string>
+    <string name="settings_forwardSkipInterval_title">Інтэрвал пропуску наперад</string>
+    <string name="settings_general_summary">Тэма, хатні экран, глабальная сартыроўка, налады патоку і эпізодаў…</string>
+    <string name="settings_general_title">Агульныя налады</string>
+    <string name="settings_global_apply">Патокаў абноўелна: %s</string>
+    <string name="settings_google_reader_login_title">Адлучыць ад Feedly</string>
+    <string name="settings_hideUnsupportedFileTypes_summary">Хавае тыпы медыя, якія прылада не можа прайграць</string>
+    <string name="settings_hideUnsupportedFileTypes_title">Хаваць непадтрымліваемыя медыя</string>
+    <string name="settings_ignoreReaderReadStatus_summary">"Пазначце, калі НЕ жадаеце сінхранізаваць статус 'Прачытанае' з пастамі ў Feedly."</string>
+    <string name="settings_ignoreReaderReadStatus_title">"Ігнараваць статус 'Прачытанае' ў Feedly"</string>
+    <string name="settings_keep_pause_notification_summary">Калі прайграванне прыпынена, апавяшчэнне \"Паўза\" застаецца ў вобласци апавяшчэнняў.</string>
+    <string name="settings_keep_pause_notification_title">Захоўваць апавяшчэнне \"Паўза\"</string>
+    <string name="settings_keep_screen_on_during_playback_summary">Таймаўт экрану падчас прайгравання аўдыё</string>
+    <string name="settings_keep_screen_on_during_playback_title">Таймаўт экрану</string>
+    <string name="settings_margin_navigation_summary">Двойчы краніце кантэнт посту, каб закрыць прагляд пастоў</string>
+    <string name="settings_margin_navigation_title">Закрываць па падвойным крананні</string>
+    <string name="settings_markAsReadOnOpen_summary">Вызначае, якія пасты будуць пазначаны як \"Прачытанае\" пры праглядзе зместу</string>
+    <string name="settings_markAsReadOnOpen_title">Пазначаць прачытаным пры адкрыванні</string>
+    <string name="settings_maxTrackAge_dlg_title">Выдаліць старэйшыя за</string>
+    <string name="settings_maxTrackAge_summary">Выдаляць з патоку эпізоды падкасту, старэйшыя за вызначаную колькасць дзён</string>
+    <string name="settings_maxTrackAge_title">Ачыстка – Выдаліць старыя</string>
+    <string name="settings_mediaEndAction_summary">Дзеянне пасля прайгравання бягучага эпізоду (выдаліць, прайграць наступны і г.д.)</string>
+    <string name="settings_mediaEndAction_title">Пасля прайгравання</string>
+    <string name="settings_numPodcastsToDownload_dlg_title">Спампаваць</string>
+    <string name="settings_numPodcastsToDownload_summary">Колькасць эпізодаў падкасту па змаўчанню для спампавання ці стрыму для кожнага патоку</string>
+    <string name="settings_numPodcastsToDownload_title">Спампаванне эпізода</string>
+    <string name="settings_numPodcastsToKeep_dlg_title">Пакінуць</string>
+    <string name="settings_numPodcastsToKeep_summary">Колькасць лакальных эпізодаў падкасту, якія захоўваюцца па змаўчанні для кожнага патоку</string>
+    <string name="settings_numPodcastsToKeep_title">Пры ачыстцы пакінуць не менш за</string>
+    <string name="settings_orientation_lock_summary">Дазваляе заблакаваць арыентацыю экрану ў альбомным ці кніжным рэжыме</string>
+    <string name="settings_orientation_lock_title">Арыентацыя адлюстравання</string>
+    <string name="settings_pause_on_notification_summary">Прыпыненне прайгравання пры сістэмным апавяшчэнні (навігацыя, эл. пошта, СМС і інш.)</string>
+    <string name="settings_pause_on_notification_title">Паўза пры апавяшчэнні</string>
+    <string name="settings_pause_on_power_disconnect_summary">Прыпыняе прайграванне, калі адключаецца знешняе сілкаванне.</string>
+    <string name="settings_pause_on_power_disconnect_title">Паўза пры адключэнні зарадкі</string>
+    <string name="settings_pause_onheadset_disconnect_summary">Прыпыненне прайгравання пры адключэнні гарнітуры</string>
+    <string name="settings_pause_onheadset_disconnect_title">Паўза пры адключэнні гарнітуры</string>
+    <string name="settings_pause_video_on_screen_off_summary">Прыпыняе прайграванне відэа, калі экран выключаецца.</string>
+    <string name="settings_pause_video_on_screen_off_title">Прыпыняць відэа пры выключэнні экрану</string>
+    <string name="settings_player_integration_summary">"Опцыя 'Знешні' будзе выкарыстоўваць убудаваны плэер (ці любы ад трэцяга боку)"</string>
+    <string name="settings_player_integration_title">Плэер аудыё/відэа па змаўчанні</string>
+    <string name="settings_player_plugins_disable_summary">Уключыць рэгуляванне хуткасці прайгравання</string>
+    <string name="settings_player_plugins_disable_title">Уключыць регуляванне хуткасці</string>
+    <string name="settings_player_plugins_only_if_configured_summary">Выкарыстоўвайце плагін толькі для патокаў, якія адкрыта сканфігураваны на прайграванне на павышанай хуткасці</string>
+    <string name="settings_player_plugins_only_if_configured_title">Выкарыстоўваць толькі, калі сканфігуравана</string>
+    <string name="settings_player_summary">Інтэрвалы пропуску, кнопка гарнітуры, параметры струменевага прайгравання…</string>
+    <string name="settings_player_title">Налады плэеру</string>
+    <string name="settings_playlistEndAction_summary">Дзеянне пасля прайгравання апошняга эпізоду плэйлісту</string>
+    <string name="settings_playlistEndAction_title">Пасля сканчэння плэйлісту</string>
+    <string name="settings_playlist_summary">Паводзіны плэйлісту, аўтавыдаленне эпізодаў…</string>
+    <string name="settings_playlist_title">Налады плэйлісту</string>
+    <string name="settings_podcastDownloadAction_summary">Паводзіны па змаўчанню для эпізодаў патокаў (спампаванне, стрым ці ігнараванне)</string>
+    <string name="settings_podcastDownloadAction_title">Кіраванне эпізодамі</string>
+    <string name="settings_podcastsSortOrder_summary">Выберыце парадак сартыроўкі па змаўчанні для спампаваных эпізодаў падкастаў</string>
+    <string name="settings_podcastsSortOrder_title">Парадак сартыроўкі Маіх эпізодаў</string>
+    <string name="settings_prefer_last_sd_card_root_summary">Прымусіць BeyondPod заўсёды выкарыстоўваць бягучы шлях спампавання:</string>
+    <string name="settings_prefer_last_sd_card_root_title">Заблакіраваць на бягучым шляху</string>
+    <string name="settings_push_globals_all_dlg_msg">Таксама прымяніць гэтыя налады да існуючых патокаў?</string>
+    <string name="settings_push_globals_btn_no">Не</string>
+    <string name="settings_push_globals_btn_yes">Так</string>
+    <string name="settings_push_globals_dlg_title">Абнавіць існуючыя патокі</string>
+    <string name="settings_push_globals_download_or_stream_dlg_msg">Таксама прымяніць гэтыя налады да усіх існуючых патокаў, якія спампоўваюць ці выконваюць струменевае прайграванне падкастаў?</string>
+    <string name="settings_replay_on_resume_summary">Колькасць секунд для паўтору (пераматаць назад) пасля доўгай паўзы</string>
+    <string name="settings_replay_on_resume_title">Паўтарыць пасля паўзы</string>
+    <string name="settings_requires_restart_back_only_warning">"Гэтыя налады падзейнічаюць пасля наступнага адкрыцця BeyondPod. 
+
+(Націскайце клавішу 'Назад', пакуль не закрыюцца ўсе вокны BeyondPod)"</string>
+    <string name="settings_requires_restart_warning">"Гэтыя налады падзейнічаюць пасля наступнага адкрыцця BeyondPod. 
+
+(Націскайце клавішу 'Назад', каб закрыць акно BeyondPod ці павярніце экран)"</string>
+    <string name="settings_resume_on_call_summary">Працягваць прайграванне пасля тэлефоннага выкліку</string>
+    <string name="settings_resume_on_call_title">Працягнуць пасля выкліку</string>
+    <string name="settings_scrobble_summary">Адлюстраванне інфармацыі аб бягучым эпізодзе на знешніх падлучаных прыладах. (Уключэнне можа перарваць падтрымку Bluetooth-аўдыё)</string>
+    <string name="settings_scrobble_title">Апублікаваць бягучы эпізод</string>
+    <string name="settings_setAsDownloadedOnMarkRead_summary">"Эпізоды падкастаў пазначаюцца 'Спампаваныя', калі іх пост пазначаецца 'Прачытаны'"</string>
+    <string name="settings_setAsDownloadedOnMarkRead_title">Пазначаць Прачытаныя як Спампаваныя</string>
+    <string name="settings_setAsPlayedOnMarkRead_summary">Эпізоды падкастаў пазначаюцца «Прайграныя», калі іх пост пазначаецца «Прачытаны»</string>
+    <string name="settings_setAsPlayedOnMarkRead_title">Пазначыць прачытаныя як прайграныя</string>
+    <string name="settings_sharePodcasts_summary">Пазначце, калі жадаеце, каб Android Music Player бачыў спампаваныя эпізоды падкастаў BeyondPod</string>
+    <string name="settings_sharePodcasts_title">Эпізоды бачныя ў музычным плэеры</string>
+    <string name="settings_show_post_images_in_feed_content_list_summary">"Паказваць эскіз малюнку 'важнага' посту ў спісе пастоў патоку"</string>
+    <string name="settings_show_post_images_in_feed_content_list_title">Паказваць эскізы пастоў</string>
+    <string name="settings_show_sleep_to_end_summary">Хутка пераматаць да канца бягучага эпізоду і пазначыць яго прайграным</string>
+    <string name="settings_show_sleep_to_end_title">Кнопка Прапусціць-да-канца</string>
+    <string name="settings_sleep_timeout_summary">Карыстальніцкі тайм-аўт (у хвілінах) для функцыі плэеру Сон</string>
+    <string name="settings_sleep_timeout_title">Карыстальніцкі тайм-аўт сну</string>
+    <string name="settings_storage_folder_title">Папка спампавання падкаста</string>
+    <string name="settings_supportedFileFormats_summary">Тыпы файлаў, якія BeyondPod пазнае і адлюстроўвае</string>
+    <string name="settings_supportedFileFormats_title">Падтрымліваемыя тыпы файлаў</string>
+    <string name="settings_togglewifi_summary">Пазначце, каб уключаць WiFi для абнаўлення патокаў.</string>
+    <string name="settings_togglewifi_title">Уключаць WiFi пры абнаўленні</string>
+    <string name="settings_update_optimizations_already_excluded_summary">Аптымізацыя акумулятара адключана. BeyondPod будзе абнаўляць патокі, пакуль прылада знаходзіцца ў стане глыбокага сна.</string>
+    <string name="settings_update_optimizations_exclude_summary">Аптымізацыя акумулятара ўключана. BeyondPod НЕ будзе абнаўляць патокі, калі прылада знаходзіцца ў стане глыбокага сна.</string>
+    <string name="settings_update_optimizations_exclude_title">Аптымізацыя акумулятара</string>
+    <string name="settings_update_summary">Графік аўтаматычных абнаўленняў патоку, пераключэнне WiFi, мабільных дадзеных, спампавання эпізоду…</string>
+    <string name="settings_update_title">Налады абнаўлення патоку</string>
+    <string name="settings_updateonopen_summary">Пазначце, каб аўтаматычна абнаўляць паток пры яго адкрыцці.</string>
+    <string name="settings_updateonopen_title">Абнаўленне пры адкрыцці патоку</string>
+    <string name="settings_useExternalBrowser_summary">Пазначце, каб адкрываць знешнія спасылкі ў сістэмным браўзеры прылады.</string>
+    <string name="settings_useExternalBrowser_title">Выкарыстоўваць знешні браўзер</string>
+    <string name="settings_user_home_screen_summary">"Пачатковы экран. Кнопка 'Назад' перш адкрые Хатні экран, а потым закрые прыкладанне."</string>
+    <string name="settings_user_home_screen_title">Хатні экран</string>
+    <string name="settings_view_title">Налады BeyondPod</string>
+    <string name="settings_view_update_log_message">Апошняе абнаўленне: %s</string>
+    <string name="settings_view_update_log_title">Праглядзець журнал абнаўлення</string>
+    <string name="settings_volumeNavigation_summary">Выкарыстоўваць апаратныя рэгулятары гучнасці для навігацыі паміж пастамі патоку</string>
+    <string name="settings_volumeNavigation_title">Навігацыя кнопкамі гучнасці</string>
+    <string name="settings_widget_background_title">Фон віджэту</string>
+    <string name="settings_widget_preferences">Параметры віджэтаў</string>
+    <string name="smart_playlist_add">Дадаць SmartPlay</string>
+    <string name="smart_playlist_add_rule">Дадаць правіла</string>
+    <string name="smart_playlist_editor_msg">"SmartPlay аўтаматычна стварае новы плэйліст са спампаваных эпізодаў.
+Эпізоды ўключаюцца на аснове простых правілаў."</string>
+    <string name="smart_playlist_editor_title">Канструктар SmartPlay</string>
+    <string name="smart_playlist_emptyplaylist">Плэйліст пусты</string>
+    <string name="smart_playlist_emptyplaylist_info">Націсніце «Прайграць», каб запусціць SmartPlay</string>
+    <string name="smart_playlist_name_hint">Імя SmartPlay</string>
+    <string name="smart_playlist_repository_loading">Загрузка плэйліста…</string>
+    <string name="smart_playlist_shortcut_create_failed">Немагчыма стварыць цэтлік!</string>
+    <string name="smart_playlist_shortcut_creating">Стварэнне цэтліка…</string>
+    <string name="smart_playlist_start_with">Пачаць з</string>
+    <string name="smart_playlist_then_play">потым прайграць</string>
+    <string name="smartplay_category_label">Катэгорыя</string>
+    <string name="status_bar_notification_info_overflow">больш за 999</string>
+    <string name="the_url_of_this_feed_s_does_not_appear_to_be_valid">Здаецца, URL гэтага патоку %s недзейсны!</string>
+    <string name="there_are_no_scheduled_updates">Няма запланаваных абнаўленняў</string>
+    <string name="this_feed_already_exists_in_category">"Гэты паток ужо ёсць у катэгорыі '%s'"</string>
+    <string name="tip_cast_to_your_tv_msg">Краніце кнопку трансляцыі #IMG# вышей, каб насалоджвацца падкастамі на вялікім экране.</string>
+    <string name="tip_cast_to_your_tv_title">Трансліраваць на тэлевізар</string>
+    <string name="tip_how_to_select_compact_card_msg">Бачце больш эпізодаў на экране адначасова. Выберыце «Кампактныя карткі» ў меню.</string>
+    <string name="tip_introduce_multi_select_msg">"Вы можаце выдаляць, спампоўваць ці дадаваць да плэйлісту адразу некалькі эпізодаў.
+Націсніце і ўтрымлівайце першы эпізод, каб выдзяліць яго, затым краніце іншыя эпізоды, каб дадаць іх і выберыце дзеянне ў меню."</string>
+    <string name="tip_introduce_smart_play_msg">"Стаміліся ад фарміравання плэйліста ўручную? Дазвольце SmartPlay выканаць работу!
+Краніце тут, каб даведацца больш."</string>
+    <string name="tip_notification">Парада</string>
+    <string name="tip_notification_categories_msg">Каб змяніць парадак катэгорый, перацягніце значок #IMG# на пажаданую пазіцыю ў спісе.</string>
+    <string name="tip_notification_drag_drop_playlist_info">Каб змяніць парадак плэйліста, перацягніце значок #IMG# на пажаданую пазіцыю ў плэйлісце.</string>
+    <string name="tip_notification_expand_categories_msg">Краніце #IMG#, каб раскрыць катэгорыю і прагледзець усе патокі ў ёй.</string>
+    <string name="trial_about_to_expire_message">Пробны перыяд BeyondPod PRO скончыцца праз %s д.</string>
+    <string name="trial_expired_message">Пробны перыяд BeyondPod PRO скончаны!</string>
+    <string name="update_and_download_queue_connecting">Падключэнне…</string>
+    <string name="update_and_download_queue_downloaded">Спампавана</string>
+    <string name="update_and_download_queue_title">Чарга абнаўлення і спампавання</string>
+    <string name="update_and_download_queue_updating">Абнаўленне</string>
+    <string name="update_and_download_updating_s">Абнаўленне %s…</string>
+    <string name="update_download_mgr_currently_podcasts_can_be_downloaded_automatically_only_over_a_wifi_connection">"Зараз эпізоды спампоўваюцца аўтаматычна, толькі праз WiFi-злучэнне.
+
+Выкарыстоўвайце кнопку «Спампаваць», каб спампаваць эпізоды ўручную.
+
+Гэта можна змяніць у Наладах > Налады абнаўлення патоку > Спампоўваць толькі праз WiFi"</string>
+    <string name="update_download_mgr_currently_podcasts_can_be_downloaded_automatically_only_when_the_device_is_plugged_in">"Зараз эпізоды спампоўваюцца аўтаматычна, толькі калі прылада падключана да электрасеткі.
+
+Выкарыстоўвайце кнопку «Спампаваць», каб спампаваць эпізоды ўручную.
+
+Гэта можна змяніць у Наладах > Налады абнаўлення патоку > Спампоўваць толькі калі прылада заражаецца"</string>
+    <string name="update_download_mgr_scheduled_update_did_not_run_because_background_data_is_disabled">Запланаванае абнаўленне не выканана таму што «перадача дадзеных» выключана ў наладах прылады. (Вы можаце абнаўляць патокі ўручную).</string>
+    <string name="update_download_mgr_the_device_has_no_internet_connection">У прылады няма інтэрнэт-злучэння! Адаптэр WiFi выключаны (і не сканфігураваны для аўтаматычнага ўключэння падчас абнаўлення).</string>
+    <string name="update_download_mgr_unable_to_establish_internet_conection_the_device_is_in_airplane_mode">Не атрымалася ўсталяваць інтэрнэт-злучэнне! Прылада ў рэжыме палёту.</string>
+    <string name="update_download_queue_activity_cancel_update">Спыніць абнаўленне і спампаванне</string>
+    <string name="update_download_queue_download_completed">Закрыць</string>
+    <string name="update_download_queue_processing_text">Праверка новых эпізодаў…</string>
+    <string name="update_download_queue_update_and_download_completed">Абнаўленне і спампаванне скончаны!</string>
+    <string name="update_download_queue_view_update_log">Праглядзець журнал абнаўлення</string>
+    <string name="update_engine_notification__feed_update_completed">Абнаўленне патоку завершана</string>
+    <string name="update_engine_notification__feed_update_failed">Абнаўленне патоку не выканана</string>
+    <string name="update_engine_notification__podcasts_failed">эпізодаў не абноўлена</string>
+    <string name="update_engine_notification_feeds_failed">патокаў не абноўлена</string>
+    <string name="update_engine_notification_no_network_connection">Няма злучэння з сеткай!</string>
+    <string name="update_engine_notification_no_new_podcasts">Няма новых эпізодаў</string>
+    <string name="update_engine_notification_no_new_posts">Няма новых запісаў</string>
+    <string name="update_engine_notification_the_phone_is_in_airplane_mode">Прылада ў рэжыме палёту!</string>
+    <string name="update_engine_notification_there_were_errors_during_the_last_update">У час апошняга абнаўлення ўзніклі памылкі! Краніце тут, каб праглядзець журнал абнаўлення.</string>
+    <string name="update_engine_notification_unable_to_establish_network_connection">Немагчыма ўсталяваць злучэнне з сеткай.</string>
+    <string name="update_engine_notification_updated">Абноўлена</string>
+    <string name="updates_are_scheduled_for_categories">Запланаваны абнаўленні для катэгорый</string>
+    <string name="updating_google_reader">Абнаўленне Feedly</string>
+    <string name="warn_force_download_on_device_not_plugged_in_msg">Вашы налады дазваляюць спампоўваць падкасты, толькі калі прылада на зарадцы. Сапраўды спампаваць эпізод, выкарыстоўваючы зарад акумулятара?</string>
+    <string name="warn_force_download_on_mobile_data_msg">Вашы налады не дазваляюць спампоўваць падкасты праз мабільную сетку. Сапраўды спампаваць гэты эпізод праз мабільнае злучэнне?</string>
+    <string name="warn_force_download_on_wifi_not_connected_msg">Вашы налады дазваляюць спампоўваць падкасты толькі праз WiFi-злучэнне. Сапраўды спампаваць гэты эпізод праз мабільнае злучэнне?</string>
+    <string name="warn_replace_pls_append">Дадаць эпізод у бягучы плэйліст</string>
+    <string name="warn_replace_pls_donotask_append">У далейшым заўсёды дадаваць выбраныя эпізоды</string>
+    <string name="warn_replace_pls_donotask_replace">У далейшым заўсёды пачынаць новы плэйліст</string>
+    <string name="warn_replace_pls_donotask_tip">Гэтыя налады можна змяніць пазней у: Налады плэйліста > Аўтаматычны плэйліст</string>
+    <string name="warn_replace_pls_msg">Выбраны эпізод пачне новы плэйліст. Працягнуць?</string>
+    <string name="warn_replace_pls_replace">Так, пачаць новы плэйліст</string>
+    <string name="warn_replace_pls_title">Замяніць плэйліст?</string>
+    <string name="widget_action_picker_now_playing">Зараз прайграваецца</string>
+    <string name="widget_action_picker_open_beyondpod">Адкрыць BeyondPod</string>
+    <string name="widget_action_picker_start_smartplay">Пачаць SmartPlay па змаўчанні</string>
+    <string name="widget_action_picker_update_smartplay_feeds">Абнавіць SmartPlay па змаўчанні</string>
+    <string name="widget_picker_title">Выберыце дзеянне</string>
+    <string name="widget_provider_playback_error">Памылка прайгравання!</string>
+    <string name="widget_provider_starting_stream_s">Запуск струменевага прайгравання… ( %s %%)</string>
+</resources>

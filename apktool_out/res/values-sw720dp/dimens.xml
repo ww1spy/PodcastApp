@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="add_feed_screen_h_margin">70.0dip</dimen>
+    <dimen name="alert_dialog_button_bar_height">54.0dip</dimen>
+    <dimen name="card_episode_image_height">120.0dip</dimen>
+    <dimen name="card_episode_image_width">120.0dip</dimen>
+    <dimen name="card_view_cell_height_large">168.0dip</dimen>
+    <dimen name="card_view_cell_height_med">120.0dip</dimen>
+    <dimen name="card_view_item_h_margin">16.0dip</dimen>
+    <dimen name="card_view_item_top_margin">16.0dip</dimen>
+    <dimen name="card_view_item_top_margin_small">16.0dip</dimen>
+    <dimen name="generic_screen_h_margin">64.0dip</dimen>
+    <item type="dimen" name="mr_dialog_fixed_width_major">50.0%</item>
+    <item type="dimen" name="mr_dialog_fixed_width_minor">70.00001%</item>
+    <dimen name="player_visualizer_textArt_font_size">120.0dip</dimen>
+    <dimen name="playlist_card_episode_title_font_size">28.0sp</dimen>
+    <dimen name="playlist_pager_bottom_padding">325.0dip</dimen>
+    <dimen name="playlist_pager_card_margin">24.0dip</dimen>
+    <dimen name="playlist_pager_left_padding">160.0dip</dimen>
+    <dimen name="playlist_pager_right_padding">160.0dip</dimen>
+    <dimen name="playlist_pager_top_padding">325.0dip</dimen>
+    <dimen name="preview_player_album_art_height">500.0dip</dimen>
+    <dimen name="preview_player_album_art_width">450.0dip</dimen>
+    <dimen name="video_player_transport_control_padding">25.0dip</dimen>
+</resources>

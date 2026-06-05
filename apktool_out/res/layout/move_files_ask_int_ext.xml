@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="14.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center|top" android:layout_gravity="center" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mf_external_SD_warninng" />
+    <RadioGroup android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/chooseSD" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="16.0dip" android:checkedButton="@id/internalSD" android:layout_weight="1.0">
+        <RadioButton android:id="@id/internalSD" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mf_use_intenral_SD" />
+        <RadioButton android:id="@id/externalSD" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mf_use_external_SD" />
+    </RadioGroup>
+</LinearLayout>

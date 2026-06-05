@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ffbf360c" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="20.0dip" android:layout_toStartOf="@id/transport" android:layout_alignParentStart="true">
+            <TextView android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawablePadding="4.0dip" style="@style/CastControlsPlayerTitle" />
+            <TextView android:id="@id/source" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title" style="@style/CastControlsPlayerSource" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/transport" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_alignParentEnd="true">
+            <ImageButton android:id="@id/playpause" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_cast_play" android:scaleType="center" android:contentDescription="@string/control_play_pause" />
+            <ProgressBar android:id="@id/prepareProgress" android:padding="4.0dip" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?android:progressBarStyle" />
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

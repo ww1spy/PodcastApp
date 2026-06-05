@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/drawer_navigator" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <mobi.beyondpod.ui.views.navigator.FeedsListView android:id="@id/feedsList" android:fitsSystemWindows="true" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="0.0dip" />
+    <mobi.beyondpod.ui.views.navigator.ReorderCategoriesListView android:id="@id/reorderCategories" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" dslv:drag_handle_id="@id/category_sort_handle" dslv:float_background_color="#40c0c0c0" xmlns:dslv="http://schemas.android.com/apk/res-auto" />
+</FrameLayout>

@@ -1,0 +1,11 @@
+package com.google.android.gms.internal;
+
+/* loaded from: classes.dex */
+public final class zzcw extends Exception {
+    public zzcw() {
+    }
+
+    public zzcw(String str) {
+        super(str);
+    }
+}

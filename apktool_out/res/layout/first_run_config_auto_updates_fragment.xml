@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="20.0sp" android:textColor="#ff606060" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/first_run_ad_title" />
+        <View android:background="#ffc0c0c0" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/first_run_ad_subtitle" />
+        <View android:background="#ffc0c0c0" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+        <RadioGroup android:orientation="vertical" android:id="@id/autoUpdateGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:showDividers="middle">
+            <RadioButton android:textAppearance="?android:textAppearanceSmall" android:id="@id/automaticDownloads" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" android:text="@string/first_run_ad_enabled" />
+            <RadioButton android:textAppearance="?android:textAppearanceSmall" android:id="@id/manualDownloads" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="18.0dip" android:text="@string/first_run_ad_disabled" />
+        </RadioGroup>
+        <View android:background="#ffc0c0c0" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+        <CheckBox android:textAppearance="?android:textAppearanceSmall" android:id="@id/downloadOnWiFi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="16.0dip" android:checked="true" android:text="@string/first_run_ad_wifi" />
+        <CheckBox android:textAppearance="?android:textAppearanceSmall" android:id="@id/enableAnalytics" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:checked="true" android:text="@string/settings_allow_analytics_summary" />
+    </LinearLayout>
+</FrameLayout>

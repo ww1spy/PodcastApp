@@ -1,0 +1,1184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="MENU_Settings_Selector">Настройки</string>
+    <string name="MENU_about">О программе</string>
+    <string name="MENU_add_to_playlist">Добавить в плейлист</string>
+    <string name="MENU_addtohome_smartplay">Добавить на главный экран</string>
+    <string name="MENU_browser_copy_link">Копировать ссылку</string>
+    <string name="MENU_browser_load_images">Показать изображения</string>
+    <string name="MENU_browser_open_in_external">Открыть в браузере</string>
+    <string name="MENU_browser_refresh">Перезагрузить</string>
+    <string name="MENU_browser_share_feed">Поделиться потоком</string>
+    <string name="MENU_browser_share_link">Послать ссылку</string>
+    <string name="MENU_browser_share_podcast">Послать эпизод</string>
+    <string name="MENU_card_size_small">Компактные карточки</string>
+    <string name="MENU_clear_cache">Очистить кэш</string>
+    <string name="MENU_delete_all_played_podcasts">Удалить воспроизведенные</string>
+    <string name="MENU_delete_category">Удалить категорию</string>
+    <string name="MENU_delete_episode">Удалить</string>
+    <string name="MENU_delete_feed">Удалить поток</string>
+    <string name="MENU_delete_podcast_episodes">Удалить из моих эпизодов</string>
+    <string name="MENU_delete_smartplay">Удалить</string>
+    <string name="MENU_display_settings">Показать настройки</string>
+    <string name="MENU_download_all_playlist">Загрузить все в плейлисте</string>
+    <string name="MENU_dump_environment">Информация об устройстве</string>
+    <string name="MENU_edit_category">Редактировать категорию</string>
+    <string name="MENU_edit_feed">Редактировать поток</string>
+    <string name="MENU_edit_smartplay">Редактировать</string>
+    <string name="MENU_episode">Эпизод</string>
+    <string name="MENU_exit_app">Выход из программы</string>
+    <string name="MENU_feed">Поток</string>
+    <string name="MENU_filter_episodes">Фильтровать</string>
+    <string name="MENU_hide_played">Скрыть воспроизведенное</string>
+    <string name="MENU_hide_read">Скрыть прочитанные</string>
+    <string name="MENU_import_selected">Импортировать выбранные потоки</string>
+    <string name="MENU_lock_episode">Сделать избранным</string>
+    <string name="MENU_mark_all_as_played">Отметить все воспроизведенными</string>
+    <string name="MENU_mark_all_as_read">"Отметить все как 'прочитанные'"</string>
+    <string name="MENU_mark_played">Отметить воспроизведенным</string>
+    <string name="MENU_mark_read">"Отметить 'прочитанным'"</string>
+    <string name="MENU_mark_unplayed">Очистить воспроизведенные</string>
+    <string name="MENU_mark_unread">"Отметить 'непрочитанным'"</string>
+    <string name="MENU_media_route">Воспроизвести на…</string>
+    <string name="MENU_move_to_bottom">Переместить вниз</string>
+    <string name="MENU_move_to_top">Переместить наверх</string>
+    <string name="MENU_open_episode_feed">Открыть поток…</string>
+    <string name="MENU_open_search">Поиск</string>
+    <string name="MENU_opml_search">Поиск</string>
+    <string name="MENU_play_episodes">Воспроизвести эпизоды</string>
+    <string name="MENU_play_in_external_player">Воспроизвести внешним плеером</string>
+    <string name="MENU_podcast_info">Просмотреть заметки эпизода</string>
+    <string name="MENU_remove_from_playlist">Удалить из плейлиста</string>
+    <string name="MENU_reorder_categories">Изменить порядок категорий</string>
+    <string name="MENU_reset_tips">Сбросить советы и предупреждения</string>
+    <string name="MENU_set_update_schedule">Настроить график обновления</string>
+    <string name="MENU_setdefault_smartplay">Установить по умолчанию</string>
+    <string name="MENU_show_played">Показать воспроизведенные</string>
+    <string name="MENU_show_read">Показать прочитанные</string>
+    <string name="MENU_sort_podcasts">Сортировать</string>
+    <string name="MENU_start_download">Загрузить</string>
+    <string name="MENU_stop_browser_load">Стоп</string>
+    <string name="MENU_stop_update">Стоп</string>
+    <string name="MENU_suggest_feature">Справка и обратная связь</string>
+    <string name="MENU_unlock_app">Перейти на версию PRO!</string>
+    <string name="MENU_unlock_episode">Очистить избранное</string>
+    <string name="MENU_update_my_episodes">Обновить %s</string>
+    <string name="MENU_update_smartplay">Обновить потоки</string>
+    <string name="MENU_video_as_audio">Воспроизводить видео как аудио</string>
+    <string name="MENU_view_help">Помощь</string>
+    <string name="MENU_view_log_file">Просмотреть журнал BeyondPod</string>
+    <string name="MENU_view_logcat_file">Просмотр Android журнала</string>
+    <string name="MENU_view_logs">Просмотреть журналы...</string>
+    <string name="MENU_view_update_log">Просмотр лога обновления</string>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">ОТКЛ.</string>
+    <string name="abc_capital_on">ВКЛ.</string>
+    <string name="abc_search_hint">Поиск</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Свернуть</string>
+    <string name="about_dialog_about_beyondpod">О программе</string>
+    <string name="about_dialog_close">Закрыть</string>
+    <string name="about_dialog_e_mail_support">Поддержка через Еmail</string>
+    <string name="about_dialog_environment_info">Информация об устройстве</string>
+    <string name="about_dialog_expires">Истекает</string>
+    <string name="about_dialog_licensed_to">Тип лицензии</string>
+    <string name="add_feed_dialog_title">Добавить поток</string>
+    <string name="add_feed_dlg_enter_feed_url">Введите адрес потока</string>
+    <string name="add_feed_dlg_import_from_google_reader">Импорт из Feedly</string>
+    <string name="add_feed_dlg_import_from_opml_file">Загрузить файл OPML</string>
+    <string name="add_feed_dlg_import_from_sd_card_folder">Добавить папку как виртуальный поток</string>
+    <string name="add_feed_import_feeds_title">Импорт потоков</string>
+    <string name="add_feed_subscribe">Подписаться</string>
+    <string name="adv_settings_allow_pultorefresh_summary">Обновлять потоки и загружать эпизоды с помощью Потянуть-чтобы-обновить</string>
+    <string name="adv_settings_allow_pultorefresh_title">"Разрешить 'Потянуть чтобы обновить'"</string>
+    <string name="adv_settings_attach_file_when_sharing_summary">Присоединять файл эпизода к поделяемой ссылке. Используйте с облачными сервисами как DropBox, Google Drive и др.</string>
+    <string name="adv_settings_attach_file_when_sharing_title">Присоединять файл эпизода</string>
+    <string name="adv_settings_cds_sync_furthest_pos_summary">Синхронизировать воспроизведенную позицию эпизода, если только удаленная позиция находиться дальше текущей позиции</string>
+    <string name="adv_settings_cds_sync_furthest_pos_title">Синхронизировать только дальную позицию</string>
+    <string name="adv_settings_custom_cds_settings_summary">Не менять! (если не знаете, что делать)</string>
+    <string name="adv_settings_custom_cds_settings_title">Параметры отладки</string>
+    <string name="adv_settings_custom_sdcard_location_summary">Укажите путь где BeyondPod будет сохранять загруженные эпизоды</string>
+    <string name="adv_settings_custom_sdcard_location_title">Путь для сохранения загружаемых эпизодов</string>
+    <string name="adv_settings_enable_cds_settings_dlg_msg">"EpisodeSync синхронизирует воспроизведенные позиции эпизодов между несколькими устройствами.
+
+В настоящее время EpisodeSync находиться в БЕТА-тестировании и его использование может привести к случайным сбоям.
+
+Если хотите принять участие в тестировании БЕТА-версии, можете найти более подробную информацию на нашем форуме поддержки: www.beyondpod.com/forum"</string>
+    <string name="adv_settings_enable_cds_settings_dlg_title">Предупреждение - БЕТА функция!</string>
+    <string name="adv_settings_enable_logging_summary">Ведение подробного лога приложения</string>
+    <string name="adv_settings_enable_logging_title">Включить ведение лога</string>
+    <string name="adv_settings_http_timeout_summary">Таймаут (в секундах) http-подключений при обновлении потоков или загрузке подкастов</string>
+    <string name="adv_settings_http_timout_title">Таймаут подключения</string>
+    <string name="adv_settings_http_user_agent_summary">Задайте строку User Agent-а вашего браузера или введите MO для Mozilla или IE - для Internet Explorer</string>
+    <string name="adv_settings_http_user_agent_title">User Agent</string>
+    <string name="adv_settings_keep_screen_on_if_wifi_summary">Оставлять экран включенным при обновлении через WiFi. Включайте экран, если обновления через WiFi часто не срабатывают</string>
+    <string name="adv_settings_keep_screen_on_if_wifi_title">Включать экран при обновлении через WiFi</string>
+    <string name="alert_dialog_allow">Разрешить</string>
+    <string name="alert_dialog_cancel">Отменить</string>
+    <string name="alert_dialog_close">Закрыть</string>
+    <string name="alert_dialog_continue">Продолжить</string>
+    <string name="alert_dialog_exit">Выход из программы</string>
+    <string name="alert_dialog_external_player_help">Плеер помощь</string>
+    <string name="alert_dialog_feed_help">Помощь</string>
+    <string name="alert_dialog_ignore">Игнорировать</string>
+    <string name="alert_dialog_no">Нет</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_reset">Переключить</string>
+    <string name="alert_dialog_save">Сохранить</string>
+    <string name="alert_dialog_try_external_player">Попробуйте внешний плеер</string>
+    <string name="alert_dialog_yes">Да</string>
+    <string name="android_auto_categories_folder">Категории</string>
+    <string name="android_auto_feeds_folder">Потоки</string>
+    <string name="android_auto_trial_expired">Пробный период BeyondPod завершен!</string>
+    <string name="app_shareLink">Подписаться в BeyondPod</string>
+    <string name="application_error_access_denied">Ладно, но BeyondPod не сможет получить доступ к карте памяти (обновлять потоки или загружать/удалять/перемещать эпизоды)</string>
+    <string name="application_error_access_granted">Спасибо! Сейчас у BeyondPod есть доступ к карте памяти.</string>
+    <string name="application_error_access_granted_but_still_cant_write">"Похоже, что-то не так!
+
+BeyondPod получил разрешение на доступ к карте памяти, но почему-то не может записывать на нее.
+
+Попробуйте перезагрузить устройство."</string>
+    <string name="application_error_access_granted_retry">"Разрешение получено!
+Попробуйте выполнить действие снова."</string>
+    <string name="application_error_access_request">Разрешить доступ</string>
+    <string name="application_error_invalid_reader_login">"Вы вероятно не вошли в Feedly или ваша последняя сессия там истекла! 
+
+Используйте кнопку Login ниже, чтобы войти и попытайтесь обновить поток"</string>
+    <string name="application_error_invalid_reader_login_button_text">Войти в Feedly</string>
+    <string name="application_error_message_dialog_title">Ошибка BeyondPod</string>
+    <string name="application_error_permission_request">Запрос разрешения</string>
+    <string name="application_error_storage_card_corrupted">"Не удалось осуществить запись в карту памяти! 
+
+В некоторых случаях причину можно устранить путем рестартирования устройства или форматирования ??? карты памяти."</string>
+    <string name="application_error_storage_card_read_needs_access_permission">BeyondPod необходимо разрешение для доступа к карте памяти (SD).</string>
+    <string name="application_error_storage_card_read_needs_write_permission">BeyondPod необходимо разрешение для сохранения эпизодов на карте памяти (SD).</string>
+    <string name="application_error_storage_card_read_only_kitkat">"Из-за ограничений, введеных в Android KitKat, BeyondPod больше не сможет записывать в папку загрузки на SD-карте.
+
+Пройдите в: Настройки > Общие настройки > Папка загрузки подкастов и там выберите другую папку загрузки."</string>
+    <string name="application_licensed_to">.</string>
+    <string name="audiobook_search_hint">Введите имя автора или название книги</string>
+    <string name="auto_now_playing">Сейчас проигрывается</string>
+    <string name="auto_playlist">Плейлист</string>
+    <string name="br_backup_command_summary">Создает резервное копие параметров BeyondPod и параметров подписки потоков. Загруженные эпизоды не копируются</string>
+    <string name="br_backup_command_title">Резервное копирование</string>
+    <string name="br_backup_failed">"Не удалось создать резервную копию!
+
+%s"</string>
+    <string name="br_backup_lost_on_uninstall_warning_msg">"Папка для резервного копирования будет удалена при удалении BeyondPod.
+
+Если хотите сохранять ваши резервные копии, предлагаем Вам использовать «Послать Резервную Копию» для их экспортирования в DropBox, в Google Drive, в электронную почту и другие, для того чтобы сохранять их вне вашего устройства!"</string>
+    <string name="br_backup_protected_feeds_warning_msg">"%s ваших потоков, защищены паролем! 
+
+Пароли потоков будут включены в копию и этим могут воспользоваться другие лица.
+
+Не забудьте сохранить файл резервной копии в безопасном месте!"</string>
+    <string name="br_backup_was_saved_to">"Резервное копие сохранено в:
+
+%s"</string>
+    <string name="br_last_backup">Последнее резервное копие: %s</string>
+    <string name="br_no_backups_available">Нет резервных копий в %s</string>
+    <string name="br_restore_command_summary">Восстановливает настройки BeyondPod и параметры подписки потоков из резервной копии</string>
+    <string name="br_restore_command_title">Восстановление</string>
+    <string name="br_restore_complete">"Восстановление закончено!
+
+BeyondPod перезагрузиться теперь с новыми параметрами."</string>
+    <string name="br_restore_failed">"Не удалось восстановить!
+
+%s"</string>
+    <string name="br_restore_warning_msg" formatted="false">"Вы собираетесь восстановить BeyondPod ver. %s
+, сделанное на %s в %s!
+
+Это изменит все ваши настройки, потоки и историю загрузки.
+
+ Продолжить с восстановлением?"</string>
+    <string name="br_restore_warning_title">Восстановление BeyondPod</string>
+    <string name="br_select_backup_to_restore">Выбрать резервную копию для восстановления</string>
+    <string name="br_select_backup_to_share">Выбрать резервную копию</string>
+    <string name="br_settings_command_summary">%s</string>
+    <string name="br_settings_command_title">Местоположение резервных копий</string>
+    <string name="br_share_backup_using">Послать резервную копию через…</string>
+    <string name="br_share_command_summary">Послать резервную копию на другое устройство через электронную почту или облачных сервисов, таких как DropBox, Box.com и др.</string>
+    <string name="br_share_command_title">Послать резервную копию</string>
+    <string name="cancel_button">Cancel Button</string>
+    <string name="card_section_favorite_episodes">Избранные эпизоды</string>
+    <string name="card_section_publisher_label">Обновлено</string>
+    <string name="card_section_recently_played">Недавно воспроизведенное</string>
+    <string name="card_section_what_is_new">Последние эпизоды</string>
+    <string name="cast_notification_connected_message">Подключено к %1$s</string>
+    <string name="cast_notification_connecting_message">Подключение к %1$s…</string>
+    <string name="cast_notification_default_channel_name">Cast</string>
+    <string name="cast_notification_disconnect">Отключить</string>
+    <string name="categories_num_feeds">%s потоков</string>
+    <string name="category_all_episodes">Все эпизоды</string>
+    <string name="category_all_feeds">Все потоки</string>
+    <string name="category_editor_dialog_add_category">Добавить категорию</string>
+    <string name="category_home_page">Что воспроизвести</string>
+    <string name="category_properties_category_color">Цвет Категории</string>
+    <string name="category_properties_feed_name">Понятное название категории (например: Новости, Музыка, Спорт и пр.)</string>
+    <string name="category_properties_title">Редактировать Категорию</string>
+    <string name="category_properties_update_schedule_msg">"• Запланированные обновления начнуться в указанное «время начала» и будут работать до полуночи того же дня.
+• Только"<b> одно</b> запланированное обновление может выполняться в данный момент!</string>
+    <string name="category_properties_update_schedule_msg_top">В BeyondPod обновление потоков настраивается на уровне категорий. Расписание ниже будет обновлять и загружать новые эпизоды для всех потоков в этой категории.</string>
+    <string name="category_properties_vld_NameEmpty">Пожалуйста, введите название категории</string>
+    <string name="category_properties_vld_categoryExists">Категория с таким именем уже существует!</string>
+    <string name="category_props_new_category">Новая категория</string>
+    <string name="category_props_unable_to_modify_category">Невозможно модифицировать категорию!</string>
+    <string name="category_schedule_active">Обновлять по расписанию</string>
+    <string name="category_schedule_please_make_sure_that_start_times_are_at_least_15_minutes_apart">Пожалуйста убедитесь, что время начала не менее 15 минут с данного момента!</string>
+    <string name="category_schedule_repeat_title">Повторять каждые</string>
+    <string name="category_schedule_the_start_time_of_this_update_overlaps_with_category">Время начала этого обновления перекрывается с категорией</string>
+    <string name="category_schedule_time_title">Время начала</string>
+    <string name="category_uncategorized">Без категории</string>
+    <string name="cc_cast_to">Вещание на устройство</string>
+    <string name="cc_casting_to">Вещание на %s</string>
+    <string name="cds_account_exists">Аккаунт уже существует!</string>
+    <string name="cds_account_quota_reached">В настоящее время группа бета тестирования EpisodeSync полностью заполнена. Мы надеемся вскоре добавить больше пользователей. Следите за нашим форумом для последней информации.</string>
+    <string name="cds_awaiting_verification_msg">"Мы послали вам Email на адрес: %s 
+
+Нажмите на ссылку в нем для того чтобы активировать ваш аккаунт!"</string>
+    <string name="cds_awaiting_verification_title">Ваш аккаунт еще не активирован!</string>
+    <string name="cds_create_account_text">Создать аккаунт</string>
+    <string name="cds_create_text">Создать</string>
+    <string name="cds_device_id">DEVICE ID: %s</string>
+    <string name="cds_enable_sync">Разрешить EpisodeSync для этого устройства</string>
+    <string name="cds_help">Как EpisodeSync работает</string>
+    <string name="cds_info_forgot_password">Забыли пароль?</string>
+    <string name="cds_info_label_create">Используйте один и тот же аккаунт EpisodeSync для всех устройств, которые вы хотите синхронизировать</string>
+    <string name="cds_info_title1">EpisodeSync синхронизирует проигранные позиции эпизодов между несколькими устройствами. Посмотрите %s для получения дополнительной информации.</string>
+    <string name="cds_invalid_email">Email адрес недействителен</string>
+    <string name="cds_invalid_password">Пароль слишком короткий! Введите 5 или более символов</string>
+    <string name="cds_last_sync">Последняя синхронизация: %s</string>
+    <string name="cds_logaout_text">Выход</string>
+    <string name="cds_login_failed">Неправильное имя пользователя или пароль!</string>
+    <string name="cds_login_text">Логин</string>
+    <string name="cds_menu_send_feed_to_devices">Отправить поток на мои другие устройства</string>
+    <string name="cds_menu_sync">EpisodeSync</string>
+    <string name="cds_menu_sync_show_log">Просмотреть лог синхронизации</string>
+    <string name="cds_menu_sync_start">Запустить EpisodeSync</string>
+    <string name="cds_network_error">"Не удается подключиться к серверам BeyondPod! 
+Попробуйте позже"</string>
+    <string name="cds_not_available_in_lite_version">"Истек срок действия пробной версии BeyondPod! EpisodeSync доступна только в 'Pro' версии BeyondPod."</string>
+    <string name="cds_notification_applying_remote_changes">Применить удаленные изменения</string>
+    <string name="cds_notification_checking_for_remote_changes">Проверить удаленные изменения</string>
+    <string name="cds_notification_publishing_local_changes">Опубликовать локальные изменения</string>
+    <string name="cds_notification_syncing_local_changes">Синхронизиривать локальные изменения</string>
+    <string name="cds_option_allow_remote_episode_deletions">Когда эпизоды удаляются на моих других устройствах, также удалите их с этого устройства.</string>
+    <string name="cds_option_allow_remote_feed_additions">Принимать потоки из других моих устройств</string>
+    <string name="cds_password">Пароль</string>
+    <string name="cds_password_dont_match">Пароли не совпадают</string>
+    <string name="cds_retype_password">Повторно ввести пароль</string>
+    <string name="cds_sync_settings">Параметры синхронизации</string>
+    <string name="cds_user_name">Email</string>
+    <string name="checking_for_alternatives">Поиск…</string>
+    <string name="clear_cache_dio_cache_cleared">Кэш очищен!</string>
+    <string name="color_picker_pick_a_category_color">Выберите цвет категории</string>
+    <string name="command_manager_beyondpod_feed_search">Поиск потоков</string>
+    <string name="command_manager_there_is_nothing_to_play">Нечего воспроизводить!</string>
+    <string name="command_manager_unable_to_open_url">Не удается открыть URL-адрес!</string>
+    <string name="command_manager_unable_to_start_external_player">Не удается запустить внешнее приложение!</string>
+    <string name="command_manager_unable_to_start_video_player">Невозможно запустить видеоплеер!</string>
+    <string name="command_manager_update_and_download_log">Лог обновления и загрузки</string>
+    <string name="common_google_play_services_enable_button">Включить</string>
+    <string name="common_google_play_services_enable_text">Для работы приложения \"%1$s\" требуется включить сервисы Google Play.</string>
+    <string name="common_google_play_services_enable_title">Включите сервисы Google Play</string>
+    <string name="common_google_play_services_install_button">Установить</string>
+    <string name="common_google_play_services_install_text">Для работы приложения \"%1$s\" требуется установить сервисы Google Play.</string>
+    <string name="common_google_play_services_install_title">Установите сервисы Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Доступность сервисов Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Ошибка сервисов Google Play</string>
+    <string name="common_google_play_services_unknown_issue">Приложению \"%1$s\" не удается подключиться к сервисам Google Play. Повторите попытку.</string>
+    <string name="common_google_play_services_unsupported_text">Для работы с приложением \"%1$s\" требуются сервисы Google Play. Они не поддерживаются на вашем устройстве.</string>
+    <string name="common_google_play_services_update_button">Обновить</string>
+    <string name="common_google_play_services_update_text">Чтобы запустить приложение \"%1$s\", обновите сервисы Google Play.</string>
+    <string name="common_google_play_services_update_title">Обновите сервисы Google Play</string>
+    <string name="common_google_play_services_updating_text">Сервисы Google Play, необходимые для работы приложения \"%1$s\", в настоящий момент обновляются.</string>
+    <string name="common_google_play_services_wear_update_text">Версия сервисов Google Play устарела. Они автоматически обновятся в ближайшее время.</string>
+    <string name="common_open_on_phone">Открыть на телефоне</string>
+    <string name="common_signin_button_text">Войти</string>
+    <string name="common_signin_button_text_long">Войти через аккаунт Google</string>
+    <string name="contextmenu_add_contact">Добавить контакт</string>
+    <string name="contextmenu_copy">Копировать</string>
+    <string name="contextmenu_copylink">Копировать URL</string>
+    <string name="contextmenu_dial_dot">Позвоните…</string>
+    <string name="contextmenu_map">Карта</string>
+    <string name="contextmenu_open_in_browser">Открыть в браузере</string>
+    <string name="contextmenu_send_mail">Пошлите Email</string>
+    <string name="contextmenu_sharelink">Послать ссылку</string>
+    <string name="contextmenu_view_image">Просмотр изображения</string>
+    <string name="date_time_also_this_month">Ранее в этом месяце</string>
+    <string name="date_time_also_this_week">Ранее на этой неделе</string>
+    <string name="date_time_also_this_year">Ранее в этом году</string>
+    <string name="date_time_last_month">Последний месяц</string>
+    <string name="date_time_last_week">На прошлой неделе</string>
+    <string name="date_time_older">Старые эпизоды</string>
+    <string name="date_time_this_month">В этом месяце</string>
+    <string name="date_time_this_week">На этой неделе</string>
+    <string name="date_time_this_year">В этом году</string>
+    <string name="date_time_today">Сегодня</string>
+    <string name="delete_category_dialog_data">данные</string>
+    <string name="delete_feed_diolog_feed">поток</string>
+    <string name="delete_feed_diolog_sure_you_want_to_delete">Вы уверены, что хотите удалить</string>
+    <string name="delete_podcast_dlg_episodes">эпиз.</string>
+    <string name="delete_podcast_dlg_favorite">Избранное</string>
+    <string name="delete_podcast_dlg_locked">Заблокированные</string>
+    <string name="dlg_DeleteCategoryMsg">"Вы уверены, что хотите удалить категорию:
+
+%s?"</string>
+    <string name="dlg_DeleteFeedAndPodcastsMsg">"Вы уверены, что хотите удалить:
+
+%s?
+
+Это также удалит все загруженные эпизоды для этого потока"</string>
+    <string name="dlg_DeleteFeedMsg">"Вы уверены, что хотите удалить:
+
+%s?"</string>
+    <string name="dlg_DeletePodcastMsg">"Вы уверены, что хотите удалить:
+
+%s"</string>
+    <string name="dlg_about_Msg">"Для вопросов или комментариев посетите
+
+www.beyondpod.com
+
+
+Copyright BeyondPod Team 2008–2013
+Все права защищены.
+
+Open Source лицензии
+www.beyondpod.mobi/osl"</string>
+    <string name="dlg_clear_feed_cache">Очистить кэш потоков</string>
+    <string name="dlg_clear_feed_cache_msg">Кэш находится на карте памяти и содержит локальные версии ваших потоков.</string>
+    <string name="dlg_clear_podcast_imgage_cache">Очистить кэш изображений эпизодов</string>
+    <string name="dlg_clear_podcast_imgage_cache_msg">BeyondPod перезагрузит изображения эпизодов из медиа базы данных устройства.</string>
+    <string name="dlg_delete_locked_podcasts_msg">Удалить также заблокированные эпизоды</string>
+    <string name="dlg_dont_show_again_msg">Не показывать больше это сообщение</string>
+    <string name="dlg_enable_speedup_btn_buy">Включить поддержку скорости воспроизведения</string>
+    <string name="dlg_enable_speedup_plugin_msg">"BeyondPod позволяет воспроизводить эпизоды быстрее (или медленнее).
+
+"<i> В настоящее время эта возможность включена только в бете-версии и может не работать надежно на всех устройствах или для всех форматов подкастов.</i></string>
+    <string name="dlg_invalid_cant_connect_tofeed_URL_message">"Не удалось подключиться к Web-сайту потока.
+
+Адрес потока может быть неправильным или сайт временно недоступен."</string>
+    <string name="dlg_invalid_feed_URL_generic_message">"Скорее всего URL ведет к Web-странице, где находится ссылка на поток, вместо к самому RSS потоку. Откройте Web-страницу в браузере и найдите там ссылку на поток.
+
+Используйте кнопку 'Помощ' ниже для получения совета как найти адрес RSS потока в Web-странице."</string>
+    <string name="dlg_invalid_feed_URL_itunes_message">"Похоже, что URL является адресом потока в iTunes.
+
+Нажмите на кнопку 'Помощь' ниже, для получения инструкций как найти RSS в iTunes."</string>
+    <string name="dlg_invalid_feed_URL_message">"Непохоже что URL потока является валидным RSS или Atom типом.
+
+%s"</string>
+    <string name="dlg_invalid_feed_URL_mp3_message">"Похоже, что URL указывает на MP3 файл эпизода вместо того чтобы ссылаться на RSS эпизода. Откройте Web-страницу в браузере и найдите там ссылку на RSS потока.
+
+Нажмите на кнопку 'Помощь' ниже для совета как найти RSS в Web-странице."</string>
+    <string name="dlg_invalid_feed_URL_title">Проблемы с URL потока</string>
+    <string name="dlg_playback_speed_not_available_in_lite_version">"Истек срок действия пробной версии!
+
+Изменение скорости воспроизведения возможно только в 'Pro' версии BeyondPod."</string>
+    <string name="dlg_purchase_btn_Msg">Купить Лицензионный ключ</string>
+    <string name="dlg_purchase_info_Msg">По истечении пробного периода BeyondPod возвращается к версии<b> Lite</b>, где отключены некоторые удобные функции, доступные в версии<b> Pro</b>".
+"</string>
+    <string name="dlg_purchase_info_header_did">Полнофункциональный пробный период использования BeyondPod истек</string>
+    <string name="dlg_purchase_info_header_will">Полнофункциональный пробный период использования BeyondPod истечет</string>
+    <string name="dlg_purchase_speedup_plugin_doNotshow">Отключить и скрыть кнопку скорости воспроизведения</string>
+    <string name="dlg_purchase_speedup_plugin_doNotshowInfo">Чтобы включить контроль скорости позже, используйте Настройки > Настройки плеера > Скорость воспроизведения.</string>
+    <string name="dlg_purchase_speedup_plugin_doShowInfo">Если скорость воспроизведения не работает надежно на вашем устройстве ее можно отключить в Настройки > Настройки плеера > Скорость воспроизведения.</string>
+    <string name="dlg_purchase_speedup_plugin_title">Поддержка скорости воспроизведения</string>
+    <string name="dlg_purchase_title">Разблокировать BeyondPod</string>
+    <string name="dlg_purchase_why_pro_Msg">Зачем версия PRO?</string>
+    <string name="dlg_speedup_not_supported">Этот эпизод может быть воспроизведен только на нормальной скорости</string>
+    <string name="dlg_speedup_not_supported_for_streaming">Потоковое воспроизведение эпизодов можно осуществить только на нормальной скорости</string>
+    <string name="dlg_user_warning_installed_on_sd_card_msg">"Похоже, что BeyondPod установлен на SD-карте. Если это так то существуют 2 ограничения исползования BeyonPod: 
+
+ • BeyondPod виджеты не будут доступны. 
+ • использование SD-карты в качестве USB памяти PC отменит все запланированые обновления потоков и это будет продолжаться пока BeyondPod не будет рестартирован.
+
+"<i> Если ваше устройство обладает достаточное количество внутренней памяти, рекомендуется переместить BeyondPod во внутренную память устройства.</i></string>
+    <string name="dlg_user_warning_mark_all_played_msg">Желаете ли действительно отметить ВСЕ эпизоды в этом потоке ВОСПРОИЗВЕДЕННЫМИ?</string>
+    <string name="dlg_user_warning_mark_all_read_msg">Вы уверены, что хотите отметить ВСЕ посты в этом потоке как ПРОЧИТАННЫЕ?</string>
+    <string name="dlg_user_warning_open_ext_player_msg">"Вы можете попытаться открыть выбранный элемент во внешнем приложении.
+
+Нажмите \"Далее\", и BeyondPod найдет все установленные приложения, способные отображать этот тип содержимого. Вы также можете изменить аудио- или видеоплеер по умолчанию на \"Внешний\" в настройках BeyondPod"</string>
+    <string name="dlg_user_warning_open_ext_player_title">Требуеться внешний плеер</string>
+    <string name="dlg_user_warning_start_episode_download_msg">Загрузка эпизодов может потребовать большое количество сетевого трафика. Рекомендуем использовать WiFi или иное нелимитированное по трафику подключение.</string>
+    <string name="dlg_user_warning_start_update_download_msg">"Это приведет к обновлению всех потоков в текущей категории и загрузит последние эпизоды.
+
+Загрузка эпизодов может потребовать большое количество сетевого трафика. Рекомендуем использовать WiFi или иное нелимитированное по трафику подключение."</string>
+    <string name="dlg_user_warning_stream_failed_msg">Похоже, что подключение к интернет было прервано. Повторите позже.</string>
+    <string name="dlg_user_warning_stream_failed_title">Проблемы с видео-потоком</string>
+    <string name="dlg_user_warning_stream_format_problem_msg">"Формат этого видео не поддерживается стандартным видеоплеером.
+
+(Некоторые видео файлы могут быть воспроизведены только внешним плеером. Нажмите на 'Плеер помощь' для дополнительной информации)"</string>
+    <string name="dlg_user_warning_stream_format_problem_title">Проблемы с форматом видео</string>
+    <string name="dlg_user_warning_title">Предупреждение</string>
+    <string name="download_agent_both_mobile_and_wifi_data_connections_are_allowed">"
+
+Разрешены мобильный интернет и WiFi!"</string>
+    <string name="download_agent_insufficient_disk_space_to_complete_the_download_required">Не хватает свободного места для завершения загрузки! Требуется:</string>
+    <string name="download_agent_mobile_connections_not_allowed">"
+
+Мобильный интернет НЕ разрешен.
+ (Вы можете использовать мобильный интернет через GPRS/EDGE/3G/UMTS в секции 'Обновление потоков' в настройках BeyondPod)"</string>
+    <string name="download_agent_unable_to_establish_internet_connection">Не удалось подключится к сети Интернет.</string>
+    <string name="download_agent_wifi_allowed">"
+
+Загрузка подкастов разрешена только через WiFi.
+(Вы можете разрешить загрузку через любые подключения в секции 'Обновление потоков' в настроках BeyondPod)"</string>
+    <string name="download_engine_notification_connecting">Подключение…</string>
+    <string name="download_engine_notification_downloaded">Загружено</string>
+    <string name="download_engine_notification_downloading">Загрузка…</string>
+    <string name="download_engine_notification_feed">поток</string>
+    <string name="download_engine_notification_feeds">потоки</string>
+    <string name="download_engine_notification_found">Найдено</string>
+    <string name="download_engine_notification_left_to_download">осталось загрузить</string>
+    <string name="download_engine_notification_left_to_update">осталось обновить</string>
+    <string name="download_engine_notification_looking_for_new_podcasts_across">Поиск новых эпизодов</string>
+    <string name="download_engine_notification_more">больше</string>
+    <string name="download_engine_notification_new">новый</string>
+    <string name="download_engine_notification_new_podcasts">новые эпизоды…</string>
+    <string name="download_engine_notification_of">из</string>
+    <string name="download_engine_notification_podcast">эпизод</string>
+    <string name="download_engine_notification_podcasts">эпизодов</string>
+    <string name="download_engine_notification_retrying">Повторная попытка…</string>
+    <string name="download_engine_notification_updating">Обновление</string>
+    <string name="download_holder_preparing_for_download">Подготовка к загрузке…</string>
+    <string name="drawer_close">Закрыть навигационную панель</string>
+    <string name="drawer_open">Открыть навигационную панель</string>
+    <string name="error_CantCreateRootFolder">"Невозможно получить доступ к карте памяти.
+Возможно имеются ошибки или она защищена от записи!"</string>
+    <string name="error_CantCreateRootFolderWorkaround">"
+
+(На некоторых устройствах ручное создание каталога может исправить ошибку. Также можно попробовать другие карты памяти)"</string>
+    <string name="error_SDCardBusy">"Доступ к карте памяти невозможен!
+
+В данный момент карта отмонтирована или используется вашим PC."</string>
+    <string name="error_SDCardError">Произошла ошибка при доступе к карте памяти. Проверьте карту.</string>
+    <string name="error_SDCardMissing">Карта памяти не найдена на вашем устройстве!</string>
+    <string name="error_root_needs_permission">"Обнаружена предыдущая установка BeyondPod в папке 
+'%s'.
+Для ее использования BeyondPod необходимо разрешение на доступ к карте памяти (SD).
+
+Если необходима «чистая» установка, просто закройте BeyondPod, удалите указанну папку и попробуйте снова."</string>
+    <string name="export_to_opml_export_complete">Экспорт завершен!</string>
+    <string name="export_to_opml_export_failed">Сбой при экспорте!</string>
+    <string name="failed_to_connect_to_google_reader">"Не удается подключиться к Feedly или ваш акаунт истек.
+
+Попытайтесь войти снова позже."</string>
+    <string name="failed_to_connect_to_google_reader_account_mgr">"Не удается подсоединиться к Feedly! 
+
+Повторите позже"</string>
+    <string name="feedList_num_unread">Новые</string>
+    <string name="feed_content_beyondpod_help">Помощь</string>
+    <string name="feed_content_insufficient_space_to_download_podcast" formatted="false">"Не хватает свободного места для загрузки этого эпизода.
+
+Требуется загрузить %s, но сейчас на %s свободно только %s"</string>
+    <string name="feed_content_list_view__max_s">(max %s)</string>
+    <string name="feed_content_list_view_beyondpod_faq">BeyondPod FAQ</string>
+    <string name="feed_content_list_view_configure">Настроить</string>
+    <string name="feed_content_list_view_disabled">Запрещено</string>
+    <string name="feed_content_list_view_episode_details">Детали эпизода</string>
+    <string name="feed_content_list_view_episode_formats">Форматы эпизода</string>
+    <string name="feed_content_list_view_failed_to_add_reader_subscription_for_feed">Не удалось добавить подписку потока в Feedly</string>
+    <string name="feed_content_list_view_feed_content">Содержимое потока</string>
+    <string name="feed_content_list_view_invalid_or_expired_google_reader_login">Недействительный или устаревший логин в Feedly! (Вы можете изменить ваш логин в Feedly в: Добавить поток > Импорт потоки > Импорт из Feedly)</string>
+    <string name="feed_content_list_view_my_episodes">Мои эпизоды</string>
+    <string name="feed_content_list_view_next_update">Следующее обновление</string>
+    <string name="feed_content_list_view_operation_failed">Операция не удалась!</string>
+    <string name="feed_content_list_view_this_feed_is_s_days_old">%s дн. назад!</string>
+    <string name="feed_content_list_view_update_canceled">Обновление отменено!</string>
+    <string name="feed_content_list_view_update_failed">Обновление не удалось!</string>
+    <string name="feed_item_list_empty_loading_content">Загрузка потока…</string>
+    <string name="feed_item_list_empty_no_items">В этом потоке нет содержимого!</string>
+    <string name="feed_item_list_empty_no_selected_feed">"Поток не выбран.
+Выберите поток из списка (левая выдвижная панель)"</string>
+    <string name="feed_item_list_empty_stop_update">Остановить обновление</string>
+    <string name="feed_item_list_empty_update">Обновить</string>
+    <string name="feed_item_list_empty_updating">Обновление потока…</string>
+    <string name="feed_item_list_footer_has_hidden_items_l1">Некоторые элементы скрыты.</string>
+    <string name="feed_item_list_footer_has_hidden_items_l2">Показать все</string>
+    <string name="feed_item_list_footer_reader_more_items_l1">Для этого потока установлена загрузка первых %s пост. из Feedly.</string>
+    <string name="feed_item_list_footer_reader_more_items_l2"><u>Изменить</u></string>
+    <string name="feed_item_list_header_reader_not_subscribed_l1">Если все элементы появляются как «прочитанные», вы вероятно не подписаны для этого потока в Feedly.</string>
+    <string name="feed_item_list_header_reader_not_subscribed_l2"><u>Добавить этот поток в Feedly</u></string>
+    <string name="feed_item_list_invalid_feed_auth_dlg_msg">"Может быть снова потребуется ввести логин для потока, который вы пытаетесь открыть.
+
+Часто премиум или платные потоки требуют ввести повторно логин, когда входите в их сайт, и междувременно ваш IP адрес поменялся(например, сначало вы работали через WiFi, а потом стали изпользовать мобильный интернет).
+
+Нажмите на кнопку 'Помощ' ниже для получения дополнительной информации."</string>
+    <string name="feed_item_list_invalid_feed_dlg_msg">"Произошла ошибка во время последнего обновления потока!
+
+"<i>"Обычно это связано с доступом к интернет или с WEB сервером потока.
+
+Попробуйте снова позже. Если проблема все еще остается, нажмите на кнопку Помощь, чтобы получить совет."</i></string>
+    <string name="feed_item_list_invalid_feed_dlg_title">Проблемы потока</string>
+    <string name="feed_item_list_invalid_feed_go_to_web_site_text">Web-сайт потока</string>
+    <string name="feed_item_list_invalid_feed_help_text">Помощь</string>
+    <string name="feed_list_empty_all_read">"Все потоки прочитанные! 
+
+"<u> Показать прочитанных</u></string>
+    <string name="feed_list_hide_read">Скрыть прочитанные потоки</string>
+    <string name="feed_list_no_feeds_in_this_category">Нет потоков в этой категории</string>
+    <string name="feed_list_show_read">Показать все потоки</string>
+    <string name="feed_patched_msg">"Возникла проблема с URL потока, но мы смогли найти другой URL:
+
+%s
+
+который скорее всего подойдет
+
+Хотите использовать его?"</string>
+    <string name="feed_properties_advanced_section">Расширенные настройки</string>
+    <string name="feed_properties_allow_deletions_msg">Управляет, могут ли локальные эпизоды в этом потоке автоматически удалятся для освобождения места под новые эпизоды.</string>
+    <string name="feed_properties_allow_deletions_title">Разрешить удаление эпизодов</string>
+    <string name="feed_properties_allow_deletions_vir_feed_msg">Управляет, могут ли эпизоды в этом потоке быть автоматически удалены, чтобы освободить место для новых эпизодов (например, после воспроизведения)</string>
+    <string name="feed_properties_clear_custom_image_title">Убрать изображение</string>
+    <string name="feed_properties_configure_defaults">Можете настроить параметры по умолчанию, которые будут использоваться при добавлении новых потоков<u> здесь</u>.</string>
+    <string name="feed_properties_custom_image">Выбрать изображение</string>
+    <string name="feed_properties_custom_image_msg">"Для присвоения изображения потока сделайте следующее: сохраните изображение в PNG или JPG формат на вашей SD-карте и убедитесь, что стандартное приложение галереи могло видеть его. Используйте кнопку 'Выбрать изображение' для поиска и выбора изображения. После выбора можете удалить изображение из галереи."</string>
+    <string name="feed_properties_custom_image_title">Присвоение изображения потока</string>
+    <string name="feed_properties_download_history_clear_history">Очистить историю загрузки потокa</string>
+    <string name="feed_properties_download_history_mark_downloaded">Отметить все как загруженные</string>
+    <string name="feed_properties_download_history_msg">Для каждого потока BeyondPod отслеживает эпизоды, которые были ранее загружены. Нажатие на кнопку \"Очистить историю загрузки потока\" удалит историю загрузки потока и все его эпизоды. После этого все будет выглядеть так, как будто эпизоды никогда не были загружеными. \"Отметить все как загруженные\" делает обратное - все новые эпизоды потока будут отмечены, как будто они были загруженными ранее (фактически без необходимости загружать их).</string>
+    <string name="feed_properties_download_history_title">История загрузки подкастов</string>
+    <string name="feed_properties_feed_categories_msg">Вы можете указать до двух категорий для одного потока. Поток будет автоматически обновляться при обновлении категорий, к которым он принадлежит.</string>
+    <string name="feed_properties_feed_categories_title">Категории потока</string>
+    <string name="feed_properties_feed_download_folder_msg">Папка, где будут загружаться эпизоды этого потока. Оставьте пустой, если хотите использовать стандартную папку (сейчас она: %s) или если в потоке не имеются эпизоды.</string>
+    <string name="feed_properties_feed_download_folder_title">Папка загрузки эпизодов</string>
+    <string name="feed_properties_feed_download_folder_vir_feed_msg">При старте приложения, папка (со всеми подпапками) будет просканирована и все найденные файлы будут изображены как \"виртуальные подкасты\".</string>
+    <string name="feed_properties_feed_download_folder_vir_feed_title">Папка виртуального потока</string>
+    <string name="feed_properties_feed_download_podcast_long_name_handler_msg">Если название эпизода слишком длинное, укажите какую часть имени изображать</string>
+    <string name="feed_properties_feed_download_podcast_long_name_handler_title">Длинные имена эпизодов</string>
+    <string name="feed_properties_feed_download_podcast_sort_order_msg">Установить порядок сортировки для локально загруженных эпизодов этого потока.</string>
+    <string name="feed_properties_feed_download_podcast_sort_order_title">Порядок сортировки локальных эпизодов</string>
+    <string name="feed_properties_feed_fingerprint_type_msg">Выберите как BeyondPod должен обнаруживать повторяющиеся эпизоды. (ВНИМАНИЕ! Измените если только поток часто перезагружает старые эпизоды. Изменение приведет к тому что параметры загрузки будут установлены в начальном состоянии, а история о том что было прочитано в потоке будет стерта).</string>
+    <string name="feed_properties_feed_fingerprint_type_title">Обнаружение дублированных эпизодов</string>
+    <string name="feed_properties_feed_login_msg">Если поток требует логин и пароль для доступа, вы можете указать их в этих полях.</string>
+    <string name="feed_properties_feed_name_msg">Простое и понятное название потока. Eсли оставите его пустым, название будет взято из данных потокa</string>
+    <string name="feed_properties_feed_name_title">Название потока</string>
+    <string name="feed_properties_feed_url_msg">Web-адрес RSS потока (начинается с http:// или https://)</string>
+    <string name="feed_properties_feed_url_title">Адрес потока (URL)</string>
+    <string name="feed_properties_force_item_sort">Порядок сортировки постов</string>
+    <string name="feed_properties_force_item_sort_msg">Выберите порядок сортировки элементов в потоке.</string>
+    <string name="feed_properties_force_unique_names">Назначать уникальные имена</string>
+    <string name="feed_properties_force_unique_names_msg">Если флаг установлен, BeyondPod будет назначать уникальные имена файлов для каждого загруженного подкаста, вместо того, чтобы пытаться угадывать имена из URL-адреса подкаста. Установите флаг, если установите, что подкастам всегда назначается одно и тоже имя, что в конечном итоге будет приводить к их перекрыванию.</string>
+    <string name="feed_properties_login_info_header">Аутентификация потока</string>
+    <string name="feed_properties_login_info_pw">Пароль потребителя потока</string>
+    <string name="feed_properties_login_info_un">Логин потребителя потока</string>
+    <string name="feed_properties_num_days_to_delete_short_msg">"
+Удалять эпизоды старше %s дн."</string>
+    <string name="feed_properties_num_podcasts_to_download_download_in_order_msg">Загружает указанное число эпизодов начиная с последнего доступного. Новые эпизоды будут загружены только тогда, когда удалите загруженные ранее.</string>
+    <string name="feed_properties_num_podcasts_to_download_download_in_order_short_msg">Загружать %s в порядке, начиная с самого старого эпизода.</string>
+    <string name="feed_properties_num_podcasts_to_download_download_msg">Загружает указанное число последних эпизодов при обновлении потока. Новые эпизоды будут автоматически заменять старые.</string>
+    <string name="feed_properties_num_podcasts_to_download_download_short_msg" formatted="false">Загружать последние %s и хранить не более %s.%s</string>
+    <string name="feed_properties_num_podcasts_to_download_ignore_msg">Любые эпизоды этого потока будут проигнорированы и не будут показываться на экране содержимого потока.</string>
+    <string name="feed_properties_num_podcasts_to_download_ignore_short_msg">• Все эпизоды будут игнорироваться.</string>
+    <string name="feed_properties_num_podcasts_to_download_no_download_msg">Эпизоды для этого потока НЕ будут загружаться автоматически. Любой эпизод, однако может быть загружен вручную.</string>
+    <string name="feed_properties_num_podcasts_to_download_no_download_short_msg">• Загружать эпизоды вручную</string>
+    <string name="feed_properties_num_podcasts_to_download_stream_in_order_msg">Создает потоковые (streamable) версии указанного числа эпизодов, начиная с самого старого доступного. Новые эпизоды будут загружаться только тогда, когда удалите загруженные ранее.</string>
+    <string name="feed_properties_num_podcasts_to_download_stream_in_order_short_msg">"• Брать %s в порядке, начиная с самого старого эпизода.
+• Эпизоды будут воспроизводиться потоком (устройство должно быть онлайн)."</string>
+    <string name="feed_properties_num_podcasts_to_download_stream_msg">Создает потоковые (streamable) версии указанного числа последних эпизодов. Новые эпизоды будут автоматически заменять старые.</string>
+    <string name="feed_properties_num_podcasts_to_download_stream_short_msg" formatted="false">"• Брать последние %s и хранить не более %s.%s 
+• Эпизоды будут воспроизводиться потоком (устройство должно быть онлайн)."</string>
+    <string name="feed_properties_playback_speed_prefs_msg">Задайте предпочетаемую скорость воспроизведения эпизодов этого потока. (Не отмечайте, если хотите использовать скорость воспроизведения, которая установлена в плеере).</string>
+    <string name="feed_properties_playback_speed_prefs_title">Предпочитаемая скорость воспроизведения</string>
+    <string name="feed_properties_podcast_title">Загрузки эпизодов</string>
+    <string name="feed_properties_preferred_enclosure">Предпочитаемый формат эпизода</string>
+    <string name="feed_properties_preferred_enclosure_msg">Иногда, потоки могут содержать несколько форматов одного и того же эпизода (например mp4 и wmv). Выберите предпочитаемый формат.</string>
+    <string name="feed_properties_save_played_position_msg">При воспроизведении запоминать место воспроизведения эпизодов в этом потоке</string>
+    <string name="feed_properties_save_played_position_title">Запоминать место воспроизведения</string>
+    <string name="feed_properties_spacesavers_keep_at_most">Хранить не более:</string>
+    <string name="feed_properties_spacesavers_keep_at_most_unit">локальных эпизодов</string>
+    <string name="feed_properties_spacesavers_max_duration">Удалять эпизоды, которые старше:</string>
+    <string name="feed_properties_spacesavers_max_duration_unit">дн.</string>
+    <string name="feed_properties_spacesavers_msg">Очистка эпизодов будет автоматически удалять старые эпизоды, когда их число или время хранения превысит выбранное значение. Правила очистки применяются только тогда, когда загружаются новые эпизоды в этом потоке</string>
+    <string name="feed_properties_spacesavers_title">Автоматическая очистка локальных эпизодов</string>
+    <string name="feed_properties_toggle_adv_pref_hide">Скрыть расширенные настройки</string>
+    <string name="feed_properties_use_google_proxy">Синхронизиривать через Feedly</string>
+    <string name="feed_properties_use_google_proxy_msg">Загружать содержимого потока из Feedly. Требуется акаунт в Feedly.com.</string>
+    <string name="feed_properties_view_images_from_picasa_albums_cannot_be_used_as_a_feed_image">Изображения из альбомов Picasa(или других онлайн-галерей) не могут быть использованы для изображения потока</string>
+    <string name="feed_properties_vld_feedNameEmpty">Пожалуйста введите правильное название потока!</string>
+    <string name="feed_properties_vld_feedUrlOrNameEmpty">Пожалуйста введите URL или название потока!</string>
+    <string name="feed_properties_vld_podcast_folder_vir_feed_invalid">Указанная папка виртуального потока пуста или не существует!</string>
+    <string name="feed_properties_vld_podcast_num_download_is_less_than_keep_at_most">Количество загружаемых эпизодов не может превышать количество хранимых эпизодов!</string>
+    <string name="feed_properties_vld_spacesavers_will_delete_podcasts">"Настройка параметра 'Автоматическая очистка локальных эпизодов' требует удалить %s из ваших эпизодов."</string>
+    <string name="feed_properties_volume_boost_prefs_msg">Вы можете дополнительно увеличить громкость при проигрывании эпизодов этого потока. (Это экспериментальная функция! Увеличение громкости доступно только для загруженных аудиоэпизодов и только при включенной скорости воспроизведения).</string>
+    <string name="feed_properties_volume_boost_prefs_title">Увеличить громкость</string>
+    <string name="feed_s_was_added_in_category" formatted="false">"Поток '%s'
+ был добавлен в категорию '%s'"</string>
+    <string name="feed_search_db_episodes">Эпизоды</string>
+    <string name="feed_search_hint">Поиск подкастов</string>
+    <string name="feed_settings_add_feed">Добавить поток</string>
+    <string name="feed_settings_add_virtual_feed">Добавить виртуальный поток</string>
+    <string name="feed_settings_checking_feed_information">Проверка информации о потоке…</string>
+    <string name="feed_settings_connecting">Подключение…</string>
+    <string name="feed_settings_download">Загружать</string>
+    <string name="feed_settings_edit_feed">Редактировать поток</string>
+    <string name="feed_settings_edit_virtual_feed">Редактировать виртуальный поток</string>
+    <string name="feed_settings_episodes">эпиз.</string>
+    <string name="feed_settings_feed_already_exists_in_category">"Этот поток уже существует в категории '%s'."</string>
+    <string name="feed_settings_get">Загружать</string>
+    <string name="feed_settings_items">элем.</string>
+    <string name="feed_settings_locating_rss_feeds">Местоположение RSS-потоков</string>
+    <string name="feed_settings_retrieving_feed">Извлечение потока</string>
+    <string name="feed_settings_updating_download_history">Обновление истории загрузки…</string>
+    <string name="feeds_status_back_to_s">Назад к %s</string>
+    <string name="feeds_status_downloading">Загрузка</string>
+    <string name="feeds_status_feeds">Потоки</string>
+    <string name="feeds_status_of">из</string>
+    <string name="feeds_status_s_pending">%s ожидается…</string>
+    <string name="feeds_status_updating">Обновление</string>
+    <string name="first_run_ad_disabled">Нет, я хочу загружать мои эпизоды вручную.</string>
+    <string name="first_run_ad_enabled">Разрешить BeyondPod загружать последние эпизоды во время сна.</string>
+    <string name="first_run_ad_subtitle">BeyondPod может проверять наличие новых эпизодов и загружать их автоматически. (Вы можете изменить настройки позже в настройках).</string>
+    <string name="first_run_ad_title">Автоматические загрузки</string>
+    <string name="first_run_ad_wifi">Загружать эпизодов только если подключен к WiFi.</string>
+    <string name="first_run_continue">Продолжить</string>
+    <string name="first_run_end_tour">Закончить ознакомление</string>
+    <string name="first_run_find_more">Узнайте больше</string>
+    <string name="first_run_finish">Завершить</string>
+    <string name="first_run_select_content_title">Выбeрите темы, которые вам интересны, и мы предложим вам несколько хороших подкастов, с которых вы могли начать.</string>
+    <string name="first_run_skipsamples">Пропустить</string>
+    <string name="first_run_start">Начнем</string>
+    <string name="first_run_upgrade_guide">Руководство по обновлению</string>
+    <string name="folder_browser_back_to">Назад к</string>
+    <string name="folder_browser_files">файлы</string>
+    <string name="folder_browser_in">в</string>
+    <string name="gcm_fallback_notification_channel_label">Другое</string>
+    <string name="generic_download_error_text">"Не удалось загрузить некоторые эпизоды!
+Попробуйте позже"</string>
+    <string name="glg_restore_defaults_msg">"Повидимому, место сохранения ваших потоков повреждено и все попытки устранить проблему не увенчались успехом! 
+
+Следующий раз, когда стартируете BeyondPod настройки расположения потоков будут установлены на подразумевающиеся.
+
+BeyondPod прекращает работу!"</string>
+    <string name="glg_restore_defaults_title">Поврежденный репозиторий потоков</string>
+    <string name="google_reader_feeds">Потоки из Feedly</string>
+    <string name="grant_permission_access_denied">Ладно, Вы все еще можете выполнить «чистую» установку, удалив ранее установленную версию BeyondPod.</string>
+    <string name="grant_permission_access_granted">Спасибо!</string>
+    <string name="import_reader_failed_to_load_reader_subscriptions">Не удалось загрузить подписки из Feedly!</string>
+    <string name="import_reader_loading_feed_subscriptions">Загрузка подписки потока…</string>
+    <string name="import_reader_log_out_menu">Выход</string>
+    <string name="import_reader_log_out_msg">В настоящее время вы не находитесь в Feedly</string>
+    <string name="import_reader_login_failed">Логин не удался!</string>
+    <string name="import_reader_operation_canceled">Операция отменена!</string>
+    <string name="import_reader_retrieving_account_details">Поиск деталей аккаунта…</string>
+    <string name="import_reader_success">Успешно!</string>
+    <string name="import_search_hint">Поиск в потоках</string>
+    <string name="info_card_got_it">Да, понятно</string>
+    <string name="info_card_guided_tour_action">Быстрое ознакомление</string>
+    <string name="info_card_guided_tour_skip">Нет, спасибо</string>
+    <string name="info_card_guided_tour_title">Добро пожаловать в BeyondPod!</string>
+    <string name="info_card_whats_new_action">Посмотреть, что нового</string>
+    <string name="info_card_whats_new_title">BeyondPod обновлен до версии %s!</string>
+    <string name="info_selct_folder_instructions">"Нажмите на имя папки, чтобы открыть ее.
+Чтобы выбрать папку, нажмите на знак \"+\" рядом с ней."</string>
+    <string name="limited_mode_message">"Пробный период истек!
+
+BeyondPod сейчас работает в версии Lite с ограниченной функциональностью.
+
+Используйте опцию \"Перейти на PRO!\" (на левой выдвижной панели), чтобы просмотреть ограничения."</string>
+    <string name="lock_podcast_unlock_parent_info">"Чтобы разблокировать этот эпизод, сначало включите 'Разрешить удаление эпизодов' в разширенных настройках эпизода."</string>
+    <string name="master_view_beyondpod_failed_to_start">Запуск BeyondPod не удался!</string>
+    <string name="master_view_beyondpod_will_now_exit">BeyondPod закрывается</string>
+    <string name="master_view_loaded_s_feeds">Загрузка эпизодов…</string>
+    <string name="master_view_loading_feeds">Загрузка потоков…</string>
+    <string name="master_view_welcome_to_beyondpod">Добро пожаловать в BeyondPod</string>
+    <string name="master_view_what_is_new">Что нового</string>
+    <string name="menu_multiselect_select_all">Выбрать все</string>
+    <string name="menu_multiselect_select_played">Выбрать воспроизведенные</string>
+    <string name="mf_calculating_files">Подготовка к перемещению…</string>
+    <string name="mf_cancel_are_you_sure">Вы уверены, что вы хотите отменить?</string>
+    <string name="mf_canceled_move">Перемещение прервано!</string>
+    <string name="mf_canceling_move">Отмена…</string>
+    <string name="mf_complete">"Перемещение выполнено! %s 
+
+BeyondPod будет перезагружен для применения новых параметров."</string>
+    <string name="mf_confirm_are_you_sure" formatted="false">"Вы уверены, что вы хотите переместить загруженные эпизоды %s из '%s' в '%s'?"</string>
+    <string name="mf_confirm_move">Подтвердить перемещение</string>
+    <string name="mf_coping_files" formatted="false">Перемещены %s из %s …</string>
+    <string name="mf_deleting_files">Очистка…</string>
+    <string name="mf_dest_folder_exist">Папка назначения %s уже существует! Вы хотите перезаписать ее?</string>
+    <string name="mf_do_move">Перемещение</string>
+    <string name="mf_error_external">Папка назначения недоступна или нет прав на запись!</string>
+    <string name="mf_external_SD_warninng">"В Android KitKat введены некоторые ограничения на использование внешних SD карт.
+
+Вы сможете переместить папку загрузки эпизодов на внешную SD-карту, но все настройки BeyondPod и все загруженные до сих пор эпизоды будут удалены при удаления BeyondPod из устройства."</string>
+    <string name="mf_insufficient_space" formatted="false">Вам нужно по крайней мере %s свободного пространства в целевой папке. В настоящее время только %s доступно!</string>
+    <string name="mf_moving_title">Переместить папку загрузки эпизодов</string>
+    <string name="mf_unable_to_cleanup">Не удается удалить некоторые файлы в %s . Попробуйте удалить их вручную!</string>
+    <string name="mf_unable_to_cleanup_kitkat">"Папака загрузки старых эпизодов %s имеет права только для чтения и BeyondPod не может ее удалить.
+
+Подключите устройство к компьютеру и используйте File Explorer, чтобы удалить ее."</string>
+    <string name="mf_update_download_progress">"В данный момент происходит обновление или скачивание! 
+
+Остановите процесс и повторите попытку."</string>
+    <string name="mf_use_external_SD">Используйте внешнюю SD карту.</string>
+    <string name="mf_use_intenral_SD">Использование внутренней SD карты (рекомендуется)</string>
+    <string name="minute_remaining">Остались &lt;%s</string>
+    <string name="minutes_remaining">Осталось %s</string>
+    <string name="move_storage_folder_available">%s (доступно)</string>
+    <string name="move_storage_folder_current" formatted="false">"%s
+(%s также доступно как альтернативное местоположение)"</string>
+    <string name="move_storage_folder_does_not_exist">"%s
+
+ не существует или доступно только для чтения!"</string>
+    <string name="move_storage_folder_in_use">%s (использовано)</string>
+    <string name="move_storage_folder_instructions_alt_title">Использовать другое местоположение</string>
+    <string name="move_storage_folder_instructions_msg">"Используйте кнопку «Переместить», чтобы переместить ваши существующие эпизоды в альтернативное местоположение.
+
+Как только перенос будет выполнен, BeyondPod перезапустится и переключится на использование нового местоположения.
+
+Процесс перемещения может занять несколько минут."</string>
+    <string name="move_storage_folder_instructions_new_title">Использовать новое местоположение</string>
+    <string name="movie_view_preparing_stream">Подготовка потокового воспроизведения…</string>
+    <string name="movieviewlabel">Фильмы</string>
+    <string name="mr_button_content_description">Кнопка трансляции</string>
+    <string name="mr_cast_button_connected">Кнопка трансляции. Устройство подключено.</string>
+    <string name="mr_cast_button_connecting">Кнопка трансляции. Устройство подключается.</string>
+    <string name="mr_cast_button_disconnected">Кнопка трансляции. Устройство отключено.</string>
+    <string name="mr_chooser_searching">Поиск устройств…</string>
+    <string name="mr_chooser_title">Выберите устройство</string>
+    <string name="mr_controller_album_art">Обложка</string>
+    <string name="mr_controller_casting_screen">Подключение к удаленному монитору</string>
+    <string name="mr_controller_close_description">Закрыть</string>
+    <string name="mr_controller_collapse_group">Свернуть</string>
+    <string name="mr_controller_disconnect">Отключить</string>
+    <string name="mr_controller_expand_group">Развернуть</string>
+    <string name="mr_controller_no_info_available">Данных нет</string>
+    <string name="mr_controller_no_media_selected">Медиафайл не выбран</string>
+    <string name="mr_controller_pause">Приостановить</string>
+    <string name="mr_controller_play">Воспроизвести</string>
+    <string name="mr_controller_stop">Остановить</string>
+    <string name="mr_controller_stop_casting">Прекратить трансляцию</string>
+    <string name="mr_controller_volume_slider">Регулятор громкости</string>
+    <string name="mr_system_route_name">Система</string>
+    <string name="mr_user_route_category_name">Устройства</string>
+    <string name="multiselect_episodes_selected">эпизодов выбрано</string>
+    <string name="navigator_add_category">Добавить категорию</string>
+    <string name="navigator_add_feed">Добавить поток</string>
+    <string name="navigator_drawer_title">Мои потоки</string>
+    <string name="navigator_edit_content">Управлять потоками</string>
+    <string name="navigator_feed_filter_all">Все потоки</string>
+    <string name="navigator_feed_filter_new_only">«Новые» потоки</string>
+    <string name="navigator_updated">Обновлено %s</string>
+    <string name="navigator_updated_now">только что</string>
+    <string name="ok_button">OK Button</string>
+    <string name="opml_export_btn_label">Экспорт потоков</string>
+    <string name="opml_export_msg">"Все ваши потоки будут экспортированы в OPML-файл с названием 'BeyondPodFeeds.opml', располагающийся в 
+
+'%s'
+
+Потоки будут сгруппированы по их первой категории"</string>
+    <string name="opml_export_title">Экспорт в OPML</string>
+    <string name="opml_import_dlg_add_cat_label">Новая категория</string>
+    <string name="opml_import_dlg_title">Добавить в категорию</string>
+    <string name="opml_import_opml_btn_label">Загрузить файл OPML</string>
+    <string name="opml_import_opml_msg1">"Убедитесь, что OPML-файл имеет расширение .OPML и скопирован в :
+'%s'"</string>
+    <string name="opml_import_reader_title">Логин в Feedly</string>
+    <string name="opml_list_view_beyondpod_is_loading_s">"BeyondPod загружается
+%s…"</string>
+    <string name="opml_list_view_connecting">Подключение…</string>
+    <string name="opml_list_view_downloaded">Загружено</string>
+    <string name="opml_list_view_error">Ошибка</string>
+    <string name="opml_list_view_loading">Загрузка…</string>
+    <string name="opml_list_view_selected_directory_is_currently_unavailable">"Указанная директория в данный момент недоступна!
+
+Попробуйте повторить попытку позже."</string>
+    <string name="opml_list_view_update_canceled">Обновление отменено!</string>
+    <string name="opml_list_view_update_failed">Обновление не удалось!</string>
+    <string name="opml_view_adapter_back_to_s">Назад до %s</string>
+    <string name="opml_view_adapter_go_back">Назад</string>
+    <string name="opml_view_adapter_in_s">В %s</string>
+    <string name="opml_view_adapter_items">элем.</string>
+    <string name="opml_view_adapter_subscribed">Подписка оформлена</string>
+    <string name="percent_complete">% завершено</string>
+    <string name="player_charm_pbspeed_preset_description">Выберите скорость с помощью ползунка, затем нажмите на кнопку предустановки, чтобы сохранить ее</string>
+    <string name="player_charm_pbspeed_title">Скорость воспроизведения</string>
+    <string name="player_charm_sleep_description">Остановить воспроизведение после</string>
+    <string name="player_charm_sleep_episodeEnd">Этот эпизод заканчивается</string>
+    <string name="player_charm_sleep_off">Выкл</string>
+    <string name="player_charm_sleep_title">Таймер сна</string>
+    <string name="player_streaming_disabled">"Потоковое воспроизведение (стрийминг) запрещено.
+
+Загрузите эпизод перед тем как его воспроизвести."</string>
+    <string name="player_streaming_wifi_only">В настоящих настройках потоковое воспроизведение разрешено только через WiFi!</string>
+    <string name="player_transport_next">Следующий эпизод</string>
+    <string name="player_transport_pause">Пауза</string>
+    <string name="player_transport_play">Воспроизвести</string>
+    <string name="player_transport_playback_speed">Скорость воспроизведения</string>
+    <string name="player_transport_prev">Предыдущий эпизод</string>
+    <string name="player_transport_skip_back">Пропустить назад</string>
+    <string name="player_transport_skip_fwd">Пропустить вперед</string>
+    <string name="player_transport_skip_to_end">Пропустить до конца</string>
+    <string name="player_trying_to_play_deleted_episode">Этот эпизод удален!</string>
+    <string name="player_view_connecting_to_s">Подключение к %s …</string>
+    <string name="player_view_playback_cast_connected">"Подключен к '%s'
+
+ Выберите эпизод чтобы воспроизвести его удаленно."</string>
+    <string name="player_view_playback_error">Ошибка воспроизведения!</string>
+    <string name="player_view_playback_error_cant_cast">Этот эпизод не может быть воспроизведен удаленно!</string>
+    <string name="player_view_playback_error_streaming_disabled">Потоковое воспроизведение (стрийминг) не разрешено!</string>
+    <string name="player_view_preparing_stream_s">Подготовка потокового воспроизведения… ( %s %%)</string>
+    <string name="playlist_divider_smartplay_text">SmartPlay</string>
+    <string name="playlist_divider_text">Плейлист</string>
+    <string name="playlist_editor_dialog_clear_playlist">Очистить плейлист</string>
+    <string name="podcast_list_empty_all_feeds_working">"BeyondPod обновляет ваши потоки…
+
+Эпизоды появятся вскоре."</string>
+    <string name="podcast_list_empty_category">Вы не загрузили ни одного эпизода для категории \"%s\".</string>
+    <string name="podcast_list_empty_feed">Вы не загрузили ни одного эпизода для \"%s\".</string>
+    <string name="podcast_list_empty_filter">"Нет эпизодов, соответствующих вашему текущему фильтру
+'%s'."</string>
+    <string name="podcast_list_empty_playlist">Плейлист пустой</string>
+    <string name="podcast_list_has_filtered_items">"Отображение '%s'"</string>
+    <string name="podcast_list_open_all_published">Посмотреть Все опубликованные эпизоды</string>
+    <string name="podcast_list_show_all_episodes">Посмотреть Все эпизоды</string>
+    <string name="podcast_list_view_about">о</string>
+    <string name="podcast_list_view_all_published">Не можете найти нужный эпизод?</string>
+    <string name="podcast_list_view_beyondpod_faq">BeyondPod FAQ</string>
+    <string name="podcast_list_view_playlist">Плейлист</string>
+    <string name="podcasts_view_adapter_this">Это</string>
+    <string name="podcasts_view_free">Свободные</string>
+    <string name="preview_player_title">Предварительный просмотр эпизода</string>
+    <string name="published_list_add_again_to_my_episodes">Воспроизвести эпизод еще раз</string>
+    <string name="published_list_add_to_my_episodes">Добавить в мои эпизоды</string>
+    <string name="published_list_download_episode">Загрузить эпизод</string>
+    <string name="published_list_preview_episode">Предварительный просмотр эпизода</string>
+    <string name="published_list_redownload_episode">Загрузить эпизод еще раз</string>
+    <string name="reader_folder_all_new_items_in">Все новые элементы в</string>
+    <string name="reader_folder_my_google_items">Мои элементы из Feedly</string>
+    <string name="reader_folder_my_read_items">Мои прочитанные элементы</string>
+    <string name="reader_folder_my_reading_list">Мой Список чтения</string>
+    <string name="reader_folder_my_starred_items">Мои отмеченные элементы</string>
+    <string name="remote_playback_not_available_in_lite_version">"Истек срок действия пробной версии BeyondPod! 
+
+Воспроизведение на удалённом дисплее доступно только в «Pro» версии BeyondPod"</string>
+    <string name="repo_search_hint">Поиск потоков</string>
+    <string name="repo_search_label">.</string>
+    <string name="reset_storage_folder_current" formatted="false">"Местоположение загрузки эпизодов ( %s ) больше не доступно! 
+
+Если используете внешнюю SD-карту, можете снять ее с устройства или конфигурировать только для чтения.
+Вашу внутреннюю SD карту ( %s ) остается доступной.
+
+Желаете ли переключиться на использование внутренней SD карты?"</string>
+    <string name="reset_storage_folder_multiple">"Местоположение загрузки эпизодов ( %s ) больше не доступно! 
+
+Выберите новое местоположение ниже:"</string>
+    <string name="reset_tips_complete">Все советы и предупреждения теперь разрешены снова!</string>
+    <string name="s1">Сохранить изображение</string>
+    <string name="s2">Разрешить объявлению сохранить изображение в галерее?</string>
+    <string name="s3">Разрешить</string>
+    <string name="s4">Отклонить</string>
+    <string name="s5">Создать мероприятие</string>
+    <string name="s6">Разрешить объявлению создать мероприятие в календаре?</string>
+    <string name="s7">Тестовое объявление</string>
+    <string name="scheduling_method_msg">"BeypondPod позволяет обновлять потоки единым графиком, или установливать индивидуальные расписания обновления для каждой категории в отдельности.
+
+Какой метод использовать?
+
+Вы можете изменить это позднее через экран 'Управление категориями'"</string>
+    <string name="scheduling_method_per_category">На категорию</string>
+    <string name="scheduling_method_single_schedule">Одиночное расписание</string>
+    <string name="scheduling_method_title">Выберите расписания обновления</string>
+    <string name="search_error">Произошла ошибка при поиске. Повторите позже.</string>
+    <string name="search_error_device_is_offline">Устройство находиться в автономном режиме!</string>
+    <string name="search_error_must_be_online_to_add_feeds">Вы должны быть в сети, чтобы добавлять потоки.</string>
+    <string name="search_filter_all">Все</string>
+    <string name="search_filter_audio">Аудио</string>
+    <string name="search_filter_video">Видео</string>
+    <string name="search_menu_title">Поиск</string>
+    <string name="search_no_result_found">"Нет результов для '%s'"</string>
+    <string name="search_result_item_subscribe">Подписаться</string>
+    <string name="search_running">Поиск потоков…</string>
+    <string name="settings_AutoPlaySmartplays_summary">При выборе SmartPlay автоматически воспроизводить первый эпизод</string>
+    <string name="settings_AutoPlaySmartplays_title">Автовоспроизведение SmartPlay</string>
+    <string name="settings_AutoRebuildKeepCurrent_summary">Когда SmartPlay строиться снова, оставить текущий эпизод в начале плейлиста</string>
+    <string name="settings_AutoRebuildKeepCurrent_title">Сохранить текущий эпизод</string>
+    <string name="settings_AutoRebuildSmartPlay_summary">Автоматически перестраивает SmartPlay по умолчанию при загрузке новых эпизодов</string>
+    <string name="settings_AutoRebuildSmartPlay_title">Автоматически построить SmartPlay снова</string>
+    <string name="settings_Autoplaylist_summary">Автоматически создает новый плейлист, начиная с выбранного эпизода</string>
+    <string name="settings_Autoplaylist_title">Автоматически создавать новый плейлист</string>
+    <string name="settings_ClearPlaylistKeepCurrent_summary">При очистке плейлиста, оставить текущий эпизод в начале плейлиста</string>
+    <string name="settings_HeadsetButtons_DC_summary">Двойной клик на кнопку проводной гарнитуры</string>
+    <string name="settings_HeadsetButtons_DC_title">Двойной клик</string>
+    <string name="settings_HeadsetButtons_LP_summary">Длинное нажатие на кнопку проводной гарнитуры</string>
+    <string name="settings_HeadsetButtons_LP_title">Длинное нажатие</string>
+    <string name="settings_HeadsetButtons_Next_summary">Кнопка Следующий на проводной или bluetooth-гарнитуре</string>
+    <string name="settings_HeadsetButtons_Next_title">Кнопка Следующий</string>
+    <string name="settings_HeadsetButtons_Prev_summary">Кнопка Предыдущий на проводной или bluetooth-гарнитуре</string>
+    <string name="settings_HeadsetButtons_Prev_title">Кнопка Предыдущий</string>
+    <string name="settings_HeadsetButtons_summary">Настраивает как будут действовать кнопки проводной или bluetooth-гарнитуры</string>
+    <string name="settings_HeadsetButtons_title">Действия кнопки гарнитуры</string>
+    <string name="settings_PauseResume_summary">Пауза при отключении наушников или внешнего питания, при получении уведомлений, при выключении экрана из за тайм-аут…</string>
+    <string name="settings_PauseResume_title">Пауза или возобновление</string>
+    <string name="settings_RemovePlayedFromPlaylist_summary">Автоматически удаляет из плейлиста воспроизведенные эпизоды</string>
+    <string name="settings_RemovePlayedFromPlaylist_title">Удалить воспроизведенные из плейлиста</string>
+    <string name="settings_active_theme_summary">Тема для основного окна BeyondPod (светлый или темный)</string>
+    <string name="settings_active_theme_title">Тема</string>
+    <string name="settings_allow_analytics_summary">Позволяет собирать АНОНИМНУЮ статистику о использовании BeyondPod и о ошибках, обнаруженных в нем. Статистика используется разработчиками для улучшения приложения</string>
+    <string name="settings_allow_analytics_title">Вести статистику использования</string>
+    <string name="settings_allow_cleanup_for_manual_downloads_summary">Разрешет применения правил очистки эпизодов, загруженных вручную</string>
+    <string name="settings_allow_cleanup_for_manual_downloads_title">Разрешить очистку загруженного вручную</string>
+    <string name="settings_allow_hiding_read_summary">Разрешить скрывать «Прочитанные» элементы или «Воспроизведенные» эпизоды на экране «Все опубликованные».</string>
+    <string name="settings_allow_hiding_read_title">Разрешить скрывать ли прочитанные или воспроизведенные</string>
+    <string name="settings_allow_streaming_summary">Разрешает потоковое воспроизведение (стрийминг)</string>
+    <string name="settings_allow_streaming_title">Параметры потокового воспроизведения</string>
+    <string name="settings_allow_streaming_values_title">Разрешить стрийминг</string>
+    <string name="settings_allowcellular_summary">Включите, если разрешаете использовать мобильные подключения (через EDGE/3G/4G) для обновления потоков</string>
+    <string name="settings_allowcellular_title">Использование мобильных подключений</string>
+    <string name="settings_autoLoadPlugins_summary">Позволяет просматривать некоторые видео файлы, включенные в пост</string>
+    <string name="settings_autoLoadPlugins_title">Разрешить плагины браузера</string>
+    <string name="settings_auto_clean_unused_episodes_summary">Автоматически удалять все воспроизведенные эпизоды при следующем обновлении. (Эпизоды, добавленные в «Избранное», не удаляются)</string>
+    <string name="settings_auto_clean_unused_episodes_title">Автоматически удалять воспроизведенные эпизоды</string>
+    <string name="settings_auto_resume_partial_downloads_summary">Автоматически возобновлять все частичные загрузки при следующем обновлении</string>
+    <string name="settings_auto_resume_partial_downloads_title">Автоматически возобновлять частичные загрузки</string>
+    <string name="settings_automaticUpdates_title">Автоматические обновления</string>
+    <string name="settings_backup_restore_title">Копирование и восстановление</string>
+    <string name="settings_backwardSkipInterval_summary">Секунды вернуться назад при воспроизведении</string>
+    <string name="settings_backwardSkipInterval_title">Интервал пропуска назад</string>
+    <string name="settings_beta_notification_summary">Уведомите меня, если будет выпущена новая бета-версия BeyondPod</string>
+    <string name="settings_beta_notification_title">Уведомления о бета-версиях</string>
+    <string name="settings_category_sd_card_location_preferences">Место хранения подкастов</string>
+    <string name="settings_cds_summary">EpisodeSync запрещен</string>
+    <string name="settings_cds_title">Настройка EpisodeSync</string>
+    <string name="settings_clearstatusnotification_summary">Включите, если хотите скрыть иконку уведомления по окончании обновления</string>
+    <string name="settings_clearstatusnotification_title">Скрыть иконку уведомления</string>
+    <string name="settings_configure_smartplay">Настроить SmartPlay</string>
+    <string name="settings_defSendToEmail_dlg_title">Получатели Email по умолчанию</string>
+    <string name="settings_defSendToEmail_summary">Список с Email адресами получателей ссылок на статьи, отправляемые BeyondPod через электронную почту</string>
+    <string name="settings_defSendToEmail_title">Получатели Email по умолчанию</string>
+    <string name="settings_description">Подкасты BeyondPod</string>
+    <string name="settings_disable_sharing_warning">"Когда отказываетесь 'послать что то', из-за ошибки в некоторых версиях Андроид, некоторые из загруженных ВИДЕО-подкастов могут быть удалены при первом перезапуске устройства (или пересканировании SD-карты).
+
+Чтобы воспрепятсвовать этому убедитесь, что сохранили все нужные видео файлы в надежном месте.
+
+Вы можете найти загруженные подкасты в папке 'BeyondPod/Podcasts' на SD-карте."</string>
+    <string name="settings_disconnect_from_reader">Отсоединиться от Feedly</string>
+    <string name="settings_disconnect_from_reader_cant_convert_msg">"Некоторые из ваших потоков являются специфическими для Feedly и не могут быть отключены:
+
+%s
+Вы должны удалить их вручную."</string>
+    <string name="settings_disconnect_from_reader_msg">"Следующие потоки будут отключены от Feedly и перенаправлены к их первоначальному источнику:
+
+%s
+Загруженные или потоковые эпизоды будут сохранены, но история о том что именно было прочитано или загружено будет потеряна."</string>
+    <string name="settings_downloadoncharging_summary">Загружать эпизоды только во время зарядки устройства.</string>
+    <string name="settings_downloadoncharging_title">Загружать только при зарядке</string>
+    <string name="settings_downloadonwifi_summary">Загружать эпизоды только через WiFi.</string>
+    <string name="settings_downloadonwifi_title">Загружать только через WiFi</string>
+    <string name="settings_enableFadein_summary">Позволят плавно наращивать громкость с нуля, когда начинается воспроизведение</string>
+    <string name="settings_enableFadein_title">Плавное увеличение громкости</string>
+    <string name="settings_enableHeadsetButton_summary">Разрешает использование кнопок гарнитуры для контроля воспроизведения</string>
+    <string name="settings_enableHeadsetButton_title">Разрешить кнопки гарнитуры</string>
+    <string name="settings_enable_presto_summary">Использовать Presto плагин, если установлен (требуется перезапуск)</string>
+    <string name="settings_enable_presto_title">Включить Presto</string>
+    <string name="settings_enable_sonic_player_summary">Разрешить встроенную поддержку переменной скорости воспроизведения (только для JellyBean и выше )</string>
+    <string name="settings_enable_sonic_player_title">Разрешить Sonic плеер</string>
+    <string name="settings_feedContent_title">Настройки содержимого потока</string>
+    <string name="settings_feedSelectedAction_summary">Вид по умолчанию при выборе потока (Мои эпизоды или Все опубликованные)</string>
+    <string name="settings_feedSelectedAction_title">Предпочитаемое изображение потоков</string>
+    <string name="settings_feedSortOrder_summary">Выберите порядок сортировки потоков (левая выдвижная панель)</string>
+    <string name="settings_feedSortOrder_title">Порядок сортировки списка потоков</string>
+    <string name="settings_feed_defaults_summary">Общие настройки потока при подписке на новые потоки (количество эпизодов для загрузки, правила очистки)…</string>
+    <string name="settings_feed_defaults_title">Стандартные настройки потока</string>
+    <string name="settings_force_feed_album_art_summary">Использовать обложку потока для аудио эпизодов</string>
+    <string name="settings_force_feed_album_art_title">Использовать обложку потока</string>
+    <string name="settings_force_mpd123_player_summary">Устанавливает чтобы \"быстрое воспроизведение\" осуществлялось через mpg123 плеер</string>
+    <string name="settings_force_mpd123_player_title">Изпользовать Mpg123 плеер</string>
+    <string name="settings_forwardSkipInterval_summary">Секунды пропустить вперед при воспроизведении</string>
+    <string name="settings_forwardSkipInterval_title">Интервал пропуска вперед</string>
+    <string name="settings_general_summary">Общие настройки сортировки, потоков и эпизодов...</string>
+    <string name="settings_general_title">Общие настройки</string>
+    <string name="settings_global_apply">%s потоков обновлено</string>
+    <string name="settings_google_reader_login_title">Отсоединиться от Feedly</string>
+    <string name="settings_hideUnsupportedFileTypes_summary">Скрыть медиа файлы, которые устройство не сможет воспроизвести</string>
+    <string name="settings_hideUnsupportedFileTypes_title">Скрыть неподдерживаемые форматы</string>
+    <string name="settings_ignoreReaderReadStatus_summary">"Включите, если НЕ хотите синхронизировать статус 'прочитанный' в BeyondPod со статусом 'прочитанный' в Feedly."</string>
+    <string name="settings_ignoreReaderReadStatus_title">"Игнорировать статус 'прочитанный' в Feedly"</string>
+    <string name="settings_keep_pause_notification_summary">Когда плеер приостанавленный, оставьте сообщение «Приостановлено» в панели уведомлений.</string>
+    <string name="settings_keep_pause_notification_title">"Сохранить уведомление 'Паузы'"</string>
+    <string name="settings_keep_screen_on_during_playback_summary">Время свечения экрана при воспроизведении аудио</string>
+    <string name="settings_keep_screen_on_during_playback_title">Время свечения экрана</string>
+    <string name="settings_margin_navigation_summary">Двойной клик на содержимое поста приведет к закрытию просмотра поста</string>
+    <string name="settings_margin_navigation_title">Закрытие при двойном клике</string>
+    <string name="settings_markAsReadOnOpen_summary">"Управляет какие посты будут обозначаться как 'прочитанные' при их просмотре"</string>
+    <string name="settings_markAsReadOnOpen_title">"Отмечать 'прочитанными' при открытии"</string>
+    <string name="settings_maxTrackAge_dlg_title">Удалять старше чем</string>
+    <string name="settings_maxTrackAge_summary">Для каждого потока удалять эпизоды, которые старше указанного количества дней</string>
+    <string name="settings_maxTrackAge_title">При очистке удалять старые</string>
+    <string name="settings_mediaEndAction_summary">Действие, которое будет выполняться при завершении воспроизведения текущего эпизода (удалить, воспроизвести следующий, и т.д.)</string>
+    <string name="settings_mediaEndAction_title">После воспроизведения</string>
+    <string name="settings_numPodcastsToDownload_dlg_title">Загрузить</string>
+    <string name="settings_numPodcastsToDownload_summary">По умолчанию, количество эпизодов в каждом потоке</string>
+    <string name="settings_numPodcastsToDownload_title">Загрузка эпизода</string>
+    <string name="settings_numPodcastsToKeep_dlg_title">Оставить</string>
+    <string name="settings_numPodcastsToKeep_summary">По умолчанию, подразумевающееся для каждого потока количество эпизодов, которые надо оставить при очистке</string>
+    <string name="settings_numPodcastsToKeep_title">При очистке оставить</string>
+    <string name="settings_orientation_lock_summary">Позволяет установить ориентацию экрана в портретном или ландшафтном режиме</string>
+    <string name="settings_orientation_lock_title">Ориентация экрана</string>
+    <string name="settings_pause_on_notification_summary">Приостанавливает воспроизведение при получении системных уведомлений (навигация, эл. почта, СМС и др.)</string>
+    <string name="settings_pause_on_notification_title">Пауза при системном уведомлении</string>
+    <string name="settings_pause_on_power_disconnect_summary">Приостанавливает воспроизведение, когда внешний блок питания устройства отключиться.</string>
+    <string name="settings_pause_on_power_disconnect_title">Пауза при отключении питания</string>
+    <string name="settings_pause_onheadset_disconnect_summary">Приостанавливает воспроизведение, когда минигарнитура отключается</string>
+    <string name="settings_pause_onheadset_disconnect_title">Пауза при отключении гарнитуры</string>
+    <string name="settings_pause_video_on_screen_off_summary">Приостанавливает воспроизведение при отключении экрана.</string>
+    <string name="settings_pause_video_on_screen_off_title">Приостановить видео при выключении экрана</string>
+    <string name="settings_player_integration_summary">Выбирается внешний, по отношению BeyonPod плеер</string>
+    <string name="settings_player_integration_title">Подразумевающийся Аудио/Видео плеер</string>
+    <string name="settings_player_plugins_disable_summary">Разрешает регулировку скорости воспроизведения</string>
+    <string name="settings_player_plugins_disable_title">Разрешить регулировку скорости</string>
+    <string name="settings_player_plugins_only_if_configured_summary">Использовать плагины плеера только для потоков, которые явным образом настроены на воспроизведение на более высокую скорость</string>
+    <string name="settings_player_plugins_only_if_configured_title">Плагины только для настроенных потоков</string>
+    <string name="settings_player_summary">Интервалы пропуска, Кнопка гарнитуры, Параметры потокового воспроизведения…</string>
+    <string name="settings_player_title">Настройки плеера</string>
+    <string name="settings_playlistEndAction_summary">Действие, которое будет выполняться при завершении воспроизведения последнего эпизода в плейлисте</string>
+    <string name="settings_playlistEndAction_title">По окончании плейлиста</string>
+    <string name="settings_playlist_summary">Параметры плейлиста, автоудаление эпизодов…</string>
+    <string name="settings_playlist_title">Настройки плейлиста</string>
+    <string name="settings_podcastDownloadAction_summary">Действие по умолчанию для эпизодов (загрузка, потоковое воспроизведение, игнорирование)</string>
+    <string name="settings_podcastDownloadAction_title">Извлекать эпизоды потока</string>
+    <string name="settings_podcastsSortOrder_summary">Выберите сортировку по умолчанию для загруженных эпизодов подкастов</string>
+    <string name="settings_podcastsSortOrder_title">Порядок сортировки Моих эпизодов</string>
+    <string name="settings_prefer_last_sd_card_root_summary">Установить чтобы BeyondPod всегда использовал текущий путь загрузки:</string>
+    <string name="settings_prefer_last_sd_card_root_title">Закрепить к текущему пути</string>
+    <string name="settings_push_globals_all_dlg_msg">Вы уверены, что хотите применить эту настройку ко всем существующим потокам?</string>
+    <string name="settings_push_globals_btn_no">Нет</string>
+    <string name="settings_push_globals_btn_yes">Да</string>
+    <string name="settings_push_globals_dlg_title">Обновить существующие потоки</string>
+    <string name="settings_push_globals_download_or_stream_dlg_msg">Вы уверены, что хотите применить эту настройку ко всем существующим потокам, для которых указана загрузка или потоковое воспроизведение подкастов?</string>
+    <string name="settings_replay_on_resume_summary">Секунды повторного воспроизведения после паузы</string>
+    <string name="settings_replay_on_resume_title">Вернуться назад после паузы</string>
+    <string name="settings_requires_restart_back_only_warning">"Эта настройка будет применена при следующем открытии BeyondPod.
+
+(Нажмите кнопку 'Назад' для закрытия BeyondPod)"</string>
+    <string name="settings_requires_restart_warning">"Эта настройка будет применена при следующем открытии BeyondPod.
+
+(Нажмите кнопку 'Назад' для закрытия BeyondPod или просто поверните экран)"</string>
+    <string name="settings_resume_on_call_summary">Возобновлять воспроизведение после телефонного звонка</string>
+    <string name="settings_resume_on_call_title">Возобновлять после звонка</string>
+    <string name="settings_scrobble_summary">Опубликовать информацию о воспроизводимом эпизоде на внешнем устройстве. (Разрешение может прервать аудио поддержку через Bluetooth)</string>
+    <string name="settings_scrobble_title">Опубликовать текущий эпизод</string>
+    <string name="settings_setAsDownloadedOnMarkRead_summary">"Эпизоды будут отмечаться как 'загруженные' как только их посты отметятся как 'прочитанные'"</string>
+    <string name="settings_setAsDownloadedOnMarkRead_title">"Отмечать 'загруженным' при прочтении"</string>
+    <string name="settings_setAsPlayedOnMarkRead_summary">"Эпизоды установятся на 'воспроизведенные', когда их пост отметится 'прочитанным'"</string>
+    <string name="settings_setAsPlayedOnMarkRead_title">"При прочтении установить на 'воспроизведенные'"</string>
+    <string name="settings_sharePodcasts_summary">Включите, если хотите, чтобы штатный музикальный плеер Андроида мог видеть эпизоды, загруженные BeyondPod</string>
+    <string name="settings_sharePodcasts_title">Эпизоды, видимые в музыкальном плеере</string>
+    <string name="settings_show_post_images_in_feed_content_list_summary">Показывать миниатюры постов в списке с постами</string>
+    <string name="settings_show_post_images_in_feed_content_list_title">Показывать миниатюры постов</string>
+    <string name="settings_show_sleep_to_end_summary">Пропустить до конца текущего эпизода и отметить его воспроизведенным</string>
+    <string name="settings_show_sleep_to_end_title">Кнопка «Пропустить до конца»</string>
+    <string name="settings_sleep_timeout_summary">Таймаут (в минутах) до остановления воспроизведения, когда включена функция плеера Таймер сна</string>
+    <string name="settings_sleep_timeout_title">Таймаут до сна</string>
+    <string name="settings_storage_folder_title">Папка для загрузки подкастов</string>
+    <string name="settings_supportedFileFormats_summary">Ввести форматы файлов, которые BeyondPod распознает и может воспроизвести</string>
+    <string name="settings_supportedFileFormats_title">Поддерживаемые форматы</string>
+    <string name="settings_togglewifi_summary">Включите, если хотите включать WiFi во время обновления потока</string>
+    <string name="settings_togglewifi_title">Включать WiFi при обновлении</string>
+    <string name="settings_update_optimizations_already_excluded_summary">Оптимизация расхода аккумулятора отключена. BeyondPod будет загружать потоки в «дремлющем» режиме.</string>
+    <string name="settings_update_optimizations_exclude_summary">Оптимизация расхода аккумулятора включена. BeyondPod НЕ будет обновлять потоки, пока устройство находится в «дремлющем» режиме.</string>
+    <string name="settings_update_optimizations_exclude_title">Оптимизация расхода аккумулятора</string>
+    <string name="settings_update_summary">Планирование автоматического обновления потока, включения WiFi, использования мобильных данных, загрузки эпизодов…</string>
+    <string name="settings_update_title">Настройки обновления потока</string>
+    <string name="settings_updateonopen_summary">Включите, если желаете обновлять поток автоматически при его открытии</string>
+    <string name="settings_updateonopen_title">Обновлять при открытии потока</string>
+    <string name="settings_useExternalBrowser_summary">Включите, если хотите использовать подразумевающийся браузер устройства.</string>
+    <string name="settings_useExternalBrowser_title">Использовать внешний браузер</string>
+    <string name="settings_user_home_screen_summary">Начальный экран. Нажатие кнопки «Назад» сначала откроет главный экран, а затем закроет приложение.</string>
+    <string name="settings_user_home_screen_title">Главный экран</string>
+    <string name="settings_view_title">Настройки BeyonPod</string>
+    <string name="settings_view_update_log_message">Последнее обновление: %s</string>
+    <string name="settings_view_update_log_title">Просмотреть журнал обновления</string>
+    <string name="settings_volumeNavigation_summary">Использовать клавишу громкости на устройстве для навигации в списке с постами потока</string>
+    <string name="settings_volumeNavigation_title">Навигировать клавишей громкости</string>
+    <string name="settings_widget_background_title">Фон виджета</string>
+    <string name="settings_widget_preferences">Параметры виджета</string>
+    <string name="smart_playlist_add">Добавить SmartPlay</string>
+    <string name="smart_playlist_add_rule">Добавить правило</string>
+    <string name="smart_playlist_editor_msg">"SmartPlay автоматически создает новый плейлист из загруженных эпизодов.
+Эпизоды включаются на основании набора простых правил."</string>
+    <string name="smart_playlist_editor_title">Конструктор SmartPlay</string>
+    <string name="smart_playlist_emptyplaylist">Плейлист пустой</string>
+    <string name="smart_playlist_emptyplaylist_info">"Нажмите 'Воспроизвести' для старта SmartPlay"</string>
+    <string name="smart_playlist_name_hint">Имя SmartPlay</string>
+    <string name="smart_playlist_repository_loading">Загрузка плейлиста…</string>
+    <string name="smart_playlist_shortcut_create_failed">Не удалось создать ярлык!</string>
+    <string name="smart_playlist_shortcut_creating">Создание ярлыка…</string>
+    <string name="smart_playlist_start_with">Начать с</string>
+    <string name="smart_playlist_then_play">затем воспроизвести</string>
+    <string name="smartplay_category_label">Категория</string>
+    <string name="status_bar_notification_info_overflow">>999</string>
+    <string name="the_url_of_this_feed_s_does_not_appear_to_be_valid">URL этого потока: %s невалиден!</string>
+    <string name="there_are_no_scheduled_updates">Нет запланированных обновлений</string>
+    <string name="this_feed_already_exists_in_category">"Этот поток уже существует в категории '%s'"</string>
+    <string name="tip_cast_to_your_tv_msg">Нажмите на кнопку #IMG# выше и наслаждайтесь просмотра ваших эпизодов на большом экране.</string>
+    <string name="tip_cast_to_your_tv_title">Воспроизвести на телевизор</string>
+    <string name="tip_how_to_select_compact_card_msg">Просматривайте больше эпизодов на одном экране. Выберите в меню «Контактные карточки».</string>
+    <string name="tip_introduce_multi_select_msg">"Вы можете удалять, загружать и добавлять в плейлисты несколько эпизодов сразу.
+Нажмите и удерживайте первый эпизод, чтобы выбирать больше одного эпизода; нажмите, чтобы выбрать другие эпизоды, и выберите действие в меню."</string>
+    <string name="tip_introduce_smart_play_msg">"Надоело вручную составлять плейлист? Положитель на SmartPlay!
+Нажмите сюда, чтобы узнать подробности."</string>
+    <string name="tip_notification">Совет</string>
+    <string name="tip_notification_categories_msg">Для реорганизации категорий перетащите значок #IMG# и отпустите в желаемом положении списка.</string>
+    <string name="tip_notification_drag_drop_playlist_info">Для реорганизации плейлиста перетащите значок #IMG# и отпустите в желаемом положении плейлиста.</string>
+    <string name="tip_notification_expand_categories_msg">Нажмите на #IMG# чтобы раскрыть категорию и увидеть все потоки в ней.</string>
+    <string name="trial_about_to_expire_message">Ваш пробный период BeyondPod PRO истекает через %s дней</string>
+    <string name="trial_expired_message">Пробный период BeyondPod PRO завершен!</string>
+    <string name="update_and_download_queue_connecting">Подключение…</string>
+    <string name="update_and_download_queue_downloaded">Загружено</string>
+    <string name="update_and_download_queue_title">Обновить и загрузить очередь</string>
+    <string name="update_and_download_queue_updating">Обновление</string>
+    <string name="update_and_download_updating_s">Обновление %s…</string>
+    <string name="update_download_mgr_currently_podcasts_can_be_downloaded_automatically_only_over_a_wifi_connection">"В данный момент подкасты могут быть загружены только через WiFi. Используйте кнопку 'Загрузить' чтобы вручную скачать отдельные подкасты. (Вы можете изменить это в Меню > Настройки > Настройка обновления потоков > Загружать только через WiFi)"</string>
+    <string name="update_download_mgr_currently_podcasts_can_be_downloaded_automatically_only_when_the_device_is_plugged_in">"В данный момент подкасты загружаются при зарядке устройства. Используйте кнопку 'Загрузить' для загрузки. (Вы можете изменить это в Меню > Настройки > Обновление потоков > Загружать только при зарядке)"</string>
+    <string name="update_download_mgr_scheduled_update_did_not_run_because_background_data_is_disabled">"Запланированное обновление не будет работать, т.к. отключены 'Фоновые данные' в настройках устройства. (Однако, вы можете обновлять вручную)"</string>
+    <string name="update_download_mgr_the_device_has_no_internet_connection">Нет связи к сети Интернет! WiFi выключен(и не настроен на автоматическое включение на время обновления)</string>
+    <string name="update_download_mgr_unable_to_establish_internet_conection_the_device_is_in_airplane_mode">Не удалось подключиться к сети Интернет! Включен Режим полета.</string>
+    <string name="update_download_queue_activity_cancel_update">Остановить обновление и загрузку</string>
+    <string name="update_download_queue_download_completed">Закрыть</string>
+    <string name="update_download_queue_processing_text">Проверка для наличия новых эпизодов…</string>
+    <string name="update_download_queue_update_and_download_completed">Обновление и загрузка завершена!</string>
+    <string name="update_download_queue_view_update_log">Просмотр лога обновления</string>
+    <string name="update_engine_notification__feed_update_completed">Поток успешно обновлен</string>
+    <string name="update_engine_notification__feed_update_failed">Не удалось обновить поток</string>
+    <string name="update_engine_notification__podcasts_failed">эпизодов не удалось обновить</string>
+    <string name="update_engine_notification_feeds_failed">не удалось обновить потоки</string>
+    <string name="update_engine_notification_no_network_connection">Нет связи к сети Интернет!</string>
+    <string name="update_engine_notification_no_new_podcasts">Нет новых эпизодов</string>
+    <string name="update_engine_notification_no_new_posts">Нет новых постов</string>
+    <string name="update_engine_notification_the_phone_is_in_airplane_mode">Включен режим полета!</string>
+    <string name="update_engine_notification_there_were_errors_during_the_last_update">Во время последнего обновления произошли ошибки! Нажмите здесь для просмотра лога обновления.</string>
+    <string name="update_engine_notification_unable_to_establish_network_connection">Не удалось подключится к сети Интернет.</string>
+    <string name="update_engine_notification_updated">Обновлено</string>
+    <string name="updates_are_scheduled_for_categories">Обновления запланированы для категорий</string>
+    <string name="updating_google_reader">Обновление Feedly</string>
+    <string name="warn_force_download_on_device_not_plugged_in_msg">Ваши настройки разрешают загружать подкасты только тогда, когда устройство подключено на зарядку. Вы уверены, что хотите загрузить этот эпизод когда устройство работает на аккумуляторе?</string>
+    <string name="warn_force_download_on_mobile_data_msg">Ваши настройки не разрешают загружать подкасты через сеть мобильного оператора. Вы уверены, что хотите загрузить эпизод через сеть Вашего мобильного оператора?</string>
+    <string name="warn_force_download_on_wifi_not_connected_msg">Ваши настройки разрешают загружать подкасты только через WiFi. Вы уверены, что хотите загрузить этот эпизод через сеть вашего мобильного оператора?</string>
+    <string name="warn_replace_pls_append">Добавить эпизод в мой текущий плейлист</string>
+    <string name="warn_replace_pls_donotask_append">В будущем всегда добавлять выбранные эпизоды</string>
+    <string name="warn_replace_pls_donotask_replace">В будущем всегда начинать новый плейлист</string>
+    <string name="warn_replace_pls_donotask_tip">Это можно изменить позднее в: Настройки плейлиста > Автоматический плейлист</string>
+    <string name="warn_replace_pls_msg">Выбранный эпизод начнет новый плейлист. Продолжить?</string>
+    <string name="warn_replace_pls_replace">Да, начать новый плейлист</string>
+    <string name="warn_replace_pls_title">Заменить плейлист?</string>
+    <string name="widget_action_picker_now_playing">Сейчас воспроизводится</string>
+    <string name="widget_action_picker_open_beyondpod">Открыть BeyondPod</string>
+    <string name="widget_action_picker_start_smartplay">Запустить подразумеваемый SmartPlay</string>
+    <string name="widget_action_picker_update_smartplay_feeds">Обновить подразумеваемый SmartPlay</string>
+    <string name="widget_picker_title">Выбор действия</string>
+    <string name="widget_provider_playback_error">Ошибка воспроизведения!</string>
+    <string name="widget_provider_starting_stream_s">Запуск потокового воспроизведения… ( %s %%)</string>
+</resources>

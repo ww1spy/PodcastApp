@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/smart_playlist_shortcut_separator_lo" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/playlist_header" layout="@layout/playlist_header_actionbar" />
+    <RelativeLayout android:id="@id/shortcut_content" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/playlist_header_action_bar_height" android:minHeight="48.0dip">
+        <View android:id="@id/separator_color_h" android:background="@color/smart_playlist_shortcut_separator_lo" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" />
+        <TextView android:id="@id/shortcut_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:textAllCaps="true" android:layout_marginStart="12.0dip" android:layout_marginEnd="8.0dip" android:layout_toStartOf="@id/ps_shortcut_expander" android:layout_alignParentStart="true" style="@style/SmartPlaylistShortcutTextStyle" />
+        <mobi.beyondpod.ui.core.DontPressWithParentImageView android:id="@id/ps_shortcut_expander" android:background="@drawable/rotating_expander_background" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_caret_down_light" android:scaleType="center" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</FrameLayout>

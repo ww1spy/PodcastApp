@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="add_feed_screen_h_margin">70.0dip</dimen>
+    <dimen name="charm_equalizer_h_spacing">32.0dip</dimen>
+    <dimen name="charm_popup_h_margin">64.0dip</dimen>
+    <dimen name="drawer_playlist_width">500.0dip</dimen>
+    <dimen name="main_screen_h_margin">16.0dip</dimen>
+    <dimen name="player_transport_controls_car_mode_height">200.0dip</dimen>
+    <dimen name="player_transport_controls_car_mode_play_pause_size">100.0dip</dimen>
+    <dimen name="playlist_pager_bottom_padding">135.0dip</dimen>
+    <dimen name="playlist_pager_left_padding">200.0dip</dimen>
+    <dimen name="playlist_pager_right_padding">200.0dip</dimen>
+    <dimen name="playlist_pager_top_padding">95.0dip</dimen>
+</resources>

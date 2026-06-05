@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_player_title" android:key="player_preferences" android:summary="@string/settings_player_summary"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/settings_skipInterval_text" android:title="@string/settings_forwardSkipInterval_title" android:key="ForwardSkipInterval" android:summary="@string/settings_forwardSkipInterval_summary" android:dialogTitle="@string/settings_forwardSkipInterval_title" android:entryValues="@array/settings_skipInterval_values" />
+    <ListPreference android:entries="@array/settings_skipInterval_text" android:title="@string/settings_backwardSkipInterval_title" android:key="BackwardSkipInterval" android:summary="@string/settings_backwardSkipInterval_summary" android:dialogTitle="@string/settings_backwardSkipInterval_title" android:entryValues="@array/settings_skipInterval_values" />
+    <ListPreference android:entries="@array/allow_episode_streaming_text" android:title="@string/settings_allow_streaming_title" android:key="AllowEpisodeStreaming" android:summary="@string/settings_allow_streaming_summary" android:defaultValue="0" android:dialogTitle="@string/settings_allow_streaming_values_title" android:entryValues="@array/allow_episode_streaming_values" />
+    <Preference android:title="@string/settings_HeadsetButtons_title" android:summary="@string/settings_HeadsetButtons_summary">
+        <intent android:action="HeadsetButtonPreference" />
+    </Preference>
+    <Preference android:title="@string/settings_PauseResume_title" android:summary="@string/settings_PauseResume_summary">
+        <intent android:action="PauseResumePreference" />
+    </Preference>
+    <ListPreference android:entries="@array/settings_skip_to_end_click_type_text" android:title="@string/settings_show_sleep_to_end_title" android:key="SkipToEndButtonClickType" android:summary="@string/settings_show_sleep_to_end_summary" android:defaultValue="3" android:dialogTitle="@string/settings_show_sleep_to_end_title" android:entryValues="@array/settings_skip_to_end_click_type_values" />
+    <CheckBoxPreference android:title="@string/settings_player_plugins_disable_title" android:key="EnableAudioPlugins" android:summary="@string/settings_player_plugins_disable_summary" android:defaultValue="true" />
+    <ListPreference android:entries="@array/settings_player_integration_text" android:title="@string/settings_player_integration_title" android:key="PlayerIntegrationType" android:summary="@string/settings_player_integration_summary" android:dialogTitle="@string/settings_player_integration_title" android:entryValues="@array/settings_player_integration_values" />
+    <CheckBoxPreference android:title="@string/settings_keep_pause_notification_title" android:key="EnhancedPlayerNotication" android:summary="@string/settings_keep_pause_notification_summary" android:defaultValue="false" />
+</PreferenceScreen>

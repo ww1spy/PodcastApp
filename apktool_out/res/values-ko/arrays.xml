@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_feed_section_names">
+        <item>인기</item>
+        <item>추천</item>
+        <item>발행인</item>
+        <item>카테고리</item>
+        <item>세계</item>
+        <item>관심사</item>
+    </string-array>
+    <string-array name="allow_episode_streaming_text">
+        <item>항상 허용</item>
+        <item>WiFi일 때만</item>
+        <item>금지</item>
+    </string-array>
+    <string-array name="allow_episode_streaming_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="audiobook_genres">
+        <item>All Genres</item>
+        <item>Adventure</item>
+        <item>Advice</item>
+        <item>Ancient Texts</item>
+        <item>Animals</item>
+        <item>Art</item>
+        <item>Biography</item>
+        <item>Children</item>
+        <item>Classics (antiquity)</item>
+        <item>Comedy</item>
+        <item>Cookery</item>
+        <item>Economics/Political Economy</item>
+        <item>Epistolary fiction</item>
+        <item>Erotica</item>
+        <item>Essay/Short nonfiction</item>
+        <item>Fairy tales</item>
+        <item>Fantasy</item>
+        <item>Fiction</item>
+        <item>Historical Fiction</item>
+        <item>History</item>
+        <item>Holiday</item>
+        <item>Horror/Ghost stories</item>
+        <item>Humor</item>
+        <item>Instruction</item>
+        <item>Languages</item>
+        <item>Literature</item>
+        <item>Memoirs</item>
+        <item>Music</item>
+        <item>Mystery</item>
+        <item>Myths/Legends</item>
+        <item>Nature</item>
+        <item>Philosophy</item>
+        <item>Play</item>
+        <item>Poetry</item>
+        <item>Politics</item>
+        <item>Psychology</item>
+        <item>Romance</item>
+        <item>Religion</item>
+        <item>Satire</item>
+        <item>Science</item>
+        <item>Science fiction</item>
+        <item>Sea stories</item>
+        <item>Short stories</item>
+        <item>Spy stories</item>
+        <item>Teen/Young adult</item>
+        <item>Tragedy</item>
+        <item>Travel</item>
+        <item>War stories</item>
+        <item>Westerns</item>
+    </string-array>
+    <string-array name="audiobook_languages">
+        <item>All Languages</item>
+        <item>Ancient Greek</item>
+        <item>Arabic</item>
+        <item>Bisaya</item>
+        <item>Bulgarian</item>
+        <item>Chinese</item>
+        <item>Church Slavonic</item>
+        <item>Danish</item>
+        <item>Dholuo</item>
+        <item>Dutch</item>
+        <item>English</item>
+        <item>Esperanto</item>
+        <item>Finnish</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Hebrew</item>
+        <item>Hungarian</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Javanese</item>
+        <item>Latin</item>
+        <item>Latvian</item>
+        <item>Middle English</item>
+        <item>Multilingual</item>
+        <item>Old English</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Russian</item>
+        <item>Spanish</item>
+        <item>Swedish</item>
+        <item>Tagalog</item>
+        <item>Tamil</item>
+        <item>Ukrainian</item>
+        <item>Urdu</item>
+    </string-array>
+    <string-array name="cds_accept_feeds_type_text">
+        <item>허용하지 않음</item>
+        <item>수동으로 전송된 경우에만</item>
+        <item>항상 허용</item>
+    </string-array>
+    <string-array name="cds_accept_feeds_type_values">
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="feed_fingerprint_type_values">
+        <item>-1</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="feed_fingerprint_type_values_text">
+        <item>자동으로 결정</item>
+        <item>포스트 GUID 사용</item>
+        <item>포스트 제목, 링크, 게시일 사용</item>
+    </string-array>
+    <string-array name="myepisodesFilter_text">
+        <item>내 에피소드</item>
+        <item>발행된 모든 에피소드</item>
+    </string-array>
+    <string-array name="playlist_end_action_text">
+        <item>아무것도 하지 않음</item>
+        <item>재생 목록 비우기</item>
+        <item>SmartPlay 재시작</item>
+    </string-array>
+    <string-array name="playlist_end_action_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="resume_replay_duration_text">
+        <item>되감지 않음</item>
+        <item>5초 전부터</item>
+        <item>15초 전부터</item>
+        <item>30초 전부터</item>
+    </string-array>
+    <string-array name="resume_replay_duration_values">
+        <item>0</item>
+        <item>5</item>
+        <item>15</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="sample_content_category_names">
+        <item>News</item>
+        <item>Popular Science</item>
+        <item>Indie Music</item>
+        <item>TV &amp; Film</item>
+        <item>Great Stories</item>
+        <item>Android</item>
+        <item>Cars</item>
+        <item>Money</item>
+        <item>Sci-Fi</item>
+        <item>Business</item>
+        <item>Comedy</item>
+        <item>Food</item>
+        <item>Parenting</item>
+        <item>Wine &amp; Beer</item>
+        <item>Travel</item>
+    </string-array>
+    <string-array name="schedule_update_period">
+        <item>시간</item>
+        <item>일</item>
+        <item>주</item>
+    </string-array>
+    <string-array name="settings_configure_bt_buttons_text">
+        <item>다음 에피소드</item>
+        <item>이전 에피소드</item>
+        <item>빨리감기</item>
+        <item>되감기</item>
+        <item>끝으로 건너뛰기</item>
+    </string-array>
+    <string-array name="settings_configure_bt_buttons_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="settings_contentFontSize_text">
+        <item>매우 크게</item>
+        <item>크게</item>
+        <item>보통</item>
+        <item>작게</item>
+        <item>매우 작게</item>
+    </string-array>
+    <string-array name="settings_feedSelectedAction_text">
+        <item>내 에피소드</item>
+        <item>발행된 모든 에피소드</item>
+    </string-array>
+    <string-array name="settings_feedSelectedAction_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="settings_itemSortOrder_text">
+        <item>피드 기본값</item>
+        <item>최신순</item>
+        <item>오래된 순</item>
+    </string-array>
+    <string-array name="settings_long_podcastName_handling_text">
+        <item>앞부분 보이기</item>
+        <item>뒷부분 보이기</item>
+    </string-array>
+    <string-array name="settings_markAsReadOnOpen_text">
+        <item>모든 포스트</item>
+        <item>팟캐스트 없는 포스트</item>
+        <item>없음</item>
+    </string-array>
+    <string-array name="settings_markAsReadOnOpen_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="settings_maxTrackAge_text">
+        <item>5일</item>
+        <item>7일</item>
+        <item>30일</item>
+        <item>180일</item>
+        <item>360일</item>
+        <item>99999일</item>
+    </string-array>
+    <string-array name="settings_maxTrackAge_values">
+        <item>5</item>
+        <item>7</item>
+        <item>30</item>
+        <item>180</item>
+        <item>360</item>
+        <item>99999</item>
+    </string-array>
+    <string-array name="settings_mediaEndAction_text">
+        <item>다음 에피소드 재생</item>
+        <item>삭제 후 다음 에피소드 재생</item>
+        <item>아무것도 하지 않음</item>
+        <item>에피소드 삭제</item>
+    </string-array>
+    <string-array name="settings_mediaEndAction_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_myepisodesFilter_text">
+        <item>모든 에피소드</item>
+        <item>오디오만</item>
+        <item>비디오만</item>
+        <item>다운로드된 에피소드</item>
+        <item>다운로드 미완료 에피소드</item>
+        <item>재생되지 않은 에피소드</item>
+        <item>즐겨찾기</item>
+    </string-array>
+    <string-array name="settings_myepisodesFilter_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="settings_myepisodesSortOrder_text">
+        <item>피드 설정대로</item>
+        <item>최신순</item>
+        <item>오래된 순</item>
+        <item>이름</item>
+        <item>이름 (역순)</item>
+        <item>길이</item>
+        <item>길이 (긴 순)</item>
+        <item>재생된 위치</item>
+        <item>파일 이름</item>
+    </string-array>
+    <string-array name="settings_myepisodesSortOrder_values">
+        <item>-1</item>
+        <item>3</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="settings_numPodcastsToDownload_text">
+        <item>1 에피소드</item>
+        <item>3 에피소드</item>
+        <item>5 에피소드</item>
+        <item>10 에피소드</item>
+        <item>20 에피소드</item>
+        <item>50 에피소드</item>
+        <item>다운로드하지 않음</item>
+    </string-array>
+    <string-array name="settings_numPodcastsToDownload_values">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="settings_numPodcastsToKeep_text">
+        <item>최근 1 에피소드</item>
+        <item>최근 3 에피소드</item>
+        <item>최근 5 에피소드</item>
+        <item>최근 10 에피소드</item>
+        <item>최근 20 에피소드</item>
+        <item>최근 50 에피소드</item>
+        <item>모두 유지</item>
+    </string-array>
+    <string-array name="settings_numPodcastsToKeep_values">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>99999</item>
+    </string-array>
+    <string-array name="settings_orientation_lock_text">
+        <item>자동</item>
+        <item>세로 고정</item>
+        <item>가로 고정</item>
+    </string-array>
+    <string-array name="settings_orientation_lock_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_player_integration_text">
+        <item>내장 플레이어 사용</item>
+        <item>외부 비디오 플레이어 사용</item>
+        <item>외부 오디오 플레이어 사용</item>
+        <item>외부 플레이어 사용</item>
+    </string-array>
+    <string-array name="settings_player_integration_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_player_screen_power_state_text">
+        <item>장치 기본값 사용</item>
+        <item>어둡게 (충전 중에만)</item>
+        <item>항상 켜기 (충전 중에만)</item>
+        <item>어둡게</item>
+        <item>항상 켜기</item>
+    </string-array>
+    <string-array name="settings_player_screen_power_state_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="settings_podcastDownloadAction_text">
+        <item>에피소드 수동 다운로드</item>
+        <item>최신 에피소드 다운로드</item>
+        <item>최신 에피소드 스트리밍</item>
+        <item>게시된 순서대로 다운로드</item>
+        <item>게시된 순서대로 스트리밍</item>
+        <item>모든 에피소드 무시</item>
+    </string-array>
+    <string-array name="settings_podcastDownloadAction_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_preferred_enclosure_text">
+        <item>기본값 사용</item>
+        <item>대안 1 사용</item>
+        <item>대안 2 사용</item>
+        <item>대안 3 사용</item>
+        <item>대안 4 사용</item>
+        <item>대안 5 사용</item>
+        <item>대안 6 사용</item>
+        <item>대안 7 사용</item>
+        <item>대안 8 사용</item>
+        <item>대안 9 사용</item>
+    </string-array>
+    <string-array name="settings_screen_item_content_view_theme_text">
+        <item>흰색</item>
+        <item>세피아</item>
+        <item>검정</item>
+    </string-array>
+    <string-array name="settings_screen_power_state_during_wifi_updates_text">
+        <item>자동</item>
+        <item>항상 켜짐</item>
+        <item>항상 꺼짐</item>
+    </string-array>
+    <string-array name="settings_screen_power_state_during_wifi_updates_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_skipInterval_text">
+        <item>5초</item>
+        <item>10초</item>
+        <item>20초</item>
+        <item>30초</item>
+        <item>1분</item>
+        <item>5분</item>
+        <item>사용하지 않음</item>
+    </string-array>
+    <string-array name="settings_skipInterval_values">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+        <item>300</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="settings_skip_to_end_click_type_text">
+        <item>짧게 누르기</item>
+        <item>길게 누르기</item>
+        <item>버튼 숨기기</item>
+    </string-array>
+    <string-array name="settings_skip_to_end_click_type_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_sortOrder_text">
+        <item>이름 (가나다순)</item>
+        <item>이름 (역순)</item>
+        <item>날짜 (오래된 순)</item>
+        <item>날짜 (최신순)</item>
+    </string-array>
+    <string-array name="settings_sortOrder_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_startupView_text">
+        <item>기본</item>
+        <item>피드 목록</item>
+        <item>플레이어</item>
+    </string-array>
+    <string-array name="settings_startupView_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_theme_text">
+        <item>밝음 (기본)</item>
+        <item>어두움</item>
+    </string-array>
+    <string-array name="settings_theme_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_trackSortOrder_text">
+        <item>최신순</item>
+        <item>오래된 순</item>
+        <item>이름</item>
+        <item>이름 (역순)</item>
+        <item>길이</item>
+        <item>길이 (긴 순)</item>
+        <item>재생된 위치</item>
+        <item>파일 이름</item>
+    </string-array>
+    <string-array name="settings_trackSortOrder_values">
+        <item>3</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="settings_volumeNavigation_text">
+        <item>재생 중이 아닐 때만</item>
+        <item>사용하지 않음</item>
+        <item>항상</item>
+    </string-array>
+    <string-array name="settings_volumeNavigation_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="smart_playlist_numPodcasts_text">
+        <item>1 에피소드</item>
+        <item>2 에피소드</item>
+        <item>3 에피소드</item>
+        <item>4 에피소드</item>
+        <item>5 에피소드</item>
+        <item>6 에피소드</item>
+        <item>7 에피소드</item>
+        <item>8 에피소드</item>
+        <item>9 에피소드</item>
+        <item>10 에피소드</item>
+        <item>20 에피소드</item>
+        <item>30 에피소드</item>
+        <item>50 에피소드</item>
+    </string-array>
+    <string-array name="smart_playlist_numPodcasts_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+    </string-array>
+    <string-array name="smart_playlist_sortOrder_text">
+        <item>최신순</item>
+        <item>오래된 순</item>
+        <item>무작위</item>
+    </string-array>
+    <string-array name="widget_background_text">
+        <item>어두움</item>
+        <item>투명</item>
+        <item>없음</item>
+    </string-array>
+</resources>

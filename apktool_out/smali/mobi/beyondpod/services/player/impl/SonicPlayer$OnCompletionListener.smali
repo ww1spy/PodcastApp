@@ -1,0 +1,19 @@
+.class public interface abstract Lmobi/beyondpod/services/player/impl/SonicPlayer$OnCompletionListener;
+.super Ljava/lang/Object;
+.source "SonicPlayer.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lmobi/beyondpod/services/player/impl/SonicPlayer;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "OnCompletionListener"
+.end annotation
+
+
+# virtual methods
+.method public abstract onCompletion(Lmobi/beyondpod/services/player/impl/SonicPlayer;)V
+.end method

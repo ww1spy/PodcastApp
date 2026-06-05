@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="FeedContentItemTemplate_H_Margin">70</integer>
+    <integer name="FeedContentItemTemplate_V_Margin">30</integer>
+    <integer name="ad_layout_type">4</integer>
+    <integer name="card_layout_type">2</integer>
+    <integer name="episode_card_playlist_description_maxLines">6</integer>
+    <integer name="mini_player_style">2</integer>
+    <integer name="player_time_font_size">16</integer>
+    <integer name="player_title_font_size">20</integer>
+    <integer name="publisherList_num_columns">4</integer>
+    <integer name="screen_size">600</integer>
+</resources>

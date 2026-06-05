@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:updatePeriodMillis="0" android:initialLayout="@layout/bp_appwidget_lockscreen" android:configure="mobi.beyondpod.ui.dialogs.WidgetPreferences" android:previewImage="@drawable/app_widget_preview_lockscreen" android:resizeMode="vertical" android:widgetCategory="keyguard"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

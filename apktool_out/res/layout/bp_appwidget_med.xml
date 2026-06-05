@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/widget_bg_image_light" android:background="@drawable/appwidget_lt_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/widget_bg_light" />
+    <ImageView android:id="@id/widget_bg_image_dark" android:background="@drawable/appwidget_dark_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/widget_bg_dark" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="8.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/album_art" android:layout_width="@android:dimen/notification_large_icon_width" android:layout_height="@android:dimen/notification_large_icon_height" android:src="@drawable/albumart_mp_unknown_list" android:scaleType="center" android:contentDescription="@string/album_art_unknown_list" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/titleArea" android:background="?android:selectableItemBackground" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textAppearance="@style/WidgetTitleText" android:ellipsize="marquee" android:id="@id/title" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="8.0dip" android:layout_marginEnd="3.0dip" />
+            <TextView android:textAppearance="@style/WidgetSubTitleText" android:textColor="#ffcccccc" android:ellipsize="marquee" android:id="@id/artist" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#ff555555" android:shadowDx="1.0" android:shadowDy="0.0" android:shadowRadius="1.0" android:layout_marginStart="8.0dip" android:layout_marginEnd="3.0dip" />
+            <ImageView android:id="@id/podcastStreamable" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/appwidget_streaming" android:contentDescription="@string/podcast_streamable" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="155.0dip" android:layout_height="fill_parent">
+            <ImageButton android:id="@id/control_skip_back" android:background="?android:selectableItemBackground" android:layout_width="@dimen/widget_transport_controls_button_width" android:layout_height="fill_parent" android:src="@drawable/appwidget_skip_back" android:scaleType="center" android:contentDescription="@string/control_skip_back" />
+            <FrameLayout android:id="@id/play_pause" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toStartOf="@id/control_skip_fwd" android:layout_toEndOf="@id/control_skip_back">
+                <ImageView android:layout_gravity="center" android:id="@id/play_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/appwidget_play_progress_0" android:scaleType="center" android:contentDescription="@string/play_progress" />
+                <ImageView android:layout_gravity="center" android:id="@id/control_play" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/appwidget_play" android:scaleType="center" android:contentDescription="@string/control_play" />
+            </FrameLayout>
+            <ImageButton android:id="@id/control_skip_fwd" android:background="?android:selectableItemBackground" android:layout_width="@dimen/widget_transport_controls_button_width" android:layout_height="fill_parent" android:src="@drawable/appwidget_skip_fwd" android:scaleType="center" android:contentDescription="@string/control_skip_fwd" android:layout_alignParentEnd="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/playlist_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_alignStart="@id/control_skip_fwd" android:layout_alignEnd="@id/control_skip_fwd" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

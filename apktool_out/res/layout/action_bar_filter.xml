@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="120.0dip" android:layout_marginEnd="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/ActionBarTitleTextStyle" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextSwitcher android:id="@id/subTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="80.0dip" android:inAnimation="@anim/slide_in_from_top" android:outAnimation="@anim/slide_out_to_bottom" />
+</LinearLayout>

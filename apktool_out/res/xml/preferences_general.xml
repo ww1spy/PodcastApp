@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_general_title" android:key="general_preferences" android:summary="@string/settings_general_summary"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/settings_theme_text" android:title="@string/settings_active_theme_title" android:key="ActiveTheme" android:summary="@string/settings_active_theme_summary" android:defaultValue="1" android:dialogTitle="@string/settings_active_theme_title" android:entryValues="@array/settings_theme_values" />
+    <ListPreference android:entries="@array/settings_startupView_text" android:title="@string/settings_user_home_screen_title" android:key="UserHomeScreen" android:summary="@string/settings_user_home_screen_summary" android:defaultValue="0" android:dialogTitle="@string/settings_user_home_screen_title" android:entryValues="@array/settings_startupView_values" />
+    <ListPreference android:entries="@array/settings_sortOrder_text" android:title="@string/settings_feedSortOrder_title" android:key="FeedsSortOrder" android:summary="@string/settings_feedSortOrder_summary" android:dialogTitle="@string/settings_feedSortOrder_title" android:entryValues="@array/settings_sortOrder_values" />
+    <ListPreference android:entries="@array/settings_feedSelectedAction_text" android:title="@string/settings_feedSelectedAction_title" android:key="FeedSelectedAction" android:summary="@string/settings_feedSelectedAction_summary" android:defaultValue="0" android:dialogTitle="@string/settings_feedSelectedAction_title" android:entryValues="@array/settings_feedSelectedAction_values" />
+    <CheckBoxPreference android:title="@string/settings_allow_hiding_read_title" android:key="AllowHidingRead" android:summary="@string/settings_allow_hiding_read_summary" />
+    <Preference android:title="@string/settings_feed_defaults_title" android:summary="@string/settings_feed_defaults_summary">
+        <intent android:action="FeedDfaultsPreference" />
+    </Preference>
+    <CheckBoxPreference android:title="@string/settings_beta_notification_title" android:key="NotifyForBetaReleases" android:summary="@string/settings_beta_notification_summary" />
+    <mobi.beyondpod.rsscore.AggregatorPreference android:title="@string/settings_google_reader_login_title" android:key="DisconnectAggregatorFeeds" />
+    <mobi.beyondpod.rsscore.PodcastStorageFolderPreference android:title="@string/settings_storage_folder_title" android:key="ChangeStorageFolder" />
+    <CheckBoxPreference android:title="@string/settings_allow_analytics_title" android:key="GatherAnalyticsData" android:summary="@string/settings_allow_analytics_summary" />
+</PreferenceScreen>

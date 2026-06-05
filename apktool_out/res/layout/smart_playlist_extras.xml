@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/bp_orange" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/add_smart_play" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="13.0sp" android:ellipsize="end" android:layout_gravity="center" android:id="@id/add_smart_play_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smart_playlist_add" android:singleLine="true" android:drawablePadding="4.0dip" android:textAllCaps="true" android:drawableStart="@drawable/ic_action_add_orange" style="@style/NavigatorButtonTextStyle" />
+    </FrameLayout>
+</FrameLayout>

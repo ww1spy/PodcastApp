@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="layout" name="player_transport_controls">@layout/player_transport_controls_all</item>
+</resources>

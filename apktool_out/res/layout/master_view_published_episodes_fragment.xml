@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.beyondpod.ui.views.base.BPSwipeRefreshLayout android:id="@id/publishedepisodes_holder" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <mobi.beyondpod.ui.views.publishedepisodes.PublishedEpisodesListView android:scrollbarStyle="outsideOverlay" android:id="@id/publishedepisodeslist" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</mobi.beyondpod.ui.views.base.BPSwipeRefreshLayout>

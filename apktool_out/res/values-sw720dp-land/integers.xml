@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="card_layout_type">3</integer>
+    <integer name="episode_card_playlist_ips">2</integer>
+    <integer name="publisherList_num_columns">7</integer>
+</resources>

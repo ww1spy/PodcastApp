@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="MENU_Settings_Selector">Asetukset</string>
+    <string name="MENU_about">Tietoja BeyondPodista</string>
+    <string name="MENU_add_to_playlist">Lisää soittolistaan</string>
+    <string name="MENU_addtohome_smartplay">Lisää kotiruutuun</string>
+    <string name="MENU_browser_copy_link">Kopioi linkki</string>
+    <string name="MENU_browser_load_images">Näytä kuvat</string>
+    <string name="MENU_browser_open_in_external">Avaa selaimessa</string>
+    <string name="MENU_browser_refresh">Lataa uudelleen</string>
+    <string name="MENU_browser_share_feed">Jaa syöte</string>
+    <string name="MENU_browser_share_link">Jaa linkki</string>
+    <string name="MENU_browser_share_podcast">Jaa jakso</string>
+    <string name="MENU_card_size_small">Kompaktit kortit</string>
+    <string name="MENU_clear_cache">Tyhjennä välimuistit</string>
+    <string name="MENU_delete_all_played_podcasts">Poista toistettu</string>
+    <string name="MENU_delete_category">Poista luokka</string>
+    <string name="MENU_delete_episode">Poista</string>
+    <string name="MENU_delete_feed">Poista syöte</string>
+    <string name="MENU_delete_podcast_episodes">Poista jaksoistani</string>
+    <string name="MENU_delete_smartplay">Poista</string>
+    <string name="MENU_display_settings">Näyttöasetukset</string>
+    <string name="MENU_download_all_playlist">Lataa kaikki soittolistasta</string>
+    <string name="MENU_dump_environment">Laitteen tiedot</string>
+    <string name="MENU_edit_category">Muokkaa luokkaa</string>
+    <string name="MENU_edit_feed">Muokkaa syötettä</string>
+    <string name="MENU_edit_smartplay">Muokkaa</string>
+    <string name="MENU_episode">Jakso</string>
+    <string name="MENU_exit_app">Poistu BeyondPodista</string>
+    <string name="MENU_feed">Syöte</string>
+    <string name="MENU_filter_episodes">Suodatin</string>
+    <string name="MENU_hide_played">Piilota toistetut</string>
+    <string name="MENU_hide_read">Piilota luetut</string>
+    <string name="MENU_import_selected">Tuo valitut</string>
+    <string name="MENU_lock_episode">Aseta suosikiksi</string>
+    <string name="MENU_mark_all_as_played">Merkitse kaikki toistetuiksi</string>
+    <string name="MENU_mark_all_as_read">Merkitse kaikki luetuiksi</string>
+    <string name="MENU_mark_played">Merkitse toistetuksi</string>
+    <string name="MENU_mark_read">Merkitse luetuksi</string>
+    <string name="MENU_mark_unplayed">Poista toistetuista</string>
+    <string name="MENU_mark_unread">Merkitse lukemattomaksi</string>
+    <string name="MENU_media_route">Toista…</string>
+    <string name="MENU_move_to_bottom">Siirrä alimmaiseksi</string>
+    <string name="MENU_move_to_top">Siirrä ylimmäiseksi</string>
+    <string name="MENU_open_episode_feed">Avaa syöte…</string>
+    <string name="MENU_open_search">Etsi</string>
+    <string name="MENU_opml_search">Etsi</string>
+    <string name="MENU_play_episodes">Toista jaksot</string>
+    <string name="MENU_play_in_external_player">Toista ulkoisessa soittimessa</string>
+    <string name="MENU_podcast_info">Näytä jakson ilmoitukset</string>
+    <string name="MENU_remove_from_playlist">Poista soittolistasta</string>
+    <string name="MENU_reorder_categories">Järjestä luokat</string>
+    <string name="MENU_reset_tips">Palauta vinkit ja varoitukset</string>
+    <string name="MENU_set_update_schedule">Määritä päivitysaikataulu</string>
+    <string name="MENU_setdefault_smartplay">Aseta oletukseksi</string>
+    <string name="MENU_show_played">Näytä toistetut</string>
+    <string name="MENU_show_read">Näytä luetut</string>
+    <string name="MENU_sort_podcasts">Järjestä</string>
+    <string name="MENU_start_download">Lataa</string>
+    <string name="MENU_stop_browser_load">Keskeytä</string>
+    <string name="MENU_stop_update">Keskeytä</string>
+    <string name="MENU_suggest_feature">Ohjeet ja palaute</string>
+    <string name="MENU_unlock_app">Hanki PRO!</string>
+    <string name="MENU_unlock_episode">Poista suosikeista</string>
+    <string name="MENU_update_my_episodes">Päivitä %s</string>
+    <string name="MENU_update_smartplay">Päivitä syötteet</string>
+    <string name="MENU_video_as_audio">Toista videot audiona</string>
+    <string name="MENU_view_help">Ohjeet</string>
+    <string name="MENU_view_log_file">Näytä BeyondPod-loki</string>
+    <string name="MENU_view_logcat_file">Näytä Android-loki</string>
+    <string name="MENU_view_logs">Näytä lokit...</string>
+    <string name="MENU_view_update_log">Näytä päivitysloki</string>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">POIS KÄYTÖSTÄ</string>
+    <string name="abc_capital_on">KÄYTÖSSÄ</string>
+    <string name="abc_search_hint">Haku…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Kutista</string>
+    <string name="about_dialog_about_beyondpod">Tietoja BeyondPodista</string>
+    <string name="about_dialog_close">Sulje</string>
+    <string name="about_dialog_e_mail_support">Sähköpostituki</string>
+    <string name="about_dialog_environment_info">Laitteen tiedot</string>
+    <string name="about_dialog_expires">Päättyy</string>
+    <string name="about_dialog_licensed_to">Lisenssityyppi</string>
+    <string name="add_feed_dialog_title">Lisää syöte</string>
+    <string name="add_feed_dlg_enter_feed_url">Syötä syötteen osoite</string>
+    <string name="add_feed_dlg_import_from_google_reader">Tuo Feedlysta</string>
+    <string name="add_feed_dlg_import_from_opml_file">Tuo OPML-tiedosto</string>
+    <string name="add_feed_dlg_import_from_sd_card_folder">Lisää kansio virtuaalisena syötteenä</string>
+    <string name="add_feed_import_feeds_title">Tuo syötteet</string>
+    <string name="add_feed_subscribe">Tilaa</string>
+    <string name="adv_settings_allow_pultorefresh_summary">"Päivitä syötteet ja lataa jaksot liu'uttamalla"</string>
+    <string name="adv_settings_allow_pultorefresh_title">"Salli päivittäminen liu'uttamalla"</string>
+    <string name="adv_settings_attach_file_when_sharing_summary">Jakson jaettaessa liitä ladattu jaksotiedosto. Ota käyttöön, kun jaat Droboxiin, Google Driveen jne.</string>
+    <string name="adv_settings_attach_file_when_sharing_title">Liitä jaksotiedostot jaettaessa</string>
+    <string name="adv_settings_cds_sync_furthest_pos_summary">Synkronoi jakson toistokohta vain, jos etäjakson toistokohta on pidemmällä</string>
+    <string name="adv_settings_cds_sync_furthest_pos_title">Synkronoi pidemmällä toistetun jakson mukaan</string>
+    <string name="adv_settings_custom_cds_settings_summary">Älä muuta (ellet tiedä mitä olet tekemässä)</string>
+    <string name="adv_settings_custom_cds_settings_title">Virheenkorjausasetus</string>
+    <string name="adv_settings_custom_sdcard_location_summary">Mukauta sijainti, johon haluat tallentaa ladatut podcast-jaksot</string>
+    <string name="adv_settings_custom_sdcard_location_title">Jakson latauspolku</string>
+    <string name="adv_settings_enable_cds_settings_dlg_msg">"Jaksosynkronointi synkronoi jaksojen toistokohdat eri laitteiden välillä.
+
+Jaksosynkronointi toimii tällä hetkellä rajoitetussa beta-vaiheessa ja voi sisältää virheitä.
+
+Jos haluat osallistua beta-ryhmään, löydät lisää tietoa BeyondPodin tukifoorumilta: www.beyondpod.com/forum"</string>
+    <string name="adv_settings_enable_cds_settings_dlg_title">Varoitus - Beta-ominaisuus!</string>
+    <string name="adv_settings_enable_logging_summary">Mahdollistaa yksityiskohtaisen sovelluslokin</string>
+    <string name="adv_settings_enable_logging_title">Lokin kirjaaminen</string>
+    <string name="adv_settings_http_timeout_summary">Oletusaikakatkaisun sekunteina HTTP-yhteyksille, kun päivitetään syötteitä tai ladataan podcasteja</string>
+    <string name="adv_settings_http_timout_title">Yhteyden aikakatkaisu</string>
+    <string name="adv_settings_http_user_agent_summary">Kirjoita koko käyttäjäagentin merkkijono tai MO (Mozillan) tai IE (Internet Explorerin)</string>
+    <string name="adv_settings_http_user_agent_title">Käyttäjäagentti</string>
+    <string name="adv_settings_keep_screen_on_if_wifi_summary">Pitää näytön päällä päivittäessä WiFin kautta. (Valitse, jos WiFi-päivitykset epäonnistuvat usein)</string>
+    <string name="adv_settings_keep_screen_on_if_wifi_title">Näyttö päällä WiFi-päivityksen aikana</string>
+    <string name="alert_dialog_allow">Salli</string>
+    <string name="alert_dialog_cancel">Peruuta</string>
+    <string name="alert_dialog_close">Sulje</string>
+    <string name="alert_dialog_continue">Jatka</string>
+    <string name="alert_dialog_exit">Poistu BeyondPodista</string>
+    <string name="alert_dialog_external_player_help">Soittimen ohjeet</string>
+    <string name="alert_dialog_feed_help">Ohjeet</string>
+    <string name="alert_dialog_ignore">Ohita</string>
+    <string name="alert_dialog_no">Ei</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_reset">Vaihda</string>
+    <string name="alert_dialog_save">Tallenna</string>
+    <string name="alert_dialog_try_external_player">Kokeile ulkopuolista soitinta</string>
+    <string name="alert_dialog_yes">Kyllä</string>
+    <string name="android_auto_categories_folder">Luokat</string>
+    <string name="android_auto_feeds_folder">Syötteet</string>
+    <string name="android_auto_trial_expired">BeyondPodin kokeilujakso on päättynyt!</string>
+    <string name="app_shareLink">Tilaa BeyondPodiin</string>
+    <string name="application_error_access_denied">Selvä... mutta BeyondPod ei voi käyttää muistikorttiasi (päivittää syötteitä tai ladata/poistaa/siirtää jaksoja)</string>
+    <string name="application_error_access_granted">Kiitos! BeyondPod voi nyt käyttää muistikorttiasi.</string>
+    <string name="application_error_access_granted_but_still_cant_write">"Oho... Kaikki ei ole kohdallaan!
+
+BeyondPodille annettiin oikeus käyttää muistikorttiasi, mutta silti jostain syystä siihen ei voitu kirjoittaa.
+
+Yritä käynnistää laite uudelleen."</string>
+    <string name="application_error_access_granted_retry">"Lupa myönnetty!
+Yritä kokeile toimintoa uudelleen."</string>
+    <string name="application_error_access_request">Salli käyttö</string>
+    <string name="application_error_invalid_reader_login">"Todennäköisesti et ole kirjautunut Feedlyyn tai viimeinen istunto on vanhentunut!
+
+Paina Kirjaudu-painiketta kirjautuaksesi sisään ja yritä sitten päivittää syötteesi"</string>
+    <string name="application_error_invalid_reader_login_button_text">Kirjaudu Feedlyyn</string>
+    <string name="application_error_message_dialog_title">Salakavala virhe</string>
+    <string name="application_error_permission_request">Hyväksymispyyntö</string>
+    <string name="application_error_storage_card_corrupted">"BeyondPod epäonnistui kirjoittamaan SD-kortillesi!
+
+Joissain tapauksissa tämä ongelma voidaan korjata käynnistämällä laite uudelleen, ja jos uudelleenkäynnistys ei auta, silloin alusta SD-kortti uudelleen."</string>
+    <string name="application_error_storage_card_read_needs_access_permission">BeyondPod tarvitsee käyttöoikeuden käyttää muistikorttiasi (SD).</string>
+    <string name="application_error_storage_card_read_needs_write_permission">BeyondPod tarvitsee käyttöoikeuden jaksojen tallentamiseen muistikortillesi (SD).</string>
+    <string name="application_error_storage_card_read_only_kitkat">"Android KitKatin tuomien ulkoisten tallennusmedioiden rajoitusten takia BeyonPod ei voi enää kirjoittaa nykyiseen latauskansioosi.
+
+Käytä: Asetukset, Yleiset ja Podcast-latauskansio valitaksesi eri latauskansio."</string>
+    <string name="application_licensed_to">.</string>
+    <string name="audiobook_search_hint">Kirjoita kirjailijan tai teoksen nimi</string>
+    <string name="auto_now_playing">Nyt toistetaan</string>
+    <string name="auto_playlist">Soittolista</string>
+    <string name="br_backup_command_summary">Varmuuskopioi asetukset ja syötetilaukset. Ladattuja jaksoja ei varmuuskopioida</string>
+    <string name="br_backup_command_title">Varmuuskopiointi</string>
+    <string name="br_backup_failed">"Varmuuskopiointi epäonnistui!
+
+%s"</string>
+    <string name="br_backup_lost_on_uninstall_warning_msg">"Nykyinen Varmuuskopiointisijainti on kansio, joka poistetaan, jos poistat BeyondPodin asennuksen.
+
+Jos haluat säilyttää varmuuskopiosi, suosittelemme käyttämään 'Jaa varmuuskopio' lähettääksesi se Dropboxiin, Google Driveen, sähköpostiin jne. säilytettäväksi toiselle laitteelle!"</string>
+    <string name="br_backup_protected_feeds_warning_msg">"%s syötteistäsi on suojattu salasanalla!
+
+Syötteen salasanat ovat varmuuskopion mukana ja pahantahtoisella monsterilla on mahdollisuus päästä niihin käsiksi.
+
+Varmista, että pidät varmuuskopion turvassa!"</string>
+    <string name="br_backup_was_saved_to">"Varmuuskopio on tallennettu sijaintiin:
+
+%s"</string>
+    <string name="br_last_backup">Viimeisin varmuuskopiointi: %s</string>
+    <string name="br_no_backups_available">%s sijainnissa ei ole varmuuskopiotiedostoja</string>
+    <string name="br_restore_command_summary">Palauta asetukset ja syötetilaukset</string>
+    <string name="br_restore_command_title">Palauta</string>
+    <string name="br_restore_complete">"Palautus on valmis!
+
+BeyondPod käynnistyy uudelleen ottaakseen uudet asetukset käyttöön."</string>
+    <string name="br_restore_failed">"Palautus epäonnistui!
+
+%s"</string>
+    <string name="br_restore_warning_msg" formatted="false">"Olet palauttamassa varmuuskopiota BeyondPodin versiosta %s
+, tehty laitteella %s, aikana %s!
+
+Tämä korvaa asetukset, syötteet ja lataushistorian.
+
+ Jatketaanko palautusta?"</string>
+    <string name="br_restore_warning_title">BeyondPodin palautus</string>
+    <string name="br_select_backup_to_restore">Valitse palautettava varmuuskopio</string>
+    <string name="br_select_backup_to_share">Valitse jaettava varmuuskopio</string>
+    <string name="br_settings_command_summary">%s</string>
+    <string name="br_settings_command_title">Varmuuskopion ja palautuksen sijainti</string>
+    <string name="br_share_backup_using">Jaa varmuuskopio käyttäen…</string>
+    <string name="br_share_command_summary">Lähetä varmuuskopio toiselle laitteelle (käyttämällä sähköpostia tai jakopalvelua, kuten Dropbox, Box.com jne.)</string>
+    <string name="br_share_command_title">Jaa varmuuskopio</string>
+    <string name="cancel_button">Cancel Button</string>
+    <string name="card_section_favorite_episodes">Suosikkijaksot</string>
+    <string name="card_section_publisher_label">Päivitetty</string>
+    <string name="card_section_recently_played">Viimeksi toistetut</string>
+    <string name="card_section_what_is_new">Uusimmat jaksot</string>
+    <string name="cast_notification_connected_message">Yhdistetty näyttöön %1$s</string>
+    <string name="cast_notification_connecting_message">Yhdistetään näyttöön %1$s</string>
+    <string name="cast_notification_default_channel_name">Cast</string>
+    <string name="cast_notification_disconnect">Katkaise yhteys</string>
+    <string name="categories_num_feeds">%s syötettä</string>
+    <string name="category_all_episodes">Kaikki jaksot</string>
+    <string name="category_all_feeds">Kaikki syötteet</string>
+    <string name="category_editor_dialog_add_category">Lisää luokka</string>
+    <string name="category_home_page">Mitä toistetaan</string>
+    <string name="category_properties_category_color">Luokan väri</string>
+    <string name="category_properties_feed_name">Käyttäjäystävällinen luokan nimi (esim. Uutiset, Musiikki, Urheilu jne.)</string>
+    <string name="category_properties_title">Muokkaa luokkaa</string>
+    <string name="category_properties_update_schedule_msg">"• Ajoitetut päivitykset alkavat erikseen määritetyllä 'alkamisaikana' ja päättyy saman päivän keskiyöllä.
+• Vain"<b> yksi</b> ajoitettu päivitys voidaan suorittaa tiettynä ajankohtana!</string>
+    <string name="category_properties_update_schedule_msg_top">BeyondPodissa syötepäivitykset on ajoitettu luokan tason mukaan. Aikataulu päivittää ja lataa uudet jaksot kaikille syötteille tälle luokalle.</string>
+    <string name="category_properties_vld_NameEmpty">Kirjoita luokan nimi</string>
+    <string name="category_properties_vld_categoryExists">Samanniminen luokka on jo olemassa!</string>
+    <string name="category_props_new_category">Uusi luokka</string>
+    <string name="category_props_unable_to_modify_category">Luokan muokkaaminen ei onnistunut!</string>
+    <string name="category_schedule_active">Päivitä aikataulun mukaisesti</string>
+    <string name="category_schedule_please_make_sure_that_start_times_are_at_least_15_minutes_apart">Varmista, että aloitusaikojen välillä on vähintään 15 minuutin tauko!</string>
+    <string name="category_schedule_repeat_title">Toista joka</string>
+    <string name="category_schedule_the_start_time_of_this_update_overlaps_with_category">Tämän päivityksen aloitusaika on päällekkäin luokan kanssa</string>
+    <string name="category_schedule_time_title">Aloita</string>
+    <string name="category_uncategorized">Luokittelemattomat</string>
+    <string name="cc_cast_to">Laitteeseen lähettäminen</string>
+    <string name="cc_casting_to">Lähetetään laitteeseen %s</string>
+    <string name="cds_account_exists">Tili on jo olemassa!</string>
+    <string name="cds_account_quota_reached">Meidän jaksosynkronoinnin beta-ryhmä on toistaiseksi täynnä. Toivomme pystyvämme lisäämään uusia käyttäjiä mahdollisimman pian. Seuraa tilannetta foorumilta.</string>
+    <string name="cds_awaiting_verification_msg">"Lähetimme vahvistuksen sähköpostiin: %s
+
+Avaa linkki sähköpostista aktivoidaksesi tilisi!"</string>
+    <string name="cds_awaiting_verification_title">Tiliäsi ei ole vielä aktivoitu!</string>
+    <string name="cds_create_account_text">Luo tili</string>
+    <string name="cds_create_text">Luo</string>
+    <string name="cds_device_id">Laitetunnus: %s</string>
+    <string name="cds_enable_sync">Ota jaksosynkronointi käyttöön tässä laitteessa</string>
+    <string name="cds_help">Kuinka jaksosynkronointi toimii</string>
+    <string name="cds_info_forgot_password">Unohtuiko salasana?</string>
+    <string name="cds_info_label_create">Luotuasi Jaksosynkronointi-tilin, käytä samaa tiliä kaikissa laitteissasi</string>
+    <string name="cds_info_title1">Jaksosynkronointi synkronoi jaksojen toistokohdat eri laitteiden välillä. Katso %s jos haluat lisätietoja.</string>
+    <string name="cds_invalid_email">Sähköpostiosoite on virheellinen</string>
+    <string name="cds_invalid_password">Salasana on liian lyhyt! Syötä vähintään 5 merkkiä</string>
+    <string name="cds_last_sync">Synkronoitu viimeksi: %s</string>
+    <string name="cds_logaout_text">Kirjaudu ulos</string>
+    <string name="cds_login_failed">Virheellinen käyttäjänimi tai salasana!</string>
+    <string name="cds_login_text">Kirjaudu sisään</string>
+    <string name="cds_menu_send_feed_to_devices">Lähetä syöte muille laitteille</string>
+    <string name="cds_menu_sync">Jaksosynkronointi</string>
+    <string name="cds_menu_sync_show_log">Näytä synkronointiloki</string>
+    <string name="cds_menu_sync_start">Käynnistä jaksosynkronointi</string>
+    <string name="cds_network_error">"Ei voida yhdistää BeyondPod-palvelimiin!
+Yritä myöhemmin uudelleen"</string>
+    <string name="cds_not_available_in_lite_version">BeyondPodin kokeiluaika on päättynyt! Jaksosynkronointi on vain käytettävissä Pro-versiossa.</string>
+    <string name="cds_notification_applying_remote_changes">Hyväksytään etämuutokset</string>
+    <string name="cds_notification_checking_for_remote_changes">Tarkistetaan etämuutoksia</string>
+    <string name="cds_notification_publishing_local_changes">Julkaistaan paikalliset muutokset</string>
+    <string name="cds_notification_syncing_local_changes">Synkronoidaan paikalliset muutokset</string>
+    <string name="cds_option_allow_remote_episode_deletions">Kun jakso poistetaan muista laitteistani, poista myös tästä laitteesta.</string>
+    <string name="cds_option_allow_remote_feed_additions">Hyväksy syötteitä muista laitteista</string>
+    <string name="cds_password">Salasana</string>
+    <string name="cds_password_dont_match">Salasanat eivät täsmää</string>
+    <string name="cds_retype_password">Kirjoita salasana uudelleen</string>
+    <string name="cds_sync_settings">Synkronointiasetukset</string>
+    <string name="cds_user_name">Sähköpostiosoite</string>
+    <string name="checking_for_alternatives">Etsitään…</string>
+    <string name="clear_cache_dio_cache_cleared">Välimuisti tyhjennetty!</string>
+    <string name="color_picker_pick_a_category_color">Valitse luokan väri</string>
+    <string name="command_manager_beyondpod_feed_search">BeyondPod-syötehaku</string>
+    <string name="command_manager_there_is_nothing_to_play">Ei ole mitään toistettavaa!</string>
+    <string name="command_manager_unable_to_open_url">URL-osoitteen avaaminen ei onnistunut!</string>
+    <string name="command_manager_unable_to_start_external_player">Ei voitu käynnistää 3. osapuolen sovellusta!</string>
+    <string name="command_manager_unable_to_start_video_player">Ei voitu käynnistää videosoitinta!</string>
+    <string name="command_manager_update_and_download_log">Päivitys- ja latausloki</string>
+    <string name="common_google_play_services_enable_button">Ota käyttöön</string>
+    <string name="common_google_play_services_enable_text">%1$s ei toimi, ellet ota Google Play Palveluita käyttöön.</string>
+    <string name="common_google_play_services_enable_title">Ota Google Play Palvelut käyttöön</string>
+    <string name="common_google_play_services_install_button">Asenna</string>
+    <string name="common_google_play_services_install_text">%1$s ei toimi ilman Google Play Palveluita, jotka puuttuvat laitteeltasi.</string>
+    <string name="common_google_play_services_install_title">Asenna Google Play Palvelut</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play Palveluiden saatavuus</string>
+    <string name="common_google_play_services_notification_ticker">Virhe Google Play -palveluissa</string>
+    <string name="common_google_play_services_unknown_issue">Sovelluksella %1$s on ongelmia Google Play Palveluiden kanssa. Yritä uudelleen.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s ei toimi ilman Google Play Palveluita, joita laitteesi ei tue.</string>
+    <string name="common_google_play_services_update_button">Päivitä</string>
+    <string name="common_google_play_services_update_text">%1$s ei toimi, ellet päivitä Google Play Palveluita.</string>
+    <string name="common_google_play_services_update_title">Päivitä Google Play Palvelut</string>
+    <string name="common_google_play_services_updating_text">%1$s ei toimi ilman Google Play Palveluita, joita päivitetään tällä hetkellä.</string>
+    <string name="common_google_play_services_wear_update_text">Uusi Google Play Palveluiden versio tarvitaan. Se päivittyy pian.</string>
+    <string name="common_open_on_phone">Avaa puhelimessa</string>
+    <string name="common_signin_button_text">Kirjaudu sisään</string>
+    <string name="common_signin_button_text_long">Kirjaudu Google-tilille</string>
+    <string name="contextmenu_add_contact">Lisää yhteystieto</string>
+    <string name="contextmenu_copy">Kopioi</string>
+    <string name="contextmenu_copylink">Kopioi linkin URL-osoite</string>
+    <string name="contextmenu_dial_dot">Valitsin…</string>
+    <string name="contextmenu_map">Kartta</string>
+    <string name="contextmenu_open_in_browser">Avaa selaimessa</string>
+    <string name="contextmenu_send_mail">Lähetä sähköpostia</string>
+    <string name="contextmenu_sharelink">Jaa linkki</string>
+    <string name="contextmenu_view_image">Näytä kuva</string>
+    <string name="date_time_also_this_month">Aiemmin tässä kuussa</string>
+    <string name="date_time_also_this_week">Aiemmin tällä viikolla</string>
+    <string name="date_time_also_this_year">Aiemmin tänä vuonna</string>
+    <string name="date_time_last_month">Viime kuussa</string>
+    <string name="date_time_last_week">Viime viikolla</string>
+    <string name="date_time_older">Vanhemmat jaksot</string>
+    <string name="date_time_this_month">Tässä kuussa</string>
+    <string name="date_time_this_week">Tällä viikolla</string>
+    <string name="date_time_this_year">Tänä vuonna</string>
+    <string name="date_time_today">Tänään</string>
+    <string name="delete_category_dialog_data">data</string>
+    <string name="delete_feed_diolog_feed">syöte</string>
+    <string name="delete_feed_diolog_sure_you_want_to_delete">Oletko varma, että haluat poistaa</string>
+    <string name="delete_podcast_dlg_episodes">jaksot</string>
+    <string name="delete_podcast_dlg_favorite">Suosikki</string>
+    <string name="delete_podcast_dlg_locked">Lukittu</string>
+    <string name="dlg_DeleteCategoryMsg">"Haluatko varmasti poistaa luokan:
+
+ %s?"</string>
+    <string name="dlg_DeleteFeedAndPodcastsMsg">"Oletko varma, että haluat poistaa:
+
+%s?
+
+(Tämä poistaa myös kaikki ladatut podcastit tästä syötteestä.)"</string>
+    <string name="dlg_DeleteFeedMsg">"Oletko varma, että haluat poistaa:
+
+%s?"</string>
+    <string name="dlg_DeletePodcastMsg">"Oletko varma, että haluat poistaa:
+
+%s"</string>
+    <string name="dlg_about_Msg">"Jos sinulla on kysymyksiä tai kommentoitavaa, jolloin vieraile
+
+www.beyondpod.com
+
+
+Tekijänoikeudet BeyondPod Team 2008–2014
+Kaikki oikeudet pidätetään.
+
+Avoimen lähdekoodin lisenssit
+www.beyondpod.mobi/osl"</string>
+    <string name="dlg_clear_feed_cache">Tyhjennä syötevälimuisti</string>
+    <string name="dlg_clear_feed_cache_msg">Syötevälimuisti sijaitsee SD-kortillasi ja sisältää syötteiden paikalliset versiot.</string>
+    <string name="dlg_clear_podcast_imgage_cache">Tyhjennä jakson kuvavälimuisti</string>
+    <string name="dlg_clear_podcast_imgage_cache_msg">Aiheuttaa sen, että BeyondPod lataa jaksokuvat uudelleen laitteen mediatietokannasta.</string>
+    <string name="dlg_delete_locked_podcasts_msg">Poista myös lukitut podcast-jaksot</string>
+    <string name="dlg_dont_show_again_msg">Älä näytä tätä viestiä uudelleen</string>
+    <string name="dlg_enable_speedup_btn_buy">Toistonopeustuki</string>
+    <string name="dlg_enable_speedup_plugin_msg">"BeyondPod mahdollistaa jaksojen toistamisen eri nopeuksilla.
+
+"<i>Toistonopeustuki löytyy ainoastaan beta-versiosta ja ei välttämättä toimi luotettavasti kaikissa laitteissa tai podcast-muodoissa.</i></string>
+    <string name="dlg_invalid_cant_connect_tofeed_URL_message">"Ei voitu muodostaa yhteyttä syötteen verkkosivulle.
+
+Syötteen osoite voi olla virheellinen tai sivustolla voi olla väliaikaisesti yhteysongelmia."</string>
+    <string name="dlg_invalid_feed_URL_generic_message">"Todennäköisesti verkkosivun URL-osoite liittyy syötteeseen kuin, sen sijaan itse RSS-syötteeseen. Yritä avata tämä verkkosivu selaimessa ja etsi suora linkki RSS-syötteeseen.
+
+Napsauta alapuolella olevaa 'Ohjeet'-painikketta saadaksesi tietoja kuinka etsitään verkkosivuilta RSS-syötelinkit."</string>
+    <string name="dlg_invalid_feed_URL_itunes_message">"Näyttää siltä, että tämä on iTunes-syötteen URL-osoite.
+
+Napsauta alla olevaa 'Ohjeet'-painiketta saadaksesi tietoja siitä, miten iTunesissa etsitään linkkejä RSS-syötteisiin."</string>
+    <string name="dlg_invalid_feed_URL_message">"Syötteen URL-osoite ei näytä olevan kelvollinen RSS- tai Atom-syöte.
+
+%s"</string>
+    <string name="dlg_invalid_feed_URL_mp3_message">"Näyttää siltä, että tämä on MP3-tiedoston URL-osoite sisältää yhden jakson. Yritä avata podcastin verkkosivu selaimessa ja etsi suora RSS-syötelinkki.
+
+Napsauta alla olevaa 'Ohjeet'-painiketta saadaksesi tietoja siitä, miten verkkosivuilta etsitään linkkejä RSS-syötteisiin."</string>
+    <string name="dlg_invalid_feed_URL_title">Syötteen URL-ongelma</string>
+    <string name="dlg_playback_speed_not_available_in_lite_version">"BeyondPodin kokeiluaika on päättynyt!
+
+Toistonopeuden muuttaminen on vain käytettävissä Pro-versiossa."</string>
+    <string name="dlg_purchase_btn_Msg">Osta avausavain</string>
+    <string name="dlg_purchase_info_Msg">"Kun kokeilujaksosi päättyy, BeyondPod palautuu ilmaisversioon, jossa osa mukavuutta lisäävistä ominaisuuksista on poistettu käytöstä.
+"</string>
+    <string name="dlg_purchase_info_header_did">BeyondPodin kokeiluaikasi on päättynyt</string>
+    <string name="dlg_purchase_info_header_will">BeyondPodin kokeiluaikasi on päättymässä</string>
+    <string name="dlg_purchase_speedup_plugin_doNotshow">Poista käytöstä ja piilota toistonopeuden painike</string>
+    <string name="dlg_purchase_speedup_plugin_doNotshowInfo">Voit ottaa nopeudensäätimen käyttöön myöhemmin. Mene Asetuksiin, Soitin ja sitten Toistonopeus.</string>
+    <string name="dlg_purchase_speedup_plugin_doShowInfo">Jos toistonopeus ei toimi luotettavasti, jolloin voit kytkeä sen pois päältä: Asetukset, Soitin ja Toistonopeus.</string>
+    <string name="dlg_purchase_speedup_plugin_title">Toistonopeuden tuki</string>
+    <string name="dlg_purchase_title">Avaa BeyondPod</string>
+    <string name="dlg_purchase_why_pro_Msg">Miksi PRO?</string>
+    <string name="dlg_speedup_not_supported">Tämä jakso voidaan toistaa vain normaalinopeudella</string>
+    <string name="dlg_speedup_not_supported_for_streaming">Suoratoistetut jaksot voidaan toistaa vain normaalinopeudella</string>
+    <string name="dlg_user_warning_installed_on_sd_card_msg">"Näyttää siltä, että BeyondPod on asennettu SD-kortille. Vaikka BeyondPodia voidaan käyttää tällä tavalla, on olemassa 2 rajoitusta, joista sinun pitäisi olla tietoinen:
+
+ • BeyondPodin widgetit eivät ole käytettävissä.
+ • SD-kortin muuttaminen USB-muistiksi peruuttaa kaikki aikataulun tulevat syötepäivitykset, kunnes BeyondPod käynnistetään uudelleen.
+
+"<i>Jos laitteessa on riittävästi tilaa, on suositeltavaa, että siirrät BeyondPodin laitteen muistiin.</i></string>
+    <string name="dlg_user_warning_mark_all_played_msg">Oletko varma, että haluat merkitä KAIKKI tämän syötteen jaksot TOISTETUIKSI?</string>
+    <string name="dlg_user_warning_mark_all_read_msg">Oletko varma, että haluat merkitä syötteen kaikki viestit luetuiksi?</string>
+    <string name="dlg_user_warning_open_ext_player_msg">"Voit yrittää avata valitut kohteet ulkoisella sovelluksella.
+
+Napauta 'Jatka' ja BeyondPod etsii asennetut sovellukset, jotka voivat näyttää tätä sisältötyyppiä. Voit myös vaihtaa audio- ja videosoittimen oletukseksi 'Ulkoiseen' BeyondPodin asetuksista"</string>
+    <string name="dlg_user_warning_open_ext_player_title">Tarvitaan ulkoinen soitin</string>
+    <string name="dlg_user_warning_start_episode_download_msg">"Jaksojen lataaminen voi kuluttaa suuren määrän dataa!
+
+Suosittelemme, että käytät WiFi-yhteyttä tai kiinteähintaista datapakettia."</string>
+    <string name="dlg_user_warning_start_update_download_msg">"Tämä päivittää nykyisen luokan kaikki syötteet ja lataa uusimmat podcast-jaksot.
+
+Jakson lataus voi käyttää suuren määrän dataa, joten on suositeltavaa käyttää Wifi-yhteyttä tai rajoittamatonta datapakettia."</string>
+    <string name="dlg_user_warning_stream_failed_msg">Näyttää siltä, ​​että verkkoyhteys katkesi. Yritä myöhemmin uudelleen.</string>
+    <string name="dlg_user_warning_stream_failed_title">Videon suoratoisto-ongelma</string>
+    <string name="dlg_user_warning_stream_format_problem_msg">"Tämä videomuoto ei ole tuettu oletusvideosoittimessa.
+
+(Joitakin videoita voidaan toistaa ulkopuolisella videosoittimella. Napauta 'Soittimen ohjeet' saadaksesi lisätietoja)"</string>
+    <string name="dlg_user_warning_stream_format_problem_title">Videomuoto-ongelma</string>
+    <string name="dlg_user_warning_title">Varoitus</string>
+    <string name="download_agent_both_mobile_and_wifi_data_connections_are_allowed">"
+
+Mobiili- ja WiFi-yhteydet ovat sallittuja!"</string>
+    <string name="download_agent_insufficient_disk_space_to_complete_the_download_required">Tallennustila ei riitä suorittamaan latausta loppuun! Vaaditaan:</string>
+    <string name="download_agent_mobile_connections_not_allowed">"
+
+Mobiiliyhteydet eivät ole sallittuja.
+Voit sallia mobiiliyhteyksien käytön 'Syötepäivitys'-osiossa"</string>
+    <string name="download_agent_unable_to_establish_internet_connection">Verkkoyhteyden muodostaminen ei onnistunut!</string>
+    <string name="download_agent_wifi_allowed">"
+
+Podcastien lataaminen on tällä hetkellä sallittu vain WiFi-yhteyden kautta.
+Voit sallia podcastin lataamisen millä tahansa yhteydellä 'Syötepäivitys'-osiossa"</string>
+    <string name="download_engine_notification_connecting">Yhdistetään…</string>
+    <string name="download_engine_notification_downloaded">Ladattu</string>
+    <string name="download_engine_notification_downloading">Ladataan…</string>
+    <string name="download_engine_notification_feed">syöte</string>
+    <string name="download_engine_notification_feeds">syötettä</string>
+    <string name="download_engine_notification_found">Löytyi</string>
+    <string name="download_engine_notification_left_to_download">vielä ladattavana</string>
+    <string name="download_engine_notification_left_to_update">vielä päivitettävänä</string>
+    <string name="download_engine_notification_looking_for_new_podcasts_across">Etsitään uusia jaksoja</string>
+    <string name="download_engine_notification_more">lisää</string>
+    <string name="download_engine_notification_new">uusi</string>
+    <string name="download_engine_notification_new_podcasts">uutta jaksoa…</string>
+    <string name="download_engine_notification_of">määrästä</string>
+    <string name="download_engine_notification_podcast">jakso</string>
+    <string name="download_engine_notification_podcasts">jaksoa</string>
+    <string name="download_engine_notification_retrying">Yritetään uudelleen…</string>
+    <string name="download_engine_notification_updating">Päivitetään</string>
+    <string name="download_holder_preparing_for_download">Valmistellaan lataamista…</string>
+    <string name="drawer_close">Sulje sivuvalikko</string>
+    <string name="drawer_open">Avaa sivuvalikko</string>
+    <string name="error_CantCreateRootFolder">"BeyondPod ei kyennyt käyttämään SD-korttia!
+SD-kortissa voi olla virheitä tai on kirjoitussuojattu!"</string>
+    <string name="error_CantCreateRootFolderWorkaround">"
+
+(Joissakin laitteissa tämän kansion manuaalisesti luominen voi korjata ongelman. Vaihtoehtoisesti kokeile toista SD-korttia)"</string>
+    <string name="error_SDCardBusy">"BeyondPod ei pystynyt käyttämään SD-korttiasi!
+
+SD-kortti ei ole asennettu tai on tietokoneen käytössä."</string>
+    <string name="error_SDCardError">Havaittiin virhe, kun yritit käyttää SD-korttia. Tarkista kortti virheiden varalta.</string>
+    <string name="error_SDCardMissing">BeyondPod ei löytänyt SD-korttia!</string>
+    <string name="error_root_needs_permission">"Löysimme edellisen asennuksen BeyondPodista: 
+'%s' kansiosta.
+Käyttääksesi sitä BeyondPod tarvitsee luvan käyttää muistikorttiasi (SD).
+
+Jos haluat tehdä 'puhtaan' asennuksen, poistu BeyondPodista, poista ylläoleva kansio ja yritä uudelleen."</string>
+    <string name="export_to_opml_export_complete">Vienti valmis!</string>
+    <string name="export_to_opml_export_failed">Vienti epäonnistui!</string>
+    <string name="failed_to_connect_to_google_reader">"Feedlyyn yhdistäminen epäonnistui tai istunto saattaa olla vanhentunut.
+
+Yritä kirjautua uudelleen myöhemmin."</string>
+    <string name="failed_to_connect_to_google_reader_account_mgr">"Yhdistäminen Feedlyyn epäonnistui!
+
+Yritä myöhemmin uudelleen"</string>
+    <string name="feedList_num_unread">Uusi</string>
+    <string name="feed_content_beyondpod_help">BeyondPod-ohjeet</string>
+    <string name="feed_content_insufficient_space_to_download_podcast" formatted="false">"Ei ole riittävästi vapaata tilaa tämän jakson lataamiseen.
+
+Tämä jakso vaatii %s lataamiseen, mutta sinulla on vain vapaana %s määrästä '%s'"</string>
+    <string name="feed_content_list_view__max_s">(max %s)</string>
+    <string name="feed_content_list_view_beyondpod_faq">BeyondPodin UKK</string>
+    <string name="feed_content_list_view_configure">Määritä</string>
+    <string name="feed_content_list_view_disabled">Ei käytössä</string>
+    <string name="feed_content_list_view_episode_details">Jakson tiedot</string>
+    <string name="feed_content_list_view_episode_formats">Jaksomuodot</string>
+    <string name="feed_content_list_view_failed_to_add_reader_subscription_for_feed">Syötteen lisääminen Feedly-tilaukseen epäonnistui</string>
+    <string name="feed_content_list_view_feed_content">Syötteen sisältö</string>
+    <string name="feed_content_list_view_invalid_or_expired_google_reader_login">Virheellinen tai vanhentunut Feedly-kirjautuminen! (Voit muokata Feedly-kirjautumista napsauttamalla lisää syöte, tuo syötteet, sitten Tuo Feedlysta)</string>
+    <string name="feed_content_list_view_my_episodes">Omat jaksot</string>
+    <string name="feed_content_list_view_next_update">Seuraava päivitys</string>
+    <string name="feed_content_list_view_operation_failed">Toiminto epäonnistui!</string>
+    <string name="feed_content_list_view_this_feed_is_s_days_old">%s päivää sitten!</string>
+    <string name="feed_content_list_view_update_canceled">Päivitys peruttu!</string>
+    <string name="feed_content_list_view_update_failed">Päivitys epäonnistui!</string>
+    <string name="feed_item_list_empty_loading_content">Ladataan syötettä…</string>
+    <string name="feed_item_list_empty_no_items">Tällä syötteellä ei ole sisältöä!</string>
+    <string name="feed_item_list_empty_no_selected_feed">"Syötettä ei ole valittu.
+Valitse syöte syötelistasta vasemmalta valikosta"</string>
+    <string name="feed_item_list_empty_stop_update">Lopeta päivitys</string>
+    <string name="feed_item_list_empty_update">Päivitä</string>
+    <string name="feed_item_list_empty_updating">Päivitetän syötettä…</string>
+    <string name="feed_item_list_footer_has_hidden_items_l1">Jotkin kohteet on piilotettu.</string>
+    <string name="feed_item_list_footer_has_hidden_items_l2">Näytä kaikki</string>
+    <string name="feed_item_list_footer_reader_more_items_l1">Tämä syöte on määritetty lataamaan ensimmäiset %s merkintää Feedlystä.</string>
+    <string name="feed_item_list_footer_reader_more_items_l2"><u>Muuta</u></string>
+    <string name="feed_item_list_header_reader_not_subscribed_l1">Jos kaikki kohteet näkyvät luettuina, jolloin et voi merkitä syötettä Feedlyssä.</string>
+    <string name="feed_item_list_header_reader_not_subscribed_l2"><u>Lisää tämä syöte Feedlyyn</u></string>
+    <string name="feed_item_list_invalid_feed_auth_dlg_msg">"Syöte, jota yrität avata saattaa vaatia erityiskirjautumisen.
+
+Usein maksulliset tai premium-syötteet vaativat uudelleen kirjautumisen heidän verkkosivulla, kun internetosoite muuttuu (esim. kun yhdistää WiFi- tai matkapuhelinverkkoon).
+
+Paina 'Ohjeet'-painiketta saadaksesi lisätietoja."</string>
+    <string name="feed_item_list_invalid_feed_dlg_msg">"Ilmeni virhe viimeisen syötepäivityksen aikana!
+
+"<i>"Usein tämä johtuu väliaikaisesta yhteysongelmasta tai ongelma on syötteen julkaisijan verkkosivulla.
+
+Yritä päivittää syöte myöhemmin uudelleen. Jos ongelmat jatkuvat, paina Ohjeet-painiketta saadaksesi vianmääritysvihjeitä."</i></string>
+    <string name="feed_item_list_invalid_feed_dlg_title">Syöteongelma</string>
+    <string name="feed_item_list_invalid_feed_go_to_web_site_text">Syötteen verkkosivu</string>
+    <string name="feed_item_list_invalid_feed_help_text">Ohjeet</string>
+    <string name="feed_list_empty_all_read">"Kaikki syötteet on luettu!
+
+"<u>Näytä kaikki syötteet</u></string>
+    <string name="feed_list_hide_read">Piilota luetut syötteet</string>
+    <string name="feed_list_no_feeds_in_this_category">Tässä luokassa ei ole syötteitä</string>
+    <string name="feed_list_show_read">Näytä kaikki syötteet</string>
+    <string name="feed_patched_msg">"Käytössäsi olevan syötteen URL-osoitteessa ilmeni ongelma, mutta löysimme toisen osoitteen:
+
+%s
+
+, joka on todennäköisesti haluamasi.
+
+Haluatko käyttää sitä?"</string>
+    <string name="feed_properties_advanced_section">Lisäasetukset</string>
+    <string name="feed_properties_allow_deletions_msg">"Määrittää, jos paikalliset jaksot syötteessä voidaan poistaa automaattisesti (tehdäkseen tilaa uusille jaksoille päivityksen tai toiston lopun aikana). 'Salli jakson poistot' täytyy olla valittuna, jos haluat käyttää automaattista podcastien poisto-ominaisuutta."</string>
+    <string name="feed_properties_allow_deletions_title">Salli jaksojen poistot</string>
+    <string name="feed_properties_allow_deletions_vir_feed_msg">Määrittää, jos tämän syötteen (ja kaikki alasyötteet) jaksot voidaan automaattisesti poistaa tehdäkseen tilaa uusille jaksoille (esimerkiksi toiston loputtua).</string>
+    <string name="feed_properties_clear_custom_image_title">Poista kuva</string>
+    <string name="feed_properties_configure_defaults">Voit määrittää oletusasetukset, kun lisätään uusia syötteitä<u> täältä</u>.</string>
+    <string name="feed_properties_custom_image">Valitse kuva</string>
+    <string name="feed_properties_custom_image_msg">"Voit määrittää mukautetun kuvan tälle syötteelle, tallenna PNG- tai JPG-kuva SD-kortille ja varmista, että se näkyy laitteen galleriasovelluksessa. Käytä 'Valitse kuva' -painiketta löytääksesi ja valitaksesi haluamasi kuvan. (Kun olet määrittänyt kuvan, voit poistaa kuvan galleriasovelluksesta)."</string>
+    <string name="feed_properties_custom_image_title">Mukauta syötteen kuva</string>
+    <string name="feed_properties_download_history_clear_history">Tyhjennä syötteen lataushistoria</string>
+    <string name="feed_properties_download_history_mark_downloaded">Merkitse kaikki ladatuiksi</string>
+    <string name="feed_properties_download_history_msg">BeyondPod pitää kirjaa jokaisen syötteen ladatuista jaksoista. Napauttamalla \"Tyhjennä syötteen lataushistoria\" -painiketta poistaa syötteen lataushistorian, jonka jälkeen syötteen jaksot näkyvät, niin kuin niitä ei olisi koskaan ladattu. \"Merkitse kaikki ladatuiksi\" tekee päinvastoin - se merkitsee kaikki syötteen uudet jakso ladatuiksi (ilman, että tarvitsisi ladata niitä).</string>
+    <string name="feed_properties_download_history_title">Podcast-lataushistoria</string>
+    <string name="feed_properties_feed_categories_msg">Voit määrittää enintään 2 luokkaa syötteelle. Syötteen määrittäminen luokkaan sisältää myös automaattisesti syötteen päivityksen aikataulun luokan mukaan (jos sellainen on).</string>
+    <string name="feed_properties_feed_categories_title">Syötteen luokat</string>
+    <string name="feed_properties_feed_download_folder_msg">Tämä on kansio, johon BeyondPod lataa tämän syötteen jaksot. Jätä se tyhjäksi, jos haluat käyttää oletuslatauskansiota (tällä hetkellä %s) tai syötteessä ei ole jaksoja.</string>
+    <string name="feed_properties_feed_download_folder_title">Jakson latauskansio</string>
+    <string name="feed_properties_feed_download_folder_vir_feed_msg">Käynnistettäessä BeyondPod käy läpi tämän kansion (ja kaikki alikansiot) ja näyttää kaikki tiedostot, jotka se löytää \"virtuaalisina podcasteina\", jotka voidaan toistaa sisäisessä soittimessa.</string>
+    <string name="feed_properties_feed_download_folder_vir_feed_title">Virtuaalinen syötekansio</string>
+    <string name="feed_properties_feed_download_podcast_long_name_handler_msg">Jos jakson nimi on liian pitkä näytettäväksi, valitse mistä kohtaa haluat nimen katkeavan.</string>
+    <string name="feed_properties_feed_download_podcast_long_name_handler_title">Pitkät jaksojen nimet</string>
+    <string name="feed_properties_feed_download_podcast_sort_order_msg">Määritä järjestysperuste tämän syötteen paikallisille ladatuille tai suoratoistettaville jaksoille.</string>
+    <string name="feed_properties_feed_download_podcast_sort_order_title">Järjestä paikallisjaksot</string>
+    <string name="feed_properties_feed_fingerprint_type_msg">Määrite, miten BeyondPod pitäisi tunnistaa kaksoiskappaleet. (VAROITUS! Muuta ainoastaan, jos syöte lataa usein uudelleen vanhoja jaksoja. Tämän asetuksen muuttaminen palauttaa syötteen lataukset ja luetut/lukemattomat).</string>
+    <string name="feed_properties_feed_fingerprint_type_title">Kaksoiskappaleiden havaitseminen</string>
+    <string name="feed_properties_feed_login_msg">Jos syöte vaatii käyttäjätunnuksen ja salasanan, voit syöttää ne yllä oleviin kenttiin.</string>
+    <string name="feed_properties_feed_name_msg">Syötteen käyttäjäystävällinen nimi. (Jos jätät sen tyhjäksi, silloin nimeksi tulee syötedatassa oleva tieto)</string>
+    <string name="feed_properties_feed_name_title">Syötteen nimi</string>
+    <string name="feed_properties_feed_url_msg">RSS-syötteen osoite (alkuun http:// tai https://)</string>
+    <string name="feed_properties_feed_url_title">Syötteen osoite (URL)</string>
+    <string name="feed_properties_force_item_sort">Syötteen viestin järjestys</string>
+    <string name="feed_properties_force_item_sort_msg">Valitse järjestys, kuinka haluat nähdä tämän syötteen kohteet (viestit) syötesisältönäkymässä.</string>
+    <string name="feed_properties_force_unique_names">Pakota yksilölliset nimet</string>
+    <string name="feed_properties_force_unique_names_msg">BeyondPod antaa yksilölliset tiedostonimet jokaiselle ladatuille podcastille sen sijaan, että yrittäisi arvata nimen podcastin URL-osoitteesta. Käytä asetusta, jos huomaat, että podcasteilla on aina samat nimet ja päätyvät korvaamaan toisiaan.</string>
+    <string name="feed_properties_login_info_header">Syötteen todennus</string>
+    <string name="feed_properties_login_info_pw">Salasana</string>
+    <string name="feed_properties_login_info_un">Käyttäjänimi</string>
+    <string name="feed_properties_num_days_to_delete_short_msg">"
+• Kaikki jaksot poistetaan, jotka ovat vanhempia kuin %s päivää."</string>
+    <string name="feed_properties_num_podcasts_to_download_download_in_order_msg">Lataa valittu määrä jaksoja, aloittaen vanhimmista saatavista. Uudet jaksot latautuvat vasta, kun poistat joitakin tämän syötteen ladattuja jaksoja. Ladatut jaksot ilmestyvät \"Jaksot\"-ruutuun.</string>
+    <string name="feed_properties_num_podcasts_to_download_download_in_order_short_msg">• Lataa %s -kansiosta vanhimmasta alkaen.</string>
+    <string name="feed_properties_num_podcasts_to_download_download_msg">"Lataa valittu määrä viimeisimpiä jaksoja osaksi syötepäivitystä. Uudet jaksot korvaa automaattisesti vanhimmat jaksot. Ladatut jaksot ilmestyvät 'Jaksot'-ruutuun."</string>
+    <string name="feed_properties_num_podcasts_to_download_download_short_msg" formatted="false">• Lataa viimeisimmät %s jaksoa ja säilytä enintään %s.%s</string>
+    <string name="feed_properties_num_podcasts_to_download_ignore_msg">Kaikki tämän syötteen jaksot ohitetaan, eikä näytetä syötesisältönäkymässä.</string>
+    <string name="feed_properties_num_podcasts_to_download_ignore_short_msg">• Kaikki jaksot ohitetaan.</string>
+    <string name="feed_properties_num_podcasts_to_download_no_download_msg">Tämän syötteen podcast-jaksoja ei ladata automaattisesti syötepäivityksen aikana. (Kaikki jaksot voidaan edelleen ladata manuaalisesti)</string>
+    <string name="feed_properties_num_podcasts_to_download_no_download_short_msg">• Lataa jaksot manuaalisesti.</string>
+    <string name="feed_properties_num_podcasts_to_download_stream_in_order_msg">Luo \"suoratoistettavat\" versiot valituista jaksoista, alkaen vanhimmista saatavista. Uudet jaksot latautuvat vasta, kun poistat joitakin tämän syötteen ladattuja jaksoja. Suoratoistetut jaksot ilmestyvät \"Jaksot\"-ruudulle.</string>
+    <string name="feed_properties_num_podcasts_to_download_stream_in_order_short_msg">"• Hanki %s jaksoa järjestyksessä, alkaen vanhimmista.
+• Jaksot voidaan 'suoratoistaa' (laitteella pitää olla verkkoyhteys)."</string>
+    <string name="feed_properties_num_podcasts_to_download_stream_msg">"Luo viimeisimmistä valituista jaksoista \"suoratoistettavia\" versioita osaksi syötepäivitystä. Uudet jaksot korvaa automaattisesti vanhimmat jaksot. Suoratoistetut jaksot ilmestyvät 'Jaksot'-ruutuun."</string>
+    <string name="feed_properties_num_podcasts_to_download_stream_short_msg" formatted="false">"• Hanki viimeisimmät %s jaksoa ja säilytä enintään %s.%s
+• Jaksot voidaan 'suoratoistaa' (laitteella pitää olla verkkoyhteys)."</string>
+    <string name="feed_properties_playback_speed_prefs_msg">Aseta ensisijainen nopeus tämän syötteen podcast-jaksoille. (Poista valinta, jos haluat käyttää soittimen nopeutta).</string>
+    <string name="feed_properties_playback_speed_prefs_title">Ensisijainen toistonopeus</string>
+    <string name="feed_properties_podcast_title">Jaksolataukset</string>
+    <string name="feed_properties_preferred_enclosure">Ensisijainen jakson muoto</string>
+    <string name="feed_properties_preferred_enclosure_msg">Joskus syötteet voi sisältää saman jakson useissa eri muodoissa (esimerkiksi .mp4 ja .mwv). Käytä yläpuolella olevaa valitsinta valitaksesi haluamasi muodon.</string>
+    <string name="feed_properties_save_played_position_msg">Toistettaessa muista tämän syötteen jaksojen toistokohta</string>
+    <string name="feed_properties_save_played_position_title">Tallenna toistokohta</string>
+    <string name="feed_properties_spacesavers_keep_at_most">Säilytä enintään:</string>
+    <string name="feed_properties_spacesavers_keep_at_most_unit">paikallisjakso(a)</string>
+    <string name="feed_properties_spacesavers_max_duration">Poista jaksot, jotka ovat vanhempia kuin:</string>
+    <string name="feed_properties_spacesavers_max_duration_unit">pv</string>
+    <string name="feed_properties_spacesavers_msg">Jakson poistaminen -asetus poistaa vanhat podcastit automaattisesti, kun määrä tai säilytyspäivämäärä ylittää valitun arvon. (Poistosääntöjä noudatetaan vasta, kun syötteen uudet jaksot ollaan ladattu)</string>
+    <string name="feed_properties_spacesavers_title">Jakson poistaminen</string>
+    <string name="feed_properties_toggle_adv_pref_hide">Piilota lisäasetukset</string>
+    <string name="feed_properties_use_google_proxy">Synkronoi Feedlyn kanssa</string>
+    <string name="feed_properties_use_google_proxy_msg">Lataa syötteitä Feedlystä. Vaatii Feedly-tilin käyttääksesi sitä.</string>
+    <string name="feed_properties_view_images_from_picasa_albums_cannot_be_used_as_a_feed_image">Kuvia Picasa-albumista (tai muusta verkkogalleriasta) ei voida käyttää syötteen kuvana.</string>
+    <string name="feed_properties_vld_feedNameEmpty">Kirjoita kelvollinen syötteen nimi!</string>
+    <string name="feed_properties_vld_feedUrlOrNameEmpty">Kirjoita syötteen URL-osoite tai nimi!</string>
+    <string name="feed_properties_vld_podcast_folder_vir_feed_invalid">Valitun virtuaalisen syötekansio on tyhjä tai ei ole olemassa laitteessa!</string>
+    <string name="feed_properties_vld_podcast_num_download_is_less_than_keep_at_most">Ladattavien podcast-jaksojen määrä ei voi ylittää säilytettävien jaksojen määrää!</string>
+    <string name="feed_properties_vld_spacesavers_will_delete_podcasts">"'Jakson poistaminen' -asetuksen valitseminen edellyttää, että nykyisistä jaksoista poistetaan %s."</string>
+    <string name="feed_properties_volume_boost_prefs_msg">"Voit kasvattaa äänenvoimakkuutta, kun toistat syötteen jaksoja. (Tämä on kokeellinen ominaisuus! Äänenvoimakkuuden tehostus on käytettävissä vain ladattujen jaksojen kohdalla ja vain silloin, kun 'Toistonopeus' on käytössä)."</string>
+    <string name="feed_properties_volume_boost_prefs_title">Äänenvoimakkuuden tehostus</string>
+    <string name="feed_s_was_added_in_category" formatted="false">"Syöte '%s'
+ lisättiin luokkaan '%s'"</string>
+    <string name="feed_search_db_episodes">Jaksot</string>
+    <string name="feed_search_hint">Podcastien hakeminen</string>
+    <string name="feed_settings_add_feed">Lisää syöte</string>
+    <string name="feed_settings_add_virtual_feed">Lisää virtuaalinen syöte</string>
+    <string name="feed_settings_checking_feed_information">Tarkistetaan syötteen tiedot…</string>
+    <string name="feed_settings_connecting">Yhdistetään…</string>
+    <string name="feed_settings_download">Lataus</string>
+    <string name="feed_settings_edit_feed">Muokkaa syötettä</string>
+    <string name="feed_settings_edit_virtual_feed">Muokkaa virtuaalista syötettä</string>
+    <string name="feed_settings_episodes">jakso(a)</string>
+    <string name="feed_settings_feed_already_exists_in_category">"Tämä syöte on jo olemassa luokassa '%s'."</string>
+    <string name="feed_settings_get">Hae</string>
+    <string name="feed_settings_items">viimeisin(tä) kohde(tta)</string>
+    <string name="feed_settings_locating_rss_feeds">Paikallistetaan RSS-syötteet</string>
+    <string name="feed_settings_retrieving_feed">Haetaan syötettä</string>
+    <string name="feed_settings_updating_download_history">Päivitetään lataushistoriaa…</string>
+    <string name="feeds_status_back_to_s">Takaisin %s</string>
+    <string name="feeds_status_downloading">Ladataan</string>
+    <string name="feeds_status_feeds">Syötteet</string>
+    <string name="feeds_status_of">/</string>
+    <string name="feeds_status_s_pending">%s kesken…</string>
+    <string name="feeds_status_updating">Päivitetään</string>
+    <string name="first_run_ad_disabled">EI, haluan ladata jaksoni manuaalisesti.</string>
+    <string name="first_run_ad_enabled">Anna BeyondPodin ladata uusimmat jaksot nukkuessasi.</string>
+    <string name="first_run_ad_subtitle">BeyondPod voi tarkistaa uudet jaksot ja ladata ne automaattisesti. Voit muuttaa asetuksiasi myöhemmin asetuksista.</string>
+    <string name="first_run_ad_title">Automaattiset lataukset</string>
+    <string name="first_run_ad_wifi">Lataa jaksot vain, jos kytketty WiFiin.</string>
+    <string name="first_run_continue">Jatka</string>
+    <string name="first_run_end_tour">Päätä opastus</string>
+    <string name="first_run_find_more">Opi lisää</string>
+    <string name="first_run_finish">Valmis</string>
+    <string name="first_run_select_content_title">Valitse itseäsi kiinnostavia aiheita ja esitämme muutamia hyviä podcasteja, joilla pääset alkuun.</string>
+    <string name="first_run_skipsamples">Ohita tämä</string>
+    <string name="first_run_start">Aloitetaan</string>
+    <string name="first_run_upgrade_guide">Päivitysopas</string>
+    <string name="folder_browser_back_to">Takaisin</string>
+    <string name="folder_browser_files">tiedosto(a)</string>
+    <string name="folder_browser_in">Luokassa</string>
+    <string name="gcm_fallback_notification_channel_label">Muut</string>
+    <string name="generic_download_error_text">"Muutamien jaksojen lataaminen epäonnistui!
+Yritä myöhemmin uudelleen"</string>
+    <string name="glg_restore_defaults_msg">"Olemme pahoillamme, mutta syötearkistosi näyttää olevan viallinen ja kaikki korjausyritykset epäonnistuivat!
+
+Seuraavan BeyondPodin käynnistyksen yhteydessä syötetilaukset palautuu oletusarvoihin.
+
+BeyondPod sulkeutuu nyt!"</string>
+    <string name="glg_restore_defaults_title">Vioittunut syötearkisto</string>
+    <string name="google_reader_feeds">Feedly-syötteet</string>
+    <string name="grant_permission_access_denied">"Selvä… Voit silti tehdä 'puhtaan' asennuksen poistamalla aiemman BeyondPodin asennuksen."</string>
+    <string name="grant_permission_access_granted">Kiitos!</string>
+    <string name="import_reader_failed_to_load_reader_subscriptions">Feedly-tilauksien lataaminen epäonnistui!</string>
+    <string name="import_reader_loading_feed_subscriptions">Ladataan syötetilauksia…</string>
+    <string name="import_reader_log_out_menu">Kirjaudu ulos</string>
+    <string name="import_reader_log_out_msg">Olet nyt kirjautunut ulos Feedlysta</string>
+    <string name="import_reader_login_failed">Kirjautuminen epäonnistui!</string>
+    <string name="import_reader_operation_canceled">Toiminto peruttu!</string>
+    <string name="import_reader_retrieving_account_details">Haetaan tilitietoja…</string>
+    <string name="import_reader_success">Onnistui!</string>
+    <string name="import_search_hint">Etsi tuodut syötteet</string>
+    <string name="info_card_got_it">Selvä, ymmärsin</string>
+    <string name="info_card_guided_tour_action">Tee tutustumiskierros</string>
+    <string name="info_card_guided_tour_skip">Ei kiitos</string>
+    <string name="info_card_guided_tour_title">Tervetuloa BeyondPodiin!</string>
+    <string name="info_card_whats_new_action">Katso, mikä on uutta</string>
+    <string name="info_card_whats_new_title">BeyondPod on päivitetty versioon %s!</string>
+    <string name="info_selct_folder_instructions">"Napauta kansion nimeä avataksesi sen.
+Jos haluat tuoda kansion, jolloin napauta sen vieressä olevaa +-kuvaketta."</string>
+    <string name="limited_mode_message">"Kokeilujaksosi on päättynyt!
+
+BeyondPod jatkaa toimintoa ilmaisversion ominaisuuksilla.
+
+Napauta 'Hanki PRO!' -painiketta (vasemmasta sivuvalikosta) nähdäksesi, mitä on rajoitettu."</string>
+    <string name="lock_podcast_unlock_parent_info">"Voit avata jakson ottamalla 'Salli jaksojen poistot' käyttöön jakson syötteen lisäasetuksista."</string>
+    <string name="master_view_beyondpod_failed_to_start">BeyondPodin käynnistäminen epäonnistui!</string>
+    <string name="master_view_beyondpod_will_now_exit">BeyondPod sulkeutuu!</string>
+    <string name="master_view_loaded_s_feeds">Ladataan jaksot…</string>
+    <string name="master_view_loading_feeds">Ladataan syötteitä…</string>
+    <string name="master_view_welcome_to_beyondpod">Tervetuloa BeyondPodiin</string>
+    <string name="master_view_what_is_new">Mitä uutta</string>
+    <string name="menu_multiselect_select_all">Valitse kaikki</string>
+    <string name="menu_multiselect_select_played">Valitse toistetut</string>
+    <string name="mf_calculating_files">Valmistaudutaan siirtämään…</string>
+    <string name="mf_cancel_are_you_sure">Oletko varma, että haluat peruuttaa?</string>
+    <string name="mf_canceled_move">Siirto keskeytetty!</string>
+    <string name="mf_canceling_move">Peruutetaan…</string>
+    <string name="mf_complete">"Siirto onnistui!%s
+
+BeyondPod käynnistyy uudelleen ja ottaa uudet asetukset käyttöön."</string>
+    <string name="mf_confirm_are_you_sure" formatted="false">"Oletko varma, että haluat siirtää %s ladattua jaksoa sijainnista '%s' sijaintiin '%s'?"</string>
+    <string name="mf_confirm_move">Vahvista siirto</string>
+    <string name="mf_coping_files" formatted="false">Siirretty %s / %s…</string>
+    <string name="mf_deleting_files">Puhdistetaan…</string>
+    <string name="mf_dest_folder_exist">Kohdekansio %s on jo olemassa! Haluatko korvata sen?</string>
+    <string name="mf_do_move">Siirrä</string>
+    <string name="mf_error_external">Kohdekansio ei ole käytettävissä tai se on vain Vain luku -tilassa!</string>
+    <string name="mf_external_SD_warninng">"Android KitKat on tuonut joitakin rajoituksia ulkoisen SD-kortin käyttöön.
+
+Voit yhä siirtää jaksojen latauskansion ulkoiselle SD-kortille, mutta kaikki BeyondPodin asetukset ja ladatut jaksot poistetaan, kun poistat BeyondPodin asennuksen."</string>
+    <string name="mf_insufficient_space" formatted="false">Tarvitset vähintään %s vapaata tilaa kohdekansioon. Tällä hetkellä on vain käytettävissä %s!</string>
+    <string name="mf_moving_title">Siirrä jaksojen latauskansio</string>
+    <string name="mf_unable_to_cleanup">Joidenkin tiedostojen poistaminen ei onnistu sijainnista %s. Yritä poistaa ne manuaalisesti!</string>
+    <string name="mf_unable_to_cleanup_kitkat">"Vanha jaksojen latauskansio %s on Vain luku -tilassa ja BeyondPod ei voi puhdistaa sitä.
+
+Yhdistä laite tietokoneeseen ja käytä resurssienhallintaa poistaaksesi tämä kansio."</string>
+    <string name="mf_update_download_progress">"Päivitys tai lataus on käynnissä!
+
+Lopeta se ja yritä uudelleen."</string>
+    <string name="mf_use_external_SD">Käytä ulkoista SD-korttia.</string>
+    <string name="mf_use_intenral_SD">Käytä sisäistä SD-korttia (suositus)</string>
+    <string name="minute_remaining">&lt;%s jäljellä</string>
+    <string name="minutes_remaining">%s jäljellä</string>
+    <string name="move_storage_folder_available">%s (käytettävissä)</string>
+    <string name="move_storage_folder_current" formatted="false">"%s
+(%s on myös käytettävissä vaihtoehtoisena sijaintina)"</string>
+    <string name="move_storage_folder_does_not_exist">"%s
+
+ ei ole olemassa tai se on Vain luku -tilassa!"</string>
+    <string name="move_storage_folder_in_use">%s (käytössä)</string>
+    <string name="move_storage_folder_instructions_alt_title">Voit käyttää vaihtoehtoista sijaintia</string>
+    <string name="move_storage_folder_instructions_msg">"Käytä 'Siirrä'-painiketta siirtääksesi nykyiset jaksot vaihtoehtoiseen sijaintiin.
+
+Kun siirto on valmis, BeyondPod käynnistyy uudelleen ja alkaa käyttämään uutta sijaintia.
+
+Siirtäminen voi kestää useita minuutteja."</string>
+    <string name="move_storage_folder_instructions_new_title">Voit käyttää uutta sijaintia</string>
+    <string name="movie_view_preparing_stream">Valmistaudutaan suoratoistamaan…</string>
+    <string name="movieviewlabel">Elokuvat</string>
+    <string name="mr_button_content_description">Cast-painike</string>
+    <string name="mr_cast_button_connected">Cast-painike. Yhdistetty</string>
+    <string name="mr_cast_button_connecting">Cast-painike. Yhdistetään</string>
+    <string name="mr_cast_button_disconnected">Cast-painike. Yhteys katkaistu</string>
+    <string name="mr_chooser_searching">Etsitään laitteita</string>
+    <string name="mr_chooser_title">Suoratoiston kohde</string>
+    <string name="mr_controller_album_art">Albumin kansikuva</string>
+    <string name="mr_controller_casting_screen">Suoratoistetaan näyttöä</string>
+    <string name="mr_controller_close_description">Sulje</string>
+    <string name="mr_controller_collapse_group">Tiivistä</string>
+    <string name="mr_controller_disconnect">Katkaise yhteys</string>
+    <string name="mr_controller_expand_group">Laajenna</string>
+    <string name="mr_controller_no_info_available">Tietoja ei ole saatavilla</string>
+    <string name="mr_controller_no_media_selected">Ei valittua mediaa.</string>
+    <string name="mr_controller_pause">Keskeytä</string>
+    <string name="mr_controller_play">Toista</string>
+    <string name="mr_controller_stop">Pysäytä</string>
+    <string name="mr_controller_stop_casting">Lopeta suoratoisto</string>
+    <string name="mr_controller_volume_slider">Äänenvoimakkuuden liukusäädin</string>
+    <string name="mr_system_route_name">Järjestelmä</string>
+    <string name="mr_user_route_category_name">Laitteet</string>
+    <string name="multiselect_episodes_selected">jaksot valittu</string>
+    <string name="navigator_add_category">Lisää luokka</string>
+    <string name="navigator_add_feed">Lisää syöte</string>
+    <string name="navigator_drawer_title">Omat syötteet</string>
+    <string name="navigator_edit_content">Hallitse syötteitä</string>
+    <string name="navigator_feed_filter_all">Kaikki syötteet</string>
+    <string name="navigator_feed_filter_new_only">"'Uusi'-syötteet"</string>
+    <string name="navigator_updated">Päivitetty %s</string>
+    <string name="navigator_updated_now">juuri nyt</string>
+    <string name="ok_button">OK Button</string>
+    <string name="opml_export_btn_label">Vie syötteet</string>
+    <string name="opml_export_msg">"Kaikki syötteesi viedään OPML-tiedostona nimellä 'BeyondPodFeeds.opml', sijaintiin:
+
+'%s'
+
+Syötteet on ryhmitelty niiden ensimmäisen luokan mukaan."</string>
+    <string name="opml_export_title">Vie OPML-tiedostona</string>
+    <string name="opml_import_dlg_add_cat_label">Uusi luokka</string>
+    <string name="opml_import_dlg_title">Lisää luokkaan</string>
+    <string name="opml_import_opml_btn_label">Lataa OPML-tiedosto</string>
+    <string name="opml_import_opml_msg1">"Varmista, että OPML-tiedostolla on .OPML-pääte ja on kopioitu sijaintiin:
+
+'%s'"</string>
+    <string name="opml_import_reader_title">Kirjautuminen Feedlyyn</string>
+    <string name="opml_list_view_beyondpod_is_loading_s">"BeyondPod lataa
+%s…"</string>
+    <string name="opml_list_view_connecting">Yhdistetään…</string>
+    <string name="opml_list_view_downloaded">Ladattu</string>
+    <string name="opml_list_view_error">Virhe</string>
+    <string name="opml_list_view_loading">Ladataan…</string>
+    <string name="opml_list_view_selected_directory_is_currently_unavailable">"Valittu hakemisto ei ole tällä hetkellä käytettävissä!
+
+Yritä myöhemmin uudelleen."</string>
+    <string name="opml_list_view_update_canceled">Päivitys peruttu!</string>
+    <string name="opml_list_view_update_failed">Päivitys epäonnistui!</string>
+    <string name="opml_view_adapter_back_to_s">Takaisin %s</string>
+    <string name="opml_view_adapter_go_back">Palaa takaisin</string>
+    <string name="opml_view_adapter_in_s">luokka %s</string>
+    <string name="opml_view_adapter_items">kohdetta</string>
+    <string name="opml_view_adapter_subscribed">Tilattu</string>
+    <string name="percent_complete">% valmiina</string>
+    <string name="player_charm_pbspeed_preset_description">Valitse nopeus liukusäätimellä, sitten napauta esiasetus-painiketta tallentaaksesi sen</string>
+    <string name="player_charm_pbspeed_title">Toistonopeus</string>
+    <string name="player_charm_sleep_description">Lopettaa toiston</string>
+    <string name="player_charm_sleep_episodeEnd">Tämän jakson päätyttyä</string>
+    <string name="player_charm_sleep_off">Pois päältä</string>
+    <string name="player_charm_sleep_title">Uniajastin</string>
+    <string name="player_streaming_disabled">"Suoratoisto on pois käytöstä.
+
+Lataa jakso ennen toistamista."</string>
+    <string name="player_streaming_wifi_only">Suoratoisto onnistuu tällä hetkellä ainoastaan WiFi:ssa!</string>
+    <string name="player_transport_next">Seuraava jakso</string>
+    <string name="player_transport_pause">Keskeytä</string>
+    <string name="player_transport_play">Toista</string>
+    <string name="player_transport_playback_speed">Toistonopeus</string>
+    <string name="player_transport_prev">Edellinen jakso</string>
+    <string name="player_transport_skip_back">Siirry takaisin</string>
+    <string name="player_transport_skip_fwd">Siirry eteenpäin</string>
+    <string name="player_transport_skip_to_end">Siirry loppuun</string>
+    <string name="player_trying_to_play_deleted_episode">Tämä jakso on poistettu!</string>
+    <string name="player_view_connecting_to_s">Yhdistedään %s…</string>
+    <string name="player_view_playback_cast_connected">"Yhdistetty laitteeseen '%s'
+
+Valitse etänä toistettava jakso."</string>
+    <string name="player_view_playback_error">Toistovirhe!</string>
+    <string name="player_view_playback_error_cant_cast">Tätä jaksoa ei voida toistaa etänä!</string>
+    <string name="player_view_playback_error_streaming_disabled">Suoratoisto ei ole sallittu!</string>
+    <string name="player_view_preparing_stream_s">Valmistaudutaan suoratoistamaan… ( %s %%)</string>
+    <string name="playlist_divider_smartplay_text">ÄlykäsToisto</string>
+    <string name="playlist_divider_text">Soittolista</string>
+    <string name="playlist_editor_dialog_clear_playlist">Tyhjennä soittolista</string>
+    <string name="podcast_list_empty_all_feeds_working">"Päivitetään syötteitä…
+
+Viimeisimmät jaksot ilmestyvät pian."</string>
+    <string name="podcast_list_empty_category">"Et ole ladannut yhtäkään jaksoa luokasta '%s'."</string>
+    <string name="podcast_list_empty_feed">"Et ole ladannut yhtäkään jaksoa syötteestä '%s'."</string>
+    <string name="podcast_list_empty_filter">"Yksikään jakso ei vastaa hakuehtoasi
+'%s'."</string>
+    <string name="podcast_list_empty_playlist">Soittolista on tyhjä</string>
+    <string name="podcast_list_has_filtered_items">"Näytetään '%s'"</string>
+    <string name="podcast_list_open_all_published">Näytä kaikki julkaissut jaksot</string>
+    <string name="podcast_list_show_all_episodes">Näytä kaikki jaksot</string>
+    <string name="podcast_list_view_about">tietoja</string>
+    <string name="podcast_list_view_all_published">Etkö löydä etsimiäsi jaksoja?</string>
+    <string name="podcast_list_view_beyondpod_faq">BeyondPodin UKK</string>
+    <string name="podcast_list_view_playlist">Soittolista</string>
+    <string name="podcasts_view_adapter_this">Tämä</string>
+    <string name="podcasts_view_free">Vapaana</string>
+    <string name="preview_player_title">Jakson esikatselu</string>
+    <string name="published_list_add_again_to_my_episodes">Toista jakso uudestaan</string>
+    <string name="published_list_add_to_my_episodes">Lisää jaksoihini</string>
+    <string name="published_list_download_episode">Lataa jakso</string>
+    <string name="published_list_preview_episode">Esikatsele jakso</string>
+    <string name="published_list_redownload_episode">Lataa jakso uudelleen</string>
+    <string name="reader_folder_all_new_items_in">Kaikki uudet kohteet luokasta</string>
+    <string name="reader_folder_my_google_items">Feedly-kohteeni</string>
+    <string name="reader_folder_my_read_items">Luetut kohteeni</string>
+    <string name="reader_folder_my_reading_list">Lukulistani</string>
+    <string name="reader_folder_my_starred_items">Tähdelliset kohteeni</string>
+    <string name="remote_playback_not_available_in_lite_version">"BeyondPodin kokeilujakso on päättynyt!
+
+Toistaminen etänä on vain käytettävissä Pro-versiossa"</string>
+    <string name="repo_search_hint">Etsi syötteitä</string>
+    <string name="repo_search_label">.</string>
+    <string name="reset_storage_folder_current" formatted="false">"Määritetty jaksojen lataussijainti (%s) ei ole enää käytettävissä!
+
+Jos käytät ulkoista SD-korttia, jolloin kortti on voinut irrota tai se on Vain luku -tilassa.
+Sisäinen SD-kortti (%s) on edelleen käytettävissä.
+
+Haluatko siirtyä käyttämään sisäistä SD-korttia?"</string>
+    <string name="reset_storage_folder_multiple">"Määritetty jaksojen lataussijainti (%s) ei ole enää käytettävissä!
+
+Valitse uusi sijainti alapuolelta:"</string>
+    <string name="reset_tips_complete">Kaikki vinkit ja varoitukset on nyt otettu uudelleen käyttöön!</string>
+    <string name="s1">Tallenna kuva</string>
+    <string name="s2">Myönnetäänkö mainokselle oikeus tallentaa kuva galleriaan?</string>
+    <string name="s3">Hyväksy</string>
+    <string name="s4">Hylkää</string>
+    <string name="s5">Luo kalenteritapahtuma</string>
+    <string name="s6">Myönnetäänkö mainokselle oikeus luoda kalenteritapahtuma?</string>
+    <string name="s7">Testimainos</string>
+    <string name="scheduling_method_msg">"BeyondPodin avulla voit päivittää kaikki syötteen yksittäisen aikataulun mukaisesti tai määrittää erilaisia aikatauluja luokille.
+
+Mitä menetelmää haluat käyttää?
+
+(Voit muuttaa asetuksesi mieluisaksi käyttämällä 'Luokkien hallinta' -ruutua)"</string>
+    <string name="scheduling_method_per_category">Luokittain</string>
+    <string name="scheduling_method_single_schedule">Yksittäinen aikataulu</string>
+    <string name="scheduling_method_title">Valitse päivitysaikataulu</string>
+    <string name="search_error">Tapahtui virhe haun aikana. Yritä myöhemmin uudelleen.</string>
+    <string name="search_error_device_is_offline">Laite on offline-tilassa!</string>
+    <string name="search_error_must_be_online_to_add_feeds">Sinun täytyy olla verkkoyhteys, jotta voit lisätä syötteitä.</string>
+    <string name="search_filter_all">Kaikki</string>
+    <string name="search_filter_audio">Audio</string>
+    <string name="search_filter_video">Video</string>
+    <string name="search_menu_title">Haku</string>
+    <string name="search_no_result_found">"Ei tuloksia haulle '%s'"</string>
+    <string name="search_result_item_subscribe">Tilaa</string>
+    <string name="search_running">Etsitään syötteitä…</string>
+    <string name="settings_AutoPlaySmartplays_summary">ÄlykäsToiston ollessa valittuna toistetaan automaattisesti ensimmäinen jakso</string>
+    <string name="settings_AutoPlaySmartplays_title">Automaattinen ÄlykäsToisto</string>
+    <string name="settings_AutoRebuildKeepCurrent_summary">ÄlykäsToiston uudelleen luotua säilytä nykyinen jakso soittolistassa ylimpänä</string>
+    <string name="settings_AutoRebuildKeepCurrent_title">Säilytä nykyinen jakso</string>
+    <string name="settings_AutoRebuildSmartPlay_summary">"Automaattisesti uusii 'oletus' ÄlykäsToiston, kun uudet jaksot on ladattu"</string>
+    <string name="settings_AutoRebuildSmartPlay_title">Luo ÄlykäsToisto uudelleen automaattisesti</string>
+    <string name="settings_Autoplaylist_summary">Luo automaattisesti uuden soittolistan aloittaen valitusta jaksosta</string>
+    <string name="settings_Autoplaylist_title">Automaattinen soittolista</string>
+    <string name="settings_ClearPlaylistKeepCurrent_summary">Kun soittolistaa tyhjennetään, säilytä nykyinen jakso soittolistassa ylimpänä</string>
+    <string name="settings_HeadsetButtons_DC_summary">Langallisen kuulokepainikkeen kaksoisklikkaus</string>
+    <string name="settings_HeadsetButtons_DC_title">Kaksoisklikkaus</string>
+    <string name="settings_HeadsetButtons_LP_summary">Langallisen kuulokepainikkeen pitkä painallus</string>
+    <string name="settings_HeadsetButtons_LP_title">Pitkä painallus</string>
+    <string name="settings_HeadsetButtons_Next_summary">Langallisen tai Bluetooth-kuulokkeen seuraava-painike</string>
+    <string name="settings_HeadsetButtons_Next_title">Seuraava-painike</string>
+    <string name="settings_HeadsetButtons_Prev_summary">Langallisen tai Bluetooth-kuulokkeen edellinen-painike</string>
+    <string name="settings_HeadsetButtons_Prev_title">Edellinen-painike</string>
+    <string name="settings_HeadsetButtons_summary">Mukauta langallisen tai Bluetooth-kuulokkeen painikkeiden toimintoja</string>
+    <string name="settings_HeadsetButtons_title">Kuulokkeen painiketoiminnot</string>
+    <string name="settings_PauseResume_summary">Tauko kuulokkeiden irrotessa, virtalähteen irrotessa, ilmoituksen tullessa, määrä näytön aikakatkaisu…</string>
+    <string name="settings_PauseResume_title">Automaattinen keskeytys tai jatkaminen</string>
+    <string name="settings_RemovePlayedFromPlaylist_summary">Poistaa automaattisesti toistetut jaksot soittolistasta</string>
+    <string name="settings_RemovePlayedFromPlaylist_title">Poista toistetut soittolistasta</string>
+    <string name="settings_active_theme_summary">Teema BeyondPodin pääikkunaan (vaalea ja tumma)</string>
+    <string name="settings_active_theme_title">Teema</string>
+    <string name="settings_allow_analytics_summary">Auta meitä parantamaan BeyondPodia sallimalla ANONYYMIEN käyttötilastojen ja sovellusvirheiden kerääminen</string>
+    <string name="settings_allow_analytics_title">Seuraa käyttötilastoja</string>
+    <string name="settings_allow_cleanup_for_manual_downloads_summary">Ottaa syötteen poistosäännöt käyttöön jaksoille, jotka ovat ladattu manuaalisesti</string>
+    <string name="settings_allow_cleanup_for_manual_downloads_title">Salli manuaalisesti ladattujen poisto</string>
+    <string name="settings_allow_hiding_read_summary">"Ota 'luettujen' kohteiden tai 'toistettujen' jaksojen piilottaminen käyttöön 'Kaikki julkaistut' -näkymässä."</string>
+    <string name="settings_allow_hiding_read_title">Piilota luetut ja toistetut</string>
+    <string name="settings_allow_streaming_summary">Määrittää, onko jakson suoratoisto sallittu</string>
+    <string name="settings_allow_streaming_title">Suoratoiston asetukset</string>
+    <string name="settings_allow_streaming_values_title">Salli suoratoisto</string>
+    <string name="settings_allowcellular_summary">Merkitse, jos sallit mobiiliyhteyden (EDGE/3G/4G) käytön syötepäivityksissä.</string>
+    <string name="settings_allowcellular_title">Käytä mobiilidataa</string>
+    <string name="settings_autoLoadPlugins_summary">Tämän avulla voit katsella joitakin videoita, jotka on upotettu viestin sisältöön.</string>
+    <string name="settings_autoLoadPlugins_title">Selainlaajennukset</string>
+    <string name="settings_auto_clean_unused_episodes_summary">"Poista kaikki toistetut jaksot automaattisesti osana seuraavaa päivitystä. ('Suosikki'-jaksoja ei poisteta)"</string>
+    <string name="settings_auto_clean_unused_episodes_title">Poista automaattisesti toistetut jaksot</string>
+    <string name="settings_auto_resume_partial_downloads_summary">Jatkaa automaattisesti osittain ladattujen jaksojen lataamisen seuraavan päivityksen yhteydessä</string>
+    <string name="settings_auto_resume_partial_downloads_title">Osittain ladattujen jaksojen lataamisen</string>
+    <string name="settings_automaticUpdates_title">Automaattiset päivitykset</string>
+    <string name="settings_backup_restore_title">Varmuuskopiointi ja palautus</string>
+    <string name="settings_backwardSkipInterval_summary">Kuinka monta sekuntia siirrytään taaksepäin toiston aikana (mainosten ohitus)</string>
+    <string name="settings_backwardSkipInterval_title">Taaksepäin siirtymisen aikaväli</string>
+    <string name="settings_beta_notification_summary">Ilmoita, kun uusi beta-versio on saatavilla</string>
+    <string name="settings_beta_notification_title">Ilmoita beta-versiosta</string>
+    <string name="settings_category_sd_card_location_preferences">Podcastien tallennussijainti</string>
+    <string name="settings_cds_summary">Jaksosynkronointi on pois päältä</string>
+    <string name="settings_cds_title">Jaksosynkronointi</string>
+    <string name="settings_clearstatusnotification_summary">Valitse, jos haluat piilottaa päivityksen päätyttyä ilmoituskuvakkeen</string>
+    <string name="settings_clearstatusnotification_title">Piilota ilmoituskuvake</string>
+    <string name="settings_configure_smartplay">Määritä ÄlykäsToisto</string>
+    <string name="settings_defSendToEmail_dlg_title">Sähköpostin oletusvastaanottajat</string>
+    <string name="settings_defSendToEmail_summary">Oletusjoukko sähköpostiosoitteita, kun lähetetään sähköpostitse artikkelilinkkejä BeyondPodista</string>
+    <string name="settings_defSendToEmail_title">Sähköpostin oletusvastaanottajat</string>
+    <string name="settings_description">BeyondPod-podcastit</string>
+    <string name="settings_disable_sharing_warning">"Kun poistat jakamisen käytöstä, virheestä johtuen tietyissä Android-versioissa jotkut ladatuista videopodcasteista voi olla poistettu laitteen ensimmäisen uudelleenkäynnistyksen yhteydessä (tai SD-kortin uudelleen tarkistuksen aikana).
+
+Muista varmuuskopioida kaikki ladatut videopodcastit, joita et halua menettää.
+
+SD-kortin 'BeyondPod/Podcasts'-kansiosta löydät ladatut podcastit."</string>
+    <string name="settings_disconnect_from_reader">Katkaise yhteys Feedlyyn</string>
+    <string name="settings_disconnect_from_reader_cant_convert_msg">"Joitakin Feedlyn syötteitä ei voitu irrottaa:
+
+%s
+Sinun täytyy poistaa ne manuaalisesti."</string>
+    <string name="settings_disconnect_from_reader_msg">"Seuraavat syötteet on irrotettu Feedlysta ja uudelleenohjataan menemään suoraan niiden alkuperäisille julkaisijoille:
+
+%s
+Ladatut ja suoratoistettavat jaksot säilyvät, mutta luetut- ja lataus-historia kyseisiltä syötteiltä menetetään."</string>
+    <string name="settings_downloadoncharging_summary">Lataa jaksot vain, jos laite on latauksessa.</string>
+    <string name="settings_downloadoncharging_title">Lataa vain latauksen aikana</string>
+    <string name="settings_downloadonwifi_summary">Lataa jaksot vain, jos kytketty WiFiin.</string>
+    <string name="settings_downloadonwifi_title">Lataa vain WiFi-yhteydellä</string>
+    <string name="settings_enableFadein_summary">Äänenvoimakkuutta lisätään toiston alkaessa vähitellen normaalille tasolle</string>
+    <string name="settings_enableFadein_title">Äänen voimistuminen</string>
+    <string name="settings_enableHeadsetButton_summary">Kuulokkeen tai Bluetooth-painikkeiden avulla voit ohjata toistoa</string>
+    <string name="settings_enableHeadsetButton_title">Ota kuullokkeen painike käyttöön</string>
+    <string name="settings_enable_presto_summary">Käytä Presto-ääniliitännäistä, jos on asennettuna (edellyttää uudelleenkäynnistämistä)</string>
+    <string name="settings_enable_presto_title">Presto</string>
+    <string name="settings_enable_sonic_player_summary">Ota käytöön natiivituki toistonopeudelle (Jelly Bean tai uudempi)</string>
+    <string name="settings_enable_sonic_player_title">Sonic-soitin</string>
+    <string name="settings_feedContent_title">Syötesisältö</string>
+    <string name="settings_feedSelectedAction_summary">Oletusnäkymä valittaessa syötteen</string>
+    <string name="settings_feedSelectedAction_title">Suositeltu syötenäkymä</string>
+    <string name="settings_feedSortOrder_summary">Määritä syötelistan järjestys</string>
+    <string name="settings_feedSortOrder_title">Syötelistan järjestys</string>
+    <string name="settings_feed_defaults_summary">Yleiset syöteasetukset, kun tilaat uuden syötteen (ladattavien jaksojen määrä, poistosäännöt)…</string>
+    <string name="settings_feed_defaults_title">Syötteen oletukset</string>
+    <string name="settings_force_feed_album_art_summary">Käytä audiojaksoissa syötteen kansitaidetta</string>
+    <string name="settings_force_feed_album_art_title">Käytä syötteen kansitaidetta</string>
+    <string name="settings_force_mpd123_player_summary">Pakottaa nopean toiston käyttämällä mpg123-pohjaista audiosoitinta</string>
+    <string name="settings_force_mpd123_player_title">Pakota Mpg123-soitin</string>
+    <string name="settings_forwardSkipInterval_summary">Kuinka monta sekuntia siirrytään eteenpäin toiston aikana (mainosten ohitus)</string>
+    <string name="settings_forwardSkipInterval_title">Eteenpäin siirtymisen aikaväli</string>
+    <string name="settings_general_summary">Teema, kotiruutu, järjestys, syöte- ja jaksoasetukset…</string>
+    <string name="settings_general_title">Yleiset</string>
+    <string name="settings_global_apply">%s syötettä päivitetty</string>
+    <string name="settings_google_reader_login_title">Katkaise yhteys Feedlyyn</string>
+    <string name="settings_hideUnsupportedFileTypes_summary">Piilottaa tiedostotyypit, joita laite ei pysty toistamaan</string>
+    <string name="settings_hideUnsupportedFileTypes_title">Piilota tukemattomat tiedostotyypit</string>
+    <string name="settings_ignoreReaderReadStatus_summary">Valitse, jos et halua synkronoida Feedlyn luettuja kohteita.</string>
+    <string name="settings_ignoreReaderReadStatus_title">Ohita Feedlyn luetut</string>
+    <string name="settings_keep_pause_notification_summary">"Kun soitto on pysäytetty, jätä 'Pysäytetty'-ilmoitus ilmoituskeskukseen."</string>
+    <string name="settings_keep_pause_notification_title">"Säilytä 'Pysäytetty'-ilmoitus"</string>
+    <string name="settings_keep_screen_on_during_playback_summary">Näytön aikakatkaisu audiotiedoston toiston aikana</string>
+    <string name="settings_keep_screen_on_during_playback_title">Näytön aikakatkaisu</string>
+    <string name="settings_margin_navigation_summary">Kaksoisnapauttamalla viestisisältöä voit sulkea viestinäkymän</string>
+    <string name="settings_margin_navigation_title">Sulje kaksoisnapautuksella</string>
+    <string name="settings_markAsReadOnOpen_summary">Määrittää, mitkä viestit merkitään \"Luetuksi\", kun viestin sisältöä katsotaan</string>
+    <string name="settings_markAsReadOnOpen_title">Merkitse luetuksi avattaessa</string>
+    <string name="settings_maxTrackAge_dlg_title">Poista, jotka ovat vanhempia kuin</string>
+    <string name="settings_maxTrackAge_summary">Jokaisesta syötteestä poistetaan podcast-jaksot, jotka ovat vanhempia kuin määrätty päivä</string>
+    <string name="settings_maxTrackAge_title">Poistaminen - Poista vanhat</string>
+    <string name="settings_mediaEndAction_summary">Toiminto, kun nykyisen jakson toisto päättyy</string>
+    <string name="settings_mediaEndAction_title">Kun toisto päättyy</string>
+    <string name="settings_numPodcastsToDownload_dlg_title">Lataa</string>
+    <string name="settings_numPodcastsToDownload_summary">Podcast-jaksojen oletusmäärä, jotka ladataan tai suoratoistetaan kustakin syötteestä</string>
+    <string name="settings_numPodcastsToDownload_title">Jakson lataaminen</string>
+    <string name="settings_numPodcastsToKeep_dlg_title">Säilytä</string>
+    <string name="settings_numPodcastsToKeep_summary">Paikallisten podcast-jaksojen oletusmäärä, jotka säilytetään kustakin syötteestä</string>
+    <string name="settings_numPodcastsToKeep_title">Poistaminen - Säilytä enintään</string>
+    <string name="settings_orientation_lock_summary">Voit lukita näytön asennon vaaka- tai pystysuuntaan</string>
+    <string name="settings_orientation_lock_title">Näytön suunta</string>
+    <string name="settings_pause_on_notification_summary">Pistää toiston tauolle järjestelmäilmoitusten ajaksi (navigointi, sähköposti, SMS jne.)</string>
+    <string name="settings_pause_on_notification_title">Tauko ilmoituksen tullessa</string>
+    <string name="settings_pause_on_power_disconnect_summary">Keskeyttää toiston, kun ulkoinen virtalähde on irrotettu.</string>
+    <string name="settings_pause_on_power_disconnect_title">Keskeytä, kun virtalähde on irrotettu</string>
+    <string name="settings_pause_onheadset_disconnect_summary">Keskeyttää toiston kuulokkeen irrotettaessa</string>
+    <string name="settings_pause_onheadset_disconnect_title">Tauko kuulokkeiden irrotessa</string>
+    <string name="settings_pause_video_on_screen_off_summary">Keskeyttää videon toiston, kun näyttö sammutetaan.</string>
+    <string name="settings_pause_video_on_screen_off_title">Pysäytä video, kun näyttö on pois päältä</string>
+    <string name="settings_player_integration_summary">"'Ulkopuolinen' käyttää laitteen sisäänrakennettua (tai 3. osapuolen) soitinta"</string>
+    <string name="settings_player_integration_title">Oletusaudio- ja videosoitin</string>
+    <string name="settings_player_plugins_disable_summary">Ota toistonopeuden säätö käyttöön</string>
+    <string name="settings_player_plugins_disable_title">Toistonopeuden säätö</string>
+    <string name="settings_player_plugins_only_if_configured_summary">Käytä laajennusta vain syötteille, jotka nimenomaisesti määritetty niiden asetuksista toistamaan suuremmalla nopeudella</string>
+    <string name="settings_player_plugins_only_if_configured_title">Käytä vain, jos on määritetty</string>
+    <string name="settings_player_summary">Aikavälien siirtymiset, kuulokepainike, suoratoiston asetukset…</string>
+    <string name="settings_player_title">Soitin</string>
+    <string name="settings_playlistEndAction_summary">Toiminto, kun soittolistan viimeinen jakso päättyy</string>
+    <string name="settings_playlistEndAction_title">Kun soittolista päättyy</string>
+    <string name="settings_playlist_summary">Soittolistan käyttäytyminen, jaksojen automaattinen poistaminen…</string>
+    <string name="settings_playlist_title">Soittolista</string>
+    <string name="settings_podcastDownloadAction_summary">Syötteen podcast-jaksojen oletuskäsittely (lataa, suoratoista tai ohita)</string>
+    <string name="settings_podcastDownloadAction_title">Syötteen podcast-jaksot</string>
+    <string name="settings_podcastsSortOrder_summary">Valitse oletusjärjestys ladatuille podcast-jaksoille</string>
+    <string name="settings_podcastsSortOrder_title">"'Omat jaksot' -järjestys"</string>
+    <string name="settings_prefer_last_sd_card_root_summary">Pakota BeyondPodin käyttämään aina nykyistä latauspolkua:</string>
+    <string name="settings_prefer_last_sd_card_root_title">Lukitse nykyinen polku</string>
+    <string name="settings_push_globals_all_dlg_msg">Haluatko myös soveltaa tätä asetusta kaikkiin olemassa oleviin syötteisiin?</string>
+    <string name="settings_push_globals_btn_no">Ei</string>
+    <string name="settings_push_globals_btn_yes">Kyllä</string>
+    <string name="settings_push_globals_dlg_title">Nykyisten syötteiden päivittäminen</string>
+    <string name="settings_push_globals_download_or_stream_dlg_msg">Haluatko myös soveltaa tätä asetusta kaikkiin olemassa oleviin syötteisiin, jotka on määritetty lataamaan tai suoratoistamaan podcastit?</string>
+    <string name="settings_replay_on_resume_summary">Jatkaessa pitkän tauon jälkeen toistetaan uudelleen (sekunteina)</string>
+    <string name="settings_replay_on_resume_title">Toista jatkettaessa</string>
+    <string name="settings_requires_restart_back_only_warning">"Tämä asetus tulee voimaan seuraavan BeyondPodin käynnistyksen yhteydessä. 
+
+(Paina 'Takaisin'-painiketta, kunnes olet sulkenut kaikki BeyondPod-ruudut)"</string>
+    <string name="settings_requires_restart_warning">"Tämä asetus tulee voimaan seuraavan BeyondPodin käynnistyksen yhteydessä. 
+
+(Paina 'Takaisin'-painiketta sulkeaksesi BeyondPod-ruudun tai käännä laitettasi)"</string>
+    <string name="settings_resume_on_call_summary">Jatka toistoa puhelun jälkeen</string>
+    <string name="settings_resume_on_call_title">Jatka puhelun jälkeen</string>
+    <string name="settings_scrobble_summary">Julkaisee tietoja senhetkisestä toistettavasta jaksosta ulkoisesti kytketyille laitteille. (Käyttöön ottaminen saattaa rikkoa Bluetooth-äänituen)</string>
+    <string name="settings_scrobble_title">Julkaise nykyinen jakso</string>
+    <string name="settings_setAsDownloadedOnMarkRead_summary">"Podcast-jaksot merkitään 'Ladatuksi', kun niiden viesti on merkitty 'Luetuksi'"</string>
+    <string name="settings_setAsDownloadedOnMarkRead_title">Merkitse ladatuksi luettua</string>
+    <string name="settings_setAsPlayedOnMarkRead_summary">Podcast-jaksot merkitään \"Toistetuksi\", kun niiden viesti on merkitty \"Luetuksi\"</string>
+    <string name="settings_setAsPlayedOnMarkRead_title">Määritä toistetuksi luettua</string>
+    <string name="settings_sharePodcasts_summary">Valitse, jos haluat Android-musiikkisoittimen tunnistavan BeyondPod-podcastit</string>
+    <string name="settings_sharePodcasts_title">Jaksot näkyvät musiikkisoittimessa</string>
+    <string name="settings_show_post_images_in_feed_content_list_summary">"Näytä 'merkittävien' viestikuvien pikkukuva syöteviestiluettelosa"</string>
+    <string name="settings_show_post_images_in_feed_content_list_title">Näytä viestin pikkukuvat</string>
+    <string name="settings_show_sleep_to_end_summary">Siirry helposti nykyisen jakson loppuun ja merkitse jakso toistetuksi</string>
+    <string name="settings_show_sleep_to_end_title">Siirry loppuun -painike</string>
+    <string name="settings_sleep_timeout_summary">Mukauta aikatkaisua (minuutteina) soittimen lepotilatoimintoa varten</string>
+    <string name="settings_sleep_timeout_title">Mukauta lepotilan aikakatkaisua</string>
+    <string name="settings_storage_folder_title">Podcast-latauskansio</string>
+    <string name="settings_supportedFileFormats_summary">Tiedostotyypit, jotka BeyondPod tunnistaa ja näyttää</string>
+    <string name="settings_supportedFileFormats_title">Tuetut tiedostotyypit</string>
+    <string name="settings_togglewifi_summary">Valitse, jos haluat WiFin päälle syötepäivityksien aikana.</string>
+    <string name="settings_togglewifi_title">Vaihda WiFi-verkkoon päivittäessä</string>
+    <string name="settings_update_optimizations_already_excluded_summary">Akun optimointi ei ole käytössä. BeyondPod voi päivittää syötteitä laitteen \"torkkuessa\".</string>
+    <string name="settings_update_optimizations_exclude_summary">Akun optimointi on käytössä. BeyondPod EI päivitä syötteitä laitteen \"torkkuessa\".</string>
+    <string name="settings_update_optimizations_exclude_title">Akun optimointi</string>
+    <string name="settings_update_summary">Syötepäivityksien automaattinen ajastaminen, yhteyden muuttaminen, jakson lataus…</string>
+    <string name="settings_update_title">Syötepäivitys</string>
+    <string name="settings_updateonopen_summary">Valitse, jos haluat päivittää automaattisesti syötteen avattaessa.</string>
+    <string name="settings_updateonopen_title">Päivitä avatessa syöte</string>
+    <string name="settings_useExternalBrowser_summary">Valitse, jos haluat avata ulkopuoliset linkit oletusselaimessa.</string>
+    <string name="settings_useExternalBrowser_title">Käytä ulkopuolista selainta</string>
+    <string name="settings_user_home_screen_summary">Aloitusnäkymä. Takaisin-painike avaa kotiruudun ennen sovelluksen sulkemista.</string>
+    <string name="settings_user_home_screen_title">Kotiruutu</string>
+    <string name="settings_view_title">BeyondPodin asetukset</string>
+    <string name="settings_view_update_log_message">Päivitetty viimeksi: %s</string>
+    <string name="settings_view_update_log_title">Näytä päivitysloki</string>
+    <string name="settings_volumeNavigation_summary">Käytä laitteen äänenvoimakkuus-painikkeita liikkuaksesi syötteen viestien välillä</string>
+    <string name="settings_volumeNavigation_title">Liiku äänenvoimakkuus-painikkeilla</string>
+    <string name="settings_widget_background_title">Widgetin tausta</string>
+    <string name="settings_widget_preferences">Widgettiasetukset</string>
+    <string name="smart_playlist_add">Lisää ÄlykäsToisto</string>
+    <string name="smart_playlist_add_rule">Lisää sääntö</string>
+    <string name="smart_playlist_editor_msg">"ÄlykäsToisto luo automaattisesti tuoreen soittolistan ladatuista jaksoistasi.
+Jaksot sisällytetään yksinkertaisten sääntöjen mukaan."</string>
+    <string name="smart_playlist_editor_title">ÄlykäsToiston rakentaja</string>
+    <string name="smart_playlist_emptyplaylist">Soittolista on tyhjä</string>
+    <string name="smart_playlist_emptyplaylist_info">Napauta Toista-painiketta aloittaaksesi ÄlykäsToiston</string>
+    <string name="smart_playlist_name_hint">ÄlykäsToiston nimi</string>
+    <string name="smart_playlist_repository_loading">Ladataan soittolistaa…</string>
+    <string name="smart_playlist_shortcut_create_failed">Pikakuvakkeen luominen ei onnistu!</string>
+    <string name="smart_playlist_shortcut_creating">Luodaan pikakuvake…</string>
+    <string name="smart_playlist_start_with">Aloita</string>
+    <string name="smart_playlist_then_play">sitten toista</string>
+    <string name="smartplay_category_label">Luokka</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="the_url_of_this_feed_s_does_not_appear_to_be_valid">"Tämän syötteen URL-osoite '%s' ei näytä olevan voimassa!"</string>
+    <string name="there_are_no_scheduled_updates">Ei ole ajoitettuja päivityksiä</string>
+    <string name="this_feed_already_exists_in_category">"Tämä syöte on jo olemassa luokassa '%s'"</string>
+    <string name="tip_cast_to_your_tv_msg">Napauta #IMG#-painiketta nauttiaksesi jaksoistasi suurelta ruudulta.</string>
+    <string name="tip_cast_to_your_tv_title">Lähetä televisioosi</string>
+    <string name="tip_how_to_select_compact_card_msg">"Näe enemmän jaksoja ruudulla kerralla. Valitse 'Kompaktit kortit' valikosta."</string>
+    <string name="tip_introduce_multi_select_msg">"Voit poistaa, ladata ja lisätä useita jaksoja soittolistaan kerralla.
+Paina jaksoa pitkään, jonka jälkeen voit valikoita haluamasi jaksot ja sitten valitse toiminto valikosta."</string>
+    <string name="tip_introduce_smart_play_msg">"Oletko kyllästynyt luomaan itse soittolistasi? Anna ÄlykäsToiston tehdä työn puolestasi!
+Napauta tästä lukeaksesi lisää."</string>
+    <string name="tip_notification">Vinkki</string>
+    <string name="tip_notification_categories_msg">Järjestä luokkia vetämällä #IMG#-kuvake haluamaasi sijaintiin listassa.</string>
+    <string name="tip_notification_drag_drop_playlist_info">Voit järjestää soittolistan uudelleen vetämällä #IMG#-kuvake haluamaasi sijaintiin soittolistassa.</string>
+    <string name="tip_notification_expand_categories_msg">Napauta #IMG# laajentaaksesi luokan ja nähdäksesi sen syötteet.</string>
+    <string name="trial_about_to_expire_message">BeyondPodin PRO-kokeilujaksosi päättyy %s päivän kuluttua</string>
+    <string name="trial_expired_message">BeyondPodin PRO-kokeiluaikasi on päättynyt!</string>
+    <string name="update_and_download_queue_connecting">Yhdistetään…</string>
+    <string name="update_and_download_queue_downloaded">Ladattu</string>
+    <string name="update_and_download_queue_title">Päivitys- ja latausjono</string>
+    <string name="update_and_download_queue_updating">Päivitetään</string>
+    <string name="update_and_download_updating_s">Päivitetään %s…</string>
+    <string name="update_download_mgr_currently_podcasts_can_be_downloaded_automatically_only_over_a_wifi_connection">"Tällä hetkellä podcastit voidaan ladata automaattisesti vain Wifi-yhteyden kautta.
+
+Käytä 'Lataa'-painiketta ladataksesi manuaalisesti yksittäisiä podcasteja.
+
+Voit muuttaa asetuksia menemällä Valikkoon, Asetukset, Syötepäivitys ja Lataa vain WiFI-yhteydellä"</string>
+    <string name="update_download_mgr_currently_podcasts_can_be_downloaded_automatically_only_when_the_device_is_plugged_in">"Tällä hetkellä podcastit voidaan ladata automaattisesti vain, kun laite on kytketty laturiin.
+
+Käytä 'Lataa'-painiketta ladataksesi manuaalisesti yksittäisiä podcasteja.
+
+Voit muuttaa asetuksia menemällä Valikkoon, Asetukset, Syötpäivitys ja Lataa vain latauksen aikana"</string>
+    <string name="update_download_mgr_scheduled_update_did_not_run_because_background_data_is_disabled">"Ajoitettu päivitys ei käynnistynyt, koska 'Taustatiedot' on poistettu käytöstä. (Voit kuitenkin päivittää syötteet manuaalisesti)."</string>
+    <string name="update_download_mgr_the_device_has_no_internet_connection">Laitteella ei ole verkkoyhteyttä! WiFi on tällä hetkellä pois päältä (ja se ei ole määritetty aktivoitumaan automaattisesti päälle päivitettäessä).</string>
+    <string name="update_download_mgr_unable_to_establish_internet_conection_the_device_is_in_airplane_mode">Verkkoyhteyden luominen ei onnistunut! Laite on lentokonetilassa.</string>
+    <string name="update_download_queue_activity_cancel_update">Lopeta päivitys ja lataus</string>
+    <string name="update_download_queue_download_completed">Sulje</string>
+    <string name="update_download_queue_processing_text">Tarkistetaan uusia jaksoja…</string>
+    <string name="update_download_queue_update_and_download_completed">Päivitys ja lataus valmis!</string>
+    <string name="update_download_queue_view_update_log">Näytä päivitysloki</string>
+    <string name="update_engine_notification__feed_update_completed">Syötteen päivitys on valmis</string>
+    <string name="update_engine_notification__feed_update_failed">Syötteen päivitys epäonnistui</string>
+    <string name="update_engine_notification__podcasts_failed">jaksoa epäonnistui</string>
+    <string name="update_engine_notification_feeds_failed">syötettä epäonnistui</string>
+    <string name="update_engine_notification_no_network_connection">Ei verkkoyhteyttä!</string>
+    <string name="update_engine_notification_no_new_podcasts">Ei ole uusia jaksoja</string>
+    <string name="update_engine_notification_no_new_posts">Ei uusia viestejä</string>
+    <string name="update_engine_notification_the_phone_is_in_airplane_mode">Laite on lentokonetilassa!</string>
+    <string name="update_engine_notification_there_were_errors_during_the_last_update">Viimeisen päivityksen aikana ilmeni virheitä! Napauta tästä nähdäksesi päivityslokin.</string>
+    <string name="update_engine_notification_unable_to_establish_network_connection">Verkkoyhteyden muodostaminen ei onnistunut.</string>
+    <string name="update_engine_notification_updated">Päivitetty</string>
+    <string name="updates_are_scheduled_for_categories">Päivitykset on ajoitettu luokille</string>
+    <string name="updating_google_reader">Päivitetään Feedlya</string>
+    <string name="warn_force_download_on_device_not_plugged_in_msg">Asetuksesi sallivat podcastin lataamisen, kun laite on liitettynä laturiin. Oletko varma, että haluat ladata jakson akkuvirralla?</string>
+    <string name="warn_force_download_on_mobile_data_msg">Asetuksesi eivät salli podcastin lataamista mobiilidatalla. Oletko varma, että haluat ladata jakson käyttämällä mobiilidataa?</string>
+    <string name="warn_force_download_on_wifi_not_connected_msg">Asetuksesi sallivat podcastin lataamisen vain WiFin yli. Oletko varma, että haluat ladata jakson käyttämällä mobiilidataa?</string>
+    <string name="warn_replace_pls_append">Liitä jakso nykyiseen soittolistaani</string>
+    <string name="warn_replace_pls_donotask_append">Liitä jatkossa aina valitut jaksot</string>
+    <string name="warn_replace_pls_donotask_replace">Aloita jatkossa aina uusi soittolista</string>
+    <string name="warn_replace_pls_donotask_tip">Voit muuttaa tätä asetusta myöhemmin asetuksista Soittolista > Automaattinen soittolista</string>
+    <string name="warn_replace_pls_msg">Valittu jakso aloittaa uuden soittolistan. Haluatko jatkaa?</string>
+    <string name="warn_replace_pls_replace">Kyllä, aloita uusi soittolista</string>
+    <string name="warn_replace_pls_title">Korvataanko soittolista?</string>
+    <string name="widget_action_picker_now_playing">Nyt toistetaan</string>
+    <string name="widget_action_picker_open_beyondpod">Avaa BeyondPod</string>
+    <string name="widget_action_picker_start_smartplay">Käynnistä oletusÄlykäsToisto</string>
+    <string name="widget_action_picker_update_smartplay_feeds">Päivitä oletusÄlykäsToisto</string>
+    <string name="widget_picker_title">Valitse toiminto</string>
+    <string name="widget_provider_playback_error">Toistovirhe!</string>
+    <string name="widget_provider_starting_stream_s">Aloitetaan suoratoisto… ( %s %%)</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.beyondpod.ui.views.base.EpisodeCardLayout android:background="?cardBgNormal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <mobi.beyondpod.ui.views.base.ProgressImageView android:id="@id/image" android:layout_width="@dimen/card_small_episode_image_width" android:layout_height="@dimen/card_small_episode_image_height" android:layout_marginTop="8.0dip" android:scaleType="center" android:layout_marginStart="12.0dip" style="@style/AlbumArtProgressImageView" />
+    <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0sp" android:maxLines="2" android:layout_alignWithParentIfMissing="true" android:layout_marginStart="10.0dip" android:layout_marginEnd="8.0dip" android:layout_toStartOf="@id/episodeToolbar" android:layout_toEndOf="@id/image" style="@style/CardEpisodeTitleTextStyle" />
+    <TextView android:textSize="12.0sp" android:id="@id/source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0sp" android:layout_below="@id/title" android:layout_marginEnd="100.0dip" android:layout_alignStart="@id/title" style="@style/CardEpisodeSourceTextStyle" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/episodeToolbar" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentEnd="true">
+        <mobi.beyondpod.ui.views.base.DownloadProgressButton android:id="@id/tb_download" android:background="?android:selectableItemBackground" android:layout_width="@dimen/episode_toolbar_height" android:layout_height="fill_parent" android:scaleType="center" />
+        <ImageView android:id="@id/tb_overflow" android:background="?android:selectableItemBackground" android:layout_width="@dimen/episode_toolbar_height" android:layout_height="fill_parent" android:src="@drawable/ic_action_overflow_dark" android:scaleType="center" android:contentDescription="@string/toolbar_overflow" />
+        <ImageView android:id="@id/addToMyEpisopdes" android:background="?android:selectableItemBackground" android:visibility="gone" android:layout_width="@dimen/episode_toolbar_height" android:layout_height="fill_parent" android:src="@drawable/ic_action_pub_ep_add" android:scaleType="center" android:contentDescription="@string/episode_add" />
+    </LinearLayout>
+</mobi.beyondpod.ui.views.base.EpisodeCardLayout>

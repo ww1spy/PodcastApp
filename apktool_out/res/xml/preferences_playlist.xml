@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_playlist_title" android:key="playlist_preferences" android:summary="@string/settings_playlist_summary"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/settings_Autoplaylist_title" android:key="AutoPlaylistEnabled" android:summary="@string/settings_Autoplaylist_summary" />
+    <ListPreference android:entries="@array/settings_mediaEndAction_text" android:title="@string/settings_mediaEndAction_title" android:key="MediaEndAction" android:summary="@string/settings_mediaEndAction_summary" android:dialogTitle="@string/settings_mediaEndAction_title" android:entryValues="@array/settings_mediaEndAction_values" />
+    <ListPreference android:entries="@array/playlist_end_action_text" android:title="@string/settings_playlistEndAction_title" android:key="PlaylistEndAction" android:summary="@string/settings_playlistEndAction_summary" android:defaultValue="1" android:dialogTitle="@string/settings_playlistEndAction_title" android:entryValues="@array/playlist_end_action_values" />
+    <CheckBoxPreference android:title="@string/settings_AutoRebuildSmartPlay_title" android:key="AutoSyncSmartPlay" android:summary="@string/settings_AutoRebuildSmartPlay_summary" />
+    <CheckBoxPreference android:title="@string/settings_AutoRebuildKeepCurrent_title" android:key="KeepCurrentEpisodeForDefferAutoSyncSmartPlay" android:summary="@string/settings_AutoRebuildKeepCurrent_summary" android:dependency="AutoSyncSmartPlay" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/settings_RemovePlayedFromPlaylist_title" android:key="RemovePlayedFromPlaylist" android:summary="@string/settings_RemovePlayedFromPlaylist_summary" android:defaultValue="false" />
+</PreferenceScreen>

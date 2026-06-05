@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.beyondpod.ui.views.publishedepisodes.PublishedEpisodesHeader android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/activeContentGroup" android:background="#ff666666" android:paddingLeft="@dimen/main_screen_h_margin" android:paddingTop="16.0dip" android:paddingRight="@dimen/main_screen_h_margin" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/feedName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/card_view_item_h_margin" android:layout_marginEnd="8.0dip" android:layout_toStartOf="@id/updatedGroup" style="@style/CardPublisherSectionHeaderTitleTextStyle" />
+        <FrameLayout android:id="@id/updatedGroup" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_alignTop="@id/feedName" android:layout_alignBottom="@id/feedName" android:layout_marginEnd="@dimen/card_view_item_h_margin" android:layout_alignParentEnd="true">
+            <ImageView android:layout_gravity="center" android:id="@id/toggleExtras" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_caret_down_lt_sm" android:scaleType="center" android:contentDescription="@string/toggle_extras" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/feedLoadProgress" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/extrasGroup" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/card_view_item_h_margin" android:layout_marginTop="6.0dip" android:layout_marginRight="@dimen/card_view_item_h_margin" android:layout_below="@id/feedName">
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/horizontal_divider_dash" android:contentDescription="@string/horizontal_divider_dash" android:layerType="software" />
+            <LinearLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/vertical_divider" android:showDividers="middle" android:dividerPadding="4.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_section_publisher_label" style="@style/CardPublisherSectionHeaderExtraTitleTextStyle" />
+                    <TextView android:id="@id/feedLastUpdated" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CardPublisherSectionHeaderExtraTitleTextStyle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/feedNextUpdateGroup" android:background="?android:selectableItemBackground" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feed_content_list_view_next_update" style="@style/CardPublisherSectionHeaderExtraTitleTextStyle" />
+                    <TextView android:id="@id/feedNextUpdate" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CardPublisherSectionHeaderExtraTitleTextStyle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/feedEpisodesGroup" android:background="?android:selectableItemBackground" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feed_content_list_view_my_episodes" style="@style/CardPublisherSectionHeaderExtraTitleTextStyle" />
+                    <TextView android:id="@id/feedEpisodes" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CardPublisherSectionHeaderExtraTitleTextStyle" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_gravity="end|center" android:id="@id/openSettings" android:background="?android:selectableItemBackground" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_feed_settings" android:scaleType="center" android:contentDescription="@string/feed_settings" />
+        </FrameLayout>
+    </RelativeLayout>
+    <View android:id="@id/headerBottomSpacer" android:layout_width="fill_parent" android:layout_height="@dimen/card_view_item_top_margin" />
+</mobi.beyondpod.ui.views.publishedepisodes.PublishedEpisodesHeader>

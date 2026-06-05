@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:id="@id/settingsRoot" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/generic_screen_h_margin" android:layout_marginRight="@dimen/generic_screen_h_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/settingsScroll" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/settingsArea" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ViewStub android:id="@id/stub_commonFeedSettings" android:layout="@layout/feed_properties_common_view" android:inflatedId="@id/commonFeedSettings" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/stub_virtualFeedSettings" android:layout="@layout/feed_properties_virtual_feed_view" android:inflatedId="@id/virtualFeedSettings" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/toggleAdvancedPrefsHolder" android:background="#50505050" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:layout_marginBottom="4.0dip" android:paddingStart="6.0dip" android:paddingEnd="6.0dip">
+                <TextView android:textSize="@dimen/property_dialog_setting_title_font_size" android:id="@id/toggleAdvancedPrefsMsg" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/feed_properties_advanced_section" android:layout_weight="1.0" />
+                <View android:background="#ffcccccc" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" />
+                <ImageView android:id="@id/toggleAdvancedPrefs" android:background="?android:selectableItemBackground" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_arrow_bottom" android:scaleType="center" android:contentDescription="@string/advanced_preferences" />
+            </LinearLayout>
+            <ViewStub android:id="@id/stub_advancedFeedProperties" android:layout="@layout/feed_properties_advanced_view" android:inflatedId="@id/advancedFeedProperties" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

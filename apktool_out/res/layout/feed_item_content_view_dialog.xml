@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/webViewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <mobi.beyondpod.ui.views.base.UnderlinePageIndicator android:layout_gravity="bottom" android:id="@id/underlineIndicator" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/loadingProgress" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="80.0dip" android:indeterminate="true" />
+</FrameLayout>

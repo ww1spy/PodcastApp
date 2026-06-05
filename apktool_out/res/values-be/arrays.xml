@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_feed_section_names">
+        <item>Папулярнае</item>
+        <item>Рэкамендаванае</item>
+        <item>Выдаўцы</item>
+        <item>Катэгорыі</item>
+        <item>Міжнародныя</item>
+        <item>Інтарэсы</item>
+    </string-array>
+    <string-array name="allow_episode_streaming_text">
+        <item>Заўсёды</item>
+        <item>Толькі на Wi-Fi</item>
+        <item>Ніколі</item>
+    </string-array>
+    <string-array name="allow_episode_streaming_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="audiobook_genres">
+        <item>All Genres</item>
+        <item>Adventure</item>
+        <item>Advice</item>
+        <item>Ancient Texts</item>
+        <item>Animals</item>
+        <item>Art</item>
+        <item>Biography</item>
+        <item>Children</item>
+        <item>Classics (antiquity)</item>
+        <item>Comedy</item>
+        <item>Cookery</item>
+        <item>Economics/Political Economy</item>
+        <item>Epistolary fiction</item>
+        <item>Erotica</item>
+        <item>Essay/Short nonfiction</item>
+        <item>Fairy tales</item>
+        <item>Fantasy</item>
+        <item>Fiction</item>
+        <item>Historical Fiction</item>
+        <item>History</item>
+        <item>Holiday</item>
+        <item>Horror/Ghost stories</item>
+        <item>Humor</item>
+        <item>Instruction</item>
+        <item>Languages</item>
+        <item>Literature</item>
+        <item>Memoirs</item>
+        <item>Music</item>
+        <item>Mystery</item>
+        <item>Myths/Legends</item>
+        <item>Nature</item>
+        <item>Philosophy</item>
+        <item>Play</item>
+        <item>Poetry</item>
+        <item>Politics</item>
+        <item>Psychology</item>
+        <item>Romance</item>
+        <item>Religion</item>
+        <item>Satire</item>
+        <item>Science</item>
+        <item>Science fiction</item>
+        <item>Sea stories</item>
+        <item>Short stories</item>
+        <item>Spy stories</item>
+        <item>Teen/Young adult</item>
+        <item>Tragedy</item>
+        <item>Travel</item>
+        <item>War stories</item>
+        <item>Westerns</item>
+    </string-array>
+    <string-array name="audiobook_languages">
+        <item>All Languages</item>
+        <item>Ancient Greek</item>
+        <item>Arabic</item>
+        <item>Bisaya</item>
+        <item>Bulgarian</item>
+        <item>Chinese</item>
+        <item>Church Slavonic</item>
+        <item>Danish</item>
+        <item>Dholuo</item>
+        <item>Dutch</item>
+        <item>English</item>
+        <item>Esperanto</item>
+        <item>Finnish</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Hebrew</item>
+        <item>Hungarian</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Javanese</item>
+        <item>Latin</item>
+        <item>Latvian</item>
+        <item>Middle English</item>
+        <item>Multilingual</item>
+        <item>Old English</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Russian</item>
+        <item>Spanish</item>
+        <item>Swedish</item>
+        <item>Tagalog</item>
+        <item>Tamil</item>
+        <item>Ukrainian</item>
+        <item>Urdu</item>
+    </string-array>
+    <string-array name="cds_accept_feeds_type_text">
+        <item>Ніколі</item>
+        <item>Толькі пры ручной адпраўцы</item>
+        <item>Заўсёды</item>
+    </string-array>
+    <string-array name="cds_accept_feeds_type_values">
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="feed_fingerprint_type_values">
+        <item>-1</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="feed_fingerprint_type_values_text">
+        <item>Аўтаматычна</item>
+        <item>Выкарыстоўваць GUID паста</item>
+        <item>Выкарыстоўваць назву, спасылку і дату публікацыі паста</item>
+    </string-array>
+    <string-array name="myepisodesFilter_text">
+        <item>Мае Эпізоды</item>
+        <item>Усе апублікаваныя</item>
+    </string-array>
+    <string-array name="playlist_end_action_text">
+        <item>Нічога не рабіць</item>
+        <item>Ачысціь плэйліст</item>
+        <item>Пачаць спачатку SmartPlay</item>
+    </string-array>
+    <string-array name="playlist_end_action_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="resume_replay_duration_text">
+        <item>Не прайграваць паўторна</item>
+        <item>Апошнія 5 сек.</item>
+        <item>Апошнія 15 сек.</item>
+        <item>Апошнія 30 сек.</item>
+    </string-array>
+    <string-array name="resume_replay_duration_values">
+        <item>0</item>
+        <item>5</item>
+        <item>15</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="sample_content_category_names">
+        <item>News</item>
+        <item>Popular Science</item>
+        <item>Indie Music</item>
+        <item>TV &amp; Film</item>
+        <item>Great Stories</item>
+        <item>Android</item>
+        <item>Cars</item>
+        <item>Money</item>
+        <item>Sci-Fi</item>
+        <item>Business</item>
+        <item>Comedy</item>
+        <item>Food</item>
+        <item>Parenting</item>
+        <item>Wine &amp; Beer</item>
+        <item>Travel</item>
+    </string-array>
+    <string-array name="schedule_update_period">
+        <item>Гадзін</item>
+        <item>Дзён</item>
+        <item>Тыдні</item>
+    </string-array>
+    <string-array name="settings_configure_bt_buttons_text">
+        <item>Наступны эпізод</item>
+        <item>Папярэдні эпізод</item>
+        <item>Прапусціць уперад</item>
+        <item>Прапусціць назад</item>
+        <item>Прапусціць да канца</item>
+    </string-array>
+    <string-array name="settings_configure_bt_buttons_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="settings_contentFontSize_text">
+        <item>Самы вялікі</item>
+        <item>Большы</item>
+        <item>Сярэдні</item>
+        <item>Меншы</item>
+        <item>Самы малы</item>
+    </string-array>
+    <string-array name="settings_feedSelectedAction_text">
+        <item>Мае Эпізоды</item>
+        <item>Усе апублікаваныя</item>
+    </string-array>
+    <string-array name="settings_feedSelectedAction_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="settings_itemSortOrder_text">
+        <item>Па змаўчанні патока</item>
+        <item>Самыя новыя зверху</item>
+        <item>Самыя старыя зверху</item>
+    </string-array>
+    <string-array name="settings_long_podcastName_handling_text">
+        <item>Паказваць пачатак</item>
+        <item>Паказваць канец</item>
+    </string-array>
+    <string-array name="settings_markAsReadOnOpen_text">
+        <item>Усе запісы</item>
+        <item>Запісы з падкастамі</item>
+        <item>Ніякія</item>
+    </string-array>
+    <string-array name="settings_markAsReadOnOpen_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="settings_maxTrackAge_text">
+        <item>5 дзён</item>
+        <item>7 дзён</item>
+        <item>30 дзён</item>
+        <item>180 дзён</item>
+        <item>360 дзён</item>
+        <item>99999 дзён</item>
+    </string-array>
+    <string-array name="settings_maxTrackAge_values">
+        <item>5</item>
+        <item>7</item>
+        <item>30</item>
+        <item>180</item>
+        <item>360</item>
+        <item>99999</item>
+    </string-array>
+    <string-array name="settings_mediaEndAction_text">
+        <item>Прайграць наступны</item>
+        <item>Выдаліць і прайграць наступны</item>
+        <item>Нічога не рабіць</item>
+        <item>Выдаліць і нічога не рабіць</item>
+    </string-array>
+    <string-array name="settings_mediaEndAction_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_myepisodesFilter_text">
+        <item>Усе эпізоды</item>
+        <item>Толькі аўдыё</item>
+        <item>Толькі відэа</item>
+        <item>Спампаваныя</item>
+        <item>Нескончаныя</item>
+        <item>Непрайграныя</item>
+        <item>Выбранае</item>
+    </string-array>
+    <string-array name="settings_myepisodesFilter_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="settings_myepisodesSortOrder_text">
+        <item>Па патоку</item>
+        <item>Апошнія</item>
+        <item>Старэйшыя</item>
+        <item>Па імені</item>
+        <item>Па імені (Я-А)</item>
+        <item>Па працягласці</item>
+        <item>Па працягласці (апісанне)</item>
+        <item>Па прайгранай частцы</item>
+        <item>Па імені файла</item>
+    </string-array>
+    <string-array name="settings_myepisodesSortOrder_values">
+        <item>-1</item>
+        <item>3</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="settings_numPodcastsToDownload_text">
+        <item>1 эпізод</item>
+        <item>3 эпізоды</item>
+        <item>5 эпізодаў</item>
+        <item>10 эпізодаў</item>
+        <item>20 эпізодаў</item>
+        <item>50 эпізодаў</item>
+        <item>Няма эпізодаў</item>
+    </string-array>
+    <string-array name="settings_numPodcastsToDownload_values">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="settings_numPodcastsToKeep_text">
+        <item>1 апошні эпізод</item>
+        <item>3 апошніх эпізоды</item>
+        <item>5 апошніх эпізодаў</item>
+        <item>Апошнія 10 эпізодаў</item>
+        <item>Апошнія 20 эпізодаў</item>
+        <item>Апошнія 50 эпізодаў</item>
+        <item>Захоўваць усе</item>
+    </string-array>
+    <string-array name="settings_numPodcastsToKeep_values">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>99999</item>
+    </string-array>
+    <string-array name="settings_orientation_lock_text">
+        <item>Аўтаматычна</item>
+        <item>Партрэтная</item>
+        <item>Ландшафтная</item>
+    </string-array>
+    <string-array name="settings_orientation_lock_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_player_integration_text">
+        <item>Выкарыстоўваць унутраны</item>
+        <item>Выкарыстоўваць знешні відэаплэер</item>
+        <item>Выкарыстоўваць знешні аўдыёплэер</item>
+        <item>Выкарыстоўваць знешні</item>
+    </string-array>
+    <string-array name="settings_player_integration_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_player_screen_power_state_text">
+        <item>Выкарыстоўваць налады прылады па змаўчанні</item>
+        <item>Цёмны (калі зараджаецца)</item>
+        <item>Светлы (калі зараджаецца)</item>
+        <item>Заўсёды цёмны</item>
+        <item>Заўсёды светлы</item>
+    </string-array>
+    <string-array name="settings_player_screen_power_state_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="settings_podcastDownloadAction_text">
+        <item>Спампаваныя ўручную эпізоды</item>
+        <item>Спампаваць апошнія эпізоды</item>
+        <item>Стрыміць апошнія эпізоды</item>
+        <item>Спампаваць эпізоды ў парадку</item>
+        <item>Стрыміць эпізоды ў парадку</item>
+        <item>Ігнараваць усе эпізоды</item>
+    </string-array>
+    <string-array name="settings_podcastDownloadAction_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_preferred_enclosure_text">
+        <item>Выкарыстоўваць па змаўчанні</item>
+        <item>Выкарыстоўваць альтэрнатыўны 1</item>
+        <item>Выкарыстоўваць альтэрнатыўны 2</item>
+        <item>Выкарыстоўваць альтэрнатыўны 3</item>
+        <item>Выкарыстоўваць альтэрнатыўны 4</item>
+        <item>Выкарыстоўваць альтэрнатыўны 5</item>
+        <item>Выкарыстоўваць альтэрнатыўны 6</item>
+        <item>Выкарыстоўваць альтэрнатыўны 7</item>
+        <item>Выкарыстоўваць альтэрнатыўны 8</item>
+        <item>Выкарыстоўваць альтэрнатыўны 9</item>
+    </string-array>
+    <string-array name="settings_screen_item_content_view_theme_text">
+        <item>Белая</item>
+        <item>Сэпія</item>
+        <item>Чорная</item>
+    </string-array>
+    <string-array name="settings_screen_power_state_during_wifi_updates_text">
+        <item>Аўтаматычна</item>
+        <item>Заўсёды ўключана</item>
+        <item>Заўсёды выключана</item>
+    </string-array>
+    <string-array name="settings_screen_power_state_during_wifi_updates_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_skipInterval_text">
+        <item>5 сек</item>
+        <item>10 сек</item>
+        <item>20 сек</item>
+        <item>30 сек</item>
+        <item>1 хв</item>
+        <item>5 хв</item>
+        <item>Не прапускаць</item>
+    </string-array>
+    <string-array name="settings_skipInterval_values">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+        <item>300</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="settings_skip_to_end_click_type_text">
+        <item>Выкарыстоўваць кароткае крананне</item>
+        <item>Выкарыстоўваць доўгі націск</item>
+        <item>Схаваць кнопку</item>
+    </string-array>
+    <string-array name="settings_skip_to_end_click_type_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_sortOrder_text">
+        <item>Па імені (А-Я)</item>
+        <item>Па імені (Я-А)</item>
+        <item>Па даце (старыя зверху)</item>
+        <item>Па даце (новыя зверху)</item>
+    </string-array>
+    <string-array name="settings_sortOrder_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_startupView_text">
+        <item>Па змаўчанні</item>
+        <item>Спіс каналаў</item>
+        <item>Прайгравальнік</item>
+    </string-array>
+    <string-array name="settings_startupView_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_theme_text">
+        <item>Светлая (па змаўчанні)</item>
+        <item>Цёмная</item>
+    </string-array>
+    <string-array name="settings_theme_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_trackSortOrder_text">
+        <item>Апошнія</item>
+        <item>Старэйшыя</item>
+        <item>Па імені</item>
+        <item>Па імені (Я-А)</item>
+        <item>Па працягласці</item>
+        <item>Па працягласці (апісанне)</item>
+        <item>Па прайгранай частцы</item>
+        <item>Па імені файла</item>
+    </string-array>
+    <string-array name="settings_trackSortOrder_values">
+        <item>3</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="settings_volumeNavigation_text">
+        <item>Толькі не ў час прайгравання</item>
+        <item>Ніколі</item>
+        <item>Заўсёды</item>
+    </string-array>
+    <string-array name="settings_volumeNavigation_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="smart_playlist_numPodcasts_text">
+        <item>1 эпізод</item>
+        <item>2 эпізоды</item>
+        <item>3 эпізоды</item>
+        <item>4 эпізоды</item>
+        <item>5 эпізодаў</item>
+        <item>6 эпізодаў</item>
+        <item>7 эпізодаў</item>
+        <item>8 эпізодаў</item>
+        <item>9 эпізодаў</item>
+        <item>10 эпізодаў</item>
+        <item>20 эпізодаў</item>
+        <item>30 эпізодаў</item>
+        <item>50 эпізодаў</item>
+    </string-array>
+    <string-array name="smart_playlist_numPodcasts_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+    </string-array>
+    <string-array name="smart_playlist_sortOrder_text">
+        <item>Апошнія</item>
+        <item>Старэйшыя</item>
+        <item>Выпадковы</item>
+    </string-array>
+    <string-array name="widget_background_text">
+        <item>Цёмны</item>
+        <item>Празрысты</item>
+        <item>Няма</item>
+    </string-array>
+</resources>

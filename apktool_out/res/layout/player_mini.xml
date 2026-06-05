@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.beyondpod.ui.views.player.PlayerMini android:id="@id/mini_player" android:padding="@dimen/mini_player_margin" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="#ff404040" android:layout_width="wrap_content" android:layout_height="@dimen/mini_player_height">
+        <RelativeLayout android:layout_gravity="center_vertical" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" android:layout_marginStart="@dimen/mini_player_image_width">
+            <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="4.0dip" style="@style/MiniPlayerTitle" />
+            <TextView android:id="@id/source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/title" android:layout_alignStart="@id/title" android:layout_alignEnd="@id/title" style="@style/MiniPlayerSource" />
+        </RelativeLayout>
+        <ImageButton android:id="@id/playpause" android:background="?android:selectableItemBackground" android:layout_width="@dimen/mini_player_height" android:layout_height="fill_parent" android:scaleType="center" android:contentDescription="@string/control_play_pause" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/miniAlbumArtStack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mini_player_image_offest" android:layout_marginStart="8.0dip">
+        <mobi.beyondpod.ui.views.base.ProgressImageView android:id="@id/miniAlbumArt1" android:layout_width="@dimen/mini_player_image_width" android:layout_height="@dimen/mini_player_image_height" android:scaleType="center" style="@style/AlbumArtProgressImageView" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/prepareProgress" android:background="@color/player_shaded_area_bg" android:visibility="gone" android:layout_width="@dimen/mini_player_image_width" android:layout_height="@dimen/mini_player_image_height" style="?android:progressBarStyle" />
+    </FrameLayout>
+</mobi.beyondpod.ui.views.player.PlayerMini>

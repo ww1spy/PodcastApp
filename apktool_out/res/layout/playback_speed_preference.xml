@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/sp_buttonMinus" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_minus_dark" android:contentDescription="@string/button_remove" />
+    <TextSwitcher android:id="@id/sp_speedInfo" android:layout_width="90.0dip" android:layout_height="fill_parent" android:layout_margin="8.0dip" />
+    <ImageButton android:id="@id/sp_buttonPlus" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_add_dark" android:contentDescription="@string/button_add" />
+</LinearLayout>

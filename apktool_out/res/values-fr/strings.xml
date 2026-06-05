@@ -1,0 +1,1188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="MENU_Settings_Selector">Réglages</string>
+    <string name="MENU_about">À propos</string>
+    <string name="MENU_add_to_playlist">Ajouter à la liste de lecture</string>
+    <string name="MENU_addtohome_smartplay">"Ajouté comme icône à l'écran d'accueil"</string>
+    <string name="MENU_browser_copy_link">Copier Lien</string>
+    <string name="MENU_browser_load_images">Afficher images</string>
+    <string name="MENU_browser_open_in_external">Ouvrir dans le navigateur</string>
+    <string name="MENU_browser_refresh">Recharger</string>
+    <string name="MENU_browser_share_feed">Partager le podcast</string>
+    <string name="MENU_browser_share_link">Partager le lien</string>
+    <string name="MENU_browser_share_podcast">"Partager l'épisode"</string>
+    <string name="MENU_card_size_small">Cartes Compact</string>
+    <string name="MENU_clear_cache">Vider les caches</string>
+    <string name="MENU_delete_all_played_podcasts">Supprimer les lus</string>
+    <string name="MENU_delete_category">Supprimer catégorie</string>
+    <string name="MENU_delete_episode">Supprimer</string>
+    <string name="MENU_delete_feed">Supprimer un flux</string>
+    <string name="MENU_delete_podcast_episodes">Supprimer de \"Mes épisodes\"</string>
+    <string name="MENU_delete_smartplay">Supprimer</string>
+    <string name="MENU_display_settings">"Paramètres d'affichage"</string>
+    <string name="MENU_download_all_playlist">Télécharger tous les épisodes de la liste de lecture</string>
+    <string name="MENU_dump_environment">Infos environnement</string>
+    <string name="MENU_edit_category">Modifier catégorie</string>
+    <string name="MENU_edit_feed">Modifier un flux</string>
+    <string name="MENU_edit_smartplay">Modifier</string>
+    <string name="MENU_episode">Épisode</string>
+    <string name="MENU_exit_app">Quitter BeyondPod</string>
+    <string name="MENU_feed">Podcast</string>
+    <string name="MENU_filter_episodes">Filtre</string>
+    <string name="MENU_hide_played">Masquer les lus</string>
+    <string name="MENU_hide_read">Cacher les lus</string>
+    <string name="MENU_import_selected">Importer les éléments sélectionnés</string>
+    <string name="MENU_lock_episode">Ajouté comme favori</string>
+    <string name="MENU_mark_all_as_played">Marquer tous comme lus</string>
+    <string name="MENU_mark_all_as_read">Tout marquer comme lu</string>
+    <string name="MENU_mark_played">Marquer comme lu</string>
+    <string name="MENU_mark_read">Marquer lu</string>
+    <string name="MENU_mark_unplayed">Marquer comme non-lu</string>
+    <string name="MENU_mark_unread">Marquer non lus</string>
+    <string name="MENU_media_route">Lecture sur…</string>
+    <string name="MENU_move_to_bottom">Déplacer tout en bas</string>
+    <string name="MENU_move_to_top">Déplacer en tête de liste</string>
+    <string name="MENU_open_episode_feed">Ouvrir le podcast…</string>
+    <string name="MENU_open_search">Chercher</string>
+    <string name="MENU_opml_search">Chercher</string>
+    <string name="MENU_play_episodes">Lire les épisodes</string>
+    <string name="MENU_play_in_external_player">Jouer dans un lecteur externe</string>
+    <string name="MENU_podcast_info">"Voir les notes d'épisodes"</string>
+    <string name="MENU_remove_from_playlist">Retirer de la liste de lecture</string>
+    <string name="MENU_reorder_categories">Réorganiser les catégories</string>
+    <string name="MENU_reset_tips">Réinitialiser Conseils &amp; Avertissements</string>
+    <string name="MENU_set_update_schedule">Régler MàJ planifié</string>
+    <string name="MENU_setdefault_smartplay">Appliquer par défaut</string>
+    <string name="MENU_show_played">Montrer les lus</string>
+    <string name="MENU_show_read">Montrer les vus</string>
+    <string name="MENU_sort_podcasts">Trier</string>
+    <string name="MENU_start_download">Télécharger</string>
+    <string name="MENU_stop_browser_load">Arreter</string>
+    <string name="MENU_stop_update">Arrêter</string>
+    <string name="MENU_suggest_feature">Support &amp; suggestions</string>
+    <string name="MENU_unlock_app">Passer en version Pro!</string>
+    <string name="MENU_unlock_episode">Supprimé des favoris</string>
+    <string name="MENU_update_my_episodes">Mettre à jour %s</string>
+    <string name="MENU_update_smartplay">Rafraîchir les podcasts</string>
+    <string name="MENU_video_as_audio">Lire seulement le son des vidéos</string>
+    <string name="MENU_view_help">Aide</string>
+    <string name="MENU_view_log_file">Afficher le journal BeyondPod</string>
+    <string name="MENU_view_logcat_file">"Afficher le journal d'Android"</string>
+    <string name="MENU_view_logs">Afficher les journaux</string>
+    <string name="MENU_view_update_log">Voir le journal des MàJ</string>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">DÉSACTIVÉ</string>
+    <string name="abc_capital_on">ACTIVÉ</string>
+    <string name="abc_search_hint">Rechercher…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Réduire</string>
+    <string name="about_dialog_about_beyondpod">À propos de BeyondPod</string>
+    <string name="about_dialog_close">Fermer</string>
+    <string name="about_dialog_e_mail_support">Support par courriel</string>
+    <string name="about_dialog_environment_info">Info De Stockage</string>
+    <string name="about_dialog_expires">Expire</string>
+    <string name="about_dialog_licensed_to">Type de Licence</string>
+    <string name="add_feed_dialog_title">Ajout flux</string>
+    <string name="add_feed_dlg_enter_feed_url">"Entrez l'adresse du flux"</string>
+    <string name="add_feed_dlg_import_from_google_reader">Importer depuis Feedly</string>
+    <string name="add_feed_dlg_import_from_opml_file">Importer un fichier OPML</string>
+    <string name="add_feed_dlg_import_from_sd_card_folder">Ajouter dossier comme flux virtuel</string>
+    <string name="add_feed_import_feeds_title">Importer des flux</string>
+    <string name="add_feed_subscribe">Souscrire</string>
+    <string name="adv_settings_allow_pultorefresh_summary">"Mise à jour et téléchargement d'épisodes en utilisant le \"tirer pour rafraîchir\""</string>
+    <string name="adv_settings_allow_pultorefresh_title">Activer Tirer-Pour-Rafraîchir</string>
+    <string name="adv_settings_attach_file_when_sharing_summary">"Lors du partage d'épisode, attachez le fichier téléchargé. Activer lors du partage de DropBox, Google Drive, etc."</string>
+    <string name="adv_settings_attach_file_when_sharing_title">Joindre des fichiers épisode lors du partage</string>
+    <string name="adv_settings_cds_sync_furthest_pos_summary">"Synchroniser la position de lecture de l'épisode seulement si la position de lecture dans le nuage est plus loin (après) que la position de lecture sur l'appareil"</string>
+    <string name="adv_settings_cds_sync_furthest_pos_title">Synchroniser seulement la position de lecture la plus éloigné</string>
+    <string name="adv_settings_custom_cds_settings_summary">Ne changez pas! (sauf si vous savez ce que vous faites)</string>
+    <string name="adv_settings_custom_cds_settings_title">Paramètres de débogage</string>
+    <string name="adv_settings_custom_sdcard_location_summary">Entrez un chemin personnalisé où BeyondPod enregistrera les téléchargements des épisodes podcasts</string>
+    <string name="adv_settings_custom_sdcard_location_title">"Chemin téléchargement d'épisodes"</string>
+    <string name="adv_settings_enable_cds_settings_dlg_msg">"EpisodeSync synchronise la position de lectures des épisodes entre plusieurs appareils.
+
+EpisodeSync est actuellement en bêta et peut avoir quelques soucis.
+
+Si vous souhaitez participer à cette BETA, vous pouvez trouver plus d'informations sur notre forum d'aide : www.beyondpod.com/forum"</string>
+    <string name="adv_settings_enable_cds_settings_dlg_title">AVERTISSEMENT - fonctionnalité bêta!</string>
+    <string name="adv_settings_enable_logging_summary">"Permet une journalisation détaillé de l'application"</string>
+    <string name="adv_settings_enable_logging_title">Activer la journalisation</string>
+    <string name="adv_settings_http_timeout_summary">"Délai de déconnexion par défaut en secondes pour les connexions HTTP lors de l'actualisation des flux ou le téléchargement de podcasts"</string>
+    <string name="adv_settings_http_timout_title">Délai de déconnexion</string>
+    <string name="adv_settings_http_user_agent_summary">"Entrez une chaîne complète d'agent utilisateur ou MO (Pour Mozilla Firefox) ou IE(Internet Explorer)"</string>
+    <string name="adv_settings_http_user_agent_title">Agent Utilisateur (Navigateur Web)</string>
+    <string name="adv_settings_keep_screen_on_if_wifi_summary">"Garde l'écran allumé lors de la MàJ via WIFI (Cochez si la MàJ échoue souvent)"</string>
+    <string name="adv_settings_keep_screen_on_if_wifi_title">Ecran allumé pour le WIFI</string>
+    <string name="alert_dialog_allow">Permettre</string>
+    <string name="alert_dialog_cancel">Annuler</string>
+    <string name="alert_dialog_close">Fermer</string>
+    <string name="alert_dialog_continue">Continuer</string>
+    <string name="alert_dialog_exit">Quitter BeyondPod</string>
+    <string name="alert_dialog_external_player_help">Aide lecteur</string>
+    <string name="alert_dialog_feed_help">Aide</string>
+    <string name="alert_dialog_ignore">Ignorer</string>
+    <string name="alert_dialog_no">Non</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_reset">Permuter</string>
+    <string name="alert_dialog_save">Sauver</string>
+    <string name="alert_dialog_try_external_player">Essayez lecteur externe</string>
+    <string name="alert_dialog_yes">Oui</string>
+    <string name="android_auto_categories_folder">Catégories</string>
+    <string name="android_auto_feeds_folder">FLUXS</string>
+    <string name="android_auto_trial_expired">"La période d'essai de BeyondPod est expiré!"</string>
+    <string name="app_shareLink">Souscrivez dans BeyondPod</string>
+    <string name="application_error_access_denied">OK... mais BeyondPod ne sera pas en mesure d’accéder à votre carte de stockage (mise à jour des fluxs ou télécharger/supprimer/déplacer des épisodes)</string>
+    <string name="application_error_access_granted">Merci ! BeyondPod peuvent désormais accéder à votre carte de stockage.</string>
+    <string name="application_error_access_granted_but_still_cant_write">"Oups... Quelque chose ne va pas!
+
+BeyondPod a obtenu une autorisation pour accéder à votre carte de stockage, mais pour une raison inconnu on ne peut y avoir accès.
+
+Essayez de redémarrer l’appareil."</string>
+    <string name="application_error_access_granted_retry">"Permission accordée ! 
+. Veuillez réessayer votre action."</string>
+    <string name="application_error_access_request">"Autoriser l'accès"</string>
+    <string name="application_error_invalid_reader_login">"Vous n'êtes probablement pas connecté à Feedly ou votre dernière session a expiré!
+
+Utilisez le bouton Se connecter ci-dessous pour vous connecter et réessayez ensuite de mettre à jour votre flux"</string>
+    <string name="application_error_invalid_reader_login_button_text">Se connecter à Feedly</string>
+    <string name="application_error_message_dialog_title">Erreur BeyondPod</string>
+    <string name="application_error_permission_request">Demande d’autorisation</string>
+    <string name="application_error_storage_card_corrupted">"BeyondPod as échoué lors de l'écriture sur votre carte SD!
+
+Dans certains cas le problème peut être résolu en redémarrant l'appareil, si le redémarrage ne résout pas le problème, essayer de formatter la carte SD."</string>
+    <string name="application_error_storage_card_read_needs_access_permission">BeyondPod a besoin d’une autorisation pour accéder à votre carte de stockage (SD).</string>
+    <string name="application_error_storage_card_read_needs_write_permission">BeyondPod requiert une autorisation d’enregistrer les épisodes sur votre carte de stockage (SD).</string>
+    <string name="application_error_storage_card_read_only_kitkat">"En raison des restrictions de carte de stockage externe introduites dans Android KitKat, BeyondPod ne peut plus écrire dans votre répertoire actuel.
+
+Utilisez: Paramètres > Paramètres généraux > Dossier de téléchargement de podcast pour sélectionner un autre dossier de téléchargement."</string>
+    <string name="application_licensed_to">.</string>
+    <string name="audiobook_search_hint">"Entrez l'auteur ou le titre du livre"</string>
+    <string name="auto_now_playing">En Lecture</string>
+    <string name="auto_playlist">Liste de lecture</string>
+    <string name="br_backup_command_summary">Sauvegarde vos abonnements et réglages de flux. Les épisodes téléchargés ne seront PAS sauvegardés</string>
+    <string name="br_backup_command_title">Sauvegarde</string>
+    <string name="br_backup_failed">"La sauvegarde a échoué!
+
+%s"</string>
+    <string name="br_backup_lost_on_uninstall_warning_msg">"Votre emplacement de sauvegarde actuel est un dossier qui sera supprimé si vous désinstallez BeyondPod.
+
+Si vous souhaitez conserver vos sauvegardes, nous vous suggérons d'utiliser 'Partage de Sauvegarde' qui vous permettras de les exporter vers DropBox, Google Drive, courriel etc. pour être stocké à l'extérieur de votre appareil!"</string>
+    <string name="br_backup_protected_feeds_warning_msg">"%s de vos flux sont protégé par mot de passe!
+
+Les mots de passe des fluxs seront inclus dans la sauvegarde, et il est possible qu'une personne malveillante puisse y acceder.
+
+Veuillez vous assurer de conserver le fichier de sauvegarde en un lieu SÛRE!"</string>
+    <string name="br_backup_was_saved_to">"La sauvegarde a été enregistré dans:
+
+%s"</string>
+    <string name="br_last_backup">Dernière sauvegarde: %s</string>
+    <string name="br_no_backups_available">"Il n'y a aucun fichier de sauvegarde dans %s"</string>
+    <string name="br_restore_command_summary">Restaurer les abonnements et réglages de fluxs</string>
+    <string name="br_restore_command_title">Restaurer</string>
+    <string name="br_restore_complete">"Restauration complète!
+
+BeyondPod va maintenant redémarrer pour appliquer les nouveaux paramètres."</string>
+    <string name="br_restore_failed">"Restauration échouée!
+
+%s"</string>
+    <string name="br_restore_warning_msg" formatted="false">"Vous êtes sur le point de restaurer une sauvegarde de BeyondPod ver. %s
+ faites le %s à: %s!
+
+Ceci vas remplacer vos paramètres, flux et historique de téléchargement.
+
+ Continuer avec restauration?"</string>
+    <string name="br_restore_warning_title">Restauration BeyondPod</string>
+    <string name="br_select_backup_to_restore">Sélectionnez une sauvegarde à restaurer</string>
+    <string name="br_select_backup_to_share">Sélectionnez une sauvegarde à partager</string>
+    <string name="br_settings_command_summary">%s</string>
+    <string name="br_settings_command_title">Emplacement de sauvegarde/restauration</string>
+    <string name="br_share_backup_using">Partager la sauvegarde avec</string>
+    <string name="br_share_command_summary">Envoyer une sauvegarde à un autre appareil (Par courriel, ou un service de partage tel que DropBox, Google Drive, Box.com etc.)</string>
+    <string name="br_share_command_title">Partager la sauvegarde</string>
+    <string name="cancel_button">Bouton Annuler</string>
+    <string name="card_section_favorite_episodes">Épisodes favoris</string>
+    <string name="card_section_publisher_label">Mis à jour</string>
+    <string name="card_section_recently_played">Récemment lu</string>
+    <string name="card_section_what_is_new">Derniers épisodes</string>
+    <string name="cast_notification_connected_message">Connecté à %1$s</string>
+    <string name="cast_notification_connecting_message">Connexion à %1$s…</string>
+    <string name="cast_notification_default_channel_name">Cast</string>
+    <string name="cast_notification_disconnect">Déconnecter</string>
+    <string name="categories_num_feeds">%s Flux</string>
+    <string name="category_all_episodes">Tous les épisodes</string>
+    <string name="category_all_feeds">Tous les flux</string>
+    <string name="category_editor_dialog_add_category">Ajt. Catégorie</string>
+    <string name="category_home_page">"Ce qu'il faut écouter"</string>
+    <string name="category_properties_category_color">Couleur de la catégorie</string>
+    <string name="category_properties_feed_name">Un nom de catégorie convivial (Par exemple Actualités, Musique, Sports etc.)</string>
+    <string name="category_properties_title">Modifier catégorie</string>
+    <string name="category_properties_update_schedule_msg">"• Les mises à jour programmées commenceront à l'heure spécifiée et se dérouleront jusqu'à minuit de la même journée.
+• Seulement"<b> une seule</b> mise à jour programmée peut être exécutée à la fois!</string>
+    <string name="category_properties_update_schedule_msg_top">Dans BeyondPod, les MàJ planifiées sont effectuées au niveau des catégories. La planification ci-dessous vas télécharger et mettre à jour les nouvelles épisodes pour tout les flux se trouvant dans cette catégorie.</string>
+    <string name="category_properties_vld_NameEmpty">Veuillez entrer un nom pour la catégorie</string>
+    <string name="category_properties_vld_categoryExists">Une catégorie avec le même nom existe déja!</string>
+    <string name="category_props_new_category">Nouvelle catégorie</string>
+    <string name="category_props_unable_to_modify_category">Incapacité à modifier catégorie!</string>
+    <string name="category_schedule_active">MàJ planifié</string>
+    <string name="category_schedule_please_make_sure_that_start_times_are_at_least_15_minutes_apart">"Veuillez vous assurer que les heures de départ ont un intervalle d'au moins 15 minutes entre eux!"</string>
+    <string name="category_schedule_repeat_title">Répéter toutes les</string>
+    <string name="category_schedule_the_start_time_of_this_update_overlaps_with_category">"L'heure de départ de cet flux est en conflit avec catégorie"</string>
+    <string name="category_schedule_time_title">Commencer à</string>
+    <string name="category_uncategorized">Sans Catégories</string>
+    <string name="cc_cast_to">"Diffuser vers l'appareil"</string>
+    <string name="cc_casting_to">Diffusion vers %s</string>
+    <string name="cds_account_exists">Compte déjà existant!</string>
+    <string name="cds_account_quota_reached">Le groupe de testeurs EpisodeSync BETA est actuellement plein. Nous ajouterons des utilisateurs bientôt, surveillez notre forum pour les dernières infos.</string>
+    <string name="cds_awaiting_verification_msg">"Nous avons envoyé un courriel de vérification à: %s
+
+Veuillez ouvrir le lien se trouvant dans le courriel pour activer votre compte!"</string>
+    <string name="cds_awaiting_verification_title">"Votre compte n'est pas encore actif !"</string>
+    <string name="cds_create_account_text">Créer un compte</string>
+    <string name="cds_create_text">Créer</string>
+    <string name="cds_device_id">IDENTIFIANT APPAREIL:%s</string>
+    <string name="cds_enable_sync">Activer EpisodeSync pour cet appareil</string>
+    <string name="cds_help">Fonctionnement de EpisodeSync</string>
+    <string name="cds_info_forgot_password">Mot de passe oublié ?</string>
+    <string name="cds_info_label_create">Une fois que vous avez créé un compte EpisodeSync, utilisez le même compte pour tous les appareils que vous voulez synchroniser</string>
+    <string name="cds_info_title1">EpisodeSync synchronise l’avancement de la lecture des épisodes entre plusieurs appareils. Voir %s pour plus d’informations.</string>
+    <string name="cds_invalid_email">Courriel invalide</string>
+    <string name="cds_invalid_password">Mot de passe trop court! Entrez au moins 5 caractères</string>
+    <string name="cds_last_sync">Dernière synchronisation:%s</string>
+    <string name="cds_logaout_text">Déconnexion</string>
+    <string name="cds_login_failed">Nom d’utilisateur ou mot de passe invalide!</string>
+    <string name="cds_login_text">Connexion</string>
+    <string name="cds_menu_send_feed_to_devices">Envoyer le flux à mes autres appareils</string>
+    <string name="cds_menu_sync">EpisodeSync</string>
+    <string name="cds_menu_sync_show_log">Voir le journal de synchronisation</string>
+    <string name="cds_menu_sync_start">Démarrer EpisodeSync</string>
+    <string name="cds_network_error">"Impossible de se connecter aux serveurs de BeyondPod!
+Ré-essayez ultérieurement"</string>
+    <string name="cds_not_available_in_lite_version">"Votre période d'essai à BeyondPod a expiré ! EpisodeSync est uniquement disponible dans la version 'Pro' de BeyondPod."</string>
+    <string name="cds_notification_applying_remote_changes">Application de changements à distance</string>
+    <string name="cds_notification_checking_for_remote_changes">Vérification des changements à distance</string>
+    <string name="cds_notification_publishing_local_changes">Publication de changements locaux</string>
+    <string name="cds_notification_syncing_local_changes">Synchronisation des changements locaux</string>
+    <string name="cds_option_allow_remote_episode_deletions">Lorsque les épisodes sont supprimés de mes autres appareils, supprimer également de cet appareil.</string>
+    <string name="cds_option_allow_remote_feed_additions">Accepter des fluxs de mes autres appareils</string>
+    <string name="cds_password">Mot de passe</string>
+    <string name="cds_password_dont_match">Les mots de passe ne correspondent pas</string>
+    <string name="cds_retype_password">Vérification du mot de passe</string>
+    <string name="cds_sync_settings">Paramètres de synchronisation</string>
+    <string name="cds_user_name">Courriel</string>
+    <string name="checking_for_alternatives">Recherche en cours</string>
+    <string name="clear_cache_dio_cache_cleared">Cache vidé!</string>
+    <string name="color_picker_pick_a_category_color">Sélectionnez la couleur de la catégorie</string>
+    <string name="command_manager_beyondpod_feed_search">Recherche de flux BeyondPod</string>
+    <string name="command_manager_there_is_nothing_to_play">"Il n'ya rien à lire!"</string>
+    <string name="command_manager_unable_to_open_url">"Impossible d'ouvrir le lien!"</string>
+    <string name="command_manager_unable_to_start_external_player">"Impossible de démarrer l'application externe !"</string>
+    <string name="command_manager_unable_to_start_video_player">Incapacité à démarrer le lecteur vidéo</string>
+    <string name="command_manager_update_and_download_log">Journal des téléchargements et des M.À.J.</string>
+    <string name="common_google_play_services_enable_button">Activer</string>
+    <string name="common_google_play_services_enable_text">"%1$s ne fonctionnera pas tant que vous n'aurez pas activé les services Google Play."</string>
+    <string name="common_google_play_services_enable_title">Activer les services Google Play</string>
+    <string name="common_google_play_services_install_button">Installer</string>
+    <string name="common_google_play_services_install_text">%1$s ne fonctionnera pas sans les services Google Play, qui ne sont pas installés sur votre appareil.</string>
+    <string name="common_google_play_services_install_title">Installer les services Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Disponibilité des services Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Erreur liée aux services Google Play</string>
+    <string name="common_google_play_services_unknown_issue">"L'application %1$s rencontre des problèmes avec les services Google Play. Veuillez réessayer."</string>
+    <string name="common_google_play_services_unsupported_text">%1$s ne fonctionnera pas sans les services Google Play, qui ne sont pas compatibles avec votre appareil.</string>
+    <string name="common_google_play_services_update_button">Mettre à jour</string>
+    <string name="common_google_play_services_update_text">"%1$s ne fonctionnera pas tant que vous n'aurez pas mis à jour les services Google Play."</string>
+    <string name="common_google_play_services_update_title">Mettre à jour les services Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s ne fonctionnera pas sans les services Google Play, qui sont en cours de mise à jour.</string>
+    <string name="common_google_play_services_wear_update_text">La nouvelle version des services Google Play est nécessaire. Elle sera bientôt installée automatiquement.</string>
+    <string name="common_open_on_phone">Ouvrir sur le téléphone</string>
+    <string name="common_signin_button_text">Se connecter</string>
+    <string name="common_signin_button_text_long">Se connecter avec Google</string>
+    <string name="contextmenu_add_contact">Ajouter contact</string>
+    <string name="contextmenu_copy">Copier</string>
+    <string name="contextmenu_copylink">Copier adresse du lien</string>
+    <string name="contextmenu_dial_dot">Composer…</string>
+    <string name="contextmenu_map">Plan</string>
+    <string name="contextmenu_open_in_browser">Ouvrir dans le navigateur</string>
+    <string name="contextmenu_send_mail">Envoyer courriel</string>
+    <string name="contextmenu_sharelink">Partager Lien</string>
+    <string name="contextmenu_view_image">Visualiser image</string>
+    <string name="date_time_also_this_month">Plus tôt ce mois-ci</string>
+    <string name="date_time_also_this_week">Plus tôt dans la semaine</string>
+    <string name="date_time_also_this_year">Plus tôt cette année</string>
+    <string name="date_time_last_month">Mois dernier</string>
+    <string name="date_time_last_week">La semaine dernière</string>
+    <string name="date_time_older">Episodes plus anciens</string>
+    <string name="date_time_this_month">Ce mois-ci</string>
+    <string name="date_time_this_week">Cette semaine</string>
+    <string name="date_time_this_year">Cette année</string>
+    <string name="date_time_today">"Aujourd'hui"</string>
+    <string name="delete_category_dialog_data">donnée</string>
+    <string name="delete_feed_diolog_feed">flux</string>
+    <string name="delete_feed_diolog_sure_you_want_to_delete">Êtes vous sûr de vouloir supprimer</string>
+    <string name="delete_podcast_dlg_episodes">épisodes</string>
+    <string name="delete_podcast_dlg_favorite">Favori</string>
+    <string name="delete_podcast_dlg_locked">Verrouillé</string>
+    <string name="dlg_DeleteCategoryMsg">"Êtes vous sûr de vouloir supprimer la catégorie:
+
+ %s?"</string>
+    <string name="dlg_DeleteFeedAndPodcastsMsg">"Êtes vous sûr de vouloir supprimer:
+
+%s?
+
+(Tous les épisodes de podcast de ce flux seront supprimés.)"</string>
+    <string name="dlg_DeleteFeedMsg">"Êtes vous sûr de vouloir supprimer:
+
+%s?"</string>
+    <string name="dlg_DeletePodcastMsg">"Êtes vous sûr de vouloir supprimer:
+
+%s"</string>
+    <string name="dlg_about_Msg">"Pour poser vos questions ou proposer des suggestions:
+
+www.beyondpod.com
+
+
+© BeyondPod Team 2008–2014
+Tous droits réservés.
+
+Licenses Open Source
+www.beyondpod.mobi/osl"</string>
+    <string name="dlg_clear_feed_cache">Vider les caches du flux</string>
+    <string name="dlg_clear_feed_cache_msg">Le cache du flux est situé sur votre carte de stockage et contient des versions locales de vos flux.</string>
+    <string name="dlg_clear_podcast_imgage_cache">"Effacer le cache des images d'épisodes"</string>
+    <string name="dlg_clear_podcast_imgage_cache_msg">"Force BeyondPod à recharger les images d'épisodes de la base de données médias de l'appareil."</string>
+    <string name="dlg_delete_locked_podcasts_msg">Supprimer aussi les épisodes podcast verrouillées</string>
+    <string name="dlg_dont_show_again_msg">Ne plus afficher cet avertissement</string>
+    <string name="dlg_enable_speedup_btn_buy">Activez la prise en charge de vitesse de lecture</string>
+    <string name="dlg_enable_speedup_plugin_msg">"BeyondPod permet de lire vos épisodes en accéléré (ou au ralenti).
+
+"<i>Cette fonctionnalité est encore en phase de développement et peut ne pas fonctionner sur tous les appareils ou tous les formats de Podcast.</i></string>
+    <string name="dlg_invalid_cant_connect_tofeed_URL_message">"Impossible de se connecter au site internet du flux
+
+L'adresse du flux pourrait être erroné ou le site internet pourrait avoir des problèmes de connexion temporaire."</string>
+    <string name="dlg_invalid_feed_URL_generic_message">"Apparemment l’URL correspond à la page Web qui accompagne le flux au lieu du flux RSS lui-même. Essayez d’ouvrir cette page web dans un navigateur web et essayez de trouvez un lien direct vers un flux RSS.
+
+Appuyez sur le bouton “Aide” ci-dessous pour savoir comment localiser des liens de flux RSS dans les pages web."</string>
+    <string name="dlg_invalid_feed_URL_itunes_message">"Il semble que cette adresse pointe vers une version Itunes du flux.
+
+Appuyez sur le bouton 'Aide' ci-dessous pour savoir comment localiser des liens de flux rss dans Itunes."</string>
+    <string name="dlg_invalid_feed_URL_message">"L'URL du flux ne semble pas être un flux RSS ou Atom valide.
+
+%s"</string>
+    <string name="dlg_invalid_feed_URL_mp3_message">"Il semble que ce soit une adresse pointant vers un fichier MP3 d'un simple épisode. Essayez d'ouvrir la page internet de l'épisode podcast, et essayer de trouver le lien direct vers le flux rss.
+
+Appuyez sur le bouton 'Aide' ci-dessous pour savoir comment localiser des liens de flux rss dans les pages internet."</string>
+    <string name="dlg_invalid_feed_URL_title">"Problème avec l'URL du flux"</string>
+    <string name="dlg_playback_speed_not_available_in_lite_version">"Votre période d’essai à BeyondPod a expiré !
+
+Le changement de la vitesse de lecture est disponible uniquement dans la version ‘Pro’ de BeyondPod."</string>
+    <string name="dlg_purchase_btn_Msg">Acheter une clé de déverrouillage</string>
+    <string name="dlg_purchase_info_Msg">"Lorsque la période d'essai expire, BeyondPod bascule en version"<b> Lite</b> où les fonctionnalités avantageuses de la version<b> Pro</b>" sont désactivées.
+"</string>
+    <string name="dlg_purchase_info_header_did">"Votre période d'essai complète de BeyondPod as expiré le"</string>
+    <string name="dlg_purchase_info_header_will">"Votre période d'essai complète de BeyondPod expirera le"</string>
+    <string name="dlg_purchase_speedup_plugin_doNotshow">Désactiver et masquer le bouton de vitesse de lecture</string>
+    <string name="dlg_purchase_speedup_plugin_doNotshowInfo">Pour activer la vitesse de lecture à une heure plus tard, aller dans Paramètres > Paramètres du lecteur > Vitesse de lecture.</string>
+    <string name="dlg_purchase_speedup_plugin_doShowInfo">Si la vitesse de lecture ne fonctionne pas correctement sur votre appareil, elle peut être désactivée dans: Réglages > Réglages du lecteur > Vitesse de lecture.</string>
+    <string name="dlg_purchase_speedup_plugin_title">Prise en charge de la vitesse de lecture</string>
+    <string name="dlg_purchase_title">Déverrouiller BeyondPod</string>
+    <string name="dlg_purchase_why_pro_Msg">Pourquoi passer en version Pro?</string>
+    <string name="dlg_speedup_not_supported">Cet épisode ne peut être lu que à une vitesse normal</string>
+    <string name="dlg_speedup_not_supported_for_streaming">Les épisodes lu directement depuis internet ne peuvent être lus que à une vitesse normal</string>
+    <string name="dlg_user_warning_installed_on_sd_card_msg">"Apparemment BeyondPod est installée sur la carte SD. Toutefois l'utilisation de BeyondPod sur la Carte SD implique 2 restrictions dont vous devez être mis au courant:
+
+ • Les Widgets de BeyondPod ne seront pas disponible.
+ • Le montage de la carte SD comme périphérique de stockage USB annulera toutes les mises à jour programmée jusqu'à ce que BeyondPod ai redémarré.
+
+"<i>"Si votre appareil as assez d'espace de stockage interne, il est recommandé que vous déplacez BeyondPod sur la mémoire interne du téléphone."</i></string>
+    <string name="dlg_user_warning_mark_all_played_msg">Êtes-vous sûr de vouloir marquer comme lus tous les épisodes de ce podcast?</string>
+    <string name="dlg_user_warning_mark_all_read_msg">Êtes vous sûr de vouloir marquer tout les articles dans ce flux comme lu?</string>
+    <string name="dlg_user_warning_open_ext_player_msg">"Vous pouvez essayer d'ouvrir les éléments sélectionnés avec une des applications externes dont la liste vous sera montrée en appuyant sur \"Continuer\".
+
+Vous pouvez aussi opter, au lieu du lecteur interne par défaut, pour un lecteur Externe dans les paramètres de BeyondPod"</string>
+    <string name="dlg_user_warning_open_ext_player_title">Un lecteur externe est requis</string>
+    <string name="dlg_user_warning_start_episode_download_msg">"Les téléchargements d'épisodes peuvent consommer une grande quantité de données!
+
+. Nous vous recommandons d'utiliser une connexion WiFi ou un forfait data illimité."</string>
+    <string name="dlg_user_warning_start_update_download_msg">"Ceci mettra à jour tous les flux dans la catégorie en cours et si configuré dans le flux, télécharger les derniers épisodes de podcast.
+
+Les téléchargements d'épisodes peuvent utiliser grande quantité de données. Nous vous recommandons d'utiliser une connexion WiFi ou un forfait data illimité."</string>
+    <string name="dlg_user_warning_stream_failed_msg">Il semblerait que la connexion ai été interrompu. Veuillez réessayer plus tard.</string>
+    <string name="dlg_user_warning_stream_failed_title">Problème lecture vidéo via internet</string>
+    <string name="dlg_user_warning_stream_format_problem_msg">"Le format de vidéo n'est supporté par le lecteur vidéo par défaut.
+
+(Certains vidéos peut être lus que par le lecteur de vidéo externe . appuyez sur 'Aide Lecteur' pour plus d'informations)"</string>
+    <string name="dlg_user_warning_stream_format_problem_title">Problème avec le format vidéo</string>
+    <string name="dlg_user_warning_title">Avertissement</string>
+    <string name="download_agent_both_mobile_and_wifi_data_connections_are_allowed">"
+
+Les connexions de données Mobile et Wifi sont autorisé!"</string>
+    <string name="download_agent_insufficient_disk_space_to_complete_the_download_required">Espace disque insuffisant pour terminer le téléchargement! Espace requis:</string>
+    <string name="download_agent_mobile_connections_not_allowed">"
+
+ Les connexions mobiles ne sont PAS autorisées.
+(Vous pouvez autoriser l'utilisation de connexions mobiles telles que GPRS/EDGE/3G/UMTS dans la partie 'Mise à jour de flux' des paramètres de BeyondPod)"</string>
+    <string name="download_agent_unable_to_establish_internet_connection">Incapacité à établir une connexion internet!</string>
+    <string name="download_agent_wifi_allowed">"
+
+Les téléchargements de podcasts ne sont actuellement autorisés que via une connexion WiFi.
+(Vous pouvez autoriser le téléchargement via n'importe quelle connexion dans la section 'Mise à jour de flux' dans les paramètres de BeyondPod)"</string>
+    <string name="download_engine_notification_connecting">Connexion…</string>
+    <string name="download_engine_notification_downloaded">Téléchargé</string>
+    <string name="download_engine_notification_downloading">Téléchargement en cours…</string>
+    <string name="download_engine_notification_feed">flux</string>
+    <string name="download_engine_notification_feeds">flux</string>
+    <string name="download_engine_notification_found">Trouvé</string>
+    <string name="download_engine_notification_left_to_download">encore à télécharger</string>
+    <string name="download_engine_notification_left_to_update">encore à mettre à jour</string>
+    <string name="download_engine_notification_looking_for_new_podcasts_across">Recherche de nouveaux épisodes dans</string>
+    <string name="download_engine_notification_more">plus</string>
+    <string name="download_engine_notification_new">Nouveau</string>
+    <string name="download_engine_notification_new_podcasts">nouveaux épisodes…</string>
+    <string name="download_engine_notification_of">de</string>
+    <string name="download_engine_notification_podcast">épisode</string>
+    <string name="download_engine_notification_podcasts">épisodes</string>
+    <string name="download_engine_notification_retrying">Nouvelle tentative…</string>
+    <string name="download_engine_notification_updating">Mise à jour en cours</string>
+    <string name="download_holder_preparing_for_download">Préparation au téléchargement…</string>
+    <string name="drawer_close">Fermer volet de navigation</string>
+    <string name="drawer_open">Ouvrir volet de navigation</string>
+    <string name="error_CantCreateRootFolder">"BeyondPod n'as pas pu avoir accès à la carte de stockage!
+La carte de stockage pourrait avoir des erreurs ou protéger contre l'écriture!"</string>
+    <string name="error_CantCreateRootFolderWorkaround">"
+
+(Sur certain appareils, une creation manuelle du répertoire pourrait réparer le problème. Autrement, utiliser une autre carte SD)"</string>
+    <string name="error_SDCardBusy">"BeyondPod n'as pas pu acceder à votre carte de stockage
+
+La carte de stockage est actuellement démonté ou utilisé par votre PC."</string>
+    <string name="error_SDCardError">"Une érreur as eu lieu lors d'une tentative d'accès à votre carte de stockage. Veuillez contrôler la carte pour des erreurs."</string>
+    <string name="error_SDCardMissing">"BeyondPod n'as trouvé aucune carte de stockage sur votre appareil!"</string>
+    <string name="error_root_needs_permission">"Nous avons trouvé une installation précédente de BeyondPod dans : 
+ « %s  » dans le dossier. 
+. Pour l'utiliser, BeyondPod a besoin d’une autorisation pour accéder à votre carte de stockage SD.
+
+ Si vous préférez une installation « propre », quittez simplement BeyondPod, supprimez le dossier ci-dessus et réessayez."</string>
+    <string name="export_to_opml_export_complete">Exportation terminé!</string>
+    <string name="export_to_opml_export_failed">Exportation as échoué!</string>
+    <string name="failed_to_connect_to_google_reader">"Impossible de se connecter à Feedly ou l'identifiant n'est plus valide.
+
+Veuillez vous reconnecter ou retenter plus tard."</string>
+    <string name="failed_to_connect_to_google_reader_account_mgr">"Échec lors de la connexion à Feedly! 
+
+Veuillez réessayer plus tard"</string>
+    <string name="feedList_num_unread">Nouveau</string>
+    <string name="feed_content_beyondpod_help">Aide BeyondPod</string>
+    <string name="feed_content_insufficient_space_to_download_podcast" formatted="false">"Il n'y a pas suffisamment d'espace de stockage pour télécharger cet épisode.
+
+%s sont nécessaires pour télécharger cet épisode mais vous disposez seulement %s de libre dans '%s'"</string>
+    <string name="feed_content_list_view__max_s">(max %s)</string>
+    <string name="feed_content_list_view_beyondpod_faq">Questions Frequemment Posés de BeyondPod</string>
+    <string name="feed_content_list_view_configure">Configurer</string>
+    <string name="feed_content_list_view_disabled">Désactivé</string>
+    <string name="feed_content_list_view_episode_details">"Détails de l'épisode"</string>
+    <string name="feed_content_list_view_episode_formats">"Formats de l'épisode"</string>
+    <string name="feed_content_list_view_failed_to_add_reader_subscription_for_feed">"Echec d'ajout de la souscription Feedly pour le flux"</string>
+    <string name="feed_content_list_view_feed_content">Contenu du flux</string>
+    <string name="feed_content_list_view_invalid_or_expired_google_reader_login">Connexion non valide ou expirée de Feedly! (Vous pouvez modifier votre connexion Feedly: Ajout flux > importation de flux > importation depuis Feedly)</string>
+    <string name="feed_content_list_view_my_episodes">Mes épisodes</string>
+    <string name="feed_content_list_view_next_update">Prochaine M.À.J</string>
+    <string name="feed_content_list_view_operation_failed">"L'opération a échoué!"</string>
+    <string name="feed_content_list_view_this_feed_is_s_days_old">Il y a %s jours!</string>
+    <string name="feed_content_list_view_update_canceled">M.À.J annulé!</string>
+    <string name="feed_content_list_view_update_failed">Echec de la M.À.J.!</string>
+    <string name="feed_item_list_empty_loading_content">Chargement du flux</string>
+    <string name="feed_item_list_empty_no_items">"Ce flux n'a aucun contenu!"</string>
+    <string name="feed_item_list_empty_no_selected_feed">"Aucun flux n'est sélectionné. 
+Veuillez sélectionner un flux dans la liste des fluxs (tiroir de gauche)"</string>
+    <string name="feed_item_list_empty_stop_update">Arrêter la mise à jour</string>
+    <string name="feed_item_list_empty_update">MàJ</string>
+    <string name="feed_item_list_empty_updating">Mise à jour du flux...</string>
+    <string name="feed_item_list_footer_has_hidden_items_l1">Certains éléments sont masqués.</string>
+    <string name="feed_item_list_footer_has_hidden_items_l2">Tout Afficher</string>
+    <string name="feed_item_list_footer_reader_more_items_l1">Ce flux est défini pour charger les premiers %s articles de Feedly.</string>
+    <string name="feed_item_list_footer_reader_more_items_l2">"Vous changer ce nombre aller dans les \"Réglages avancées\" des
+"<u>Propriétés du flux</u></string>
+    <string name="feed_item_list_header_reader_not_subscribed_l1">"Si tous vos articles apparaissent comme \"Lus\", c'est que vous n'avez peut-être pas souscrit à ce flux dans Feedly."</string>
+    <string name="feed_item_list_header_reader_not_subscribed_l2"><u>Ajouter ce flux à Feedly</u></string>
+    <string name="feed_item_list_invalid_feed_auth_dlg_msg">"Le flux que vous essayez d'ouvrir peut nécessiter une connexion spéciale.
+
+Souvent les flux payant ou premium exige une reidentification sur leurs site internet lorsque votre adresse IP change (par exemple lorsque vous vous connecter via une connection WIFI ou reseau mobile).
+
+Appuyez sur le bonton 'Aide' ci-dessous pour plus d'informations."</string>
+    <string name="feed_item_list_invalid_feed_dlg_msg">"Il y'a eu une erreur lors de la dernière mise à jour de flux!
+
+"<i>"Ceci est souvent causé par un problème temporaire avec la connexion internet ou des problèmes avec le site internet de l'éditeur du flux.
+
+ Essayer de mettre le flux à jour plus tard. Si vous continuez à avoir des problèmes, appuyez sur le bouton AIDE ci-dessous pour avoir des astuces de dépannage."</i></string>
+    <string name="feed_item_list_invalid_feed_dlg_title">Problème de flux</string>
+    <string name="feed_item_list_invalid_feed_go_to_web_site_text">Site internet du flux</string>
+    <string name="feed_item_list_invalid_feed_help_text">Aide</string>
+    <string name="feed_list_empty_all_read">"Tout les flux sont lus
+
+"<u>Afficher tout les flux</u></string>
+    <string name="feed_list_hide_read">Masquer les flux lus</string>
+    <string name="feed_list_no_feeds_in_this_category">"Il n'y a aucun flux dans cette catégorie"</string>
+    <string name="feed_list_show_read">Afficher tout les flux</string>
+    <string name="feed_patched_msg">"Il ya eu un problème avec l'adresse internet du flux que vous utilisez, mais nous avons pû trouver un autre URL:
+
+%s
+
+qui est plus probablement celui dont vous avez besoin.
+
+Voulez vous l'utiliser?"</string>
+    <string name="feed_properties_advanced_section">Réglages avancés</string>
+    <string name="feed_properties_allow_deletions_msg">"Vérifie si les épisodes local de ce flux peuvent être automatiquement supprimé (Pour faire de la place pour les nouvelles épisodes lors de la M-à-J ou à la fin de la lecture). 'Autoriser suppression d'épisode' doit être coché si vous voulez utiliser les fonctions de nettoyage automatique d'épisode."</string>
+    <string name="feed_properties_allow_deletions_title">"Autoriser suppression d'épisode"</string>
+    <string name="feed_properties_allow_deletions_vir_feed_msg">Vérifie si les épisodes dans cet flux (et tout sous-flux) peuvent être automatiquement supprimé pour faire de la place à de nouveaux épisodes (par exemple à la fin de lecture).</string>
+    <string name="feed_properties_clear_custom_image_title">Nettoyer image</string>
+    <string name="feed_properties_configure_defaults">Vous pouvez configurer<u> ici</u>" les réglages par défaut qui seront utilisé lors de l'ajout de nouveaux fluxs."</string>
+    <string name="feed_properties_custom_image">Selectionner image</string>
+    <string name="feed_properties_custom_image_msg">"Pour assigner une image personnalisé au flux, sauver une image JPG ou PNG quelque part sur votre carte SD et assurez-vous qu'il soit visible dans l'application GALERIE D'IMAGE de l'appareil. Utilisez le bouton ci-dessus 'Selectionner image' pour trouver et sélectionner une image de la galerie d'image. (Après avoir assigner l'image, vous pouvez supprimer l'image de la galerie d'image)."</string>
+    <string name="feed_properties_custom_image_title">Image personnalisé du flux</string>
+    <string name="feed_properties_download_history_clear_history">"Nettoyer l'historique de téléchargement du flux"</string>
+    <string name="feed_properties_download_history_mark_downloaded">Tout marquer comme téléchargé</string>
+    <string name="feed_properties_download_history_msg">"BeyondPod garde une trace des épisodes qu'il a précédemment téléchargé pour chaque flux. En cliquant sur \"Effacer l'historique des téléchargements de flux\" efface l'historique de téléchargement pour ce flux et tous les épisodes de ce flux seront affiché comme si elles n'avaient jamais été téléchargés. « Tout marquer comme lu » fait le contraire - il va marquer tous les nouveaux épisodes de flux comme déjà téléchargé (sans avoir à les télécharger)."</string>
+    <string name="feed_properties_download_history_title">Historique du téléchargement de podcast</string>
+    <string name="feed_properties_feed_categories_msg">"Vous pouvez assigner jusqu'à 2 catégories par flux. Le fait d'assigner une catégorie à un flux ajouteras aussi automatiquement le flux à la mise à jour planifié de la catégorie (Si MàJ planifié existe)."</string>
+    <string name="feed_properties_feed_categories_title">Catégories du flux</string>
+    <string name="feed_properties_feed_download_folder_msg">"Ceci est le répertoire où BeyondPod vas télecharger les épisodes pour ce flux. Laissez le champ vide si vous voulez utiliser le répertoire de téléchargement par défaut (actuellement %s) ou le flux n'as pas de répertoire."</string>
+    <string name="feed_properties_feed_download_folder_title">"Répertoire de téléchargement d'épisode"</string>
+    <string name="feed_properties_feed_download_folder_vir_feed_msg">"Au démarrage BeyondPod vas scanner ce répertoire (et tout ces sous-répertoire) et affichera tout les fichiers qu'il trouvera comme \"podcast virtuel\" qui pourras être lu avec le lecteur interne."</string>
+    <string name="feed_properties_feed_download_folder_vir_feed_title">Répertoire virtuel du flux</string>
+    <string name="feed_properties_feed_download_podcast_long_name_handler_msg">"Si le nom de l'épisode est trop long pour l'afficher, sélectionner la partie du nom que vous préférez être raccourci."</string>
+    <string name="feed_properties_feed_download_podcast_long_name_handler_title">Épisodes à noms long</string>
+    <string name="feed_properties_feed_download_podcast_sort_order_msg">"Définissez l'ordre de tri pour les épisodes téléchargés localement ou lisible via internet de cet flux."</string>
+    <string name="feed_properties_feed_download_podcast_sort_order_title">Trier les épisodes locaux comme</string>
+    <string name="feed_properties_feed_fingerprint_type_msg">"Sélectionnez comment BeyondPod doit détecter les épisodes en double. (ATTENTION! Modifier que si le flux retélécharge souvent de vieux épisodes. Ce paramètre rétablira l'historique de téléchargement et des lu/non lu du flux)."</string>
+    <string name="feed_properties_feed_fingerprint_type_title">"Détection des doublons d'épisode"</string>
+    <string name="feed_properties_feed_login_msg">"Si votre flux requièrt un nom d'utilisateur et un mot de passe pour y avoir accès , vous pouvez les entrer dans les champs ci dessus."</string>
+    <string name="feed_properties_feed_name_msg">Un nom convivial du flux. (Si vous laissez le champ vide, le nom seras celui se trouvant dans les données du flux)</string>
+    <string name="feed_properties_feed_name_title">Nom du flux</string>
+    <string name="feed_properties_feed_url_msg">Adresse internet du flux rss (commence par http:// ou https://)</string>
+    <string name="feed_properties_feed_url_title">Adresse (URL) du flux</string>
+    <string name="feed_properties_force_item_sort">Ordre de tri des éléments du flux</string>
+    <string name="feed_properties_force_item_sort_msg">"Sélectionnez l'ordre dans laquelle vous voulez voir les articles (articles) de cet flux dans la vue de contenu du flux."</string>
+    <string name="feed_properties_force_unique_names">Forcer noms unique</string>
+    <string name="feed_properties_force_unique_names_msg">"Si elle est cochée, ça force BeyondPod à donner un nom de fichier unique à chaque téléchargement, au lieu d'essayer de deviner le nom du podcast à partir de l'addresse internet. Cochez si vous remarquez que vos podcasts ont tous les mêmes nom de fichiers et s'écrasent."</string>
+    <string name="feed_properties_login_info_header">Authentification du flux</string>
+    <string name="feed_properties_login_info_pw">Mot de passe du flux</string>
+    <string name="feed_properties_login_info_un">"Nom d'utilisateur du flux"</string>
+    <string name="feed_properties_num_days_to_delete_short_msg">"
+• supprimer épisodes plus ancien de %s jours."</string>
+    <string name="feed_properties_num_podcasts_to_download_download_in_order_msg">"Télécharger le nombre d'épisodes sélectionné, en commençant par les anciens disponible. Les nouvelles épisodes seront téléchargés uniquement si vous supprimez certain des épisodes téléchargé de ce flux Les épisodes téléchargés apparaîtront dans l'écran \"Episodes\"."</string>
+    <string name="feed_properties_num_podcasts_to_download_download_in_order_short_msg">• Télécharger %s en ordre décroissant, du plus ancien.</string>
+    <string name="feed_properties_num_podcasts_to_download_download_msg">"Télécharger certain nombre d'épisodes (par défaut à partir de la plus récente) dans le cadre de la mise à jour du flux. Les nouveaux épisodes remplaceront automatiquement les anciens épisodes. Les épisodes téléchargé apparaitront à l'écran 'Episodes'."</string>
+    <string name="feed_properties_num_podcasts_to_download_download_short_msg" formatted="false">• Télécharger la plus récente de %s et garder au moins %s . %s</string>
+    <string name="feed_properties_num_podcasts_to_download_ignore_msg">Toute épisode pour ce flux seras ignoré et caché dans la vue Contenu du Flux.</string>
+    <string name="feed_properties_num_podcasts_to_download_ignore_short_msg">• Tous les épisodes seront ignorées.</string>
+    <string name="feed_properties_num_podcasts_to_download_no_download_msg">Les nouveaux épisodes podcast de ce flux ne seront pas automatiquement téléchargé lors de la MàJ du flux</string>
+    <string name="feed_properties_num_podcasts_to_download_no_download_short_msg">• Télécharger épisodes manuellement.</string>
+    <string name="feed_properties_num_podcasts_to_download_stream_in_order_msg">"Creer une version 'diffusion en direct' du nombre d'épisodes sélectionné, en commençant par le plus ancien disponible. Les nouveaux épisodes se téléchargeront seulement si vous supprimez certains des épisodes déjà téléchargé pour cet flux. Les épisodes 'diffusion en direct' seront visible dans l'écran \"Episodes\"."</string>
+    <string name="feed_properties_num_podcasts_to_download_stream_in_order_short_msg">"• Mettre%s dans l'ordre, en commençant par le plus ancien.
+• épisodes seront diffusée en direct (dispositif doit être en ligne pour les lire)."</string>
+    <string name="feed_properties_num_podcasts_to_download_stream_msg">"Créer une version 'diffusion en direct\" pour un certain nombre d'épisodes faisant partie de la MàJ du flux. Les nouveaux épisodes remplaceras automatiquement les anciens épisodes. Les épisodes 'diffusion en direct' apparaitront à l'écran des 'épisodes'."</string>
+    <string name="feed_properties_num_podcasts_to_download_stream_short_msg" formatted="false">"• Obtenir les dernières %s et garder au moins %s .
+• %s épisodes sera diffusée en direct (dispositif doit être en ligne pour les lire)."</string>
+    <string name="feed_properties_playback_speed_prefs_msg">Définir une vitesse de lecture préférée pour les épisodes podcast de ce flux. (Laisser décochée pour utiliser la vitesse de lecture qui est actuellement définie dans le lecteur).</string>
+    <string name="feed_properties_playback_speed_prefs_title">Vitesse de lecture préférés</string>
+    <string name="feed_properties_podcast_title">"Téléchargements d'épisodes"</string>
+    <string name="feed_properties_preferred_enclosure">"Format d'épisode préféré"</string>
+    <string name="feed_properties_preferred_enclosure_msg">Occasionnellement, certains flux pourraient contenir plusieurs formats pour le même épisode (par exemple mp4 ou wmv). Sélectionnez le format préféré ci dessus.</string>
+    <string name="feed_properties_save_played_position_msg">"Lors d'une lecture, se souviendras de la portion lu d'un épisode dans cet flux"</string>
+    <string name="feed_properties_save_played_position_title">Sauvegarder la position de lecture</string>
+    <string name="feed_properties_spacesavers_keep_at_most">Garder au moins:</string>
+    <string name="feed_properties_spacesavers_keep_at_most_unit">Épisodes en local</string>
+    <string name="feed_properties_spacesavers_max_duration">Supprimer les épisodes plus vieux que:</string>
+    <string name="feed_properties_spacesavers_max_duration_unit">jours</string>
+    <string name="feed_properties_spacesavers_msg">"Le néttoyage d'épisode supprimera automatiquement les épisodes dont le nombre ou l'âge dépassant les valeurs sélectionné ci-dessus. (Les règles de nettoyage seront uniquement éxecuté lorsque de nouvelles épisodes de cet flux seront sur le point d'être téléchargé)"</string>
+    <string name="feed_properties_spacesavers_title">"Nettoyage d'épisode"</string>
+    <string name="feed_properties_toggle_adv_pref_hide">Cacher les réglages avancés</string>
+    <string name="feed_properties_use_google_proxy">Synchroniser avec Feedly</string>
+    <string name="feed_properties_use_google_proxy_msg">"Charger le contenu de ce flux depuis Feedly. Nécessite un compte Feedly.com pour l'utiliser."</string>
+    <string name="feed_properties_view_images_from_picasa_albums_cannot_be_used_as_a_feed_image">"Les images d'albums Picasa (ou tout autre galerie d'image en ligne) ne peuvent être utilisé comme image de flux."</string>
+    <string name="feed_properties_vld_feedNameEmpty">Veuillez svp entrer un nom de flux valide</string>
+    <string name="feed_properties_vld_feedUrlOrNameEmpty">Veuillez entrer une adresse de flux ou le nom du flux!</string>
+    <string name="feed_properties_vld_podcast_folder_vir_feed_invalid">Le dossier de flux virtuel sélectionné est vide ou non existant sur cet appareil!</string>
+    <string name="feed_properties_vld_podcast_num_download_is_less_than_keep_at_most">"Le nombre d'épisodes de podcasts à télécharger ne peut dépasser le nombre d'épisodes de podcasts à garder!"</string>
+    <string name="feed_properties_vld_spacesavers_will_delete_podcasts">"Le paramère 'Nettoyage épisode' requièrent %s que vos épisodes existants soient supprimé."</string>
+    <string name="feed_properties_volume_boost_prefs_msg">"Vous pouvez permettre un surplus de volume sonore lors de lecture d'épisodes de ce podcast. (Ceci est une fonctionnalité expérimentale, disponible seulement pour les épisodes téléchargés et la vitesse de lecture activée)."</string>
+    <string name="feed_properties_volume_boost_prefs_title">Réhausseur de son</string>
+    <string name="feed_s_was_added_in_category" formatted="false">"Flux '%s'
+ as été ajouté à la catégorie '%s'"</string>
+    <string name="feed_search_db_episodes">Épisodes</string>
+    <string name="feed_search_hint">Recherche de podcast</string>
+    <string name="feed_settings_add_feed">Ajouter flux</string>
+    <string name="feed_settings_add_virtual_feed">Ajouter flux virtuel</string>
+    <string name="feed_settings_checking_feed_information">"Vérification de l'information du flux…"</string>
+    <string name="feed_settings_connecting">Connexion…</string>
+    <string name="feed_settings_download">Télécharger</string>
+    <string name="feed_settings_edit_feed">Modifier flux</string>
+    <string name="feed_settings_edit_virtual_feed">Modifier flux virtuel</string>
+    <string name="feed_settings_episodes">épisodes</string>
+    <string name="feed_settings_feed_already_exists_in_category">"Cet flux existe déjà dans la catégorie '%s'."</string>
+    <string name="feed_settings_get">Obtenir</string>
+    <string name="feed_settings_items">éléments</string>
+    <string name="feed_settings_locating_rss_feeds">Localisation des flux RSS</string>
+    <string name="feed_settings_retrieving_feed">Récupération du flux</string>
+    <string name="feed_settings_updating_download_history">Mise à jour de l’historique de téléchargements…</string>
+    <string name="feeds_status_back_to_s">Retour à %s</string>
+    <string name="feeds_status_downloading">En téléchargement</string>
+    <string name="feeds_status_feeds">Flux</string>
+    <string name="feeds_status_of">de</string>
+    <string name="feeds_status_s_pending">%s En attente</string>
+    <string name="feeds_status_updating">M.À.J. en cours</string>
+    <string name="first_run_ad_disabled">Non, je veux télécharger mes épisodes manuellement.</string>
+    <string name="first_run_ad_enabled">Laissez BeyondPod télécharger les derniers épisodes lorsque vous êtes endormi.</string>
+    <string name="first_run_ad_subtitle">BeyondPod peut vérifier les nouveaux épisodes et les télécharger automatiquement. (Vous pouvez modifier vos préférences plus tard dans les paramètres).</string>
+    <string name="first_run_ad_title">Téléchargements automatiques</string>
+    <string name="first_run_ad_wifi">Télécharger épisodes uniquement si connecté à un WiFi.</string>
+    <string name="first_run_continue">Continuer</string>
+    <string name="first_run_end_tour">Terminer le tour</string>
+    <string name="first_run_find_more">En savoir plus</string>
+    <string name="first_run_finish">Terminer</string>
+    <string name="first_run_select_content_title">Choisissez des sujets que vous aimez et nous vous proposerons quelques bons podcasts pour vous aider à démarrer.</string>
+    <string name="first_run_skipsamples">Sauter cela</string>
+    <string name="first_run_start">Commençons</string>
+    <string name="first_run_upgrade_guide">Guide de mise à niveau</string>
+    <string name="folder_browser_back_to">Retour à</string>
+    <string name="folder_browser_files">fichiers</string>
+    <string name="folder_browser_in">Dans</string>
+    <string name="gcm_fallback_notification_channel_label">Divers</string>
+    <string name="generic_download_error_text">"Certains épisodes n'ont pu être téléchargés! 
+Veuillez réessayer plus tard"</string>
+    <string name="glg_restore_defaults_msg">"Nous sommes désolés, mais votre référentiel de flux semble être corrompu et toutes les tentatives de réparation ont échoué!
+
+La prochaine fois que vous démarrerez BeyondPod vos abonnements seront réinitialisée par l'installation par défauts.
+
+BeyondPod vas maintenant se fermer!"</string>
+    <string name="glg_restore_defaults_title">Référentiel de flux corrompu!</string>
+    <string name="google_reader_feeds">flux Feedly</string>
+    <string name="grant_permission_access_denied">Bien... Vous pouvez toujours faire une installation « propre » en supprimant l’installation précédente de BeyondPod.</string>
+    <string name="grant_permission_access_granted">Merci !</string>
+    <string name="import_reader_failed_to_load_reader_subscriptions">Échec du chargement des souscriptions Feedly!</string>
+    <string name="import_reader_loading_feed_subscriptions">Chargement des abonnements de flux</string>
+    <string name="import_reader_log_out_menu">Se déconnecter</string>
+    <string name="import_reader_log_out_msg">Vous êtes à présent déconnecté de Feedly</string>
+    <string name="import_reader_login_failed">"L'identification as échoué!"</string>
+    <string name="import_reader_operation_canceled">Opération annulé!</string>
+    <string name="import_reader_retrieving_account_details">Récupération des détails du compte…</string>
+    <string name="import_reader_success">Succès!</string>
+    <string name="import_search_hint">Chercher les flux importés</string>
+    <string name="info_card_got_it">"Ok, j'ai compris"</string>
+    <string name="info_card_guided_tour_action">Faire un petit tour</string>
+    <string name="info_card_guided_tour_skip">Non, merci</string>
+    <string name="info_card_guided_tour_title">Bienvenue dans BeyondPod !</string>
+    <string name="info_card_whats_new_action">Voir les nouveautés</string>
+    <string name="info_card_whats_new_title">BeyondPod a été mis à jour vers la version %s !</string>
+    <string name="info_selct_folder_instructions">"Appuyez sur le nom de répertoire pour l'ouvrir.
+Pour sélectionner un répertoire, appuyez sur la case à cocher juste à coté de celle-ci."</string>
+    <string name="limited_mode_message">"Votre période d'essai est terminée!
+
+BeyondPod utilise une version allégée avec des fonctionnalités limitées.
+
+Utilisez 'Go PRO!' (Dans la barre de menu de gauche) pour connaître les restrictions."</string>
+    <string name="lock_podcast_unlock_parent_info">"Pour déverrouiller cet épisode, veuillez d'abord activer 'Autoriser suppression d'épisodes' dans les réglages avancés du flux podcast."</string>
+    <string name="master_view_beyondpod_failed_to_start">Echec lors du démarrage de BeyondPod!</string>
+    <string name="master_view_beyondpod_will_now_exit">BeyondPod vas se fermer!</string>
+    <string name="master_view_loaded_s_feeds">Chargement des épisodes...</string>
+    <string name="master_view_loading_feeds">Chargement des fluxs en cours</string>
+    <string name="master_view_welcome_to_beyondpod">Bienvenu(e) à BeyondPod</string>
+    <string name="master_view_what_is_new">Quoi de neuf</string>
+    <string name="menu_multiselect_select_all">Tt Sélectionner</string>
+    <string name="menu_multiselect_select_played">Sélectionner les lus</string>
+    <string name="mf_calculating_files">Préparation du déplacement…</string>
+    <string name="mf_cancel_are_you_sure">Êtes-vous sur de vouloir annuler ?</string>
+    <string name="mf_canceled_move">Déplacement annulé !</string>
+    <string name="mf_canceling_move">Annulation…</string>
+    <string name="mf_complete">"Déplacement terminé !%s
+
+BeyondPod va maintenant redémarrer pour appliquer les nouveaux paramètres."</string>
+    <string name="mf_confirm_are_you_sure" formatted="false">"Êtes-vous sur de vouloir déplacer %s épisodes téléchargés depuis '%s' vers '%s' ?"</string>
+    <string name="mf_confirm_move">Valider le déplacement</string>
+    <string name="mf_coping_files" formatted="false">Déplacé %s de %s…</string>
+    <string name="mf_deleting_files">Nettoyage…</string>
+    <string name="mf_dest_folder_exist">"Le dossier de destination %s existe déjà ! Voulez-vous l'écraser?"</string>
+    <string name="mf_do_move">Déplacer</string>
+    <string name="mf_error_external">Le dossier de destination est indisponible ou en lecture-seule !</string>
+    <string name="mf_external_SD_warninng">"Android Kitkat a introduit de nouvelles restrictions dans l'utilisation de la carte SD externe.
+
+Vous pouvez toujours déplacer le dossier de téléchargement des épisodes vers la carte SD, mais lors de la désinstallation de BeyondPod tous les paramètres et épisodes SERONT SUPPRIMÉS."</string>
+    <string name="mf_insufficient_space" formatted="false">"Vous avez besoin d'au moins %s d'espace libre dans le dossier de destination. Seulement %s sont disponibles pour le moment !"</string>
+    <string name="mf_moving_title">Déplacer le dossier de téléchargement des épisodes</string>
+    <string name="mf_unable_to_cleanup">Impossible de nettoyer certains fichiers dans %s. Essayez de les nettoyer manuellement !</string>
+    <string name="mf_unable_to_cleanup_kitkat">"L'ancien dossier de téléchargement %s est en lecture-seule et BeyondPod ne peut pas le nettoyer.
+
+Connectez l'appareil à un ordinateur et utilisez l'explorateur pour supprimer ce dossier."</string>
+    <string name="mf_update_download_progress">"Une mise à jour ou un téléchargement es en cours !
+
+Veuillez l’arrêter et réessayer."</string>
+    <string name="mf_use_external_SD">Utiliser la carte SD.</string>
+    <string name="mf_use_intenral_SD">Utiliser la mémoire interne (recommandé)</string>
+    <string name="minute_remaining">Encore &lt;%s</string>
+    <string name="minutes_remaining">Encore %s</string>
+    <string name="move_storage_folder_available">%s (disponible)</string>
+    <string name="move_storage_folder_current" formatted="false">"%s
+(%s est aussi disponible en tant qu'emplacement alternatif)"</string>
+    <string name="move_storage_folder_does_not_exist">"%s
+
+ n'existe pas ou est en Lecture Seul!"</string>
+    <string name="move_storage_folder_in_use">%s (en utilisation)</string>
+    <string name="move_storage_folder_instructions_alt_title">"Pour utiliser l'autre emplacement"</string>
+    <string name="move_storage_folder_instructions_msg">"Utilisez le bouton «Déplacer» ci-dessous pour déplacer vos épisodes existants vers un autre emplacement.
+
+Lorsque le déplacement est terminé, BeyondPod va redémarrer et commuter à utiliser le nouveau emplacement.
+
+Le processus de déplacement peut durer plusieurs minutes."</string>
+    <string name="move_storage_folder_instructions_new_title">Pour utiliser le nouveau emplacement</string>
+    <string name="movie_view_preparing_stream">Préparation du flux…</string>
+    <string name="movieviewlabel">Films</string>
+    <string name="mr_button_content_description">Icône Cast</string>
+    <string name="mr_cast_button_connected">Icône Cast. Connecté</string>
+    <string name="mr_cast_button_connecting">Icône Cast. Connexion…</string>
+    <string name="mr_cast_button_disconnected">Icône Cast. Déconnecté</string>
+    <string name="mr_chooser_searching">"Recherche d'appareils…"</string>
+    <string name="mr_chooser_title">Caster sur</string>
+    <string name="mr_controller_album_art">"Image de l'album"</string>
+    <string name="mr_controller_casting_screen">"Diffusion de l'écran en cours…"</string>
+    <string name="mr_controller_close_description">Fermer</string>
+    <string name="mr_controller_collapse_group">Réduire</string>
+    <string name="mr_controller_disconnect">Déconnecter</string>
+    <string name="mr_controller_expand_group">Développer</string>
+    <string name="mr_controller_no_info_available">Aucune information disponible</string>
+    <string name="mr_controller_no_media_selected">Aucun média sélectionné</string>
+    <string name="mr_controller_pause">Pause</string>
+    <string name="mr_controller_play">Lecture</string>
+    <string name="mr_controller_stop">Arrêter</string>
+    <string name="mr_controller_stop_casting">Arrêter la diffusion</string>
+    <string name="mr_controller_volume_slider">Curseur de volume</string>
+    <string name="mr_system_route_name">Système</string>
+    <string name="mr_user_route_category_name">Appareils</string>
+    <string name="multiselect_episodes_selected">épisodes sélectionnés</string>
+    <string name="navigator_add_category">Ajouter une catégorie</string>
+    <string name="navigator_add_feed">Ajouter un podcast</string>
+    <string name="navigator_drawer_title">Mes Flux</string>
+    <string name="navigator_edit_content">Gérer les podcasts</string>
+    <string name="navigator_feed_filter_all">Tous les flux</string>
+    <string name="navigator_feed_filter_new_only">"'Nouveaux' flux"</string>
+    <string name="navigator_updated">%s mis à jour</string>
+    <string name="navigator_updated_now">maintenant</string>
+    <string name="ok_button">Bouton OK</string>
+    <string name="opml_export_btn_label">Exporter les flux</string>
+    <string name="opml_export_msg">"Tout vos flux vont être exportés vers un fichier OPML se nommant 'BeyondPodFeeds.opml', se trouvant dans:
+
+'%s'
+
+Les flux vont être groupés par première catégorie du flux."</string>
+    <string name="opml_export_title">Exporter en OPML</string>
+    <string name="opml_import_dlg_add_cat_label">Nouvelle Catégorie</string>
+    <string name="opml_import_dlg_title">Ajouter à la catégorie</string>
+    <string name="opml_import_opml_btn_label">Charger fichier OPML</string>
+    <string name="opml_import_opml_msg1">"Pour importer un fichier OPML, veuillez vous assurer qu'il as une extension de fichier .OPML et il est copé dans:
+
+'%s'"</string>
+    <string name="opml_import_reader_title">Connexion à Feedly</string>
+    <string name="opml_list_view_beyondpod_is_loading_s">"BeyondPod est en train de charger
+%s…"</string>
+    <string name="opml_list_view_connecting">Connexion…</string>
+    <string name="opml_list_view_downloaded">Téléchargé</string>
+    <string name="opml_list_view_error">Erreur</string>
+    <string name="opml_list_view_loading">Chargement en cours</string>
+    <string name="opml_list_view_selected_directory_is_currently_unavailable">"Répertoire sélectionné est actuellement indisponible!
+
+Veuillez réessayer à nouveau plus tard."</string>
+    <string name="opml_list_view_update_canceled">M.À.J. annulé!</string>
+    <string name="opml_list_view_update_failed">M.A.J. annulé!</string>
+    <string name="opml_view_adapter_back_to_s">Retour à %s</string>
+    <string name="opml_view_adapter_go_back">Retourner</string>
+    <string name="opml_view_adapter_in_s">dans %s</string>
+    <string name="opml_view_adapter_items">éléments</string>
+    <string name="opml_view_adapter_subscribed">Abonnements</string>
+    <string name="percent_complete">% complets</string>
+    <string name="player_charm_pbspeed_preset_description">Sélectionnez une vitesse de lecture avec le curseur, puis appuyez sur un bouton de mémorisation pour la sauvegarder</string>
+    <string name="player_charm_pbspeed_title">Vitesse de lecture</string>
+    <string name="player_charm_sleep_description">Arrêter la lecture après ...</string>
+    <string name="player_charm_sleep_episodeEnd">Cet épisode finit</string>
+    <string name="player_charm_sleep_off">Désactivé</string>
+    <string name="player_charm_sleep_title">Minuteur de veille</string>
+    <string name="player_streaming_disabled">"Diffusion en continu est actuellement désactivé.
+
+Télécharger l'épisode avant de le lire."</string>
+    <string name="player_streaming_wifi_only">La diffusion en continu est actuellement uniquement autorisé sur une connexion WiFi!</string>
+    <string name="player_transport_next">Ép. suivant</string>
+    <string name="player_transport_pause">Pause</string>
+    <string name="player_transport_play">Lire</string>
+    <string name="player_transport_playback_speed">Vitesse de lecture</string>
+    <string name="player_transport_prev">Ép. précédent</string>
+    <string name="player_transport_skip_back">Saut arrière</string>
+    <string name="player_transport_skip_fwd">Saut avant</string>
+    <string name="player_transport_skip_to_end">Sauter vers la fin</string>
+    <string name="player_trying_to_play_deleted_episode">Cet épisode a été supprimé !</string>
+    <string name="player_view_connecting_to_s">connection en cours à %s</string>
+    <string name="player_view_playback_cast_connected">"Connecté à '%s'
+
+Choisissez un épisode pour être lu à distance."</string>
+    <string name="player_view_playback_error">Erreur de lecture!</string>
+    <string name="player_view_playback_error_cant_cast">Cet épisode ne peut pas être joué à distance</string>
+    <string name="player_view_playback_error_streaming_disabled">Diffusion en continu non autorisée!</string>
+    <string name="player_view_preparing_stream_s">Préparation du flux...( %s %%)</string>
+    <string name="playlist_divider_smartplay_text">SmartPlay</string>
+    <string name="playlist_divider_text">Liste de lecture</string>
+    <string name="playlist_editor_dialog_clear_playlist">Vider liste de lecture</string>
+    <string name="podcast_list_empty_all_feeds_working">"BeyondPod mets vos flux à jour
+
+ Les derniers épisodes s'afficheront sous peu."</string>
+    <string name="podcast_list_empty_category">"Vous n'avez téléchargé aucun épisodes pour la catégorie ' %s'."</string>
+    <string name="podcast_list_empty_feed">"Vous n'avez téléchargé aucun épisodes de '%s'."</string>
+    <string name="podcast_list_empty_filter">"Il n'y a aucun épisode correspondant à votre filtre actuel
+'%s'."</string>
+    <string name="podcast_list_empty_playlist">La liste de lecture est vide</string>
+    <string name="podcast_list_has_filtered_items">"Affiche '%s'"</string>
+    <string name="podcast_list_open_all_published">Voir tous les épisodes publié</string>
+    <string name="podcast_list_show_all_episodes">Voir tous les épisodes</string>
+    <string name="podcast_list_view_about">À propos</string>
+    <string name="podcast_list_view_all_published">Épisodes que vous recherchez est introuvable?</string>
+    <string name="podcast_list_view_beyondpod_faq">Questions Fréquemment Posés à concernant BeyondPod</string>
+    <string name="podcast_list_view_playlist">Liste de lecture</string>
+    <string name="podcasts_view_adapter_this">Ce</string>
+    <string name="podcasts_view_free">Libre</string>
+    <string name="preview_player_title">"Aperçu l'épisode"</string>
+    <string name="published_list_add_again_to_my_episodes">Relancer la lecture</string>
+    <string name="published_list_add_to_my_episodes">Ajouter à mes épisodes</string>
+    <string name="published_list_download_episode">Télécharger</string>
+    <string name="published_list_preview_episode">"Aperçu de l'épisode"</string>
+    <string name="published_list_redownload_episode">Retélécharger</string>
+    <string name="reader_folder_all_new_items_in">Tout les nouveaux éléments dans</string>
+    <string name="reader_folder_my_google_items">Mes articles Feedly</string>
+    <string name="reader_folder_my_read_items">Mes éléments lus</string>
+    <string name="reader_folder_my_reading_list">Ma liste de lecture</string>
+    <string name="reader_folder_my_starred_items">Mes éléments suivis</string>
+    <string name="remote_playback_not_available_in_lite_version">"Votre essai BeyondPod a expiré! 
+
+Lecture sur les écrans à distance est disponible uniquement dans la version 'Pro' de BeyondPod"</string>
+    <string name="repo_search_hint">Chercher Des Flux</string>
+    <string name="repo_search_label">.</string>
+    <string name="reset_storage_folder_current" formatted="false">"L'emplacement de téléchargement des épisodes (%s) n'est plus avcessible!
+
+Si vous utilisez une carte SD amovible, peut-être a-t-elle été retirée, démontée ou réglée en lecture-seule.
+La carte mémoire interne (%s) est disponible.
+
+Souhaitez vous permuter vers la carte SD interne?"</string>
+    <string name="reset_storage_folder_multiple">"L'emplacement de destination du téléchargement d'épisodes configuré (%s) n'est plus disponible!
+
+Veuillez s'il vous plaît en sélectionner un nouveau ci-dessous:"</string>
+    <string name="reset_tips_complete">Tous les conseils et avertissements sont maintenant réactivés!</string>
+    <string name="s1">"Enregistrer l'image"</string>
+    <string name="s2">"Autoriser l'annonce à stocker l'image dans la galerie d'images ?"</string>
+    <string name="s3">Accepter</string>
+    <string name="s4">Refuser</string>
+    <string name="s5">"Créer un événement d'agenda"</string>
+    <string name="s6">"Autoriser l'annonce à créer un événement d'agenda ?"</string>
+    <string name="s7">Annonce test</string>
+    <string name="scheduling_method_msg">"BeyondPod vous permet de mettre à jour tout les fluxs sur une planification unique, ou de régler plusieurs M-à-j planifié par catégorie.
+
+Quelle Méthode voulez vous utiliser?
+
+(Vous pouvez changer les préférences dans l'écran'Gérer Catégories')"</string>
+    <string name="scheduling_method_per_category">Par catégorie</string>
+    <string name="scheduling_method_single_schedule">Planification unique</string>
+    <string name="scheduling_method_title">Sélectionnez mise à jour planifié</string>
+    <string name="search_error">"Une erreur s'est produite lors de la recherche. Veuillez réessayer plus tard."</string>
+    <string name="search_error_device_is_offline">"L'appareil est déconnecté!"</string>
+    <string name="search_error_must_be_online_to_add_feeds">Vous devez être \"en ligne\" pour ajouter des flux.</string>
+    <string name="search_filter_all">Tout</string>
+    <string name="search_filter_audio">Audio</string>
+    <string name="search_filter_video">Vidéo</string>
+    <string name="search_menu_title">Rechercher</string>
+    <string name="search_no_result_found">"Aucun résultat trouvé pour '%s'"</string>
+    <string name="search_result_item_subscribe">Souscrire</string>
+    <string name="search_running">Recherche de flux…</string>
+    <string name="settings_AutoPlaySmartplays_summary">Lorsque SmartPlay est sélectionné, lire le premier épisode automatiquement</string>
+    <string name="settings_AutoPlaySmartplays_title">Lecture automatique de SmartPlay</string>
+    <string name="settings_AutoRebuildKeepCurrent_summary">"Lorsque SmartPlay est reconstruit, garder l'épisode actuel au début de la liste de lecture"</string>
+    <string name="settings_AutoRebuildKeepCurrent_title">Garder épisode actuel</string>
+    <string name="settings_AutoRebuildSmartPlay_summary">Refaire automatiquement le SmartPlay par défaut lorsque de nouveaux épisodes sont téléchargés</string>
+    <string name="settings_AutoRebuildSmartPlay_title">Reconstruction automatique de SmartPlay</string>
+    <string name="settings_Autoplaylist_summary">Crée automatiquement une liste de lecture en commençant par les épisodes sélectionnées</string>
+    <string name="settings_Autoplaylist_title">Liste de lecture automatique</string>
+    <string name="settings_ClearPlaylistKeepCurrent_summary">"Lors de la suppression de la liste de lecture, garder l'episode actuel en tête de la liste de lecture"</string>
+    <string name="settings_HeadsetButtons_DC_summary">"Double pression du bouton de l'oreillette filaire"</string>
+    <string name="settings_HeadsetButtons_DC_title">Double pression</string>
+    <string name="settings_HeadsetButtons_LP_summary">"Pression longue du bouton de l'oreillette filaire"</string>
+    <string name="settings_HeadsetButtons_LP_title">Pression longue</string>
+    <string name="settings_HeadsetButtons_Next_summary">"Bouton \"Suivant\" de l'oreillette Bluetooth ou filaire"</string>
+    <string name="settings_HeadsetButtons_Next_title">Bouton \"Suivant\"</string>
+    <string name="settings_HeadsetButtons_Prev_summary">"Bouton \"Précédent\" de l'oreillette Bluetooth ou filaire"</string>
+    <string name="settings_HeadsetButtons_Prev_title">Bouton \"Précédent\"</string>
+    <string name="settings_HeadsetButtons_summary">"Affecter des actions aux boutons de l'oreillette Bluetooth ou filaire"</string>
+    <string name="settings_HeadsetButtons_title">"Actions des boutons de l'oreillette"</string>
+    <string name="settings_PauseResume_summary">"Mettre la lecture en pause lors de la déconnexion du casque, extinction de l'appareil, notification, configuration du délai d'extinction de l'ecran..."</string>
+    <string name="settings_PauseResume_title">Pause ou reprise automatique</string>
+    <string name="settings_RemovePlayedFromPlaylist_summary">Supprime automatiquement les épisodes lu de la liste de lecture</string>
+    <string name="settings_RemovePlayedFromPlaylist_title">Retiré les lus de la liste de lecture</string>
+    <string name="settings_active_theme_summary">Thème pour la fenêtre principale de BeyondPod (Clair ou sombre)</string>
+    <string name="settings_active_theme_title">Thème</string>
+    <string name="settings_allow_analytics_summary">"Aidez-nous à améliorer BeyondPod en nous permettant de récolter anonymement vos habitudes d'utilisation et les plantages d'application."</string>
+    <string name="settings_allow_analytics_title">"Suivi des statistiques d'utilisation"</string>
+    <string name="settings_allow_cleanup_for_manual_downloads_summary">Active les règles de nettoyage de podcast pour les épisodes téléchargés manuellement</string>
+    <string name="settings_allow_cleanup_for_manual_downloads_title">Autoriser le nettoyage des téléchargements manuels</string>
+    <string name="settings_allow_hiding_read_summary">Permet de cacher des éléments « Read » ou « Joué » épisodes sur l’écran « Publié tous les » et affiche les dates de l’alimentation/épisode sur la liste des aliments pour animaux et la playlist.</string>
+    <string name="settings_allow_hiding_read_title">Permettre de masquer les épisodes lus</string>
+    <string name="settings_allow_streaming_summary">"Vérifie si la diffusion de l'épisode en continu (lecture d'épisode sans téléchargement) est autorisé"</string>
+    <string name="settings_allow_streaming_title">Réglages de la diffusion en continu</string>
+    <string name="settings_allow_streaming_values_title">Permettre la diffusion en continu</string>
+    <string name="settings_allowcellular_summary">Sélectionnez si vous autorisé la connection (EDGE/3G/4G) mobile pour la MàJ des flux.</string>
+    <string name="settings_allowcellular_title">Utiliser données Mobile</string>
+    <string name="settings_autoLoadPlugins_summary">Permet la visualisation de certains vidéos qui sont incorporé dans le contenu des messages.</string>
+    <string name="settings_autoLoadPlugins_title">Activer les Greffons pour le navigateur</string>
+    <string name="settings_auto_clean_unused_episodes_summary">Supprimer automatiquement les épisodes déjà lu lors de la prochaine mise à jour. (Épisodes marqués comme « Favoris » ne seront pas supprimés)</string>
+    <string name="settings_auto_clean_unused_episodes_title">Supprimer automatiquement les épisodes lu</string>
+    <string name="settings_auto_resume_partial_downloads_summary">Réessayer automatiquement de télécharger les épisodes partiellement téléchargés lors de la prochaine mise à jour</string>
+    <string name="settings_auto_resume_partial_downloads_title">Reprendre automatiquement les téléchargements partiels</string>
+    <string name="settings_automaticUpdates_title">MàJ automatique</string>
+    <string name="settings_backup_restore_title">Sauvegarde et Restauration</string>
+    <string name="settings_backwardSkipInterval_summary">Nombre de secondes à sauter en arrière pendant la lecture</string>
+    <string name="settings_backwardSkipInterval_title">Intervalle de saut de lecture en arrière</string>
+    <string name="settings_beta_notification_summary">"M'avertir quand une nouvelle version BETA publique de BeyondPod est disponible"</string>
+    <string name="settings_beta_notification_title">Notifications de versions bêta</string>
+    <string name="settings_category_sd_card_location_preferences">Emplacement de stockage de podcast</string>
+    <string name="settings_cds_summary">EpisodeSync est désactivé</string>
+    <string name="settings_cds_title">Configurer EpisodeSync</string>
+    <string name="settings_clearstatusnotification_summary">"Sélectionnez si vous voulez cacher l'icône de notification lorsque la MàJ est terminée"</string>
+    <string name="settings_clearstatusnotification_title">"Cacher l'icône de notification"</string>
+    <string name="settings_configure_smartplay">Configurer SmartPlay</string>
+    <string name="settings_defSendToEmail_dlg_title">Destinataires par défaut des emails</string>
+    <string name="settings_defSendToEmail_summary">Réglez par défaut les adresses courriels lorsque vous partagez un lien avec BeyondPod</string>
+    <string name="settings_defSendToEmail_title">Destinataires par défaut des emails</string>
+    <string name="settings_description">Podcasts de BeyondPod</string>
+    <string name="settings_disable_sharing_warning">"Lorsque vous désactivez le partage, certains de vos vidéos podcasts téléchargé pourraient être supprimé lors du premier redémarrage de l'appareil (ou balayage de la carte SD) 
+
+Assurez vous de sauvegarder les podcasts vidéos que vous souhaitez pas perdre
+
+Vous trouverez les podcasts téléchargées dans le répertoire 'BeyondPod/Podcasts' de votre carte SD."</string>
+    <string name="settings_disconnect_from_reader">Se déconnecter de Feedly</string>
+    <string name="settings_disconnect_from_reader_cant_convert_msg">"Certains de vos flux sont spécifiques à Feedly et ne peuvent pas être déconnectés : 
+
+%s 
+Vous devez les supprimer manuellement."</string>
+    <string name="settings_disconnect_from_reader_msg">"Les flux suivants vont être déconnectés de Feedly et redirigés pour accéder directement à leur source originale : 
+
+%s
+Les épisodes téléchargés ou lisibles en flux direct seront conservés, mais l’historique de lecture et de téléchargements pour ces flux seront perdus."</string>
+    <string name="settings_downloadoncharging_summary">Télécharger les épisodes seulement si le téléphone est en charge.</string>
+    <string name="settings_downloadoncharging_title">Télécharger seulement si en charge</string>
+    <string name="settings_downloadonwifi_summary">"Télécharger les épisodes uniquement lorsque l'appareil est connecté sur un réseau Wifi"</string>
+    <string name="settings_downloadonwifi_title">Télécharger uniquement sur Wifi</string>
+    <string name="settings_enableFadein_summary">"Augmente progressivement le volume sonore, du silence jusqu'au niveau normal pour les premières secondes du lancement d'un épisode"</string>
+    <string name="settings_enableFadein_title">"Activer l'ouverture en fondu"</string>
+    <string name="settings_enableHeadsetButton_summary">"Activer l'utilisation des boutons d'oreillettes filaires ou Bluetooth pour contrôler la lecture"</string>
+    <string name="settings_enableHeadsetButton_title">"Activer les commandes d'oreillettes"</string>
+    <string name="settings_enable_presto_summary">"Pour utiliser le module audio Presto s'il est installé (relancer l'application est requis)"</string>
+    <string name="settings_enable_presto_title">Activer Presto</string>
+    <string name="settings_enable_sonic_player_summary">Active la prise en charge native de la vitesse de lecture variable (JellyBean et ultérieur seulement)</string>
+    <string name="settings_enable_sonic_player_title">Activer Sonic Player</string>
+    <string name="settings_feedContent_title">Réglages Contenu Du FLux</string>
+    <string name="settings_feedSelectedAction_summary">Affichage par défaut lorsque vous sélectionnez un podcast («Mes épisodes» ou «Toutes les publications»)</string>
+    <string name="settings_feedSelectedAction_title">Affichage des podcasts par défaut</string>
+    <string name="settings_feedSortOrder_summary">"Sélectionnez l'ordre d'affichage de la liste des podcasts (menu latéral)"</string>
+    <string name="settings_feedSortOrder_title">Ordre de tri de la liste de flux</string>
+    <string name="settings_feed_defaults_summary">"Paramètres généraux des podcasts (nombre d'épisodes à télécharger, règles de nettoyage...)"</string>
+    <string name="settings_feed_defaults_title">Flux Par défaut</string>
+    <string name="settings_force_feed_album_art_summary">Utiliser la jaquette du podcast pour les épisodes audio</string>
+    <string name="settings_force_feed_album_art_title">"Utiliser l'art de l'album de flux"</string>
+    <string name="settings_force_mpd123_player_summary">Force la lecture rapide à utiliser un lecteur audio utilisant mpg123</string>
+    <string name="settings_force_mpd123_player_title">"Forcer l'utilisation du lecteur Mpg123"</string>
+    <string name="settings_forwardSkipInterval_summary">"Nombre de secondes à sauter vers l'avant pendant la lecture (Saut de pub)"</string>
+    <string name="settings_forwardSkipInterval_title">Intervalle de saut de lecture en avant</string>
+    <string name="settings_general_summary">"Thème, Écran d'accueil, Tri global, flux et paramètres d'épisode …"</string>
+    <string name="settings_general_title">Paramètres généraux</string>
+    <string name="settings_global_apply">%s Flux mis à jour</string>
+    <string name="settings_google_reader_login_title">Déconnecter de Feedly</string>
+    <string name="settings_hideUnsupportedFileTypes_summary">"Cacher les fichiers médias dont l'appareil ne saurais lire"</string>
+    <string name="settings_hideUnsupportedFileTypes_title">Cacher les dédias non pris en charge</string>
+    <string name="settings_ignoreReaderReadStatus_summary">Cocher si vous ne souhaitez pas synchroniser le statut de «Lu» des publications importées par Feedly.</string>
+    <string name="settings_ignoreReaderReadStatus_title">"Ignorer le statut 'Lu' de Feedly"</string>
+    <string name="settings_keep_pause_notification_summary">Lorsque la lecture est mise sur pause, afficher «En pause» dans la barre de notification.</string>
+    <string name="settings_keep_pause_notification_title">Maintenir notifier «En pause»</string>
+    <string name="settings_keep_screen_on_during_playback_summary">"Extinction de l'écran lors de la lecture audio"</string>
+    <string name="settings_keep_screen_on_during_playback_title">"Délai d'affichage"</string>
+    <string name="settings_margin_navigation_summary">"Appuyez deux fois sur le contenu de l'article pour fermer la vue de l'article"</string>
+    <string name="settings_margin_navigation_title">"Fermer lors d'un double appui"</string>
+    <string name="settings_markAsReadOnOpen_summary">"Contrôle les articles qui devraient être marqué comme lu lorsque vous visualiser le contenu de l'article"</string>
+    <string name="settings_markAsReadOnOpen_title">"Marquer comme lu lors de l'ouverture"</string>
+    <string name="settings_maxTrackAge_dlg_title">Supprimer les plus anciens que</string>
+    <string name="settings_maxTrackAge_summary">Pour chaque épisodes de podcast, supprimer ceux qui sont plus âgés que le nombre de jours communiqué</string>
+    <string name="settings_maxTrackAge_title">Nettoyage - Nettoyer les anciens</string>
+    <string name="settings_mediaEndAction_summary">"Action(s) à effectuer après la lecture d'un épisode (supprimer, enchaîner avec le suivant, etc...)"</string>
+    <string name="settings_mediaEndAction_title">Après la lecture</string>
+    <string name="settings_numPodcastsToDownload_dlg_title">Télécharger</string>
+    <string name="settings_numPodcastsToDownload_summary">"Nombre par défaut d'épisodes qui devront être téléchargé ou lu via internet"</string>
+    <string name="settings_numPodcastsToDownload_title">"Téléchargement d'épisodes"</string>
+    <string name="settings_numPodcastsToKeep_dlg_title">Garder</string>
+    <string name="settings_numPodcastsToKeep_summary">"Nombre par défaut d'épisodes qui devront être gardés pour chaque flux"</string>
+    <string name="settings_numPodcastsToKeep_title">Nettoyage - Garder au moins</string>
+    <string name="settings_orientation_lock_summary">"Permet de verrouiller l'orientation de l'écran en mode portrait ou paysage"</string>
+    <string name="settings_orientation_lock_title">"Orientation de l'affichage"</string>
+    <string name="settings_pause_on_notification_summary">"Suspendre la lecture lors d'une notification (Indication d'itinéraire, message, etc...)"</string>
+    <string name="settings_pause_on_notification_title">"Pause lors d'une notification"</string>
+    <string name="settings_pause_on_power_disconnect_summary">"Mets la lecture en pause lorsque la source d'alimentation externe est déconnecté."</string>
+    <string name="settings_pause_on_power_disconnect_title">"Mettre en pause lors de la déconnexion de l'alimentation"</string>
+    <string name="settings_pause_onheadset_disconnect_summary">Met la lecture en pause lorsque le casque est déconnecté</string>
+    <string name="settings_pause_onheadset_disconnect_title">Pause lorsque le casque filaire se déconnecte</string>
+    <string name="settings_pause_video_on_screen_off_summary">"Met la lecture d'une vidéo en pause lorsque l'écran est éteint."</string>
+    <string name="settings_pause_video_on_screen_off_title">"Mettre la vidéo en pause lors de l'extinction de l'écran"</string>
+    <string name="settings_player_integration_summary">"'Externe' utiliseras le lecteur par incorporé de l'appareil (ou tout autre lecteur tierce)"</string>
+    <string name="settings_player_integration_title">Lecteur Audio/Vidéo par défaut</string>
+    <string name="settings_player_plugins_disable_summary">Activer les réglages de la vitesse de lecture</string>
+    <string name="settings_player_plugins_disable_title">Activer la variation de vitesse</string>
+    <string name="settings_player_plugins_only_if_configured_summary">Utiliser greffon seulement pour les flux qui ont été spécialement configurés pour jouer à une vitesse plus élevée dans leurs paramètres</string>
+    <string name="settings_player_plugins_only_if_configured_title">Utiliser seulement si configuré</string>
+    <string name="settings_player_summary">Paramètrage des sauts de lecture, touches de télécommande, lecture en transit…</string>
+    <string name="settings_player_title">Paramètres du lecteur</string>
+    <string name="settings_playlistEndAction_summary">"Que faire une fois que tous les épisodes d'une liste de lecture sont lus"</string>
+    <string name="settings_playlistEndAction_title">Une fois la liste de lecture finie</string>
+    <string name="settings_playlist_summary">"Comportement des listes de lecture, suppression automatique d'épisode…"</string>
+    <string name="settings_playlist_title">Paramètres de liste de lecture</string>
+    <string name="settings_podcastDownloadAction_summary">Manière dont les épisodes de podcasts seront géré (téléchargé, lu via internet ou ignoré)</string>
+    <string name="settings_podcastDownloadAction_title">Episodes de podcast</string>
+    <string name="settings_podcastsSortOrder_summary">Sélectionnez le type de tri souhaité pour les épisodes téléchargés</string>
+    <string name="settings_podcastsSortOrder_title">"Ordre d'affichage pour \"Mes épisodes\""</string>
+    <string name="settings_prefer_last_sd_card_root_summary">Obliger BeyondPod à toujours utiliser le chemin de téléchargement actuel:</string>
+    <string name="settings_prefer_last_sd_card_root_title">Verrouiller au chemin actuel</string>
+    <string name="settings_push_globals_all_dlg_msg">Souhaitez vous aussi appliquez ces réglages à tout les flux existants</string>
+    <string name="settings_push_globals_btn_no">Non</string>
+    <string name="settings_push_globals_btn_yes">Oui</string>
+    <string name="settings_push_globals_dlg_title">MàJ flux existant</string>
+    <string name="settings_push_globals_download_or_stream_dlg_msg">Souhaitez vous aussi appliquez ces réglages à tout les flux existants qui ont été reglé sur téléchargement ou lecture via internet des podcasts?</string>
+    <string name="settings_replay_on_resume_summary">Nombre de secondes de relecture (rembobinage) lors de la reprise après une longue pause</string>
+    <string name="settings_replay_on_resume_title">Relire lors de la reprise</string>
+    <string name="settings_requires_restart_back_only_warning">"Ce réglage prendras effet la prochaine fois que vous démarrerez BeyondPod. 
+
+(Appuyer sur le bouton 'Retour' tout les fenêtres de BeyondPod soient fermés)"</string>
+    <string name="settings_requires_restart_warning">"Ce réglage prendras effet la prochaine fois que vous démarrerez BeyondPod. 
+
+(Appuyer sur le bouton 'Retour' pour fermer la fenêtre de BeyondPod ou juste pivoter votre écran)"</string>
+    <string name="settings_resume_on_call_summary">Reprendre la lecture après un appel téléphonique</string>
+    <string name="settings_resume_on_call_title">Reprendre après un appel</string>
+    <string name="settings_scrobble_summary">"Afficher les informations de l'épisode en cours de lecture sur le périphérique externe connecté (L'activer peut déconnecter la connexion Bluetooth)"</string>
+    <string name="settings_scrobble_title">"Publier l'épisode en-cours"</string>
+    <string name="settings_setAsDownloadedOnMarkRead_summary">"Les épisodes de podcast sont marqué comme 'Téléchargé' lorsque l'épisode est marqué comme 'Lu'"</string>
+    <string name="settings_setAsDownloadedOnMarkRead_title">Marquer les lu comme comme téléchargé</string>
+    <string name="settings_setAsPlayedOnMarkRead_summary">"Les épisodes de podcast sont marqué comme 'Joué' lorsque l'épisode est marqué comme 'Lu'"</string>
+    <string name="settings_setAsPlayedOnMarkRead_title">Marqué comme joué lors de la lecture</string>
+    <string name="settings_sharePodcasts_summary">"Cochez si vous souhaitez que les épisodes de podcasts puissent être lus dans d'autres applications installées sur votre appareil"</string>
+    <string name="settings_sharePodcasts_title">Épisodes visibles dans le lecteur audio</string>
+    <string name="settings_show_post_images_in_feed_content_list_summary">"Afficher l'image de l'article en vignette dans la liste des flux"</string>
+    <string name="settings_show_post_images_in_feed_content_list_title">Afficher les vignettes des articles</string>
+    <string name="settings_show_sleep_to_end_summary">"Terminer l'épisode en cours de lecture facilement et le marquer comme lu"</string>
+    <string name="settings_show_sleep_to_end_title">Touche Passer-pour-terminer</string>
+    <string name="settings_sleep_timeout_summary">personnalisation du compte à rebours (en minutes) pour les fonctions de mise en sommeil du lecteur</string>
+    <string name="settings_sleep_timeout_title">Personnalisation du compte à rebours pour la mise en sommeil</string>
+    <string name="settings_storage_folder_title">Dossier de téléchargement de podcast</string>
+    <string name="settings_supportedFileFormats_summary">Type de fichiers que BeyondPod reconnait et affiche</string>
+    <string name="settings_supportedFileFormats_title">Type de fichiers supporté</string>
+    <string name="settings_togglewifi_summary">Sélectionnez si vous voulez activer le Wifi lors de la MàJ.</string>
+    <string name="settings_togglewifi_title">Basculer sur Wifi lors de la MàJ</string>
+    <string name="settings_update_optimizations_already_excluded_summary">"Optimisation de la batterie est désactivée. BeyondPod est autorisé à mettre à jour les fluxs lorsque l'appareil est en mode 'Sommeil'."</string>
+    <string name="settings_update_optimizations_exclude_summary">"Optimisation de la batterie est activée. BeyondPod ne mettra pas à jour les fluxs lorsque l'appareil est en mode 'Sommeil'."</string>
+    <string name="settings_update_optimizations_exclude_title">Optimisation de la batterie</string>
+    <string name="settings_update_summary">"Planifier la m-à-j automatique des flux, Act./désact. wifi, donnée mobile, téléchargement d'épisode"</string>
+    <string name="settings_update_title">Réglages MàJ du flux</string>
+    <string name="settings_updateonopen_summary">Sélectionnez si vous voulez automatiquement faire une MàJ du flux lors de son ouverture.</string>
+    <string name="settings_updateonopen_title">"MàJ lors de l'ouverture d'un flux"</string>
+    <string name="settings_useExternalBrowser_summary">"Sélectionnez si vous voulez ouvrir les liens externes avec le navigateur par défaut de l'appareil."</string>
+    <string name="settings_useExternalBrowser_title">Utiliser un navigateur externe</string>
+    <string name="settings_user_home_screen_summary">"Écran de démarrage. La touche \"Retour\" vous renverra vers cet écran avant de fermer l'application."</string>
+    <string name="settings_user_home_screen_title">"Écran d'accueil"</string>
+    <string name="settings_view_title">Réglages de BeyondPod</string>
+    <string name="settings_view_update_log_message">Dernière mise à jour : %s</string>
+    <string name="settings_view_update_log_title">Afficher le journal des mises à jour</string>
+    <string name="settings_volumeNavigation_summary">"Utilisez les commandes de volume pour aller d'un message à un autre dans un flux"</string>
+    <string name="settings_volumeNavigation_title">Naviguez avec les commandes de volume</string>
+    <string name="settings_widget_background_title">Arrière-plan du Widget</string>
+    <string name="settings_widget_preferences">Paramètrage du Widget</string>
+    <string name="smart_playlist_add">Ajouter une liste SmartPlay</string>
+    <string name="smart_playlist_add_rule">Ajouter règle</string>
+    <string name="smart_playlist_editor_msg">"SmartPlay génère automatiquement une liste de lecture rafraîchi de vos épisodes téléchargés. 
+Les épisodes inclus, sont basé sur un ensemble de règles simples."</string>
+    <string name="smart_playlist_editor_title">Éditeur de liste SmartPlay</string>
+    <string name="smart_playlist_emptyplaylist">La liste de lecture est vide</string>
+    <string name="smart_playlist_emptyplaylist_info">Appuyez sur lecture pour lancer SmartPlay</string>
+    <string name="smart_playlist_name_hint">Nom de la liste SmartPlay</string>
+    <string name="smart_playlist_repository_loading">Chargement de la liste de lecture</string>
+    <string name="smart_playlist_shortcut_create_failed">Impossible de créer raccourci!</string>
+    <string name="smart_playlist_shortcut_creating">Création de raccourci...</string>
+    <string name="smart_playlist_start_with">Commencer avec</string>
+    <string name="smart_playlist_then_play">alors lire</string>
+    <string name="smartplay_category_label">Catégorie</string>
+    <string name="status_bar_notification_info_overflow">>999</string>
+    <string name="the_url_of_this_feed_s_does_not_appear_to_be_valid">"L'URL du flux: %s ne semble pas être valide!"</string>
+    <string name="there_are_no_scheduled_updates">"Il n'y a aucune mise à jour planifié"</string>
+    <string name="this_feed_already_exists_in_category">"Cet flux existe déjà dans la catégorie '%s'"</string>
+    <string name="tip_cast_to_your_tv_msg">Appuyez sur le bouton de cast #IMG # ci-dessus pour profiter de vos épisodes sur grand écran.</string>
+    <string name="tip_cast_to_your_tv_title">Envoyer sur votre TV</string>
+    <string name="tip_how_to_select_compact_card_msg">Voir plusieurs épisodes sur votre écran à la fois. Choisissez « Cartes Compact » dans le Menu.</string>
+    <string name="tip_introduce_multi_select_msg">"Vous pouvez supprimer, télécharger ou ajouter à la Liste de lecture plusieurs épisodes à la fois. 
+Appuyez longuement sur le premier épisode pour le sélectionner, appuyez pour sélectionner plus d'épisodes et puis choisissez une action dans le Menu."</string>
+    <string name="tip_introduce_smart_play_msg">"Fatigué de construire manuellement votre liste de lecture? Laisser SmartPlay faire le travail!
+Appuyez ici pour en savoir plus."</string>
+    <string name="tip_notification">Astuce</string>
+    <string name="tip_notification_categories_msg">"Pour réorganiser les catégories, saisir l'icône #IMG# et la glisser vers la position souhaitée dans la liste."</string>
+    <string name="tip_notification_drag_drop_playlist_info">"Pour organiser la liste de lecture, saisir l'icône #IMG# et la glisser vers la position souhaitée dans la liste de lecture."</string>
+    <string name="tip_notification_expand_categories_msg">Une tape sur #IMG# pour déployer la catégorie et afficher tous ses flux.</string>
+    <string name="trial_about_to_expire_message">Votre essai BeyondPod PRO expirera dans %s jours</string>
+    <string name="trial_expired_message">"Votre période d'essai BeyondPod Pro est expiré!"</string>
+    <string name="update_and_download_queue_connecting">Connexion…</string>
+    <string name="update_and_download_queue_downloaded">Téléchargé</string>
+    <string name="update_and_download_queue_title">"File d'attente de M.À.J. et de téléchargement"</string>
+    <string name="update_and_download_queue_updating">Mise à jour en cours</string>
+    <string name="update_and_download_updating_s">Mise à jour de %s…</string>
+    <string name="update_download_mgr_currently_podcasts_can_be_downloaded_automatically_only_over_a_wifi_connection">"Actuellement les podcasts peuvent être automatiquement téléchargés uniquement sur une connexion WiFi. Utilisez le bouton 'Télécharger' pour télécharger manuellement les podcasts individuels. (Vous pouvez modifier cela dans Menu > Paramètres > Réglages de mise à jour de flux > Télécharger uniquement en WiFi)"</string>
+    <string name="update_download_mgr_currently_podcasts_can_be_downloaded_automatically_only_when_the_device_is_plugged_in">"Actuellement les podcasts peuvent automatiquement êtretéléchargé seulement lorsque l'appareil est chargement. Utilisez le bouton 'Téléchargement' pour télécharger manuellement des podcast individuel. (Vous pouvez changer cela dans Menu > Paramètres > Paramètres M.À.J. flux > Télécharger si seulement en charge)"</string>
+    <string name="update_download_mgr_scheduled_update_did_not_run_because_background_data_is_disabled">"La M.À.J. planifiée n'as pas été exécuté car les \"données en arrière-plan\" sont désactivées dans les paramètres de l'appareil. (Vous pouvez toujours mettre vos flux à jour manuellement)."</string>
+    <string name="update_download_mgr_the_device_has_no_internet_connection">"L'appareil n'as pas de connection internet! l'adaptateur WiFi est actuellement éteint ( et n'est pas configuré pour s'activer automatiquement lors de mise à jour)."</string>
+    <string name="update_download_mgr_unable_to_establish_internet_conection_the_device_is_in_airplane_mode">"Incapacité à établir une connexion internet! L'appareil est en mode avion."</string>
+    <string name="update_download_queue_activity_cancel_update">Arreter la MàJ et téléchargements</string>
+    <string name="update_download_queue_download_completed">Fermer</string>
+    <string name="update_download_queue_processing_text">Vérification des nouveaux épisodes...</string>
+    <string name="update_download_queue_update_and_download_completed">M-à-j et Téléchargmnt terminé!</string>
+    <string name="update_download_queue_view_update_log">Voir le journal des M-à-j</string>
+    <string name="update_engine_notification__feed_update_completed">M.À.J. du flux terminé</string>
+    <string name="update_engine_notification__feed_update_failed">M.À.J. du flux à échoué</string>
+    <string name="update_engine_notification__podcasts_failed">"échec de l'épisode"</string>
+    <string name="update_engine_notification_feeds_failed">échec du flux</string>
+    <string name="update_engine_notification_no_network_connection">Aucune connexion réseau!</string>
+    <string name="update_engine_notification_no_new_podcasts">Pas de nouveaux épisodes</string>
+    <string name="update_engine_notification_no_new_posts">Pas de nouveaux articles</string>
+    <string name="update_engine_notification_the_phone_is_in_airplane_mode">"L'appareil est en mode avion!"</string>
+    <string name="update_engine_notification_there_were_errors_during_the_last_update">"Il y'a eu des erreurs lors de la dernière mise à jour! Appuyez ici pour voir le journal des mises à jour."</string>
+    <string name="update_engine_notification_unable_to_establish_network_connection">Incapacité à établir une connexion internet.</string>
+    <string name="update_engine_notification_updated">Mis à jour</string>
+    <string name="updates_are_scheduled_for_categories">Mises à jour sont planifiées pour les catégories</string>
+    <string name="updating_google_reader">Synchroniser Feedly</string>
+    <string name="warn_force_download_on_device_not_plugged_in_msg">Vos réglages permettent les téléchargement de podcasts que lorsque votre appareil est en charge. Êtes vous sûr de vouloir utiliser votre batterie pour télécharger cet épisode?</string>
+    <string name="warn_force_download_on_mobile_data_msg">Vos réglages ne permettent pas un téléchargement de podcasts en utilisant la connection de donnée mobile. Êtes vous sûr de vouloir utiliser votre connection de donnée mobile pour télécharger cet épisode?</string>
+    <string name="warn_force_download_on_wifi_not_connected_msg">Vos réglages ne permettent les téléchargements de podcasts que lorsque votre appareil est connecté en WIFI. Êtes-vous sûr de vouloir utiliser votre connexion de données mobiles pour télécharger cet épisode?</string>
+    <string name="warn_replace_pls_append">"Rajouter l'épisode à la liste de lecture actuelle"</string>
+    <string name="warn_replace_pls_donotask_append">"A l'avenir, toujours ajouter les épisodes sélectionnés"</string>
+    <string name="warn_replace_pls_donotask_replace">"A l'avenir, toujours créer une nouvelle liste de lecture"</string>
+    <string name="warn_replace_pls_donotask_tip">Vous pouvez modifier ce paramètre plus tard dans : Paramètres de la liste de lecture > Liste de lecture automatique</string>
+    <string name="warn_replace_pls_msg">"L'épisode lancé peut créer une nouvelle liste de lecture. Continuer?"</string>
+    <string name="warn_replace_pls_replace">Oui, créer une nouvelle liste de lecture</string>
+    <string name="warn_replace_pls_title">Remplacer la liste de lecture?</string>
+    <string name="widget_action_picker_now_playing">En lecture</string>
+    <string name="widget_action_picker_open_beyondpod">Ouvrir BeyondPod</string>
+    <string name="widget_action_picker_start_smartplay">Démarrer SmartPlay par défaut</string>
+    <string name="widget_action_picker_update_smartplay_feeds">M.À.J. de la liste de lecture par défaut SmartPlay</string>
+    <string name="widget_picker_title">Sélectionnez une action</string>
+    <string name="widget_provider_playback_error">Erreur de lecture!</string>
+    <string name="widget_provider_starting_stream_s">Démarrage du flux... (%s %%)</string>
+</resources>

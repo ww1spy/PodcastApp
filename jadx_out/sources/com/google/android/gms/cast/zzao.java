@@ -1,0 +1,69 @@
+package com.google.android.gms.cast;
+
+import android.os.RemoteException;
+import com.google.android.gms.cast.RemoteMediaPlayer;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.Status;
+import com.google.android.gms.internal.zzbdp;
+import com.google.android.gms.internal.zzbej;
+import org.json.JSONObject;
+
+/* JADX INFO: Access modifiers changed from: package-private */
+/* loaded from: classes.dex */
+public final class zzao extends RemoteMediaPlayer.zzb {
+    private /* synthetic */ RemoteMediaPlayer zzexz;
+    private /* synthetic */ GoogleApiClient zzeya;
+    private /* synthetic */ MediaQueueItem[] zzeyd;
+    private /* synthetic */ int zzeye;
+    private /* synthetic */ int zzeyf;
+    private /* synthetic */ long zzeyg;
+    private /* synthetic */ JSONObject zzeyh;
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public zzao(RemoteMediaPlayer remoteMediaPlayer, GoogleApiClient googleApiClient, GoogleApiClient googleApiClient2, MediaQueueItem[] mediaQueueItemArr, int i, int i2, long j, JSONObject jSONObject) {
+        super(googleApiClient);
+        this.zzexz = remoteMediaPlayer;
+        this.zzeya = googleApiClient2;
+        this.zzeyd = mediaQueueItemArr;
+        this.zzeye = i;
+        this.zzeyf = i2;
+        this.zzeyg = j;
+        this.zzeyh = jSONObject;
+    }
+
+    @Override // com.google.android.gms.cast.RemoteMediaPlayer.zzb, com.google.android.gms.common.api.internal.zzm
+    protected final /* bridge */ /* synthetic */ void zza(zzbdp zzbdpVar) throws RemoteException {
+        zza(zzbdpVar);
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // com.google.android.gms.cast.RemoteMediaPlayer.zzb
+    public final void zza(zzbdp zzbdpVar) {
+        Object obj;
+        RemoteMediaPlayer.zza zzaVar;
+        RemoteMediaPlayer.zza zzaVar2;
+        RemoteMediaPlayer.zza zzaVar3;
+        zzbej zzbejVar;
+        obj = this.zzexz.mLock;
+        synchronized (obj) {
+            zzaVar = this.zzexz.zzexu;
+            zzaVar.zzb(this.zzeya);
+            try {
+                try {
+                    zzbejVar = this.zzexz.zzext;
+                    zzbejVar.zza(this.zzezb, this.zzeyd, this.zzeye, this.zzeyf, this.zzeyg, this.zzeyh);
+                    zzaVar2 = this.zzexz.zzexu;
+                } catch (IllegalStateException unused) {
+                    setResult((zzao) zzb(new Status(2100)));
+                    zzaVar2 = this.zzexz.zzexu;
+                }
+                zzaVar2.zzb(null);
+            } catch (Throwable th) {
+                zzaVar3 = this.zzexz.zzexu;
+                zzaVar3.zzb(null);
+                throw th;
+            }
+        }
+    }
+}

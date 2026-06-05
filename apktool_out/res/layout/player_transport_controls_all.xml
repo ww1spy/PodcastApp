@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/transportControls" android:paddingLeft="@dimen/main_screen_h_margin" android:paddingRight="@dimen/main_screen_h_margin" android:layout_width="fill_parent" android:layout_height="@dimen/player_transport_controls_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/prev" android:layout_width="0.0dip" android:layout_weight="1.0" android:contentDescription="@string/control_previous" style="@style/BPMediaButton.Prev" />
+    <mobi.beyondpod.ui.views.base.RepeatingFrameButton android:id="@id/skip_back" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/BPMediaButton">
+        <TextView android:layout_gravity="center" android:id="@id/skip_back_text" android:drawableEnd="@drawable/ic_player_rew" style="@style/BPMediaButtonText" />
+    </mobi.beyondpod.ui.views.base.RepeatingFrameButton>
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageButton android:id="@id/playpause" android:contentDescription="@string/control_play_pause" style="@style/BPMediaButton.Play" />
+        <ProgressBar android:id="@id/prepareProgress" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?android:progressBarStyle" />
+    </FrameLayout>
+    <mobi.beyondpod.ui.views.base.RepeatingFrameButton android:id="@id/skip_forward" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/BPMediaButton">
+        <TextView android:layout_gravity="center" android:id="@id/skip_forward_text" android:drawableStart="@drawable/ic_player_forw" style="@style/BPMediaButtonText" />
+    </mobi.beyondpod.ui.views.base.RepeatingFrameButton>
+    <ImageButton android:id="@id/next" android:layout_width="0.0dip" android:layout_weight="1.0" android:contentDescription="@string/control_next" style="@style/BPMediaButton.Next" />
+    <ImageButton android:id="@id/skipToEnd" android:visibility="gone" android:layout_width="48.0dip" android:contentDescription="@string/control_skip_next" style="@style/BPMediaButton.SkipToEnd" />
+</LinearLayout>

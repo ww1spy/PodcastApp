@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" style="@style/GuidedTourMainWindow"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <View android:background="#ffc0c0c0" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?android:dividerVertical" android:showDividers="middle" android:dividerPadding="12.0dip">
+        <FrameLayout android:id="@id/wizard_cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="?android:actionButtonStyle">
+            <TextView android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/first_run_skipsamples" android:drawablePadding="8.0dip" android:textAllCaps="true" style="@style/NavigatorButtonTextStyle" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/wizard_continue" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="?android:actionButtonStyle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <ProgressBar android:id="@id/wizard_progress" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:indeterminate="true" android:layout_centerVertical="true" android:layout_toStartOf="@id/wizard_continue_text" />
+            <TextView android:gravity="center_vertical" android:id="@id/wizard_continue_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/first_run_continue" android:drawablePadding="8.0dip" android:layout_centerInParent="true" android:textAllCaps="true" style="@style/NavigatorButtonTextStyle" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

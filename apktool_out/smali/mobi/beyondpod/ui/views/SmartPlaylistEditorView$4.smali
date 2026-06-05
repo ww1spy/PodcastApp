@@ -1,0 +1,56 @@
+.class Lmobi/beyondpod/ui/views/SmartPlaylistEditorView$4;
+.super Ljava/lang/Object;
+.source "SmartPlaylistEditorView.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lmobi/beyondpod/ui/views/SmartPlaylistEditorView;->BuildItem(Lmobi/beyondpod/services/player/smartplay/SmartPlaylist$SmartPlaylistEntry;I)Landroid/view/View;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lmobi/beyondpod/ui/views/SmartPlaylistEditorView;
+
+.field final synthetic val$entry:Lmobi/beyondpod/services/player/smartplay/SmartPlaylist$SmartPlaylistEntry;
+
+
+# direct methods
+.method constructor <init>(Lmobi/beyondpod/ui/views/SmartPlaylistEditorView;Lmobi/beyondpod/services/player/smartplay/SmartPlaylist$SmartPlaylistEntry;)V
+    .locals 0
+
+    .line 316
+    iput-object p1, p0, Lmobi/beyondpod/ui/views/SmartPlaylistEditorView$4;->this$0:Lmobi/beyondpod/ui/views/SmartPlaylistEditorView;
+
+    iput-object p2, p0, Lmobi/beyondpod/ui/views/SmartPlaylistEditorView$4;->val$entry:Lmobi/beyondpod/services/player/smartplay/SmartPlaylist$SmartPlaylistEntry;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/view/View;)V
+    .locals 0
+
+    .line 321
+    iget-object p1, p0, Lmobi/beyondpod/ui/views/SmartPlaylistEditorView$4;->val$entry:Lmobi/beyondpod/services/player/smartplay/SmartPlaylist$SmartPlaylistEntry;
+
+    invoke-virtual {p1}, Lmobi/beyondpod/services/player/smartplay/SmartPlaylist$SmartPlaylistEntry;->markDeleted()V
+
+    .line 322
+    iget-object p1, p0, Lmobi/beyondpod/ui/views/SmartPlaylistEditorView$4;->this$0:Lmobi/beyondpod/ui/views/SmartPlaylistEditorView;
+
+    invoke-virtual {p1}, Lmobi/beyondpod/ui/views/SmartPlaylistEditorView;->reBindTemplates()V
+
+    return-void
+.end method

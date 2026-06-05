@@ -1,0 +1,106 @@
+.class Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel$4;
+.super Ljava/lang/Object;
+.source "ChromecastDevice.java"
+
+# interfaces
+.implements Lcom/google/android/gms/common/api/ResultCallback;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel;->seek(Lcom/google/android/gms/cast/MediaInfo;J)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lcom/google/android/gms/common/api/ResultCallback<",
+        "Lcom/google/android/gms/cast/RemoteMediaPlayer$MediaChannelResult;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel;
+
+
+# direct methods
+.method constructor <init>(Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel;)V
+    .locals 0
+
+    .line 666
+    iput-object p1, p0, Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel$4;->this$0:Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onResult(Lcom/google/android/gms/cast/RemoteMediaPlayer$MediaChannelResult;)V
+    .locals 0
+
+    .line 672
+    invoke-interface {p1}, Lcom/google/android/gms/cast/RemoteMediaPlayer$MediaChannelResult;->getStatus()Lcom/google/android/gms/common/api/Status;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/google/android/gms/common/api/Status;->isSuccess()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 674
+    iget-object p1, p0, Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel$4;->this$0:Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel;
+
+    iget-object p1, p1, Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel;->_NotificationListener:Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel$StreamNotificationListener;
+
+    if-eqz p1, :cond_1
+
+    .line 675
+    iget-object p1, p0, Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel$4;->this$0:Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel;
+
+    iget-object p1, p1, Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel;->_NotificationListener:Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel$StreamNotificationListener;
+
+    invoke-interface {p1}, Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel$StreamNotificationListener;->onSeekCompleted()V
+
+    goto :goto_0
+
+    .line 678
+    :cond_0
+    iget-object p1, p0, Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel$4;->this$0:Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel;
+
+    iget-object p1, p1, Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel;->_NotificationListener:Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel$StreamNotificationListener;
+
+    if-eqz p1, :cond_1
+
+    .line 679
+    iget-object p1, p0, Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel$4;->this$0:Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel;
+
+    iget-object p1, p1, Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel;->_NotificationListener:Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel$StreamNotificationListener;
+
+    invoke-interface {p1}, Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel$StreamNotificationListener;->onSeekFailed()V
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method public bridge synthetic onResult(Lcom/google/android/gms/common/api/Result;)V
+    .locals 0
+
+    .line 666
+    check-cast p1, Lcom/google/android/gms/cast/RemoteMediaPlayer$MediaChannelResult;
+
+    invoke-virtual {p0, p1}, Lmobi/beyondpod/services/player/impl/ChromecastDevice$MediaControlChannel$4;->onResult(Lcom/google/android/gms/cast/RemoteMediaPlayer$MediaChannelResult;)V
+
+    return-void
+.end method

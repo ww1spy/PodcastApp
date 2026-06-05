@@ -1,0 +1,81 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+@font-face{
+  font-family: 'RobotoLight';
+  font-weight: normal;
+  font-style: normal;
+  src:url('file:///android_asset/fonts/Roboto-Light.ttf') format('truetype');
+}
+
+body {
+  font-family: 'RobotoLight';
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+body > div {
+  display: table-row;
+}
+
+.vertically-centered {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+h2 {
+  color: black;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+p {
+  color: #666;
+  font-weight: normal;
+  text-align: center;
+  font-size: 1em;
+  margin: auto;
+  width: 80%;
+}
+
+li {
+  text-align: left;
+}
+
+.green
+{
+    background-color: #7ACB2A;
+}
+
+.blue
+{
+    background-color: #5DB0AC;
+}
+
+.yellow
+{
+    background-color: #EFB72D;
+}
+
+.red
+{
+    background-color: #F92543;
+}
+

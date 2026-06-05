@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/episode_toolbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tb_playpause" android:background="?android:selectableItemBackground" android:layout_width="@dimen/episode_toolbar_height" android:layout_height="fill_parent" android:scaleType="center" android:contentDescription="@string/control_play_pause" />
+    <TextView android:gravity="center_vertical" android:id="@id/playPosition" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/CardTimePositionTextStyle" />
+    <mobi.beyondpod.ui.views.base.DownloadProgressButton android:id="@id/tb_download" android:background="?android:selectableItemBackground" android:layout_width="@dimen/episode_toolbar_height" android:layout_height="fill_parent" android:scaleType="center" />
+    <ImageView android:id="@id/tb_playlist" android:background="?android:selectableItemBackground" android:layout_width="@dimen/episode_toolbar_height" android:layout_height="fill_parent" android:src="@drawable/ic_card_add_to_list" android:scaleType="center" android:contentDescription="@string/toolbar_playlist" />
+    <ImageView android:id="@id/tb_overflow" android:background="?android:selectableItemBackground" android:layout_width="@dimen/episode_toolbar_height" android:layout_height="fill_parent" android:src="@drawable/ic_action_overflow_dark" android:scaleType="center" android:contentDescription="@string/toolbar_overflow" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="70.0dip" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/widget_bg_image_light" android:background="@drawable/appwidget_lt_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/widget_bg_light" />
+    <ImageView android:id="@id/widget_bg_image_dark" android:background="@drawable/appwidget_dark_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/widget_bg_dark" />
+    <RelativeLayout android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/play_pause" android:background="?android:selectableItemBackground" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:id="@id/play_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/appwidget_play_progress_0" android:contentDescription="@string/play_progress" />
+            <ImageView android:layout_gravity="center" android:id="@id/control_play" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/appwidget_play" android:scaleType="center" android:contentDescription="@string/control_play" />
+        </FrameLayout>
+        <ImageView android:id="@id/podcastStreamable" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@drawable/appwidget_streaming" android:layout_alignParentBottom="true" android:contentDescription="@string/podcast_streamable" android:layout_marginStart="5.0dip" android:layout_alignParentStart="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="end" android:id="@id/playlist_size" android:layout_width="30.0dip" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:layout_alignParentBottom="true" android:layout_marginEnd="9.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <mobi.beyondpod.ui.core.volley.FadingNetworkImageView android:id="@id/iv_result" android:layout_width="@dimen/publisherList_icon_width" android:layout_height="@dimen/publisherList_icon_with_text_height" android:scaleType="fitXY" />
+    <View android:id="@id/iv_divider" android:background="#ff808080" android:layout_width="@dimen/publisherList_icon_width" android:layout_height="1.0dip" android:layout_marginTop="4.0dip" />
+    <TextView android:gravity="center" android:id="@id/iv_title" android:visibility="visible" android:layout_width="@dimen/publisherList_icon_width" android:layout_height="wrap_content" android:lines="1" android:textAllCaps="true" style="@style/PublisherSearchResultTextStyle" />
+</LinearLayout>

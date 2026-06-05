@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_update_title" android:key="update_preferences" android:summary="@string/settings_update_summary"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <mobi.beyondpod.rsscore.ScheduledUpdatesPreference android:title="@string/settings_automaticUpdates_title" android:key="ScheduledUpdatesPreference" />
+    <CheckBoxPreference android:title="@string/settings_allowcellular_title" android:key="AllowCellularConnections" android:summary="@string/settings_allowcellular_summary" />
+    <CheckBoxPreference android:title="@string/settings_togglewifi_title" android:key="TurnWiFiDuringUpdate" android:summary="@string/settings_togglewifi_summary" />
+    <CheckBoxPreference android:title="@string/settings_downloadonwifi_title" android:key="DownloadEnclosuresOnWiFiOnly" android:summary="@string/settings_downloadonwifi_summary" />
+    <CheckBoxPreference android:title="@string/settings_downloadoncharging_title" android:key="DownloadEnclosuresWhenChargingOnly" android:summary="@string/settings_downloadoncharging_summary" />
+    <CheckBoxPreference android:title="@string/settings_clearstatusnotification_title" android:key="ClearStatusNotificationAtTheEndOfUpdate" android:summary="@string/settings_clearstatusnotification_summary" />
+    <CheckBoxPreference android:title="@string/adv_settings_allow_pultorefresh_title" android:key="AllowPullToRefresh" android:summary="@string/adv_settings_allow_pultorefresh_summary" android:defaultValue="true" />
+    <mobi.beyondpod.rsscore.ViewUpdateLogPreference android:title="@string/settings_view_update_log_title" android:summary="@string/settings_view_update_log_message" />
+</PreferenceScreen>

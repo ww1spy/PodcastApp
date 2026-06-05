@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_view_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/settings_general_title" android:summary="@string/settings_general_summary">
+        <intent android:action="GeneralPreference" />
+    </Preference>
+    <Preference android:title="@string/settings_player_title" android:summary="@string/settings_player_summary">
+        <intent android:action="PlayerPreference" />
+    </Preference>
+    <Preference android:title="@string/settings_playlist_title" android:summary="@string/settings_playlist_summary">
+        <intent android:action="PlaylistPreference" />
+    </Preference>
+    <Preference android:title="@string/settings_update_title" android:summary="@string/settings_update_summary">
+        <intent android:action="UpdatePreference" />
+    </Preference>
+    <Preference android:title="@string/settings_backup_restore_title" android:key="HeaderBackup">
+        <intent android:action="BackupRestore" />
+    </Preference>
+    <Preference android:title="@string/settings_cds_title" android:key="HeaderCDS">
+        <intent android:action="CrossDeviceSync" />
+    </Preference>
+    <Preference android:title="@string/MENU_about" android:key="HeaderAbout">
+        <intent android:action="AboutBeyondPod" />
+    </Preference>
+</PreferenceScreen>

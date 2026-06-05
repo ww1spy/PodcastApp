@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/category_name" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CardMyEpisodesSectionHeaderTitleTextStyle" />
+    <View android:id="@id/section_divider" android:background="@color/bp_dark_grey" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/category_properties_update_schedule_msg_top" style="@style/Base.TextAppearance.AppCompat.Caption" />
+    <Switch android:textAppearance="@style/PropertyTitleText" android:id="@id/sp_scheduleActive" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/category_schedule_active" />
+    <TextView android:id="@id/timePickerTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/category_schedule_time_title" style="@style/PropertyTitleText" />
+    <mobi.beyondpod.ui.core.ScrollableTimePicker android:theme="@android:style/Theme.Holo.Light" android:layout_gravity="center_horizontal" android:id="@id/sp_timePicker" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:ellipsize="end" android:id="@id/intervalTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="4.0dip" android:text="@string/category_schedule_repeat_title" style="@style/PropertyTitleText" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/intervalLayoutGroup" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="60.0dip" android:layout_marginBottom="5.0dip">
+        <ImageButton android:id="@id/sp_buttonPlus" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_add_dark" android:contentDescription="@string/button_add" />
+        <TextSwitcher android:id="@id/sp_scheduleInterval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" />
+        <ImageButton android:id="@id/sp_buttonMinus" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_minus_dark" android:contentDescription="@string/button_remove" />
+        <Spinner android:layout_gravity="center_vertical" android:id="@id/sp_schedulePeriod" android:layout_width="90.0dip" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+    <TextView android:id="@id/scheduleInformationText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/category_properties_update_schedule_msg" style="@style/Base.TextAppearance.AppCompat.Caption" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="content_grid_columns">2</integer>
+    <integer name="episode_card_playlist_description_maxLines">2</integer>
+    <integer name="episode_card_playlist_layout_type">1</integer>
+    <integer name="publisherList_num_columns">6</integer>
+</resources>

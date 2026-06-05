@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ga_trackingId">UA-54522730-2</string>
+    <string name="ga_logLevel">verbose</string>
+    <integer name="ga_sessionTimeout">300</integer>
+    <bool name="ga_autoActivityTracking">true</bool>
+    <bool name="ga_dryRun">false</bool>
+    <screenName name="mobi.beyondpod.ui.settings.SettingsView">App Settings</screenName>
+    <screenName name="mobi.beyondpod.ui.views.MasterView">Master - Main</screenName>
+    <screenName name="mobi.beyondpod.ui.views.HtmlViewActivity">Web View</screenName>
+    <screenName name="mobi.beyondpod.ui.views.contentview.FeedItemContentViewPager">Show Notes</screenName>
+    <screenName name="mobi.beyondpod.ui.views.feedsettings.FeedPropertiesView">Feed Settings</screenName>
+    <screenName name="mobi.beyondpod.ui.views.UpdateAndDownloadQueueActivityDialog">Update and Download Queue</screenName>
+    <screenName name="mobi.beyondpod.ui.views.SmartPlaylistEditorView">SmartPlay Editor</screenName>
+    <screenName name="mobi.beyondpod.ui.views.MovieView">Movie Viewer</screenName>
+    <screenName name="mobi.beyondpod.ui.views.onboarding.GuidedTour">Startup - Guided Tour</screenName>
+    <screenName name="mobi.beyondpod.ui.views.onboarding.startup.FirstRun">Startup - First Run</screenName>
+    <screenName name="mobi.beyondpod.ui.views.impexp.AddFeedView">Add Feed</screenName>
+    <screenName name="mobi.beyondpod.ui.views.impexp.PublisherResultsView">Add Feed - Publisher Results</screenName>
+    <screenName name="mobi.beyondpod.ui.views.impexp.ImportFeedsView">Add Feed - Import</screenName>
+    <screenName name="mobi.beyondpod.ui.views.publishedepisodes.FeedPreviewActivity">Add Feed - Feed Preview</screenName>
+    <screenName name="mobi.beyondpod.ui.dialogs.PreviewPlayer">Add Feed - Preview Player</screenName>
+    <screenName name="mobi.beyondpod.ui.views.OAuthLoginActivity">Tools - OAuth Login</screenName>
+    <screenName name="mobi.beyondpod.ui.views.FileViewActivity">Tools - File Viewer</screenName>
+    <screenName name="mobi.beyondpod.ui.dialogs.WidgetActionPicker">Tools - Widget Action Picker</screenName>
+    <screenName name="mobi.beyondpod.ui.views.ShortcutHandler">Tools - Shortcut Starter</screenName>
+    <screenName name="mobi.beyondpod.ui.dialogs.MoveFilesDialog">Tools - Move Files</screenName>
+    <screenName name="mobi.beyondpod.ui.dialogs.WidgetPreferences">Tools - Widget Settings</screenName>
+    <screenName name="mobi.beyondpod.ui.dialogs.BackupRestoreActivity">Tools - Backup Restore</screenName>
+    <screenName name="mobi.beyondpod.ui.dialogs.CrossDeviceSyncLoginActivity">Tools - Cross Device Sync Login</screenName>
+    <screenName name="mobi.beyondpod.ui.dialogs.ExternalPlayerStarterActivity">Tools - External Player Starter</screenName>
+    <screenName name="mobi.beyondpod.ui.dialogs.ApplicationErrorMessageDialog">Tools - App Error</screenName>
+    <screenName name="mobi.beyondpod.ui.dialogs.GoogleReaderLoginDialog">Tools - Feedly Login</screenName>
+    <screenName name="mobi.beyondpod.ui.dialogs.DisableGoogleReaderDialog">Tools - Feedly Log-out</screenName>
+    <screenName name="mobi.beyondpod.ui.dialogs.ScheduledUpdatesActivity">Tools - Scheduled Updates</screenName>
+    <screenName name="mobi.beyondpod.ui.dialogs.CategoryPropertiesActivity">Tools - Category Properties</screenName>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Spinner android:id="@id/import_opml_file" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:drawSelectorOnTop="true" android:layout_weight="1.0" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/importOpmlButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="@string/opml_import_opml_btn_label" />
+    </LinearLayout>
+    <TextView android:gravity="center_horizontal" android:id="@id/opml_import_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/opml_import_opml_msg1" />
+    <View android:layout_gravity="bottom" android:background="#ff303030" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <FrameLayout android:id="@id/opmlContentFragmentContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

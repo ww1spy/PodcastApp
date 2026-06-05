@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <VideoView android:id="@id/surface_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <FrameLayout android:id="@id/audioPlayer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <mobi.beyondpod.ui.views.base.AlbumView android:layout_gravity="center" android:id="@id/podcastAlbum" android:layout_width="@dimen/preview_player_album_art_width" android:layout_height="@dimen/preview_player_album_art_height" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/progress_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:layout_gravity="center" android:id="@android:id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleLarge" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/movie_view_preparing_stream" />
+    </LinearLayout>
+</RelativeLayout>

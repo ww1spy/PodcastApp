@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="add_feed_screen_h_margin">110.0dip</dimen>
+    <dimen name="card_episode_image_height">130.0dip</dimen>
+    <dimen name="card_episode_image_width">130.0dip</dimen>
+    <dimen name="card_view_cell_height_large">176.0dip</dimen>
+    <dimen name="card_view_cell_height_med">130.0dip</dimen>
+    <dimen name="drawer_playlist_width">550.0dip</dimen>
+    <dimen name="main_screen_h_margin">56.0dip</dimen>
+    <dimen name="playlist_pager_bottom_padding">165.0dip</dimen>
+    <dimen name="playlist_pager_card_margin">24.0dip</dimen>
+    <dimen name="playlist_pager_top_padding">125.0dip</dimen>
+</resources>

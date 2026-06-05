@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <mobi.beyondpod.ui.views.base.CheckableRelativeLayoutEvo android:id="@id/card" android:background="@color/episode_card_playlist_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/playlist_pager_card_margin">
+        <mobi.beyondpod.ui.views.base.ProgressImageView android:id="@id/image" android:layout_width="@dimen/playlist_card_episode_image_width" android:layout_height="@dimen/playlist_card_episode_image_height" android:layout_marginTop="12.0dip" android:scaleType="center" android:layout_marginStart="12.0dip" style="@style/AlbumArtProgressImageView" />
+        <TextView android:gravity="bottom" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_alignBottom="@id/image" android:layout_alignWithParentIfMissing="true" android:textAllCaps="true" android:layout_toEndOf="@id/image" style="@style/PlaylistCardEpisodeSourceTextStyle" />
+        <TextView android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="4.0dip" android:layout_below="@id/date" style="@style/PlaylistCardEpisodeTitleTextStyle" />
+        <TextView android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/episodeToolbar" android:layout_below="@id/title" android:layout_alignStart="@id/title" android:layout_alignEnd="@id/title" style="@style/PlaylistCardEpisodeDescriptionTextStyle" />
+    </mobi.beyondpod.ui.views.base.CheckableRelativeLayoutEvo>
+</FrameLayout>

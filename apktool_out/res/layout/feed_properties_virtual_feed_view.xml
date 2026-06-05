@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="@string/feed_properties_feed_download_folder_vir_feed_title" style="@style/PropertyDialogSettingTitle" />
+    <EditText android:id="@id/fp_feedDownloadFolder" android:layout_width="fill_parent" android:selectAllOnFocus="true" android:inputType="textUri" style="@style/PropertyDialogSettingContent" />
+    <TextView android:text="@string/feed_properties_feed_download_folder_vir_feed_msg" style="@style/PropertyDialogSettingMsg" />
+    <TextView android:text="@string/feed_properties_feed_name_title" style="@style/PropertyDialogSettingTitle" />
+    <EditText android:id="@id/fp_feedName" android:selectAllOnFocus="true" android:inputType="textCapWords" style="@style/PropertyDialogSettingContent" />
+    <TextView android:text="@string/feed_properties_feed_name_msg" style="@style/PropertyDialogSettingMsg" />
+    <LinearLayout android:orientation="vertical" android:id="@id/fp_categoriesGroup" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/feed_properties_feed_categories_title" style="@style/PropertyDialogSettingTitle" />
+        <include layout="@layout/assign_feed_categories" />
+        <TextView android:text="@string/feed_properties_feed_categories_msg" style="@style/PropertyDialogSettingMsg" />
+    </LinearLayout>
+    <TextView android:text="@string/feed_properties_feed_download_podcast_sort_order_title" style="@style/PropertyDialogSettingTitle" />
+    <Spinner android:id="@id/fp_podcastSortOrder" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:drawSelectorOnTop="true" style="@style/PropertyDialogSettingContent" />
+    <TextView android:text="@string/feed_properties_feed_download_podcast_sort_order_msg" style="@style/PropertyDialogSettingMsg" />
+    <FrameLayout style="@style/PropertyDialogSettingCheckBoxFrame">
+        <CheckBox android:id="@id/fp_playbackSpeedCheckBox" android:text="@string/feed_properties_playback_speed_prefs_title" style="@style/PropertyDialogSettingCheckBoxTitle" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/fp_playbackSpeedControls" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/sp_buttonMinus" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_minus_dark" android:contentDescription="@string/button_add" />
+        <TextSwitcher android:id="@id/sp_speedInfo" android:layout_width="80.0dip" android:layout_height="fill_parent" android:layout_margin="8.0dip" />
+        <ImageButton android:id="@id/sp_buttonPlus" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_add_dark" android:contentDescription="@string/button_remove" />
+    </LinearLayout>
+    <TextView android:id="@id/fp_playbackSpeed_msg" android:text="@string/feed_properties_playback_speed_prefs_msg" style="@style/PropertyDialogSettingMsg" />
+    <FrameLayout style="@style/PropertyDialogSettingCheckBoxFrame">
+        <CheckBox android:id="@id/fp_playbackVolumeBoostCheckBox" android:text="@string/feed_properties_volume_boost_prefs_title" style="@style/PropertyDialogSettingCheckBoxTitle" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/fp_volumeBoostControls" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/sp_buttonVBMinus" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_minus_dark" android:contentDescription="@string/button_remove" />
+        <TextSwitcher android:id="@id/sp_VBInfo" android:layout_width="80.0dip" android:layout_height="fill_parent" android:layout_margin="8.0dip" />
+        <ImageButton android:id="@id/sp_buttonVBPlus" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_add_dark" android:contentDescription="@string/button_add" />
+    </LinearLayout>
+    <TextView android:id="@id/fp_volumeBoost_msg" android:text="@string/feed_properties_volume_boost_prefs_msg" style="@style/PropertyDialogSettingMsg" />
+    <FrameLayout style="@style/PropertyDialogSettingCheckBoxFrame">
+        <CheckBox android:id="@id/fp_allowDeletions" android:text="@string/feed_properties_allow_deletions_title" style="@style/PropertyDialogSettingCheckBoxTitle" />
+    </FrameLayout>
+    <TextView android:text="@string/feed_properties_allow_deletions_vir_feed_msg" style="@style/PropertyDialogSettingMsg" />
+    <FrameLayout style="@style/PropertyDialogSettingCheckBoxFrame">
+        <CheckBox android:id="@id/fp_savePlayedPosition" android:text="@string/feed_properties_save_played_position_title" style="@style/PropertyDialogSettingCheckBoxTitle" />
+    </FrameLayout>
+    <TextView android:text="@string/feed_properties_save_played_position_msg" style="@style/PropertyDialogSettingMsg" />
+    <TextView android:text="@string/feed_properties_feed_download_podcast_long_name_handler_title" style="@style/PropertyDialogSettingTitle" />
+    <Spinner android:id="@id/fp_podcastLongNameHandling" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:drawSelectorOnTop="true" style="@style/PropertyDialogSettingContent" />
+    <TextView android:text="@string/feed_properties_feed_download_podcast_long_name_handler_msg" style="@style/PropertyDialogSettingMsg" />
+</LinearLayout>

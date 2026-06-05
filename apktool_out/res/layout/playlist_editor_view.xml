@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <mobi.beyondpod.ui.views.player.PlaylistListView android:id="@id/playlistList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="#ff202020" android:dividerHeight="1.0px" dslv:drag_handle_id="@id/playlist_dragdrop_handle" dslv:float_background_color="#40c0c0c0" xmlns:dslv="http://schemas.android.com/apk/res-auto" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/smartPlayPanel" android:background="@color/navigator_drawer_bg_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/spl_shortcut" android:layout_width="fill_parent" android:layout_height="@dimen/playlist_header_height" layout="@layout/playlist_header" />
+        <mobi.beyondpod.ui.views.player.SmartPlayListView android:id="@id/smartPlay" android:layout_width="fill_parent" android:layout_height="1.0dip" android:divider="#ff202020" android:dividerHeight="1.0px" android:layout_below="@id/spl_shortcut" />
+        <include android:id="@id/smartPlayExtras" android:layout_width="fill_parent" android:layout_height="@dimen/playlist_header_smartplay_extras_height" android:layout_below="@id/smartPlay" layout="@layout/smart_playlist_extras" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_PauseResume_title" android:key="pause_resume_preferences" android:summary="@string/settings_PauseResume_summary"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/settings_pause_onheadset_disconnect_title" android:key="PauseOnHeadsetDisconnect" android:summary="@string/settings_pause_onheadset_disconnect_summary" />
+    <CheckBoxPreference android:title="@string/settings_pause_on_power_disconnect_title" android:key="PauseOnPowerDisconnect" android:summary="@string/settings_pause_on_power_disconnect_summary" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/settings_pause_on_notification_title" android:key="PauseOnNotification" android:summary="@string/settings_pause_on_notification_summary" android:defaultValue="true" android:disableDependentsState="true" />
+    <CheckBoxPreference android:title="@string/settings_resume_on_call_title" android:key="AllowResumeAfterCall" android:summary="@string/settings_resume_on_call_summary" android:dependency="PauseOnNotification" android:defaultValue="true" />
+    <ListPreference android:entries="@array/resume_replay_duration_text" android:title="@string/settings_replay_on_resume_title" android:key="ResumeReplayDuration" android:summary="@string/settings_replay_on_resume_summary" android:defaultValue="0" android:dialogTitle="@string/settings_replay_on_resume_title" android:entryValues="@array/resume_replay_duration_values" />
+    <ListPreference android:entries="@array/settings_player_screen_power_state_text" android:title="@string/settings_keep_screen_on_during_playback_title" android:key="PlayerPlaybackScreenPowerState" android:summary="@string/settings_keep_screen_on_during_playback_summary" android:defaultValue="0" android:dialogTitle="@string/settings_keep_screen_on_during_playback_title" android:entryValues="@array/settings_player_screen_power_state_values" />
+</PreferenceScreen>

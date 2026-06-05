@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable android:label="@string/repo_search_label" android:hint="@string/repo_search_hint" android:searchSuggestAuthority="mobi.beyondpod.ui.evosearch.RepositorySearchProvider" android:searchSuggestSelection=" ?" android:searchSuggestIntentAction="android.intent.action.VIEW" android:searchSuggestIntentData="content://mobi.beyondpod.ui.evosearch.RepositorySearchProvider/repository" android:searchSuggestThreshold="1" android:includeInGlobalSearch="false" android:searchSettingsDescription="@string/settings_description"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

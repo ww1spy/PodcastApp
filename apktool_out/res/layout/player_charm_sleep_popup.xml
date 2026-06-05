@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="end" android:id="@id/close_popup" android:src="@drawable/ic_charm_close" android:contentDescription="@string/popup_close" android:layout_marginEnd="8.0dip" style="@style/PlayerCharmStyle" />
+    <RelativeLayout android:id="@id/episodeNameGroup" android:background="@color/player_charm_area_bg" android:paddingLeft="@dimen/charm_popup_h_margin" android:paddingTop="@dimen/charm_popup_v_margin" android:paddingRight="@dimen/charm_popup_h_margin" android:paddingBottom="@dimen/charm_popup_v_margin" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="56.0dip">
+        <TextView android:id="@id/charmTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/player_charm_sleep_title" style="@style/CharmPopupTitle" />
+        <TextView android:id="@id/charmDescription" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/player_charm_sleep_description" android:layout_below="@id/charmTitle" style="@style/CharmPopupDescription" />
+        <Button android:id="@id/sleepEpisodeEnd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/player_charm_sleep_episodeEnd" android:layout_below="@id/charmDescription" android:textAllCaps="true" style="@style/CharmButton" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/sleepTime1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/sleepEpisodeEnd">
+            <Button android:id="@id/sleep1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/CharmButton" />
+            <Button android:id="@id/sleep2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/CharmButton" />
+            <Button android:id="@id/sleep3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/CharmButton" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/sleepTime2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/sleepTime1">
+            <Button android:id="@id/sleep4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/CharmButton" />
+            <Button android:id="@id/sleep5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/CharmButton" />
+            <Button android:id="@id/sleepOff" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/player_charm_sleep_off" android:layout_weight="1.0" android:textAllCaps="true" style="@style/CharmButtonOrange" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

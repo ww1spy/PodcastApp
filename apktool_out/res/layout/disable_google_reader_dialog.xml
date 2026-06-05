@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="600.0dip" android:minHeight="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/dlg_title" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_disconnect_from_reader" style="@style/TextAppearance.AppCompat.Title" />
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:id="@id/dlg_message" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_disconnect_from_reader_msg" style="@style/TextAppearance.AppCompat.Subhead" />
+    </ScrollView>
+    <include layout="@layout/dialog_button_bar" />
+</LinearLayout>

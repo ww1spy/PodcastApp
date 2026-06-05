@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_feed_section_names">
+        <item>趨勢</item>
+        <item>推薦</item>
+        <item>發佈者</item>
+        <item>類別</item>
+        <item>國際</item>
+        <item>興趣</item>
+    </string-array>
+    <string-array name="allow_episode_streaming_text">
+        <item>總是</item>
+        <item>僅 Wi-Fi 時</item>
+        <item>從不</item>
+    </string-array>
+    <string-array name="allow_episode_streaming_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="audiobook_genres">
+        <item>All Genres</item>
+        <item>Adventure</item>
+        <item>Advice</item>
+        <item>Ancient Texts</item>
+        <item>Animals</item>
+        <item>Art</item>
+        <item>Biography</item>
+        <item>Children</item>
+        <item>Classics (antiquity)</item>
+        <item>Comedy</item>
+        <item>Cookery</item>
+        <item>Economics/Political Economy</item>
+        <item>Epistolary fiction</item>
+        <item>Erotica</item>
+        <item>Essay/Short nonfiction</item>
+        <item>Fairy tales</item>
+        <item>Fantasy</item>
+        <item>Fiction</item>
+        <item>Historical Fiction</item>
+        <item>History</item>
+        <item>Holiday</item>
+        <item>Horror/Ghost stories</item>
+        <item>Humor</item>
+        <item>Instruction</item>
+        <item>Languages</item>
+        <item>Literature</item>
+        <item>Memoirs</item>
+        <item>Music</item>
+        <item>Mystery</item>
+        <item>Myths/Legends</item>
+        <item>Nature</item>
+        <item>Philosophy</item>
+        <item>Play</item>
+        <item>Poetry</item>
+        <item>Politics</item>
+        <item>Psychology</item>
+        <item>Romance</item>
+        <item>Religion</item>
+        <item>Satire</item>
+        <item>Science</item>
+        <item>Science fiction</item>
+        <item>Sea stories</item>
+        <item>Short stories</item>
+        <item>Spy stories</item>
+        <item>Teen/Young adult</item>
+        <item>Tragedy</item>
+        <item>Travel</item>
+        <item>War stories</item>
+        <item>Westerns</item>
+    </string-array>
+    <string-array name="audiobook_languages">
+        <item>All Languages</item>
+        <item>Ancient Greek</item>
+        <item>Arabic</item>
+        <item>Bisaya</item>
+        <item>Bulgarian</item>
+        <item>Chinese</item>
+        <item>Church Slavonic</item>
+        <item>Danish</item>
+        <item>Dholuo</item>
+        <item>Dutch</item>
+        <item>English</item>
+        <item>Esperanto</item>
+        <item>Finnish</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Hebrew</item>
+        <item>Hungarian</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Javanese</item>
+        <item>Latin</item>
+        <item>Latvian</item>
+        <item>Middle English</item>
+        <item>Multilingual</item>
+        <item>Old English</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Russian</item>
+        <item>Spanish</item>
+        <item>Swedish</item>
+        <item>Tagalog</item>
+        <item>Tamil</item>
+        <item>Ukrainian</item>
+        <item>Urdu</item>
+    </string-array>
+    <string-array name="cds_accept_feeds_type_text">
+        <item>從不</item>
+        <item>僅手動發送</item>
+        <item>總是</item>
+    </string-array>
+    <string-array name="cds_accept_feeds_type_values">
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="feed_fingerprint_type_values">
+        <item>-1</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="feed_fingerprint_type_values_text">
+        <item>自動</item>
+        <item>使用主題 GUID</item>
+        <item>使用主題標題、連結以及發佈日期</item>
+    </string-array>
+    <string-array name="myepisodesFilter_text">
+        <item>我的片段</item>
+        <item>所有已發佈的</item>
+    </string-array>
+    <string-array name="playlist_end_action_text">
+        <item>忽略</item>
+        <item>清除播放列表</item>
+        <item>重新啓動智能播放</item>
+    </string-array>
+    <string-array name="playlist_end_action_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="resume_replay_duration_text">
+        <item>不重播</item>
+        <item>最後 5 秒</item>
+        <item>最後 15 秒</item>
+        <item>最後 30 秒</item>
+    </string-array>
+    <string-array name="resume_replay_duration_values">
+        <item>0</item>
+        <item>5</item>
+        <item>15</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="sample_content_category_names">
+        <item>News</item>
+        <item>Popular Science</item>
+        <item>Indie Music</item>
+        <item>TV &amp; Film</item>
+        <item>Great Stories</item>
+        <item>Android</item>
+        <item>Cars</item>
+        <item>Money</item>
+        <item>Sci-Fi</item>
+        <item>Business</item>
+        <item>Comedy</item>
+        <item>Food</item>
+        <item>Parenting</item>
+        <item>Wine &amp; Beer</item>
+        <item>Travel</item>
+    </string-array>
+    <string-array name="schedule_update_period">
+        <item>小時</item>
+        <item>天</item>
+        <item>週</item>
+    </string-array>
+    <string-array name="settings_configure_bt_buttons_text">
+        <item>下一集</item>
+        <item>上一集</item>
+        <item>向前跳躍</item>
+        <item>向後跳躍</item>
+        <item>跳至片尾</item>
+    </string-array>
+    <string-array name="settings_configure_bt_buttons_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="settings_contentFontSize_text">
+        <item>最大</item>
+        <item>較大</item>
+        <item>正常</item>
+        <item>較小</item>
+        <item>最小</item>
+    </string-array>
+    <string-array name="settings_feedSelectedAction_text">
+        <item>我的片段</item>
+        <item>所有已發佈的</item>
+    </string-array>
+    <string-array name="settings_feedSelectedAction_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="settings_itemSortOrder_text">
+        <item>訂閱源常規</item>
+        <item>頂部最新</item>
+        <item>頂部最舊</item>
+    </string-array>
+    <string-array name="settings_long_podcastName_handling_text">
+        <item>顯示開始</item>
+        <item>顯示結束</item>
+    </string-array>
+    <string-array name="settings_markAsReadOnOpen_text">
+        <item>所有主題</item>
+        <item>除 Podcasts 之外的主題</item>
+        <item>無</item>
+    </string-array>
+    <string-array name="settings_markAsReadOnOpen_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="settings_maxTrackAge_text">
+        <item>5 天</item>
+        <item>7 天</item>
+        <item>30 天</item>
+        <item>180 天</item>
+        <item>360 天</item>
+        <item>99999 天</item>
+    </string-array>
+    <string-array name="settings_maxTrackAge_values">
+        <item>5</item>
+        <item>7</item>
+        <item>30</item>
+        <item>180</item>
+        <item>360</item>
+        <item>99999</item>
+    </string-array>
+    <string-array name="settings_mediaEndAction_text">
+        <item>播放下一段</item>
+        <item>刪除並播放下一段</item>
+        <item>忽略</item>
+        <item>刪除</item>
+    </string-array>
+    <string-array name="settings_mediaEndAction_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_myepisodesFilter_text">
+        <item>所有片段</item>
+        <item>僅音訊</item>
+        <item>僅視頻</item>
+        <item>已下載</item>
+        <item>未完成</item>
+        <item>未播放</item>
+        <item>我的最愛</item>
+    </string-array>
+    <string-array name="settings_myepisodesFilter_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="settings_myepisodesSortOrder_text">
+        <item>通過訂閱源</item>
+        <item>最新</item>
+        <item>最舊</item>
+        <item>名稱</item>
+        <item>名稱（從 Z 至 A)</item>
+        <item>持續時間</item>
+        <item>持續時間（降序）</item>
+        <item>已播放部分</item>
+        <item>檔案名稱</item>
+    </string-array>
+    <string-array name="settings_myepisodesSortOrder_values">
+        <item>-1</item>
+        <item>3</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="settings_numPodcastsToDownload_text">
+        <item>1 集</item>
+        <item>3 集</item>
+        <item>5 集</item>
+        <item>10 集</item>
+        <item>20 集</item>
+        <item>50 集</item>
+        <item>沒有片段</item>
+    </string-array>
+    <string-array name="settings_numPodcastsToDownload_values">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="settings_numPodcastsToKeep_text">
+        <item>最後 1 集</item>
+        <item>最後 3 集</item>
+        <item>最後 5 集</item>
+        <item>最後 10 集</item>
+        <item>最後 20 集</item>
+        <item>最後 50 集</item>
+        <item>保留全部</item>
+    </string-array>
+    <string-array name="settings_numPodcastsToKeep_values">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>99999</item>
+    </string-array>
+    <string-array name="settings_orientation_lock_text">
+        <item>自動</item>
+        <item>豎向顯示</item>
+        <item>橫向顯示</item>
+    </string-array>
+    <string-array name="settings_orientation_lock_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_player_integration_text">
+        <item>使用內部</item>
+        <item>使用外部視頻</item>
+        <item>使用外部音頻</item>
+        <item>使用外部</item>
+    </string-array>
+    <string-array name="settings_player_integration_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_player_screen_power_state_text">
+        <item>使用設備預設</item>
+        <item>變暗（充電時）</item>
+        <item>變亮（充電時）</item>
+        <item>總是變暗</item>
+        <item>總是變亮</item>
+    </string-array>
+    <string-array name="settings_player_screen_power_state_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="settings_podcastDownloadAction_text">
+        <item>手動下載片段</item>
+        <item>下載最新片段</item>
+        <item>流媒體播放最新片段</item>
+        <item>下載片段順序</item>
+        <item>檔案名稱</item>
+        <item>忽略所有片段</item>
+    </string-array>
+    <string-array name="settings_podcastDownloadAction_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_preferred_enclosure_text">
+        <item>使用預設</item>
+        <item>使用替代 1</item>
+        <item>使用替代 2</item>
+        <item>使用替代 3</item>
+        <item>使用替代 4</item>
+        <item>使用替代 5</item>
+        <item>使用替代 6</item>
+        <item>使用替代 7</item>
+        <item>使用替代 8</item>
+        <item>使用替代 9</item>
+    </string-array>
+    <string-array name="settings_screen_item_content_view_theme_text">
+        <item>白色</item>
+        <item>烏黑</item>
+        <item>黑色</item>
+    </string-array>
+    <string-array name="settings_screen_power_state_during_wifi_updates_text">
+        <item>自動</item>
+        <item>始終開啓</item>
+        <item>總是關閉</item>
+    </string-array>
+    <string-array name="settings_screen_power_state_during_wifi_updates_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_skipInterval_text">
+        <item>5 秒</item>
+        <item>10 秒</item>
+        <item>20 秒</item>
+        <item>30 秒</item>
+        <item>1 分鐘</item>
+        <item>5 分鐘</item>
+        <item>不做跳躍</item>
+    </string-array>
+    <string-array name="settings_skipInterval_values">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+        <item>300</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="settings_skip_to_end_click_type_text">
+        <item>使用 \"點擊\" 方式</item>
+        <item>使用 \"長按\" 方式</item>
+        <item>隱藏按鈕</item>
+    </string-array>
+    <string-array name="settings_skip_to_end_click_type_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_sortOrder_text">
+        <item>名稱（從 A 至 Z)</item>
+        <item>名稱（從 Z 至 A)</item>
+        <item>日期（從早至晚)</item>
+        <item>日期（從晚至早)</item>
+    </string-array>
+    <string-array name="settings_sortOrder_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_startupView_text">
+        <item>預設</item>
+        <item>訂閱源列表</item>
+        <item>播放器</item>
+    </string-array>
+    <string-array name="settings_startupView_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_theme_text">
+        <item>Light (default)</item>
+        <item>Dark</item>
+    </string-array>
+    <string-array name="settings_theme_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_trackSortOrder_text">
+        <item>最新</item>
+        <item>最舊</item>
+        <item>名稱</item>
+        <item>名稱（從 Z 至 A)</item>
+        <item>持續時間</item>
+        <item>持續時間（降序）</item>
+        <item>已播放部分</item>
+        <item>檔案名稱</item>
+    </string-array>
+    <string-array name="settings_trackSortOrder_values">
+        <item>3</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="settings_volumeNavigation_text">
+        <item>僅無播放時</item>
+        <item>從不</item>
+        <item>總是</item>
+    </string-array>
+    <string-array name="settings_volumeNavigation_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="smart_playlist_numPodcasts_text">
+        <item>1 集</item>
+        <item>2 集</item>
+        <item>3 集</item>
+        <item>4 集</item>
+        <item>5 集</item>
+        <item>6 集</item>
+        <item>7 集</item>
+        <item>8 集</item>
+        <item>9 集</item>
+        <item>10 集</item>
+        <item>20 集</item>
+        <item>30 集</item>
+        <item>50 集</item>
+    </string-array>
+    <string-array name="smart_playlist_numPodcasts_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+    </string-array>
+    <string-array name="smart_playlist_sortOrder_text">
+        <item>最新</item>
+        <item>最舊</item>
+        <item>隨機</item>
+    </string-array>
+    <string-array name="widget_background_text">
+        <item>灰暗</item>
+        <item>透明</item>
+        <item>無</item>
+    </string-array>
+</resources>

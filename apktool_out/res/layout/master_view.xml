@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.beyondpod.ui.views.base.BPDrawerLayout android:id="@id/drawer_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/main_screen" />
+    <include layout="@layout/drawer_navigator" />
+    <include layout="@layout/drawer_playlist" />
+</mobi.beyondpod.ui.views.base.BPDrawerLayout>

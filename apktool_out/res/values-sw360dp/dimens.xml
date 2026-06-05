@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="charm_popup_title_font_size">24.0dip</dimen>
+    <dimen name="charm_popup_v_margin">8.0dip</dimen>
+    <dimen name="drawer_navigator_width">320.0dip</dimen>
+    <dimen name="drawer_playlist_width">320.0dip</dimen>
+    <dimen name="playlist_pager_left_padding">8.0dip</dimen>
+    <dimen name="playlist_pager_right_padding">84.0dip</dimen>
+    <dimen name="playlist_pager_top_padding">135.0dip</dimen>
+</resources>

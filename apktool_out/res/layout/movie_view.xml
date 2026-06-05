@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.beyondpod.ui.views.base.BPMediaController android:id="@id/root" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <VideoView android:id="@id/surface_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <FrameLayout android:id="@id/media_controller" android:background="@drawable/move_player_seek_bg" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@id/prepare_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/video_player_transport_control_padding" style="?android:progressBarStyleLarge" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/videoTransportControls" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+            <mobi.beyondpod.ui.views.base.RepeatingFrameButton android:id="@id/skip_back" style="@style/BPMediaButton.Video">
+                <TextView android:textColor="#ffffffff" android:layout_gravity="bottom|center" android:id="@id/skip_back_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" style="@style/BPMediaButtonText" />
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_player_rew" android:layout_marginEnd="5.0dip" />
+            </mobi.beyondpod.ui.views.base.RepeatingFrameButton>
+            <ImageButton android:id="@id/playpause" android:layout_width="90.0dip" android:layout_height="90.0dip" android:contentDescription="@string/control_play_pause" style="@style/BPMediaButton.Video" />
+            <mobi.beyondpod.ui.views.base.RepeatingFrameButton android:id="@id/skip_forward" style="@style/BPMediaButton.Video">
+                <TextView android:textColor="#ffffffff" android:layout_gravity="bottom|center" android:id="@id/skip_forward_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" style="@style/BPMediaButtonText" />
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_player_forw" android:contentDescription="@string/control_skip_fwd" android:layout_marginStart="5.0dip" />
+            </mobi.beyondpod.ui.views.base.RepeatingFrameButton>
+            <ImageButton android:id="@id/skipToEnd" android:src="@drawable/ic_player_skip_to_end" android:contentDescription="@string/control_skip_to_end" style="@style/BPMediaButton.Video" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/itemArea" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="65.0dip" android:baselineAligned="false">
+            <TextView android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/currentTrack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="1" android:singleLine="true" android:layout_centerHorizontal="true" android:layout_marginEnd="75.0dip" style="@style/PlayerTrackName" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/seekGroup" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="true" android:layout_alignParentBottom="true">
+                <TextView android:textColor="#ffffffff" android:gravity="end" android:id="@id/currenttime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1:25" style="@style/PlayerTrackTime" />
+                <mobi.beyondpod.ui.views.base.SeekBarEx android:id="@android:id/progress" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/PlayerProgressBar" />
+                <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/totaltime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-3:45" style="@style/PlayerTrackTime" />
+                <ImageView android:id="@id/podcastStreamable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:src="@drawable/appwidget_streaming" android:contentDescription="@string/podcast_streamable" android:layout_marginStart="5.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</mobi.beyondpod.ui.views.base.BPMediaController>

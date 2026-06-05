@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="MENU_Settings_Selector">设置</string>
+    <string name="MENU_about">关于 BeyondPod</string>
+    <string name="MENU_add_to_playlist">添加至播放列表</string>
+    <string name="MENU_addtohome_smartplay">添加至主屏幕</string>
+    <string name="MENU_browser_copy_link">复制链接</string>
+    <string name="MENU_browser_load_images">显示图像</string>
+    <string name="MENU_browser_open_in_external">在浏览器中打开</string>
+    <string name="MENU_browser_refresh">重新载入</string>
+    <string name="MENU_browser_share_feed">分享订阅源</string>
+    <string name="MENU_browser_share_link">分享链接</string>
+    <string name="MENU_browser_share_podcast">分享片段</string>
+    <string name="MENU_card_size_small">压缩卡片标签</string>
+    <string name="MENU_clear_cache">清除缓存</string>
+    <string name="MENU_delete_all_played_podcasts">删除已播放片段</string>
+    <string name="MENU_delete_category">删除选中类别</string>
+    <string name="MENU_delete_episode">删除</string>
+    <string name="MENU_delete_feed">删除订阅源</string>
+    <string name="MENU_delete_podcast_episodes">从我的片段中删除</string>
+    <string name="MENU_delete_smartplay">删除</string>
+    <string name="MENU_display_settings">显示设定</string>
+    <string name="MENU_download_all_playlist">下载播放列表中所有片段</string>
+    <string name="MENU_dump_environment">环境信息</string>
+    <string name="MENU_edit_category">编辑选中类别</string>
+    <string name="MENU_edit_feed">编辑订阅源</string>
+    <string name="MENU_edit_smartplay">编辑</string>
+    <string name="MENU_episode">片段</string>
+    <string name="MENU_exit_app">退出 BeyondPod</string>
+    <string name="MENU_feed">订阅源</string>
+    <string name="MENU_filter_episodes">筛选</string>
+    <string name="MENU_hide_played">隐藏已播放</string>
+    <string name="MENU_hide_read">隐藏已读</string>
+    <string name="MENU_import_selected">导入已选</string>
+    <string name="MENU_lock_episode">设为收藏</string>
+    <string name="MENU_mark_all_as_played">全部标为已播放</string>
+    <string name="MENU_mark_all_as_read">全部标为已读</string>
+    <string name="MENU_mark_played">标为已播放</string>
+    <string name="MENU_mark_read">标为已读</string>
+    <string name="MENU_mark_unplayed">标为未播放</string>
+    <string name="MENU_mark_unread">标为未读</string>
+    <string name="MENU_media_route">播放于...</string>
+    <string name="MENU_move_to_bottom">移至底部</string>
+    <string name="MENU_move_to_top">移至顶部</string>
+    <string name="MENU_open_episode_feed">打开订阅源…</string>
+    <string name="MENU_open_search">搜索</string>
+    <string name="MENU_opml_search">搜索</string>
+    <string name="MENU_play_episodes">播放片段</string>
+    <string name="MENU_play_in_external_player">在外部播放器中播放</string>
+    <string name="MENU_podcast_info">查看片段备注</string>
+    <string name="MENU_remove_from_playlist">从播放列表中移除</string>
+    <string name="MENU_reorder_categories">重新排序类别</string>
+    <string name="MENU_reset_tips">重置提示 &amp; 警告</string>
+    <string name="MENU_set_update_schedule">设置计划更新</string>
+    <string name="MENU_setdefault_smartplay">设为默认</string>
+    <string name="MENU_show_played">显示已播放</string>
+    <string name="MENU_show_read">显示已读</string>
+    <string name="MENU_sort_podcasts">排序</string>
+    <string name="MENU_start_download">下载</string>
+    <string name="MENU_stop_browser_load">停止</string>
+    <string name="MENU_stop_update">停止</string>
+    <string name="MENU_suggest_feature">帮助 &amp; 反馈</string>
+    <string name="MENU_unlock_app">获取 Pro！</string>
+    <string name="MENU_unlock_episode">删除收藏</string>
+    <string name="MENU_update_my_episodes">更新 %s</string>
+    <string name="MENU_update_smartplay">更新订阅源</string>
+    <string name="MENU_video_as_audio">播放视频音轨</string>
+    <string name="MENU_view_help">帮助</string>
+    <string name="MENU_view_log_file">查看 BeyondPod 日志</string>
+    <string name="MENU_view_logcat_file">查看 Android 日志</string>
+    <string name="MENU_view_logs">查看日志</string>
+    <string name="MENU_view_update_log">查看更新日志</string>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">关闭</string>
+    <string name="abc_capital_on">开启</string>
+    <string name="abc_search_hint">搜索…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">收起</string>
+    <string name="about_dialog_about_beyondpod">关于 BeyondPod</string>
+    <string name="about_dialog_close">关闭</string>
+    <string name="about_dialog_e_mail_support">邮件获取支持</string>
+    <string name="about_dialog_environment_info">环境信息</string>
+    <string name="about_dialog_expires">过期</string>
+    <string name="about_dialog_licensed_to">许可证类型</string>
+    <string name="add_feed_dialog_title">添加订阅源</string>
+    <string name="add_feed_dlg_enter_feed_url">请输入订阅源地址</string>
+    <string name="add_feed_dlg_import_from_google_reader">从 Feedly 中导入</string>
+    <string name="add_feed_dlg_import_from_opml_file">导入 OPML 文件</string>
+    <string name="add_feed_dlg_import_from_sd_card_folder">添加文件夹作为虚拟订阅源</string>
+    <string name="add_feed_import_feeds_title">导入订阅源</string>
+    <string name="add_feed_subscribe">订阅</string>
+    <string name="adv_settings_allow_pultorefresh_summary">您可以通过下拉刷新的方式更新订阅源并下载片段</string>
+    <string name="adv_settings_allow_pultorefresh_title">启用下拉刷新</string>
+    <string name="adv_settings_attach_file_when_sharing_summary">分享片段时附加已下载的片段，当分享至 DropBox、Google Drive 等时启用</string>
+    <string name="adv_settings_attach_file_when_sharing_title">分享时附加片段文件</string>
+    <string name="adv_settings_cds_sync_furthest_pos_summary">同步片段已播放记录仅当远程播放记录在当前播放位置之后</string>
+    <string name="adv_settings_cds_sync_furthest_pos_title">仅同步最长播放位置</string>
+    <string name="adv_settings_custom_cds_settings_summary">请不要更改此项目！（除非您知道您正在做什么）</string>
+    <string name="adv_settings_custom_cds_settings_title">调试设置</string>
+    <string name="adv_settings_custom_sdcard_location_summary">请输入 BeyondPod 默认存储下载 Podcast 片段的自定义路径</string>
+    <string name="adv_settings_custom_sdcard_location_title">片段下载路径</string>
+    <string name="adv_settings_enable_cds_settings_dlg_msg">"片段同步可以在多个设备之间同步片段播放记录。
+
+片段同步目前正在内侧中，偶尔可能会出现故障。
+
+如果您想参加测试，您可以在我们的产品支持论坛（www.beyondpod.com/forum）中获取更多信息。"</string>
+    <string name="adv_settings_enable_cds_settings_dlg_title">警告 - 测试功能！</string>
+    <string name="adv_settings_enable_logging_summary">启用详细程序日志</string>
+    <string name="adv_settings_enable_logging_title">启用日志记录</string>
+    <string name="adv_settings_http_timeout_summary">当订阅源更新或 下载 Podcasts 片段下载时，默认 http 链接超时秒数</string>
+    <string name="adv_settings_http_timout_title">连接超时</string>
+    <string name="adv_settings_http_user_agent_summary">请输入完整的用户代理字符或 MO（针对 Mozilla）或 IE（针对 Internet Explorer）</string>
+    <string name="adv_settings_http_user_agent_title">用户代理</string>
+    <string name="adv_settings_keep_screen_on_if_wifi_summary">在 Wi-Fi 下更新时保持屏幕常亮（若发现 Wi-Fi 下更新失败时）</string>
+    <string name="adv_settings_keep_screen_on_if_wifi_title">Wi-Fi 连接时常亮</string>
+    <string name="alert_dialog_allow">允许</string>
+    <string name="alert_dialog_cancel">取消</string>
+    <string name="alert_dialog_close">关闭</string>
+    <string name="alert_dialog_continue">继续</string>
+    <string name="alert_dialog_exit">退出 BeyondPod</string>
+    <string name="alert_dialog_external_player_help">播放器帮助</string>
+    <string name="alert_dialog_feed_help">帮助</string>
+    <string name="alert_dialog_ignore">忽略</string>
+    <string name="alert_dialog_no">取消</string>
+    <string name="alert_dialog_ok">确认</string>
+    <string name="alert_dialog_reset">切换</string>
+    <string name="alert_dialog_save">保存</string>
+    <string name="alert_dialog_try_external_player">尝试使用外部播放器</string>
+    <string name="alert_dialog_yes">确认</string>
+    <string name="android_auto_categories_folder">类别</string>
+    <string name="android_auto_feeds_folder">订阅源</string>
+    <string name="android_auto_trial_expired">BeyondPod 试用版已过期！</string>
+    <string name="app_shareLink">在 BeyondPod 订阅</string>
+    <string name="application_error_access_denied">已确认... 但是 BeyondPod 目前无法访问您的存储设备（更新订阅源或下载、删除、移动片段）</string>
+    <string name="application_error_access_granted">庆祝！BeyondPod 现在已经可以访问您的存储设备了。</string>
+    <string name="application_error_access_granted_but_still_cant_write">"哦，抱歉... 可能出现了一些意外情况！
+
+BeyondPod 已被授予了存储设备的访问权限，但是可能由于某些原因导致无法将数据写入存储设备。
+
+您可以尝试重启您的设备。"</string>
+    <string name="application_error_access_granted_retry">"权限授权被拒绝！
+请您再次尝试一次。"</string>
+    <string name="application_error_access_request">允许访问</string>
+    <string name="application_error_invalid_reader_login">"您可能没有登录至 Feedly 或您最后一次会议已经过期！
+
+点击下面的登录按键登陆并再次更新您的订阅源"</string>
+    <string name="application_error_invalid_reader_login_button_text">登录至 Feedly</string>
+    <string name="application_error_message_dialog_title">BeyondPod 错误</string>
+    <string name="application_error_permission_request">权限请求</string>
+    <string name="application_error_storage_card_corrupted">"BeyondPod 写入 SDCard 失败！
+
+在某些情况下可以通过重启您的设备解决此问题，如果重启后依旧出现此问题，您可以通过重新格式化 SDCard 解决。"</string>
+    <string name="application_error_storage_card_read_needs_access_permission">BeyondPod 需要权限以访问您的存储 (SDCard) 设备。</string>
+    <string name="application_error_storage_card_read_needs_write_permission">BeyondPod 需要权限以保存片段至您的存储 (SDCard) 设备。</string>
+    <string name="application_error_storage_card_read_only_kitkat">"由于 Android KitKat 引入的对外部 SDCard 的写入限制，BeyondPod 无法再写入当前下载文件夹。
+
+通过：菜单 > 更多 > 设置 > 常规设置 > 片段下载文件夹选择其他可写入文件夹。"</string>
+    <string name="application_licensed_to">.</string>
+    <string name="audiobook_search_hint">请输入作者或图书标题</string>
+    <string name="auto_now_playing">正在播放</string>
+    <string name="auto_playlist">播放列表</string>
+    <string name="br_backup_command_summary">备份 BeyondPod 设置以及订阅源条目，但下载片段不会被备份</string>
+    <string name="br_backup_command_title">备份</string>
+    <string name="br_backup_failed">"备份失败！
+
+%s"</string>
+    <string name="br_backup_lost_on_uninstall_warning_msg">"您当前备份位置将在您卸载 BeyondPod 时删除。
+
+如果您希望保留您的备份，我们建议使用“分享备份”以将其导出至 DropBox、Google Drive、或邮件等，这样就可以存储于您的设备以外了。"</string>
+    <string name="br_backup_protected_feeds_warning_msg">"您的订阅源 %s 受密码保护！
+
+订阅源密码将被包含在备份文件中，有可能有人会恶意访问它们。
+
+请您保证您的备份文件安全！"</string>
+    <string name="br_backup_was_saved_to">"备份文件已被保存在：
+
+%s"</string>
+    <string name="br_last_backup">最后备份：%s</string>
+    <string name="br_no_backups_available">%s 位置下无备份文件</string>
+    <string name="br_restore_command_summary">恢复 BeyondPod 设置以及订阅源订阅条目</string>
+    <string name="br_restore_command_title">恢复</string>
+    <string name="br_restore_complete">"恢复完成！
+
+BeyondPod 现在将重新启动已应用新的设置！"</string>
+    <string name="br_restore_failed">"恢复失败！
+
+%s"</string>
+    <string name="br_restore_warning_msg" formatted="false">"您要恢复的备份文件 BeyondPod 版本为：%s
+备份设备为：%s，备份路径为：%s！这将覆盖您的设置、订阅源以及下载历史记录。
+
+您是否确认继续恢复？"</string>
+    <string name="br_restore_warning_title">BeyondPod 恢复</string>
+    <string name="br_select_backup_to_restore">选择一个备份文件恢复</string>
+    <string name="br_select_backup_to_share">选择一个备份文件分享</string>
+    <string name="br_settings_command_summary">%s</string>
+    <string name="br_settings_command_title">备份以及还原路径</string>
+    <string name="br_share_backup_using">分享备份设置通过</string>
+    <string name="br_share_command_summary">将备份文件发送至其他设备（使用电子邮件或文件共享服务像 DropBox、 Box.com 等）</string>
+    <string name="br_share_command_title">分享备份</string>
+    <string name="cancel_button">Cancel Button</string>
+    <string name="card_section_favorite_episodes">最爱片段</string>
+    <string name="card_section_publisher_label">已更新</string>
+    <string name="card_section_recently_played">最近播放</string>
+    <string name="card_section_what_is_new">最新订阅源</string>
+    <string name="cast_notification_connected_message">已连接到%1$s</string>
+    <string name="cast_notification_connecting_message">正在连接到%1$s</string>
+    <string name="cast_notification_default_channel_name">Cast</string>
+    <string name="cast_notification_disconnect">断开连接</string>
+    <string name="categories_num_feeds">%s 订阅源</string>
+    <string name="category_all_episodes">所有片段</string>
+    <string name="category_all_feeds">所有订阅源</string>
+    <string name="category_editor_dialog_add_category">添加类别</string>
+    <string name="category_home_page">您准备播放哪些内容？</string>
+    <string name="category_properties_category_color">类别颜色</string>
+    <string name="category_properties_feed_name">设置一个好记的类别名称（如新闻、音乐或体育等）</string>
+    <string name="category_properties_title">编辑选中类别</string>
+    <string name="category_properties_update_schedule_msg">"• 计划任务更新将在您指定的“开始时间”进行任务，并将运行至当日午夜零时。
+• 但您只能同时运行"<b>一个</b>计划任务。</string>
+    <string name="category_properties_update_schedule_msg_top">在 BeyondPod 中，订阅源按类别计划更新。将按下方时间表更新或下载类别中所有订阅源的新片段。</string>
+    <string name="category_properties_vld_NameEmpty">请输入类别名称</string>
+    <string name="category_properties_vld_categoryExists">使用该名称的类别已存在！</string>
+    <string name="category_props_new_category">新建类别</string>
+    <string name="category_props_unable_to_modify_category">无法修改类别！</string>
+    <string name="category_schedule_active">按计划更新</string>
+    <string name="category_schedule_please_make_sure_that_start_times_are_at_least_15_minutes_apart">请确保启动时间最少相距 15 分钟！</string>
+    <string name="category_schedule_repeat_title">重复循环</string>
+    <string name="category_schedule_the_start_time_of_this_update_overlaps_with_category">更新启动时间与其类别重叠</string>
+    <string name="category_schedule_time_title">开始于</string>
+    <string name="category_uncategorized">未分类</string>
+    <string name="cc_cast_to">更改至设备</string>
+    <string name="cc_casting_to">正在更改至 %s</string>
+    <string name="cds_account_exists">此账户已存在！</string>
+    <string name="cds_account_quota_reached">我们的片段同步测试组已满员！我们也希望能在近期增加更多的成员，关注我们论坛的最新信息。</string>
+    <string name="cds_awaiting_verification_msg">"我们已将激活邮件发送至：%s
+
+请打开邮件中的链接以激活您的账户。"</string>
+    <string name="cds_awaiting_verification_title">您的账户尚未激活！</string>
+    <string name="cds_create_account_text">创建帐户</string>
+    <string name="cds_create_text">创建账户</string>
+    <string name="cds_device_id">设备 ID：%s</string>
+    <string name="cds_enable_sync">启用片段同步</string>
+    <string name="cds_help">片段同步如何工作</string>
+    <string name="cds_info_forgot_password">忘记密码？</string>
+    <string name="cds_info_label_create">您只需创建一个同步账户即可使用此账户在您所有设备上进行同步</string>
+    <string name="cds_info_title1">片段同步可以在多个设备之间同步片段播放记录，查看 %s 获取更多信息。</string>
+    <string name="cds_invalid_email">无效邮箱</string>
+    <string name="cds_invalid_password">通行密码过短！请至少输入五位字符</string>
+    <string name="cds_last_sync">最后同步：%s</string>
+    <string name="cds_logaout_text">注销账户</string>
+    <string name="cds_login_failed">用户名称或通行密码无效！</string>
+    <string name="cds_login_text">登录账户</string>
+    <string name="cds_menu_send_feed_to_devices">发送订阅源至其他设备</string>
+    <string name="cds_menu_sync">片段同步</string>
+    <string name="cds_menu_sync_show_log">查看同步日志</string>
+    <string name="cds_menu_sync_start">启动片段同步</string>
+    <string name="cds_network_error">"无法连接至 BeyondPod 服务器！
+请稍后再试"</string>
+    <string name="cds_not_available_in_lite_version">您的 BeyondPod 试用版已过期！设备片段同步目前仅可用于 BeyondPod Pro 版本。</string>
+    <string name="cds_notification_applying_remote_changes">应用网络控制更改</string>
+    <string name="cds_notification_checking_for_remote_changes">正在检查控制更改</string>
+    <string name="cds_notification_publishing_local_changes">正在发布本地更改</string>
+    <string name="cds_notification_syncing_local_changes">正在同步本地更改</string>
+    <string name="cds_option_allow_remote_episode_deletions">当片段在您其他设备中被删除同时在本设备中删除该片段</string>
+    <string name="cds_option_allow_remote_feed_additions">接受其他设备订阅源</string>
+    <string name="cds_password">通行密码</string>
+    <string name="cds_password_dont_match">密码错误</string>
+    <string name="cds_retype_password">重新键入通行密码</string>
+    <string name="cds_sync_settings">同步设置</string>
+    <string name="cds_user_name">电子邮箱</string>
+    <string name="checking_for_alternatives">正在搜索</string>
+    <string name="clear_cache_dio_cache_cleared">缓存已被清除！</string>
+    <string name="color_picker_pick_a_category_color">为该类别选取一种颜色</string>
+    <string name="command_manager_beyondpod_feed_search">BeyondPod 订阅源搜索</string>
+    <string name="command_manager_there_is_nothing_to_play">无可播放文件！</string>
+    <string name="command_manager_unable_to_open_url">无法打开链接！</string>
+    <string name="command_manager_unable_to_start_external_player">无法启动外部播放器！</string>
+    <string name="command_manager_unable_to_start_video_player">无法调用视频播放器！</string>
+    <string name="command_manager_update_and_download_log">更新以及下载日志</string>
+    <string name="common_google_play_services_enable_button">启用</string>
+    <string name="common_google_play_services_enable_text">您必须先启用 Google Play 服务，然后才能运行%1$s。</string>
+    <string name="common_google_play_services_enable_title">启用 Google Play 服务</string>
+    <string name="common_google_play_services_install_button">安装</string>
+    <string name="common_google_play_services_install_text">您的设备没有安装 Google Play 服务，因此无法运行%1$s。</string>
+    <string name="common_google_play_services_install_title">获取 Google Play 服务</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play 服务的适用范围</string>
+    <string name="common_google_play_services_notification_ticker">Google Play服务出错</string>
+    <string name="common_google_play_services_unknown_issue">%1$s无法访问 Google Play 服务，请重试。</string>
+    <string name="common_google_play_services_unsupported_text">您的设备不支持 Google Play 服务，因此无法运行%1$s。</string>
+    <string name="common_google_play_services_update_button">更新</string>
+    <string name="common_google_play_services_update_text">您必须先更新 Google Play 服务，然后才能运行%1$s。</string>
+    <string name="common_google_play_services_update_title">更新 Google Play 服务</string>
+    <string name="common_google_play_services_updating_text">Google Play 服务当前正在更新，因此您无法运行%1$s。</string>
+    <string name="common_google_play_services_wear_update_text">必须使用新版 Google Play 服务。该服务很快就会自行更新。</string>
+    <string name="common_open_on_phone">在手机上打开</string>
+    <string name="common_signin_button_text">登录</string>
+    <string name="common_signin_button_text_long">使用 Google 帐号登录</string>
+    <string name="contextmenu_add_contact">添加联系人</string>
+    <string name="contextmenu_copy">复制</string>
+    <string name="contextmenu_copylink">复制链接地址</string>
+    <string name="contextmenu_dial_dot">控制面板…</string>
+    <string name="contextmenu_map">地图</string>
+    <string name="contextmenu_open_in_browser">在浏览器中打开</string>
+    <string name="contextmenu_send_mail">发送邮件</string>
+    <string name="contextmenu_sharelink">分享链接</string>
+    <string name="contextmenu_view_image">查看图像</string>
+    <string name="date_time_also_this_month">本月早些时候</string>
+    <string name="date_time_also_this_week">本周早些时候</string>
+    <string name="date_time_also_this_year">本年早些时候</string>
+    <string name="date_time_last_month">上月</string>
+    <string name="date_time_last_week">上周</string>
+    <string name="date_time_older">较旧片段</string>
+    <string name="date_time_this_month">本月</string>
+    <string name="date_time_this_week">本周</string>
+    <string name="date_time_this_year">本年</string>
+    <string name="date_time_today">今天</string>
+    <string name="delete_category_dialog_data">数据</string>
+    <string name="delete_feed_diolog_feed">订阅源</string>
+    <string name="delete_feed_diolog_sure_you_want_to_delete">您是否确定要删除</string>
+    <string name="delete_podcast_dlg_episodes">片段</string>
+    <string name="delete_podcast_dlg_favorite">最爱</string>
+    <string name="delete_podcast_dlg_locked">已锁定</string>
+    <string name="dlg_DeleteCategoryMsg">"您是否确认要删除类别：
+
+%s"</string>
+    <string name="dlg_DeleteFeedAndPodcastsMsg">"您确认要删除：
+
+%s 吗？
+
+（这将同时删除所有此订阅源中已下载的 Podcast 片段）"</string>
+    <string name="dlg_DeleteFeedMsg">"您确认要删除：
+
+%s 吗？"</string>
+    <string name="dlg_DeletePodcastMsg">"您是否确认要删除片段：
+
+%s"</string>
+    <string name="dlg_about_Msg">"若您遇到任何问题或有其他建议，请访问
+
+www.beyondpod.com
+
+
+Copyright BeyondPod Team 2008–2013
+All rights reserved.
+
+Open Source Licenses
+www.beyondpod.mobi/osl"</string>
+    <string name="dlg_clear_feed_cache">清除订阅源缓存</string>
+    <string name="dlg_clear_feed_cache_msg">订阅源缓存位于您的闪存卡内并包含您订阅源的离线缓存</string>
+    <string name="dlg_clear_podcast_imgage_cache">清除片段图像缓存</string>
+    <string name="dlg_clear_podcast_imgage_cache_msg">将导致 BeyondPod 从设备媒体数据库中重新载入片段图像</string>
+    <string name="dlg_delete_locked_podcasts_msg">同时删除锁定片段</string>
+    <string name="dlg_dont_show_again_msg">不再显示此消息</string>
+    <string name="dlg_enable_speedup_btn_buy">启用播放速度控制</string>
+    <string name="dlg_enable_speedup_plugin_msg">"BeyondPod 允许您控制片段的播放速度（您可以随时加快或减慢）。
+
+"<i>播放速度控制当前已被支持但仍处于测试阶段，可能无法在所有设备或片段格式上正常工作。</i></string>
+    <string name="dlg_invalid_cant_connect_tofeed_URL_message">"无法连接至订阅源站点。
+
+订阅源地址可能已经无效或站点可能有暂时出现连接问题。"</string>
+    <string name="dlg_invalid_feed_URL_generic_message">"此链接网页可能是订阅源伴随页面而不是 RSS 订阅源本身。请尝试在 Web 浏览器中打开链接并找到 RSS 订阅源直链。
+
+点击“帮助”按键获取如何寻找 RSS 订阅源链接的提示。"</string>
+    <string name="dlg_invalid_feed_URL_itunes_message">"若您看见此消息说明这似乎是一个 iTunes 订阅源。
+
+点击“帮助”按键获取如何在 iTunes 中寻找 RSS 订阅源链接的提示。"</string>
+    <string name="dlg_invalid_feed_URL_message">"订阅源链接无视有效的 RSS 或 Atom 类型。
+
+%s"</string>
+    <string name="dlg_invalid_feed_URL_mp3_message">"若您看见此消息说明这似乎是一个 MP3 片段链接。请尝试在 Web 浏览器中打开 Podcast 页面并找到 RSS 订阅源直链。
+
+点击“帮助”按键获取如何寻找 RSS 订阅源链接的提示。"</string>
+    <string name="dlg_invalid_feed_URL_title">订阅源链接出现问题</string>
+    <string name="dlg_playback_speed_not_available_in_lite_version">"您的 BeyondPod 试用版已过期！
+
+片段播放速度控制仅可用于 BeyondPod Pro 版本。"</string>
+    <string name="dlg_purchase_btn_Msg">购买解锁密钥</string>
+    <string name="dlg_purchase_info_Msg">当您试用版过期后，BeyondPod 将恢复至<b> Lite</b> 版本，部分<b> Pro</b>" 版本中提供的便捷功能将受到限制。
+"</string>
+    <string name="dlg_purchase_info_header_did">您的 BeyondPod 完整功能试用版到期时间为</string>
+    <string name="dlg_purchase_info_header_will">您的 BeyondPod 完整功能试用版到期时间为</string>
+    <string name="dlg_purchase_speedup_plugin_doNotshow">禁用并隐藏播放速度控制按键</string>
+    <string name="dlg_purchase_speedup_plugin_doNotshowInfo">您可以随时启用播放速度控制，通过设置 > 播放操作设置 > 播放速度控制</string>
+    <string name="dlg_purchase_speedup_plugin_doShowInfo">若播放速度控制无法在您的设备中正常工作，您可以随时通过设置 > 播放操作设置 > 播放速度控制禁用</string>
+    <string name="dlg_purchase_speedup_plugin_title">播放速度控制</string>
+    <string name="dlg_purchase_title">解锁 BeyondPod</string>
+    <string name="dlg_purchase_why_pro_Msg">为什么需要 Pro？</string>
+    <string name="dlg_speedup_not_supported">此片段仅能使用正常速度播放</string>
+    <string name="dlg_speedup_not_supported_for_streaming">流媒体片段仅能使用正常速度播放</string>
+    <string name="dlg_user_warning_installed_on_sd_card_msg">"若您看见此消息说明 BeyondPod 被安装在 SDCard 上！虽然 BeyondPod 依旧可以正常使用，但您必须知道将会有两点限制：
+
+• BeyondPod 微件将无法使用。
+• 挂载 SDCard 为 USB 存储设置时将取消预定的订阅源更新计划直到 BeyondPod 被重新重启。
+
+"<i>如果您的设备还有足够的空间，那么我们建议您将 BeyondPod 移动至您设备内存中。</i></string>
+    <string name="dlg_user_warning_mark_all_played_msg">您确认要将将此订阅源中片段全部标为已播放吗？</string>
+    <string name="dlg_user_warning_mark_all_read_msg">您确认要将将此订阅源中主题全部标为已读吗？</string>
+    <string name="dlg_user_warning_open_ext_player_msg">"您可以尝试在外部播放器中打开已选项目。
+
+单击“继续”后 BeyondPod 将寻找您设备中所有已安装并可以播放当前选择内容的应用程序。您也可以在 BeyondPod 设置中更改默认音视频播放器为“外部播放器”。"</string>
+    <string name="dlg_user_warning_open_ext_player_title">需要使用外置播放器</string>
+    <string name="dlg_user_warning_start_episode_download_msg">"片段下载将使用大量的数据流量！
+
+我们推荐您在 Wi-Fi 环境下或使用无限制流量套餐。"</string>
+    <string name="dlg_user_warning_start_update_download_msg">"此操作将更新当前类别内所有订阅源并下载最新 Podcast 片段。
+
+片段下载将使用大量的数据流量。我们推荐您在 Wi-Fi 环境下或使用无限制流量套餐。"</string>
+    <string name="dlg_user_warning_stream_failed_msg">若您看见此消息说明当网络链接中断，请稍后再试。</string>
+    <string name="dlg_user_warning_stream_failed_title">视频流媒体问题</string>
+    <string name="dlg_user_warning_stream_format_problem_msg">"默认播放器不支持您所选的视频格式！
+
+（一些视频只能被第三方播放器播放，请点击“播放器帮助”获取更多信息）"</string>
+    <string name="dlg_user_warning_stream_format_problem_title">视频格式问题</string>
+    <string name="dlg_user_warning_title">警告</string>
+    <string name="download_agent_both_mobile_and_wifi_data_connections_are_allowed">"
+
+允许使用移动网络以及 Wi-Fi 数据连接！"</string>
+    <string name="download_agent_insufficient_disk_space_to_complete_the_download_required">没有足够的磁盘空间完成下载任务！需要空间：</string>
+    <string name="download_agent_mobile_connections_not_allowed">"
+
+不允许使用移动数据链接！
+（您可以在 BeyondPod 的“订阅源更新”设置中允许使用移动数据链接）"</string>
+    <string name="download_agent_unable_to_establish_internet_connection">无法建立互联网连接！</string>
+    <string name="download_agent_wifi_allowed">"
+
+Podcast 下载只允许在 Wi-Fi 连接环境下。
+（您可以允许 Podcast 在任何连接条件下下载，在 BeyondPod 的“订阅源更新”设置中允许使用移动数据链接）"</string>
+    <string name="download_engine_notification_connecting">正在连接</string>
+    <string name="download_engine_notification_downloaded">已下载</string>
+    <string name="download_engine_notification_downloading">正在下载</string>
+    <string name="download_engine_notification_feed">订阅源</string>
+    <string name="download_engine_notification_feeds">订阅源</string>
+    <string name="download_engine_notification_found">已发现</string>
+    <string name="download_engine_notification_left_to_download">尚未下载</string>
+    <string name="download_engine_notification_left_to_update">尚未更新</string>
+    <string name="download_engine_notification_looking_for_new_podcasts_across">寻找新的片段</string>
+    <string name="download_engine_notification_more">更多</string>
+    <string name="download_engine_notification_new">新增</string>
+    <string name="download_engine_notification_new_podcasts">新增片段</string>
+    <string name="download_engine_notification_of">中的</string>
+    <string name="download_engine_notification_podcast">片段</string>
+    <string name="download_engine_notification_podcasts">片段</string>
+    <string name="download_engine_notification_retrying">正在重试</string>
+    <string name="download_engine_notification_updating">正在更新</string>
+    <string name="download_holder_preparing_for_download">正在准备下载</string>
+    <string name="drawer_close">关闭导航抽屉</string>
+    <string name="drawer_open">打开导航抽屉</string>
+    <string name="error_CantCreateRootFolder">"BeyondPod 无法访问您的闪存卡！
+您设备上的闪存卡可能出错或已被写保护。"</string>
+    <string name="error_CantCreateRootFolderWorkaround">"
+
+（在某些设备上，手动创建此文件夹可能可以避免此类错误。或者请尝试使用其他 SDcard）"</string>
+    <string name="error_SDCardBusy">"BeyondPod 无法访问您的 SDCard！
+
+您设备上的 SDCard 当前可能已经取消挂载或正在被您的 PC 使用"</string>
+    <string name="error_SDCardError">当试图访问您的闪存卡时发生一个错误。请检查您的闪存卡当前状态。</string>
+    <string name="error_SDCardMissing">BeyondPod 无法找到您设备上的 SDCard！</string>
+    <string name="error_root_needs_permission">"我们您在您的设备中发现了 BeyondPod 的安装目录：
+'%s' 文件夹内。
+如果希望使用此目录，需要授予 BeyondPod 存储设备 (SDCard) 访问权限。
+
+如果您希望“全新安装”只需退出 BeyondPod 后删除上述文件夹并再次尝试即可。"</string>
+    <string name="export_to_opml_export_complete">导出完成！</string>
+    <string name="export_to_opml_export_failed">导出失败！</string>
+    <string name="failed_to_connect_to_google_reader">"在连接至 Feedly 的过程中出现意外导致失败或您的登录授权已过期。
+
+请稍后重新登录并操作"</string>
+    <string name="failed_to_connect_to_google_reader_account_mgr">"在连接至 Feedly 的过程中出现意外导致失败！
+
+请稍后再试"</string>
+    <string name="feedList_num_unread">新增</string>
+    <string name="feed_content_beyondpod_help">BeyondPod 帮助</string>
+    <string name="feed_content_insufficient_space_to_download_podcast" formatted="false">"没有足够的可用空间下载此片段。
+
+此片段需要 %s 的剩余空间完成下载，但是您只有 %s 的可用空间在 %s 中。"</string>
+    <string name="feed_content_list_view__max_s">(max %s)</string>
+    <string name="feed_content_list_view_beyondpod_faq">BeyondPod 常见问题解答</string>
+    <string name="feed_content_list_view_configure">配置</string>
+    <string name="feed_content_list_view_disabled">已禁用</string>
+    <string name="feed_content_list_view_episode_details">片段信息</string>
+    <string name="feed_content_list_view_episode_formats">片段格式</string>
+    <string name="feed_content_list_view_failed_to_add_reader_subscription_for_feed">添加 Feedly 中所订阅的订阅源时失败</string>
+    <string name="feed_content_list_view_feed_content">订阅源内容</string>
+    <string name="feed_content_list_view_invalid_or_expired_google_reader_login">Feedly 登录失效或已无效！（您可以修改您的 Feedly 登录设置通过：添加订阅源 > 导入订阅源 > 从 Feedly 中导入）</string>
+    <string name="feed_content_list_view_my_episodes">我的片段</string>
+    <string name="feed_content_list_view_next_update">下次更新</string>
+    <string name="feed_content_list_view_operation_failed">操作失败！</string>
+    <string name="feed_content_list_view_this_feed_is_s_days_old">%s 天前！</string>
+    <string name="feed_content_list_view_update_canceled">更新已取消！</string>
+    <string name="feed_content_list_view_update_failed">更新失败！</string>
+    <string name="feed_item_list_empty_loading_content">正在载入订阅源</string>
+    <string name="feed_item_list_empty_no_items">当前订阅源中没有任何内容！</string>
+    <string name="feed_item_list_empty_no_selected_feed">"尚未选择订阅源。
+请从订阅源列表中（左侧抽屉）选择一个订阅源并重试。"</string>
+    <string name="feed_item_list_empty_stop_update">停止更新</string>
+    <string name="feed_item_list_empty_update">更新</string>
+    <string name="feed_item_list_empty_updating">正在更新订阅源…</string>
+    <string name="feed_item_list_footer_has_hidden_items_l1">部分项目已被隐藏。</string>
+    <string name="feed_item_list_footer_has_hidden_items_l2">显示全部</string>
+    <string name="feed_item_list_footer_reader_more_items_l1">此订阅源已被设为从 Feedly 中载入前 %s 条主题。</string>
+    <string name="feed_item_list_footer_reader_more_items_l2"><u>更改</u></string>
+    <string name="feed_item_list_header_reader_not_subscribed_l1">如果您所有的项目均显示为“已读”，那么您可能尚未在 Feedly 中订阅此订阅源</string>
+    <string name="feed_item_list_header_reader_not_subscribed_l2"><u>添加此订阅源至 Feedly</u></string>
+    <string name="feed_item_list_invalid_feed_auth_dlg_msg">"您尝试打开的订阅源可能需要特殊登录方式。
+
+经常发生在需要额外费用的订阅源，需要重新登录他们的站点当您的网络地址发生变化时（比如当您连接到 Wi-Fi 网络或移动网络时）。
+
+点击“帮助”按键获取更多信息。"</string>
+    <string name="feed_item_list_invalid_feed_dlg_msg">"在最后更新过程中出现了错误！
+
+"<i>"通常情况下这是一个暂时性的问题，网络连接出错或订阅源发布站点无法访问。
+
+请您稍后再尝试更新订阅源，如果您发现问题依旧存在那么请您点击下方的帮助按键获取故障排除提示。"</i></string>
+    <string name="feed_item_list_invalid_feed_dlg_title">订阅源问题</string>
+    <string name="feed_item_list_invalid_feed_go_to_web_site_text">订阅源站点</string>
+    <string name="feed_item_list_invalid_feed_help_text">帮助</string>
+    <string name="feed_list_empty_all_read">"所有订阅源都已阅读！
+
+"<u>显示已读订阅源</u></string>
+    <string name="feed_list_hide_read">隐藏已读订阅源</string>
+    <string name="feed_list_no_feeds_in_this_category">在此类别中无订阅源</string>
+    <string name="feed_list_show_read">显示所有订阅源</string>
+    <string name="feed_patched_msg">"您正在使用的订阅源链接出现问题，但是我们找到了不同的链接：
+
+%s
+
+这可能是您最可能需要的一个。
+
+您想使用它吗？"</string>
+    <string name="feed_properties_advanced_section">高级设置</string>
+    <string name="feed_properties_allow_deletions_msg">控制订阅源已完成播放的本地片段自动删除（确保更新期间有足够的空间）。“允许删除片段”必须确认您是否需要 Podcast 自动清理功能。</string>
+    <string name="feed_properties_allow_deletions_title">允许删除片段</string>
+    <string name="feed_properties_allow_deletions_vir_feed_msg">控制订阅源片段（以及所有字幕订阅源）自动删除保证新片段有足够的空间（比如播放结束的片段）</string>
+    <string name="feed_properties_clear_custom_image_title">清理图像</string>
+    <string name="feed_properties_configure_defaults">您可以<u>在这里</u>配置添加新的订阅源时候的默认设置</string>
+    <string name="feed_properties_custom_image">选择图像</string>
+    <string name="feed_properties_custom_image_msg">指定自定义订阅源图片，需要在您闪存卡内有 PNG 或者 JPG 格式的图象文件并确定它们在相册中是课件的，使用“选择图像”按键找到并从图库中选择图片（指定图像后您可以从图库中删除您刚刚选择的图片）。</string>
+    <string name="feed_properties_custom_image_title">自定义订阅源图像</string>
+    <string name="feed_properties_download_history_clear_history">清除订阅源历史下载记录</string>
+    <string name="feed_properties_download_history_mark_downloaded">全部标为已下载</string>
+    <string name="feed_properties_download_history_msg">BeyondPod 监控订阅源中标有已下载的每个片段，点击“清除订阅源历史下载记录”将删除订阅源下载历史，此订阅源所有片段将会变为从未下载过的状态。“标为已下载”则正好相反 - 它将标记所有新片段为已下载（而实际则从未下载）。</string>
+    <string name="feed_properties_download_history_title">Podcast 下载历史记录</string>
+    <string name="feed_properties_feed_categories_msg">您可以为订阅源指定两个类别，将一个类别的订阅源分配给另外一个类别将会自动包括其类别所属的订阅源更新计划设置（如果有）。</string>
+    <string name="feed_properties_feed_categories_title">订阅源类别</string>
+    <string name="feed_properties_feed_download_folder_msg">BeyondPod 下载订阅源片段的文件夹。如果您想使用默认下载路径（当前为 %s）那么请留空或此订阅源无片段。</string>
+    <string name="feed_properties_feed_download_folder_title">片段下载文件夹</string>
+    <string name="feed_properties_feed_download_folder_vir_feed_msg">在 BeyondPod 启动时将扫描此文件夹（以及所有字幕文件夹）并显示“虚拟 Podcasts”中所有可以使用内部播放器播放文件。</string>
+    <string name="feed_properties_feed_download_folder_vir_feed_title">订阅源虚拟文件夹</string>
+    <string name="feed_properties_feed_download_podcast_long_name_handler_msg">如果片段名太长导致无法显示，那么请选择您喜欢的部分缩短片段名。</string>
+    <string name="feed_properties_feed_download_podcast_long_name_handler_title">长片段名称</string>
+    <string name="feed_properties_feed_download_podcast_sort_order_msg">设置此订阅源本地下载片段或流媒体片段的排序顺序。</string>
+    <string name="feed_properties_feed_download_podcast_sort_order_title">本地片段排序方式</string>
+    <string name="feed_properties_feed_fingerprint_type_msg">选择 BeyondPod 重复片段检查方式（警告！仅当订阅源经常重新下载旧片段时更改，更改此设置将重设订阅源下载以及已读、未读历史）。</string>
+    <string name="feed_properties_feed_fingerprint_type_title">检查重复片段</string>
+    <string name="feed_properties_feed_login_msg">如果您需要设定访问的用户名称以及通行密码，您可以在上方区域输入。</string>
+    <string name="feed_properties_feed_name_msg">给订阅源设置一个好记的名称（如果您留空那么将使用订阅源数据填补名称）。</string>
+    <string name="feed_properties_feed_name_title">订阅源名称</string>
+    <string name="feed_properties_feed_url_msg">站点 RSS 订阅源地址（由 http:// 或 https:// 开头）</string>
+    <string name="feed_properties_feed_url_title">订阅源地址 (URL)</string>
+    <string name="feed_properties_force_item_sort">订阅源主题排序</string>
+    <string name="feed_properties_force_item_sort_msg">选择您需要显示的订阅源项目（主题）在订阅源页面。</string>
+    <string name="feed_properties_force_unique_names">强制唯一命名</string>
+    <string name="feed_properties_force_unique_names_msg">如果勾选，BeyondPod 将强制给予下载的 Podcast 片段一个唯一的名称而不是尝试通过 Podcast 链接猜测片段名，请检查您是否总给予一个相同的名字并最终覆盖之前的文件。</string>
+    <string name="feed_properties_login_info_header">订阅源身份验证</string>
+    <string name="feed_properties_login_info_pw">订阅源通行密码</string>
+    <string name="feed_properties_login_info_un">订阅源用户名称</string>
+    <string name="feed_properties_num_days_to_delete_short_msg">"
+• 删除早于 %s 天的片段"</string>
+    <string name="feed_properties_num_podcasts_to_download_download_in_order_msg">下载选定数量片段并从最先前的开始。新的片段将会自动替换旧的片段，流媒体片段将出现在“片段”页面。</string>
+    <string name="feed_properties_num_podcasts_to_download_download_in_order_short_msg">• 按从早至晚顺序下载 %s</string>
+    <string name="feed_properties_num_podcasts_to_download_download_msg">下载已选部分订阅源更新的片段。新的片段将自动替换旧的片段。下载的片段将在“片段”页面中显示。</string>
+    <string name="feed_properties_num_podcasts_to_download_download_short_msg" formatted="false">• 下载最新 %s 并保留最多 %s.%s</string>
+    <string name="feed_properties_num_podcasts_to_download_ignore_msg">此订阅源的任何片段将被忽略并不在订阅源页面中显示。</string>
+    <string name="feed_properties_num_podcasts_to_download_ignore_short_msg">• 所有片段都将被忽略</string>
+    <string name="feed_properties_num_podcasts_to_download_no_download_msg">此订阅源的 Podcast 片段酱不会被自动下载（但您可以手动开始下载）。</string>
+    <string name="feed_properties_num_podcasts_to_download_no_download_short_msg">• 手动下载片段</string>
+    <string name="feed_properties_num_podcasts_to_download_stream_in_order_msg">为选定数量片段创建“流式”作为订阅源更新的一部分从最先前的开始，新的片段仅当您手动删除部分已经下载的片段时并将出现在“片段”页面。</string>
+    <string name="feed_properties_num_podcasts_to_download_stream_in_order_short_msg">"• 按从早至晚顺序获取 %s
+• 片段将被作为流媒体播放（设备播放时候需要网络连接）"</string>
+    <string name="feed_properties_num_podcasts_to_download_stream_msg">为选定数量片段创建“流式”作为订阅源更新的一部分。新的片段将会自动替换旧的片段，流媒体片段将出现在“片段”页面。</string>
+    <string name="feed_properties_num_podcasts_to_download_stream_short_msg" formatted="false">"• 获取最新 %s 并保留最多 %s.%s
+• 片段将被作为流媒体播放（设备播放时候需要网络连接）"</string>
+    <string name="feed_properties_playback_speed_prefs_msg">设置订阅源 Podcast 片段首选播放速度（使用当前播放器设置速度请勿勾选此项）</string>
+    <string name="feed_properties_playback_speed_prefs_title">首选播放速度</string>
+    <string name="feed_properties_podcast_title">片段下载</string>
+    <string name="feed_properties_preferred_enclosure">首选片段格式</string>
+    <string name="feed_properties_preferred_enclosure_msg">有时订阅源可能含有多个格式的系统片段（比如 MP4 或 WMV）。使用选择器选择首选格式。</string>
+    <string name="feed_properties_save_played_position_msg">播放时记忆此订阅源的已播放部分</string>
+    <string name="feed_properties_save_played_position_title">保存已播放部分</string>
+    <string name="feed_properties_spacesavers_keep_at_most">保留部分</string>
+    <string name="feed_properties_spacesavers_keep_at_most_unit">集的本地片段</string>
+    <string name="feed_properties_spacesavers_max_duration">删除早于</string>
+    <string name="feed_properties_spacesavers_max_duration_unit">天前的片段</string>
+    <string name="feed_properties_spacesavers_msg">片段清理将自动删除编号或时间大于设定值的 Podcast 片段（清理规则仅当新片段被下载时执行）</string>
+    <string name="feed_properties_spacesavers_title">清除片段</string>
+    <string name="feed_properties_toggle_adv_pref_hide">隐藏高级设置</string>
+    <string name="feed_properties_use_google_proxy">与 Feedly 同步</string>
+    <string name="feed_properties_use_google_proxy_msg">从 Feedly 中载入此订阅源内容，您需要一个 Feedly.com 账户以进行访问</string>
+    <string name="feed_properties_view_images_from_picasa_albums_cannot_be_used_as_a_feed_image">图像来源于 Picasa 相册（或其他在线图库）时无法作为订阅源图像</string>
+    <string name="feed_properties_vld_feedNameEmpty">请输入一个有效的订阅源名称！</string>
+    <string name="feed_properties_vld_feedUrlOrNameEmpty">请输入订阅源链接或订阅源名称！</string>
+    <string name="feed_properties_vld_podcast_folder_vir_feed_invalid">选择的虚拟订阅源文件夹为空或在您的设备上不存在！</string>
+    <string name="feed_properties_vld_podcast_num_download_is_less_than_keep_at_most">Podcast 片段下载不能超过设定的数量限制！</string>
+    <string name="feed_properties_vld_spacesavers_will_delete_podcasts">选择“清理片段”设置需要删除 %s 已存在片段</string>
+    <string name="feed_properties_volume_boost_prefs_msg">您可以在播放此订阅源的片段时额外增加音量。（此功能为实验功能！增加音量仅适用于已下载的音频片段且当播放速度已被启用时）。</string>
+    <string name="feed_properties_volume_boost_prefs_title">增加音量</string>
+    <string name="feed_s_was_added_in_category" formatted="false">"订阅源“%s”
+已被添加至“%s”类别"</string>
+    <string name="feed_search_db_episodes">片段</string>
+    <string name="feed_search_hint">搜索 Podcasts</string>
+    <string name="feed_settings_add_feed">添加订阅源</string>
+    <string name="feed_settings_add_virtual_feed">添加虚拟订阅源</string>
+    <string name="feed_settings_checking_feed_information">正在检查订阅源信息</string>
+    <string name="feed_settings_connecting">正在连接</string>
+    <string name="feed_settings_download">下载</string>
+    <string name="feed_settings_edit_feed">编辑订阅源</string>
+    <string name="feed_settings_edit_virtual_feed">编辑虚拟订阅源</string>
+    <string name="feed_settings_episodes">集片段</string>
+    <string name="feed_settings_feed_already_exists_in_category">此订阅源已在类别“%s”中存在</string>
+    <string name="feed_settings_get">获取</string>
+    <string name="feed_settings_items">项目</string>
+    <string name="feed_settings_locating_rss_feeds">正在定位 RSS 订阅源</string>
+    <string name="feed_settings_retrieving_feed">检索订阅源</string>
+    <string name="feed_settings_updating_download_history">正在更新下载历史记录</string>
+    <string name="feeds_status_back_to_s">返回至 %s</string>
+    <string name="feeds_status_downloading">正在下载</string>
+    <string name="feeds_status_feeds">订阅源</string>
+    <string name="feeds_status_of">中的</string>
+    <string name="feeds_status_s_pending">%s 下载挂起</string>
+    <string name="feeds_status_updating">正在更新</string>
+    <string name="first_run_ad_disabled">不，谢谢，我希望自己手动下载所有片段。</string>
+    <string name="first_run_ad_enabled">让 BeyondPod 在您熟睡时帮您下载最近片段，而无需为其操心影响您的休息。</string>
+    <string name="first_run_ad_subtitle">BeyondPod 将自动检查新片段并将其下载至您的设备中（您稍后可以在首选项中更改该设置）。</string>
+    <string name="first_run_ad_title">自动下载</string>
+    <string name="first_run_ad_wifi">仅当 Wi-Fi 已连接时自动下载片段</string>
+    <string name="first_run_continue">继续</string>
+    <string name="first_run_end_tour">结束教程</string>
+    <string name="first_run_find_more">了解更多</string>
+    <string name="first_run_finish">完成</string>
+    <string name="first_run_select_content_title">请选择一个您喜欢的话题，我们将为您提供一些优秀的 Podcast 建议并让您迅速熟悉。</string>
+    <string name="first_run_skipsamples">跳过此步骤</string>
+    <string name="first_run_start">让我们开始吧</string>
+    <string name="first_run_upgrade_guide">升级指南</string>
+    <string name="folder_browser_back_to">返回至</string>
+    <string name="folder_browser_files">文件</string>
+    <string name="folder_browser_in">在</string>
+    <string name="gcm_fallback_notification_channel_label">其他</string>
+    <string name="generic_download_error_text">"部分片段下载失败！
+请稍后重试"</string>
+    <string name="glg_restore_defaults_msg">"我们感到非常抱歉，但是您的订阅源存储出现错误或所有修复尝试失败！
+
+当您下次启用 BeyondPod 时您的订阅源将被重置为默认。
+
+BeyondPod 即将退出！"</string>
+    <string name="glg_restore_defaults_title">订阅源存储损坏</string>
+    <string name="google_reader_feeds">Feedly 订阅源</string>
+    <string name="grant_permission_access_denied">没问题… 您可以继续执行“全新安装”通过删除上个旧版本的 BeyondPod 安装目录。</string>
+    <string name="grant_permission_access_granted">感谢您的授权！</string>
+    <string name="import_reader_failed_to_load_reader_subscriptions">载入 Feedly 订阅失败！</string>
+    <string name="import_reader_loading_feed_subscriptions">正在载入订阅源订阅</string>
+    <string name="import_reader_log_out_menu">注销</string>
+    <string name="import_reader_log_out_msg">您当前已注销 Feedly 登录</string>
+    <string name="import_reader_login_failed">登录失败！</string>
+    <string name="import_reader_operation_canceled">操作已取消！</string>
+    <string name="import_reader_retrieving_account_details">正在检索帐户信息</string>
+    <string name="import_reader_success">导入成功！</string>
+    <string name="import_search_hint">搜索已导入订阅源</string>
+    <string name="info_card_got_it">好了，找到它了</string>
+    <string name="info_card_guided_tour_action">快速功能向导</string>
+    <string name="info_card_guided_tour_skip">不，谢谢</string>
+    <string name="info_card_guided_tour_title">欢迎使用 BeyondPod！</string>
+    <string name="info_card_whats_new_action">查看更新日志</string>
+    <string name="info_card_whats_new_title">BeyondPod 已更新至版本 %s！</string>
+    <string name="info_selct_folder_instructions">"点击文件夹名称打开它。
+选择一个文件夹再点击旁边的“+”号。"</string>
+    <string name="limited_mode_message">"您的试用期已过期！
+
+BeyondPod 将作为一个功能受限的评估版本继续为您服务。
+
+您可以随时通过“获取 Pro！”（左侧导航栏中）查看受限功能细节。"</string>
+    <string name="lock_podcast_unlock_parent_info">若要解锁此片段，首先需要在片段订阅源的高级设置中启用“允许删除片段”。</string>
+    <string name="master_view_beyondpod_failed_to_start">BeyondPod 启动失败！</string>
+    <string name="master_view_beyondpod_will_now_exit">BeyondPod 即将退出！</string>
+    <string name="master_view_loaded_s_feeds">正在载入片段…</string>
+    <string name="master_view_loading_feeds">正在载入订阅源</string>
+    <string name="master_view_welcome_to_beyondpod">欢迎使用 BeyondPod</string>
+    <string name="master_view_what_is_new">更新特性</string>
+    <string name="menu_multiselect_select_all">选择所有</string>
+    <string name="menu_multiselect_select_played">选择已播放</string>
+    <string name="mf_calculating_files">正在准备移动…</string>
+    <string name="mf_cancel_are_you_sure">您是否确认取消？</string>
+    <string name="mf_canceled_move">移动操作已被取消！</string>
+    <string name="mf_canceling_move">正在取消…</string>
+    <string name="mf_complete">"移动已完成！%s
+
+BeyondPod 将重新启动并自动应用新设置。"</string>
+    <string name="mf_confirm_are_you_sure" formatted="false">您是否确认移动 %s 项已下载判断从 %s 至 %s？</string>
+    <string name="mf_confirm_move">确认移动</string>
+    <string name="mf_coping_files" formatted="false">已移动 %s 中的 %s 项…</string>
+    <string name="mf_deleting_files">正在清理…</string>
+    <string name="mf_dest_folder_exist">目标文件夹 %s 已存在！您是否确认覆盖？</string>
+    <string name="mf_do_move">移动</string>
+    <string name="mf_error_external">目标文件夹当前不可用或只读。</string>
+    <string name="mf_external_SD_warninng">"Android KitKat 引入了一些外部 SDCard 写入限制。
+
+您仍可以移动判断下载文件夹至外部 SDCard，但是当您卸载 BeyondPod 时，BeyondPod 中所有设置以及已下载片段将被删除。"</string>
+    <string name="mf_insufficient_space" formatted="false">目标文件夹至少需要 %s 的可用空间，当前可用空间为 %s。</string>
+    <string name="mf_moving_title">移动片段下载文件夹</string>
+    <string name="mf_unable_to_cleanup">无法清理存于 %s 中的文件，请稍后尝试手动清理！</string>
+    <string name="mf_unable_to_cleanup_kitkat">"先前保存下载片段文件夹 %s 当前状态为只读，BeyondPod 无法将其清理。
+
+您可以将设备连接至您的计算机并使用文件浏览器删除此文件夹。"</string>
+    <string name="mf_update_download_progress">"当前正在更新或下载中！
+
+请等待其完成或结束后再试。"</string>
+    <string name="mf_use_external_SD">使用外部 SDCard</string>
+    <string name="mf_use_intenral_SD">使用内置 SDCard（推荐）</string>
+    <string name="minute_remaining">&lt; 剩余 %s</string>
+    <string name="minutes_remaining">剩余 %s</string>
+    <string name="move_storage_folder_available">%s（可用）</string>
+    <string name="move_storage_folder_current" formatted="false">"%s
+（%s 在其他位置可用）"</string>
+    <string name="move_storage_folder_does_not_exist">"%s
+
+不存在或为只读！"</string>
+    <string name="move_storage_folder_in_use">%s（正在使用）</string>
+    <string name="move_storage_folder_instructions_alt_title">使用替代位置</string>
+    <string name="move_storage_folder_instructions_msg">"使用下方“移动”按钮可以帮助您移动已存在的片段至其他代替位置：%s。
+
+移动完成后 BeyondPod 将自动重启并切换使用新位置。
+
+移动过程可能需要几分钟才能完成。"</string>
+    <string name="move_storage_folder_instructions_new_title">使用新的位置</string>
+    <string name="movie_view_preparing_stream">正在准备流媒体</string>
+    <string name="movieviewlabel">电影</string>
+    <string name="mr_button_content_description">投射按钮</string>
+    <string name="mr_cast_button_connected">投射按钮。已连接</string>
+    <string name="mr_cast_button_connecting">投射按钮。正在连接</string>
+    <string name="mr_cast_button_disconnected">投射按钮。已断开连接</string>
+    <string name="mr_chooser_searching">正在查找设备</string>
+    <string name="mr_chooser_title">投射到</string>
+    <string name="mr_controller_album_art">专辑封面</string>
+    <string name="mr_controller_casting_screen">正在投射屏幕</string>
+    <string name="mr_controller_close_description">关闭</string>
+    <string name="mr_controller_collapse_group">收起</string>
+    <string name="mr_controller_disconnect">断开连接</string>
+    <string name="mr_controller_expand_group">展开</string>
+    <string name="mr_controller_no_info_available">没有任何相关信息</string>
+    <string name="mr_controller_no_media_selected">未选择任何媒体</string>
+    <string name="mr_controller_pause">暂停</string>
+    <string name="mr_controller_play">播放</string>
+    <string name="mr_controller_stop">停止</string>
+    <string name="mr_controller_stop_casting">停止投射</string>
+    <string name="mr_controller_volume_slider">音量滑块</string>
+    <string name="mr_system_route_name">系统</string>
+    <string name="mr_user_route_category_name">设备</string>
+    <string name="multiselect_episodes_selected">片段已选</string>
+    <string name="navigator_add_category">添加类别</string>
+    <string name="navigator_add_feed">添加订阅源</string>
+    <string name="navigator_drawer_title">我的订阅源</string>
+    <string name="navigator_edit_content">管理订阅源</string>
+    <string name="navigator_feed_filter_all">所有订阅源</string>
+    <string name="navigator_feed_filter_new_only">“新增”订阅源</string>
+    <string name="navigator_updated">已更新 %s</string>
+    <string name="navigator_updated_now">刚刚更新</string>
+    <string name="ok_button">OK Button</string>
+    <string name="opml_export_btn_label">导出订阅源</string>
+    <string name="opml_export_msg">"您所有的订阅源将被导出至名为“BeyondPodFeeds.opml”的 OPML 文件，路径为：
+
+“%s”
+
+此订阅源将被归类为第一个类别。"</string>
+    <string name="opml_export_title">导出至 OPML</string>
+    <string name="opml_import_dlg_add_cat_label">新建类别</string>
+    <string name="opml_import_dlg_title">添加至类别</string>
+    <string name="opml_import_opml_btn_label">读取 OPML 文件</string>
+    <string name="opml_import_opml_msg1">"请确认需要导入的 OPML 文件拓展名为 .OPML 并已被复制至：
+“%s”"</string>
+    <string name="opml_import_reader_title">登录 Feedly</string>
+    <string name="opml_list_view_beyondpod_is_loading_s">"BeyondPod 正在载入
+%s"</string>
+    <string name="opml_list_view_connecting">正在连接</string>
+    <string name="opml_list_view_downloaded">已下载</string>
+    <string name="opml_list_view_error">错误</string>
+    <string name="opml_list_view_loading">正在载入</string>
+    <string name="opml_list_view_selected_directory_is_currently_unavailable">"选择目录当前不可用！
+
+请稍后再试。"</string>
+    <string name="opml_list_view_update_canceled">更新已取消！</string>
+    <string name="opml_list_view_update_failed">更新失败！</string>
+    <string name="opml_view_adapter_back_to_s">返回至 %s</string>
+    <string name="opml_view_adapter_go_back">返回</string>
+    <string name="opml_view_adapter_in_s">在 %s 中</string>
+    <string name="opml_view_adapter_items">项目</string>
+    <string name="opml_view_adapter_subscribed">已订阅</string>
+    <string name="percent_complete">% 已完成</string>
+    <string name="player_charm_pbspeed_preset_description">请通过滚动条选择播放速度并点击预设按钮保存它们</string>
+    <string name="player_charm_pbspeed_title">播放速度</string>
+    <string name="player_charm_sleep_description">停止播放后</string>
+    <string name="player_charm_sleep_episodeEnd">该片段播放完成后</string>
+    <string name="player_charm_sleep_off">关闭</string>
+    <string name="player_charm_sleep_title">睡眠定时器</string>
+    <string name="player_streaming_disabled">"流媒体当前不可用！
+
+请在播放前下载此片段。"</string>
+    <string name="player_streaming_wifi_only">当前流媒体仅允许通过 Wi-Fi 连接下播放</string>
+    <string name="player_transport_next">下集</string>
+    <string name="player_transport_pause">暂停</string>
+    <string name="player_transport_play">播放</string>
+    <string name="player_transport_playback_speed">播放速度</string>
+    <string name="player_transport_prev">上集</string>
+    <string name="player_transport_skip_back">快退</string>
+    <string name="player_transport_skip_fwd">快进</string>
+    <string name="player_transport_skip_to_end">跳至片尾</string>
+    <string name="player_trying_to_play_deleted_episode">此片段已被删除！</string>
+    <string name="player_view_connecting_to_s">正在连接至 %s</string>
+    <string name="player_view_playback_cast_connected">"已连接至“%s”
+
+请选择远程播放片段"</string>
+    <string name="player_view_playback_error">播放错误！</string>
+    <string name="player_view_playback_error_cant_cast">此片段无法远程播放！</string>
+    <string name="player_view_playback_error_streaming_disabled">流媒体不被允许！</string>
+    <string name="player_view_preparing_stream_s">正在准备流媒体 (%s %%)</string>
+    <string name="playlist_divider_smartplay_text">智能播放</string>
+    <string name="playlist_divider_text">播放列表</string>
+    <string name="playlist_editor_dialog_clear_playlist">清除播放列表</string>
+    <string name="podcast_list_empty_all_feeds_working">"BeyondPod 正在更新您的订阅源
+
+最新片段即将为您展现"</string>
+    <string name="podcast_list_empty_category">您当前尚未在类别“%s”中下载任何片段</string>
+    <string name="podcast_list_empty_feed">您当前尚未在订阅源“%s”中下载任何片段</string>
+    <string name="podcast_list_empty_filter">"当前暂未发现任何片段匹配您当前的过滤器
+“%s”"</string>
+    <string name="podcast_list_empty_playlist">播放列表为空</string>
+    <string name="podcast_list_has_filtered_items">当前显示 %s</string>
+    <string name="podcast_list_open_all_published">查看所有已发布片段</string>
+    <string name="podcast_list_show_all_episodes">查看所有片段</string>
+    <string name="podcast_list_view_about">关于</string>
+    <string name="podcast_list_view_all_published">尚未发现您所需要搜索的任何片段！</string>
+    <string name="podcast_list_view_beyondpod_faq">BeyondPod 常见问题解答</string>
+    <string name="podcast_list_view_playlist">播放列表</string>
+    <string name="podcasts_view_adapter_this">当</string>
+    <string name="podcasts_view_free">免费</string>
+    <string name="preview_player_title">片段预览</string>
+    <string name="published_list_add_again_to_my_episodes">重播片段</string>
+    <string name="published_list_add_to_my_episodes">添加至我的片段</string>
+    <string name="published_list_download_episode">下载片段</string>
+    <string name="published_list_preview_episode">预览片段</string>
+    <string name="published_list_redownload_episode">重新下载片段</string>
+    <string name="reader_folder_all_new_items_in">所有较新条目</string>
+    <string name="reader_folder_my_google_items">我的 Feedly 项目</string>
+    <string name="reader_folder_my_read_items">我的阅读项目</string>
+    <string name="reader_folder_my_reading_list">我的阅读列表</string>
+    <string name="reader_folder_my_starred_items">我的星标项目</string>
+    <string name="remote_playback_not_available_in_lite_version">您的 BeyondPod 试用版已过期！远程播放控制目前仅可用于 BeyondPod Pro 版本。</string>
+    <string name="repo_search_hint">搜索订阅源</string>
+    <string name="repo_search_label">.</string>
+    <string name="reset_storage_folder_current" formatted="false">"配置片段下载位置（%s）当前不可使用！
+
+如果您正在使用外置 SDCard，请确认 SDCard 是否被移除、取消挂载或设为只读。
+您的内置 SDCard（%s）仍然可以访问。
+
+是否确认切换使用内置 SDCard 代替？"</string>
+    <string name="reset_storage_folder_multiple">"已配置的片段下载路径 (%s) 不再可用！
+
+请在下方选择一个新的下载路径："</string>
+    <string name="reset_tips_complete">所有提示以及警告将被重新启用！</string>
+    <string name="s1">保存图片</string>
+    <string name="s2">允许广告将图片存储在图库中吗？</string>
+    <string name="s3">接受</string>
+    <string name="s4">拒绝</string>
+    <string name="s5">创建日历活动</string>
+    <string name="s6">允许广告创建日历活动吗？</string>
+    <string name="s7">测试广告</string>
+    <string name="scheduling_method_msg">"BeypondPod 允许您使用单一计划更新订阅源或为每个类别设置不同的更新计划。
+
+您想使用哪种方法？
+
+（您可以随时在“分组类别管理”中更改设置）"</string>
+    <string name="scheduling_method_per_category">每个类别</string>
+    <string name="scheduling_method_single_schedule">单一计划</string>
+    <string name="scheduling_method_title">选择更新计划</string>
+    <string name="search_error">在搜索过程中出现一个错误，请稍后再试</string>
+    <string name="search_error_device_is_offline">设备目前处于离线状态！</string>
+    <string name="search_error_must_be_online_to_add_feeds">您必须连接至网络才能添加订阅源</string>
+    <string name="search_filter_all">所有</string>
+    <string name="search_filter_audio">音频</string>
+    <string name="search_filter_video">视频</string>
+    <string name="search_menu_title">搜索</string>
+    <string name="search_no_result_found">没有找到“%s”的搜索结果</string>
+    <string name="search_result_item_subscribe">订阅</string>
+    <string name="search_running">正在搜索订阅源</string>
+    <string name="settings_AutoPlaySmartplays_summary">当智能播放被启用时自动播放首个片段</string>
+    <string name="settings_AutoPlaySmartplays_title">自动播放智能播放列表</string>
+    <string name="settings_AutoRebuildKeepCurrent_summary">智能播放重建时仍保留播放列表</string>
+    <string name="settings_AutoRebuildKeepCurrent_title">保留当前播放片段</string>
+    <string name="settings_AutoRebuildSmartPlay_summary">当新片段下载后自动重建“默认”智能播放</string>
+    <string name="settings_AutoRebuildSmartPlay_title">自动重建智能播放</string>
+    <string name="settings_Autoplaylist_summary">当开始播放选择片段时自动创建新的播放列表</string>
+    <string name="settings_Autoplaylist_title">自动创建播放列表</string>
+    <string name="settings_ClearPlaylistKeepCurrent_summary">当清除播放列表时，播放列表依旧保留当前片段为首项</string>
+    <string name="settings_HeadsetButtons_DC_summary">有线耳机双击按键</string>
+    <string name="settings_HeadsetButtons_DC_title">双击按键</string>
+    <string name="settings_HeadsetButtons_LP_summary">有线耳机长按按键</string>
+    <string name="settings_HeadsetButtons_LP_title">长按按键</string>
+    <string name="settings_HeadsetButtons_Next_summary">有线或蓝牙耳机的下段按键</string>
+    <string name="settings_HeadsetButtons_Next_title">下段按键</string>
+    <string name="settings_HeadsetButtons_Prev_summary">有线或蓝牙耳机的上段按键</string>
+    <string name="settings_HeadsetButtons_Prev_title">上段按键</string>
+    <string name="settings_HeadsetButtons_summary">自定义有线或蓝牙耳机按键触发动作</string>
+    <string name="settings_HeadsetButtons_title">耳机按键动作</string>
+    <string name="settings_PauseResume_summary">当耳机拔出、电源断开、通知发起、屏幕超时时暂停播放设置…</string>
+    <string name="settings_PauseResume_title">自动暂停或恢复</string>
+    <string name="settings_RemovePlayedFromPlaylist_summary">自动删除播放列表中已播放片段</string>
+    <string name="settings_RemovePlayedFromPlaylist_title">自动删除已播片段</string>
+    <string name="settings_active_theme_summary">BeyondPod 主窗体界面主题（明亮或灰暗）</string>
+    <string name="settings_active_theme_title">主题</string>
+    <string name="settings_allow_analytics_summary">允许采集匿名使用数据以及应用程序错误信息帮助我们改善 BeyondPod 质量</string>
+    <string name="settings_allow_analytics_title">跟踪使用情况统计信息</string>
+    <string name="settings_allow_cleanup_for_manual_downloads_summary">为手动下载的 Podcasts 启用订阅源清理规则</string>
+    <string name="settings_allow_cleanup_for_manual_downloads_title">允许清除手动下载文件</string>
+    <string name="settings_allow_hiding_read_summary">允许在“所有已发布”视图中隐藏“已读”项目或“已播放”片段</string>
+    <string name="settings_allow_hiding_read_title">允许隐藏已读或已播放</string>
+    <string name="settings_allow_streaming_summary">允许流媒体（在线观看无需下载）播放</string>
+    <string name="settings_allow_streaming_title">流媒体播放设置</string>
+    <string name="settings_allow_streaming_values_title">允许流媒体</string>
+    <string name="settings_allowcellular_summary">检查您是否允许使用移动网络（EDGE/3G/4G) 更新订阅源内容。</string>
+    <string name="settings_allowcellular_title">允许使用移动数据</string>
+    <string name="settings_autoLoadPlugins_summary">允许查看帖子内容中的嵌入视频。</string>
+    <string name="settings_autoLoadPlugins_title">启用浏览器插件</string>
+    <string name="settings_auto_clean_unused_episodes_summary">在下次更新时自动删除所有已被播放的片段（标记为“最爱”的片段将被保留）</string>
+    <string name="settings_auto_clean_unused_episodes_title">自动删除已播放片段</string>
+    <string name="settings_auto_resume_partial_downloads_summary">在下次更新时自动重试下载所有被中断的下载片段</string>
+    <string name="settings_auto_resume_partial_downloads_title">自动恢复中断下载</string>
+    <string name="settings_automaticUpdates_title">自动更新</string>
+    <string name="settings_backup_restore_title">备份以及还原</string>
+    <string name="settings_backwardSkipInterval_summary">播放时向后跳跃时间（跳过广告）</string>
+    <string name="settings_backwardSkipInterval_title">向后跳跃间隔</string>
+    <string name="settings_beta_notification_summary">当有可用的 BeyondPod 的公共测试版本更新时通知我</string>
+    <string name="settings_beta_notification_title">测试版本更新通知提示</string>
+    <string name="settings_category_sd_card_location_preferences">Podcast 存储位置</string>
+    <string name="settings_cds_summary">片段同步已被禁用</string>
+    <string name="settings_cds_title">配置片段同步</string>
+    <string name="settings_clearstatusnotification_summary">仅当您需要隐藏末尾更新通知图标时勾选</string>
+    <string name="settings_clearstatusnotification_title">隐藏通知栏图标</string>
+    <string name="settings_configure_smartplay">配置智能播放</string>
+    <string name="settings_defSendToEmail_dlg_title">默认电子邮件收件人</string>
+    <string name="settings_defSendToEmail_summary">设置从 BeyondPod 发送文章链接的默认电子邮箱地址</string>
+    <string name="settings_defSendToEmail_title">默认电子邮件收件人</string>
+    <string name="settings_description">BeyondPod Podcasts</string>
+    <string name="settings_disable_sharing_warning">"由于一个 BUG 在部分系统版本上，当您禁用分享一些您已下载的视频片段时可能在设备第一次重启（或 SDcard 重新扫描）时被删除。
+
+如果您不想丢失它们，请确认您已经备份了所有已下载的视频片段。
+
+您可以在 SDcard 中的“./mnt/SDcard/BeyondPod/Podcasts”文件夹中找到已经下载的视频片段。"</string>
+    <string name="settings_disconnect_from_reader">与 Feedly 断开关联</string>
+    <string name="settings_disconnect_from_reader_cant_convert_msg">"您的订阅源中有部分特定于 Feedly 并无法断开：
+
+%s
+您必须手动删除它们。"</string>
+    <string name="settings_disconnect_from_reader_msg">"以下订阅源将从 Feedly 中断开并重定向至其原始发布地址：
+
+%s
+已下载或流媒体片段将被保留，但阅读以及下载历史将被删除。"</string>
+    <string name="settings_downloadoncharging_summary">仅当设备正在充电时下载订阅片段</string>
+    <string name="settings_downloadoncharging_title">仅当设备充电时下载</string>
+    <string name="settings_downloadonwifi_summary">仅当连接至 Wi-Fi 时下载订阅片段</string>
+    <string name="settings_downloadonwifi_title">仅当在 Wi-Fi 时下载</string>
+    <string name="settings_enableFadein_summary">当播放开始时缓缓地从无声增加至正常音量等级</string>
+    <string name="settings_enableFadein_title">启用淡入</string>
+    <string name="settings_enableHeadsetButton_summary">使用有线或蓝牙耳机按键来控制播放</string>
+    <string name="settings_enableHeadsetButton_title">启用耳机按键</string>
+    <string name="settings_enable_presto_summary">如果已安装 Presto 音频插件则启用（需要重启）</string>
+    <string name="settings_enable_presto_title">启用 Presto</string>
+    <string name="settings_enable_sonic_player_summary">启用变速播放本地支持（仅适用于 JellyBean 或更高）</string>
+    <string name="settings_enable_sonic_player_title">启用音频播放器</string>
+    <string name="settings_feedContent_title">订阅源内容设置</string>
+    <string name="settings_feedSelectedAction_summary">选择订阅源后显示默认视图（“我的片段”或“所有已发布”）</string>
+    <string name="settings_feedSelectedAction_title">订阅源视图首选项</string>
+    <string name="settings_feedSortOrder_summary">请选择您的订阅源列表排序方式（左侧导航）</string>
+    <string name="settings_feedSortOrder_title">订阅源主题排序</string>
+    <string name="settings_feed_defaults_summary">新订阅源全局订阅设置（下载片段数量、清理规则等）…</string>
+    <string name="settings_feed_defaults_title">订阅源常规设置</string>
+    <string name="settings_force_feed_album_art_summary">为音频片段使用订阅源专辑封面</string>
+    <string name="settings_force_feed_album_art_title">使用订阅源专辑封面</string>
+    <string name="settings_force_mpd123_player_summary">快速播放时强制使用基于 mpg123 库解码的音频播放器</string>
+    <string name="settings_force_mpd123_player_title">强制使用 mpg123 播放器</string>
+    <string name="settings_forwardSkipInterval_summary">播放时向前跳跃时间（跳过广告）</string>
+    <string name="settings_forwardSkipInterval_title">向前跳跃间隔</string>
+    <string name="settings_general_summary">全局排序、订阅源以及片段设置…</string>
+    <string name="settings_general_title">常规信息设置</string>
+    <string name="settings_global_apply">%s 订阅源已更新</string>
+    <string name="settings_google_reader_login_title">与 Feedly 断开关联</string>
+    <string name="settings_hideUnsupportedFileTypes_summary">隐藏程序无法播放的媒体文件类型</string>
+    <string name="settings_hideUnsupportedFileTypes_title">隐藏不支持媒体文件</string>
+    <string name="settings_ignoreReaderReadStatus_summary">仅当您不希望与 Feedly 同步\"已读\"状态时勾选</string>
+    <string name="settings_ignoreReaderReadStatus_title">忽略 Feedly“已读”状态</string>
+    <string name="settings_keep_pause_notification_summary">当播放被暂停时在通知栏中保留“暂停”通知</string>
+    <string name="settings_keep_pause_notification_title">保留暂停通知</string>
+    <string name="settings_keep_screen_on_during_playback_summary">设置当您正在播放音频时屏幕超时动作</string>
+    <string name="settings_keep_screen_on_during_playback_title">屏幕显示超时</string>
+    <string name="settings_margin_navigation_summary">双击主题内容时关闭主题视图</string>
+    <string name="settings_margin_navigation_title">双击关闭</string>
+    <string name="settings_markAsReadOnOpen_summary">查看主题内容时，将其主题标为“已读”。</string>
+    <string name="settings_markAsReadOnOpen_title">标记打开主题为已读</string>
+    <string name="settings_maxTrackAge_dlg_title">删除早于</string>
+    <string name="settings_maxTrackAge_summary">删除每个订阅源早于给定天数片段</string>
+    <string name="settings_maxTrackAge_title">清除 - 删除较旧</string>
+    <string name="settings_mediaEndAction_summary">当前片段播放完成后所采取的动作为（删除文件、播放下一段等）</string>
+    <string name="settings_mediaEndAction_title">当播放完成时</string>
+    <string name="settings_numPodcastsToDownload_dlg_title">下载</string>
+    <string name="settings_numPodcastsToDownload_summary">默认 Podcast 片段或订阅源流媒体下载数量</string>
+    <string name="settings_numPodcastsToDownload_title">片段下载</string>
+    <string name="settings_numPodcastsToKeep_dlg_title">保留</string>
+    <string name="settings_numPodcastsToKeep_summary">默认每个订阅源 Podcast 本地片段保留数量</string>
+    <string name="settings_numPodcastsToKeep_title">清除 - 保留部分</string>
+    <string name="settings_orientation_lock_summary">允许您锁定屏幕方向为横向或纵向模式</string>
+    <string name="settings_orientation_lock_title">屏幕显示方向</string>
+    <string name="settings_pause_on_notification_summary">系统发起通知时自动暂停播放（导航、电子邮件以及短信等）</string>
+    <string name="settings_pause_on_notification_title">暂停通知</string>
+    <string name="settings_pause_on_power_disconnect_summary">当外部电源断开时自动暂停播放</string>
+    <string name="settings_pause_on_power_disconnect_title">断开电源时暂停播放</string>
+    <string name="settings_pause_onheadset_disconnect_summary">当耳机断开连接时暂停视频播放</string>
+    <string name="settings_pause_onheadset_disconnect_title">断开耳机连接时暂停</string>
+    <string name="settings_pause_video_on_screen_off_summary">当屏幕关闭时自动暂停视频播放</string>
+    <string name="settings_pause_video_on_screen_off_title">屏幕关闭时暂停视频</string>
+    <string name="settings_player_integration_summary">使用“外部播放器”将调用设备内置（或任何第三方）播放器</string>
+    <string name="settings_player_integration_title">默认片段播放器</string>
+    <string name="settings_player_plugins_disable_summary">启用播放速度调节</string>
+    <string name="settings_player_plugins_disable_title">启用速度调节</string>
+    <string name="settings_player_plugins_only_if_configured_summary">仅在订阅源配置为其设置更高速度播放时使用该插件</string>
+    <string name="settings_player_plugins_only_if_configured_title">仅在配置时使用</string>
+    <string name="settings_player_summary">跳过间隔、耳机按钮以及流媒体首选项…</string>
+    <string name="settings_player_title">播放设置</string>
+    <string name="settings_playlistEndAction_summary">点击配置播放完成后所采取动作</string>
+    <string name="settings_playlistEndAction_title">当播放列表完成时</string>
+    <string name="settings_playlist_summary">播放列表行为、片段自动删除…</string>
+    <string name="settings_playlist_title">播放列表设置</string>
+    <string name="settings_podcastDownloadAction_summary">订阅源 Podcast 片段的默认处理方式（下载、流媒体或忽略）</string>
+    <string name="settings_podcastDownloadAction_title">订阅源 Podcast 片段</string>
+    <string name="settings_podcastsSortOrder_summary">更改您下载的 Podcast 片段顺序</string>
+    <string name="settings_podcastsSortOrder_title">“我的片段”排序方式</string>
+    <string name="settings_prefer_last_sd_card_root_summary">强制规定 BeyondPod 始终使用的下载路径：</string>
+    <string name="settings_prefer_last_sd_card_root_title">锁定当前路径</string>
+    <string name="settings_push_globals_all_dlg_msg">您还想要将此设置应用于所有订阅源吗？</string>
+    <string name="settings_push_globals_btn_no">取消</string>
+    <string name="settings_push_globals_btn_yes">确认</string>
+    <string name="settings_push_globals_dlg_title">更新现有订阅源</string>
+    <string name="settings_push_globals_download_or_stream_dlg_msg">您还想要将设置下载或 Podcasts 流媒体应用于所有订阅源？</string>
+    <string name="settings_replay_on_resume_summary">当长按恢复时播放（后退）秒数</string>
+    <string name="settings_replay_on_resume_title">继续播放</string>
+    <string name="settings_requires_restart_back_only_warning">"此项设置将在下载打开 BeyondPod 时生效。
+
+（请连续按下“返回”键直到关闭所有 BeyondPod 窗口）"</string>
+    <string name="settings_requires_restart_warning">"新的主题将在您下一次打开 BeyondPod 时生效。
+
+（请连续按下“返回”键关闭 BeyondPod 或旋转以下您设备的屏幕方向）"</string>
+    <string name="settings_resume_on_call_summary">当来电挂断时恢复片段正常播放</string>
+    <string name="settings_resume_on_call_title">在通话后恢复播放</string>
+    <string name="settings_scrobble_summary">推送当前正在播放的片段至外部连接设备（启动可能将断开蓝牙音频支持）。</string>
+    <string name="settings_scrobble_title">推送当前片段</string>
+    <string name="settings_setAsDownloadedOnMarkRead_summary">Podcast 片段被标记“已读”时自动标为“已下载”</string>
+    <string name="settings_setAsDownloadedOnMarkRead_title">设置已读主题为已下载</string>
+    <string name="settings_setAsPlayedOnMarkRead_summary">Podcast 片段被标记“已读”时自动标为“已播放”</string>
+    <string name="settings_setAsPlayedOnMarkRead_title">设置已读主题为已播放</string>
+    <string name="settings_sharePodcasts_summary">仅当您希望在设备音乐播放器中看见 BeyondPod 所下载的 Podcasts 片段时勾选</string>
+    <string name="settings_sharePodcasts_title">片段可见于音乐播放器</string>
+    <string name="settings_show_post_images_in_feed_content_list_summary">显示在订阅源主题列表中“重要”主题图像缩略图</string>
+    <string name="settings_show_post_images_in_feed_content_list_title">显示主题缩略图</string>
+    <string name="settings_show_sleep_to_end_summary">轻松跳至当前片段末尾部分并将其标记为已播放</string>
+    <string name="settings_show_sleep_to_end_title">跳至末尾按钮</string>
+    <string name="settings_sleep_timeout_summary">自定义播放器睡眠功能延时（以分钟为单位）</string>
+    <string name="settings_sleep_timeout_title">自定义睡眠延时</string>
+    <string name="settings_storage_folder_title">Podcast 下载文件夹</string>
+    <string name="settings_supportedFileFormats_summary">识别并显示 BeyondPod 支持的文件类型</string>
+    <string name="settings_supportedFileFormats_title">支持文件类型</string>
+    <string name="settings_togglewifi_summary">仅当您需要在 Wi-Fi 开启自动更新订阅源时勾选</string>
+    <string name="settings_togglewifi_title">切换至 Wi-Fi 时更新</string>
+    <string name="settings_update_optimizations_already_excluded_summary">电池优化已禁用，当设备进入 Doze 状态时 BeyondPod 将允许更新订阅源。</string>
+    <string name="settings_update_optimizations_exclude_summary">电池优化已启用，当设备进入 Doze 状态时 BeyondPod 将不再更新订阅源。</string>
+    <string name="settings_update_optimizations_exclude_title">电池优化</string>
+    <string name="settings_update_summary">订阅源自动更新、切换至 Wi-Fi、移动数据、片段下载</string>
+    <string name="settings_update_title">订阅源更新设置</string>
+    <string name="settings_updateonopen_summary">仅当您需要打开应用自动更新订阅源时勾选</string>
+    <string name="settings_updateonopen_title">打开时更新订阅源</string>
+    <string name="settings_useExternalBrowser_summary">仅当您需要在设备默认浏览器中打开外部链接时勾选</string>
+    <string name="settings_useExternalBrowser_title">使用外部浏览器</string>
+    <string name="settings_user_home_screen_summary">当开始播放时，按下“返回”按钮将首先返回至“主页”界面再次按下则退出程序。</string>
+    <string name="settings_user_home_screen_title">“首页”视图</string>
+    <string name="settings_view_title">BeyondPod EVO 设置</string>
+    <string name="settings_view_update_log_message">最后更新：%s</string>
+    <string name="settings_view_update_log_title">查看更新日志</string>
+    <string name="settings_volumeNavigation_summary">使用硬件音量控制在订阅源主题之间切换</string>
+    <string name="settings_volumeNavigation_title">音量控制向导</string>
+    <string name="settings_widget_background_title">微件背景设置</string>
+    <string name="settings_widget_preferences">微件设置</string>
+    <string name="smart_playlist_add">添加智能播放</string>
+    <string name="smart_playlist_add_rule">添加规则</string>
+    <string name="smart_playlist_editor_msg">"智能播放从您下载片段中自动生成最新的播放列表。
+播放列表将包括符合一套简单的规则集筛选的所有片段。"</string>
+    <string name="smart_playlist_editor_title">智能播放编辑器</string>
+    <string name="smart_playlist_emptyplaylist">播放列表为空</string>
+    <string name="smart_playlist_emptyplaylist_info">点击播放启动智能播放</string>
+    <string name="smart_playlist_name_hint">智能播放名称</string>
+    <string name="smart_playlist_repository_loading">正在载入播放列表</string>
+    <string name="smart_playlist_shortcut_create_failed">无法创建快捷方式！</string>
+    <string name="smart_playlist_shortcut_creating">正在创建快捷方式…</string>
+    <string name="smart_playlist_start_with">开始于</string>
+    <string name="smart_playlist_then_play">播放完成后播放</string>
+    <string name="smartplay_category_label">类别</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="the_url_of_this_feed_s_does_not_appear_to_be_valid">此订阅源“%s”的链接似乎是无效的！</string>
+    <string name="there_are_no_scheduled_updates">没有预定更新</string>
+    <string name="this_feed_already_exists_in_category">此订阅源已在类别“%s”中存在</string>
+    <string name="tip_cast_to_your_tv_msg">轻触下方传送按钮 #IMG# 在大屏电视中享受您的精彩片段</string>
+    <string name="tip_cast_to_your_tv_title">传送至您的 TV</string>
+    <string name="tip_how_to_select_compact_card_msg">在您的屏幕中一次查看更多片段，请在菜单选项中选择“压缩卡片列表”。</string>
+    <string name="tip_introduce_multi_select_msg">"您可以一次性删除、下载或添加多个片段至播放列表。
+在首个片段上长按并将其选择，随后轻触即可选择其他片段，最后在菜单中选择您所需要的操作。"</string>
+    <string name="tip_introduce_smart_play_msg">"厌倦了手动创建您的播放列表？让我们来试试智能播放吧！
+点击此处查看更多信息。"</string>
+    <string name="tip_notification">提示</string>
+    <string name="tip_notification_categories_msg">重新排序类别分组仅需拖拽 #IMG# 图标至其他位置即可。</string>
+    <string name="tip_notification_drag_drop_playlist_info">重新排序播放列表仅需拖拽 #IMG# 图标至其他位置即可。</string>
+    <string name="tip_notification_expand_categories_msg">轻触 #IMG# 以展开类别列表并查看其中所有的订阅源</string>
+    <string name="trial_about_to_expire_message">您的 BeyondPod Pro 试用版将在 %s 天后到期</string>
+    <string name="trial_expired_message">您的 BeyondPod Pro 试用版已过期！</string>
+    <string name="update_and_download_queue_connecting">正在连接</string>
+    <string name="update_and_download_queue_downloaded">已下载</string>
+    <string name="update_and_download_queue_title">更新以及下载队列</string>
+    <string name="update_and_download_queue_updating">正在更新</string>
+    <string name="update_and_download_updating_s">正在更新 %s</string>
+    <string name="update_download_mgr_currently_podcasts_can_be_downloaded_automatically_only_over_a_wifi_connection">当前设置为仅当设备连接至 Wi-Fi 网络时自动下载 Podcasts 片段。点击“下载”按钮手动下载 Podcasts 片段。（您可以更改设置通过菜单 > 设置 > 订阅源更新设置 > 仅 Wi-Fi 时下载）</string>
+    <string name="update_download_mgr_currently_podcasts_can_be_downloaded_automatically_only_when_the_device_is_plugged_in">当前设置为仅当设备正在充电时自动下载 Podcasts 片段。点击“下载”按钮手动下载 Podcasts 片段。（您可以更改设置通过菜单 > 设置 > 订阅源更新设置 > 仅充电时下载）</string>
+    <string name="update_download_mgr_scheduled_update_did_not_run_because_background_data_is_disabled">计划更新无法运行，由于设备设置中的“背景数据”项被禁用。（您目前只能手动更新订阅源）</string>
+    <string name="update_download_mgr_the_device_has_no_internet_connection">设备无互联网连接！Wi-Fi 适配器目前处于关闭状态（以及未设置为在更新期间自动打开）。</string>
+    <string name="update_download_mgr_unable_to_establish_internet_conection_the_device_is_in_airplane_mode">无法建立互联网连接！设备在飞机模式下。</string>
+    <string name="update_download_queue_activity_cancel_update">停止更新以及下载</string>
+    <string name="update_download_queue_download_completed">关闭</string>
+    <string name="update_download_queue_processing_text">正在检查新增片段…</string>
+    <string name="update_download_queue_update_and_download_completed">更新以及下载已完成！</string>
+    <string name="update_download_queue_view_update_log">查看更新日志</string>
+    <string name="update_engine_notification__feed_update_completed">订阅源更新已完成</string>
+    <string name="update_engine_notification__feed_update_failed">订阅源更新失败</string>
+    <string name="update_engine_notification__podcasts_failed">失败的片段</string>
+    <string name="update_engine_notification_feeds_failed">失败的订阅源</string>
+    <string name="update_engine_notification_no_network_connection">没有网络连接！</string>
+    <string name="update_engine_notification_no_new_podcasts">没有新的片段</string>
+    <string name="update_engine_notification_no_new_posts">没有新主题</string>
+    <string name="update_engine_notification_the_phone_is_in_airplane_mode">设备在飞机模式下！</string>
+    <string name="update_engine_notification_there_were_errors_during_the_last_update">在最后更新过程中出现了错误！点击此处以查看更新日志。</string>
+    <string name="update_engine_notification_unable_to_establish_network_connection">无法建立网络连接。</string>
+    <string name="update_engine_notification_updated">已更新</string>
+    <string name="updates_are_scheduled_for_categories">类别更新计划</string>
+    <string name="updating_google_reader">正在更新 Feedly</string>
+    <string name="warn_force_download_on_device_not_plugged_in_msg">您设置仅允许充电时下载 Podcast 片段，您是否确认在未充电情况下下载此片段？</string>
+    <string name="warn_force_download_on_mobile_data_msg">您设置不允许使用移动数据下载 Podcast 片段，您是否确认下载此片段使用移动数据？</string>
+    <string name="warn_force_download_on_wifi_not_connected_msg">您设置仅允许使用 Wi-Fi 连接时下载 Podcast 片段，您是否确认使用移动数据下载此片段？</string>
+    <string name="warn_replace_pls_append">追加所选片段至当前播放列表</string>
+    <string name="warn_replace_pls_donotask_append">不再显示并默认追加所选片段</string>
+    <string name="warn_replace_pls_donotask_replace">不再显示并默认重建播放列表</string>
+    <string name="warn_replace_pls_donotask_tip">您可以在以后随时更改该设置：播放列表设置 > 自动创建播放列表</string>
+    <string name="warn_replace_pls_msg">播放已选片段将重建播放列表，是否确认继续？</string>
+    <string name="warn_replace_pls_replace">确认并重建播放列表</string>
+    <string name="warn_replace_pls_title">您是否确认替换播放列表？</string>
+    <string name="widget_action_picker_now_playing">正在播放</string>
+    <string name="widget_action_picker_open_beyondpod">打开 BeyondPod</string>
+    <string name="widget_action_picker_start_smartplay">启动默认智能播放</string>
+    <string name="widget_action_picker_update_smartplay_feeds">更新默认智能播放</string>
+    <string name="widget_picker_title">选取动作</string>
+    <string name="widget_provider_playback_error">播放错误！</string>
+    <string name="widget_provider_starting_stream_s">开始播放流媒体 (%s %%)</string>
+</resources>

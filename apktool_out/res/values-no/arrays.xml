@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_feed_section_names">
+        <item>Trending</item>
+        <item>Recommended</item>
+        <item>Publishers</item>
+        <item>Kategorier</item>
+        <item>International</item>
+        <item>Interests</item>
+    </string-array>
+    <string-array name="allow_episode_streaming_text">
+        <item>Alltid</item>
+        <item>Kun på Wi-Fi</item>
+        <item>Aldri</item>
+    </string-array>
+    <string-array name="allow_episode_streaming_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="audiobook_genres">
+        <item>All Genres</item>
+        <item>Adventure</item>
+        <item>Advice</item>
+        <item>Ancient Texts</item>
+        <item>Animals</item>
+        <item>Art</item>
+        <item>Biography</item>
+        <item>Children</item>
+        <item>Classics (antiquity)</item>
+        <item>Comedy</item>
+        <item>Cookery</item>
+        <item>Economics/Political Economy</item>
+        <item>Epistolary fiction</item>
+        <item>Erotica</item>
+        <item>Essay/Short nonfiction</item>
+        <item>Fairy tales</item>
+        <item>Fantasy</item>
+        <item>Fiction</item>
+        <item>Historical Fiction</item>
+        <item>History</item>
+        <item>Holiday</item>
+        <item>Horror/Ghost stories</item>
+        <item>Humor</item>
+        <item>Instruction</item>
+        <item>Languages</item>
+        <item>Literature</item>
+        <item>Memoirs</item>
+        <item>Music</item>
+        <item>Mystery</item>
+        <item>Myths/Legends</item>
+        <item>Nature</item>
+        <item>Philosophy</item>
+        <item>Play</item>
+        <item>Poetry</item>
+        <item>Politics</item>
+        <item>Psychology</item>
+        <item>Romance</item>
+        <item>Religion</item>
+        <item>Satire</item>
+        <item>Science</item>
+        <item>Science fiction</item>
+        <item>Sea stories</item>
+        <item>Short stories</item>
+        <item>Spy stories</item>
+        <item>Teen/Young adult</item>
+        <item>Tragedy</item>
+        <item>Travel</item>
+        <item>War stories</item>
+        <item>Westerns</item>
+    </string-array>
+    <string-array name="audiobook_languages">
+        <item>All Languages</item>
+        <item>Ancient Greek</item>
+        <item>Arabic</item>
+        <item>Bisaya</item>
+        <item>Bulgarian</item>
+        <item>Chinese</item>
+        <item>Church Slavonic</item>
+        <item>Danish</item>
+        <item>Dholuo</item>
+        <item>Dutch</item>
+        <item>English</item>
+        <item>Esperanto</item>
+        <item>Finnish</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Hebrew</item>
+        <item>Hungarian</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Javanese</item>
+        <item>Latin</item>
+        <item>Latvian</item>
+        <item>Middle English</item>
+        <item>Multilingual</item>
+        <item>Old English</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Russian</item>
+        <item>Spanish</item>
+        <item>Swedish</item>
+        <item>Tagalog</item>
+        <item>Tamil</item>
+        <item>Ukrainian</item>
+        <item>Urdu</item>
+    </string-array>
+    <string-array name="cds_accept_feeds_type_text">
+        <item>Aldri</item>
+        <item>Bare når de sendes manuelt</item>
+        <item>Alltid</item>
+    </string-array>
+    <string-array name="cds_accept_feeds_type_values">
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="feed_fingerprint_type_values">
+        <item>-1</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="feed_fingerprint_type_values_text">
+        <item>Automatisk</item>
+        <item>Bruk innleggets GUID</item>
+        <item>Bruk innleggets tittel, lenke og publiseringsdato</item>
+    </string-array>
+    <string-array name="myepisodesFilter_text">
+        <item>My Episodes</item>
+        <item>All Published</item>
+    </string-array>
+    <string-array name="playlist_end_action_text">
+        <item>Ikke gjør noe</item>
+        <item>Nullstill spillelisten</item>
+        <item>Start SmartPlay på nytt</item>
+    </string-array>
+    <string-array name="playlist_end_action_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="resume_replay_duration_text">
+        <item>Ikke gjenavspill</item>
+        <item>Siste 5 sek.</item>
+        <item>Siste 15 sek.</item>
+        <item>Siste 30 sek.</item>
+    </string-array>
+    <string-array name="resume_replay_duration_values">
+        <item>0</item>
+        <item>5</item>
+        <item>15</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="sample_content_category_names">
+        <item>News</item>
+        <item>Popular Science</item>
+        <item>Indie Music</item>
+        <item>TV &amp; Film</item>
+        <item>Great Stories</item>
+        <item>Android</item>
+        <item>Cars</item>
+        <item>Money</item>
+        <item>Sci-Fi</item>
+        <item>Business</item>
+        <item>Comedy</item>
+        <item>Food</item>
+        <item>Parenting</item>
+        <item>Wine &amp; Beer</item>
+        <item>Travel</item>
+    </string-array>
+    <string-array name="schedule_update_period">
+        <item>Timer</item>
+        <item>Dager</item>
+        <item>Uker</item>
+    </string-array>
+    <string-array name="settings_configure_bt_buttons_text">
+        <item>Neste episode</item>
+        <item>Forrige episode</item>
+        <item>Spol fremover</item>
+        <item>Spol bakover</item>
+        <item>Hopp til slutten</item>
+    </string-array>
+    <string-array name="settings_configure_bt_buttons_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="settings_contentFontSize_text">
+        <item>Størst</item>
+        <item>Større</item>
+        <item>Middels</item>
+        <item>Mindre</item>
+        <item>Minst</item>
+    </string-array>
+    <string-array name="settings_feedSelectedAction_text">
+        <item>My Episodes</item>
+        <item>All Published</item>
+    </string-array>
+    <string-array name="settings_feedSelectedAction_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="settings_itemSortOrder_text">
+        <item>Feed-standard</item>
+        <item>Nyeste øverst</item>
+        <item>Eldste øverst</item>
+    </string-array>
+    <string-array name="settings_long_podcastName_handling_text">
+        <item>Vis start</item>
+        <item>Vis slutt</item>
+    </string-array>
+    <string-array name="settings_markAsReadOnOpen_text">
+        <item>Alle poster</item>
+        <item>Poster uten podcasts</item>
+        <item>Ingen</item>
+    </string-array>
+    <string-array name="settings_markAsReadOnOpen_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="settings_maxTrackAge_text">
+        <item>5 dager</item>
+        <item>7 dager</item>
+        <item>30 dager</item>
+        <item>180 dager</item>
+        <item>360 dager</item>
+        <item>99999 dager</item>
+    </string-array>
+    <string-array name="settings_maxTrackAge_values">
+        <item>5</item>
+        <item>7</item>
+        <item>30</item>
+        <item>180</item>
+        <item>360</item>
+        <item>99999</item>
+    </string-array>
+    <string-array name="settings_mediaEndAction_text">
+        <item>Spill av neste</item>
+        <item>Slett og spill av neste</item>
+        <item>Ikke gjør noe</item>
+        <item>Slett og ikke gjør noe</item>
+    </string-array>
+    <string-array name="settings_mediaEndAction_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_myepisodesFilter_text">
+        <item>Alle episoder</item>
+        <item>Kun lyd</item>
+        <item>Kun video</item>
+        <item>Nedlastet</item>
+        <item>Uferdig</item>
+        <item>Ikke avspilt</item>
+        <item>Favorites</item>
+    </string-array>
+    <string-array name="settings_myepisodesFilter_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="settings_myepisodesSortOrder_text">
+        <item>På feed</item>
+        <item>Nyeste</item>
+        <item>Eldste</item>
+        <item>Navn</item>
+        <item>Navn (Z-A)</item>
+        <item>Varighet</item>
+        <item>Varighet (synkende)</item>
+        <item>Andel avspilt</item>
+        <item>Filnavn</item>
+    </string-array>
+    <string-array name="settings_myepisodesSortOrder_values">
+        <item>-1</item>
+        <item>3</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="settings_numPodcastsToDownload_text">
+        <item>1 episode</item>
+        <item>3 episoder</item>
+        <item>5 episoder</item>
+        <item>10 episoder</item>
+        <item>20 episoder</item>
+        <item>50 episoder</item>
+        <item>Ingen episoder</item>
+    </string-array>
+    <string-array name="settings_numPodcastsToDownload_values">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="settings_numPodcastsToKeep_text">
+        <item>Siste episode</item>
+        <item>Siste 3 episoder</item>
+        <item>Siste 5 episoder</item>
+        <item>Siste 10 episoder</item>
+        <item>Siste 20 episoder</item>
+        <item>Siste 50 episoder</item>
+        <item>Behold alle</item>
+    </string-array>
+    <string-array name="settings_numPodcastsToKeep_values">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>99999</item>
+    </string-array>
+    <string-array name="settings_orientation_lock_text">
+        <item>Automatisk</item>
+        <item>Stående</item>
+        <item>Liggende</item>
+    </string-array>
+    <string-array name="settings_orientation_lock_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_player_integration_text">
+        <item>Bruk intern</item>
+        <item>Bruk ekstern video</item>
+        <item>Bruk ekstern lyd</item>
+        <item>Bruk ekstern</item>
+    </string-array>
+    <string-array name="settings_player_integration_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_player_screen_power_state_text">
+        <item>Bruk systemstandard</item>
+        <item>Demp (hvis på lading)</item>
+        <item>Lys (hvis på lading)</item>
+        <item>Altlid dempet</item>
+        <item>Alltid lys</item>
+    </string-array>
+    <string-array name="settings_player_screen_power_state_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="settings_podcastDownloadAction_text">
+        <item>Last ned episoder manuelt</item>
+        <item>Last ned nyeste episoder</item>
+        <item>Strøm nyeste episoder</item>
+        <item>Last ned episoder i rekkefølge</item>
+        <item>Strøm episoder i rekkefølge</item>
+        <item>Ignorer alle episoder</item>
+    </string-array>
+    <string-array name="settings_podcastDownloadAction_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_preferred_enclosure_text">
+        <item>Bruk standard</item>
+        <item>Bruk alternativ 1</item>
+        <item>Bruk alternativ 2</item>
+        <item>Bruk alternativ 3</item>
+        <item>Bruk alternativ 4</item>
+        <item>Bruk alternativ 5</item>
+        <item>Bruk alternativ 6</item>
+        <item>Bruk alternativ 7</item>
+        <item>Bruk alternativ 8</item>
+        <item>Bruk alternativ 9</item>
+    </string-array>
+    <string-array name="settings_screen_item_content_view_theme_text">
+        <item>White</item>
+        <item>Sepia</item>
+        <item>Svart</item>
+    </string-array>
+    <string-array name="settings_screen_power_state_during_wifi_updates_text">
+        <item>Automatisk</item>
+        <item>Alltid på</item>
+        <item>Alltid av</item>
+    </string-array>
+    <string-array name="settings_screen_power_state_during_wifi_updates_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_skipInterval_text">
+        <item>5 sek</item>
+        <item>10 sek</item>
+        <item>20 sek</item>
+        <item>30 sek</item>
+        <item>1 min</item>
+        <item>5 min</item>
+        <item>Ikke hopp over</item>
+    </string-array>
+    <string-array name="settings_skipInterval_values">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+        <item>300</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="settings_skip_to_end_click_type_text">
+        <item>Use Short Click</item>
+        <item>Use Long Press</item>
+        <item>Hide Button</item>
+    </string-array>
+    <string-array name="settings_skip_to_end_click_type_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_sortOrder_text">
+        <item>Navn (A-Z)</item>
+        <item>Navn (Z-A)</item>
+        <item>Dato (eldste øverst)</item>
+        <item>Dato (nyeste øverst)</item>
+    </string-array>
+    <string-array name="settings_sortOrder_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="settings_startupView_text">
+        <item>Default</item>
+        <item>Feed List</item>
+        <item>Player</item>
+    </string-array>
+    <string-array name="settings_startupView_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_theme_text">
+        <item>Light (default)</item>
+        <item>Dark</item>
+    </string-array>
+    <string-array name="settings_theme_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_trackSortOrder_text">
+        <item>Nyeste</item>
+        <item>Eldste</item>
+        <item>Navn</item>
+        <item>Navn (Z-A)</item>
+        <item>Varighet</item>
+        <item>Varighet (synkende)</item>
+        <item>Andel avspilt</item>
+        <item>Filnavn</item>
+    </string-array>
+    <string-array name="settings_trackSortOrder_values">
+        <item>3</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="settings_volumeNavigation_text">
+        <item>Kun hvis ingenting avspilles</item>
+        <item>Aldri</item>
+        <item>Alltid</item>
+    </string-array>
+    <string-array name="settings_volumeNavigation_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="smart_playlist_numPodcasts_text">
+        <item>1 episode</item>
+        <item>2 episoder</item>
+        <item>3 episoder</item>
+        <item>4 episoder</item>
+        <item>5 episoder</item>
+        <item>6 episoder</item>
+        <item>7 episoder</item>
+        <item>8 episoder</item>
+        <item>9 episoder</item>
+        <item>10 episoder</item>
+        <item>20 episoder</item>
+        <item>30 episoder</item>
+        <item>50 episoder</item>
+    </string-array>
+    <string-array name="smart_playlist_numPodcasts_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+    </string-array>
+    <string-array name="smart_playlist_sortOrder_text">
+        <item>Nyeste</item>
+        <item>Eldste</item>
+        <item>Random</item>
+    </string-array>
+    <string-array name="widget_background_text">
+        <item>Mørk</item>
+        <item>Gjennomsiktig</item>
+        <item>Ingen</item>
+    </string-array>
+</resources>

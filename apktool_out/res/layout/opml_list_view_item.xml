@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mobi.beyondpod.ui.core.CheckableRelativeLayout android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <mobi.beyondpod.ui.core.InertCheckBox android:id="@id/feedCheckbox" android:focusable="false" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="7.0dip" android:layout_marginEnd="5.0dip" />
+    <ImageView android:id="@id/feedFolderIcon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="8.0dip" android:src="@drawable/ic_action_folder_open" android:scaleType="center" android:layout_centerVertical="true" android:contentDescription="@string/feed_folder_icon" />
+    <mobi.beyondpod.ui.core.DontPressWithParentImageView android:id="@id/preview" android:background="?android:selectableItemBackground" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@android:drawable/ic_menu_view" android:scaleType="center" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <FrameLayout android:id="@id/folderContent" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_margin="4.0dip" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:paddingStart="48.0dip" android:paddingEnd="0.0dip" android:layout_toStartOf="@id/preview">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/feedPrimaryText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" style="@style/QueueListViewPrimaryTextStyle" />
+        <TextView android:layout_gravity="end|bottom|center" android:id="@id/feedSecondaryText" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/QueueListViewSecondaryTextStyle" />
+    </FrameLayout>
+</mobi.beyondpod.ui.core.CheckableRelativeLayout>
