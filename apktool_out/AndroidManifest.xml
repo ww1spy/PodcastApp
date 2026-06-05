@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="mobi.beyondpod">
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="mobi.beyondpod.enhanced">
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -10,9 +10,9 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
-    <uses-permission android:name="mobi.beyondpod.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="mobi.beyondpod.enhanced.permission.C2D_MESSAGE"/>
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
-    <permission android:name="mobi.beyondpod.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <permission android:name="mobi.beyondpod.enhanced.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
     <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
     <uses-feature android:name="android.hardware.wifi" android:required="false"/>
     <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
@@ -244,14 +244,14 @@
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
-                <category android:name="mobi.beyondpod"/>
+                <category android:name="mobi.beyondpod.enhanced"/>
             </intent-filter>
         </receiver>
-        <provider android:authorities="mobi.beyondpod.evo.BackupRestoreFragment" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+        <provider android:authorities="mobi.beyondpod.enhanced.evo.BackupRestoreFragment" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
         </provider>
-        <provider android:authorities="beyondpodevo" android:name="mobi.beyondpod.htmlbuilder.FeedHtmlContentProvider"/>
-        <provider android:authorities="mobi.beyondpod.ui.evosearch.RepositorySearchProvider" android:name="mobi.beyondpod.ui.evosearch.RepositorySearchProvider"/>
+        <provider android:authorities="beyondpodevo.enhanced" android:name="mobi.beyondpod.htmlbuilder.FeedHtmlContentProvider"/>
+        <provider android:authorities="mobi.beyondpod.enhanced.ui.evosearch.RepositorySearchProvider" android:name="mobi.beyondpod.ui.evosearch.RepositorySearchProvider"/>
         <receiver android:label="BeyondPod (resizable)" android:name="mobi.beyondpod.services.player.MediaAppWidgetProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
@@ -284,7 +284,7 @@
         <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_H" android:resource="@dimen/app_minimumsize_h"/>
         <meta-data android:name="com.crashlytics.ApiKey" android:value="b87c7b847ca0cba3f07d91bf97b8a67ba78a1d3f"/>
         <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
-        <provider android:authorities="mobi.beyondpod.crashlyticsinitprovider" android:exported="false" android:initOrder="100" android:name="com.crashlytics.android.CrashlyticsInitProvider"/>
+        <provider android:authorities="mobi.beyondpod.enhanced.crashlyticsinitprovider" android:exported="false" android:initOrder="100" android:name="com.crashlytics.android.CrashlyticsInitProvider"/>
         <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
     </application>
 </manifest>

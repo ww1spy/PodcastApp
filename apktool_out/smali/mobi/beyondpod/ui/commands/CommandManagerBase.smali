@@ -629,7 +629,7 @@
 
     if-nez p1, :cond_2
 
-    const-string p1, "mobi.beyondpod.evo.BackupRestoreFragment"
+    const-string p1, "mobi.beyondpod.enhanced.evo.BackupRestoreFragment"
 
     .line 286
     new-instance p2, Ljava/io/File;

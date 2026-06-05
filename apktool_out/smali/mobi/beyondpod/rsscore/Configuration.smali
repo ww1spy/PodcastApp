@@ -1734,7 +1734,7 @@
 .method public static beyondPodContentUrl()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "content://beyondpodevo"
+    const-string v0, "content://beyondpodevo.enhanced"
 
     return-object v0
 .end method

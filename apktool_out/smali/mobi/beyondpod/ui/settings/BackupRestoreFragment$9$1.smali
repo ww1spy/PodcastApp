@@ -56,7 +56,7 @@
 
     move-result-object v1
 
-    const-string v2, "mobi.beyondpod.evo.BackupRestoreFragment"
+    const-string v2, "mobi.beyondpod.enhanced.evo.BackupRestoreFragment"
 
     invoke-static {v1, v2, p2}, Landroid/support/v4/content/FileProvider;->getUriForFile(Landroid/content/Context;Ljava/lang/String;Ljava/io/File;)Landroid/net/Uri;
 

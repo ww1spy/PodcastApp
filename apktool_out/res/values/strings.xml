@@ -159,7 +159,7 @@ If you want to participate in this BETA, you can find more information on our su
     <string name="android_auto_feeds_folder">Feeds</string>
     <string name="android_auto_trial_expired">BeyondPod Trial has expired!</string>
     <string name="app_kind">Android</string>
-    <string name="app_name">BeyondPod</string>
+    <string name="app_name">BeyondPod Enhanced</string>
     <string name="app_shareLink">Subscribe in BeyondPod</string>
     <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="application_error_access_denied">OK... but BeyondPod will not be able to access your storage card (update feeds or download/delete/move episodes)</string>

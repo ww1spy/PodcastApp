@@ -76,7 +76,7 @@
 
     move-result-object v2
 
-    const-string v3, "mobi.beyondpod.evo.BackupRestoreFragment"
+    const-string v3, "mobi.beyondpod.enhanced.evo.BackupRestoreFragment"
 
     iget-object v4, p0, Lmobi/beyondpod/ui/settings/BackupRestoreFragment$10$1;->this$1:Lmobi/beyondpod/ui/settings/BackupRestoreFragment$10;
 
