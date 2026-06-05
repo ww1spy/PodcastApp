@@ -4946,6 +4946,30 @@
 
     if-eqz v2, :cond_1
 
+    # PATCH: Permission not yet granted - fall back to app-specific external dir (never needs permission)
+    sget-object v0, Lmobi/beyondpod/rsscore/Configuration;->_Context:Landroid/content/Context;
+
+    if-eqz v0, :perm_error
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getExternalFilesDir(Ljava/lang/String;)Ljava/io/File;
+
+    move-result-object v0
+
+    if-eqz v0, :perm_error
+
+    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lmobi/beyondpod/rsscore/Configuration;->constructBeyondPodRootIn(Ljava/lang/String;)Ljava/io/File;
+
+    move-result-object v2
+
+    sput-object v2, Lmobi/beyondpod/rsscore/Configuration;->_BeyondPodPublicStorageRoot:Ljava/io/File;
+
+    goto :cond_1
+
+    :perm_error
     const/4 v0, -0x4
 
     .line 229
@@ -5708,21 +5732,28 @@
     .locals 2
 
     .line 510
-    new-instance v0, Ljava/lang/StringBuilder;
+    # PATCH: Write log to Downloads folder for easy access
+    const-string v0, "Downloads"
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-static {v0}, Landroid/os/Environment;->getExternalStoragePublicDirectory(Ljava/lang/String;)Ljava/io/File;
 
-    invoke-static {}, Lmobi/beyondpod/rsscore/Configuration;->beyondPodPublicStorageRootPath()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object v1
+    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v0
 
-    const-string v1, "/BeyondPodLog.txt"
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "/BeyondPodLog.txt"
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
