@@ -5222,39 +5222,8 @@
 .end method
 
 .method private static initializeTagManager(Landroid/content/Context;)V
-    .locals 4
-    .annotation build Landroid/annotation/SuppressLint;
-        value = {
-            "MissingPermission"
-        }
-    .end annotation
-
-    .line 168
-    invoke-static {p0}, Lcom/google/android/gms/tagmanager/TagManager;->getInstance(Landroid/content/Context;)Lcom/google/android/gms/tagmanager/TagManager;
-
-    move-result-object p0
-
-    invoke-static {}, Lmobi/beyondpod/rsscore/Configuration;->DBGTagContainerID()Ljava/lang/String;
-
-    move-result-object v0
-
-    sget v1, Lmobi/beyondpod/R$raw;->gtm_default_container:I
-
-    invoke-virtual {p0, v0, v1}, Lcom/google/android/gms/tagmanager/TagManager;->loadContainerPreferNonDefault(Ljava/lang/String;I)Lcom/google/android/gms/common/api/PendingResult;
-
-    move-result-object p0
-
-    .line 171
-    new-instance v0, Lmobi/beyondpod/rsscore/Configuration$1;
-
-    invoke-direct {v0}, Lmobi/beyondpod/rsscore/Configuration$1;-><init>()V
-
-    sget-object v1, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
-
-    const-wide/16 v2, 0x2
-
-    invoke-virtual {p0, v0, v2, v3, v1}, Lcom/google/android/gms/common/api/PendingResult;->setResultCallback(Lcom/google/android/gms/common/api/ResultCallback;JLjava/util/concurrent/TimeUnit;)V
-
+    .locals 0
+    # TagManager SDK uses non-SDK interfaces that throw on targetSdk >= 28; stub it out
     return-void
 .end method
 

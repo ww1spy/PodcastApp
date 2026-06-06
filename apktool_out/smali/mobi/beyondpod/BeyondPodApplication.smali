@@ -1181,25 +1181,8 @@
 
     sput-object v0, Lmobi/beyondpod/BeyondPodApplication;->_ChromecastDevice:Lmobi/beyondpod/services/player/impl/ChromecastDevice;
 
-    .line 231
-    invoke-static {p0}, Lcom/google/android/gms/analytics/GoogleAnalytics;->getInstance(Landroid/content/Context;)Lcom/google/android/gms/analytics/GoogleAnalytics;
-
-    move-result-object v0
-
-    invoke-static {}, Lmobi/beyondpod/rsscore/Configuration;->gatherAnalyticsData()Z
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    xor-int/2addr v1, v2
-
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/analytics/GoogleAnalytics;->setAppOptOut(Z)V
-
-    .line 233
-    invoke-static {}, Lmobi/beyondpod/rsscore/Configuration;->gatherAnalyticsData()Z
-
-    move-result v0
+    # GoogleAnalytics SDK uses non-SDK interfaces that throw on targetSdk >= 28; skip it
+    const/4 v0, 0x0
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
