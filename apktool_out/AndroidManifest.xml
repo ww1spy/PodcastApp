@@ -19,7 +19,7 @@
     <uses-feature android:name="android.hardware.wifi" android:required="false" />
     <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
     <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
-    <application android:allowBackup="false" android:backupAgent="mobi.beyondpod.rsscore.helpers.BPBackupAgentHelper" android:fullBackupContent="@xml/backup_scheme" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:logo="@drawable/ic_action_beyondpod" android:name="mobi.beyondpod.evo.BeyondPodApplicationEvo" android:supportsRtl="true" android:theme="@style/Theme.BeyondPod">
+    <application android:allowBackup="false" android:backupAgent="mobi.beyondpod.rsscore.helpers.BPBackupAgentHelper" android:fullBackupContent="@xml/backup_scheme" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:logo="@drawable/ic_action_beyondpod" android:name="mobi.beyondpod.evo.BeyondPodApplicationEvo" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:theme="@style/Theme.BeyondPod">
         <activity android:name="mobi.beyondpod.ui.views.Splash" android:theme="@style/Theme.BeyondPod.Splash" android:exported="true">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
