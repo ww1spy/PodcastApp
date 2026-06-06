@@ -418,31 +418,38 @@
 .end method
 
 .method private forwardToSplashScreenOnNoStorageCard()V
-    .locals 3
+    .locals 4
 
-    .line 505
-    sget-object v0, Lmobi/beyondpod/ui/views/MasterView;->TAG:Ljava/lang/String;
+    # DIAG: show why isInitialized() returned false instead of looping back to Splash
+    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v1, "master View started with no storage card. Exiting..."
+    const-string v1, "MasterView: isInitialized=false\n\nlastAppEx: "
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v0, v1}, Lmobi/beyondpod/rsscore/helpers/CoreHelper;->writeTraceEntry(Ljava/lang/String;Ljava/lang/String;)V
+    sget-object v1, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 506
-    new-instance v0, Landroid/content/Intent;
+    const-string v1, "\n\nConfigErrorMsg: "
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Lmobi/beyondpod/ui/views/MasterView;->getApplicationContext()Landroid/content/Context;
+    sget-object v1, Lmobi/beyondpod/rsscore/Configuration;->ConfigurationInitErrorMsg:Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    const-string v1, "\n\nStorageState: "
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-static {}, Lmobi/beyondpod/rsscore/helpers/CoreHelper;->externalStorageState()Ljava/lang/String;
     move-result-object v1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-class v2, Lmobi/beyondpod/ui/views/Splash;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
 
-    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
-
-    .line 507
-    invoke-virtual {p0, v0}, Lmobi/beyondpod/ui/views/MasterView;->startActivity(Landroid/content/Intent;)V
-
-    .line 508
-    invoke-virtual {p0}, Lmobi/beyondpod/ui/views/MasterView;->finish()V
+    new-instance v1, Landroid/app/AlertDialog$Builder;
+    invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+    invoke-virtual {v1, v0}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
     return-void
 .end method
