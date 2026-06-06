@@ -1106,7 +1106,7 @@
 .end method
 
 .method protected initialize()V
-    .locals 3
+    .locals 4
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "HandlerLeak",
@@ -1257,12 +1257,24 @@
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
+    # DIAG: grab exception class name and first stack frame so user can see it on splash screen
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result-object v3
+    invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    move-result-object v3
+
     .line 252
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "Error loading application data!\n\n"
+    const-string v2, "Init failed ["
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "]: "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
