@@ -420,7 +420,14 @@
 .method private forwardToSplashScreenOnNoStorageCard()V
     .locals 4
 
-    # DIAG: show why isInitialized() returned false instead of looping back to Splash
+    # DIAG: Toast to confirm isInit=false path was taken
+    const-string v0, "BP: isInit=false in MasterView"
+    const/4 v1, 0x1
+    invoke-static {p0, v0, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v0
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+
+    # DIAG: show why isInitialized() returned false
     new-instance v0, Ljava/lang/StringBuilder;
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
@@ -448,7 +455,14 @@
 
     new-instance v1, Landroid/app/AlertDialog$Builder;
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+    const-string v2, "DIAG: isInit=false"
+    invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
     invoke-virtual {v1, v0}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+    const/4 v2, 0x0
+    invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
+    const-string v2, "OK"
+    const/4 v3, 0x0
+    invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
     invoke-virtual {v1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
     return-void
@@ -2422,6 +2436,13 @@
 
     const/4 v0, 0x1
 
+    # DIAG: Toast to confirm MasterView.onCreate() was entered
+    const-string v1, "BP: MV-onCreate started"
+    const/4 v2, 0x1
+    invoke-static {p0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v1
+    invoke-virtual {v1}, Landroid/widget/Toast;->show()V
+
     .line 350
     :try_start_0
     sget v1, Lmobi/beyondpod/ui/views/MasterView;->_InstanceCount:I
@@ -2530,6 +2551,12 @@
 
     .line 379
     :cond_1
+    # DIAG: Toast to confirm isInitialized() returned true in MasterView
+    const-string v1, "BP: isInit=true, continuing"
+    const/4 v2, 0x1
+    invoke-static {p0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v1
+    invoke-virtual {v1}, Landroid/widget/Toast;->show()V
     invoke-static {}, Lmobi/beyondpod/rsscore/Configuration;->orientationLock()I
 
     move-result v1
@@ -2625,6 +2652,13 @@
     invoke-direct {v1, p0}, Lmobi/beyondpod/ui/core/volley/ImageLoaderTrack;-><init>(Landroid/support/v4/app/FragmentActivity;)V
 
     iput-object v1, p0, Lmobi/beyondpod/ui/views/MasterView;->_ImageLoader:Lmobi/beyondpod/ui/core/volley/ImageLoader;
+
+    # DIAG: Toast to confirm we reached setContentView
+    const-string v2, "BP: about to setContentView"
+    const/4 v3, 0x1
+    invoke-static {p0, v2, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v2
+    invoke-virtual {v2}, Landroid/widget/Toast;->show()V
 
     const v1, 0x7f0c007e
 
@@ -2862,7 +2896,17 @@
 
     invoke-direct {v3, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
+    const-string v4, "DIAG: onCreate exception"
+    invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+
     invoke-virtual {v3, p1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+
+    const/4 v4, 0x0
+    invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
+
+    const-string v4, "OK"
+    const/4 v5, 0x0
+    invoke-virtual {v3, v4, v5}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     invoke-virtual {v3}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
