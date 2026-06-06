@@ -129,6 +129,13 @@
     .line 79
     invoke-super {p0, p1}, Landroid/support/v7/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
 
+    # DIAG: Toast to confirm Splash.onCreate() started
+    const-string v0, "BP: Splash started"
+    const/4 v1, 0x1
+    invoke-static {p0, v0, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v0
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+
     .line 80
     sget-object p1, Lmobi/beyondpod/ui/views/Splash;->TAG:Ljava/lang/String;
 
@@ -156,6 +163,13 @@
     move-result v3
 
     if-eqz v3, :cond_0
+
+    # DIAG: Toast - Splash isInitialized()=true, about to start MasterView
+    const-string v4, "BP: Splash isInit=true, starting MV"
+    const/4 v5, 0x1
+    invoke-static {p0, v4, v5}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v4
+    invoke-virtual {v4}, Landroid/widget/Toast;->show()V
 
     .line 120
     new-instance p1, Landroid/content/Intent;

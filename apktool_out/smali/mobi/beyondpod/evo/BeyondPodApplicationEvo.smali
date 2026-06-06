@@ -639,8 +639,22 @@
 .method public onCreate()V
     .locals 3
 
+    # DIAG: Toast before super.onCreate() (before BeyondPodApplication.initialize() runs)
+    const-string v0, "BP: pre-super"
+    const/4 v1, 0x1
+    invoke-static {p0, v0, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v0
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+
     .line 425
     invoke-super {p0}, Lmobi/beyondpod/BeyondPodApplication;->onCreate()V
+
+    # DIAG: Toast after super.onCreate() - if this appears, initialize() completed OK
+    const-string v0, "BP: post-super"
+    const/4 v1, 0x1
+    invoke-static {p0, v0, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v0
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
     # Crashlytics removed — service is defunct
 
