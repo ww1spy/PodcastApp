@@ -1515,6 +1515,13 @@
     .line 137
     invoke-super {p0}, Landroid/app/Application;->onCreate()V
 
+    # DIAG: Toast oA1 - right after super.onCreate()
+    const-string v3, "BP: oA1-superDone"
+    const/4 v4, 0x1
+    invoke-static {p0, v3, v4}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v3
+    invoke-virtual {v3}, Landroid/widget/Toast;->show()V
+
     .line 139
     new-instance v0, Landroid/os/Handler;
 
@@ -1659,6 +1666,13 @@
 
     invoke-virtual {v0, v1}, Landroid/os/PowerManager$WakeLock;->setReferenceCounted(Z)V
 
+    # DIAG: Toast oA7 - before BeyondPodApplication$2 handler creation
+    const-string v3, "BP: oA7-preHandler"
+    const/4 v4, 0x1
+    invoke-static {p0, v3, v4}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v3
+    invoke-virtual {v3}, Landroid/widget/Toast;->show()V
+
     .line 179
     :cond_2
     new-instance v0, Lmobi/beyondpod/BeyondPodApplication$2;
@@ -1679,6 +1693,13 @@
 
     .line 201
     invoke-static {}, Lmobi/beyondpod/services/player/MediaButtonIntentReceiver;->touch()V
+
+    # DIAG: Toast oA10 - right before initialize()
+    const-string v3, "BP: oA10-preInit"
+    const/4 v4, 0x1
+    invoke-static {p0, v3, v4}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v3
+    invoke-virtual {v3}, Landroid/widget/Toast;->show()V
 
     .line 203
     invoke-virtual {p0}, Lmobi/beyondpod/BeyondPodApplication;->initialize()V
