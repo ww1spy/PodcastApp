@@ -121,9 +121,7 @@
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
 
-    # CRITICAL: Must be before super.onCreate() — AppCompat 27.0.2 reads this flag
-    # inside AppCompatDelegateImpl.onCreate() and calls recreate() if mode mismatches,
-    # causing an infinite blank-screen recreation loop on Android 10+ with targetSdk 29.
+    # Night mode before super — prevents AppCompat recreation loop on Android 10+
     const/4 v0, 0x1
     invoke-static {v0}, Landroid/support/v7/app/AppCompatDelegate;->setDefaultNightMode(I)V
 
@@ -132,6 +130,24 @@
     :try_end_super
     .catch Ljava/lang/Throwable; {:try_start_super .. :try_end_super} :catch_super
 
+    # If app initialized successfully, hand off to MasterView immediately
+    invoke-static {}, Lmobi/beyondpod/BeyondPodApplication;->isInitialized()Z
+    move-result v0
+
+    if-eqz v0, :not_initialized
+
+    # Initialized: start MasterView with explicit intent and finish Splash
+    new-instance v0, Landroid/content/Intent;
+    invoke-virtual {p0}, Lmobi/beyondpod/ui/views/Splash;->getApplicationContext()Landroid/content/Context;
+    move-result-object v1
+    const-class v2, Lmobi/beyondpod/ui/views/MasterView;
+    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    invoke-virtual {p0, v0}, Lmobi/beyondpod/ui/views/Splash;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0}, Lmobi/beyondpod/ui/views/Splash;->finish()V
+    return-void
+
+    # Not initialized: show splash screen with whatever error is available
+    :not_initialized
     :try_start_layout
     sget v0, Lmobi/beyondpod/R$layout;->splash:I
     invoke-virtual {p0, v0}, Lmobi/beyondpod/ui/views/Splash;->setContentView(I)V
@@ -143,6 +159,14 @@
     if-eqz v0, :done
 
     sget-object v1, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
+    if-nez v1, :has_text
+
+    sget-object v1, Lmobi/beyondpod/rsscore/Configuration;->ConfigurationInitErrorMsg:Ljava/lang/String;
+    if-nez v1, :has_text
+
+    const-string v1, "Waiting for storage to be mounted..."
+
+    :has_text
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
     :try_end_layout
     .catch Ljava/lang/Throwable; {:try_start_layout .. :try_end_layout} :catch_layout
