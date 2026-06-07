@@ -1510,206 +1510,36 @@
 .end method
 
 .method public onCreate()V
-    .locals 5
+    .locals 3
 
-    # DIAG: Toast oA0 - very first line, before Application.super
-    const-string v3, "BP: oA0-BPA-entered"
-    const/4 v4, 0x1
-    invoke-static {p0, v3, v4}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
-    move-result-object v3
-    invoke-virtual {v3}, Landroid/widget/Toast;->show()V
+    # DIAG skeleton: Log immediately (no Looper needed)
+    const-string v0, "BP_DIAG"
+    const-string v1, "BPA.onCreate SKELETON: entered"
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 137
+    # DIAG Toast
+    const-string v0, "BP: SKEL-start"
+    const/4 v1, 0x1
+    invoke-static {p0, v0, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v0
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+
     invoke-super {p0}, Landroid/app/Application;->onCreate()V
 
-    # DIAG: Toast oA1 - right after super.onCreate()
-    const-string v3, "BP: oA1-superDone"
-    const/4 v4, 0x1
-    invoke-static {p0, v3, v4}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
-    move-result-object v3
-    invoke-virtual {v3}, Landroid/widget/Toast;->show()V
+    # DIAG Log after super
+    const-string v0, "BP_DIAG"
+    const-string v1, "BPA.onCreate SKELETON: after super"
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 139
-    new-instance v0, Landroid/os/Handler;
-
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
-
-    sput-object v0, Lmobi/beyondpod/BeyondPodApplication;->_wakeHandler:Landroid/os/Handler;
-
-    .line 141
-    sget-object v0, Lmobi/beyondpod/BeyondPodApplication;->TAG:Ljava/lang/String;
-
-    const-string v1, "**************************************************************"
-
-    invoke-static {v0, v1}, Lmobi/beyondpod/rsscore/helpers/CoreHelper;->writeTraceEntry(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 142
-    sget-object v0, Lmobi/beyondpod/BeyondPodApplication;->TAG:Ljava/lang/String;
-
-    const-string v1, "************ BeyondPod Process is starting *******************"
-
-    invoke-static {v0, v1}, Lmobi/beyondpod/rsscore/helpers/CoreHelper;->writeTraceEntry(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 145
-    invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
-
+    # DIAG Toast after super
+    const-string v0, "BP: SKEL-done"
+    const/4 v1, 0x1
+    invoke-static {p0, v0, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
     move-result-object v0
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    new-instance v1, Lmobi/beyondpod/BeyondPodApplication$1;
-
-    invoke-direct {v1, p0}, Lmobi/beyondpod/BeyondPodApplication$1;-><init>(Lmobi/beyondpod/BeyondPodApplication;)V
-
-    invoke-virtual {v0, v1}, Ljava/lang/Runtime;->addShutdownHook(Ljava/lang/Thread;)V
-
-    .line 155
-    sget-object v0, Lmobi/beyondpod/BeyondPodApplication;->_Instance:Lmobi/beyondpod/BeyondPodApplication;
-
-    if-eqz v0, :cond_0
-
-    .line 157
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    const-string v1, "Not a singleton"
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    .line 160
-    :cond_0
+    # Set singleton reference so other code does not NPE
     sput-object p0, Lmobi/beyondpod/BeyondPodApplication;->_Instance:Lmobi/beyondpod/BeyondPodApplication;
-
-    const-string v0, "wifi"
-
-    .line 162
-    invoke-virtual {p0, v0}, Lmobi/beyondpod/BeyondPodApplication;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/net/wifi/WifiManager;
-
-    sput-object v0, Lmobi/beyondpod/BeyondPodApplication;->_WiFiMgr:Landroid/net/wifi/WifiManager;
-
-    .line 163
-    sget-object v0, Lmobi/beyondpod/BeyondPodApplication;->_WiFiMgr:Landroid/net/wifi/WifiManager;
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_1
-
-    .line 165
-    sget-object v0, Lmobi/beyondpod/BeyondPodApplication;->_WiFiMgr:Landroid/net/wifi/WifiManager;
-
-    const/4 v2, 0x3
-
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v0, v2, v3}, Landroid/net/wifi/WifiManager;->createWifiLock(ILjava/lang/String;)Landroid/net/wifi/WifiManager$WifiLock;
-
-    move-result-object v0
-
-    sput-object v0, Lmobi/beyondpod/BeyondPodApplication;->_BPWifiLock:Landroid/net/wifi/WifiManager$WifiLock;
-
-    .line 166
-    sget-object v0, Lmobi/beyondpod/BeyondPodApplication;->_BPWifiLock:Landroid/net/wifi/WifiManager$WifiLock;
-
-    invoke-virtual {v0, v1}, Landroid/net/wifi/WifiManager$WifiLock;->setReferenceCounted(Z)V
-
-    :cond_1
-    const-string v0, "power"
-
-    .line 169
-    invoke-virtual {p0, v0}, Lmobi/beyondpod/BeyondPodApplication;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/os/PowerManager;
-
-    if-eqz v0, :cond_2
-
-    const/4 v2, 0x1
-
-    .line 172
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v4, " - Screen OFF"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v0, v2, v3}, Landroid/os/PowerManager;->newWakeLock(ILjava/lang/String;)Landroid/os/PowerManager$WakeLock;
-
-    move-result-object v0
-
-    sput-object v0, Lmobi/beyondpod/BeyondPodApplication;->_BPWakeLock:Landroid/os/PowerManager$WakeLock;
-
-    .line 173
-    sget-object v0, Lmobi/beyondpod/BeyondPodApplication;->_BPWakeLock:Landroid/os/PowerManager$WakeLock;
-
-    invoke-virtual {v0, v1}, Landroid/os/PowerManager$WakeLock;->setReferenceCounted(Z)V
-
-    # DIAG: Toast oA7 - before BeyondPodApplication$2 handler creation
-    const-string v3, "BP: oA7-preHandler"
-    const/4 v4, 0x1
-    invoke-static {p0, v3, v4}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
-    move-result-object v3
-    invoke-virtual {v3}, Landroid/widget/Toast;->show()V
-
-    .line 179
-    :cond_2
-    new-instance v0, Lmobi/beyondpod/BeyondPodApplication$2;
-
-    invoke-direct {v0, p0}, Lmobi/beyondpod/BeyondPodApplication$2;-><init>(Lmobi/beyondpod/BeyondPodApplication;)V
-
-    sput-object v0, Lmobi/beyondpod/BeyondPodApplication;->_Handler:Landroid/os/Handler;
-
-    .line 197
-    sget-object v0, Lmobi/beyondpod/BeyondPodApplication;->_BPWakeLock:Landroid/os/PowerManager$WakeLock;
-
-    const-wide/16 v1, 0x7d0
-
-    invoke-virtual {v0, v1, v2}, Landroid/os/PowerManager$WakeLock;->acquire(J)V
-
-    .line 199
-    invoke-direct {p0}, Lmobi/beyondpod/BeyondPodApplication;->startMonitoringNetworkConnectivity()V
-
-    .line 201
-    invoke-static {}, Lmobi/beyondpod/services/player/MediaButtonIntentReceiver;->touch()V
-
-    # DIAG: Toast oA10 - right before initialize()
-    const-string v3, "BP: oA10-preInit"
-    const/4 v4, 0x1
-    invoke-static {p0, v3, v4}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
-    move-result-object v3
-    invoke-virtual {v3}, Landroid/widget/Toast;->show()V
-
-    .line 203
-    invoke-virtual {p0}, Lmobi/beyondpod/BeyondPodApplication;->initialize()V
 
     return-void
 .end method
