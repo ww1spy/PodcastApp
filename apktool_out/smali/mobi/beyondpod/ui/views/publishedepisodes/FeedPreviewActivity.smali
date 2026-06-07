@@ -277,10 +277,6 @@
     .locals 0
 
     .line 322
-    invoke-static {p1}, Luk/co/chrisjenx/calligraphy/CalligraphyContextWrapper;->wrap(Landroid/content/Context;)Landroid/content/ContextWrapper;
-
-    move-result-object p1
-
     invoke-super {p0, p1}, Landroid/support/v7/app/AppCompatActivity;->attachBaseContext(Landroid/content/Context;)V
 
     return-void

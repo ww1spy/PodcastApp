@@ -66,10 +66,6 @@
     .locals 0
 
     .line 123
-    invoke-static {p1}, Luk/co/chrisjenx/calligraphy/CalligraphyContextWrapper;->wrap(Landroid/content/Context;)Landroid/content/ContextWrapper;
-
-    move-result-object p1
-
     invoke-super {p0, p1}, Landroid/support/v4/app/FragmentActivity;->attachBaseContext(Landroid/content/Context;)V
 
     return-void
