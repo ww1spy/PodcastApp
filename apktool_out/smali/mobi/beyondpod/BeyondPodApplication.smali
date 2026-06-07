@@ -1512,6 +1512,13 @@
 .method public onCreate()V
     .locals 5
 
+    # DIAG: Toast oA0 - very first line, before Application.super
+    const-string v3, "BP: oA0-BPA-entered"
+    const/4 v4, 0x1
+    invoke-static {p0, v3, v4}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v3
+    invoke-virtual {v3}, Landroid/widget/Toast;->show()V
+
     .line 137
     invoke-super {p0}, Landroid/app/Application;->onCreate()V
 

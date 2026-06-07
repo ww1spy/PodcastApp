@@ -637,7 +637,7 @@
 .end method
 
 .method public onCreate()V
-    .locals 3
+    .locals 5
 
     # DIAG: Toast before super.onCreate() (before BeyondPodApplication.initialize() runs)
     const-string v0, "BP: pre-super"
@@ -647,7 +647,10 @@
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
     .line 425
+    :try_start_super
     invoke-super {p0}, Lmobi/beyondpod/BeyondPodApplication;->onCreate()V
+    :try_end_super
+    .catch Ljava/lang/Throwable; {:try_start_super .. :try_end_super} :catch_super
 
     # DIAG: Toast after super.onCreate() - if this appears, initialize() completed OK
     const-string v0, "BP: post-super"
@@ -655,6 +658,36 @@
     invoke-static {p0, v0, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
     move-result-object v0
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+
+    goto :goto_after_super
+
+    :catch_super
+    move-exception v0
+
+    # Build error string: class name + message
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+    move-result-object v1
+
+    # Prefix it
+    new-instance v2, Ljava/lang/StringBuilder;
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    const-string v3, "CRASH in BPA.onCreate: "
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
+
+    # Show long Toast with the exception
+    const/4 v3, 0x1
+    invoke-static {p0, v1, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v1
+    invoke-virtual {v1}, Landroid/widget/Toast;->show()V
+
+    return-void
+
+    :goto_after_super
 
     # Crashlytics removed — service is defunct
 
