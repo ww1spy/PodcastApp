@@ -1116,6 +1116,13 @@
 
     const/4 v0, 0x0
 
+    # DIAG: Toast A - confirm initialize() was entered
+    const-string v2, "BP: init-A: entered"
+    const/4 v3, 0x1
+    invoke-static {p0, v2, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v2
+    invoke-virtual {v2}, Landroid/widget/Toast;->show()V
+
     .line 211
     :try_start_0
     sput-object v0, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
@@ -1129,6 +1136,13 @@
 
     sput-object v0, Lmobi/beyondpod/BeyondPodApplication;->messageBus:Lmobi/beyondpod/rsscore/helpers/SimpleMessageBus;
 
+    # DIAG: Toast B - before registerEnvironmentListeners
+    const-string v2, "BP: init-B: regListeners"
+    const/4 v3, 0x1
+    invoke-static {p0, v2, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v2
+    invoke-virtual {v2}, Landroid/widget/Toast;->show()V
+
     .line 214
     invoke-virtual {p0}, Lmobi/beyondpod/BeyondPodApplication;->registerEnvironmentListeners()V
 
@@ -1138,6 +1152,13 @@
     invoke-direct {v0}, Lmobi/beyondpod/services/player/PlayList;-><init>()V
 
     sput-object v0, Lmobi/beyondpod/BeyondPodApplication;->_PlayList:Lmobi/beyondpod/services/player/PlayList;
+
+    # DIAG: Toast C - before initializeWidgets
+    const-string v2, "BP: init-C: initWidgets"
+    const/4 v3, 0x1
+    invoke-static {p0, v2, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v2
+    invoke-virtual {v2}, Landroid/widget/Toast;->show()V
 
     .line 218
     invoke-virtual {p0}, Lmobi/beyondpod/BeyondPodApplication;->initializeWidgets()V
@@ -1150,6 +1171,13 @@
     const-class v2, Lmobi/beyondpod/services/player/PlayListEvents$PlayListEvent;
 
     invoke-virtual {v0, v1, v2}, Lmobi/beyondpod/rsscore/helpers/SimpleMessageBus;->subscribe(Ljava/lang/Object;Ljava/lang/Class;)V
+
+    # DIAG: Toast D - before Configuration.initialize
+    const-string v2, "BP: init-D: Config.init"
+    const/4 v3, 0x1
+    invoke-static {p0, v2, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v2
+    invoke-virtual {v2}, Landroid/widget/Toast;->show()V
 
     .line 222
     invoke-virtual {p0}, Lmobi/beyondpod/BeyondPodApplication;->getApplicationContext()Landroid/content/Context;
@@ -1169,6 +1197,13 @@
 
     invoke-static {v0, v1}, Lmobi/beyondpod/rsscore/helpers/CoreHelper;->writeTraceEntry(Ljava/lang/String;Ljava/lang/String;)V
 
+    # DIAG: Toast E - before ChromecastDevice construction
+    const-string v2, "BP: init-E: Chromecast"
+    const/4 v3, 0x1
+    invoke-static {p0, v2, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v2
+    invoke-virtual {v2}, Landroid/widget/Toast;->show()V
+
     .line 228
     :cond_0
     new-instance v0, Lmobi/beyondpod/services/player/impl/ChromecastDevice;
@@ -1180,6 +1215,13 @@
     invoke-direct {v0, v1}, Lmobi/beyondpod/services/player/impl/ChromecastDevice;-><init>(Landroid/content/Context;)V
 
     sput-object v0, Lmobi/beyondpod/BeyondPodApplication;->_ChromecastDevice:Lmobi/beyondpod/services/player/impl/ChromecastDevice;
+
+    # DIAG: Toast F - ChromecastDevice done, try block completing
+    const-string v2, "BP: init-F: done"
+    const/4 v3, 0x1
+    invoke-static {p0, v2, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v2
+    invoke-virtual {v2}, Landroid/widget/Toast;->show()V
 
     # GoogleAnalytics SDK uses non-SDK interfaces that throw on targetSdk >= 28; skip it
     const/4 v0, 0x0
