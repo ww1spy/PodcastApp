@@ -690,26 +690,7 @@
     :goto_after_super
 
     # Crashlytics removed — service is defunct
-
-    .line 427
-    new-instance v0, Luk/co/chrisjenx/calligraphy/CalligraphyConfig$Builder;
-
-    invoke-direct {v0}, Luk/co/chrisjenx/calligraphy/CalligraphyConfig$Builder;-><init>()V
-
-    const v1, 0x7f0400c1
-
-    .line 429
-    invoke-virtual {v0, v1}, Luk/co/chrisjenx/calligraphy/CalligraphyConfig$Builder;->setFontAttrId(I)Luk/co/chrisjenx/calligraphy/CalligraphyConfig$Builder;
-
-    move-result-object v0
-
-    .line 430
-    invoke-virtual {v0}, Luk/co/chrisjenx/calligraphy/CalligraphyConfig$Builder;->build()Luk/co/chrisjenx/calligraphy/CalligraphyConfig;
-
-    move-result-object v0
-
-    .line 427
-    invoke-static {v0}, Luk/co/chrisjenx/calligraphy/CalligraphyConfig;->initDefault(Luk/co/chrisjenx/calligraphy/CalligraphyConfig;)V
+    # Calligraphy removed — uses restricted reflection APIs blocked on targetSdk >= 28
 
     return-void
 .end method
