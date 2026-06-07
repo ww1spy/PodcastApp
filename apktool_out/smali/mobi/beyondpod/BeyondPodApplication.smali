@@ -1512,6 +1512,10 @@
 .method public onCreate()V
     .locals 2
 
+    # Set before any Activity can start — AppCompat reads this in attachBaseContext/onCreate
+    const/4 v0, 0x1
+    invoke-static {v0}, Landroid/support/v7/app/AppCompatDelegate;->setDefaultNightMode(I)V
+
     invoke-super {p0}, Landroid/app/Application;->onCreate()V
 
     # Set singleton so getInstance() does not NPE

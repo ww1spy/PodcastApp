@@ -119,14 +119,20 @@
 
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
-    .locals 2
+    .locals 3
 
-    invoke-super {p0, p1}, Landroid/support/v7/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
-
-    # Prevent AppCompat night-mode recreation loop on Android 10+
+    # CRITICAL: Must be before super.onCreate() — AppCompat 27.0.2 reads this flag
+    # inside AppCompatDelegateImpl.onCreate() and calls recreate() if mode mismatches,
+    # causing an infinite blank-screen recreation loop on Android 10+ with targetSdk 29.
     const/4 v0, 0x1
     invoke-static {v0}, Landroid/support/v7/app/AppCompatDelegate;->setDefaultNightMode(I)V
 
+    :try_start_super
+    invoke-super {p0, p1}, Landroid/support/v7/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
+    :try_end_super
+    .catch Ljava/lang/Throwable; {:try_start_super .. :try_end_super} :catch_super
+
+    :try_start_layout
     sget v0, Lmobi/beyondpod/R$layout;->splash:I
     invoke-virtual {p0, v0}, Lmobi/beyondpod/ui/views/Splash;->setContentView(I)V
 
@@ -134,10 +140,43 @@
     invoke-virtual {p0, v0}, Lmobi/beyondpod/ui/views/Splash;->findViewById(I)Landroid/view/View;
     move-result-object v0
     check-cast v0, Landroid/widget/TextView;
+    if-eqz v0, :done
 
     sget-object v1, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    :try_end_layout
+    .catch Ljava/lang/Throwable; {:try_start_layout .. :try_end_layout} :catch_layout
 
+    :done
+    return-void
+
+    :catch_super
+    move-exception v0
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+    move-result-object v1
+    const-string v2, "DIAG:super.threw:"
+    invoke-virtual {v2, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    move-result-object v1
+    sput-object v1, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
+    const/4 v0, 0x1
+    invoke-static {p0, v1, v0}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v0
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+    return-void
+
+    :catch_layout
+    move-exception v0
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+    move-result-object v1
+    const-string v2, "DIAG:layout.threw:"
+    invoke-virtual {v2, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    move-result-object v1
+    invoke-virtual {p0}, Lmobi/beyondpod/ui/views/Splash;->getApplicationContext()Landroid/content/Context;
+    move-result-object v2
+    const/4 v0, 0x1
+    invoke-static {v2, v1, v0}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v0
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
     return-void
 .end method
 
