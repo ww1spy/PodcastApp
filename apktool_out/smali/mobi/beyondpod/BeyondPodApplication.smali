@@ -1510,36 +1510,18 @@
 .end method
 
 .method public onCreate()V
-    .locals 3
-
-    # DIAG skeleton: Log immediately (no Looper needed)
-    const-string v0, "BP_DIAG"
-    const-string v1, "BPA.onCreate SKELETON: entered"
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    # DIAG Toast
-    const-string v0, "BP: SKEL-start"
-    const/4 v1, 0x1
-    invoke-static {p0, v0, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
-    move-result-object v0
-    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+    .locals 2
 
     invoke-super {p0}, Landroid/app/Application;->onCreate()V
 
-    # DIAG Log after super
-    const-string v0, "BP_DIAG"
-    const-string v1, "BPA.onCreate SKELETON: after super"
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    # DIAG Toast after super
-    const-string v0, "BP: SKEL-done"
-    const/4 v1, 0x1
-    invoke-static {p0, v0, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
-    move-result-object v0
-    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
-
-    # Set singleton reference so other code does not NPE
+    # Set singleton so getInstance() does not NPE
     sput-object p0, Lmobi/beyondpod/BeyondPodApplication;->_Instance:Lmobi/beyondpod/BeyondPodApplication;
+
+    # Force isInitialized() to return false so Splash shows its status screen
+    # (if lastApplicationException is non-null, isInitialized() returns false)
+    # The Splash status TextView will display this string as our diagnostic.
+    const-string v0, "DIAG: BPA.onCreate skeleton reached - initialize() not yet called"
+    sput-object v0, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
 
     return-void
 .end method
