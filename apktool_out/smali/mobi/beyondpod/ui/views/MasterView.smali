@@ -158,7 +158,16 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 1
+    .locals 3
+
+    # DIAG: confirm constructor reached (use BPA app context, Activity.attach() not called yet)
+    invoke-static {}, Lmobi/beyondpod/BeyondPodApplication;->getInstance()Lmobi/beyondpod/BeyondPodApplication;
+    move-result-object v0
+    const-string v1, "BP: MV-init reached"
+    const/4 v2, 0x0
+    invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v0
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
     .line 115
     invoke-direct {p0}, Landroid/support/v7/app/AppCompatActivity;-><init>()V
@@ -470,17 +479,13 @@
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
     move-result-object v0
 
-    new-instance v1, Landroid/app/AlertDialog$Builder;
-    invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
-    const-string v2, "DIAG: isInit=false"
-    invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
-    invoke-virtual {v1, v0}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
-    const/4 v2, 0x0
-    invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
-    const-string v2, "OK"
-    const/4 v3, 0x0
-    invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-    invoke-virtual {v1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
+    # Use application-context Toast instead of AlertDialog (safe regardless of window state)
+    invoke-virtual {p0}, Lmobi/beyondpod/ui/views/MasterView;->getApplicationContext()Landroid/content/Context;
+    move-result-object v1
+    const/4 v2, 0x1
+    invoke-static {v1, v0, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v1
+    invoke-virtual {v1}, Landroid/widget/Toast;->show()V
 
     return-void
 .end method
@@ -2890,7 +2895,7 @@
 
     move-result-object p1
 
-    # DIAGNOSTIC: Append stack trace and show AlertDialog (stays visible for screenshot)
+    # DIAGNOSTIC: Append stack trace and show via application-context Toast (safe even if super threw)
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -2907,23 +2912,16 @@
 
     move-result-object p1
 
-    new-instance v3, Landroid/app/AlertDialog$Builder;
+    # Persist full error so Splash can display it on next launch
+    sput-object p1, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
 
-    invoke-direct {v3, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
-
-    const-string v4, "DIAG: onCreate exception"
-    invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
-
-    invoke-virtual {v3, p1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
-
-    const/4 v4, 0x0
-    invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
-
-    const-string v4, "OK"
-    const/4 v5, 0x0
-    invoke-virtual {v3, v4, v5}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    invoke-virtual {v3}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
+    # Show Toast using application context — never throws BadTokenException
+    invoke-virtual {p0}, Lmobi/beyondpod/ui/views/MasterView;->getApplicationContext()Landroid/content/Context;
+    move-result-object v3
+    const/4 v4, 0x1
+    invoke-static {v3, p1, v4}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v3
+    invoke-virtual {v3}, Landroid/widget/Toast;->show()V
 
     :goto_2
     return-void
