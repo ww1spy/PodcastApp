@@ -119,7 +119,7 @@
 
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
-    .locals 3
+    .locals 5
 
     # Night mode before super — prevents AppCompat recreation loop on Android 10+
     const/4 v0, 0x1
@@ -129,6 +129,40 @@
     invoke-super {p0, p1}, Landroid/support/v7/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
     :try_end_super
     .catch Ljava/lang/Throwable; {:try_start_super .. :try_end_super} :catch_super
+
+    # Read previous-launch diagnostic trace from bpdiag_prev.txt and surface on error screen
+    :try_start_diagr
+    invoke-virtual {p0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
+    move-result-object v0
+    new-instance v1, Ljava/io/File;
+    const-string v2, "bpdiag_prev.txt"
+    invoke-direct {v1, v0, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    invoke-virtual {v1}, Ljava/io/File;->exists()Z
+    move-result v2
+    if-eqz v2, :diagr_done
+    const/16 v3, 0x1000
+    new-array v2, v3, [B
+    new-instance v4, Ljava/io/FileInputStream;
+    invoke-direct {v4, v1}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+    invoke-virtual {v4, v2}, Ljava/io/FileInputStream;->read([B)I
+    move-result v3
+    invoke-virtual {v4}, Ljava/io/FileInputStream;->close()V
+    if-lez v3, :diagr_delete
+    sget-object v0, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
+    if-nez v0, :diagr_delete
+    const/4 v0, 0x0
+    new-instance v4, Ljava/lang/String;
+    invoke-direct {v4, v2, v0, v3}, Ljava/lang/String;-><init>([BII)V
+    sput-object v4, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
+    :diagr_delete
+    invoke-virtual {v1}, Ljava/io/File;->delete()Z
+    :diagr_done
+    :try_end_diagr
+    .catch Ljava/lang/Throwable; {:try_start_diagr .. :try_end_diagr} :catch_diagr
+    goto :after_diagr
+    :catch_diagr
+    move-exception v0
+    :after_diagr
 
     # Read crash checkpoint written by MasterView on previous crash; surface it as lastApplicationException
     :try_start_cpr

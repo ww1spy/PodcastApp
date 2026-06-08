@@ -1509,12 +1509,70 @@
     .end annotation
 .end method
 
+# Appends msg+newline to <cacheDir>/bpdiag.txt; silently swallows all errors.
+.method static diagWrite(Landroid/content/Context;Ljava/lang/String;)V
+    .locals 3
+
+    :try_start_dw
+    invoke-virtual {p0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
+    move-result-object v0
+    new-instance v1, Ljava/lang/StringBuilder;
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    move-result-object v2
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
+    const-string v2, "/bpdiag.txt"
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
+    new-instance v0, Ljava/io/FileOutputStream;
+    const/4 v2, 0x1
+    invoke-direct {v0, v1, v2}, Ljava/io/FileOutputStream;-><init>(Ljava/lang/String;Z)V
+    invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
+    move-result-object v1
+    invoke-virtual {v0, v1}, Ljava/io/FileOutputStream;->write([B)V
+    const-string v1, "\n"
+    invoke-virtual {v1}, Ljava/lang/String;->getBytes()[B
+    move-result-object v1
+    invoke-virtual {v0, v1}, Ljava/io/FileOutputStream;->write([B)V
+    invoke-virtual {v0}, Ljava/io/FileOutputStream;->close()V
+    :try_end_dw
+    .catch Ljava/lang/Throwable; {:try_start_dw .. :try_end_dw} :catch_dw
+    goto :after_dw
+    :catch_dw
+    move-exception v0
+    :after_dw
+
+    return-void
+.end method
+
 .method public onCreate()V
     .locals 5
+
+    # Rotate log: rename bpdiag.txt -> bpdiag_prev.txt so Splash can display last-launch trace
+    :try_start_bpa_rotate
+    invoke-virtual {p0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
+    move-result-object v0
+    new-instance v1, Ljava/io/File;
+    const-string v2, "bpdiag.txt"
+    invoke-direct {v1, v0, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    new-instance v2, Ljava/io/File;
+    const-string v3, "bpdiag_prev.txt"
+    invoke-direct {v2, v0, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
+    :try_end_bpa_rotate
+    .catch Ljava/lang/Throwable; {:try_start_bpa_rotate .. :try_end_bpa_rotate} :catch_bpa_rotate
+    goto :after_bpa_rotate
+    :catch_bpa_rotate
+    move-exception v0
+    :after_bpa_rotate
 
     const-string v0, "BPDiag"
     const-string v1, "BPA-0:oncreate-entered"
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
 
     # Set before any Activity can start — prevents AppCompat recreation loop on Android 10+
     const/4 v0, 0x1
@@ -1523,6 +1581,7 @@
     const-string v0, "BPDiag"
     const-string v1, "BPA-1:after-nightmode"
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
 
     # Checkpoint A: BPA.onCreate() entered
     :try_start_bpa_a
@@ -1547,6 +1606,7 @@
     const-string v0, "BPDiag"
     const-string v1, "BPA-2:after-cp-a"
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 137
     invoke-super {p0}, Landroid/app/Application;->onCreate()V
@@ -1554,6 +1614,7 @@
     const-string v0, "BPDiag"
     const-string v1, "BPA-3:after-app-super"
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 139
     new-instance v0, Landroid/os/Handler;
@@ -1596,6 +1657,7 @@
     const-string v0, "BPDiag"
     const-string v1, "BPA-4:after-instance-set"
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
 
     const-string v0, "wifi"
     .line 162
@@ -1682,6 +1744,7 @@
     const-string v0, "BPDiag"
     const-string v1, "BPA-5:after-cp-b"
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 197
     sget-object v0, Lmobi/beyondpod/BeyondPodApplication;->_BPWakeLock:Landroid/os/PowerManager$WakeLock;
@@ -1691,6 +1754,7 @@
     const-string v0, "BPDiag"
     const-string v1, "BPA-6:after-wakelock-acq"
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
 
     # Checkpoint C: about to start network monitor
     :try_start_bpa_c
@@ -1715,6 +1779,7 @@
     const-string v0, "BPDiag"
     const-string v1, "BPA-7:after-cp-c"
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 199
     invoke-direct {p0}, Lmobi/beyondpod/BeyondPodApplication;->startMonitoringNetworkConnectivity()V
@@ -1722,6 +1787,7 @@
     const-string v0, "BPDiag"
     const-string v1, "BPA-8:after-netmon"
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
 
     # Checkpoint D: about to call initialize()
     :try_start_bpa_d
@@ -1746,6 +1812,7 @@
     const-string v0, "BPDiag"
     const-string v1, "BPA-9:after-cp-d"
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 201
     invoke-static {}, Lmobi/beyondpod/services/player/MediaButtonIntentReceiver;->touch()V
@@ -1753,6 +1820,7 @@
     const-string v0, "BPDiag"
     const-string v1, "BPA-10:after-mbir-touch"
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 203
     invoke-virtual {p0}, Lmobi/beyondpod/BeyondPodApplication;->initialize()V
@@ -1760,6 +1828,7 @@
     const-string v0, "BPDiag"
     const-string v1, "BPA-11:after-initialize"
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
 
     return-void
 .end method
