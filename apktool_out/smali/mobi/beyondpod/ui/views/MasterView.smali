@@ -81,72 +81,32 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 3
 
-    :try_start_clinit
-    const v0, 0x7f100224
-
-    .line 127
-    invoke-static {v0}, Lmobi/beyondpod/rsscore/helpers/CoreHelper;->loadResourceString(I)Ljava/lang/String;
-
+    # Write crash checkpoint BEFORE anything else (wrapped in try/catch so it can never crash)
+    :try_start_cp0
+    invoke-static {}, Lmobi/beyondpod/BeyondPodApplication;->getInstance()Lmobi/beyondpod/BeyondPodApplication;
     move-result-object v0
-
-    sput-object v0, Lmobi/beyondpod/ui/views/MasterView;->THIS_FEED_ALREADY_EXISTS_IN_CATEGORY:Ljava/lang/String;
-
-    const v0, 0x7f100264
-
-    .line 129
-    invoke-static {v0}, Lmobi/beyondpod/rsscore/helpers/CoreHelper;->loadResourceString(I)Ljava/lang/String;
-
+    const-string v1, "diag"
+    const/4 v2, 0x0
+    invoke-virtual {v0, v1, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
     move-result-object v0
-
-    sput-object v0, Lmobi/beyondpod/ui/views/MasterView;->WELCOME_TO_BEYOND_POD:Ljava/lang/String;
-
-    const v0, 0x7f100261
-
-    .line 131
-    invoke-static {v0}, Lmobi/beyondpod/rsscore/helpers/CoreHelper;->loadResourceString(I)Ljava/lang/String;
-
+    invoke-virtual {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
     move-result-object v0
-
-    sput-object v0, Lmobi/beyondpod/ui/views/MasterView;->BEYOND_POD_WILL_NOW_EXIT:Ljava/lang/String;
-
-    const v0, 0x7f100260
-
-    .line 133
-    invoke-static {v0}, Lmobi/beyondpod/rsscore/helpers/CoreHelper;->loadResourceString(I)Ljava/lang/String;
-
+    const-string v1, "crash_cp"
+    const-string v2, "2:clinit-entered"
+    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
     move-result-object v0
-
-    sput-object v0, Lmobi/beyondpod/ui/views/MasterView;->BEYOND_POD_FAILED_TO_START:Ljava/lang/String;
-
-    const v0, 0x7f100262
-
-    .line 134
-    invoke-static {v0}, Lmobi/beyondpod/rsscore/helpers/CoreHelper;->loadResourceString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lmobi/beyondpod/ui/views/MasterView;->LOADING_EPISODES:Ljava/lang/String;
-
-    const v0, 0x7f100263
-
-    .line 135
-    invoke-static {v0}, Lmobi/beyondpod/rsscore/helpers/CoreHelper;->loadResourceString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    sput-object v0, Lmobi/beyondpod/ui/views/MasterView;->LOADING_FEEDS:Ljava/lang/String;
-    :try_end_clinit
-    .catch Ljava/lang/Throwable; {:try_start_clinit .. :try_end_clinit} :catch_clinit
-
-    return-void
-
-    :catch_clinit
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
+    :try_end_cp0
+    .catch Ljava/lang/Throwable; {:try_start_cp0 .. :try_end_cp0} :catch_cp0
+    goto :after_cp0
+    :catch_cp0
     move-exception v0
-    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
-    move-result-object v1
-    sput-object v1, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
+    :after_cp0
+
+    # Initialize static strings to safe empty values — no loadResourceString() call
+    # avoids any BPA.getInstance() dependency that could crash class initialization
     const-string v0, ""
     sput-object v0, Lmobi/beyondpod/ui/views/MasterView;->THIS_FEED_ALREADY_EXISTS_IN_CATEGORY:Ljava/lang/String;
     sput-object v0, Lmobi/beyondpod/ui/views/MasterView;->WELCOME_TO_BEYOND_POD:Ljava/lang/String;
@@ -154,20 +114,12 @@
     sput-object v0, Lmobi/beyondpod/ui/views/MasterView;->BEYOND_POD_FAILED_TO_START:Ljava/lang/String;
     sput-object v0, Lmobi/beyondpod/ui/views/MasterView;->LOADING_EPISODES:Ljava/lang/String;
     sput-object v0, Lmobi/beyondpod/ui/views/MasterView;->LOADING_FEEDS:Ljava/lang/String;
+
     return-void
 .end method
 
 .method public constructor <init>()V
-    .locals 3
-
-    # DIAG: confirm constructor reached (use BPA app context, Activity.attach() not called yet)
-    invoke-static {}, Lmobi/beyondpod/BeyondPodApplication;->getInstance()Lmobi/beyondpod/BeyondPodApplication;
-    move-result-object v0
-    const-string v1, "BP: MV-init reached"
-    const/4 v2, 0x0
-    invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
-    move-result-object v0
-    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+    .locals 1
 
     .line 115
     invoke-direct {p0}, Landroid/support/v7/app/AppCompatActivity;-><init>()V
@@ -2461,6 +2413,26 @@
     move-result-object v1
     invoke-virtual {v1}, Landroid/widget/Toast;->show()V
 
+    # Checkpoint: write "3:oncreate-entered" to SharedPreferences — survives SIGKILL
+    :try_start_cp_oc
+    const-string v1, "diag"
+    const/4 v2, 0x0
+    invoke-virtual {p0, v1, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    move-result-object v1
+    invoke-virtual {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+    move-result-object v1
+    const-string v2, "crash_cp"
+    const-string v3, "3:oncreate-entered"
+    invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+    move-result-object v1
+    invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->commit()Z
+    :try_end_cp_oc
+    .catch Ljava/lang/Throwable; {:try_start_cp_oc .. :try_end_cp_oc} :catch_cp_oc
+    goto :after_cp_oc
+    :catch_cp_oc
+    move-exception v1
+    :after_cp_oc
+
     .line 350
     :try_start_0
     sget v1, Lmobi/beyondpod/ui/views/MasterView;->_InstanceCount:I
@@ -2837,91 +2809,15 @@
 
     :catch_0
     move-exception p1
-
-    .line 439
-    sget-object v1, Lmobi/beyondpod/ui/views/MasterView;->TAG:Ljava/lang/String;
-
-    const-string v2, "Exception loading the Workspace!"
-
-    invoke-static {v1, v2, p1}, Lmobi/beyondpod/rsscore/helpers/CoreHelper;->logException(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    invoke-static {v1, v2, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
-
-    # Capture full stack trace before exception ref gets overwritten
-    invoke-static {p1}, Landroid/util/Log;->getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
-
-    move-result-object v3
-
-    .line 440
-    sget-object v1, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
-
-    if-eqz v1, :cond_7
-
-    sget-object p1, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
-
-    goto :goto_1
-
-    .line 441
-    :cond_7
-    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 442
-    :goto_1
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    sget-object v2, Lmobi/beyondpod/ui/views/MasterView;->BEYOND_POD_FAILED_TO_START:Ljava/lang/String;
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v2, "\n\n"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p1, "\n\n"
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    sget-object p1, Lmobi/beyondpod/ui/views/MasterView;->BEYOND_POD_WILL_NOW_EXIT:Ljava/lang/String;
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    # DIAGNOSTIC: Append stack trace and show via application-context Toast (safe even if super threw)
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v5, "\n\n---STACK---\n"
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    # Persist full error so Splash can display it on next launch
-    sput-object p1, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
-
-    # Show Toast using application context — never throws BadTokenException
+    invoke-virtual {p1}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+    move-result-object v1
+    sput-object v1, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
     invoke-virtual {p0}, Lmobi/beyondpod/ui/views/MasterView;->getApplicationContext()Landroid/content/Context;
-    move-result-object v3
-    const/4 v4, 0x1
-    invoke-static {v3, p1, v4}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
-    move-result-object v3
-    invoke-virtual {v3}, Landroid/widget/Toast;->show()V
+    move-result-object v2
+    const/4 v3, 0x1
+    invoke-static {v2, v1, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v1
+    invoke-virtual {v1}, Landroid/widget/Toast;->show()V
 
     :goto_2
     return-void

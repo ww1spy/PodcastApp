@@ -130,11 +130,62 @@
     :try_end_super
     .catch Ljava/lang/Throwable; {:try_start_super .. :try_end_super} :catch_super
 
+    # Read crash checkpoint written by MasterView on previous crash; surface it as lastApplicationException
+    :try_start_cpr
+    const-string v0, "diag"
+    const/4 v1, 0x0
+    invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    move-result-object v0
+    const-string v1, "crash_cp"
+    const-string v2, ""
+    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    move-result-object v1
+    invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
+    move-result v2
+    if-nez v2, :cpr_done
+    sget-object v2, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
+    if-nez v2, :cpr_clear_only
+    sput-object v1, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
+    :cpr_clear_only
+    invoke-virtual {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+    move-result-object v0
+    const-string v1, "crash_cp"
+    invoke-interface {v0, v1}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+    move-result-object v0
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
+    :cpr_done
+    :try_end_cpr
+    .catch Ljava/lang/Throwable; {:try_start_cpr .. :try_end_cpr} :catch_cpr
+    goto :after_cpr
+    :catch_cpr
+    move-exception v0
+    :after_cpr
+
     # If app initialized successfully, hand off to MasterView immediately
     invoke-static {}, Lmobi/beyondpod/BeyondPodApplication;->isInitialized()Z
     move-result v0
 
     if-eqz v0, :not_initialized
+
+    # Write checkpoint: about to launch MasterView (survives SIGKILL; MV will overwrite with "2:clinit-entered")
+    :try_start_splash_cp
+    const-string v0, "diag"
+    const/4 v1, 0x0
+    invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    move-result-object v0
+    invoke-virtual {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+    move-result-object v0
+    const-string v1, "crash_cp"
+    const-string v2, "1:splash-pre-launch"
+    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+    move-result-object v0
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
+    :try_end_splash_cp
+    .catch Ljava/lang/Throwable; {:try_start_splash_cp .. :try_end_splash_cp} :catch_splash_cp
+    goto :after_splash_cp
+    :catch_splash_cp
+    move-exception v0
+    :after_splash_cp
 
     # Initialized: start MasterView — wrap in Throwable catch so class-loading
     # errors (ExceptionInInitializerError etc.) surface rather than SIGKILLing silently
