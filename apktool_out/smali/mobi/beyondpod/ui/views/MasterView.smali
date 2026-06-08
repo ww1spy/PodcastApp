@@ -81,8 +81,9 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 2
 
+    :try_start_clinit
     const v0, 0x7f100224
 
     .line 127
@@ -136,7 +137,23 @@
     move-result-object v0
 
     sput-object v0, Lmobi/beyondpod/ui/views/MasterView;->LOADING_FEEDS:Ljava/lang/String;
+    :try_end_clinit
+    .catch Ljava/lang/Throwable; {:try_start_clinit .. :try_end_clinit} :catch_clinit
 
+    return-void
+
+    :catch_clinit
+    move-exception v0
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+    move-result-object v1
+    sput-object v1, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
+    const-string v0, ""
+    sput-object v0, Lmobi/beyondpod/ui/views/MasterView;->THIS_FEED_ALREADY_EXISTS_IN_CATEGORY:Ljava/lang/String;
+    sput-object v0, Lmobi/beyondpod/ui/views/MasterView;->WELCOME_TO_BEYOND_POD:Ljava/lang/String;
+    sput-object v0, Lmobi/beyondpod/ui/views/MasterView;->BEYOND_POD_WILL_NOW_EXIT:Ljava/lang/String;
+    sput-object v0, Lmobi/beyondpod/ui/views/MasterView;->BEYOND_POD_FAILED_TO_START:Ljava/lang/String;
+    sput-object v0, Lmobi/beyondpod/ui/views/MasterView;->LOADING_EPISODES:Ljava/lang/String;
+    sput-object v0, Lmobi/beyondpod/ui/views/MasterView;->LOADING_FEEDS:Ljava/lang/String;
     return-void
 .end method
 
@@ -2522,6 +2539,8 @@
     invoke-virtual {p0, v1}, Lmobi/beyondpod/ui/views/MasterView;->setTheme(I)V
 
     .line 365
+    const/4 v0, 0x1
+    invoke-static {v0}, Landroid/support/v7/app/AppCompatDelegate;->setDefaultNightMode(I)V
     invoke-super {p0, p1}, Landroid/support/v7/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 367
@@ -2807,7 +2826,7 @@
     .line 435
     invoke-direct {p0}, Lmobi/beyondpod/ui/views/MasterView;->registerCommands()V
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_2
 
@@ -2839,7 +2858,7 @@
 
     .line 441
     :cond_7
-    invoke-virtual {p1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p1
 
