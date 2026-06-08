@@ -136,7 +136,9 @@
 
     if-eqz v0, :not_initialized
 
-    # Initialized: start MasterView with explicit intent and finish Splash
+    # Initialized: start MasterView — wrap in Throwable catch so class-loading
+    # errors (ExceptionInInitializerError etc.) surface rather than SIGKILLing silently
+    :try_start_mv
     new-instance v0, Landroid/content/Intent;
     invoke-virtual {p0}, Lmobi/beyondpod/ui/views/Splash;->getApplicationContext()Landroid/content/Context;
     move-result-object v1
@@ -144,7 +146,23 @@
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
     invoke-virtual {p0, v0}, Lmobi/beyondpod/ui/views/Splash;->startActivity(Landroid/content/Intent;)V
     invoke-virtual {p0}, Lmobi/beyondpod/ui/views/Splash;->finish()V
+    :try_end_mv
+    .catch Ljava/lang/Throwable; {:try_start_mv .. :try_end_mv} :catch_mv
     return-void
+
+    :catch_mv
+    move-exception v0
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+    move-result-object v1
+    const-string v2, "MV-launch threw:"
+    invoke-virtual {v2, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    move-result-object v1
+    sput-object v1, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
+    const/4 v0, 0x1
+    invoke-static {p0, v1, v0}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v0
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+    # Fall through to :not_initialized to show the error on screen
 
     # Not initialized: show splash screen with whatever error is available
     :not_initialized
