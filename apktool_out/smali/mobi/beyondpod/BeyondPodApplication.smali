@@ -1512,9 +1512,17 @@
 .method public onCreate()V
     .locals 5
 
+    const-string v0, "BPDiag"
+    const-string v1, "BPA-0:oncreate-entered"
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
     # Set before any Activity can start — prevents AppCompat recreation loop on Android 10+
     const/4 v0, 0x1
     invoke-static {v0}, Landroid/support/v7/app/AppCompatDelegate;->setDefaultNightMode(I)V
+
+    const-string v0, "BPDiag"
+    const-string v1, "BPA-1:after-nightmode"
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     # Checkpoint A: BPA.onCreate() entered
     :try_start_bpa_a
@@ -1536,8 +1544,16 @@
     move-exception v0
     :after_bpa_a
 
+    const-string v0, "BPDiag"
+    const-string v1, "BPA-2:after-cp-a"
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
     .line 137
     invoke-super {p0}, Landroid/app/Application;->onCreate()V
+
+    const-string v0, "BPDiag"
+    const-string v1, "BPA-3:after-app-super"
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 139
     new-instance v0, Landroid/os/Handler;
@@ -1576,6 +1592,10 @@
     .line 160
     :cond_0
     sput-object p0, Lmobi/beyondpod/BeyondPodApplication;->_Instance:Lmobi/beyondpod/BeyondPodApplication;
+
+    const-string v0, "BPDiag"
+    const-string v1, "BPA-4:after-instance-set"
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     const-string v0, "wifi"
     .line 162
@@ -1659,10 +1679,18 @@
     move-exception v0
     :after_bpa_b
 
+    const-string v0, "BPDiag"
+    const-string v1, "BPA-5:after-cp-b"
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
     .line 197
     sget-object v0, Lmobi/beyondpod/BeyondPodApplication;->_BPWakeLock:Landroid/os/PowerManager$WakeLock;
     const-wide/16 v1, 0x7d0
     invoke-virtual {v0, v1, v2}, Landroid/os/PowerManager$WakeLock;->acquire(J)V
+
+    const-string v0, "BPDiag"
+    const-string v1, "BPA-6:after-wakelock-acq"
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     # Checkpoint C: about to start network monitor
     :try_start_bpa_c
@@ -1684,8 +1712,16 @@
     move-exception v0
     :after_bpa_c
 
+    const-string v0, "BPDiag"
+    const-string v1, "BPA-7:after-cp-c"
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
     .line 199
     invoke-direct {p0}, Lmobi/beyondpod/BeyondPodApplication;->startMonitoringNetworkConnectivity()V
+
+    const-string v0, "BPDiag"
+    const-string v1, "BPA-8:after-netmon"
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     # Checkpoint D: about to call initialize()
     :try_start_bpa_d
@@ -1707,11 +1743,23 @@
     move-exception v0
     :after_bpa_d
 
+    const-string v0, "BPDiag"
+    const-string v1, "BPA-9:after-cp-d"
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
     .line 201
     invoke-static {}, Lmobi/beyondpod/services/player/MediaButtonIntentReceiver;->touch()V
 
+    const-string v0, "BPDiag"
+    const-string v1, "BPA-10:after-mbir-touch"
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
     .line 203
     invoke-virtual {p0}, Lmobi/beyondpod/BeyondPodApplication;->initialize()V
+
+    const-string v0, "BPDiag"
+    const-string v1, "BPA-11:after-initialize"
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 .end method

@@ -639,12 +639,20 @@
 .method public onCreate()V
     .locals 5
 
+    const-string v0, "BPDiag"
+    const-string v1, "EVO-0:method-entered"
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
     # DIAG: Toast before super.onCreate() (before BeyondPodApplication.initialize() runs)
     const-string v0, "BP: pre-super"
     const/4 v1, 0x1
     invoke-static {p0, v0, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
     move-result-object v0
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+
+    const-string v0, "BPDiag"
+    const-string v1, "EVO-1:about-to-call-super"
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 425
     :try_start_super
