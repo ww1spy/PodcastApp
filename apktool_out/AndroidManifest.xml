@@ -286,7 +286,7 @@
         <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_H" android:resource="@dimen/app_minimumsize_h" />
         <meta-data android:name="com.crashlytics.ApiKey" android:value="b87c7b847ca0cba3f07d91bf97b8a67ba78a1d3f" />
         <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE" />
-        <provider android:authorities="mobi.beyondpod.enhanced.crashlyticsinitprovider" android:exported="false" android:initOrder="100" android:name="com.crashlytics.android.CrashlyticsInitProvider" />
+        <provider android:authorities="mobi.beyondpod.enhanced.crashlyticsinitprovider" android:enabled="false" android:exported="false" android:initOrder="100" android:name="com.crashlytics.android.CrashlyticsInitProvider" />
         <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
     </application>
 </manifest>

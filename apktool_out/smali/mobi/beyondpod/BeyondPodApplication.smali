@@ -1516,6 +1516,26 @@
     const/4 v0, 0x1
     invoke-static {v0}, Landroid/support/v7/app/AppCompatDelegate;->setDefaultNightMode(I)V
 
+    # Checkpoint A: BPA.onCreate() entered
+    :try_start_bpa_a
+    const-string v0, "diag"
+    const/4 v1, 0x0
+    invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    move-result-object v0
+    invoke-virtual {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+    move-result-object v0
+    const-string v1, "crash_cp"
+    const-string v2, "bpa-A:oncreate-entered"
+    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+    move-result-object v0
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
+    :try_end_bpa_a
+    .catch Ljava/lang/Throwable; {:try_start_bpa_a .. :try_end_bpa_a} :catch_bpa_a
+    goto :after_bpa_a
+    :catch_bpa_a
+    move-exception v0
+    :after_bpa_a
+
     .line 137
     invoke-super {p0}, Landroid/app/Application;->onCreate()V
 
@@ -1619,13 +1639,73 @@
     invoke-direct {v0, p0}, Lmobi/beyondpod/BeyondPodApplication$2;-><init>(Lmobi/beyondpod/BeyondPodApplication;)V
     sput-object v0, Lmobi/beyondpod/BeyondPodApplication;->_Handler:Landroid/os/Handler;
 
+    # Checkpoint B: about to acquire WakeLock
+    :try_start_bpa_b
+    const-string v0, "diag"
+    const/4 v1, 0x0
+    invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    move-result-object v0
+    invoke-virtual {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+    move-result-object v0
+    const-string v1, "crash_cp"
+    const-string v2, "bpa-B:pre-wakelock"
+    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+    move-result-object v0
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
+    :try_end_bpa_b
+    .catch Ljava/lang/Throwable; {:try_start_bpa_b .. :try_end_bpa_b} :catch_bpa_b
+    goto :after_bpa_b
+    :catch_bpa_b
+    move-exception v0
+    :after_bpa_b
+
     .line 197
     sget-object v0, Lmobi/beyondpod/BeyondPodApplication;->_BPWakeLock:Landroid/os/PowerManager$WakeLock;
     const-wide/16 v1, 0x7d0
     invoke-virtual {v0, v1, v2}, Landroid/os/PowerManager$WakeLock;->acquire(J)V
 
+    # Checkpoint C: about to start network monitor
+    :try_start_bpa_c
+    const-string v0, "diag"
+    const/4 v1, 0x0
+    invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    move-result-object v0
+    invoke-virtual {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+    move-result-object v0
+    const-string v1, "crash_cp"
+    const-string v2, "bpa-C:pre-netmon"
+    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+    move-result-object v0
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
+    :try_end_bpa_c
+    .catch Ljava/lang/Throwable; {:try_start_bpa_c .. :try_end_bpa_c} :catch_bpa_c
+    goto :after_bpa_c
+    :catch_bpa_c
+    move-exception v0
+    :after_bpa_c
+
     .line 199
     invoke-direct {p0}, Lmobi/beyondpod/BeyondPodApplication;->startMonitoringNetworkConnectivity()V
+
+    # Checkpoint D: about to call initialize()
+    :try_start_bpa_d
+    const-string v0, "diag"
+    const/4 v1, 0x0
+    invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    move-result-object v0
+    invoke-virtual {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+    move-result-object v0
+    const-string v1, "crash_cp"
+    const-string v2, "bpa-D:pre-initialize"
+    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+    move-result-object v0
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
+    :try_end_bpa_d
+    .catch Ljava/lang/Throwable; {:try_start_bpa_d .. :try_end_bpa_d} :catch_bpa_d
+    goto :after_bpa_d
+    :catch_bpa_d
+    move-exception v0
+    :after_bpa_d
 
     .line 201
     invoke-static {}, Lmobi/beyondpod/services/player/MediaButtonIntentReceiver;->touch()V
