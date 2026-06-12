@@ -1206,6 +1206,10 @@
 
     .line 228
     :cond_0
+    # Chromecast/GMS Cast init wrapped in Throwable catch — old GMS Cast classes can throw
+    # NoClassDefFoundError/VerifyError (Errors, not Exceptions) on modern Android. Cast is
+    # optional; a failure here must not abort application startup.
+    :try_start_cc
     new-instance v0, Lmobi/beyondpod/services/player/impl/ChromecastDevice;
 
     invoke-virtual {p0}, Lmobi/beyondpod/BeyondPodApplication;->getApplicationContext()Landroid/content/Context;
@@ -1215,7 +1219,43 @@
     invoke-direct {v0, v1}, Lmobi/beyondpod/services/player/impl/ChromecastDevice;-><init>(Landroid/content/Context;)V
 
     sput-object v0, Lmobi/beyondpod/BeyondPodApplication;->_ChromecastDevice:Lmobi/beyondpod/services/player/impl/ChromecastDevice;
+    :try_end_cc
+    .catch Ljava/lang/Throwable; {:try_start_cc .. :try_end_cc} :catch_cc
 
+    goto :after_cc
+
+    :catch_cc
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "CC-FAIL (non-fatal): "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    sput-object v0, Lmobi/beyondpod/BeyondPodApplication;->_ChromecastDevice:Lmobi/beyondpod/services/player/impl/ChromecastDevice;
+
+    :after_cc
     # DIAG: Toast F - ChromecastDevice done, try block completing
     const-string v2, "BP: init-F: done"
     const/4 v3, 0x1

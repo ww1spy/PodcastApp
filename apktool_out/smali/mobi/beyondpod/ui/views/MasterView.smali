@@ -2832,6 +2832,9 @@
 
     move-result-object v2
 
+    # Chromecast may be unavailable (GMS Cast init failed); skip discovery fragment if so
+    if-eqz v2, :cond_6
+
     invoke-virtual {v2}, Lmobi/beyondpod/services/player/impl/ChromecastDevice;->getRouteSelector()Landroid/support/v7/media/MediaRouteSelector;
 
     move-result-object v2
