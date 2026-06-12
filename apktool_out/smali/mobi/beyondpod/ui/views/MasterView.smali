@@ -2689,11 +2689,11 @@
     iput-object v1, p0, Lmobi/beyondpod/ui/views/MasterView;->_ImageLoader:Lmobi/beyondpod/ui/core/volley/ImageLoader;
 
     # DIAG: Toast to confirm we reached setContentView
-    const-string v2, "BP: about to setContentView"
+    const-string v5, "BP: about to setContentView"
     const/4 v3, 0x1
-    invoke-static {p0, v2, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
-    move-result-object v2
-    invoke-virtual {v2}, Landroid/widget/Toast;->show()V
+    invoke-static {p0, v5, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-object v5
+    invoke-virtual {v5}, Landroid/widget/Toast;->show()V
 
     const v1, 0x7f0c007e
 
