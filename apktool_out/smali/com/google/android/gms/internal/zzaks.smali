@@ -11,15 +11,15 @@
 
 
 # static fields
-.field private static sLock:Ljava/lang/Object; = null
+.field private static sLock:Ljava/lang/Object;
 
-.field private static zzdip:Z = false
+.field private static zzdip:Z
     .annotation build Landroid/support/annotation/GuardedBy;
         value = "sLock"
     .end annotation
 .end field
 
-.field private static zzdiq:Z = false
+.field private static zzdiq:Z
     .annotation build Landroid/support/annotation/GuardedBy;
         value = "sLock"
     .end annotation

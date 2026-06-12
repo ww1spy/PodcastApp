@@ -8,9 +8,9 @@
 
 
 # static fields
-.field private static zzino:I = 0x0
+.field private static zzino:I
 
-.field private static zzinr:Lcom/google/android/gms/iid/zzae; = null
+.field private static zzinr:Lcom/google/android/gms/iid/zzae;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/android/gms/iid/zzae<",
@@ -20,9 +20,9 @@
     .end annotation
 .end field
 
-.field private static zzins:Ljava/lang/String; = null
+.field private static zzins:Ljava/lang/String;
 
-.field private static zzint:Z = false
+.field private static zzint:Z
 
 .field private static zzinu:I
 

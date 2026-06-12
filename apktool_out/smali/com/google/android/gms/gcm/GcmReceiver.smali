@@ -3,7 +3,7 @@
 
 
 # static fields
-.field private static zzijq:Z = false
+.field private static zzijq:Z
 
 .field private static zzijr:Lcom/google/android/gms/iid/zzh;
 

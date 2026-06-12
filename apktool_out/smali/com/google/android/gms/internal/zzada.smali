@@ -13,11 +13,11 @@
 # static fields
 .field private static final sLock:Ljava/lang/Object;
 
-.field private static zzcql:Lcom/google/android/gms/ads/internal/js/zzn; = null
+.field private static zzcql:Lcom/google/android/gms/ads/internal/js/zzn;
 
-.field private static zzcuy:J = 0x0L
+.field private static zzcuy:J
 
-.field private static zzcuz:Z = false
+.field private static zzcuz:Z
 
 .field private static zzcva:Lcom/google/android/gms/ads/internal/gmsg/HttpClient;
 

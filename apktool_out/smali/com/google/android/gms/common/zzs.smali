@@ -20,19 +20,19 @@
 
 .field public static final GOOGLE_PLAY_STORE_PACKAGE:Ljava/lang/String; = "com.android.vending"
 
-.field private static zzfrr:Z = false
+.field private static zzfrr:Z
     .annotation build Lcom/google/android/gms/common/internal/Hide;
     .end annotation
 .end field
 
-.field private static zzfrs:Z = false
+.field private static zzfrs:Z
     .annotation build Lcom/google/android/gms/common/internal/Hide;
     .end annotation
 .end field
 
-.field private static zzfrt:Z = false
+.field private static zzfrt:Z
 
-.field private static zzfru:Z = false
+.field private static zzfru:Z
 
 .field static final zzfrv:Ljava/util/concurrent/atomic/AtomicBoolean;
 

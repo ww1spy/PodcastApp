@@ -637,33 +637,84 @@
 .end method
 
 .method public onCreate()V
-    .locals 3
+    .locals 5
+
+    const-string v0, "BPDiag"
+
+    const-string v1, "EVO-0:method-entered"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    const-string v0, "BP: pre-super"
+
+    const/4 v1, 0x1
+
+    invoke-static {p0, v0, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+
+    const-string v0, "BPDiag"
+
+    const-string v1, "EVO-1:about-to-call-super"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 425
+    :try_start_0
     invoke-super {p0}, Lmobi/beyondpod/BeyondPodApplication;->onCreate()V
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
-    # Crashlytics removed — service is defunct
+    const-string v0, "BP: post-super"
 
-    .line 427
-    new-instance v0, Luk/co/chrisjenx/calligraphy/CalligraphyConfig$Builder;
+    const/4 v1, 0x1
 
-    invoke-direct {v0}, Luk/co/chrisjenx/calligraphy/CalligraphyConfig$Builder;-><init>()V
-
-    const v1, 0x7f0400c1
-
-    .line 429
-    invoke-virtual {v0, v1}, Luk/co/chrisjenx/calligraphy/CalligraphyConfig$Builder;->setFontAttrId(I)Luk/co/chrisjenx/calligraphy/CalligraphyConfig$Builder;
+    invoke-static {p0, v0, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
     move-result-object v0
 
-    .line 430
-    invoke-virtual {v0}, Luk/co/chrisjenx/calligraphy/CalligraphyConfig$Builder;->build()Luk/co/chrisjenx/calligraphy/CalligraphyConfig;
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    move-result-object v0
+    goto :goto_0
 
-    .line 427
-    invoke-static {v0}, Luk/co/chrisjenx/calligraphy/CalligraphyConfig;->initDefault(Luk/co/chrisjenx/calligraphy/CalligraphyConfig;)V
+    :catch_0
+    move-exception v0
 
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "CRASH in BPA.onCreate: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v3, 0x1
+
+    invoke-static {p0, v1, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/widget/Toast;->show()V
+
+    return-void
+
+    :goto_0
     return-void
 .end method
 
@@ -876,7 +927,6 @@
     .line 140
     iput-object v8, p0, Lmobi/beyondpod/evo/BeyondPodApplicationEvo;->_UpdateNotificationBuilder:Landroid/support/v4/app/NotificationCompat$Builder;
 
-    # Error notification: elevate priority so it appears as a heads-up
     const/4 v1, 0x1
 
     goto :goto_1
@@ -1072,6 +1122,8 @@
 
     :cond_7
     return-void
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x7

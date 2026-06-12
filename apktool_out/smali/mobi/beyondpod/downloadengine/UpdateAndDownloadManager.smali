@@ -58,11 +58,11 @@
 
 .field private static m_IsUnattended:Z = true
 
-.field private static m_NumStreamableEnclosures:I = 0x0
+.field private static m_NumStreamableEnclosures:I
 
-.field private static m_Processing:Z = false
+.field private static m_Processing:Z
 
-.field private static m_SkipDownloads:Z = false
+.field private static m_SkipDownloads:Z
 
 .field private static final m_Statistics:Lmobi/beyondpod/downloadengine/ProcessStatistics$ProcessedFeedList;
 

@@ -114,7 +114,7 @@
 
 .field static final SESSION_USER_TAG:Ljava/lang/String; = "SessionUser"
 
-.field private static final SHOULD_PROMPT_BEFORE_SENDING_REPORTS_DEFAULT:Z = false
+.field private static final SHOULD_PROMPT_BEFORE_SENDING_REPORTS_DEFAULT:Z
 
 .field static final SMALLEST_FILE_NAME_FIRST:Ljava/util/Comparator;
     .annotation system Ldalvik/annotation/Signature;
