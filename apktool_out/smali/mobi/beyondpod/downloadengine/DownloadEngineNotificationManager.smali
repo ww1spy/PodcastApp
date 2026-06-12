@@ -64,13 +64,13 @@
 
 .field private static final UPDATING:Ljava/lang/String;
 
-.field private static _EnclosureBatchUpdateListener:Lmobi/beyondpod/downloadengine/EnclosureDownloadManager$EnclosureBatchDownloadListener; = null
+.field private static _EnclosureBatchUpdateListener:Lmobi/beyondpod/downloadengine/EnclosureDownloadManager$EnclosureBatchDownloadListener;
 
-.field private static _RssFeedUpdateListener:Lmobi/beyondpod/downloadengine/RssFeedUpdateManager$FeedBatchUpdateListener; = null
+.field private static _RssFeedUpdateListener:Lmobi/beyondpod/downloadengine/RssFeedUpdateManager$FeedBatchUpdateListener;
 
-.field private static _UpdateAndDownloadListener:Lmobi/beyondpod/downloadengine/UpdateAndDownloadManager$UpdateAndDownloadListener; = null
+.field private static _UpdateAndDownloadListener:Lmobi/beyondpod/downloadengine/UpdateAndDownloadManager$UpdateAndDownloadListener;
 
-.field private static _WiFiTurnedOnAtStart:Z = false
+.field private static _WiFiTurnedOnAtStart:Z
 
 .field private static sFormatBuilder:Ljava/lang/StringBuilder;
 

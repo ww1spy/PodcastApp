@@ -23,7 +23,7 @@
 
 .field private static final zzcqj:J
 
-.field private static zzcqk:Z = false
+.field private static zzcqk:Z
 
 .field private static zzcql:Lcom/google/android/gms/ads/internal/js/zzn;
 

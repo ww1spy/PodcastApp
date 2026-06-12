@@ -3,7 +3,7 @@
 
 
 # static fields
-.field private static zzgji:Z = false
+.field private static zzgji:Z
 
 .field private static zzgki:Lcom/google/android/gms/common/stats/zze;
 

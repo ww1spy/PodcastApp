@@ -573,7 +573,6 @@
     .line 342
     :cond_9
     :goto_6
-    # Build informative error message: "N feed(s) failed to update. Tap for details."
     invoke-static {}, Lmobi/beyondpod/downloadengine/RssFeedUpdateManager;->feedsFailedCount()I
 
     move-result v5

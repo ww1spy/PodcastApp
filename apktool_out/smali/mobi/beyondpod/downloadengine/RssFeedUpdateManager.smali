@@ -25,19 +25,19 @@
     .end annotation
 .end field
 
-.field private static _FeedCountAtBatchStart:I = 0x0
+.field private static _FeedCountAtBatchStart:I
 
-.field private static _FeedUpdateListener:Lmobi/beyondpod/downloadengine/RssFeedCatcher$FeedUpdateListener; = null
+.field private static _FeedUpdateListener:Lmobi/beyondpod/downloadengine/RssFeedCatcher$FeedUpdateListener;
 
-.field private static _FeedsFailedCount:I = 0x0
+.field private static _FeedsFailedCount:I
 
-.field private static _FeedsUnchangedCount:I = 0x0
+.field private static _FeedsUnchangedCount:I
 
-.field private static _FeedsWithNewContentCount:I = 0x0
+.field private static _FeedsWithNewContentCount:I
 
 .field private static final _UpdateStatistics:Lmobi/beyondpod/downloadengine/DownloadStatisticsList;
 
-.field private static m_AtQueueStart:Z = false
+.field private static m_AtQueueStart:Z
 
 .field private static final m_Catcher:Lmobi/beyondpod/downloadengine/RssFeedCatcher;
 
@@ -267,7 +267,7 @@
 
     move-result v0
 
-    if-lez v0, :cond_1
+    if-lez v0, :cond_2
 
     if-eqz p0, :cond_0
 
@@ -289,13 +289,11 @@
 
     invoke-static {p0, v0}, Lmobi/beyondpod/rsscore/helpers/CoreHelper;->writeLogEntryInProduction(Ljava/lang/String;Ljava/lang/String;)V
 
-    # Exponential backoff: delay = 15 << (3 - retryCount) seconds
-    # retryCount 3 -> 15s, 2 -> 30s, 1 -> 60s
     invoke-static {}, Lmobi/beyondpod/downloadengine/RssFeedUpdateManager;->currentFeed()Lmobi/beyondpod/rsscore/Feed;
 
     move-result-object v0
 
-    if-eqz v0, :retry_default_delay
+    if-eqz v0, :cond_1
 
     invoke-virtual {v0}, Lmobi/beyondpod/rsscore/Feed;->getFeedUrl()Ljava/lang/String;
 
@@ -307,13 +305,12 @@
 
     move-result-object v0
 
-    if-eqz v0, :retry_default_delay
+    if-eqz v0, :cond_1
 
     check-cast v0, Lmobi/beyondpod/downloadengine/RssFeedUpdateManager$RetryInfo;
 
     iget v1, v0, Lmobi/beyondpod/downloadengine/RssFeedUpdateManager$RetryInfo;->retryCount:I
 
-    # v1 = retryCount; shift = 3 - retryCount; delay = 15 << shift
     const/4 v2, 0x3
 
     sub-int v2, v2, v1
@@ -326,7 +323,7 @@
 
     goto :goto_0
 
-    :retry_default_delay
+    :cond_1
     const/16 v0, 0xf
 
     .line 441
@@ -339,7 +336,7 @@
     sput-boolean p0, Lmobi/beyondpod/downloadengine/RssFeedUpdateManager;->m_AtQueueStart:Z
 
     .line 445
-    :cond_1
+    :cond_2
     invoke-static {}, Lmobi/beyondpod/downloadengine/RssFeedUpdateManager;->updateQueuedFeeds()V
 
     return-void

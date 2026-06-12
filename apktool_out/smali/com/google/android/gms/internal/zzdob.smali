@@ -14,7 +14,7 @@
 
 
 # static fields
-.field private static zzaiq:Landroid/content/Context; = null
+.field private static zzaiq:Landroid/content/Context;
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "StaticFieldLeak"
@@ -22,7 +22,7 @@
     .end annotation
 .end field
 
-.field private static zzciw:Z = false
+.field private static zzciw:Z
 
 .field private static final zzkgs:Ljava/lang/Object;
 

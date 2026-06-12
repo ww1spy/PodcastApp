@@ -16,7 +16,7 @@
 
 .field private static final PREF_MIGRATION_COMPLETE:Ljava/lang/String; = "preferences_migration_complete"
 
-.field private static final SHOULD_ALWAYS_SEND_REPORTS_DEFAULT:Z = false
+.field private static final SHOULD_ALWAYS_SEND_REPORTS_DEFAULT:Z
 
 
 # instance fields

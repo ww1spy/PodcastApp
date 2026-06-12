@@ -109,7 +109,7 @@
 
 .field private static _TagManagerContainerVersion:Ljava/lang/String; = "N/A"
 
-.field private static _UnableToEstablishWiFiConnectionInThisSession:Z = false
+.field private static _UnableToEstablishWiFiConnectionInThisSession:Z
 
 .field public static _preferences:Landroid/content/SharedPreferences;
 
@@ -4908,7 +4908,7 @@
 
     const/4 v1, 0x0
 
-    if-eqz v0, :cond_7
+    if-eqz v0, :cond_8
 
     .line 216
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
@@ -4917,7 +4917,7 @@
 
     if-nez v2, :cond_0
 
-    goto/16 :goto_0
+    goto/16 :goto_1
 
     .line 224
     :cond_0
@@ -4944,18 +4944,17 @@
 
     const/4 v3, 0x1
 
-    if-eqz v2, :cond_1
+    if-eqz v2, :cond_2
 
-    # PATCH: Permission not yet granted - fall back to app-specific external dir (never needs permission)
     sget-object v0, Lmobi/beyondpod/rsscore/Configuration;->_Context:Landroid/content/Context;
 
-    if-eqz v0, :perm_error
+    if-eqz v0, :cond_1
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getExternalFilesDir(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 
-    if-eqz v0, :perm_error
+    if-eqz v0, :cond_1
 
     invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -4967,9 +4966,9 @@
 
     sput-object v2, Lmobi/beyondpod/rsscore/Configuration;->_BeyondPodPublicStorageRoot:Ljava/io/File;
 
-    goto :cond_1
+    goto :goto_0
 
-    :perm_error
+    :cond_1
     const/4 v0, -0x4
 
     .line 229
@@ -5003,22 +5002,8 @@
     return v1
 
     .line 235
-    :cond_1
-    sget-object v2, Lmobi/beyondpod/rsscore/Configuration;->_BeyondPodPublicStorageRoot:Ljava/io/File;
-
-    invoke-virtual {v2}, Ljava/io/File;->exists()Z
-
-    move-result v2
-
-    if-nez v2, :cond_2
-
-    .line 237
-    sget-object v2, Lmobi/beyondpod/rsscore/Configuration;->_BeyondPodPublicStorageRoot:Ljava/io/File;
-
-    invoke-virtual {v2}, Ljava/io/File;->mkdirs()Z
-
-    .line 240
     :cond_2
+    :goto_0
     sget-object v2, Lmobi/beyondpod/rsscore/Configuration;->_BeyondPodPublicStorageRoot:Ljava/io/File;
 
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
@@ -5026,6 +5011,21 @@
     move-result v2
 
     if-nez v2, :cond_3
+
+    .line 237
+    sget-object v2, Lmobi/beyondpod/rsscore/Configuration;->_BeyondPodPublicStorageRoot:Ljava/io/File;
+
+    invoke-virtual {v2}, Ljava/io/File;->mkdirs()Z
+
+    .line 240
+    :cond_3
+    sget-object v2, Lmobi/beyondpod/rsscore/Configuration;->_BeyondPodPublicStorageRoot:Ljava/io/File;
+
+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
+
+    move-result v2
+
+    if-nez v2, :cond_4
 
     const/4 v0, -0x3
 
@@ -5077,7 +5077,7 @@
     return v1
 
     .line 250
-    :cond_3
+    :cond_4
     sget-object v2, Lmobi/beyondpod/rsscore/Configuration;->_BeyondPodPublicStorageRoot:Ljava/io/File;
 
     invoke-static {v2}, Lmobi/beyondpod/rsscore/Configuration;->constructEnclosureDownloadRoot(Ljava/io/File;)Ljava/io/File;
@@ -5089,18 +5089,18 @@
 
     move-result v4
 
-    if-nez v4, :cond_4
+    if-nez v4, :cond_5
 
     .line 252
     invoke-virtual {v2}, Ljava/io/File;->mkdirs()Z
 
     .line 254
-    :cond_4
+    :cond_5
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
     move-result v4
 
-    if-nez v4, :cond_5
+    if-nez v4, :cond_6
 
     const/4 v0, -0x2
 
@@ -5150,7 +5150,7 @@
     return v1
 
     .line 265
-    :cond_5
+    :cond_6
     invoke-virtual {v2}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object v1
@@ -5171,13 +5171,13 @@
 
     move-result v2
 
-    if-nez v2, :cond_6
+    if-nez v2, :cond_7
 
     .line 270
     invoke-virtual {v1}, Ljava/io/File;->mkdirs()Z
 
     .line 272
-    :cond_6
+    :cond_7
     invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v0
@@ -5186,8 +5186,8 @@
 
     return v3
 
-    :cond_7
-    :goto_0
+    :cond_8
+    :goto_1
     const/4 v2, -0x1
 
     .line 218
@@ -5223,7 +5223,7 @@
 
 .method private static initializeTagManager(Landroid/content/Context;)V
     .locals 0
-    # TagManager SDK uses non-SDK interfaces that throw on targetSdk >= 28; stub it out
+
     return-void
 .end method
 
@@ -5701,7 +5701,6 @@
     .locals 2
 
     .line 510
-    # PATCH: Write log to Downloads folder for easy access
     const-string v0, "Downloads"
 
     invoke-static {v0}, Landroid/os/Environment;->getExternalStoragePublicDirectory(Ljava/lang/String;)Ljava/io/File;

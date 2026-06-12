@@ -5,7 +5,7 @@
 # static fields
 .field private static final TAG:Ljava/lang/String; = "zzct"
 
-.field private static initialized:Z = false
+.field private static initialized:Z
     .annotation build Landroid/support/annotation/VisibleForTesting;
     .end annotation
 .end field

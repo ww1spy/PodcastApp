@@ -14,11 +14,11 @@
 # static fields
 .field private static final TAG:Ljava/lang/String; = "StartupContentBuilder"
 
-.field private static _RepositoryBackupInProgress:Z = false
+.field private static _RepositoryBackupInProgress:Z
 
-.field private static _RepositoryBackupRunnable:Ljava/lang/Runnable; = null
+.field private static _RepositoryBackupRunnable:Ljava/lang/Runnable;
 
-.field private static _RepositorySnapshotInProgress:Z = false
+.field private static _RepositorySnapshotInProgress:Z
 
 
 # instance fields

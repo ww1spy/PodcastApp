@@ -30,7 +30,7 @@
 
 .field private static final TAG:Ljava/lang/String; = "EpisodeHistoryManager"
 
-.field private static _IsInitialized:Z = false
+.field private static _IsInitialized:Z
 
 .field private static _SaveHistoryRunnable:Ljava/lang/Runnable;
 

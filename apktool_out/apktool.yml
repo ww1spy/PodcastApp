@@ -1,63 +1,46 @@
-!!brut.androlib.meta.MetaInfo
-apkFileName: 949619eb-BeyondPod_4.2.30.apk
-compressionType: false
-doNotCompress:
-- resources.arsc
-- META-INF/android.arch.lifecycle_runtime.version
-- META-INF/com.android.support_animated-vector-drawable.version
-- META-INF/com.android.support_appcompat-v7.version
-- META-INF/com.android.support_cardview-v7.version
-- META-INF/com.android.support_design.version
-- META-INF/com.android.support_mediarouter-v7.version
-- META-INF/com.android.support_palette-v7.version
-- META-INF/com.android.support_recyclerview-v7.version
-- META-INF/com.android.support_support-compat.version
-- META-INF/com.android.support_support-core-ui.version
-- META-INF/com.android.support_support-core-utils.version
-- META-INF/com.android.support_support-fragment.version
-- META-INF/com.android.support_support-media-compat.version
-- META-INF/com.android.support_support-v4.version
-- META-INF/com.android.support_support-vector-drawable.version
-- META-INF/com.android.support_transition.version
-- png
-- jpg
-- res/raw/nomedia.txt
+version: 2.9.3
+apkFileName: beyondpod-40320.apk
 isFrameworkApk: false
-packageInfo:
-  forcedPackageId: '127'
-  renameManifestPackage: null
-sdkInfo:
-  minSdkVersion: '21'
-  targetSdkVersion: '29'
-sharedLibrary: false
-sparseResources: false
-unknownFiles:
-  androidsupportmultidexversion.txt: '0'
-  com/aocate/presto/service/IDeathCallback_0_8.aidl: '8'
-  com/aocate/presto/service/IOnBufferingUpdateListenerCallback_0_8.aidl: '8'
-  com/aocate/presto/service/IOnCompletionListenerCallback_0_8.aidl: '8'
-  com/aocate/presto/service/IOnErrorListenerCallback_0_8.aidl: '8'
-  com/aocate/presto/service/IOnInfoListenerCallback_0_8.aidl: '8'
-  com/aocate/presto/service/IOnPitchAdjustmentAvailableChangedListenerCallback_0_8.aidl: '8'
-  com/aocate/presto/service/IOnPreparedListenerCallback_0_8.aidl: '8'
-  com/aocate/presto/service/IOnSeekCompleteListenerCallback_0_8.aidl: '8'
-  com/aocate/presto/service/IOnSpeedAdjustmentAvailableChangedListenerCallback_0_8.aidl: '8'
-  com/aocate/presto/service/IPlayMedia_0_8.aidl: '8'
-  error_prone/Annotations.gwt.xml: '8'
-  fabric/com.crashlytics.sdk.android.answers.properties: '8'
-  fabric/com.crashlytics.sdk.android.beta.properties: '8'
-  fabric/com.crashlytics.sdk.android.crashlytics-core.properties: '8'
-  fabric/com.crashlytics.sdk.android.crashlytics.properties: '8'
-  fabric/io.fabric.sdk.android.fabric.properties: '8'
-  jsr305_annotations/Jsr305_annotations.gwt.xml: '8'
-  okhttp3/internal/publicsuffix/publicsuffixes.gz: '0'
-  third_party/java_src/error_prone/project/annotations/Annotations.gwt.xml: '8'
-  third_party/java_src/error_prone/project/annotations/Google_internal.gwt.xml: '8'
 usesFramework:
   ids:
   - 1
   tag: null
-version: 2.7.0-dirty
+sdkInfo:
+  minSdkVersion: 21
+  targetSdkVersion: 29
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
 versionInfo:
-  versionCode: '40320'
+  versionCode: 40321
   versionName: 4.2.30
+resourcesAreCompressed: false
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  androidsupportmultidexversion.txt: 0
+  com/aocate/presto/service/IDeathCallback_0_8.aidl: 8
+  com/aocate/presto/service/IOnBufferingUpdateListenerCallback_0_8.aidl: 8
+  com/aocate/presto/service/IOnCompletionListenerCallback_0_8.aidl: 8
+  com/aocate/presto/service/IOnErrorListenerCallback_0_8.aidl: 8
+  com/aocate/presto/service/IOnInfoListenerCallback_0_8.aidl: 8
+  com/aocate/presto/service/IOnPitchAdjustmentAvailableChangedListenerCallback_0_8.aidl: 8
+  com/aocate/presto/service/IOnPreparedListenerCallback_0_8.aidl: 8
+  com/aocate/presto/service/IOnSeekCompleteListenerCallback_0_8.aidl: 8
+  com/aocate/presto/service/IOnSpeedAdjustmentAvailableChangedListenerCallback_0_8.aidl: 8
+  com/aocate/presto/service/IPlayMedia_0_8.aidl: 8
+  error_prone/Annotations.gwt.xml: 8
+  fabric/com.crashlytics.sdk.android.answers.properties: 8
+  fabric/com.crashlytics.sdk.android.beta.properties: 8
+  fabric/com.crashlytics.sdk.android.crashlytics-core.properties: 8
+  fabric/com.crashlytics.sdk.android.crashlytics.properties: 8
+  fabric/io.fabric.sdk.android.fabric.properties: 8
+  jsr305_annotations/Jsr305_annotations.gwt.xml: 8
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: 0
+  third_party/java_src/error_prone/project/annotations/Annotations.gwt.xml: 8
+  third_party/java_src/error_prone/project/annotations/Google_internal.gwt.xml: 8
+doNotCompress:
+- resources.arsc
+- png
+- res/raw/nomedia.txt
+- jpg
