@@ -147,6 +147,8 @@ adb shell dumpsys package mobi.beyondpod.enhanced | grep versionCode
 ```
 If device has a newer build, pull and decompile before making changes.
 
+**Critical:** If you fix a smali bug and test the APK binary, you MUST also write the fix back to the smali file in `apktool_out/` and commit it. If you only fix the binary (e.g. by editing the built APK), the next `apktool b` rebuild will reintroduce the bug from the stale smali. This caused build 40322 to regress the MasterView VerifyError that was fixed in 40321.
+
 ### Package not debuggable
 The current APK is a release build. `adb shell run-as mobi.beyondpod.enhanced` will fail with "package not debuggable". To enable it, add `android:debuggable="true"` to the `<application>` tag in `AndroidManifest.xml`.
 
