@@ -105,6 +105,12 @@
     move-exception v0
     :after_cp0
 
+    # MV-CLINIT: write to diagFile so we can tell if class initializer ran
+    invoke-static {}, Lmobi/beyondpod/BeyondPodApplication;->getInstance()Lmobi/beyondpod/BeyondPodApplication;
+    move-result-object v0
+    const-string v1, "MV-CLINIT:entered"
+    invoke-static {v0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
+
     # Initialize static strings to safe empty values — no loadResourceString() call
     # avoids any BPA.getInstance() dependency that could crash class initialization
     const-string v0, ""
@@ -119,7 +125,13 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 1
+    .locals 2
+
+    # MV-INIT: write to diagFile so we can tell if constructor ran
+    invoke-static {}, Lmobi/beyondpod/BeyondPodApplication;->getInstance()Lmobi/beyondpod/BeyondPodApplication;
+    move-result-object v0
+    const-string v1, "MV-INIT:constructor"
+    invoke-static {v0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 115
     invoke-direct {p0}, Landroid/support/v7/app/AppCompatActivity;-><init>()V

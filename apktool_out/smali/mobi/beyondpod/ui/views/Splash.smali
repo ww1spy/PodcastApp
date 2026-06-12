@@ -155,6 +155,10 @@
     invoke-virtual {v4, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
     move-result v0
     if-nez v0, :diagr_delete
+    const-string v0, "MV-0:"
+    invoke-virtual {v4, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    move-result v0
+    if-eqz v0, :diagr_delete
     sget-object v0, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
     if-nez v0, :diagr_delete
     sput-object v4, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
