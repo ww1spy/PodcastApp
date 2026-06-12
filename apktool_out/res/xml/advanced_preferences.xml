@@ -45,11 +45,7 @@
         <mobi.beyondpod.rsscore.DownloadFolderPreference android:title="@string/adv_settings_custom_sdcard_location_title" android:key="CustomSDCardLocation" android:summary="@string/adv_settings_custom_sdcard_location_summary" android:dialogTitle="@string/adv_settings_custom_sdcard_location_title" />
         <CheckBoxPreference android:title="@string/settings_prefer_last_sd_card_root_title" android:key="PreferLastSDCardRoot" android:summary="@string/settings_prefer_last_sd_card_root_summary" android:defaultValue="false" />
     </PreferenceCategory>
-    <PreferenceCategory android:title="@string/cds_menu_sync">
-        <CheckBoxPreference android:title="@string/adv_settings_cds_sync_furthest_pos_title" android:key="CDSSyncFurthestPlayedPositionOnly" android:summary="@string/adv_settings_cds_sync_furthest_pos_summary" android:defaultValue="false" />
-    </PreferenceCategory>
     <PreferenceCategory android:title="@string/settings_general_title">
         <CheckBoxPreference android:title="@string/adv_settings_enable_logging_title" android:key="EnableLoggingInProduction" android:summary="@string/adv_settings_enable_logging_summary" />
-        <EditTextPreference android:title="@string/adv_settings_custom_cds_settings_title" android:key="DebugSettings" android:summary="@string/adv_settings_custom_cds_settings_summary" android:dialogTitle="@string/adv_settings_custom_cds_settings_title" android:inputType="textVisiblePassword|textMultiLine" />
     </PreferenceCategory>
 </PreferenceScreen>

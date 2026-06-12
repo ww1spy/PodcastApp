@@ -16,9 +16,7 @@
     <Preference android:title="@string/settings_backup_restore_title" android:key="HeaderBackup">
         <intent android:action="BackupRestore" />
     </Preference>
-    <Preference android:title="@string/settings_cds_title" android:key="HeaderCDS">
-        <intent android:action="CrossDeviceSync" />
-    </Preference>
+
     <Preference android:title="@string/MENU_about" android:key="HeaderAbout">
         <intent android:action="AboutBeyondPod" />
     </Preference>
