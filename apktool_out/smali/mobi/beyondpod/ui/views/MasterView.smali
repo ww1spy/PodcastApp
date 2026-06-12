@@ -2536,6 +2536,9 @@
     invoke-virtual {v1, p0}, Lmobi/beyondpod/BeyondPodApplication;->setMasterActivity(Landroid/app/Activity;)V
 
     .line 360
+    const-string v1, "MV-A:pre-theme"
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
+
     invoke-static {}, Lmobi/beyondpod/ui/core/ThemeManager;->activeThemeId()I
 
     move-result v1
@@ -2547,9 +2550,11 @@
 
     invoke-virtual {p0, v1}, Lmobi/beyondpod/ui/views/MasterView;->setTheme(I)V
 
+    const-string v1, "MV-B:post-theme-pre-super"
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
+
+    # setDefaultNightMode removed — not in original source, caused AppCompat Activity recreation
     .line 365
-    const/4 v0, 0x1
-    invoke-static {v0}, Landroid/support/v7/app/AppCompatDelegate;->setDefaultNightMode(I)V
     invoke-super {p0, p1}, Landroid/support/v7/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
 
     const-string v1, "MV-1:after-super"
@@ -2563,6 +2568,9 @@
     const/16 v2, 0x80
 
     invoke-virtual {v1, v2}, Landroid/view/Window;->addFlags(I)V
+
+    const-string v1, "MV-C:pre-isinit"
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 371
     invoke-static {}, Lmobi/beyondpod/BeyondPodApplication;->isInitialized()Z
