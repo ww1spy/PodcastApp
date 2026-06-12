@@ -148,11 +148,15 @@
     move-result v3
     invoke-virtual {v4}, Ljava/io/FileInputStream;->close()V
     if-lez v3, :diagr_delete
-    sget-object v0, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
-    if-nez v0, :diagr_delete
     const/4 v0, 0x0
     new-instance v4, Ljava/lang/String;
     invoke-direct {v4, v2, v0, v3}, Ljava/lang/String;-><init>([BII)V
+    const-string v0, "MV-DONE"
+    invoke-virtual {v4, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    move-result v0
+    if-nez v0, :diagr_delete
+    sget-object v0, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
+    if-nez v0, :diagr_delete
     sput-object v4, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
     :diagr_delete
     invoke-virtual {v1}, Ljava/io/File;->delete()Z
@@ -196,10 +200,15 @@
     :after_cpr
 
     # If app initialized successfully, hand off to MasterView immediately
+    const-string v0, "SP-0:pre-isinit"
+    invoke-static {p0, v0}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
     invoke-static {}, Lmobi/beyondpod/BeyondPodApplication;->isInitialized()Z
     move-result v0
 
     if-eqz v0, :not_initialized
+
+    const-string v0, "SP-1:isinit-true"
+    invoke-static {p0, v0}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
 
     # Write checkpoint: about to launch MasterView (survives SIGKILL; MV will overwrite with "2:clinit-entered")
     :try_start_splash_cp
@@ -223,6 +232,8 @@
 
     # Initialized: start MasterView — wrap in Throwable catch so class-loading
     # errors (ExceptionInInitializerError etc.) surface rather than SIGKILLing silently
+    const-string v0, "SP-2:pre-mv-intent"
+    invoke-static {p0, v0}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
     :try_start_mv
     new-instance v0, Landroid/content/Intent;
     invoke-virtual {p0}, Lmobi/beyondpod/ui/views/Splash;->getApplicationContext()Landroid/content/Context;
@@ -230,6 +241,8 @@
     const-class v2, Lmobi/beyondpod/ui/views/MasterView;
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
     invoke-virtual {p0, v0}, Lmobi/beyondpod/ui/views/Splash;->startActivity(Landroid/content/Intent;)V
+    const-string v0, "SP-3:post-startactivity"
+    invoke-static {p0, v0}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
     invoke-virtual {p0}, Lmobi/beyondpod/ui/views/Splash;->finish()V
     :try_end_mv
     .catch Ljava/lang/Throwable; {:try_start_mv .. :try_end_mv} :catch_mv

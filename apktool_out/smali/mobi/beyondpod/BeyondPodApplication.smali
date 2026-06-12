@@ -1510,7 +1510,7 @@
 .end method
 
 # Appends msg+newline to <cacheDir>/bpdiag.txt; silently swallows all errors.
-.method static diagWrite(Landroid/content/Context;Ljava/lang/String;)V
+.method public static diagWrite(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
 
     :try_start_dw
