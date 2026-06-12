@@ -449,8 +449,11 @@
     return-void
 .end method
 
+# findByPopularCategory:
+#   p1="Categories" → return hardcoded iTunes podcast genre list as JSONArray
+#   p1=<genre name> → search iTunes for podcasts matching that genre name
 .method public findByPopularCategory(Ljava/lang/String;Ljava/lang/String;IILcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-    .locals 0
+    .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -471,8 +474,84 @@
         }
     .end annotation
 
-    # BeyondPod backend is dead; no-op stub
+    # Check if str == "Categories" → return genre list
+    const-string v0, "Categories"
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :not_categories_list
+
+    :try_start_genres
+    const-string v0, "[{\"trackName\":\"Arts\",\"feedUrl\":\"Arts\"},{\"trackName\":\"Business\",\"feedUrl\":\"Business\"},{\"trackName\":\"Comedy\",\"feedUrl\":\"Comedy\"},{\"trackName\":\"Education\",\"feedUrl\":\"Education\"},{\"trackName\":\"Health & Fitness\",\"feedUrl\":\"Health & Fitness\"},{\"trackName\":\"History\",\"feedUrl\":\"History\"},{\"trackName\":\"Kids & Family\",\"feedUrl\":\"Kids & Family\"},{\"trackName\":\"Music\",\"feedUrl\":\"Music\"},{\"trackName\":\"News\",\"feedUrl\":\"News\"},{\"trackName\":\"Religion & Spirituality\",\"feedUrl\":\"Religion & Spirituality\"},{\"trackName\":\"Science\",\"feedUrl\":\"Science\"},{\"trackName\":\"Society & Culture\",\"feedUrl\":\"Society & Culture\"},{\"trackName\":\"Sports\",\"feedUrl\":\"Sports\"},{\"trackName\":\"Technology\",\"feedUrl\":\"Technology\"},{\"trackName\":\"True Crime\",\"feedUrl\":\"True Crime\"}]"
+
+    new-instance v1, Lorg/json/JSONArray;
+
+    invoke-direct {v1, v0}, Lorg/json/JSONArray;-><init>(Ljava/lang/String;)V
+
+    invoke-interface {p5, v1}, Lcom/android/volley/Response$Listener;->onResponse(Ljava/lang/Object;)V
+    :try_end_genres
+    .catch Lorg/json/JSONException; {:try_start_genres .. :try_end_genres} :catch_genres
+
     return-void
+
+    :catch_genres
+    return-void
+
+    :not_categories_list
+    # Search iTunes for podcasts matching the genre name
+    :try_start_0
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "https://itunes.apple.com/search?term="
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string v1, "UTF-8"
+
+    invoke-static {p1, v1}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, "&media=podcast&entity=podcast&limit="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, "&offset="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    mul-int v1, p3, p4
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0, p5, p6}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->performItunesGet(Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
+    :try_end_0
+    .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    new-instance v1, Lmobi/beyondpod/ui/views/impexp/FeedSearchService$ServiceException;
+
+    const/16 v2, 0x64
+
+    const-string v3, "error encoding parameters"
+
+    invoke-direct {v1, v2, v3, v0}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService$ServiceException;-><init>(ILjava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v1
 .end method
 
 # findByQuery: Build iTunes Search API URL and call performItunesGet.
@@ -686,8 +765,9 @@
     return-void
 .end method
 
+# getRecommendedFeeds: returns popular podcasts via iTunes Search API (same as trending)
 .method public getRecommendedFeeds(Ljava/lang/String;Ljava/lang/String;IILcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-    .locals 0
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -708,7 +788,28 @@
         }
     .end annotation
 
-    # BeyondPod backend is dead; no-op stub
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "https://itunes.apple.com/search?term=podcast&media=podcast&entity=podcast&limit="
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, "&offset="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    mul-int v1, p3, p4
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0, p5, p6}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->performItunesGet(Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
+
     return-void
 .end method
 
@@ -737,8 +838,9 @@
     return-void
 .end method
 
+# getTrendingEpisodes: returns popular podcasts via iTunes Search API
 .method public getTrendingEpisodes(Ljava/lang/String;Ljava/lang/String;IILcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
-    .locals 0
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -759,7 +861,28 @@
         }
     .end annotation
 
-    # BeyondPod backend is dead; no-op stub
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v1, "https://itunes.apple.com/search?term=podcast&media=podcast&entity=podcast&limit="
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, "&offset="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    mul-int v1, p3, p4
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0, p5, p6}, Lmobi/beyondpod/ui/views/impexp/FeedSearchService;->performItunesGet(Ljava/lang/String;Lcom/android/volley/Response$Listener;Lcom/android/volley/Response$ErrorListener;)V
+
     return-void
 .end method
 

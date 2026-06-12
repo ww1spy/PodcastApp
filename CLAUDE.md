@@ -154,6 +154,13 @@ The current APK is a release build. `adb shell run-as mobi.beyondpod.enhanced` w
 
 ---
 
+## Current Version State
+
+**Installed on device:** build 40327 (version 4.2.30)
+**Repo smali:** aligned with 40327
+
+---
+
 ## Bugs Fixed
 
 ### VerifyError in MasterView.onCreate (build 40321)
@@ -195,14 +202,129 @@ Stubbed Calligraphy's restricted reflection calls.
 
 ## Enhancements Made
 
-| Area | Change |
-|---|---|
-| Search backend | Replaced defunct Azure search with iTunes Search API |
-| Target SDK | Bumped from 25 → 29 |
-| Network retries | Exponential backoff, 1 → 3 retries |
-| Notifications | Enhanced priority and messaging |
-| Crash reporting | Removed Crashlytics (was causing startup SIGKILL) |
-| Resource naming | Fixed aapt2 compatibility issues |
+| Area | Change | Build |
+|---|---|---|
+| Target SDK | Bumped from 25 → 29 | early |
+| Network retries | Exponential backoff, 1 → 3 retries | early |
+| Notifications | Enhanced priority and messaging | early |
+| Crash reporting | Removed Crashlytics (was causing startup SIGKILL) | 40313 |
+| Cleartext HTTP | Added `android:usesCleartextTraffic="true"` for HTTP podcast streams | 40324 |
+| Episode images | `media:content medium="image"` now populates episode artwork | 40325 |
+| YouTube feeds | Skip `<media:content type="...shockwave...">` to prevent bad enclosure | 40326 |
+| UI: hardcoded colors | Replaced `#ffXXXXXX` hardcodes in playlist_empty, feed_search_result_list_item, episode_card_toolbar_publisher with proper theme attributes | 40326 |
+| Status bar | Added `android:statusBarColor` to both light/dark BeyondPodBase themes | 40326 |
+| Search backend | Replaced defunct Azure search with iTunes Search API (`findByQuery`, `findByPopularCategory`, `getTrendingEpisodes`, `getRecommendedFeeds`) | 40327 |
+| Categories tab | `findByPopularCategory("Categories",...)` returns hardcoded iTunes genre list; genre name → iTunes search | 40327 |
+| Recommended tab | `getRecommendedFeeds` → iTunes search with `term=podcast` | 40327 |
+
+---
+
+---
+
+## Search Backend Architecture (build 40327)
+
+The original BeyondPod search pointed to a dead Azure backend (`feedsearch.beyondpod.mobi`). All methods were replaced with iTunes Search API calls.
+
+### Key Files
+- `smali/mobi/beyondpod/ui/views/impexp/FeedSearchService.smali` — main service, all methods rewritten
+- `smali/mobi/beyondpod/ui/views/impexp/FeedSearchService$1.smali` — inner Volley listener; unwraps iTunes `"results"` JSONArray from the JSONObject response
+
+### iTunes Search API
+- URL: `https://itunes.apple.com/search?term=ENCODED&media=podcast&entity=podcast&limit=N&offset=M`
+- Response: `{"resultCount": N, "results": [{"trackName":..., "feedUrl":..., "artworkUrl600":...}, ...]}`
+- **Confirmed working** (tested from dev machine, returns 200 with valid JSON)
+- Response JSON field mapping in `parseJSONResults`: `trackName`→title, `feedUrl`→link/RSS URL, `artworkUrl600` (fallback `artworkUrl100`)→image, `description`→description
+
+### `findByPopularCategory(category, filterTag, page, pageSize, listener, errorListener)`
+- If `category == "Categories"`: immediately calls `listener.onResponse(hardcoded_genre_list_json)` — no network
+- Otherwise: URL-encodes category name as `term`, performs iTunes search
+- The hardcoded genre list JSON is a JSONArray of `{trackName, feedUrl}` objects where `feedUrl` holds the genre name (used by the fragment as the query for clicking a category)
+
+### `getTrendingEpisodes(sortBy, filterTag, page, pageSize, listener, errorListener)`  
+- Builds: `https://itunes.apple.com/search?term=podcast&media=podcast&entity=podcast&limit=pageSize&offset=page*pageSize`
+- Calls `performItunesGet`
+
+### `getRecommendedFeeds(userFeedList, filterTag, page, pageSize, listener, errorListener)`
+- Same as getTrendingEpisodes (same URL)
+
+### `performItunesGet(url, listener, errorListener)`
+- Creates `JsonObjectRequest(url, null, FeedSearchService$1, errorListener)`
+- Sets `DefaultRetryPolicy(10000ms, 2 retries, 2.0f backoff)`
+- Adds to `mRequestQueue`
+
+### Error Flow
+The Volley error listener is `SearchResultFragmentBase$4.onErrorResponse`:
+- Checks `isConnectedToNetwork()` 
+- If connected: sets empty-state text to `search_error` string ("An error has occurred...")
+- If not connected: shows dialog with `search_error_device_is_offline` + `search_error`
+- Logs "Error performing search: Http Error: [statusCode or message]" via `CoreHelper.writeTraceEntry` (visible as `V/BeyondPod` in logcat)
+
+---
+
+## Media Content Parser (build 40325/40326)
+
+**File:** `smali/mobi/beyondpod/rsscore/rss/parsers/RssFeedParser$MediaRssContentParser.smali`
+
+The `endElement()` method handles `<media:content>` tags. After calling `parseEnclosure()` to get an `RssEnclosure` object, it branches:
+1. If `type.startsWith("image/")` → add URL to `RssFeedItem.itemImageUrls()` via `ImageParser.checkAndAddImageUrl()`
+2. Else if `type.contains("shockwave")` → skip (YouTube Flash embed, not audio)
+3. Else → `item.setEnclosure(enclosure)`
+
+The original code had only case 3. Case 1 was added in 40325, case 2 in 40326.
+
+**Important:** `RssFeedItem.itemImageUrls()` uses a lazy-init pattern — it only allocates the list on first call if `_ItemImageUrls == null`. Our parse-time writes survive because the UI reads `itemImageUrls()` after parsing is complete.
+
+---
+
+## Open Issues
+
+### 1. Trending/Recommended Tab Error (build 40327, unresolved)
+
+**Symptom:** Opening Add Feed → Trending tab shows "An error has occurred while searching. Please try again later."
+
+**What's known:**
+- The iTunes Search API endpoint `https://itunes.apple.com/search?term=podcast&media=podcast&entity=podcast&limit=20&offset=0` returns HTTP 200 + valid JSON (confirmed from dev machine)
+- The error comes from Volley's error listener path, meaning the request either fails at the network layer or gets a non-2xx response on the device
+- The `FeedSearchResultFragment.callSearch` for "Trending" calls `getTrendingEpisodes("", filterTag, page, pageSize, ...)`
+- Logcat from the device shows `V/BeyondPod(27470)` traces for BeyondPod activity but logcat capture windows haven't been long enough to catch the search error
+
+**What to try next:**
+1. Capture logcat while the Trending tab is open:
+   ```
+   adb -s 192.168.1.115:41795 logcat -v brief | grep "BeyondPod\|Volley\|itunes\|search"
+   ```
+   Look for the line: "Error performing search: Http Error: [statusCode or message]"
+2. If it shows a status code: Apple may be rate-limiting or blocking the User-Agent
+3. If `networkResponse` is null (so it logs `getMessage()`): it's a connection-level error (SSL, DNS, timeout)
+4. Alternative API: `https://rss.applemarketingtools.com/api/v2/us/podcasts/top/25/podcasts.json` for trending — returns a different JSON structure, would need `FeedSearchService$1` + `parseJSONResults` adapted
+5. Alternative: use podcast index API (https://podcastindex.org) — requires API key but has full podcast directory
+
+**Possible root cause:**
+Apple's `itunes.apple.com` CDN may require TLS 1.3 or specific cipher suites not supported by the old Volley/OkHttp bundled in the APK (targeting SDK 29), or the old `HttpURLConnection` implementation on Samsung's Android. Check if `findByQuery` (the search box) works — if the text search box works but Trending doesn't, they use the same code path which would rule out SSL/TLS issues.
+
+### 2. Notification Odd Behavior (unresolved)
+
+**Symptom:** Notification behaves oddly when transitioning between playing and not-playing states.
+
+**Not yet investigated.** The user offered to perform the transition while logcat is monitored. To investigate:
+1. Run: `adb -s 192.168.1.115:41795 logcat | grep -iE "notification|beyondpod|service|playback"`
+2. User plays → pauses → plays
+3. Look for notification update logic in `smali/mobi/beyondpod/service/` or `smali/mobi/beyondpod/ui/`
+
+**Relevant files to look at:**
+- `smali/mobi/beyondpod/service/MediaPlayerService.smali` (if exists)
+- Any `*Notification*.smali` files
+- `RemoteViews` usage (notification layout files: look for `notification_*.xml` in `res/layout/`)
+
+---
+
+## Things Considered But Not Implemented
+
+- **Scrobbling**: Works via broadcast intents to an external scrobbler app — no code needed in BeyondPod
+- **Sonic audio plugin**: Already present (`libsonic.so`), enabled via app settings — no code change needed
+- **Presto audio plugin**: Requires a separate APK (`com.aocate.presto`), not installable without the separate app
+- **HTTP audio streams**: Already handled by `android:usesCleartextTraffic="true"` added in build 40324
+- **Notification layout text colors** (`#ffdddddd`, `#ffaaaaaa`, `#90ffffff`): Deliberately deferred — RemoteViews on Android 12+ use the system's own theming for notifications, so hardcoded colors may look wrong on some themes; replacing them risks making things worse
 
 ---
 

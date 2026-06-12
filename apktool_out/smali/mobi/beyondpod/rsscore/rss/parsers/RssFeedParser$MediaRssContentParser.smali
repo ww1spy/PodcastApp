@@ -198,7 +198,7 @@
 
 # virtual methods
 .method public endElement(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 3
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -220,9 +220,50 @@
 
     move-result-object v1
 
+    # Route by enclosure type:
+    #   image/* → add URL to episode image list
+    #   *shockwave* (e.g. application/x-shockwave-flash, YouTube) → skip entirely
+    #   anything else → set as audio/video enclosure
+    iget-object v2, v1, Lmobi/beyondpod/rsscore/rss/entities/RssEnclosure;->Type:Ljava/lang/String;
+
+    if-eqz v2, :not_image
+
+    const-string v3, "image/"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :not_image
+
+    # It is an image — add its URL to the episode image URL list
+    invoke-virtual {v0}, Lmobi/beyondpod/rsscore/rss/entities/RssFeedItem;->itemImageUrls()Ljava/util/ArrayList;
+
+    move-result-object v2
+
+    iget-object v3, v1, Lmobi/beyondpod/rsscore/rss/entities/RssEnclosure;->Url:Ljava/lang/String;
+
+    invoke-static {v2, v3}, Lmobi/beyondpod/rsscore/rss/parsers/ImageParser;->checkAndAddImageUrl(Ljava/util/ArrayList;Ljava/lang/String;)V
+
+    goto :call_super
+
+    :not_image
+    # Skip Flash/shockwave enclosures (YouTube uses application/x-shockwave-flash — not playable as audio)
+    if-eqz v2, :set_enclosure
+
+    const-string v3, "shockwave"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v3
+
+    if-nez v3, :call_super
+
+    :set_enclosure
     invoke-virtual {v0, v1}, Lmobi/beyondpod/rsscore/rss/entities/RssFeedItem;->setEnclosure(Lmobi/beyondpod/rsscore/rss/entities/RssEnclosure;)V
 
     .line 362
+    :call_super
     invoke-super {p0, p1, p2, p3}, Lmobi/beyondpod/rsscore/rss/parsers/ParserBase;->endElement(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

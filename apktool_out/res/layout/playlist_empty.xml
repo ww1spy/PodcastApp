@@ -2,5 +2,5 @@
 <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <ImageView android:layout_gravity="center_horizontal" android:id="@id/empty_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:src="@drawable/ic_action_empty" android:scaleType="center" android:contentDescription="@string/empty_image" />
-    <TextView android:textSize="16.0sp" android:textColor="#a0707070" android:layout_gravity="center_horizontal" android:id="@id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/podcast_list_empty_playlist" />
+    <TextView android:textSize="16.0sp" android:textColor="?android:textColorSecondary" android:layout_gravity="center_horizontal" android:id="@id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/podcast_list_empty_playlist" />
 </LinearLayout>

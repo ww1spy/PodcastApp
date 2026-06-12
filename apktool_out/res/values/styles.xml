@@ -1841,6 +1841,7 @@
     </style>
     <style name="Theme.BeyondPod.Splash" parent="@style/Theme.AppCompat.Light.NoActionBar" />
     <style name="Theme.BeyondPodBase" parent="@style/Theme">
+        <item name="android:statusBarColor">@color/bp_primary_dark</item>
         <item name="ICSSubMenuTextAppearance">@style/ICSSubMenuTextStyle</item>
         <item name="actionBarStyle">@style/BPActionBarStyle</item>
         <item name="actionDropDownStyle">@null</item>
@@ -1865,6 +1866,7 @@
         <item name="windowActionModeOverlay">true</item>
     </style>
     <style name="Theme.BeyondPodBase.Dark" parent="@style/Theme.Dark">
+        <item name="android:statusBarColor">@color/bp_primary_dark</item>
         <item name="android:windowBackground">@color/card_canvas_dark</item>
         <item name="ICSSubMenuTextAppearance">?android:textAppearanceMedium</item>
         <item name="actionBarStyle">@style/BPActionBarStyle</item>
