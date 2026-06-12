@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mobi.beyondpod.ui.views.player.PlayerMini android:id="@id/mini_player" android:padding="@dimen/mini_player_margin" android:layout_width="wrap_content" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="#ff404040" android:layout_width="wrap_content" android:layout_height="@dimen/mini_player_height">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="@color/bp_primary_dark" android:layout_width="wrap_content" android:layout_height="@dimen/mini_player_height">
         <RelativeLayout android:layout_gravity="center_vertical" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" android:layout_marginStart="@dimen/mini_player_image_width">
             <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="4.0dip" style="@style/MiniPlayerTitle" />
             <TextView android:id="@id/source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/title" android:layout_alignStart="@id/title" android:layout_alignEnd="@id/title" style="@style/MiniPlayerSource" />

@@ -23,8 +23,8 @@
     <color name="bp_light_red">#ffff2544</color>
     <color name="bp_orange">#fffd744f</color>
     <color name="bp_orange_pressed">#22fd744f</color>
-    <color name="bp_primary">#ff666666</color>
-    <color name="bp_primary_dark">#ff4c4c4c</color>
+    <color name="bp_primary">#ff00897B</color>
+    <color name="bp_primary_dark">#ff00695C</color>
     <color name="bp_smoke_blue">#ffa8aae2</color>
     <color name="bp_soft_blue">#ff6078ca</color>
     <color name="bp_soft_green">#ff92da90</color>

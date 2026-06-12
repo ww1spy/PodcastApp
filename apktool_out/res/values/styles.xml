@@ -44,15 +44,15 @@
         <item name="android:windowExitAnimation">@anim/design_bottom_sheet_slide_out</item>
     </style>
     <style name="AppTheme.Dialog.Dark" parent="@style/Theme.AppCompat.Dialog.Alert">
-        <item name="colorPrimary">#ffbf360c</item>
-        <item name="colorPrimaryDark">#ffbf360c</item>
+        <item name="colorPrimary">@color/bp_primary</item>
+        <item name="colorPrimaryDark">@color/bp_primary_dark</item>
     </style>
     <style name="AppTheme.Dialog.Light" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
-        <item name="colorPrimary">#ffbf360c</item>
-        <item name="colorPrimaryDark">#ffbf360c</item>
+        <item name="colorPrimary">@color/bp_primary</item>
+        <item name="colorPrimaryDark">@color/bp_primary_dark</item>
     </style>
     <style name="BPActionBarStyle" parent="@android:style/Widget.DeviceDefault.Light.ActionBar.Solid.Inverse">
-        <item name="elevation">1.0dip</item>
+        <item name="elevation">4.0dip</item>
     </style>
     <style name="BPMediaButton">
         <item name="android:gravity">center</item>
@@ -1049,8 +1049,8 @@
     </style>
     <style name="CarTheme" parent="@style/Theme.BeyondPod">
         <item name="colorAccent">@color/bp_accent</item>
-        <item name="colorPrimary">#ffbf360c</item>
-        <item name="colorPrimaryDark">#ffbf360c</item>
+        <item name="colorPrimary">@color/bp_primary</item>
+        <item name="colorPrimaryDark">@color/bp_primary_dark</item>
     </style>
     <style name="CardEpisodeDescriptionTextStyle" parent="@android:style/TextAppearance">
         <item name="android:textSize">@dimen/episode_description_font_size</item>
