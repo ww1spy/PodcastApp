@@ -105,6 +105,12 @@
     move-exception v0
     :after_cp0
 
+    # MV-CLINIT: write to diagFile so we can tell if class initializer ran
+    invoke-static {}, Lmobi/beyondpod/BeyondPodApplication;->getInstance()Lmobi/beyondpod/BeyondPodApplication;
+    move-result-object v0
+    const-string v1, "MV-CLINIT:entered"
+    invoke-static {v0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
+
     # Initialize static strings to safe empty values — no loadResourceString() call
     # avoids any BPA.getInstance() dependency that could crash class initialization
     const-string v0, ""
@@ -119,7 +125,13 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 1
+    .locals 2
+
+    # MV-INIT: write to diagFile so we can tell if constructor ran
+    invoke-static {}, Lmobi/beyondpod/BeyondPodApplication;->getInstance()Lmobi/beyondpod/BeyondPodApplication;
+    move-result-object v0
+    const-string v1, "MV-INIT:constructor"
+    invoke-static {v0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 115
     invoke-direct {p0}, Landroid/support/v7/app/AppCompatActivity;-><init>()V
@@ -439,6 +451,23 @@
     move-result-object v1
     invoke-virtual {v1}, Landroid/widget/Toast;->show()V
 
+    # Write diagnostic to bpdiag.txt so it survives even if UI crashes
+    invoke-static {p0, v0}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
+
+    # Show splash layout so user can read the error instead of black screen
+    sget v1, Lmobi/beyondpod/R$layout;->splash:I
+    invoke-virtual {p0, v1}, Lmobi/beyondpod/ui/views/MasterView;->setContentView(I)V
+
+    sget v1, Lmobi/beyondpod/R$id;->status:I
+    invoke-virtual {p0, v1}, Lmobi/beyondpod/ui/views/MasterView;->findViewById(I)Landroid/view/View;
+    move-result-object v1
+
+    if-eqz v1, :fwd_done
+
+    check-cast v1, Landroid/widget/TextView;
+    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    :fwd_done
     return-void
 .end method
 
@@ -2404,6 +2433,9 @@
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
 
+    const-string v1, "MV-0:oncreate-entered"
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
+
     const/4 v0, 0x1
 
     # DIAG: Toast to confirm MasterView.onCreate() was entered
@@ -2504,6 +2536,9 @@
     invoke-virtual {v1, p0}, Lmobi/beyondpod/BeyondPodApplication;->setMasterActivity(Landroid/app/Activity;)V
 
     .line 360
+    const-string v1, "MV-A:pre-theme"
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
+
     invoke-static {}, Lmobi/beyondpod/ui/core/ThemeManager;->activeThemeId()I
 
     move-result v1
@@ -2515,10 +2550,15 @@
 
     invoke-virtual {p0, v1}, Lmobi/beyondpod/ui/views/MasterView;->setTheme(I)V
 
+    const-string v1, "MV-B:post-theme-pre-super"
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
+
+    # setDefaultNightMode removed — not in original source, caused AppCompat Activity recreation
     .line 365
-    const/4 v0, 0x1
-    invoke-static {v0}, Landroid/support/v7/app/AppCompatDelegate;->setDefaultNightMode(I)V
     invoke-super {p0, p1}, Landroid/support/v7/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
+
+    const-string v1, "MV-1:after-super"
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 367
     invoke-virtual {p0}, Lmobi/beyondpod/ui/views/MasterView;->getWindow()Landroid/view/Window;
@@ -2528,6 +2568,9 @@
     const/16 v2, 0x80
 
     invoke-virtual {v1, v2}, Landroid/view/Window;->addFlags(I)V
+
+    const-string v1, "MV-C:pre-isinit"
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 371
     invoke-static {}, Lmobi/beyondpod/BeyondPodApplication;->isInitialized()Z
@@ -2657,6 +2700,9 @@
     .line 395
     invoke-virtual {p0, v1}, Lmobi/beyondpod/ui/views/MasterView;->setContentView(I)V
 
+    const-string v1, "MV-2:after-setcontentview"
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
+
     const v1, 0x7f090292
 
     .line 397
@@ -2682,6 +2728,9 @@
 
     .line 403
     invoke-direct {p0}, Lmobi/beyondpod/ui/views/MasterView;->initializeDrawers()V
+
+    const-string v1, "MV-3:after-init-drawers"
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 405
     new-instance v1, Lmobi/beyondpod/ui/views/base/TitleBar;
@@ -2720,6 +2769,9 @@
 
     invoke-virtual {v2, v1, p1, p0}, Lmobi/beyondpod/ui/views/Workspace;->Initialize(Lmobi/beyondpod/ui/core/MasterViewState;Landroid/os/Bundle;Lmobi/beyondpod/ui/views/Workspace$IWorkspaceOwner;)V
 
+    const-string v1, "MV-4:after-workspace-init"
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
+
     .line 415
     invoke-static {}, Lmobi/beyondpod/ui/views/MasterView;->appBarScrollAllowed()Z
 
@@ -2744,6 +2796,9 @@
     .line 420
     :cond_4
     invoke-direct {p0}, Lmobi/beyondpod/ui/views/MasterView;->finishInitialization()V
+
+    const-string v1, "MV-5:after-finish-init"
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 424
     :cond_5
@@ -2777,6 +2832,9 @@
 
     move-result-object v2
 
+    # Chromecast may be unavailable (GMS Cast init failed); skip discovery fragment if so
+    if-eqz v2, :cond_6
+
     invoke-virtual {v2}, Lmobi/beyondpod/services/player/impl/ChromecastDevice;->getRouteSelector()Landroid/support/v7/media/MediaRouteSelector;
 
     move-result-object v2
@@ -2802,6 +2860,9 @@
 
     .line 435
     invoke-direct {p0}, Lmobi/beyondpod/ui/views/MasterView;->registerCommands()V
+
+    const-string v1, "MV-DONE"
+    invoke-static {p0, v1}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2812,6 +2873,18 @@
     invoke-virtual {p1}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
     move-result-object v1
     sput-object v1, Lmobi/beyondpod/BeyondPodApplication;->lastApplicationException:Ljava/lang/String;
+    new-instance v2, Ljava/lang/StringBuilder;
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    const-string v3, "MV-CRASH:"
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
+    invoke-virtual {p0}, Lmobi/beyondpod/ui/views/MasterView;->getApplicationContext()Landroid/content/Context;
+    move-result-object v3
+    invoke-static {v3, v2}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
     invoke-virtual {p0}, Lmobi/beyondpod/ui/views/MasterView;->getApplicationContext()Landroid/content/Context;
     move-result-object v2
     const/4 v3, 0x1
