@@ -451,6 +451,23 @@
     move-result-object v1
     invoke-virtual {v1}, Landroid/widget/Toast;->show()V
 
+    # Write diagnostic to bpdiag.txt so it survives even if UI crashes
+    invoke-static {p0, v0}, Lmobi/beyondpod/BeyondPodApplication;->diagWrite(Landroid/content/Context;Ljava/lang/String;)V
+
+    # Show splash layout so user can read the error instead of black screen
+    sget v1, Lmobi/beyondpod/R$layout;->splash:I
+    invoke-virtual {p0, v1}, Lmobi/beyondpod/ui/views/MasterView;->setContentView(I)V
+
+    sget v1, Lmobi/beyondpod/R$id;->status:I
+    invoke-virtual {p0, v1}, Lmobi/beyondpod/ui/views/MasterView;->findViewById(I)Landroid/view/View;
+    move-result-object v1
+
+    if-eqz v1, :fwd_done
+
+    check-cast v1, Landroid/widget/TextView;
+    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    :fwd_done
     return-void
 .end method
 
